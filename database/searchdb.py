@@ -422,7 +422,30 @@ def hotel_name(city,area,restaurant_name):
                                  
                                               
                           
-                              
+def search_highest_rated():
+    try:
+        con=DBConnectivity.create_connection()
+        cur=DBConnectivity.create_cursor(con)
+        list_of_restaurants=[]
+        
+        cur.execute("select restaurantname,type_of_food,likes,dislikes,rating from (select restaurantname,type_of_food,likes,dislikes,rating from restaurants order by rating desc) where rownum < 6")
+        
+        for restaurantname,type_of_food,likes,dislikes,rating in cur:
+            
+                select=Select()
+                select.set_restaurantname(restaurantname)
+                select.set_type_of_food(type_of_food)
+                select.set_likes(likes)               
+                select.set_dislikes(dislikes)
+                select.set_rating(rating)
+            
+                list_of_restaurants.append(select)   
+        return list_of_restaurants
+    
+    finally:
+        cur.close()
+        con.close()        
+        
                        
                
                         

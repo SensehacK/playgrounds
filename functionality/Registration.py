@@ -9,7 +9,7 @@ from functionality import Login,filtersearch
 from classes import RegistrationModule,FoodModule
 from validations import All_validations
 
-is_registered_user = False
+# is_registered_user = False
 
 def correct_password(username):
     input2 = input("Enter the password:")
@@ -99,24 +99,21 @@ def register():
     
     if choice == 'a':
         print("You are not eligible for discounts")
-        #FoodModule.Food.is_registered_user = False
+        FoodModule.Food.is_registered_user = False
         
         filtersearch.search_as_guest()
         
     
     if choice == 'b':
         
-        global is_registered_user
-        is_registered_user = True
-        
+#         global is_registered_user
+#         is_registered_user = True
+        FoodModule.Food.is_registered_user = True
         username = input("Enter the username:")
         if Login.check_username(username) == True:
             print("First do the registration")
             register()
-#             list_of_username=ViewDB.validate_username(username)
-            
-#         except:
-#             pass
+
         if All_validations.validate(username) != False:
             password = input("Enter the password:")
 #             if All_validations.validate_existing_password(username,password):
@@ -138,8 +135,13 @@ def register():
                             print("please wait while you are redirected")
                             city = ViewDB.login(username,password).get_city()
                             area = ViewDB.login(username,password).get_area()
+                            
+                            #Storing Global
+                            FoodModule.Food.registered_user = username
+                            
                             print(city)
                             print(area)
+                            #Calling Module 2
                             Restaurants.restaurants(city,area)
                         i += 1
                     print("You have exceeded the number of attempts, please try resetting your password")
@@ -171,17 +173,10 @@ def register():
                             pass
                     if correct_password(username) == False:
                         correct_password(username)
-#             else:
-#                 register()
+
         else:
             register()
-#                         flag = 0
-#                         print("Please check the password and type again")
-#                         flag = 1
-#                         correct_password(username)
-#                         if flag == 0:
-#                             print("Your password does not meet the requirements, please refill them")
-                        
+
                     
                         
     if choice == 'c':

@@ -7,7 +7,7 @@ Created on Mar 16, 2017
 from validations import Validate
 from exceptions import CustomException2
 from classes import searchmodule2,FoodModule
-from functionality import ViewFunctions
+
 
 def filter(city,area):
     
@@ -32,13 +32,17 @@ def get_restaurantname(city,area):
         restaurant_name=restaurant_name1.upper()
         list_of_restaurants=Validate.validate_hotel_name(city,area,restaurant_name)
         print(restaurant_name)
-        FoodModule.Food.restaurant_name =restaurant_name 
+        
+        #Saving to Global Project Variables
+        FoodModule.Food.restaurant_name = restaurant_name 
         FoodModule.Food.restaurant_city = city
         FoodModule.Food.restaurant_area = area 
         
+        from functionality import ViewFunctions
         #Calling Module 3
         print("Calling Module 3")
         ViewFunctions.view_category()
+        
     except CustomException2.Invalidselectname as e:
         print(e)
     except Exception as e:

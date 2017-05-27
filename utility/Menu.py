@@ -1,6 +1,6 @@
 
-# from functionality import ViewFunctions
-from functionality import ViewFunctions,DisplayDetails,Registration,filtersearch
+from functionality import ViewFunctions,DisplayDetails,Registration,filtersearch,ViewFunctionsBilling
+
 
 '''
 This module displays a menu to the user.
@@ -48,7 +48,7 @@ while(end==False):
         if(int(option)==4):
             print("Billing")
             # Calling Module 4 Function classes Functions
-            #ViewFunctions.Billing()
+            ViewFunctionsBilling.start_billing()
             print("/./////////////................////////////////////")
             print("Back from the ViewFunctions.Billing()")
             

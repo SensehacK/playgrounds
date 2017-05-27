@@ -6,6 +6,7 @@ Created on Mar 15, 2017
 from database import ViewDB,searchdb
 from exceptions.CustomException2 import InvalidCategoryException, InvalidCatItemsException , Validate_item_present , Validate_item_available
 from exceptions import CustomException2
+from classes import FoodModule
 
 def validate_view_category(restaurant_type): 
 #     print("///////////////////validate_view_category////////////////////")
@@ -15,6 +16,7 @@ def validate_view_category(restaurant_type):
     list_of_restaurant_categories=ViewDB.get_restaurant_categories(restaurant_type)
     if(len(list_of_restaurant_categories)==0):
         #print("Raising Exception")
+        FoodModule.Food.restaurant_name = None
         raise InvalidCategoryException()
     
     return list_of_restaurant_categories
@@ -199,3 +201,11 @@ def validate_hotel_name(city,area,restaurant_name):
     if(len(list_of_search_categories)==0):
         raise CustomException2.Invalidfilter()
     return list_of_search_categories
+
+
+def validate_highest_rated(): 
+    list_of_search_categories=searchdb.search_highest_rated()
+    if(len(list_of_search_categories)==0):
+        raise CustomException2.Invalidfilter()
+    return list_of_search_categories
+

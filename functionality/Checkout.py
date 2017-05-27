@@ -6,6 +6,8 @@ Created on Mar 15, 2017
 
 from classes import FoodModule
 from utility import DBConnectivity
+from functionality import ViewFunctionsBilling
+#from functionality.Registration import is_registered_user
 
 def checkout(username):
     print("*********************************************")
@@ -56,7 +58,12 @@ def checkout_Yes(username):
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
         print(index , " \t \t " ,value)
-        
+    is_registered_user_flag = FoodModule.Food.is_registered_user
+    
+    if is_registered_user_flag == False :
+        print("Guest User Logging in")
+        FoodModule.Food.registered_user = 'Guest'
+    
     try:
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
@@ -68,7 +75,7 @@ def checkout_Yes(username):
         
         for index , value in FoodModule.Food.cart_dict.items() :
             cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
-
+            
     finally :
         '''
         Remove the print statement
@@ -81,6 +88,7 @@ def checkout_Yes(username):
     '''
     #Call Module 4 Billing
     '''
+    ViewFunctionsBilling.start_billing()
     
 def checkout_Cancel(username):
     #print("checkout_Cancel")

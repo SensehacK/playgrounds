@@ -5,7 +5,7 @@ Created on Mar 17, 2017
 '''
 
 from utility import DBConnectivity
-
+from validations import Validate
 
 def display_details():
     print("*********************************************")
@@ -53,7 +53,17 @@ def display_details_choice():
 def display_most_rated_hotel():
     
     print("In Function def display_most_rated_hotel():")
-    pass
+    list_of_restaurants=Validate.validate_highest_rated()
+    print("resturantname","\ttype of food","\tlikes" ,"\tdislikes","\trating")
+    for select in list_of_restaurants:
+        print(select.get_restaurantname(),"\t",select.get_type_of_food(),"\t",select.get_likes(),"\t",select.get_dislikes(),"\t",select.get_rating())
+    print()
+
+    
+    
+    
+    
+    
 
     
 

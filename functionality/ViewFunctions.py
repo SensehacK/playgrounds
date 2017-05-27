@@ -43,7 +43,7 @@ def view_category():
             
         else :
             
-            
+            print("Validation part as the Restaurant was earlier present")
             #Calling Validate Function
             validate_restaurant_name(restaurant_present)
             
