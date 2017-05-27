@@ -444,7 +444,33 @@ def search_highest_rated():
     
     finally:
         cur.close()
-        con.close()        
+        con.close()  
+        
+def city_wise_highest_booked(city):
+    try:
+        con=DBConnectivity.create_connection()
+        cur=DBConnectivity.create_cursor(con)
+        list_of_restaurants=[]
+        
+        cur.execute("select t.restaurantname, t.city, t.area, t.rating from restaurants t WHERE T.CITY =:category AND t.rating in(select max(u.rating) from restaurants u where u.city =:category group by u.city)",{"category":city})
+        
+        for restaurantname,city,area,rating in cur:
+            
+                select=Select()
+                select.set_restaurantname(restaurantname)
+                select.set_city(city)
+                select.set_area(area)
+                
+                select.set_rating(rating)
+            
+                list_of_restaurants.append(select)   
+        return list_of_restaurants
+    
+    finally:
+       cur.close()
+       con.close()  
+        
+              
         
                        
                

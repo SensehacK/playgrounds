@@ -27,8 +27,8 @@ def view_category():
 #         category_item_name = ""
 
         restaurant_present = FoodModule.Food.restaurant_name
-        print("restaurant_present")
-        print(restaurant_present)
+#         print("restaurant_present")
+#         print(restaurant_present)
         if restaurant_present == None :
             restaurant=input("Enter a Restaurant Name Direct Guest: ")
             print()

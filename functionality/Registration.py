@@ -112,75 +112,74 @@ def register():
 #         is_registered_user = True
         
         username = input("Enter the username:")
-        
-        if Login.check_username(username) == True:
-            print("First do the registration")
-            register()
-
         if All_validations.validate(username) != False:
-            password = input("Enter the password:")
-#             if All_validations.validate_existing_password(username,password):
-            if ViewDB.login(username,password):
-                city = ViewDB.login(username,password).get_city()
-                area = ViewDB.login(username,password).get_area()
-                print(city)
-                print(area)
-                #Storing Global
-                FoodModule.Food.registered_user = username
-                FoodModule.Food.is_registered_user = True
-                
-                Restaurants.restaurants(city,area)
-            else:
-                input1 = input("Reenter password or Forgot password? (R/F)")
-                if input1 == 'R':
-                    print("Reenter password")
-                    i=0
-                    while(i<3):
-                        username = input("Enter the username:")
-                        password = input("Enter the password:")
-                        if All_validations.validate_password(password) == True:
-                            print("please wait while you are redirected")
-                            city = ViewDB.login(username,password).get_city()
-                            area = ViewDB.login(username,password).get_area()
-                            
-                            #Storing Global
-                            FoodModule.Food.registered_user = username
-                            
-                            print(city)
-                            print(area)
-                            #Calling Module 2
-                            Restaurants.restaurants(city,area)
-                        i += 1
-                    print("You have exceeded the number of attempts, please try resetting your password")
-                    register()
-                elif input1 == 'F':
-                    flag = False
-                    print("Forgot password")
-                    question = ViewDB.check_question(username).get_question()
-                    print(question[0])
-                    answer = input("Enter the answer:")
-                    ans = ViewDB.check_answer(username).get_answer()
-                    print(answer)
-                    print(ans)
-                    output_ans = ans[0]
-                    print(output_ans)
-                    if answer == output_ans:
-                        print("your answer is right")
-                        if ViewDB.security_question(username, answer):
-                            print("inside the security question")
-                            flag = True
-                        else:
-                            flag = False
-                    if flag == False:
-                        print("your answer is wrong")
+            if Login.check_username(username) == True:
+                print("First do the registration")
+                register()
+    
+            if All_validations.validate(username) != False:
+                password = input("Enter the password:")
+    #             if All_validations.validate_existing_password(username,password):
+                if ViewDB.login(username,password):
+                    city = ViewDB.login(username,password).get_city()
+                    area = ViewDB.login(username,password).get_area()
+                    #Storing Global
+                    FoodModule.Food.registered_user = username
+                    FoodModule.Food.is_registered_user = True
+                    
+                    Restaurants.restaurants(city,area)
+                else:
+                    input1 = input("Reenter password or Forgot password? (R/F)")
+                    if input1 == 'R':
+                        print("Reenter password")
+                        i=0
+                        while(i<3):
+                            username = input("Enter the username:")
+                            password = input("Enter the password:")
+                            if All_validations.validate_password(password) == True:
+                                print("please wait while you are redirected")
+                                city = ViewDB.login(username,password).get_city()
+                                area = ViewDB.login(username,password).get_area()
+                                
+                                #Storing Global
+                                FoodModule.Food.registered_user = username
+                                
+                                
+                                #Calling Module 2
+                                Restaurants.restaurants(city,area)
+                            i += 1
+                        print("You have exceeded the number of attempts, please try resetting your password")
                         register()
-                          
-                    if flag == True:
-                        if correct_password(username) == True:
-                            relogin()
-                    if correct_password(username) == False:
-                        correct_password(username)
-
+                    elif input1 == 'F':
+                        flag = False
+                        print("Forgot password")
+                        question = ViewDB.check_question(username).get_question()
+                        print(question[0])
+                        answer = input("Enter the answer:")
+                        ans = ViewDB.check_answer(username).get_answer()
+                        print(answer)
+                        print(ans)
+                        output_ans = ans[0]
+                        print(output_ans)
+                        if answer == output_ans:
+                            print("your answer is right")
+                            if ViewDB.security_question(username, answer):
+                                print("inside the security question")
+                                flag = True
+                            else:
+                                flag = False
+                        if flag == False:
+                            print("your answer is wrong")
+                            register()
+                              
+                        if flag == True:
+                            if correct_password(username) == True:
+                                relogin()
+                        if correct_password(username) == False:
+                            correct_password(username)
+    
+            else:
+                register()
         else:
             register()
 

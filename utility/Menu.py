@@ -26,31 +26,22 @@ while(end==False):
             print("Registration")
             # Calling Module 1 Function classes Functions
             Registration.register()
-            print("/./////////////................////////////////////")
-            print("Back from the Registration.register()")
            
         if(int(option)==2):
             print("Search Restaurant")
             # Calling Module 2 Function classes Functions
             filtersearch.search_as_guest()
-            print("/./////////////................////////////////////")
-            print("Back from the filtersearch.search_as_guest()")
             
             
         if(int(option)==3):
             print("Item Search")
             # Calling Module 3 Function classes Functions
             ViewFunctions.view_category()
-            print("/./////////////................////////////////////")
-            print("Back from the ViewFunctions.view_category()")
-            
             
         if(int(option)==4):
             print("Billing")
             # Calling Module 4 Function classes Functions
             ViewFunctionsBilling.start_billing()
-            print("/./////////////................////////////////////")
-            print("Back from the ViewFunctions.Billing()")
             
         if(int(option)==5):
             print("Display Details")

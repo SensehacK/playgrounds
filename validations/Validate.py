@@ -23,8 +23,6 @@ def validate_view_category(restaurant_type):
 
 
 def validate_view_category_items(category,restaurant):
-#     print("///////////////////validate_view_category_items////////////////////")
-#     print("In function validate_view_category_items") 
     
     list_of_restaurant_categories_items=ViewDB.get_categories_fooditems(restaurant,category)
     if(len(list_of_restaurant_categories_items)==0):
@@ -33,10 +31,7 @@ def validate_view_category_items(category,restaurant):
     return list_of_restaurant_categories_items
 
 def validate_item_present(category_items,restaurant_name):
-#     print("///////////////////validate_item_present////////////////////")
-#     print("In function validate_item_present")
-#     print("In validate function class  /validate_item_present")
-    
+
     list_of_restaurant_categories=ViewDB.get_selected_food_items_present(category_items,restaurant_name)
     if(len(list_of_restaurant_categories)==0):
         #print("Raising Exception")
@@ -46,16 +41,9 @@ def validate_item_present(category_items,restaurant_name):
 
 
 def validate_item_available(category_items,restaurant_name):
-#     print("///////////////////validate_item_available////////////////////")
-#     print("In function validate_item_available")
-#     print("In validate function class  /Validate_item_available")
-#     print("len(category_items)")
-#     print(len(category_items))
-        
+
     list_of_item_available=ViewDB.get_food_items_availability(category_items,restaurant_name)
-#     print("list_of_item_available")
-#     print(list_of_item_available)
-    
+
     if(len(list_of_item_available)==0):
         print("No Rows Returned for that selected items")
         return False
@@ -66,7 +54,6 @@ def validate_item_available(category_items,restaurant_name):
             return False
         
         elif 'NA' in list_of_item_available :
-            #print("Raising Exception")
             raise Validate_item_available()
             #return False
         
@@ -207,4 +194,11 @@ def validate_highest_rated():
     if(len(list_of_search_categories)==0):
         raise CustomException2.Invalidfilter()
     return list_of_search_categories
+
+def validate_city_wise_highest_booked(city): 
+    list_of_search_categories=searchdb.city_wise_highest_booked(city)
+    if(len(list_of_search_categories)==0):
+        raise CustomException2.Invalidfilter()
+    return list_of_search_categories
+
 

@@ -44,8 +44,7 @@ def validate_email(emailid):
 
 def validate_existing_password(username,password):
     try:
-        print(ViewDB.existing_password(username,password))
-        print(ViewDB.existing_password(username,password)[0])
+        
         if password != ViewDB.existing_password(username,password)[0]:
             return True
         else:
@@ -59,7 +58,6 @@ def validate_existing_password(username,password):
 def validate_password(password):
     try:
         if (re.search(r'[A-Za-z]', password)!=None and re.search(r'\!|\@|\#|\$|\%|\^|\&|\*',password)!=None and re.search(r'\w\d', password)!=None and len(password)>=8):
-            print(password)
             return True
         else:
             raise InvalidPasswordException()

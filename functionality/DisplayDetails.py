@@ -97,5 +97,12 @@ def display_most_ordered_transactions_user():
 
 def display_highest_booked_hotel_by_city():
     print("In Function display_highest_booked_hotel_by_city")
-    pass
+    city1=input("Enter city name:")
+    city=city1.upper()
+    list_of_restaurants=Validate.validate_city_wise_highest_booked(city)
+    print("resturantname","\t","city","\t","area","\t","rating")
+    for select in list_of_restaurants:
+        print(select.get_restaurantname(),"\t",select.get_city(),"\t",select.get_area(),"\t",select.get_rating())
+    print()
+
     
