@@ -45,7 +45,7 @@ def validate_item_available(restaurant_type):
         raise Validate_item_available()
         
     else :
-        print("In validate function class  /Validate_item_available")
+        print("All Available validate function class  /Validate_item_available")
         return True
         
     

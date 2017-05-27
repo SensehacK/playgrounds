@@ -274,6 +274,8 @@ def view_category_items(category):
         '''
         Handle all the exceptions that can occur
         '''   
+        print()
+        
     except InvalidCategoryException as e:
         print(e)
         
@@ -281,9 +283,13 @@ def view_category_items(category):
         print(e)
         
     except Exception as e:
-        print("Sorry. Some system error occurred")
+        print("Sorry. Some system error occurreded in View functions")
         print(e)
-    print()
+        
+    
+    finally :
+        print("def view_category_items FINALLY ENDS")
+    
     
 
 def enter_food_items():
@@ -322,23 +328,6 @@ def enter_food_items():
         print("Finally")
     
     
-def enter_food_quantity():
-    global category_items
-    global category_items_quantity
-    
-    quantity_req = input("Enter a  quantity required : ")
-        #Splitting the category with respect to multiple items selected
-    category_items_quantity = quantity_req.split(',')
-    
-    
-    for category_index , quantity_item in zip(category_items , category_items_quantity) :
-        print("category_index , quantity_item")
-        print(category_index ," ", quantity_item)
-        FoodModule.Food.cart_dict[category_index] = quantity_item
-    
-    print()
-    
-    
 def availability_view(category_items): 
     
     '''
@@ -346,7 +335,7 @@ def availability_view(category_items):
     '''
     
     print("In function def availability_view(category_items): ")
-    
+    food_available = False
     try :
         food_available = Validate.validate_item_available(category_items)
     
@@ -362,4 +351,22 @@ def availability_view(category_items):
     print("food_available")
     print(food_available)
     
-    #select availability from fooditem where foodname in ( 'Fish' , 'Egg' , 'Vegetarian' );
+        
+def enter_food_quantity():
+    global category_items
+    global category_items_quantity
+    
+    quantity_req = input("Enter a  quantity required : ")
+        #Splitting the category with respect to multiple items selected
+    category_items_quantity = quantity_req.split(',')
+    
+    print("category_index , quantity_item")
+    for category_index , quantity_item in zip(category_items , category_items_quantity) :
+        
+        print(category_index ," ", quantity_item)
+        FoodModule.Food.cart_dict[category_index] = quantity_item
+    
+    print("def enter_food_quantity() ENDS")
+    
+
+
