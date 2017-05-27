@@ -173,6 +173,7 @@ def view_category_items(category):
         Calling Class Checkout for further processing
          
         '''
+        
         username = FoodModule.Food.registered_user
         Checkout.checkout(username)
         

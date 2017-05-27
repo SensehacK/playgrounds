@@ -1,6 +1,6 @@
 
 # from functionality import ViewFunctions
-from functionality import ViewFunctions
+from functionality import ViewFunctions,DisplayDetails
 
 '''
 This module displays a menu to the user.
@@ -40,6 +40,7 @@ while(end==False):
             
         if(int(option)==5):
             print("Display Details")
+            DisplayDetails.display_details()
             
         if(int(option)==6):
             print("Thank you!")
