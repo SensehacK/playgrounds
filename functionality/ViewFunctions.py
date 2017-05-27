@@ -10,9 +10,10 @@ from functionality import Checkout
 
 def view_category():
     try:
-        restaurant=input("Enter a category: ")
+        restaurant=input("Enter a Restaurant Name: ")
         print()
-        
+        list_numbers = []
+       
         '''
         Validate the user input
         '''
@@ -21,63 +22,100 @@ def view_category():
         '''
         Print the details
         '''
-        for index , category in list_of_category:
-            print(index ," ", category)
-            
+        
+        
+        print()
+        length_categories = len(list_of_category)
+        print("Length of Categories " , length_categories)
+        print()
+        print("Printing list _ numbers auto generated for easy linking of numbers")
+        for i in range(1,length_categories+1) :
+            list_numbers.append(i)
+    
+        # Printing index numbers
+#         print(list_numbers)
+        
+        print("After Validation now printing in for loop")
+        print()
+        print("Using Zip Functionality for zipping two lists")
+        #Using Zip Functionality for zipping two lists
+        for index , category in zip(list_numbers,list_of_category) :
+            print("Index ","Category")
+            print()
+            print(index,category)
+            print()
+        
+        
+        # Duplicate printing of categories again
+#         for category in list_of_category :
+#             print(category)
+           
         print()   
         
         
         
-        choice=input("Please Select The Category. Enter Corresponding Number ")
+        choice=input("Please Select The Category, Enter Corresponding Number ")
         
         if(choice=="1"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 1")
+            
+            category_item=input("Enter the Category ID")
+            
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         elif(choice=="2"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 2")
+            category_item=input("Enter the Category ID")
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         elif(choice=="3"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 3")
+            category_item=input("Enter the Category ID")
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         
         elif(choice=="4"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 4")
+            category_item=input("Enter the Category ID")
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         
         elif(choice=="5"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 5")
+            category_item=input("Enter the Category ID")
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         
         elif(choice=="6"):
-            category_id=input("Enter the Category ID")
             print("Choice Selected = 6")
+            category_item=input("Enter the Category ID")
+            
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
             
-            
-        Checkout.checkout(category_id)
+        view_category_items(category_item)    
+        
+        #Temporary hardcoding for easy debugging
+        username = "Kautilya"
+        
+        Checkout.checkout(username)
             
         '''
         Handle all the exceptions that can occur
@@ -107,71 +145,37 @@ def view_category_items(category):
             print(product.get_product_id()," ",product.get_product_name()," ",product.get_price())
         print()  
         
+        
+        # Creating list for taking multiple input from user for both Food items & Quantity required
+        category_items = []
+        category_items_quantity = []
+        
+        
         #Getting valid item from the displayed items for the selected category
         item_selected=input("Enter a Items for order: ")
         print()
         
-        category_items = []
-        category_items_quantity = []
+        #Splitting the item_selected with respect to multiple items selected
+        category_items = item_selected.split(',')
         
-        #Splitting the category with respect to multiple items selected
-        category_items = category.split(',')
+        #printing the list of multi selects or single selects using split
+        print(category_items)
+        print()
         
-        
-        quantity_req =input("Enter a  quantity required : ")
+        quantity_req = input("Enter a  quantity required : ")
         #Splitting the category with respect to multiple items selected
         category_items_quantity = quantity_req.split(',')
         
+        cart_dict = {}
         
-        for index , category in zip(category_items , list_of_category_items) :
-            print(index ," ", category)
+        for category_index , quantity_item in zip(category_items , category_items_quantity) :
+            print("category_index , quantity_item")
+            print(category_index ," ", quantity_item)
+            cart_dict[category_index] = quantity_item
             
         print()   
-        
-        
-        
-        choice=input("Please Select The Category. Enter Corresponding Number ")
-        if(choice=="1"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        elif(choice=="2"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        elif(choice=="3"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        
-        elif(choice=="4"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        
-        elif(choice=="5"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        
-        elif(choice=="6"):
-            category_id=input("Enter the Category ID")
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-            
-            
+       
+        category_id = 
         Checkout.checkout(category_id)
             
         '''

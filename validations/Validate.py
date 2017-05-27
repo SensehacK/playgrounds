@@ -10,8 +10,9 @@ from exceptions.CustomException2 import InvalidCategoryException, InvalidCatItem
 def validate_view_category(restaurant_type): 
     list_of_restaurant_categories=ViewDB.get_restaurant_categories(restaurant_type)
     if(len(list_of_restaurant_categories)==0):
+        print("Raising Exception")
         raise InvalidCategoryException()
-    
+    print("In validate function class  /validate_view_category")
     return list_of_restaurant_categories
 
 

@@ -30,8 +30,8 @@ while(end==False):
         if(int(option)==3):
             print("Item Search")
             # Calling Module 3 Function classes Functions
-            #ViewFunctions
             ViewFunctions.view_category()
+            #ViewFunctions.view_category_items(category)
         if(int(option)==4):
             print("Billing")
             

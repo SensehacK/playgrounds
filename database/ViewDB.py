@@ -11,11 +11,16 @@ def get_restaurant_categories(restaurant_name) :
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_restaurants_categories=[]
+        
+        print("In function /get_restaurant_categories")
+        print("executing the query for categories")
         cur.execute("select unique category_name from fooditem where restaurant_name=:category",{"category":restaurant_name})
         
+        print("Printing the tupples from query cursor directly")
         for category in cur :
             print(category)
             list_of_restaurants_categories.append(category)
+        
         
 #         for fcid,categoryName,restaurant_type in cur:
 #             '''
@@ -33,7 +38,9 @@ def get_restaurant_categories(restaurant_name) :
 #             list_of_restaurants_categories.append(ItemModule3)
 #             
 #         return list_of_restaurants_categories
-    
+        
+        
+        return list_of_restaurants_categories
     finally :
         cur.close()
         con.close()
