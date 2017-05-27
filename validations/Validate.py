@@ -111,8 +111,11 @@ def validate_search_as_rating(city,area,rating_lower,rating_upper):
 def validate_search_as_likes(city,area): 
     list_of_search_categories=searchdb.search_as_likes(city,area)
     if(len(list_of_search_categories)==0):
+        print("noooooooo")
         raise CustomException2.Invalidfilter()
- 
+    return list_of_search_categories
+    
+    
 def validate_search_as_dislikes(city,area): 
     list_of_search_categories=searchdb.search_as_dislikes(city,area)
     if(len(list_of_search_categories)==0):
