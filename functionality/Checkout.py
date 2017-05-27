@@ -64,23 +64,64 @@ def checkout_Yes(username):
         print("Guest User Logging in")
         FoodModule.Food.registered_user = 'Guest'
     
+    
+    
     try:
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         username = FoodModule.Food.registered_user
         '''
-        Example Query to be executed by using bind variables
+        SQL statement which is to be executed using bind variables
         #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
         '''
-        
-        for index , value in FoodModule.Food.cart_dict.items() :
-            cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
+        is_cart_saved = FoodModule.Food.is_cart_saved
+        print(username)
+        print("is_cart_saved")
+        print(is_cart_saved)
+        if is_cart_saved :
+            print("In  if is_cart_saved  ")
             
+            cur.execute("delete from checkoutcart where username =:user_n",{"user_n": username})
+            
+            FoodModule.Food.is_cart_saved = False
+
+        if FoodModule.Food.is_cart_saved == False :
+            print("In  if is_cart_saved  == False ")
+            for index , value in FoodModule.Food.cart_dict.items() :
+                cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
+            
+            #Saving the flag for Direct Module 4 execution that The cart is been saved once for this registered user
+            FoodModule.Food.is_cart_saved = True
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#     try:
+#         con=DBConnectivity.create_connection()
+#         cur=DBConnectivity.create_cursor(con)
+#         username = FoodModule.Food.registered_user
+#         '''
+#         Example Query to be executed by using bind variables
+#         #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
+#         '''
+#         
+#         for index , value in FoodModule.Food.cart_dict.items() :
+#             cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
+#             
     finally :
         '''
         Remove the print statement
         '''
         print("Closing the cursor & connections in def checkout_Yes(username):")
+        
+        FoodModule.Food.cart_dict.clear()
         cur.close()
         con.commit()
         con.close()
@@ -103,7 +144,7 @@ def checkout_Cancel(username):
     
     #Deleting selected item from Dictionary
     itempop = FoodModule.Food.cart_dict.pop(food_name)
-    print("Item popped " , itempop)
+    print("Item popped :" , itempop)
     
     #Dictionary
     print("FoodName  \t Quantity")
@@ -130,7 +171,7 @@ def checkout_Save(username):
         username = FoodModule.Food.registered_user
         '''
         SQL statement which is to be executed using bind variables
-        #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
+        #insert into checkoutcart (username ,foodname , quantity) values ('Kautilya','Masala', 200);
         '''
         print(username)
         print("is_cart_saved")
@@ -153,6 +194,7 @@ def checkout_Save(username):
     finally :
         #print("Closing the cursor & connections in def checkout_Yes(username):")
         print("Item Saved Successfully!!!")
+        FoodModule.Food.cart_dict.clear()
         cur.close()
         con.commit()
         con.close()

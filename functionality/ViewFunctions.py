@@ -20,9 +20,6 @@ list_numbers = []
 
 def view_category():
     
-    
-    
-    
     try:
         global category_item_name
         global list_of_category
@@ -35,11 +32,13 @@ def view_category():
         if restaurant_present == None :
             restaurant=input("Enter a Restaurant Name Direct Guest: ")
             print()
-        
+            restaurant_upper = restaurant.upper()
             #list_of_category_str = []
-            FoodModule.Food.restaurant_name = restaurant
+            FoodModule.Food.restaurant_name = restaurant_upper
+            
+            print(FoodModule.Food.restaurant_name)
             #Calling Validate Function
-            validate_restaurant_name(restaurant)
+            validate_restaurant_name(restaurant_upper)
             
         else :
             
@@ -72,7 +71,7 @@ def view_category():
         category_item_name = select_category_choice()
 
         print()
-        print(category_item_name)
+        #print(category_item_name)
         #Calling def view_category_items(category): with parameter
         view_category_items(category_item_name)    
         
@@ -111,13 +110,14 @@ def select_category_choice():
     global list_of_category
     global list_numbers
     
-    choice=input("Please Select The Category with its Corresponding Number ")
+    choice=input("Please Select The Category with its Corresponding Number :")
     v_choice = Validate.validate_input_is_decimal(choice)
-    print(v_choice)
-    print("len(list_of_category)")
-    print(len(list_of_category))
+#     print(v_choice)
+#     print("len(list_of_category)")
+#     print(len(list_of_category))
+    
     if v_choice == False:
-        print("Please select from the given choices only")
+        print("Please select from the given choices only.")
         select_category_choice()
     else :
         if int(choice) <= len(list_of_category) and int(choice) >= 1 :
@@ -126,7 +126,7 @@ def select_category_choice():
                         print("Choice Selected : ", index[0],"-", index[1])
                         return index[1]
         else : 
-            print("Please select from the given choices only2")
+            print("Please select from the given choices only.")
             select_category_choice()
 
 def view_category_items(category):
@@ -150,9 +150,9 @@ def view_category_items(category):
         Print the food items details
         '''
         
-        print("FoodName \t Price \t Availability")
+        print("FoodName \t\t Price \t Availability")
         for item in list_of_category_items:
-            print(item.get_food_name(),"\t",item.get_price(),"\t",item.get_availability())
+            print(item.get_food_name(),"\t \t",item.get_price(),"\t",item.get_availability())
         print()  
         
         '''
@@ -170,9 +170,9 @@ def view_category_items(category):
         #print("Printing Dictionary")
         '''
         
-        print("FoodName  \t Quantity")
+        print("FoodName  \t\t Quantity")
         for index , value in FoodModule.Food.cart_dict.items() :
-            print(index , "  \t" ,value)
+            print(index , "  \t\t" ,value)
         
         
         '''
@@ -217,7 +217,7 @@ def enter_food_items():
     global category_items
     
     #Getting valid item from the displayed items for the selected category
-    item_selected=input("Enter a Items for order: ")
+    item_selected=input("Enter a Items for order : ")
     print()
     
     print("Item Selected from the Menu : ")
@@ -286,7 +286,7 @@ def enter_food_quantity():
     #Splitting the category with respect to multiple items selected or single item
     '''
     
-    quantity_req = input("Enter a  quantity required : ")
+    quantity_req = input("Enter a quantity required : ")
     category_items_quantity = quantity_req.split(',')
     
     #Checking values returned are digits
@@ -295,7 +295,7 @@ def enter_food_quantity():
             enter_food_quantity()
         
         elif int(number) > 25 or int(number) < 1 :
-                print("Please enter a Decimal Number in Range (1.. 25)!")
+                print("Please enter a Number in Range (1...25)!")
                 enter_food_quantity()
             
 

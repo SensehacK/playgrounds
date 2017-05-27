@@ -49,12 +49,12 @@ def validate_item_available(category_items,restaurant_name):
 #     print("///////////////////validate_item_available////////////////////")
 #     print("In function validate_item_available")
 #     print("In validate function class  /Validate_item_available")
-    print("len(category_items)")
-    print(len(category_items))
+#     print("len(category_items)")
+#     print(len(category_items))
         
     list_of_item_available=ViewDB.get_food_items_availability(category_items,restaurant_name)
-    print("list_of_item_available")
-    print(list_of_item_available)
+#     print("list_of_item_available")
+#     print(list_of_item_available)
     
     if(len(list_of_item_available)==0):
         print("No Rows Returned for that selected items")
@@ -88,10 +88,9 @@ def validate_input_is_decimal(input_number):
 
 
 
+
 ''' 
-
 Gaurav Validations
-
 
 '''
 

@@ -16,7 +16,7 @@ class Food:
     restaurant_area = None
     
     #Rohita
-    registered_user = 'Mains'
+    registered_user = 'Kautilya'
     is_registered_user = False
     
     #Kautilya

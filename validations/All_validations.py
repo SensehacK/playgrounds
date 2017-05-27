@@ -58,7 +58,7 @@ def validate_existing_password(username,password):
 
 def validate_password(password):
     try:
-        if (re.search(r'[A-Za-z]', password)!=None and re.search(r'\w\d', password)!=None and len(password)>=8):
+        if (re.search(r'[A-Za-z]', password)!=None and re.search(r'\!|\@|\#|\$|\%|\^|\&|\*',password)!=None and re.search(r'\w\d', password)!=None and len(password)>=8):
             print(password)
             return True
         else:

@@ -1,7 +1,7 @@
 '''
 Created on Mar 17, 2017
 
-@author: gaurav.sainger
+@author: rohita.gopuraju
 '''
 # If the username is already existing in the database
 class InvalidUserNameException(Exception):

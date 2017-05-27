@@ -10,7 +10,6 @@ from functionality import ViewFunctions
 from validations import Validate
 
 
- 
 def test_validate_input_is_decimal():
     output = Validate.validate_input_is_decimal(10)
        
@@ -36,7 +35,7 @@ def test_validate_input_is_decimal3():
        
 def test_validate_item_available():
     restaurant_type = ['Starters']
-    restaurant_name = 'Modern Restaurant'
+    restaurant_name = 'MODERN RESTAURANT'
     output = Validate.validate_item_available(restaurant_type,restaurant_name)
     print("output")
     print(output)
@@ -44,13 +43,9 @@ def test_validate_item_available():
 
 
 
- 
-
-  
-
 def test_validate_item_available3():
     restaurant_type = ['Starters','Chicken Tawa']
-    restaurant_name = 'Sukh Sagar'
+    restaurant_name = 'SUKH SAGAR'
     output = []
     overall_bool = False
     output.append(Validate.validate_item_available(restaurant_type,restaurant_name))
@@ -64,7 +59,7 @@ def test_validate_item_available3():
     
 def test_validate_item_available4():
     restaurant_type = ['Starters','ChickenDrama']
-    restaurant_name = 'Kamar Hotel'
+    restaurant_name = 'KAMAR HOTEL'
     output = []
     overall_bool = False
     output.append(Validate.validate_item_available(restaurant_type,restaurant_name))
@@ -78,7 +73,7 @@ def test_validate_item_available4():
      
 def test_validate_view_category_items():
     restaurant_type = 'Starters'
-    restaurant_name = 'Kamar Hotel'
+    restaurant_name = 'KAMAT HOTEL'
     count = 0
     output = Validate.validate_view_category_items(restaurant_type,restaurant_name)
     print("output validate_view_category")

@@ -1,7 +1,7 @@
 '''
 Created on Mar 17, 2017
 
-@author: gaurav.sainger
+@author: rohita.gopuraju
 '''
 print("You are not eligible for any discounts")
 def guest_user():

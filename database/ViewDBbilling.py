@@ -14,6 +14,7 @@ def db_start_billing():
     try:
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
+        #print(this_username)
         cur.execute("delete from CheckoutCart where username = :username",{"username":this_username})
         
     finally :

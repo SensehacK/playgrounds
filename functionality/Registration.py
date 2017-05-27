@@ -1,7 +1,7 @@
 '''
 Created on Mar 17, 2017
 
-@author: gaurav.sainger
+@author: rohita.gopuraju
 '''
 from functionality import Restaurants
 from database import ViewDB
@@ -18,7 +18,7 @@ def correct_password(username):
         if input2 == input3:
             if All_validations.validate_password(input2) == True:
                 ViewDB.update_password(username,input2)
-                print("your password is resetted")
+                print("your password is reseted")
                 return True
             else:
                 print("Your password does not meet the requirements, please refill them")
@@ -74,7 +74,9 @@ def new_registration(name):
     customer.set_state(state)
     ViewDB.insert_new_user(name,email_id,mobile_number,pass_word1,question,answer,cityname,area,state)
     print("Registration successfull")
+    relogin()
     
+def relogin():
     username1 = input("Enter the username:")
     password1 = input("Enter the password:")
 #     if All_validations.validate_existing_password(name,pass_word1):
@@ -108,8 +110,9 @@ def register():
         
 #         global is_registered_user
 #         is_registered_user = True
-        FoodModule.Food.is_registered_user = True
+        
         username = input("Enter the username:")
+        
         if Login.check_username(username) == True:
             print("First do the registration")
             register()
@@ -122,6 +125,10 @@ def register():
                 area = ViewDB.login(username,password).get_area()
                 print(city)
                 print(area)
+                #Storing Global
+                FoodModule.Food.registered_user = username
+                FoodModule.Food.is_registered_user = True
+                
                 Restaurants.restaurants(city,area)
             else:
                 input1 = input("Reenter password or Forgot password? (R/F)")
@@ -170,7 +177,7 @@ def register():
                           
                     if flag == True:
                         if correct_password(username) == True:
-                            pass
+                            relogin()
                     if correct_password(username) == False:
                         correct_password(username)
 

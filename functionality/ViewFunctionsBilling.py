@@ -9,27 +9,32 @@ from validations import ValidateBilling
 
 '''0'''
 def start_billing():
-    print("Do you want to Bill, Cancel or Save for latter? (B/C/S)")
-    Billing.start_billing_ans=input()
-    start_billing_ans = Billing.start_billing_ans
-    if start_billing_ans.upper() == "B":
-        check_for_empty()
-    elif start_billing_ans.upper() == "S":
-        print("Your data has been saved in the cart. Thank you and come back soon!")
-    elif start_billing_ans.upper() == "C":
-        ViewDBbilling.db_start_billing()
-        print("Your data has been deleted. Thank you and come back soon!")
+    check=check_for_empty()
+    if check == 0:
+        print("Your cart is empty.!")
     else:
-        print("You have entered an invalid entry. Kindly chose again.")
-        start_billing()
+        print("Do you want to Bill, Cancel or Save for later? (B/C/S) :")
+        Billing.start_billing_ans=input()
+        start_billing_ans = Billing.start_billing_ans
+        if start_billing_ans.upper() == "B":
+            fetching_chosen_restaurant()
+            check_for_empty()
+        elif start_billing_ans.upper() == "S":
+            print("Your data has been saved in the cart. Thank you and come back soon!")
+        elif start_billing_ans.upper() == "C":
+            ViewDBbilling.db_start_billing()
+            print("Your data has been deleted. Thank you and come back soon!")
+        else:
+            print("You have entered an invalid entry. Kindly chose again.")
+            start_billing()
         
 '''0.5'''
 def check_for_empty():
     check = ViewDBbilling.db_check_for_empty()
     if check == 0:
-        print("Your cart is empty.!")
+        return 0
     else:
-        fetching_chosen_restaurant()
+        return 1
     
 '''1'''
 def fetching_chosen_restaurant():

@@ -1,8 +1,9 @@
 '''
 Created on Mar 17, 2017
 
-@author: gaurav.sainger
+@author: rohita.gopuraju
 '''
+
 class Customer():
     def __init__(self):
         self.__username=None
