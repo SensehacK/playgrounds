@@ -8,6 +8,12 @@ Created on Mar 15, 2017
 This file has all the custom exceptions needed for the project
 '''
 
+'''
+Exceptions Module 3
+
+This file has all the custom exceptions needed for the project Module 3
+
+'''
 class InvalidCategoryException(Exception):
     def __init__(self):
         super().__init__("The category is invalid")
@@ -24,3 +30,33 @@ class Validate_item_present(Exception):
 class Validate_item_available(Exception):
     def __init__(self):
         super().__init__("Selected item not Available!!! Please Select a different item")
+
+
+
+
+'''
+Gaurav Exceptions Module 2
+
+This file has all the custom exceptions needed for the project Module 2
+
+'''
+class Invalidcityareaname(Exception):
+    def __init__(self):
+        super().__init__("NO Hotel matched with your city and area")
+        
+class Invalidfilter(Exception):
+    def __init__(self):
+        super().__init__("opps!!! no match ")  
+
+class Invalidselectname(Exception):
+    def __init__(self):
+        super().__init__("Name not match with the hotel list")         
+              
+#         
+# class InvalidCategoryException(Exception):
+#     def __init__(self):
+#         super().__init__("The category is invalid")
+#         
+# class InvalidCatItemsException(Exception):
+#     def __init__(self):
+#         super().__init__("The category items is invalid")

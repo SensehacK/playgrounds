@@ -1,6 +1,6 @@
 
 # from functionality import ViewFunctions
-from functionality import ViewFunctions,DisplayDetails
+from functionality import ViewFunctions,DisplayDetails,Registration,filtersearch
 
 '''
 This module displays a menu to the user.
@@ -22,10 +22,20 @@ while(end==False):
     option=input()
     if(option.isdigit() and (int(option)>=1 and int(option)<=6)):
         if(int(option)==1):
+            
             print("Registration")
+            # Calling Module 1 Function classes Functions
+            Registration.register()
+            print("/./////////////................////////////////////")
+            print("Back from the Registration.register()")
            
         if(int(option)==2):
             print("Search Restaurant")
+            # Calling Module 2 Function classes Functions
+            filtersearch.search_as_guest()
+            print("/./////////////................////////////////////")
+            print("Back from the filtersearch.search_as_guest()")
+            
             
         if(int(option)==3):
             print("Item Search")
@@ -37,6 +47,10 @@ while(end==False):
             
         if(int(option)==4):
             print("Billing")
+            # Calling Module 4 Function classes Functions
+            #ViewFunctions.Billing()
+            print("/./////////////................////////////////////")
+            print("Back from the ViewFunctions.Billing()")
             
         if(int(option)==5):
             print("Display Details")

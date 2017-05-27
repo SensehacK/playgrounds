@@ -19,19 +19,37 @@ list_of_category = []
 list_numbers = []
 
 def view_category():
+    
+    
+    
+    
     try:
         global category_item_name
         global list_of_category
         global list_numbers
 #         category_item_name = ""
-        restaurant=input("Enter a Restaurant Name: ")
-        print()
+
+        restaurant_present = FoodModule.Food.restaurant_name
+        print("restaurant_present")
+        print(restaurant_present)
+        if restaurant_present == None :
+            restaurant=input("Enter a Restaurant Name Direct Guest: ")
+            print()
         
-        #list_of_category_str = []
-        FoodModule.Food.restaurant_name = restaurant
+            #list_of_category_str = []
+            FoodModule.Food.restaurant_name = restaurant
+            #Calling Validate Function
+            validate_restaurant_name(restaurant)
+            
+        else :
+            
+            
+            #Calling Validate Function
+            validate_restaurant_name(restaurant_present)
+            
         
-        #Calling Validate Function
-        validate_restaurant_name(restaurant)
+        
+        
         
 #         '''
 #         Validate the user input
