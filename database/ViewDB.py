@@ -41,7 +41,7 @@ def get_categories_fooditems(restaurant_name , category_name) :
         list_of_restaurants_fooditems=[]
         
         cur.execute("select foodname , price , availability from fooditem where restaurant_name =:restaurant_n and category_name =:category_n",{"restaurant_n":restaurant_name, "category_n":category_name })
-
+        
         #print("After execute")
         for  foodName, price, availability in cur:
             
@@ -66,21 +66,21 @@ def get_categories_fooditems(restaurant_name , category_name) :
         con.close()
         
         
-def get_food_items_availability(selected_food_items) :
+def get_food_items_availability(selected_food_items,restaurant_name) :
     try:
         print("//////////////////def get_food_items_availability/////////////////////")
         print()
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_food_items_availability=[]
-        restaurant_name = FoodModule.Food.restaurant_name
+        #restaurant_name = FoodModule.Food.restaurant_name
 
         for food_items in selected_food_items :
+            print(food_items)
             cur2=DBConnectivity.create_cursor(con)
             cur2.execute("select availability from fooditem where foodname =:food_n and restaurant_name =:restaurant_n" , {"food_n" :food_items, "restaurant_n" : restaurant_name})
-            
+
             for val in cur2 :
-                #print(val)
                 list_of_food_items_availability.append(val[0])
 
         
@@ -96,21 +96,22 @@ def get_food_items_availability(selected_food_items) :
         con.close()
 
 
-def get_selected_food_items_present(selected_food_items) :
+def get_selected_food_items_present(selected_food_items,restaurant_name) :
     try:
         print("//////////////////def get_selected_food_items_present/////////////////////")
         print()
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_selected_food_items_present=[]
-        restaurant_name = FoodModule.Food.restaurant_name
-        
+        #restaurant_name = FoodModule.Food.restaurant_name
+        print("restaurant_name")
+        print(restaurant_name)
         for food_items in selected_food_items :
             cur2=DBConnectivity.create_cursor(con)
             cur2.execute("select foodname from fooditem where foodname =:food_n and restaurant_name =:restaurant_n" , {"food_n" :food_items, "restaurant_n" : restaurant_name})
             
             for val in cur2 :
-                #print(val)
+                print(val)
                 list_of_selected_food_items_present.append(val[0])
 
         

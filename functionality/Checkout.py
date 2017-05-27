@@ -9,7 +9,7 @@ from utility import DBConnectivity
 
 def checkout(username):
     print("*********************************************")
-    print("         Welcome to CheckOut !! ")
+    print("         Welcome to CheckOut !!! ")
     print("*********************************************")
     
     print("Items added successfully to the Cart !!!")
@@ -19,7 +19,7 @@ def checkout(username):
     print("Items Ordered")
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , " \t " ,value)
+        print(index , " \t  \t " ,value)
         
     print()
     print("Please Select from the below menu ")
@@ -34,15 +34,15 @@ def checkout_final(username):
     print(checkout_choice)
     print()
     
-    if checkout_choice == 'Y': 
+    if checkout_choice.upper() == 'Y': 
         #print("Hello checkout_choice == 'Y'")
         checkout_Yes(username)
 
-    elif checkout_choice == 'C' :
+    elif checkout_choice.upper() == 'C' :
         #print("Hello checkout_choice == 'C'")
         checkout_Cancel(username)
     
-    elif checkout_choice == 'S' :
+    elif checkout_choice.upper() == 'S' :
         #print("Hello checkout_choice == 'S'")
         checkout_Save(username)
     else :
@@ -55,7 +55,7 @@ def checkout_Yes(username):
     #Dictionary
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , " \t " ,value)
+        print(index , " \t \t " ,value)
         
     try:
         con=DBConnectivity.create_connection()
@@ -108,7 +108,9 @@ def checkout_Cancel(username):
 def checkout_Save(username):
     #print("checkout_Save")
     print("Saving to Database Checkout Cart")
-    
+    is_cart_saved = FoodModule.Food.is_cart_saved
+    print("first _username")
+    print(username)
     #Dictionary
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
@@ -122,13 +124,24 @@ def checkout_Save(username):
         SQL statement which is to be executed using bind variables
         #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
         '''
+        print(username)
+        print("is_cart_saved")
+        print(is_cart_saved)
+        if is_cart_saved :
+            print("In  if is_cart_saved  ")
+            
+            cur.execute("delete from checkoutcart where username =:user_n",{"user_n": username})
+            
+            FoodModule.Food.is_cart_saved = False
+
+        if FoodModule.Food.is_cart_saved == False :
+            print("In  if is_cart_saved  == False ")
+            for index , value in FoodModule.Food.cart_dict.items() :
+                cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
+            
+            #Saving the flag for Direct Module 4 execution that The cart is been saved once for this registered user
+            FoodModule.Food.is_cart_saved = True
         
-        for index , value in FoodModule.Food.cart_dict.items() :
-            cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
-        
-        #Saving the flag for Direct Module 4 execution that The cart is been saved once for this registered user
-        FoodModule.Food.is_cart_saved = True
-    
     finally :
         #print("Closing the cursor & connections in def checkout_Yes(username):")
         print("Item Saved Successfully!!!")

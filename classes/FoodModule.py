@@ -16,7 +16,7 @@ class Food:
     restaurant_area = None
     
     #Rohita
-    registered_user = 'Kautilya'
+    registered_user = 'Mains'
     is_registered_user = False
     
     #Kautilya
@@ -24,6 +24,7 @@ class Food:
     product_id = None
     cart_dict = {}
     is_cart_saved = False
+
     
     #Komal 
     total_price = None

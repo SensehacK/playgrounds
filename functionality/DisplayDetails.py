@@ -9,7 +9,7 @@ from utility import DBConnectivity
 
 def display_details():
     print("*********************************************")
-    print("         Welcome to Display Details !! ")
+    print("         Welcome to Display Details !!! ")
     print("*********************************************")
     
     print()
@@ -26,29 +26,24 @@ def display_details():
     
 def display_details_choice():
     
-    dd_choice = input("Your Choice")
+    dd_choice = input("Your Choice : ")
     
-    if(dd_choice=="a"):
+    if(dd_choice.lower()=="a"):
         print("Your selected choice : a" )
         display_most_rated_hotel()
-            #Converting to int for easy manipulation
-            #category_item = int(choice)
             
-    elif(dd_choice=="b"):
+    elif(dd_choice.lower()=="b"):
         print("Your selected choice : b" )
         max_user = display_most_ordered_transactions_user()
         print("The highest transactions made by a customer is " , max_user)
-        #Converting to int for easy manipulation
-        #category_item = int(choice)
         
-    elif(dd_choice=="c"):
+    elif(dd_choice.lower()=="c"):
         print("Your selected choice : c" )
         display_highest_booked_hotel_by_city()
-        #Converting to int for easy manipulation
-        #category_item = int(choice)    
-    
+
     else:
-        print("Please enter a valid input (a,b,c)")
+        print("Please enter a valid input (a,b,c or A,B,C)")
+        #Calling back function
         display_details_choice()
     
 
@@ -57,13 +52,13 @@ def display_details_choice():
 
 def display_most_rated_hotel():
     
-    print("def display_most_rated_hotel():")
+    print("In Function def display_most_rated_hotel():")
     pass
 
     
 
 def display_most_ordered_transactions_user():
-    print("display_most_ordered_transactions_user")
+    print("In Function display_most_ordered_transactions_user")
     
     try:
         con=DBConnectivity.create_connection()
@@ -91,6 +86,6 @@ def display_most_ordered_transactions_user():
 
 
 def display_highest_booked_hotel_by_city():
-    print("display_highest_booked_hotel_by_city")
+    print("In Function display_highest_booked_hotel_by_city")
     pass
     

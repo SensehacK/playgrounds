@@ -10,97 +10,51 @@ from functionality import Checkout
 from classes import FoodModule
 from database import ViewDB
 
-#Global Variables
+#Class Global Variables
 #Creating list for taking multiple input from user for both Food items & Quantity required
 category_items = []
 category_items_quantity = []
 category_item_name = ""
-
+list_of_category = []
+list_numbers = []
 
 def view_category():
     try:
         global category_item_name
+        global list_of_category
+        global list_numbers
+#         category_item_name = ""
         restaurant=input("Enter a Restaurant Name: ")
         print()
-        list_numbers = []
+        
         #list_of_category_str = []
         FoodModule.Food.restaurant_name = restaurant
         
-        '''
-        Validate the user input
-        '''
+        #Calling Validate Function
+        validate_restaurant_name(restaurant)
         
-        list_of_category=Validate.validate_view_category(restaurant)
-        
-        length_categories = len(list_of_category)
-        
-        for i in range(1,length_categories+1) :
-            
-            list_numbers.append(i)
-        
-        #Using Zip Functionality for zipping two lists
-        print("Index ","Category")
-        for index , category in zip(list_numbers,list_of_category) :
-            print(index,"   " ,category)
-           
-        print()   
-        
-        choice=input("Please Select The Category with its Corresponding Number ")
-        
-        if(choice=="1"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice , ":" , category_item_name)
-            FoodModule.Food.category = category_item_name
+#         '''
+#         Validate the user input
+#         '''
+#         
+#         list_of_category=Validate.validate_view_category(restaurant)
+#       
+#         for i in range(1,len(list_of_category)+1) :
+#             
+#             list_numbers.append(i)
+#         
+#         #Using Zip Functionality for zipping two lists
+#         print("Index ","Category")
+#         for index , category in zip(list_numbers,list_of_category) :
+#             print(index,"   " ,category)
+#            
+#         print()   
 
-            
-        elif(choice=="2"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice , ":" , category_item_name)
-            FoodModule.Food.category = category_item_name
-            
-        elif(choice=="3"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice , ":" , category_item_name)
-            FoodModule.Food.category = category_item_name
+        #Asking for user for Category of his choice , will run till the given input is valid & return that valid input
+        category_item_name = select_category_choice()
 
-        
-        elif(choice=="4"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice , ":" , category_item_name)
-            FoodModule.Food.category = category_item_name
-
-
-        elif(choice=="5"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice , ":" , category_item_name)
-            FoodModule.Food.category = category_item_name
-            
-            
-        elif(choice=="6"):
-            #Converting to int for easy manipulation
-            category_item = int(choice)
-            #Storing the name from displayed items for specific category
-            category_item_name = list_of_category[category_item-1]
-            print("Choice Selected :" , choice ,":", category_item_name)
-            FoodModule.Food.category = category_item_name
-            
-        
         print()
+        print(category_item_name)
         #Calling def view_category_items(category): with parameter
         view_category_items(category_item_name)    
         
@@ -114,8 +68,49 @@ def view_category():
         print("Sorry. Some system error occurred")
         print(e)
     print()
+
+def validate_restaurant_name(restaurant):
+    global list_of_category
+    global list_numbers
+    '''
+    Validate the user input
+    '''
+    #Empty the list_numbers
+    del list_numbers[:]
+
+    list_of_category=Validate.validate_view_category(restaurant)
+    for i in range(1,len(list_of_category)+1) :
+        list_numbers.append(i)
     
+    #Using Zip Functionality for zipping two lists
+    print("Index ","Category")
+    for index , category in zip(list_numbers,list_of_category) :
+        print(index,"   " ,category)
+       
+    print()   
+
+def select_category_choice():
+    global list_of_category
+    global list_numbers
     
+    choice=input("Please Select The Category with its Corresponding Number ")
+    v_choice = Validate.validate_input_is_decimal(choice)
+    print(v_choice)
+    print("len(list_of_category)")
+    print(len(list_of_category))
+    if v_choice == False:
+        print("Please select from the given choices only")
+        select_category_choice()
+    else :
+        if int(choice) <= len(list_of_category) and int(choice) >= 1 :
+            for index in zip(list_numbers,list_of_category) :
+                    if int(choice) == index[0] :
+                        print("Choice Selected : ", index[0],"-", index[1])
+                        return index[1]
+        else : 
+            print("Please select from the given choices only2")
+            select_category_choice()
+
 def view_category_items(category):
     global category_items
     global category_items_quantity
@@ -202,7 +197,6 @@ def view_category_items(category):
 
 def enter_food_items():
     global category_items
-    global category_items_quantity
     
     #Getting valid item from the displayed items for the selected category
     item_selected=input("Enter a Items for order: ")
@@ -225,7 +219,8 @@ def enter_food_items():
     '''
 
     try :
-        item_selected = Validate.validate_item_present(category_items)
+        restaurant_name = FoodModule.Food.restaurant_name
+        item_selected = Validate.validate_item_present(category_items,restaurant_name)
     
     except  Validate_item_present  as e:
         print(e)
@@ -243,11 +238,13 @@ def availability_view(category_items):
     '''
         Validate the Food Items Availability input
     '''
-    
+    global category_item_name
     #print("In function def availability_view(category_items): ")
     food_available = False
+    restaurant_name = FoodModule.Food.restaurant_name
     try :
-        food_available = Validate.validate_item_available(category_items)
+        
+        food_available = Validate.validate_item_available(category_items,restaurant_name)
     
     except  Validate_item_available  as e:
         print(e)
@@ -276,16 +273,18 @@ def enter_food_quantity():
     
     #Checking values returned are digits
     for number in category_items_quantity :
-        if Validate.validate_input_is_decimal(number) == False :
+        if Validate.validate_input_is_decimal(number) == False  :
             enter_food_quantity()
-        elif int(number) > 25 and int(number)  <= 0 :
-            enter_food_quantity()
+        
+        elif int(number) > 25 or int(number) < 1 :
+                print("Please enter a Decimal Number in Range (1.. 25)!")
+                enter_food_quantity()
             
-            
-    print("Category name , Quantity")
+
+    #print("Category name , Quantity")
     for category_index , quantity_item in zip(category_items , category_items_quantity) :
         
-        print(category_index ," ", quantity_item)
+        #print(category_index ," ", quantity_item)
         FoodModule.Food.cart_dict[category_index] = quantity_item
     
     
