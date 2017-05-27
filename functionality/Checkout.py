@@ -3,6 +3,7 @@ Created on Mar 15, 2017
 
 @author: kautilya.save
 '''
+
 from classes import FoodModule
 from utility import DBConnectivity
 
@@ -15,7 +16,7 @@ def checkout(username):
     print("Items Ordered")
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , "  " ,value)
+        print(index , " \t " ,value)
         
     
     print()
@@ -23,6 +24,11 @@ def checkout(username):
     print("Please Select from the below menu ")
     print()
     
+    
+    checkout_final(username)
+
+
+def checkout_final(username):
     checkout_choice = input("Do you wish to proceed for billing or cancelling any item or Save for later ? (Y/C/S) " )
     
     print("Your Selected Choice is ")
@@ -43,38 +49,25 @@ def checkout(username):
         print("Hello checkout_choice == 'S'")
         checkout_Save(username)
         pass
-    
-    
+
 
 def checkout_Yes(username):
     print("Checkout Yes")
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , "  " ,value)
+        print(index , " \t " ,value)
         
-    #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
-    #Call Module 4 Billing
     
-    pass
+    #Call Module 4 Billing
     
     try:
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         username = FoodModule.Food.registered_user
-        print(username)
-        print(type(username))
+        #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
         for index , value in FoodModule.Food.cart_dict.items() :
             cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
-        
-        
-        #cur.execute("select unique category_name from fooditem where restaurant_name=:rest_name",{"rest_name":restaurant_name})
-        
-        '''
-        print("In function /get_restaurant_categories")
-        print("executing the query for categories")
-        print("Printing the tuples from query cursor directly")
-        '''
-    
+
     finally :
         print("Closing the cursor & connections in def checkout_Yes(username):")
         cur.close()
@@ -84,29 +77,25 @@ def checkout_Yes(username):
 def checkout_Cancel(username):
     print("checkout_Cancel")
     
-    food_name=input(print("Please select item for cancellation"))
-    username = FoodModule.Food.registered_user
     #Dictionary
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , "  " ,value)
+        print(index , "  \t" ,value)
     
-#     delete from checkoutcart where username = 'Kautilya' and foodname = 'Masala' ;    
-    try:
-        con=DBConnectivity.create_connection()
-        cur=DBConnectivity.create_cursor(con)
-        
-        for index , value in FoodModule.Food.cart_dict.items() :
-                                                #where restaurant_name =:restaurant_n and category_name =:category_n",{"restaurant_n":restaurant_name, "category_n":category_name })
-            cur.execute("delete from checkoutcart where username =:user_n and foodname =:food_n", {"user_n" : username, "food_n" : food_name})
+    food_name=input("Please select item for cancellation :")
+    username = FoodModule.Food.registered_user
 
-    finally :
-        print("Closing the cursor & connections in def checkout_Yes(username):")
-        cur.close()
-        con.commit()
-        con.close()
+    itempop = FoodModule.Food.cart_dict.pop(food_name)
+    print("Item popped " , itempop)
     
+    #Dictionary
+    print("FoodName  \t Quantity")
+    for index , value in FoodModule.Food.cart_dict.items() : 
+        print(index , "  \t" ,value)
     
+    #Calling Functions
+    checkout_final(username)
+
 def checkout_Save(username):
     print("checkout_Save")
     print("Saving to Database Checkout Cart")
@@ -114,24 +103,25 @@ def checkout_Save(username):
     #Dictionary
     print("FoodName  \t Quantity")
     for index , value in FoodModule.Food.cart_dict.items() : 
-        print(index , "  " ,value)
+        print(index , " \t " ,value)
         
-    
     try:
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         username = FoodModule.Food.registered_user
-        print(username)
-        print(type(username))
+        #insert into checkoutcart(username ,foodname , quantity) values ('Kautilya','Masala', 200);
         for index , value in FoodModule.Food.cart_dict.items() :
             cur.execute("insert into checkoutcart(username ,foodname , quantity) values (:user_n, :food_n , :qty_ord)", {"user_n" : username, "food_n" : index , "qty_ord" : value})
-
+        
+        #Saving the flag for Direct Module 4 execution that The cart is been saved once for this registered user
+        FoodModule.Food.is_cart_saved = True
     finally :
         print("Closing the cursor & connections in def checkout_Yes(username):")
+        print("Item Saved Successfully!!!")
         cur.close()
         con.commit()
         con.close()
+        
 
-
-print("Item Saved Successfully!!!")
+#print("Item Saved Successfully!!!")
     

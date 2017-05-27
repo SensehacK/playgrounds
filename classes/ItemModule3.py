@@ -6,7 +6,7 @@ Created on Mar 15, 2017
 
 
 '''
-This class represents a product
+This class represents a ItemCategories
 '''
 
 class ItemCategories:
@@ -40,7 +40,9 @@ class ItemCategories:
         self.__restaurant_Type = value
 
 
-
+'''
+This class represents a Food Item from selected category
+'''
 class CategoryItems:
     def __init__(self):
         self.__ciid=None

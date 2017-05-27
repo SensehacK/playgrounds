@@ -21,12 +21,10 @@ class Food:
     category = None
     product_id = None
     cart_dict = {}
+    is_cart_saved = False
     
-#     def default_user(self):
-#         Food.registered_user = "Kautilya"
-#         
-#         return Food.registered_user
-    
+    #Komal 
+    total_price = None
     
     def __init__(self):
         self.__product_id=None

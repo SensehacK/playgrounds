@@ -11,11 +11,10 @@ from classes import FoodModule
 from database import ViewDB
 
 #Global Variables
-# Creating list for taking multiple input from user for both Food items & Quantity required
+#Creating list for taking multiple input from user for both Food items & Quantity required
 category_items = []
 category_items_quantity = []
 category_item_name = ""
-
 
 
 def view_category():
@@ -30,12 +29,8 @@ def view_category():
         '''
         Validate the user input
         '''
-        list_of_category=Validate.validate_view_category(restaurant)
         
-#         for value in list_of_category :
-#             list_of_category_str = list_of_category_str.append(value[0])
-#         
-        #print(list_of_category)
+        list_of_category=Validate.validate_view_category(restaurant)
         
         length_categories = len(list_of_category)
         
@@ -43,34 +38,12 @@ def view_category():
             
             list_numbers.append(i)
         
-        
-        '''
-        Print the details
-        
-        #Debug Prints
-        print("Length of Categories " , length_categories)
-        print()
-        print("Printing list _ numbers auto generated for easy linking of numbers")
-        
-        #Printing index numbers / Debugging
-        print(list_numbers)
-        
-        
-        print("After Validation now printing in for loop")
-        print()
-        print("Using Zip Functionality for zipping two lists")
-        '''
-        
-
         #Using Zip Functionality for zipping two lists
         print("Index ","Category")
         for index , category in zip(list_numbers,list_of_category) :
-            
             print(index,"   " ,category)
            
         print()   
-        
-        
         
         choice=input("Please Select The Category with its Corresponding Number ")
         
@@ -81,20 +54,7 @@ def view_category():
             category_item_name = list_of_category[category_item-1]
             print("Choice Selected :" , choice , category_item_name)
             FoodModule.Food.category = category_item_name
-            
-#             #Debugging prints
-#             print("type(choice)")
-#             print(type(choice))
-#             print("Printing / Retrieving a specific category which is being selected")
-#             print(list_of_category[category_item-1])
-#             print(category_item_name)
-#             print(type(category_item_name))
-#             print(type(str(category_item_name)))
-                  
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
+
             
         elif(choice=="2"):
             #Converting to int for easy manipulation
@@ -104,11 +64,6 @@ def view_category():
             print("Choice Selected :" , choice , category_item_name)
             FoodModule.Food.category = category_item_name
             
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-            
         elif(choice=="3"):
             #Converting to int for easy manipulation
             category_item = int(choice)
@@ -116,11 +71,7 @@ def view_category():
             category_item_name = list_of_category[category_item-1]
             print("Choice Selected :" , choice , category_item_name)
             FoodModule.Food.category = category_item_name
-            
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
+
         
         elif(choice=="4"):
             #Converting to int for easy manipulation
@@ -129,12 +80,8 @@ def view_category():
             category_item_name = list_of_category[category_item-1]
             print("Choice Selected :" , choice , category_item_name)
             FoodModule.Food.category = category_item_name
-            
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        
+
+
         elif(choice=="5"):
             #Converting to int for easy manipulation
             category_item = int(choice)
@@ -143,11 +90,7 @@ def view_category():
             print("Choice Selected :" , choice , category_item_name)
             FoodModule.Food.category = category_item_name
             
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
-        
+            
         elif(choice=="6"):
             #Converting to int for easy manipulation
             category_item = int(choice)
@@ -156,17 +99,15 @@ def view_category():
             print("Choice Selected :" , choice ,":", category_item_name)
             FoodModule.Food.category = category_item_name
             
-            '''
-            Here we are invoking a dummy function and passing the data to it.
-            This dummy function has to be completed by another programmer.
-            '''
         
-        print()    
+        print()
+        #Calling def view_category_items(category): with parameter
         view_category_items(category_item_name)    
         
         '''
         Handle all the exceptions that can occur
-        '''   
+        '''
+        
     except InvalidCategoryException as e:
         print(e)
     except Exception as e:
@@ -179,23 +120,15 @@ def view_category_items(category):
     global category_items
     global category_items_quantity
     
-    try:
+    try:   
         
-        
-        '''
-        Validate the user input
-        '''
         restaurant_name = FoodModule.Food.restaurant_name
         print("Printing restaurant name accessed from FoodModule.Food.restaurant_name ")
         print(restaurant_name)
         
-        
-#         #Debugging code 
-#         print("type(category)")
-#         print(type(category))
-#         print("type(restaurant_name)")
-#         print(type(restaurant_name))
-        
+        '''
+        Validate the user input
+        '''
         list_of_category_items=Validate.validate_view_category_items(category,restaurant_name)
         
         print("After List_of_category_items=Validate.val")
@@ -209,11 +142,6 @@ def view_category_items(category):
             print(item.get_food_name(),"\t",item.get_price(),"\t",item.get_availability())
         print()  
         
-        
-#         # Creating list for taking multiple input from user for both Food items & Quantity required
-#         category_items = []
-#         category_items_quantity = []
-        
         #Calling the function defined below
         enter_food_items()
         
@@ -222,45 +150,14 @@ def view_category_items(category):
         
         #Calling the function defined below
         enter_food_quantity()
-        
-#         #Getting valid item from the displayed items for the selected category
-#         item_selected=input("Enter a Items for order: ")
-#         print()
-#         
-#         print("item_selected")
-#         print(item_selected)
-#         
-#         
-#         
-#         #Splitting the item_selected with respect to multiple items selected
-#         category_items = item_selected.split(',')
-#         
-#         #printing the list of multi selects or single selects using split
-#         print(category_items)
-#         print()
-        
-       
-        
-       
-        
-#         quantity_req = input("Enter a  quantity required : ")
-#         #Splitting the category with respect to multiple items selected
-#         category_items_quantity = quantity_req.split(',')
-#          
-#         for category_index , quantity_item in zip(category_items , category_items_quantity) :
-#             print("category_index , quantity_item")
-#             print(category_index ," ", quantity_item)
-#             FoodModule.Food.cart_dict[category_index] = quantity_item
-#         
-#         print()
-        
-        print("Printing dictionary")
+    
+        print("Printing Dictionary")
         print("FoodName  \t Quantity")
         for index , value in FoodModule.Food.cart_dict.items() :
             
             print(index , "  " ,value)
-          
         ''' WIll call them later after debugging next function '''
+        
         username = FoodModule.Food.registered_user
         Checkout.checkout(username)
         
@@ -268,9 +165,6 @@ def view_category_items(category):
 #         username = "Kautilya"
 #         
 #         Checkout.checkout(username)   
-#         username = 
-#         Checkout.checkout(category_id)
-            
         '''
         Handle all the exceptions that can occur
         '''   
@@ -283,7 +177,7 @@ def view_category_items(category):
         print(e)
         
     except Exception as e:
-        print("Sorry. Some system error occurreded in View functions")
+        print("Sorry. Some system error occurred in View functions")
         print(e)
         
     

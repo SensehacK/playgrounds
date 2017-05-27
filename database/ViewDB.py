@@ -17,11 +17,6 @@ def get_restaurant_categories(restaurant_name) :
         
         cur.execute("select unique category_name from fooditem where restaurant_name=:rest_name",{"rest_name":restaurant_name})
         
-        '''
-        print("In function /get_restaurant_categories")
-        print("executing the query for categories")
-        print("Printing the tuples from query cursor directly")
-        '''
         
         for category in cur :
             #print(category)
@@ -39,37 +34,25 @@ def get_restaurant_categories(restaurant_name) :
 
 def get_categories_fooditems(restaurant_name , category_name) :
     try:
-        print("///////////////////////////////////////")
+        print("////////////////def get_categories_fooditems///////////////////////")
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_restaurants_fooditems=[]
         
-        #Debugging prints
-#         print("Created cursors & now executing them")
-#         print(restaurant_name)
-#         print(type(category_name))
-#         print(category_name)
-
         cur.execute("select foodname , price , availability from fooditem where restaurant_name =:restaurant_n and category_name =:category_n",{"restaurant_n":restaurant_name, "category_n":category_name })
 
         print("After execute")
         for  foodName, price, availability in cur:
             
             '''
-            In this loop, we are creating a product object for every row
-            and setting the values from the row into the product object
+            In this loop, we are creating a ItemModule3 object for every row
+            and setting the values from the row into the CategoryItems object
             '''
             ItemModule3=CategoryItems()
             ItemModule3.set_food_name(foodName)
             ItemModule3.set_price(price)
             ItemModule3.set_availability(availability)
-            
-            '''
-            #Printing the items from tupples directly in  get_categories_fooditems
-            print("Printing the items from tupples directly in  get_categories_fooditems")
-            print(foodName , price, availability)
-            '''
-            
+
             '''
             Here were are adding the FoodItems to a list
             '''
@@ -84,19 +67,12 @@ def get_categories_fooditems(restaurant_name , category_name) :
         
 def get_food_items_availability(selected_food_items) :
     try:
-        print("///////////////////////////////////////")
+        print("//////////////////def get_food_items_availability/////////////////////")
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_food_items_availability=[]
         restaurant_name = FoodModule.Food.restaurant_name
-        
-        #Debugging prints
-        print("Created cursors & now executing them")
-        print(selected_food_items)
-        print(type(selected_food_items))
 
-        
-        
         for food_items in selected_food_items :
             cur2=DBConnectivity.create_cursor(con)
             cur2.execute("select availability from fooditem where foodname =:food_n and restaurant_name =:restaurant_n" , {"food_n" :food_items, "restaurant_n" : restaurant_name})
@@ -108,23 +84,10 @@ def get_food_items_availability(selected_food_items) :
         
         print("After execute")
             
-        '''
-        In this loop, we are creating a product object for every row
-        and setting the values from the row into the product object
-           
-           redundant code
-           
-           if "NA" in list_of_food_items_availability :
-            return False
-        else :
-            return True
-        '''
         
         print("list_of_food_items_availability")
         print(list_of_food_items_availability)
         return list_of_food_items_availability
-        
-        
         
 
     finally :
@@ -134,18 +97,11 @@ def get_food_items_availability(selected_food_items) :
 
 def get_selected_food_items_present(selected_food_items) :
     try:
-        print("///////////////////////////////////////")
+        print("//////////////////def get_selected_food_items_present/////////////////////")
         con=DBConnectivity.create_connection()
         cur=DBConnectivity.create_cursor(con)
         list_of_selected_food_items_present=[]
         restaurant_name = FoodModule.Food.restaurant_name
-        
-        #Debugging prints
-        print("Created cursors & now executing them")
-        print(selected_food_items)
-        print(type(selected_food_items))
-
-        
         
         for food_items in selected_food_items :
             cur2=DBConnectivity.create_cursor(con)
@@ -163,8 +119,6 @@ def get_selected_food_items_present(selected_food_items) :
         return list_of_selected_food_items_present
         
         
-        
-
     finally :
         cur.close()
         con.close()
