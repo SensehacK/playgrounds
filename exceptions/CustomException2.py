@@ -16,3 +16,11 @@ class InvalidCategoryException(Exception):
 class InvalidCatItemsException(Exception):
     def __init__(self):
         super().__init__("The category items is invalid")
+
+class Validate_item_present(Exception):
+    def __init__(self):
+        super().__init__("The selected item is Not Available")
+
+class Validate_item_available(Exception):
+    def __init__(self):
+        super().__init__("Selected item not Available!!! Please Select a different item")
