@@ -1,8 +1,7 @@
-'''
-Created on Mar 9, 2017
 
-@author: Anbarasi.Ayyannan
-'''
+# from functionality import ViewFunctions
+from functionality import ViewFunctions
+
 '''
 This module displays a menu to the user.
 '''
@@ -30,7 +29,9 @@ while(end==False):
             
         if(int(option)==3):
             print("Item Search")
-            
+            # Calling Module 3 Function classes Functions
+            #ViewFunctions
+            ViewFunctions.view_category()
         if(int(option)==4):
             print("Billing")
             

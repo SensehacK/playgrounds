@@ -19,27 +19,34 @@ def checkout(username):
     print(checkout_choice)
     
     if checkout_choice == 'Y': 
+        
         print("Hello")
+        checkout_Yes(username)
 
     elif checkout_choice == 'C' :
-        
+        checkout_Cancel(username)
         pass
     
     elif checkout_choice == 'S' :
+        checkout_Save(username)
         pass
     
     
 
 def checkout_Yes(username):
+    print("Checkout Yes")
     pass
     
 
 def checkout_Cancel(username):
+    print("checkout_Cancel")
     pass
     
     
 def checkout_Save(username):
+    print("checkout_Save")
     pass
 
-    print("Item Saved Successfully!!!")
+
+print("Item Saved Successfully!!!")
     

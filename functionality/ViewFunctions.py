@@ -32,18 +32,21 @@ def view_category():
         
         if(choice=="1"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 1")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         elif(choice=="2"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 2")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
         elif(choice=="3"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 3")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
@@ -51,6 +54,7 @@ def view_category():
         
         elif(choice=="4"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 4")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
@@ -58,6 +62,7 @@ def view_category():
         
         elif(choice=="5"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 5")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
@@ -65,6 +70,7 @@ def view_category():
         
         elif(choice=="6"):
             category_id=input("Enter the Category ID")
+            print("Choice Selected = 6")
             '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
@@ -139,7 +145,7 @@ def view_category_items(category):
             '''
         elif(choice=="3"):
             category_id=input("Enter the Category ID")
-           '''
+            '''
             Here we are invoking a dummy function and passing the data to it.
             This dummy function has to be completed by another programmer.
             '''
