@@ -8,6 +8,8 @@ This class represents a product
 '''
 
 class Food:
+    #Example for accessing & storing the global variables ( Package Name >> Class Name >> Variable Name
+    # FoodModule.Food.registered_user
     #Gaurav
     restaurant_name = None
     restaurant_city = None

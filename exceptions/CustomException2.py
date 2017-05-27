@@ -19,7 +19,7 @@ class InvalidCatItemsException(Exception):
 
 class Validate_item_present(Exception):
     def __init__(self):
-        super().__init__("The selected item is Not Available")
+        super().__init__("The selected item is Not Present in Menu , Please Re-Enter Again")
 
 class Validate_item_available(Exception):
     def __init__(self):
