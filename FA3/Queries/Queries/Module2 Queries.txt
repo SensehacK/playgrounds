@@ -1,0 +1,54 @@
+drop table Restaurants;
+
+CREATE TABLE Restaurants (
+  RId          INTEGER PRIMARY KEY, 
+  Restaurantname     VARCHAR2(40) NOT NULL,
+  City            VARCHAR2(20) NOT NULL,
+  Area      VARCHAR2(20) NOT NULL,
+  Type_of_food  VARCHAR2(20) NOT NULL,
+  Likes        INTEGER,
+  Dislikes INTEGER,
+  Rating NUMBER(2,1),
+  Door_delivery_charges INTEGER,
+  booked_no INTEGER
+);
+
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (1,'KAMAT','MYSORE','VIJAYANAGRA','N/V',1556,162,7.2,50,450);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (2,'MODERN','MYSORE','VIJAYANAGRA','V',5372,232,8.3,70,650);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (3,'ENROUTE','MYSORE','INFOSYS','N/V',76327,763,9.1,60,375);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (4,'T0NIF','MYSORE','INFOSYS','N',7363,231,8.1,50,748);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (5,'BARBEQUE','DELHI','CP','N/V',5672,982,5.2,50,482);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (6,'ARDOR','DELHI','CP','N/V',7634,876,9.3,70,692);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (7,'PARIKARMA','DELHI','ROHINI','N',7829,945,9.8,60,398);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (8,'ZEN','DELHI','CP','N/V',8932,923,7.1,50,786);
+
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (9,'AMBER','PUNE','MAGARPATTA','V',67218,873,9.1,60,376);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (10,'RABBIT','PUNE','NERU','V',72982,675,9.8,50,767);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (11,'DILLI DARBAR','DELHI','ROHINI','V',6728,463,9.1,50,786);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (12,'DILLI DARBAR','DELHI','ROHINI','V',6728,463,9.1,50,786);
+
+INSERT INTO Restaurants (RID,Restaurantname,city,area,type_of_food,likes,Dislikes,Rating,Door_delivery_charges,booked_no) VALUES (13,'ANNA','PUNE','MAGARPATTA','V',6728,873,6.1,60,276);
+
+commit;
+
+
+
+select restaurantname from restaurants where city=:category4 and
+ area=:category5 and restaurantname=:category",{"category":restaurant_name,"category4":city,"category5":area})
+
+
+ select restaurantname from restaurants where city= 'MYSORE' and area = 'VIJAYANAGRA' and restaurantname= 'KAMAT HOTEL';
+
+select * from Restaurants;
