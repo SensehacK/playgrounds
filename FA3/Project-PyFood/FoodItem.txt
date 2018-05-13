@@ -1,0 +1,47 @@
+-- Drop all trainee tables
+Drop TABLE FoodCategory cascade constraints;
+Drop TABLE FoodItem cascade constraints;
+
+-- Table for storing FoodCategory dNAils 
+CREATE TABLE FoodCategory (
+  FCId          	INTEGER PRIMARY KEY,
+  CategoryName  VARCHAR2(40)
+);
+
+-- Data for FoodCategory table  --
+------------------------------
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (1,'James Potter');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (2,'Ethan McCarty');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (3,'Emily Rayner');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (4,'Jack Abraham');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (5,'Ayaz Mohammad');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (6,'Abhinav Mittal');
+INSERT INTO FoodCategory (FCID,CategoryName) VALUES (7,'Alice Jackson');
+
+
+select * from FoodCategory;
+
+commit;
+
+
+
+CREATE TABLE FoodItem (
+  Id          	INTEGER PRIMARY KEY,
+  FoodName    	VARCHAR2(40)  ,
+  Price      	DECIMAL(9,2)  ,
+  Availability  CHAR(2)  CHECK(Availability IN ('A','NA')),
+  RestaurantFK 	CONSTRAINT RestaurantFK_fk REFERENCES Restaurants(RID),
+  CategoryFK 	CONSTRAINT CategoryFK_fk REFERENCES FoodCategory(RID)
+);
+
+-- Data for FoodItem table  --
+------------------------------
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (1,'James Potter',75000,'A' ,1 , 1 );
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (2,'Ethan McCarty',900,'NA' ,1 , 1 );
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (3,'Emily Rayner',250,'NA' ,1 , 1);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (4,'Jack Abraham',300,'NA' ,1 , 1);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (5,'Ayaz Mohammad',400,'A' ,1 , 1);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (6,'Abhinav Mittal',350,'NA' ,1 , 1);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability,RestaurantFK,CategoryFK ) VALUES (7,'Alice Jackson',507,'A' ,1 , 1);
+
+commit;

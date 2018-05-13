@@ -1,0 +1,30 @@
+#         #Getting valid item from the displayed items for the selected category
+#         item_selected=input("Enter a Items for order: ")
+#         print()
+#         
+#         print("item_selected")
+#         print(item_selected)
+#         
+#         
+#         
+#         #Splitting the item_selected with respect to multiple items selected
+#         category_items = item_selected.split(',')
+#         
+#         #printing the list of multi selects or single selects using split
+#         print(category_items)
+#         print()
+        
+       
+        
+       
+        
+#         quantity_req = input("Enter a  quantity required : ")
+#         #Splitting the category with respect to multiple items selected
+#         category_items_quantity = quantity_req.split(',')
+#          
+#         for category_index , quantity_item in zip(category_items , category_items_quantity) :
+#             print("category_index , quantity_item")
+#             print(category_index ," ", quantity_item)
+#             FoodModule.Food.cart_dict[category_index] = quantity_item
+#         
+#         print()
