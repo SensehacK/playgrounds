@@ -1,0 +1,29 @@
+'''
+Created on Feb 17, 2017
+
+@author: kautilya.save
+'''
+
+
+
+
+strr = "MyNameIsKautilya"
+list = [2,3,45,6,3,42,23]
+print(list[:4])
+
+strr1 = "Kautilya"
+
+for v in range(len(strr1)):
+    print(v)
+for i in range(0,5) :
+    print(i)
+
+
+print(strr[:4])
+
+print(strr.lower())
+print(strr)
+strr = strr.lower()
+print(strr)
+strr = strr + "esr"
+print(strr)

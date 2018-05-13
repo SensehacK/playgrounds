@@ -1,0 +1,18 @@
+'''
+Created on Feb 17, 2017
+
+@author: kautilya.save
+'''
+
+
+
+
+strr = "MyNameIsKautilya"
+
+
+
+print(strr.lower())
+strr = strr.lower()
+print(strr)
+
+print(strr)

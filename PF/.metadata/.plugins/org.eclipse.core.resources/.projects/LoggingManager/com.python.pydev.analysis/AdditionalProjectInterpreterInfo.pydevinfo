@@ -1,0 +1,31 @@
+-- VERSION_4
+-- START DISKCACHE_2
+Z:\PF\.metadata\.plugins\org.eclipse.core.resources\.projects\LoggingManager\com.python.pydev.analysis\v2_indexcache
+Persistence.__init__|1479441310000000000|Z:\PF\LoggingManager\Persistence\__init__.py
+Business.py_test|1485775527135644000|Z:\PF\LoggingManager\Business\py_test.py
+Files.__init__|1479444754000000000|Z:\PF\LoggingManager\Files\__init__.py
+Persistence.FileHandling|1484818612000000000|Z:\PF\LoggingManager\Persistence\FileHandling.py
+Presentation.__init__|1479893326000000000|Z:\PF\LoggingManager\Presentation\__init__.py
+Presentation.PresentaionModule|1485776272172148000|Z:\PF\LoggingManager\Presentation\PresentaionModule.py
+Business.__init__|1479441310000000000|Z:\PF\LoggingManager\Business\__init__.py
+Business.BuisnessModule|1485780857508118000|Z:\PF\LoggingManager\Business\BuisnessModule.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+4=Business.py_test
+2=Persistence.FileHandling
+3=Presentation.PresentaionModule
+1=Business.BuisnessModule
+-- END DICTIONARY
+-- START TREE 1
+6
+get|3|get_user_details!10@get_match!10@get_userdetails_from_file!18@
+kyc|1|kyc_menu!26@
+myp|1|myPath!35@
+tes|15|test_validate_phone!34@test_validate_email_2!34@test_validate_pan_1!34@test_validate_phone_1!34@test_validate_phone_2!34@test_validate_email_1!34@test_validate_phone_3!34@test_validate_pan_5!34@test_validate_pan_4!34@test_validate_email!34@test_validate_email_3!34@test_validate_pan_2!34@test_validate_pan_3!34@test_validate_pan!34@test_validate_email_4!34@
+upd|4|update_pan!10@update_customer_deatils_to_file!18@update_phone!10@update_emailid!10@
+val|3|validate_emailid!10@validate_phone!10@validate_pan!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,71 @@
+'''
+Created on Mar 17, 2017
+
+@author: kautilya.save
+'''
+
+from utility import DBConnectivity
+
+
+def display_details():
+    print("*********************************************")
+    print("         Welcome to Display Details !! ")
+    print("*********************************************")
+    
+    print("a. Display most rated hotel")
+    print("b. Display the customer details")
+    print("c. Display city wise hotel details")
+    print()
+    
+    print("Items Ordered")
+    print("FoodName  \t Quantity")
+    for index , value in FoodModule.Food.cart_dict.items() : 
+        print(index , " \t " ,value)
+        
+    print()
+    print("Please Select from the below menu ")
+    print()
+    checkout_final(username)
+
+
+
+
+
+
+
+
+def display_most_rated_hotel():
+    pass
+
+    
+
+def display_most_ordered_transactions_user():
+    
+    try:
+        con=DBConnectivity.create_connection()
+        cur=DBConnectivity.create_cursor(con)
+        max_transact_user = ""
+        
+        #select username from User_Transactions where order_count = ( select max(order_count) from User_Transactions);
+
+        #select max(order_count) from User_Transactions
+        cur.execute("select username from User_Transactions where order_count = ( select max(order_count) from User_Transactions)")
+        
+        
+        for username in cur :
+            print(username)
+            max_transact_user  = username
+            
+        
+        return max_transact_user
+    
+    finally :
+        print("Closing the cursor & connections in (def display_most_ordered_transactions_user)")
+        cur.close()
+        con.close()
+    
+
+
+def display_highest_booked_hotel_by_city():
+    pass
+    

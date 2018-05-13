@@ -1,0 +1,415 @@
+2017-02-01 09:59:06,344 INFO  Loading Baseframework Plugin
+2017-02-01 09:59:06,466 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-01 09:59:08,322 INFO  Loading the Menu - HandsOn
+2017-02-01 09:59:08,354 INFO  Successfully loaded the Menu - HandsOn
+2017-02-01 11:44:44,937 INFO  Loading Programming Assignment Plugin
+2017-02-01 11:44:45,511 INFO  Setting request parameters for VerifySolution
+2017-02-01 11:44:45,512 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 11:44:45,519 INFO  Starting to parse the user solution
+2017-02-01 11:44:45,522 INFO  Displaying user solution
+2017-02-01 11:44:46,711 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-3\r\n#Start writing your code here\r\n\r\nclass Employee :\r\n    def __init__(self, name,salary , age):\r\n        self.name = name\r\n        self.salary = salary\r\n        self.age = age\r\n        \r\n\r\nTom = Employee(\"Tom\",\"24\",\"45000\")\r\n\r\nprint(\"Tom.age\",Tom.age)\r\nprint(\"Tom.salary\" , Tom.salary)\r\n","asgnmtId":"3","SolutionFileName":"Exercise3.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 11:44:46,714 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 11:44:46,716 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 11:44:46,717 INFO  Invoking the service to verify the user solution
+2017-02-01 11:44:46,718 INFO  Time before invoking service:Wed Feb 01 11:44:46 IST 2017
+2017-02-01 11:44:46,719 INFO  Initialising service address for VerifySolution
+2017-02-01 11:44:46,720 INFO  Time before invoking service In SUPER:Wed Feb 01 11:44:46 IST 2017
+2017-02-01 11:44:48,281 INFO  Time after invoking service In SUPER:Wed Feb 01 11:44:48 IST 2017
+2017-02-01 11:44:48,284 INFO  Service responded successfully with required details
+2017-02-01 11:44:48,286 INFO  Time after invoking service:Wed Feb 01 11:44:48 IST 2017
+2017-02-01 11:44:48,287 INFO  User solution successfully verified
+2017-02-01 11:44:48,288 INFO  Processing the response from verify service
+2017-02-01 11:44:48,292 INFO  Starting to parse JSON response
+2017-02-01 11:44:48,296 INFO  Successfully parsed JSON response
+2017-02-01 11:44:48,298 INFO  In the process of generating verify response in HTML
+2017-02-01 11:44:48,689 INFO  Successfully generated verify response in HTML
+2017-02-01 11:44:48,694 INFO  Successfully processed the response from service
+2017-02-01 11:45:59,846 INFO  First line is not as expected!!!
+2017-02-01 11:46:21,616 INFO  Setting request parameters for VerifySolution
+2017-02-01 11:46:21,618 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 11:46:21,619 INFO  Starting to parse the user solution
+2017-02-01 11:46:21,621 INFO  Displaying user solution
+2017-02-01 11:46:22,111 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-2\r\n#Start writing your code here\r\n\r\nclass Employee :\r\n    def __init__(self, name ,salary , age):\r\n        self.name = name\r\n        self.salary = salary\r\n        self.age = age\r\n        \r\njack = Employee(\"Jack\",\"24\",\"34000\")\r\njill = Employee(\"Jill\",\"25\",\"30000\")\r\nprint(\"jack.age\",jack.age)\r\nprint(\"jack.salary\" , jack.salary)\r\nprint(\"jill.age\",jill.age)\r\nprint(\"jill.salary\" , jill.salary)\r\n\r\n","asgnmtId":"2","SolutionFileName":"Exercise2.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 11:46:22,112 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 11:46:22,114 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 11:46:22,114 INFO  Invoking the service to verify the user solution
+2017-02-01 11:46:22,115 INFO  Time before invoking service:Wed Feb 01 11:46:22 IST 2017
+2017-02-01 11:46:22,116 INFO  Initialising service address for VerifySolution
+2017-02-01 11:46:22,117 INFO  Time before invoking service In SUPER:Wed Feb 01 11:46:22 IST 2017
+2017-02-01 11:46:23,517 INFO  Time after invoking service In SUPER:Wed Feb 01 11:46:23 IST 2017
+2017-02-01 11:46:23,518 INFO  Service responded successfully with required details
+2017-02-01 11:46:23,519 INFO  Time after invoking service:Wed Feb 01 11:46:23 IST 2017
+2017-02-01 11:46:23,520 INFO  User solution successfully verified
+2017-02-01 11:46:23,521 INFO  Processing the response from verify service
+2017-02-01 11:46:23,522 INFO  Starting to parse JSON response
+2017-02-01 11:46:23,524 INFO  Successfully parsed JSON response
+2017-02-01 11:46:23,526 INFO  In the process of generating verify response in HTML
+2017-02-01 11:46:23,655 INFO  Successfully generated verify response in HTML
+2017-02-01 11:46:23,656 INFO  Successfully processed the response from service
+2017-02-01 11:46:58,985 INFO  Setting request parameters for VerifySolution
+2017-02-01 11:46:58,986 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 11:46:58,988 INFO  Starting to parse the user solution
+2017-02-01 11:46:58,990 INFO  Displaying user solution
+2017-02-01 11:46:59,675 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-3\r\n#Start writing your code here\r\n\r\nclass Employee :\r\n    def __init__(self, name,salary , age):\r\n        self.name = name\r\n        self.salary = salary\r\n        self.age = age\r\n        \r\nTom = Employee(\"Tom\",\"24\",\"45000\")\r\nprint(\"Tom.age\",Tom.age)\r\nprint(\"Tom.salary\" , Tom.salary)\r\n","asgnmtId":"3","SolutionFileName":"Exercise3.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 11:46:59,677 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 11:46:59,678 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 11:46:59,679 INFO  Invoking the service to verify the user solution
+2017-02-01 11:46:59,683 INFO  Time before invoking service:Wed Feb 01 11:46:59 IST 2017
+2017-02-01 11:46:59,684 INFO  Initialising service address for VerifySolution
+2017-02-01 11:46:59,685 INFO  Time before invoking service In SUPER:Wed Feb 01 11:46:59 IST 2017
+2017-02-01 11:47:01,111 INFO  Time after invoking service In SUPER:Wed Feb 01 11:47:01 IST 2017
+2017-02-01 11:47:01,114 INFO  Service responded successfully with required details
+2017-02-01 11:47:01,115 INFO  Time after invoking service:Wed Feb 01 11:47:01 IST 2017
+2017-02-01 11:47:01,116 INFO  User solution successfully verified
+2017-02-01 11:47:01,117 INFO  Processing the response from verify service
+2017-02-01 11:47:01,124 INFO  Starting to parse JSON response
+2017-02-01 11:47:01,126 INFO  Successfully parsed JSON response
+2017-02-01 11:47:01,127 INFO  In the process of generating verify response in HTML
+2017-02-01 11:47:01,201 INFO  Successfully generated verify response in HTML
+2017-02-01 11:47:01,203 INFO  Successfully processed the response from service
+2017-02-01 15:33:27,272 INFO  Setting request parameters for VerifySolution
+2017-02-01 15:33:27,282 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 15:33:27,286 INFO  Starting to parse the user solution
+2017-02-01 15:33:27,288 INFO  Displaying user solution
+2017-02-01 15:33:29,707 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.reserve_fuel = 5\r\n        self.mileage = 15\r\n        \r\n    def identify_distance_that_can_be_travelled(self,fuel_left):\r\n        \r\n        self.fuel_left  = int(fuel_left)\r\n        if int(fuel_left) <= self.reserve_fuel :\r\n            return 0\r\n        else :\r\n            print(\"Distance that can be travelled\")\r\n            return int(fuel_left) * self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n        print(\"Distance Travelled\")\r\n        return fuel_consumed\r\n    \r\n    \r\n    \r\nmy_car = Vehicle()\r\nprint(my_car.identify_distance_that_can_be_travelled(\"55\"))\r\nmy_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 15:33:29,710 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 15:33:29,712 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 15:33:29,713 INFO  Invoking the service to verify the user solution
+2017-02-01 15:33:29,715 INFO  Time before invoking service:Wed Feb 01 15:33:29 IST 2017
+2017-02-01 15:33:29,716 INFO  Initialising service address for VerifySolution
+2017-02-01 15:33:29,720 INFO  Time before invoking service In SUPER:Wed Feb 01 15:33:29 IST 2017
+2017-02-01 15:33:32,119 INFO  Time after invoking service In SUPER:Wed Feb 01 15:33:32 IST 2017
+2017-02-01 15:33:32,121 INFO  Service responded successfully with required details
+2017-02-01 15:33:32,123 INFO  Time after invoking service:Wed Feb 01 15:33:32 IST 2017
+2017-02-01 15:33:32,127 INFO  User solution successfully verified
+2017-02-01 15:33:32,130 INFO  Processing the response from verify service
+2017-02-01 15:33:32,135 INFO  Starting to parse JSON response
+2017-02-01 15:33:32,138 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,140 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,142 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,143 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,146 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 15:33:32,148 INFO  Successfully parsed JSON response
+2017-02-01 15:33:32,150 INFO  In the process of generating verify response in HTML
+2017-02-01 15:33:32,250 INFO  Successfully generated verify response in HTML
+2017-02-01 15:33:32,652 INFO  Successfully processed the response from service
+2017-02-01 16:03:25,665 INFO  Initiating to process and prepare Input for the submit service
+2017-02-01 16:03:25,684 INFO  Displaying user solution
+2017-02-01 16:03:25,699 INFO  Successfully processed and prepared the input for the submit service
+2017-02-01 16:03:25,701 INFO  Invoking the service to submit the user solution
+2017-02-01 16:03:25,702 INFO  Initialising service address for Submit
+2017-02-01 16:03:25,703 INFO  Time before invoking service In SUPER:Wed Feb 01 16:03:25 IST 2017
+2017-02-01 16:03:25,805 INFO  Time after invoking service In SUPER:Wed Feb 01 16:03:25 IST 2017
+2017-02-01 16:03:25,806 INFO  Service responded successfully with required details
+2017-02-01 16:03:25,807 INFO  User solution successfully submitted
+2017-02-01 16:03:25,808 INFO  Displaying submission status
+2017-02-01 16:03:25,809 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-01 16:06:06,766 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:06:06,769 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:06:06,771 INFO  Starting to parse the user solution
+2017-02-01 16:06:06,774 INFO  Displaying user solution
+2017-02-01 16:06:08,223 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.reserve_fuel = 5\r\n        self.mileage = None\r\n        \r\n    def identify_distance_that_can_be_travelled(self,fuel_left,mileage):\r\n        self.mileage = int(mileage)\r\n        self.fuel_left  = int(fuel_left)\r\n        if int(fuel_left) <= self.reserve_fuel :\r\n            return 0\r\n        else :\r\n            print(\"Distance that can be travelled\")\r\n            return int(fuel_left) * self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n        print(\"Distance Travelled\")\r\n        print(fuel_consumed)\r\n        return fuel_consumed\r\n    \r\n    \r\n    \r\nmy_car = Vehicle()\r\nprint(my_car.identify_distance_that_can_be_travelled(\"55\",\"12\"))\r\nmy_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 16:06:08,225 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:06:08,226 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:06:08,227 INFO  Invoking the service to verify the user solution
+2017-02-01 16:06:08,229 INFO  Time before invoking service:Wed Feb 01 16:06:08 IST 2017
+2017-02-01 16:06:08,230 INFO  Initialising service address for VerifySolution
+2017-02-01 16:06:08,232 INFO  Time before invoking service In SUPER:Wed Feb 01 16:06:08 IST 2017
+2017-02-01 16:06:10,211 INFO  Time after invoking service In SUPER:Wed Feb 01 16:06:10 IST 2017
+2017-02-01 16:06:10,214 INFO  Service responded successfully with required details
+2017-02-01 16:06:10,216 INFO  Time after invoking service:Wed Feb 01 16:06:10 IST 2017
+2017-02-01 16:06:10,218 INFO  User solution successfully verified
+2017-02-01 16:06:10,220 INFO  Processing the response from verify service
+2017-02-01 16:06:10,226 INFO  Starting to parse JSON response
+2017-02-01 16:06:10,230 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,233 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,235 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,238 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,240 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,243 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:06:10,246 INFO  Successfully parsed JSON response
+2017-02-01 16:06:10,249 INFO  In the process of generating verify response in HTML
+2017-02-01 16:06:10,328 INFO  Successfully generated verify response in HTML
+2017-02-01 16:06:10,331 INFO  Successfully processed the response from service
+2017-02-01 16:10:46,003 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:10:46,007 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:10:46,012 INFO  Starting to parse the user solution
+2017-02-01 16:10:46,017 INFO  Displaying user solution
+2017-02-01 16:10:49,537 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.reserve_fuel = 5\r\n        self.mileage = None\r\n        \r\n    def identify_distance_that_can_be_travelled(self):\r\n#         self.mileage = int(mileage)\r\n#         self.fuel_left  = int(fuel_left)\r\n        if int(self.fuel_left) <= self.reserve_fuel :\r\n            return 0\r\n        else :\r\n            print(\"Distance that can be travelled\")\r\n            return int(self.fuel_left) * self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n        print(\"Distance Travelled\")\r\n        print(fuel_consumed)\r\n        return fuel_consumed\r\n    \r\n    \r\n    \r\n# my_car = Vehicle()\r\n# my_car.fuel_left = 5\r\n# my_car.mileage = 15\r\n# print(my_car.identify_distance_that_can_be_travelled())\r\n# my_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 16:10:49,542 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:10:49,548 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:10:49,554 INFO  Invoking the service to verify the user solution
+2017-02-01 16:10:49,559 INFO  Time before invoking service:Wed Feb 01 16:10:49 IST 2017
+2017-02-01 16:10:49,565 INFO  Initialising service address for VerifySolution
+2017-02-01 16:10:49,572 INFO  Time before invoking service In SUPER:Wed Feb 01 16:10:49 IST 2017
+2017-02-01 16:10:52,205 INFO  Time after invoking service In SUPER:Wed Feb 01 16:10:52 IST 2017
+2017-02-01 16:10:52,210 INFO  Service responded successfully with required details
+2017-02-01 16:10:52,216 INFO  Time after invoking service:Wed Feb 01 16:10:52 IST 2017
+2017-02-01 16:10:52,221 INFO  User solution successfully verified
+2017-02-01 16:10:52,227 INFO  Processing the response from verify service
+2017-02-01 16:10:52,236 INFO  Starting to parse JSON response
+2017-02-01 16:10:52,241 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,247 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,252 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,258 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,263 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,268 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:10:52,274 INFO  Successfully parsed JSON response
+2017-02-01 16:10:52,280 INFO  In the process of generating verify response in HTML
+2017-02-01 16:10:52,357 INFO  Successfully generated verify response in HTML
+2017-02-01 16:10:52,362 INFO  Successfully processed the response from service
+2017-02-01 16:12:11,729 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:12:11,734 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:12:11,737 INFO  Starting to parse the user solution
+2017-02-01 16:12:11,740 INFO  Displaying user solution
+2017-02-01 16:12:14,181 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.reserve_fuel = 5\r\n        self.mileage = None\r\n        \r\n    def identify_distance_that_can_be_travelled(self):\r\n#         self.mileage = int(mileage)\r\n#         self.fuel_left  = int(fuel_left)\r\n        if int(self.fuel_left) <= self.reserve_fuel :\r\n            return 0\r\n        else :\r\n#             print(\"Distance that can be travelled\")\r\n            return int(self.fuel_left) * self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n#         print(\"Distance Travelled\")\r\n#         print(fuel_consumed)\r\n        return fuel_consumed * self.mileage\r\n    \r\n    \r\n    \r\n# my_car = Vehicle()\r\n# my_car.fuel_left = 5\r\n# my_car.mileage = 15\r\n# print(my_car.identify_distance_that_can_be_travelled())\r\n# my_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 16:12:14,183 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:12:14,186 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:12:14,189 INFO  Invoking the service to verify the user solution
+2017-02-01 16:12:14,192 INFO  Time before invoking service:Wed Feb 01 16:12:14 IST 2017
+2017-02-01 16:12:14,194 INFO  Initialising service address for VerifySolution
+2017-02-01 16:12:14,197 INFO  Time before invoking service In SUPER:Wed Feb 01 16:12:14 IST 2017
+2017-02-01 16:12:16,099 INFO  Time after invoking service In SUPER:Wed Feb 01 16:12:16 IST 2017
+2017-02-01 16:12:16,104 INFO  Service responded successfully with required details
+2017-02-01 16:12:16,107 INFO  Time after invoking service:Wed Feb 01 16:12:16 IST 2017
+2017-02-01 16:12:16,109 INFO  User solution successfully verified
+2017-02-01 16:12:16,111 INFO  Processing the response from verify service
+2017-02-01 16:12:16,115 INFO  Starting to parse JSON response
+2017-02-01 16:12:16,118 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,120 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,121 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,126 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,129 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:12:16,132 INFO  Successfully parsed JSON response
+2017-02-01 16:12:16,137 INFO  In the process of generating verify response in HTML
+2017-02-01 16:12:16,204 INFO  Successfully generated verify response in HTML
+2017-02-01 16:12:16,206 INFO  Successfully processed the response from service
+2017-02-01 16:13:25,385 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:13:25,388 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:13:25,392 INFO  Starting to parse the user solution
+2017-02-01 16:13:25,396 INFO  Displaying user solution
+2017-02-01 16:13:29,138 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.reserve_fuel = 5\r\n        self.mileage = None\r\n        \r\n    def identify_distance_that_can_be_travelled(self):\r\n#         self.mileage = int(mileage)\r\n#         self.fuel_left  = int(fuel_left)\r\n        if int(self.fuel_left) <= self.reserve_fuel :\r\n            return 0\r\n        else :\r\n#             print(\"Distance that can be travelled\")\r\n            return (int(self.fuel_left) - self.reserve_fuel)* self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n#         print(\"Distance Travelled\")\r\n#         print(fuel_consumed)\r\n        return fuel_consumed * self.mileage\r\n    \r\n    \r\n    \r\n# my_car = Vehicle()\r\n# my_car.fuel_left = 5\r\n# my_car.mileage = 15\r\n# print(my_car.identify_distance_that_can_be_travelled())\r\n# my_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 16:13:29,143 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:13:29,149 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:13:29,155 INFO  Invoking the service to verify the user solution
+2017-02-01 16:13:29,159 INFO  Time before invoking service:Wed Feb 01 16:13:29 IST 2017
+2017-02-01 16:13:29,164 INFO  Initialising service address for VerifySolution
+2017-02-01 16:13:29,170 INFO  Time before invoking service In SUPER:Wed Feb 01 16:13:29 IST 2017
+2017-02-01 16:13:31,357 INFO  Time after invoking service In SUPER:Wed Feb 01 16:13:31 IST 2017
+2017-02-01 16:13:31,363 INFO  Service responded successfully with required details
+2017-02-01 16:13:31,368 INFO  Time after invoking service:Wed Feb 01 16:13:31 IST 2017
+2017-02-01 16:13:31,373 INFO  User solution successfully verified
+2017-02-01 16:13:31,378 INFO  Processing the response from verify service
+2017-02-01 16:13:31,382 INFO  Starting to parse JSON response
+2017-02-01 16:13:31,388 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:13:31,393 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:13:31,398 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:13:31,403 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:13:31,408 INFO  Successfully parsed JSON response
+2017-02-01 16:13:31,414 INFO  In the process of generating verify response in HTML
+2017-02-01 16:13:31,516 INFO  Successfully generated verify response in HTML
+2017-02-01 16:13:31,523 INFO  Successfully processed the response from service
+2017-02-01 16:15:30,380 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:15:30,383 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:15:30,385 INFO  Starting to parse the user solution
+2017-02-01 16:15:30,389 INFO  Displaying user solution
+2017-02-01 16:15:31,721 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-5\r\n#Start writing your code here\r\n\r\n\r\nclass Vehicle : \r\n    \r\n    def __init__ (self):\r\n        self.fuel_left = None\r\n        self.mileage = None\r\n        \r\n    def identify_distance_that_can_be_travelled(self):\r\n\r\n        if int(self.fuel_left) <= 5 :\r\n            return 0\r\n        else :\r\n            return (int(self.fuel_left) - 5)* self.mileage\r\n            \r\n    def identify_distance_travelled(self,initial_fuel): \r\n        fuel_consumed = int(initial_fuel) - self.fuel_left\r\n\r\n        return fuel_consumed * self.mileage\r\n    \r\n    \r\n\r\n# my_car = Vehicle()\r\n# my_car.fuel_left = 5\r\n# my_car.mileage = 15\r\n# print(my_car.identify_distance_that_can_be_travelled())\r\n# my_car.identify_distance_travelled(\"100\")\r\n\r\n\r\n\r\n\r\n        \r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Exercise4.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-01 16:15:31,723 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:15:31,726 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:15:31,728 INFO  Invoking the service to verify the user solution
+2017-02-01 16:15:31,730 INFO  Time before invoking service:Wed Feb 01 16:15:31 IST 2017
+2017-02-01 16:15:31,732 INFO  Initialising service address for VerifySolution
+2017-02-01 16:15:31,734 INFO  Time before invoking service In SUPER:Wed Feb 01 16:15:31 IST 2017
+2017-02-01 16:15:33,587 INFO  Time after invoking service In SUPER:Wed Feb 01 16:15:33 IST 2017
+2017-02-01 16:15:33,590 INFO  Service responded successfully with required details
+2017-02-01 16:15:33,591 INFO  Time after invoking service:Wed Feb 01 16:15:33 IST 2017
+2017-02-01 16:15:33,593 INFO  User solution successfully verified
+2017-02-01 16:15:33,594 INFO  Processing the response from verify service
+2017-02-01 16:15:33,602 INFO  Starting to parse JSON response
+2017-02-01 16:15:33,604 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:15:33,606 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:15:33,607 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:15:33,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 16:15:33,610 INFO  Successfully parsed JSON response
+2017-02-01 16:15:33,612 INFO  In the process of generating verify response in HTML
+2017-02-01 16:15:33,692 INFO  Successfully generated verify response in HTML
+2017-02-01 16:15:33,694 INFO  Successfully processed the response from service
+2017-02-01 16:15:36,258 INFO  Initiating to process and prepare Input for the submit service
+2017-02-01 16:15:36,262 INFO  Displaying user solution
+2017-02-01 16:15:36,276 INFO  Successfully processed and prepared the input for the submit service
+2017-02-01 16:15:36,278 INFO  Invoking the service to submit the user solution
+2017-02-01 16:15:36,280 INFO  Initialising service address for Submit
+2017-02-01 16:15:36,283 INFO  Time before invoking service In SUPER:Wed Feb 01 16:15:36 IST 2017
+2017-02-01 16:15:36,408 INFO  Time after invoking service In SUPER:Wed Feb 01 16:15:36 IST 2017
+2017-02-01 16:15:36,411 INFO  Service responded successfully with required details
+2017-02-01 16:15:36,413 INFO  User solution successfully submitted
+2017-02-01 16:15:36,415 INFO  Displaying submission status
+2017-02-01 16:15:36,420 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-01 16:42:50,720 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:42:50,735 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:42:50,739 INFO  Starting to parse the user solution
+2017-02-01 16:42:50,744 INFO  Displaying user solution
+2017-02-01 16:42:56,696 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-3\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Employee :\r\n    \r\n    emp_name = None\r\n    designation = None\r\n    \r\n    \r\nclass Customer : \r\n    bill_amount = None\r\n    customer_name = None\r\n    \r\n    def pays_bill(self,amount):\r\n        print(\"\", self.customer_name , \"pays bill amount of Rs.\", amount)\r\n    \r\n    def purchases(self):\r\n        amount = self.bill_amount -  (self.bill_amount * 5/100)\r\n        self.pays_bill(amount)\r\n\r\nclass Item :\r\n    description  = None\r\n    item_id = None\r\n    price_per_unit = None\r\n    \r\n\r\ncust = Customer()\r\ncust.customer_name = \"Kautilya Save\"\r\ncust.bill_amount = 100\r\n\r\ncust.purchases()\r\n","asgnmtId":"3","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 16:42:56,701 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:42:56,706 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:42:56,710 INFO  Invoking the service to verify the user solution
+2017-02-01 16:42:56,715 INFO  Time before invoking service:Wed Feb 01 16:42:56 IST 2017
+2017-02-01 16:42:56,719 INFO  Initialising service address for VerifySolution
+2017-02-01 16:42:56,724 INFO  Time before invoking service In SUPER:Wed Feb 01 16:42:56 IST 2017
+2017-02-01 16:42:58,324 INFO  Time after invoking service In SUPER:Wed Feb 01 16:42:58 IST 2017
+2017-02-01 16:42:58,329 INFO  Service responded successfully with required details
+2017-02-01 16:42:58,332 INFO  Time after invoking service:Wed Feb 01 16:42:58 IST 2017
+2017-02-01 16:42:58,336 INFO  User solution successfully verified
+2017-02-01 16:42:58,340 INFO  Processing the response from verify service
+2017-02-01 16:42:58,345 INFO  Starting to parse JSON response
+2017-02-01 16:42:58,349 INFO  Successfully parsed JSON response
+2017-02-01 16:42:58,354 INFO  In the process of generating verify response in HTML
+2017-02-01 16:42:58,447 INFO  Successfully generated verify response in HTML
+2017-02-01 16:42:58,451 INFO  Successfully processed the response from service
+2017-02-01 16:47:22,326 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:47:22,330 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:47:22,335 INFO  Starting to parse the user solution
+2017-02-01 16:47:22,343 INFO  Displaying user solution
+2017-02-01 16:47:27,559 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-3\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Employee :\r\n    emp_name = None\r\n    designation = None\r\n    \r\nclass Customer : \r\n    bill_amount = None\r\n    customer_name = None\r\n    \r\n    def pays_bill(self,amount):\r\n        print(\"\", self.customer_name , \"pays bill amount of Rs.\", amount)\r\n    \r\n    def purchases(self):\r\n        amount = self.bill_amount -  (self.bill_amount * 5/100)\r\n        self.pays_bill(amount)\r\n\r\nclass Item :\r\n    description  = None\r\n    item_id = None\r\n    price_per_unit = None\r\n    \r\n\r\ncust = Customer()\r\ncust.customer_name = \"Kautilya Save\"\r\ncust.bill_amount = 100\r\ncust.purchases()\r\n","asgnmtId":"3","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 16:47:27,567 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:47:27,571 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:47:27,574 INFO  Invoking the service to verify the user solution
+2017-02-01 16:47:27,579 INFO  Time before invoking service:Wed Feb 01 16:47:27 IST 2017
+2017-02-01 16:47:27,583 INFO  Initialising service address for VerifySolution
+2017-02-01 16:47:27,587 INFO  Time before invoking service In SUPER:Wed Feb 01 16:47:27 IST 2017
+2017-02-01 16:47:29,057 INFO  Time after invoking service In SUPER:Wed Feb 01 16:47:29 IST 2017
+2017-02-01 16:47:29,061 INFO  Service responded successfully with required details
+2017-02-01 16:47:29,066 INFO  Time after invoking service:Wed Feb 01 16:47:29 IST 2017
+2017-02-01 16:47:29,071 INFO  User solution successfully verified
+2017-02-01 16:47:29,077 INFO  Processing the response from verify service
+2017-02-01 16:47:29,084 INFO  Starting to parse JSON response
+2017-02-01 16:47:29,091 INFO  Successfully parsed JSON response
+2017-02-01 16:47:29,096 INFO  In the process of generating verify response in HTML
+2017-02-01 16:47:29,242 INFO  Successfully generated verify response in HTML
+2017-02-01 16:47:29,247 INFO  Successfully processed the response from service
+2017-02-01 16:47:40,364 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:47:40,389 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:47:40,399 INFO  Starting to parse the user solution
+2017-02-01 16:47:40,414 INFO  Displaying user solution
+2017-02-01 16:47:46,505 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-3\r\n#Start writing your code here\r\n\r\n\r\n\r\n# class Employee :\r\n#     emp_name = None\r\n#     designation = None\r\n#     \r\nclass Customer :\r\n    \r\n    def __init__(self) :\r\n        self.bill_amount = None\r\n        self.customer_name = None\r\n    \r\n         \r\n    \r\n    def pays_bill(self,amount):\r\n        print(\"\", self.customer_name , \"pays bill amount of Rs.\", amount)\r\n    \r\n    def purchases(self):\r\n        amount = self.bill_amount -  (self.bill_amount * 5/100)\r\n        self.pays_bill(amount)\r\n\r\n# class Item :\r\n#     \r\n#     def __init__(self) :\r\n#         description  = None\r\n#         item_id = None\r\n#     price_per_unit = None\r\n\r\n        \r\n\r\ncust = Customer()\r\ncust.customer_name = \"Kautilya Save\"\r\ncust.bill_amount = 100\r\ncust.purchases()\r\n","asgnmtId":"3","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 16:47:46,511 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:47:46,515 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:47:46,519 INFO  Invoking the service to verify the user solution
+2017-02-01 16:47:46,524 INFO  Time before invoking service:Wed Feb 01 16:47:46 IST 2017
+2017-02-01 16:47:46,529 INFO  Initialising service address for VerifySolution
+2017-02-01 16:47:46,534 INFO  Time before invoking service In SUPER:Wed Feb 01 16:47:46 IST 2017
+2017-02-01 16:47:47,849 INFO  Time after invoking service In SUPER:Wed Feb 01 16:47:47 IST 2017
+2017-02-01 16:47:47,855 INFO  Service responded successfully with required details
+2017-02-01 16:47:47,859 INFO  Time after invoking service:Wed Feb 01 16:47:47 IST 2017
+2017-02-01 16:47:47,864 INFO  User solution successfully verified
+2017-02-01 16:47:47,869 INFO  Processing the response from verify service
+2017-02-01 16:47:47,875 INFO  Starting to parse JSON response
+2017-02-01 16:47:47,880 INFO  Successfully parsed JSON response
+2017-02-01 16:47:47,885 INFO  In the process of generating verify response in HTML
+2017-02-01 16:47:47,979 INFO  Successfully generated verify response in HTML
+2017-02-01 16:47:47,984 INFO  Successfully processed the response from service
+2017-02-01 16:48:30,018 INFO  Setting request parameters for VerifySolution
+2017-02-01 16:48:30,024 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 16:48:30,027 INFO  Starting to parse the user solution
+2017-02-01 16:48:30,034 INFO  Displaying user solution
+2017-02-01 16:48:35,304 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-3\r\n#Start writing your code here\r\n\r\n\r\n  \r\nclass Employee :\r\n    def __init__(self) :\r\n        emp_name = None\r\n        designation = None\r\n     \r\nclass Customer :\r\n    \r\n    def __init__(self) :\r\n        self.bill_amount = None\r\n        self.customer_name = None\r\n    \r\n         \r\n    \r\n    def pays_bill(self,amount):\r\n        print(\"\", self.customer_name , \"pays bill amount of Rs.\", amount)\r\n    \r\n    def purchases(self):\r\n        amount = self.bill_amount -  (self.bill_amount * 5/100)\r\n        self.pays_bill(amount)\r\n\r\nclass Item :\r\n     \r\n    def __init__(self) :\r\n        description  = None\r\n        item_id = None\r\n        price_per_unit = None\r\n\r\n        \r\n\r\ncust = Customer()\r\ncust.customer_name = \"Kautilya Save\"\r\ncust.bill_amount = 100\r\ncust.purchases()\r\n","asgnmtId":"3","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 16:48:35,309 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 16:48:35,314 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 16:48:35,319 INFO  Invoking the service to verify the user solution
+2017-02-01 16:48:35,324 INFO  Time before invoking service:Wed Feb 01 16:48:35 IST 2017
+2017-02-01 16:48:35,328 INFO  Initialising service address for VerifySolution
+2017-02-01 16:48:35,334 INFO  Time before invoking service In SUPER:Wed Feb 01 16:48:35 IST 2017
+2017-02-01 16:48:36,378 INFO  Time after invoking service In SUPER:Wed Feb 01 16:48:36 IST 2017
+2017-02-01 16:48:36,384 INFO  Service responded successfully with required details
+2017-02-01 16:48:36,390 INFO  Time after invoking service:Wed Feb 01 16:48:36 IST 2017
+2017-02-01 16:48:36,397 INFO  User solution successfully verified
+2017-02-01 16:48:36,404 INFO  Processing the response from verify service
+2017-02-01 16:48:36,409 INFO  Starting to parse JSON response
+2017-02-01 16:48:36,413 INFO  Successfully parsed JSON response
+2017-02-01 16:48:36,417 INFO  In the process of generating verify response in HTML
+2017-02-01 16:48:36,508 INFO  Successfully generated verify response in HTML
+2017-02-01 16:48:36,514 INFO  Successfully processed the response from service
+2017-02-01 16:49:20,061 INFO  Initiating to process and prepare Input for the submit service
+2017-02-01 16:49:20,067 INFO  Displaying user solution
+2017-02-01 16:49:20,095 INFO  Successfully processed and prepared the input for the submit service
+2017-02-01 16:49:20,101 INFO  Invoking the service to submit the user solution
+2017-02-01 16:49:20,107 INFO  Initialising service address for Submit
+2017-02-01 16:49:20,112 INFO  Time before invoking service In SUPER:Wed Feb 01 16:49:20 IST 2017
+2017-02-01 16:49:20,225 INFO  Time after invoking service In SUPER:Wed Feb 01 16:49:20 IST 2017
+2017-02-01 16:49:20,231 INFO  Service responded successfully with required details
+2017-02-01 16:49:20,236 INFO  User solution successfully submitted
+2017-02-01 16:49:20,242 INFO  Displaying submission status
+2017-02-01 16:49:20,248 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-01 17:35:44,764 INFO  Setting request parameters for VerifySolution
+2017-02-01 17:35:44,780 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 17:35:44,780 INFO  Starting to parse the user solution
+2017-02-01 17:35:44,780 INFO  Displaying user solution
+2017-02-01 17:35:47,748 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-5\r\n#Start writing your code here\r\n\r\n\r\nclass Instructor :\r\n    \r\n    def __init__(self) :\r\n        self.__avg_feedback = None\r\n        self.__technology_skill = []\r\n        self.__experience = None\r\n        self.__instructor_name = None\r\n        self.__technology = None\r\n        \r\n    def set_technology_skill(self,technology_skill):\r\n        for i in technology_skill :\r\n            self.__technology_skill.append(i)\r\n        \r\n    def get_technology_skill(self):\r\n        return self.__technology_skill\r\n        \r\n    def set_avg_feedback(self,avg_feedback):\r\n        self.__avg_feedback = avg_feedback\r\n    \r\n    def get_avg_feedback(self):\r\n        return self.__avg_feedback\r\n        \r\n    def set_experience(self,experience):\r\n        self.__experience = experience\r\n        \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def set_instructor_name(self,instructor_name):\r\n        self.__instructor_name = instructor_name\r\n        \r\n    def get_instructor_name(self):\r\n        return self.__instructor_name\r\n        \r\n    def set_technology(self,technology):\r\n        self.__technology = technology\r\n        \r\n    def get_technology(self):\r\n        return self.__technology\r\n    \r\n    def check_eligibility(self):\r\n        if ( ( (self.get_avg_feedback() > 4.5) and (self.get_experience() > 3) ) or ( (self.get_avg_feedback() >= 4) and (self.get_experience() <= 3) ) ) :\r\n            #print(\"yes\")\r\n            for skill in self.get_technology_skill():\r\n                if skill == self.get_technology() :\r\n                    #print(\"Finally\")\r\n                    return True\r\n                \r\n        return False\r\n                    \r\n                \r\n        \r\n            \r\n            \r\n    def allocate_course(self,technology):\r\n        self.set_technology(technology)\r\n        \r\n        #print(\"Sensehack\")\r\n        \r\n        if self.check_eligibility() :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n        \r\n\r\n\r\n#Initialize Object & set variables\r\ninst = Instructor()\r\ninst.set_avg_feedback(3)\r\ninst.set_experience(2)\r\ninst.set_instructor_name(\"Kautilya Save\")\r\nskill_list = [\"Coding\" , \"Development\" , \"Teaching\" , \"Presentation\"]\r\ninst.set_technology_skill(skill_list)\r\n\r\n#Call the Method of allocate Course\r\n\r\nprint(inst.allocate_course(\"Development\"))\r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Assignment5.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 17:35:47,748 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 17:35:47,748 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 17:35:47,748 INFO  Invoking the service to verify the user solution
+2017-02-01 17:35:47,748 INFO  Time before invoking service:Wed Feb 01 17:35:47 IST 2017
+2017-02-01 17:35:47,748 INFO  Initialising service address for VerifySolution
+2017-02-01 17:35:47,764 INFO  Time before invoking service In SUPER:Wed Feb 01 17:35:47 IST 2017
+2017-02-01 17:35:50,592 INFO  Time after invoking service In SUPER:Wed Feb 01 17:35:50 IST 2017
+2017-02-01 17:35:50,592 INFO  Service responded successfully with required details
+2017-02-01 17:35:50,592 INFO  Time after invoking service:Wed Feb 01 17:35:50 IST 2017
+2017-02-01 17:35:50,592 INFO  User solution successfully verified
+2017-02-01 17:35:50,592 INFO  Processing the response from verify service
+2017-02-01 17:35:50,608 INFO  Starting to parse JSON response
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:35:50,608 INFO  Successfully parsed JSON response
+2017-02-01 17:35:50,608 INFO  In the process of generating verify response in HTML
+2017-02-01 17:35:50,686 INFO  Successfully generated verify response in HTML
+2017-02-01 17:35:50,686 INFO  Successfully processed the response from service
+2017-02-01 17:38:40,860 INFO  Initiating to process and prepare Input for the submit service
+2017-02-01 17:38:40,907 INFO  Displaying user solution
+2017-02-01 17:38:40,922 INFO  Successfully processed and prepared the input for the submit service
+2017-02-01 17:38:40,922 INFO  Invoking the service to submit the user solution
+2017-02-01 17:38:40,922 INFO  Initialising service address for Submit
+2017-02-01 17:38:40,922 INFO  Time before invoking service In SUPER:Wed Feb 01 17:38:40 IST 2017
+2017-02-01 17:38:41,219 INFO  Time after invoking service In SUPER:Wed Feb 01 17:38:41 IST 2017
+2017-02-01 17:38:41,219 INFO  Service responded successfully with required details
+2017-02-01 17:38:41,235 INFO  User solution successfully submitted
+2017-02-01 17:38:41,235 INFO  Displaying submission status
+2017-02-01 17:38:41,235 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-01 17:43:44,540 INFO  Setting request parameters for VerifySolution
+2017-02-01 17:43:44,540 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 17:43:44,540 INFO  Starting to parse the user solution
+2017-02-01 17:43:44,540 INFO  Displaying user solution
+2017-02-01 17:43:45,664 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-5\r\n#Start writing your code here\r\n\r\nclass Instructor :\r\n    \r\n    def __init__(self) :\r\n        self.__avg_feedback = None\r\n        self.__technology_skill = []\r\n        self.__experience = None\r\n        self.__instructor_name = None\r\n        self.__technology = None\r\n        \r\n    def set_technology_skill(self,technology_skill):\r\n        for i in technology_skill :\r\n            self.__technology_skill.append(i)\r\n        \r\n    def get_technology_skill(self):\r\n        return self.__technology_skill\r\n        \r\n    def set_avg_feedback(self,avg_feedback):\r\n        self.__avg_feedback = avg_feedback\r\n    \r\n    def get_avg_feedback(self):\r\n        return self.__avg_feedback\r\n        \r\n    def set_experience(self,experience):\r\n        self.__experience = experience\r\n        \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def set_instructor_name(self,instructor_name):\r\n        self.__instructor_name = instructor_name\r\n        \r\n    def get_instructor_name(self):\r\n        return self.__instructor_name\r\n        \r\n    def set_technology(self,technology):\r\n        self.__technology = technology\r\n        \r\n    def get_technology(self):\r\n        return self.__technology\r\n    \r\n    def check_eligibility(self):\r\n        if ( ( (self.get_avg_feedback() > 4.5) and (self.get_experience() > 3) ) or ( (self.get_avg_feedback() >= 4) and (self.get_experience() <= 3) ) ) :\r\n            for skill in self.get_technology_skill():\r\n                if skill == self.get_technology() :\r\n                    #print(\"True\")\r\n                    return True\r\n        #print(\"False\")        \r\n        return False\r\n                    \r\n            \r\n    def allocate_course(self,technology):\r\n        self.set_technology(technology)\r\n        if self.check_eligibility() :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n\r\n#Initialize Object & set variables\r\ninst = Instructor()\r\ninst.set_avg_feedback(4.7)\r\ninst.set_experience(4)\r\ninst.set_instructor_name(\"Kautilya Save\")\r\nskill_list = [\"Coding\" , \"Development\" , \"Teaching\" , \"Presentation\"]\r\ninst.set_technology_skill(skill_list)\r\n\r\n#Call the Method of allocate Course\r\n\r\nprint(inst.allocate_course(\"Development\"))\r\nprint(inst.check_eligibility())\r\n        \r\n        \r\n","asgnmtId":"5","SolutionFileName":"Assignment5.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-01 17:43:45,664 INFO  Successfully processed and prepared the input for the verify service
+2017-02-01 17:43:45,664 INFO  Successfully set the request parameters for VerifySolution
+2017-02-01 17:43:45,664 INFO  Invoking the service to verify the user solution
+2017-02-01 17:43:45,664 INFO  Time before invoking service:Wed Feb 01 17:43:45 IST 2017
+2017-02-01 17:43:45,664 INFO  Initialising service address for VerifySolution
+2017-02-01 17:43:45,664 INFO  Time before invoking service In SUPER:Wed Feb 01 17:43:45 IST 2017
+2017-02-01 17:43:48,130 INFO  Time after invoking service In SUPER:Wed Feb 01 17:43:48 IST 2017
+2017-02-01 17:43:48,130 INFO  Service responded successfully with required details
+2017-02-01 17:43:48,145 INFO  Time after invoking service:Wed Feb 01 17:43:48 IST 2017
+2017-02-01 17:43:48,145 INFO  User solution successfully verified
+2017-02-01 17:43:48,145 INFO  Processing the response from verify service
+2017-02-01 17:43:48,145 INFO  Starting to parse JSON response
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-01 17:43:48,145 INFO  Successfully parsed JSON response
+2017-02-01 17:43:48,145 INFO  In the process of generating verify response in HTML
+2017-02-01 17:43:48,208 INFO  Successfully generated verify response in HTML
+2017-02-01 17:43:48,208 INFO  Successfully processed the response from service
+2017-02-01 17:45:00,677 INFO  Setting request parameters for VerifySolution
+2017-02-01 17:45:00,677 INFO  Initiating to process and prepare Input for the verify service
+2017-02-01 17:45:00,677 INFO  Starting to parse the user solution
+2017-02-01 17:45:00,693 INFO  Displaying user solution
+2017-02-01 17:45:00,693 INFO   User Solution is unchanged since the last verification.
+2017-02-01 17:45:00,693 INFO  Problem in processing and preparing Input for the verify service

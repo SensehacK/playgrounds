@@ -1,0 +1,20 @@
+'''
+Created on Feb 16, 2017
+
+@author: kautilya.save
+'''
+
+
+Val=3
+while(Val<6):
+    Val=Val+2
+    print( Val )
+
+
+n = [[4, 5, 7], [3, 5, 8], [4, 9, 6]]
+print (n[2])
+
+
+
+trainee_marks=[80,90,50]
+print(trainee_marks * 3)

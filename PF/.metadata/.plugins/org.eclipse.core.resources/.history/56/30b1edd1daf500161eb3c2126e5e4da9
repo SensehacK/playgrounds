@@ -1,0 +1,25 @@
+'''
+Created on Feb 18, 2017
+
+@author: kautilya.save
+'''
+
+
+for i in range(10) :
+    
+    if i == 5 :
+        continue
+    
+    if i == 7 :
+        break
+    
+    print(i)
+    print(i+1)
+    print(i**(i+1))
+    
+    
+    
+
+sample_tuple="A",
+tuple = "C",
+print(sample_tuple)

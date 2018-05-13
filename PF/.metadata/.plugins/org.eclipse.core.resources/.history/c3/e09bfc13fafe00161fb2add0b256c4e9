@@ -1,0 +1,2 @@
+select e1.ename , 1.vehiclename from emp e1 join
+empvehicle ev1 on e1.empno = ev1.empno

@@ -1,0 +1,17 @@
+MODULES_MANAGER_V2
+classes.ProductModule|Z:\FA3\Demo\Demo\classes\ProductModule.py
+classes.__init__|Z:\FA3\Demo\Demo\classes\__init__.py
+database.ViewDB|Z:\FA3\Demo\Demo\database\ViewDB.py
+database.__init__|Z:\FA3\Demo\Demo\database\__init__.py
+exceptions.CustomExceptions|Z:\FA3\Demo\Demo\exceptions\CustomExceptions.py
+exceptions.__init__|Z:\FA3\Demo\Demo\exceptions\__init__.py
+functionality.PurchaseFunctions|Z:\FA3\Demo\Demo\functionality\PurchaseFunctions.py
+functionality.ViewFunctions|Z:\FA3\Demo\Demo\functionality\ViewFunctions.py
+functionality.__init__|Z:\FA3\Demo\Demo\functionality\__init__.py
+testcases.Trainee1|Z:\FA3\Demo\Demo\testcases\Trainee1.py
+testcases.__init__|Z:\FA3\Demo\Demo\testcases\__init__.py
+utility.DBConnectivity|Z:\FA3\Demo\Demo\utility\DBConnectivity.py
+utility.Menu|Z:\FA3\Demo\Demo\utility\Menu.py
+utility.__init__|Z:\FA3\Demo\Demo\utility\__init__.py
+validations.ViewValidations|Z:\FA3\Demo\Demo\validations\ViewValidations.py
+validations.__init__|Z:\FA3\Demo\Demo\validations\__init__.py

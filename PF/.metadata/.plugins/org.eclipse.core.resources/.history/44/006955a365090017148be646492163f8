@@ -1,0 +1,14 @@
+'''
+Created on Mar 15, 2017
+
+@author: kautilya.save
+'''
+'''
+This class represents a product
+'''
+class Product:
+    def __init__(self):
+        self.__FCId=None
+        self.__CategoryName=None
+        self.__Restaurant_Type=None
+        self.__category=None

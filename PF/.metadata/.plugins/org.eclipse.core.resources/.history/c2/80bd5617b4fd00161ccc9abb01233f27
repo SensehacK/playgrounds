@@ -1,0 +1,5 @@
+select qs.itemcode , sname , sum(or.qtyordered) as TotalQuantity
+from quotation qs inner join orders or 
+on qs.quotationid = or.quotationid 
+group by qs.itemcode, sname 
+having sum(or.qtyordered) >= 100

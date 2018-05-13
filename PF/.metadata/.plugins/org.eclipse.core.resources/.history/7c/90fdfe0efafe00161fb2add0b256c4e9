@@ -1,0 +1,2 @@
+select e1.ename , v1.vehiclename from emp e1 join
+vehicle v1

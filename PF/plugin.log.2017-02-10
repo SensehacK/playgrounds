@@ -1,0 +1,228 @@
+2017-02-10 09:07:28,788 INFO  Loading Baseframework Plugin
+2017-02-10 09:07:28,850 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-10 09:07:31,037 INFO  Loading the Menu - HandsOn
+2017-02-10 09:07:31,100 INFO  Successfully loaded the Menu - HandsOn
+2017-02-10 11:52:02,672 INFO  Loading Programming Assignment Plugin
+2017-02-10 11:52:03,786 INFO  Setting request parameters for VerifySolution
+2017-02-10 11:52:03,791 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 11:52:03,802 INFO  Starting to parse the user solution
+2017-02-10 11:52:03,805 INFO  Displaying user solution
+2017-02-10 11:52:07,423 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-6\r\n                                            \r\nclass Stack:\r\n    def __init__(self,max_size):\r\n        self.__max_size=max_size\r\n        self.__elements=[None]*self.__max_size\r\n        self.__top=-1\r\n    \r\n    def get_top(self):\r\n        return self.__top\r\n    \r\n    def get_max_size(self):\r\n        return self.__max_size\r\n    \r\n    def is_full(self):\r\n        if(self.__top==self.__max_size-1):\r\n            return True\r\n        return False\r\n    \r\n    def is_empty(self):\r\n        if(self.__top==-1):\r\n            return True\r\n        return False\r\n    \r\n    def push(self,data):\r\n        if(self.is_full()):\r\n            print(\"The stack is full!!\")\r\n        else:\r\n            self.__top+=1\r\n            self.__elements[self.__top]=data\r\n    \r\n    def pop(self):\r\n        if(self.is_empty()):\r\n            print(\"The stack is empty!!\")\r\n        else:\r\n            data= self.__elements[self.__top]\r\n            self.__top-=1\r\n            return data\r\n    def display(self):\r\n        if(self.is_empty()):\r\n            print(\"The stack is empty\")\r\n        else:\r\n            index=self.__top\r\n            while(index>=0):\r\n                print(self.__elements[index])\r\n                index-=1\r\n    \r\ndef find_average(num_list):\r\n    \r\n    temp_stack = Stack(num_list.get_max_size())\r\n    sum = 0\r\n    count = 0\r\n    \r\n    while not num_list.is_empty():\r\n        data = num_list.pop()\r\n        temp_stack.push(data)\r\n        sum += data\r\n        count += 1\r\n        \r\n        \r\n    avg = sum/ count\r\n    \r\n    while not temp_stack.is_empty():\r\n        num_list.push(temp_stack.pop())\r\n    num_list.push(avg)\r\n    \r\n    return num_list\r\n        \r\n    #write your logic here\r\n\r\n    return num_list\r\n\r\n#Push different values to the stack and test your program\r\nnum_list=Stack(7)\r\nnum_list.push(78)\r\nnum_list.push(65)\r\nnum_list.push(92)\r\nnum_list.push(46)\r\nnum_list.push(89)\r\nnum_list.push(71)\r\n\r\nnew_stack=find_average(num_list)\r\nnew_stack.display()\r\n","asgnmtId":"6","SolutionFileName":"Exercise6.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-10 11:52:07,430 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 11:52:07,431 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 11:52:07,432 INFO  Invoking the service to verify the user solution
+2017-02-10 11:52:07,436 INFO  Time before invoking service:Fri Feb 10 11:52:07 IST 2017
+2017-02-10 11:52:07,437 INFO  Initialising service address for VerifySolution
+2017-02-10 11:52:07,439 INFO  Time before invoking service In SUPER:Fri Feb 10 11:52:07 IST 2017
+2017-02-10 11:52:09,461 INFO  Time after invoking service In SUPER:Fri Feb 10 11:52:09 IST 2017
+2017-02-10 11:52:09,462 INFO  Service responded successfully with required details
+2017-02-10 11:52:09,463 INFO  Time after invoking service:Fri Feb 10 11:52:09 IST 2017
+2017-02-10 11:52:09,464 INFO  User solution successfully verified
+2017-02-10 11:52:09,466 INFO  Processing the response from verify service
+2017-02-10 11:52:09,469 INFO  Starting to parse JSON response
+2017-02-10 11:52:09,473 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 11:52:09,474 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 11:52:09,476 INFO  Successfully parsed JSON response
+2017-02-10 11:52:09,477 INFO  In the process of generating verify response in HTML
+2017-02-10 11:52:10,317 INFO  Successfully generated verify response in HTML
+2017-02-10 11:52:10,318 INFO  Successfully processed the response from service
+2017-02-10 11:52:14,710 INFO  Initiating to process and prepare Input for the submit service
+2017-02-10 11:52:14,715 INFO  Displaying user solution
+2017-02-10 11:52:14,727 INFO  Successfully processed and prepared the input for the submit service
+2017-02-10 11:52:14,728 INFO  Invoking the service to submit the user solution
+2017-02-10 11:52:14,729 INFO  Initialising service address for Submit
+2017-02-10 11:52:14,730 INFO  Time before invoking service In SUPER:Fri Feb 10 11:52:14 IST 2017
+2017-02-10 11:52:17,869 INFO  Time after invoking service In SUPER:Fri Feb 10 11:52:17 IST 2017
+2017-02-10 11:52:17,870 INFO  Service responded successfully with required details
+2017-02-10 11:52:17,871 INFO  User solution successfully submitted
+2017-02-10 11:52:17,872 INFO  Displaying submission status
+2017-02-10 11:52:17,873 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-10 12:16:02,580 INFO  Setting request parameters for VerifySolution
+2017-02-10 12:16:02,581 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 12:16:02,584 INFO  Starting to parse the user solution
+2017-02-10 12:16:02,586 INFO  Displaying user solution
+2017-02-10 12:16:05,204 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-7\r\n\r\nclass Stack:\r\n    def __init__(self,max_size):\r\n        self.__max_size=max_size\r\n        self.__elements=[None]*self.__max_size\r\n        self.__top=-1\r\n    \r\n    def is_full(self):\r\n        if(self.__top==self.__max_size-1):\r\n            return True\r\n        return False\r\n    \r\n    def is_empty(self):\r\n        if(self.__top==-1):\r\n            return True\r\n        return False\r\n    \r\n    def push(self,data):\r\n        if(self.is_full()):\r\n            print(\"The stack is full!!\")\r\n        else:\r\n            self.__top+=1\r\n            self.__elements[self.__top]=data\r\n    \r\n    def pop(self):\r\n        if(self.is_empty()):\r\n            print(\"The stack is empty!!\")\r\n        else:\r\n            data= self.__elements[self.__top]\r\n            self.__top-=1\r\n            return data\r\n    def display(self):\r\n        if(self.is_empty()):\r\n            print(\"The stack is empty\")\r\n        else:\r\n            index=self.__top\r\n            while(index>=0):\r\n                print(self.__elements[index])\r\n                index-=1\r\n    \r\n    def get_top(self):\r\n        return self.__top\r\n    \r\n    def get_max_size(self):\r\n        return self.__max_size\r\n\r\nclass Ball:\r\n    def __init__(self,manufacturer,color):\r\n        self.__color=color\r\n        self.__manufacturer=manufacturer\r\n    \r\n    def __str__(self):\r\n        return(self.__color+\" \"+self.__manufacturer)\r\n    \r\n    def get_color(self):\r\n        return self.__color\r\n    \r\n    def get_manufacturer(self):\r\n        return self.__manufacturer\r\n    \r\nclass Box:\r\n    def __init__(self,ball_stack):\r\n        self.ball_stack=ball_stack\r\n        self.manufacturer1_stack=Stack(2) # consider \"Penn\" to be manufacturer1\r\n        self.manufacturer2_stack=Stack(2) # consider \"Wilson\" to be manufacturer2\r\n        \r\n        \r\n    def group_balls(self):\r\n        while not self.ball_stack.is_empty():\r\n            ball = self.ball_stack.pop()\r\n            if ball.get_manufacturer() == \"Penn\" :\r\n                self.manufacturer1_stack.push()\r\n                \r\n            elif ball.get_manufacturer() == \"Wilson\" :\r\n                self.manufacturer2_stack.push()\r\n                \r\n        pass\r\n        # Write your logic here\r\n    def display_ball_details(self,manufacturer):\r\n        \r\n        if manufacturer == \"Penn\":\r\n            self.manufacturer1_stack.display()\r\n            \r\n        elif manufacturer == \"Wilson\" :\r\n            self.manufacturer2_stack.display()\r\n        \r\n        else :\r\n            print(\"Invalid Manufacturer\")\r\n    \r\n\r\nball1=Ball(\"Penn\",\"Yellow\")\r\nball2=Ball(\"Wilson\",\"White\")\r\nball3=Ball(\"Penn\",\"Red\")\r\nball4=Ball(\"Wilson\",\"Yellow\")\r\n\r\nball_stack=Stack(4)\r\nball_stack.push(ball1)\r\nball_stack.push(ball2)\r\nball_stack.push(ball3)\r\nball_stack.push(ball4)\r\n\r\nbox=Box(ball_stack)\r\nbox.group_balls()\r\nbox.display_ball_details(\"Penn\")\r\n\r\n","asgnmtId":"7","SolutionFileName":"Exercise7.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-10 12:16:05,205 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 12:16:05,206 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 12:16:05,210 INFO  Invoking the service to verify the user solution
+2017-02-10 12:16:05,213 INFO  Time before invoking service:Fri Feb 10 12:16:05 IST 2017
+2017-02-10 12:16:05,214 INFO  Initialising service address for VerifySolution
+2017-02-10 12:16:05,215 INFO  Time before invoking service In SUPER:Fri Feb 10 12:16:05 IST 2017
+2017-02-10 12:16:07,544 INFO  Time after invoking service In SUPER:Fri Feb 10 12:16:07 IST 2017
+2017-02-10 12:16:07,545 INFO  Service responded successfully with required details
+2017-02-10 12:16:07,546 INFO  Time after invoking service:Fri Feb 10 12:16:07 IST 2017
+2017-02-10 12:16:07,547 INFO  User solution successfully verified
+2017-02-10 12:16:07,548 INFO  Processing the response from verify service
+2017-02-10 12:16:07,553 INFO  Starting to parse JSON response
+2017-02-10 12:16:07,557 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 12:16:07,558 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 12:16:07,559 INFO  Successfully parsed JSON response
+2017-02-10 12:16:07,561 INFO  In the process of generating verify response in HTML
+2017-02-10 12:16:07,681 INFO  Successfully generated verify response in HTML
+2017-02-10 12:16:07,685 INFO  Successfully processed the response from service
+2017-02-10 12:16:20,548 INFO  Initiating to process and prepare Input for the submit service
+2017-02-10 12:16:20,551 INFO  Displaying user solution
+2017-02-10 12:16:20,562 INFO  Successfully processed and prepared the input for the submit service
+2017-02-10 12:16:20,563 INFO  Invoking the service to submit the user solution
+2017-02-10 12:16:20,564 INFO  Initialising service address for Submit
+2017-02-10 12:16:20,565 INFO  Time before invoking service In SUPER:Fri Feb 10 12:16:20 IST 2017
+2017-02-10 12:16:20,695 INFO  Time after invoking service In SUPER:Fri Feb 10 12:16:20 IST 2017
+2017-02-10 12:16:20,697 INFO  Service responded successfully with required details
+2017-02-10 12:16:20,698 INFO  User solution successfully submitted
+2017-02-10 12:16:20,699 INFO  Displaying submission status
+2017-02-10 12:16:20,700 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-10 15:37:08,661 INFO  Setting request parameters for VerifySolution
+2017-02-10 15:37:08,669 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 15:37:08,670 INFO  Starting to parse the user solution
+2017-02-10 15:37:08,672 INFO  Displaying user solution
+2017-02-10 15:37:11,678 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-8\r\n                                        \r\nclass Queue:\r\n    def __init__(self,max_size):\r\n        self.__max_size=max_size\r\n        self.__elements=[None]*self.__max_size\r\n        self.__rear=-1\r\n        self.__front=0\r\n    \r\n    def get_front(self):\r\n        return self.__front\r\n    \r\n    def get_rear(self):\r\n        return self.__rear\r\n    \r\n    def get_max_size(self):\r\n        return self.__max_size\r\n    \r\n    def is_full(self):\r\n        if(self.__rear==self.__max_size-1):\r\n            return True\r\n        return False\r\n    \r\n    def is_empty(self):\r\n        if(self.__front>self.__rear):\r\n            return True\r\n        return False\r\n    \r\n    def enqueue(self,data):\r\n        if(self.is_full()):\r\n            print(\"Queue is full!!!\")\r\n        else:\r\n            self.__rear+=1\r\n            self.__elements[self.__rear]=data\r\n    \r\n    def dequeue(self):\r\n        if(self.is_empty()):\r\n            print(\"Queue is empty!!!\")\r\n        else:\r\n            data=self.__elements[self.__front]\r\n            self.__front+=1\r\n            return data\r\n    \r\n    def display(self):\r\n        for index in range(self.__front, self.__rear+1):\r\n            print(self.__elements[index])\r\n    \r\ndef split_queue(num_queue):\r\n    #Populate queue_list with odd_queue and even_queue\r\n    queue_list=[]\r\n    even_queue = Queue(num_queue.get_max_size())\r\n    odd_queue = Queue(num_queue.get_max_size())\r\n    \r\n    while not num_queue.is_empty() :\r\n        num = num_queue.dequeue()\r\n        if num % 2 == 0 :\r\n            even_queue.enqueue(num)\r\n        \r\n        else :\r\n            odd_queue.enqueue(num)\r\n            \r\n        \r\n    queue_list.append(even_queue)\r\n    queue_list.append(odd_queue)\r\n\r\n    return queue_list\r\n\r\n# Enqueue different values to the queue and test your program\r\n\r\nnum_queue=Queue(7)\r\nnum_queue.enqueue(2)\r\nnum_queue.enqueue(7)\r\nnum_queue.enqueue(9)\r\nnum_queue.enqueue(4)\r\nnum_queue.enqueue(6)\r\nnum_queue.enqueue(5)\r\nnum_queue.enqueue(10)\r\n\r\nq_list=split_queue(num_queue)\r\nq_list[0].display()\r\nq_list[1].display()\r\n","asgnmtId":"8","SolutionFileName":"Exercise8.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-10 15:37:11,679 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 15:37:11,680 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 15:37:11,681 INFO  Invoking the service to verify the user solution
+2017-02-10 15:37:11,682 INFO  Time before invoking service:Fri Feb 10 15:37:11 IST 2017
+2017-02-10 15:37:11,682 INFO  Initialising service address for VerifySolution
+2017-02-10 15:37:11,683 INFO  Time before invoking service In SUPER:Fri Feb 10 15:37:11 IST 2017
+2017-02-10 15:37:13,217 INFO  Time after invoking service In SUPER:Fri Feb 10 15:37:13 IST 2017
+2017-02-10 15:37:13,222 INFO  Service responded successfully with required details
+2017-02-10 15:37:13,224 INFO  Time after invoking service:Fri Feb 10 15:37:13 IST 2017
+2017-02-10 15:37:13,224 INFO  User solution successfully verified
+2017-02-10 15:37:13,225 INFO  Processing the response from verify service
+2017-02-10 15:37:13,228 INFO  Starting to parse JSON response
+2017-02-10 15:37:13,230 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 15:37:13,231 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 15:37:13,232 INFO  Successfully parsed JSON response
+2017-02-10 15:37:13,235 INFO  In the process of generating verify response in HTML
+2017-02-10 15:37:13,323 INFO  Successfully generated verify response in HTML
+2017-02-10 15:37:13,325 INFO  Successfully processed the response from service
+2017-02-10 16:29:25,391 INFO  Setting request parameters for VerifySolution
+2017-02-10 16:29:25,395 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 16:29:25,395 INFO  Starting to parse the user solution
+2017-02-10 16:29:25,396 INFO  Displaying user solution
+2017-02-10 16:29:25,402 INFO   User Solution is unchanged since the last verification.
+2017-02-10 16:29:25,406 INFO  Problem in processing and preparing Input for the verify service
+2017-02-10 16:29:32,067 INFO  Setting request parameters for VerifySolution
+2017-02-10 16:29:32,068 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 16:29:32,070 INFO  Starting to parse the user solution
+2017-02-10 16:29:32,072 INFO  Displaying user solution
+2017-02-10 16:29:32,077 INFO   User Solution is unchanged since the last verification.
+2017-02-10 16:29:32,082 INFO  Problem in processing and preparing Input for the verify service
+2017-02-10 16:29:38,981 INFO  Setting request parameters for VerifySolution
+2017-02-10 16:29:38,984 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 16:29:38,985 INFO  Starting to parse the user solution
+2017-02-10 16:29:38,988 INFO  Displaying user solution
+2017-02-10 16:29:41,889 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-8\r\n                                        \r\nclass Queue:\r\n    def __init__(self,max_size):\r\n        self.__max_size=max_size\r\n        self.__elements=[None]*self.__max_size\r\n        self.__rear=-1\r\n        self.__front=0\r\n    \r\n    def get_front(self):\r\n        return self.__front\r\n    \r\n    def get_rear(self):\r\n        return self.__rear\r\n    \r\n    def get_max_size(self):\r\n        return self.__max_size\r\n    \r\n    def is_full(self):\r\n        if(self.__rear==self.__max_size-1):\r\n            return True\r\n        return False\r\n    \r\n    def is_empty(self):\r\n        if(self.__front>self.__rear):\r\n            return True\r\n        return False\r\n    \r\n    def enqueue(self,data):\r\n        if(self.is_full()):\r\n            print(\"Queue is full!!!\")\r\n        else:\r\n            self.__rear+=1\r\n            self.__elements[self.__rear]=data\r\n    \r\n    def dequeue(self):\r\n        if(self.is_empty()):\r\n            print(\"Queue is empty!!!\")\r\n        else:\r\n            data=self.__elements[self.__front]\r\n            self.__front+=1\r\n            return data\r\n    \r\n    def display(self):\r\n        for index in range(self.__front, self.__rear+1):\r\n            print(self.__elements[index])\r\n    \r\ndef split_queue(num_queue):\r\n    #Populate queue_list with odd_queue and even_queue\r\n    queue_list=[]\r\n    even_queue = Queue(num_queue.get_max_size())\r\n    odd_queue = Queue(num_queue.get_max_size())\r\n    \r\n    while not num_queue.is_empty() :\r\n        num = num_queue.dequeue()\r\n        if num % 2 == 0 :\r\n            even_queue.enqueue(num)\r\n        \r\n        else :\r\n            odd_queue.enqueue(num)\r\n\r\n    queue_list.append(even_queue)\r\n    queue_list.append(odd_queue)\r\n\r\n    return queue_list\r\n\r\n# Enqueue different values to the queue and test your program\r\n\r\nnum_queue=Queue(7)\r\nnum_queue.enqueue(2)\r\nnum_queue.enqueue(7)\r\nnum_queue.enqueue(9)\r\nnum_queue.enqueue(4)\r\nnum_queue.enqueue(6)\r\nnum_queue.enqueue(5)\r\nnum_queue.enqueue(10)\r\n\r\nq_list=split_queue(num_queue)\r\nq_list[0].display()\r\nq_list[1].display()\r\n","asgnmtId":"8","SolutionFileName":"Exercise8.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-10 16:29:41,890 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 16:29:41,891 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 16:29:41,892 INFO  Invoking the service to verify the user solution
+2017-02-10 16:29:41,893 INFO  Time before invoking service:Fri Feb 10 16:29:41 IST 2017
+2017-02-10 16:29:41,894 INFO  Initialising service address for VerifySolution
+2017-02-10 16:29:41,896 INFO  Time before invoking service In SUPER:Fri Feb 10 16:29:41 IST 2017
+2017-02-10 16:29:43,308 INFO  Time after invoking service In SUPER:Fri Feb 10 16:29:43 IST 2017
+2017-02-10 16:29:43,309 INFO  Service responded successfully with required details
+2017-02-10 16:29:43,310 INFO  Time after invoking service:Fri Feb 10 16:29:43 IST 2017
+2017-02-10 16:29:43,312 INFO  User solution successfully verified
+2017-02-10 16:29:43,314 INFO  Processing the response from verify service
+2017-02-10 16:29:43,317 INFO  Starting to parse JSON response
+2017-02-10 16:29:43,319 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 16:29:43,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 16:29:43,321 INFO  Successfully parsed JSON response
+2017-02-10 16:29:43,323 INFO  In the process of generating verify response in HTML
+2017-02-10 16:29:43,424 INFO  Successfully generated verify response in HTML
+2017-02-10 16:29:43,425 INFO  Successfully processed the response from service
+2017-02-10 16:29:44,426 INFO  Setting request parameters for VerifySolution
+2017-02-10 16:29:44,426 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 16:29:44,427 INFO  Starting to parse the user solution
+2017-02-10 16:29:44,429 INFO  Displaying user solution
+2017-02-10 16:29:44,433 INFO   User Solution is unchanged since the last verification.
+2017-02-10 16:29:44,442 INFO  Problem in processing and preparing Input for the verify service
+2017-02-10 16:30:19,494 INFO  Setting request parameters for VerifySolution
+2017-02-10 16:30:19,495 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 16:30:19,496 INFO  Starting to parse the user solution
+2017-02-10 16:30:19,497 INFO  Displaying user solution
+2017-02-10 16:30:22,016 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-8\r\n                                        \r\nclass Queue:\r\n    def __init__(self,max_size):\r\n        self.__max_size=max_size\r\n        self.__elements=[None]*self.__max_size\r\n        self.__rear=-1\r\n        self.__front=0\r\n    \r\n    def get_front(self):\r\n        return self.__front\r\n    \r\n    def get_rear(self):\r\n        return self.__rear\r\n    \r\n    def get_max_size(self):\r\n        return self.__max_size\r\n    \r\n    def is_full(self):\r\n        if(self.__rear==self.__max_size-1):\r\n            return True\r\n        return False\r\n    \r\n    def is_empty(self):\r\n        if(self.__front>self.__rear):\r\n            return True\r\n        return False\r\n    \r\n    def enqueue(self,data):\r\n        if(self.is_full()):\r\n            print(\"Queue is full!!!\")\r\n        else:\r\n            self.__rear+=1\r\n            self.__elements[self.__rear]=data\r\n    \r\n    def dequeue(self):\r\n        if(self.is_empty()):\r\n            print(\"Queue is empty!!!\")\r\n        else:\r\n            data=self.__elements[self.__front]\r\n            self.__front+=1\r\n            return data\r\n    \r\n    def display(self):\r\n        for index in range(self.__front, self.__rear+1):\r\n            print(self.__elements[index])\r\n    \r\ndef split_queue(num_queue):\r\n    #Populate queue_list with odd_queue and even_queue\r\n    queue_list=[]\r\n    even_queue = Queue(num_queue.get_max_size())\r\n    odd_queue = Queue(num_queue.get_max_size())\r\n    \r\n    while not num_queue.is_empty() :\r\n        num = num_queue.dequeue()\r\n        if num % 2 == 0 :\r\n            even_queue.enqueue(num)\r\n        \r\n        else :\r\n            odd_queue.enqueue(num)\r\n    \r\n    queue_list.append(odd_queue)\r\n    queue_list.append(even_queue)\r\n    \r\n\r\n    return queue_list\r\n\r\n# Enqueue different values to the queue and test your program\r\n\r\nnum_queue=Queue(7)\r\nnum_queue.enqueue(2)\r\nnum_queue.enqueue(7)\r\nnum_queue.enqueue(9)\r\nnum_queue.enqueue(4)\r\nnum_queue.enqueue(6)\r\nnum_queue.enqueue(5)\r\nnum_queue.enqueue(10)\r\n\r\nq_list=split_queue(num_queue)\r\nq_list[0].display()\r\nq_list[1].display()\r\n","asgnmtId":"8","SolutionFileName":"Exercise8.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-10 16:30:22,017 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 16:30:22,019 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 16:30:22,020 INFO  Invoking the service to verify the user solution
+2017-02-10 16:30:22,021 INFO  Time before invoking service:Fri Feb 10 16:30:22 IST 2017
+2017-02-10 16:30:22,022 INFO  Initialising service address for VerifySolution
+2017-02-10 16:30:22,023 INFO  Time before invoking service In SUPER:Fri Feb 10 16:30:22 IST 2017
+2017-02-10 16:30:23,441 INFO  Time after invoking service In SUPER:Fri Feb 10 16:30:23 IST 2017
+2017-02-10 16:30:23,442 INFO  Service responded successfully with required details
+2017-02-10 16:30:23,443 INFO  Time after invoking service:Fri Feb 10 16:30:23 IST 2017
+2017-02-10 16:30:23,444 INFO  User solution successfully verified
+2017-02-10 16:30:23,445 INFO  Processing the response from verify service
+2017-02-10 16:30:23,446 INFO  Starting to parse JSON response
+2017-02-10 16:30:23,447 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 16:30:23,448 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 16:30:23,449 INFO  Successfully parsed JSON response
+2017-02-10 16:30:23,452 INFO  In the process of generating verify response in HTML
+2017-02-10 16:30:23,535 INFO  Successfully generated verify response in HTML
+2017-02-10 16:30:23,537 INFO  Successfully processed the response from service
+2017-02-10 16:30:30,983 INFO  Initiating to process and prepare Input for the submit service
+2017-02-10 16:30:30,985 INFO  Displaying user solution
+2017-02-10 16:30:31,001 INFO  Successfully processed and prepared the input for the submit service
+2017-02-10 16:30:31,002 INFO  Invoking the service to submit the user solution
+2017-02-10 16:30:31,002 INFO  Initialising service address for Submit
+2017-02-10 16:30:31,003 INFO  Time before invoking service In SUPER:Fri Feb 10 16:30:31 IST 2017
+2017-02-10 16:30:31,128 INFO  Time after invoking service In SUPER:Fri Feb 10 16:30:31 IST 2017
+2017-02-10 16:30:31,129 INFO  Service responded successfully with required details
+2017-02-10 16:30:31,129 INFO  User solution successfully submitted
+2017-02-10 16:30:31,130 INFO  Displaying submission status
+2017-02-10 16:30:31,130 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-10 17:32:05,144 INFO  Setting request parameters for VerifySolution
+2017-02-10 17:32:05,155 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 17:32:05,158 INFO  Starting to parse the user solution
+2017-02-10 17:32:05,164 INFO  Displaying user solution
+2017-02-10 17:32:09,093 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"# DSA-Assgn-11\r\n\r\n# This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Queue\r\n\r\ndef merge_queue(queue1, queue2):\r\n    lent1 = queue1.get_max_size() \r\n    lent2 = queue2.get_max_size() \r\n    lent = queue1.get_max_size() + queue2.get_max_size()\r\n    merged_queue2 = Queue(lent)\r\n    count = 0\r\n    difference = None\r\n    queue1_flag = False\r\n    \r\n    \r\n    merge_list2 = Queue(lent)\r\n    \r\n    while not merge_list2.is_full():\r\n        \r\n        if not queue1.is_empty() :\r\n            merge_list2.enqueue(queue1.dequeue()) \r\n            \r\n        if not queue2.is_empty():\r\n            merge_list2.enqueue(queue2.dequeue()) \r\n    \r\n           \r\n        \r\n    \r\n    return merge_list2\r\n    \r\n    \r\n    \r\n    \r\n    \r\n#     \r\n#     if lent1 < lent2 :\r\n#         difference = lent2 - lent1 \r\n#         queue1_flag = False\r\n#     elif lent2 < lent1 :\r\n#         difference = lent1 - lent2\r\n#         queue1_flag = True\r\n#     \r\n#     else :\r\n#         difference = 0\r\n#         \r\n#         \r\n#     \r\n#     while(1) :\r\n#         if count > lent :\r\n#             break\r\n#         \r\n#             \r\n#         if count % 2 == 0 and not queue1.is_empty():\r\n#             dataq1 = queue1.dequeue()\r\n#             merged_queue2.enqueue(dataq1)\r\n#             count += 1\r\n#             print(merged_queue2.display()) \r\n#         elif (count % 2 != 0 and not queue2.is_empty()) :\r\n#             dataq2 = queue2.dequeue()\r\n#             merged_queue2.enqueue(dataq2)\r\n#             count += 1\r\n#         else :  \r\n#             if queue1_flag :\r\n#                 while(difference != 0) :  \r\n#                     dataq1 = queue1.dequeue()\r\n#                     merged_queue2.enqueue(dataq1)\r\n#                     difference -= 1\r\n#             else :\r\n#                 while(difference != 0) :  \r\n#                     dataq2 = queue2.dequeue()\r\n#                     merged_queue2.enqueue(dataq2)\r\n#                     difference -= 1\r\n#                     \r\n#                     \r\n#     merged_queue2.display()\r\n#     return merged_queue2\r\n\r\n# Enqueue different values to both the queues and test your program\r\n\r\nqueue1 = Queue(3)\r\nqueue2 = Queue(6)\r\nqueue1.enqueue(3)\r\nqueue1.enqueue(6)\r\nqueue1.enqueue(8)\r\nqueue2.enqueue('b')\r\nqueue2.enqueue('y')\r\nqueue2.enqueue('u')\r\nqueue2.enqueue('t')\r\nqueue2.enqueue('r')\r\nqueue2.enqueue('o')\r\n\r\nmerged_queue = merge_queue(queue1, queue2)\r\nprint(\"The elements in the merged queue are:\")\r\nmerged_queue.display()\r\n","asgnmtId":"11","SolutionFileName":"Assignment11.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-10 17:32:09,094 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 17:32:09,095 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 17:32:09,095 INFO  Invoking the service to verify the user solution
+2017-02-10 17:32:09,096 INFO  Time before invoking service:Fri Feb 10 17:32:09 IST 2017
+2017-02-10 17:32:09,097 INFO  Initialising service address for VerifySolution
+2017-02-10 17:32:09,098 INFO  Time before invoking service In SUPER:Fri Feb 10 17:32:09 IST 2017
+2017-02-10 17:32:10,190 INFO  Time after invoking service In SUPER:Fri Feb 10 17:32:10 IST 2017
+2017-02-10 17:32:10,192 INFO  Service responded successfully with required details
+2017-02-10 17:32:10,193 INFO  Time after invoking service:Fri Feb 10 17:32:10 IST 2017
+2017-02-10 17:32:10,194 INFO  User solution successfully verified
+2017-02-10 17:32:10,195 INFO  Processing the response from verify service
+2017-02-10 17:32:10,204 INFO  Starting to parse JSON response
+2017-02-10 17:32:10,205 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 17:32:10,206 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 17:32:10,206 INFO  Successfully parsed JSON response
+2017-02-10 17:32:10,220 INFO  In the process of generating verify response in HTML
+2017-02-10 17:32:10,360 INFO  Successfully generated verify response in HTML
+2017-02-10 17:32:10,362 INFO  Successfully processed the response from service
+2017-02-10 17:32:43,622 INFO  Setting request parameters for VerifySolution
+2017-02-10 17:32:43,623 INFO  Initiating to process and prepare Input for the verify service
+2017-02-10 17:32:43,627 INFO  Starting to parse the user solution
+2017-02-10 17:32:43,628 INFO  Displaying user solution
+2017-02-10 17:32:46,075 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"# DSA-Assgn-11\r\n\r\n# This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Queue\r\n\r\ndef merge_queue(queue1, queue2):\r\n    lent = queue1.get_max_size() + queue2.get_max_size()\r\n    \r\n    \r\n    merge_list2 = Queue(lent)\r\n    \r\n    while not merge_list2.is_full():\r\n        \r\n        if not queue1.is_empty() :\r\n            merge_list2.enqueue(queue1.dequeue()) \r\n            \r\n        if not queue2.is_empty():\r\n            merge_list2.enqueue(queue2.dequeue()) \r\n    \r\n           \r\n        \r\n    \r\n    return merge_list2\r\n    \r\n    \r\n    \r\n    \r\n    \r\n#     \r\n#     if lent1 < lent2 :\r\n#         difference = lent2 - lent1 \r\n#         queue1_flag = False\r\n#     elif lent2 < lent1 :\r\n#         difference = lent1 - lent2\r\n#         queue1_flag = True\r\n#     \r\n#     else :\r\n#         difference = 0\r\n#         \r\n#         \r\n#     \r\n#     while(1) :\r\n#         if count > lent :\r\n#             break\r\n#         \r\n#             \r\n#         if count % 2 == 0 and not queue1.is_empty():\r\n#             dataq1 = queue1.dequeue()\r\n#             merged_queue2.enqueue(dataq1)\r\n#             count += 1\r\n#             print(merged_queue2.display()) \r\n#         elif (count % 2 != 0 and not queue2.is_empty()) :\r\n#             dataq2 = queue2.dequeue()\r\n#             merged_queue2.enqueue(dataq2)\r\n#             count += 1\r\n#         else :  \r\n#             if queue1_flag :\r\n#                 while(difference != 0) :  \r\n#                     dataq1 = queue1.dequeue()\r\n#                     merged_queue2.enqueue(dataq1)\r\n#                     difference -= 1\r\n#             else :\r\n#                 while(difference != 0) :  \r\n#                     dataq2 = queue2.dequeue()\r\n#                     merged_queue2.enqueue(dataq2)\r\n#                     difference -= 1\r\n#                     \r\n#                     \r\n#     merged_queue2.display()\r\n#     return merged_queue2\r\n\r\n# Enqueue different values to both the queues and test your program\r\n\r\nqueue1 = Queue(3)\r\nqueue2 = Queue(6)\r\nqueue1.enqueue(3)\r\nqueue1.enqueue(6)\r\nqueue1.enqueue(8)\r\nqueue2.enqueue('b')\r\nqueue2.enqueue('y')\r\nqueue2.enqueue('u')\r\nqueue2.enqueue('t')\r\nqueue2.enqueue('r')\r\nqueue2.enqueue('o')\r\n\r\nmerged_queue = merge_queue(queue1, queue2)\r\nprint(\"The elements in the merged queue are:\")\r\nmerged_queue.display()\r\n","asgnmtId":"11","SolutionFileName":"Assignment11.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-10 17:32:46,084 INFO  Successfully processed and prepared the input for the verify service
+2017-02-10 17:32:46,085 INFO  Successfully set the request parameters for VerifySolution
+2017-02-10 17:32:46,086 INFO  Invoking the service to verify the user solution
+2017-02-10 17:32:46,090 INFO  Time before invoking service:Fri Feb 10 17:32:46 IST 2017
+2017-02-10 17:32:46,092 INFO  Initialising service address for VerifySolution
+2017-02-10 17:32:46,094 INFO  Time before invoking service In SUPER:Fri Feb 10 17:32:46 IST 2017
+2017-02-10 17:32:47,591 INFO  Time after invoking service In SUPER:Fri Feb 10 17:32:47 IST 2017
+2017-02-10 17:32:47,594 INFO  Service responded successfully with required details
+2017-02-10 17:32:47,594 INFO  Time after invoking service:Fri Feb 10 17:32:47 IST 2017
+2017-02-10 17:32:47,595 INFO  User solution successfully verified
+2017-02-10 17:32:47,596 INFO  Processing the response from verify service
+2017-02-10 17:32:47,596 INFO  Starting to parse JSON response
+2017-02-10 17:32:47,597 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 17:32:47,598 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-10 17:32:47,598 INFO  Successfully parsed JSON response
+2017-02-10 17:32:47,600 INFO  In the process of generating verify response in HTML
+2017-02-10 17:32:47,683 INFO  Successfully generated verify response in HTML
+2017-02-10 17:32:47,685 INFO  Successfully processed the response from service
+2017-02-10 17:32:49,297 INFO  Initiating to process and prepare Input for the submit service
+2017-02-10 17:32:49,301 INFO  Displaying user solution
+2017-02-10 17:32:49,317 INFO  Successfully processed and prepared the input for the submit service
+2017-02-10 17:32:49,319 INFO  Invoking the service to submit the user solution
+2017-02-10 17:32:49,319 INFO  Initialising service address for Submit
+2017-02-10 17:32:49,321 INFO  Time before invoking service In SUPER:Fri Feb 10 17:32:49 IST 2017
+2017-02-10 17:32:49,409 INFO  Time after invoking service In SUPER:Fri Feb 10 17:32:49 IST 2017
+2017-02-10 17:32:49,410 INFO  Service responded successfully with required details
+2017-02-10 17:32:49,410 INFO  User solution successfully submitted
+2017-02-10 17:32:49,412 INFO  Displaying submission status
+2017-02-10 17:32:49,412 INFO  Displayed submission status successfullySuccessfully Submitted!

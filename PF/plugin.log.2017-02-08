@@ -1,0 +1,721 @@
+2017-02-08 09:17:24,378 INFO  Loading Baseframework Plugin
+2017-02-08 09:17:24,612 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-08 09:17:25,362 INFO  Loading the Menu - HandsOn
+2017-02-08 09:17:25,393 INFO  Successfully loaded the Menu - HandsOn
+2017-02-08 11:35:20,324 INFO  Loading Programming Assignment Plugin
+2017-02-08 11:35:20,340 INFO  First line is not as expected!!!
+2017-02-08 11:35:30,669 INFO  Setting request parameters for VerifySolution
+2017-02-08 11:35:31,076 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 11:35:31,092 INFO  Starting to parse the user solution
+2017-02-08 11:35:31,092 INFO  Displaying user solution
+2017-02-08 11:35:32,000 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-1\r\n\r\ndef update_mark_list(mark_list, new_element, pos):\r\n    mark_list.insert(pos, new_element)\r\n    return mark_list\r\n\r\ndef find_mark(mark_list,pos1,pos2):\r\n    print(\"Marks at \", pos1 , \"are \" , mark_list[pos1])\r\n    \r\n    print(\"Marks at \", pos2 , \"are \" , mark_list[pos2])\r\n    list2 = []\r\n    list2.append(mark_list[pos1])\r\n    list2.append(mark_list[pos2])\r\n    return list2\r\n\r\n# mark_list=[98,87,65,33,49]\r\n# pos1=2\r\n# pos2=4\r\n\r\nmark_list=[89,78,99,76,77,72,88,99]\r\nnew_element=69\r\npos=2\r\npos1=5\r\npos2=8\r\nprint(update_mark_list(mark_list, new_element, pos))\r\nprint(find_mark(mark_list, pos1, pos2))\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Exercise1.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-08 11:35:32,000 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 11:35:32,015 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 11:35:32,015 INFO  Invoking the service to verify the user solution
+2017-02-08 11:35:32,015 INFO  Time before invoking service:Wed Feb 08 11:35:32 IST 2017
+2017-02-08 11:35:32,015 INFO  Initialising service address for VerifySolution
+2017-02-08 11:35:32,015 INFO  Time before invoking service In SUPER:Wed Feb 08 11:35:32 IST 2017
+2017-02-08 11:35:33,980 INFO  Time after invoking service In SUPER:Wed Feb 08 11:35:33 IST 2017
+2017-02-08 11:35:33,980 INFO  Service responded successfully with required details
+2017-02-08 11:35:33,980 INFO  Time after invoking service:Wed Feb 08 11:35:33 IST 2017
+2017-02-08 11:35:33,996 INFO  User solution successfully verified
+2017-02-08 11:35:33,996 INFO  Processing the response from verify service
+2017-02-08 11:35:33,996 INFO  Starting to parse JSON response
+2017-02-08 11:35:33,996 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 11:35:33,996 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 11:35:33,996 INFO  Successfully parsed JSON response
+2017-02-08 11:35:33,996 INFO  In the process of generating verify response in HTML
+2017-02-08 11:35:34,215 INFO  Successfully generated verify response in HTML
+2017-02-08 11:35:34,215 INFO  Successfully processed the response from service
+2017-02-08 16:18:45,838 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:18:45,854 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:18:45,854 INFO  Starting to parse the user solution
+2017-02-08 16:18:45,854 INFO  Displaying user solution
+2017-02-08 16:18:48,547 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data=\"\"\r\n    resultant_data = []\r\n    i = -1\r\n    #write your logic here\r\n    for index, values in enumerate(list1) :\r\n        data1 = list1[index]\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n            \r\n        data =  data1 + data2   \r\n        print(data)\r\n        i -= 1\r\n        \r\n        merged_data = data\r\n        resultant_data.append(merged_data)\r\n    \r\n    \r\n    \r\n    \r\n    return resultant_data\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:18:48,547 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:18:48,547 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:18:48,547 INFO  Invoking the service to verify the user solution
+2017-02-08 16:18:48,547 INFO  Time before invoking service:Wed Feb 08 16:18:48 IST 2017
+2017-02-08 16:18:48,547 INFO  Initialising service address for VerifySolution
+2017-02-08 16:18:48,547 INFO  Time before invoking service In SUPER:Wed Feb 08 16:18:48 IST 2017
+2017-02-08 16:18:50,326 INFO  Time after invoking service In SUPER:Wed Feb 08 16:18:50 IST 2017
+2017-02-08 16:18:50,326 INFO  Service responded successfully with required details
+2017-02-08 16:18:50,326 INFO  Time after invoking service:Wed Feb 08 16:18:50 IST 2017
+2017-02-08 16:18:50,326 INFO  User solution successfully verified
+2017-02-08 16:18:50,342 INFO  Processing the response from verify service
+2017-02-08 16:18:50,342 INFO  Starting to parse JSON response
+2017-02-08 16:18:50,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:18:50,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:18:50,342 INFO  Successfully parsed JSON response
+2017-02-08 16:18:50,342 INFO  In the process of generating verify response in HTML
+2017-02-08 16:18:50,435 INFO  Successfully generated verify response in HTML
+2017-02-08 16:18:50,435 INFO  Successfully processed the response from service
+2017-02-08 16:20:06,446 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:20:06,446 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:20:06,446 INFO  Starting to parse the user solution
+2017-02-08 16:20:06,446 INFO  Displaying user solution
+2017-02-08 16:20:07,729 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data=\"\"\r\n    resultant_data = []\r\n    i = -1\r\n    #write your logic here\r\n    for index, values in enumerate(list1) :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"    \r\n        data =  data1 + data2   \r\n        print(data)\r\n        i -= 1\r\n        \r\n        merged_data = data\r\n        resultant_data.append(merged_data)\r\n    \r\n    \r\n    \r\n    \r\n    return resultant_data\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:20:07,745 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:20:07,760 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:20:07,776 INFO  Invoking the service to verify the user solution
+2017-02-08 16:20:07,776 INFO  Time before invoking service:Wed Feb 08 16:20:07 IST 2017
+2017-02-08 16:20:07,776 INFO  Initialising service address for VerifySolution
+2017-02-08 16:20:07,792 INFO  Time before invoking service In SUPER:Wed Feb 08 16:20:07 IST 2017
+2017-02-08 16:20:09,358 INFO  Time after invoking service In SUPER:Wed Feb 08 16:20:09 IST 2017
+2017-02-08 16:20:09,358 INFO  Service responded successfully with required details
+2017-02-08 16:20:09,358 INFO  Time after invoking service:Wed Feb 08 16:20:09 IST 2017
+2017-02-08 16:20:09,358 INFO  User solution successfully verified
+2017-02-08 16:20:09,358 INFO  Processing the response from verify service
+2017-02-08 16:20:09,358 INFO  Starting to parse JSON response
+2017-02-08 16:20:09,358 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:20:09,374 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:20:09,374 INFO  Successfully parsed JSON response
+2017-02-08 16:20:09,374 INFO  In the process of generating verify response in HTML
+2017-02-08 16:20:09,468 INFO  Successfully generated verify response in HTML
+2017-02-08 16:20:09,468 INFO  Successfully processed the response from service
+2017-02-08 16:22:42,653 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:22:42,653 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:22:42,653 INFO  Starting to parse the user solution
+2017-02-08 16:22:42,653 INFO  Displaying user solution
+2017-02-08 16:22:43,906 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data= []\r\n    resultant_data = \"\"\r\n    i = -1\r\n    #write your logic here\r\n    for index, values in enumerate(list1) :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"    \r\n        data =  data1 + data2   \r\n        print(data)\r\n        i -= 1\r\n        \r\n        \r\n        merged_data.append(data)\r\n        \r\n        \r\n    \r\n    for val in merged_data :\r\n        resultant_data = resultant_data + \" \" + val\r\n        \r\n    return resultant_data\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:22:43,906 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:22:43,906 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:22:43,906 INFO  Invoking the service to verify the user solution
+2017-02-08 16:22:43,906 INFO  Time before invoking service:Wed Feb 08 16:22:43 IST 2017
+2017-02-08 16:22:43,906 INFO  Initialising service address for VerifySolution
+2017-02-08 16:22:43,922 INFO  Time before invoking service In SUPER:Wed Feb 08 16:22:43 IST 2017
+2017-02-08 16:22:45,332 INFO  Time after invoking service In SUPER:Wed Feb 08 16:22:45 IST 2017
+2017-02-08 16:22:45,332 INFO  Service responded successfully with required details
+2017-02-08 16:22:45,332 INFO  Time after invoking service:Wed Feb 08 16:22:45 IST 2017
+2017-02-08 16:22:45,332 INFO  User solution successfully verified
+2017-02-08 16:22:45,332 INFO  Processing the response from verify service
+2017-02-08 16:22:45,332 INFO  Starting to parse JSON response
+2017-02-08 16:22:45,332 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:22:45,332 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:22:45,332 INFO  Successfully parsed JSON response
+2017-02-08 16:22:45,332 INFO  In the process of generating verify response in HTML
+2017-02-08 16:22:45,457 INFO  Successfully generated verify response in HTML
+2017-02-08 16:22:45,457 INFO  Successfully processed the response from service
+2017-02-08 16:24:21,637 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:24:21,637 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:24:21,637 INFO  Starting to parse the user solution
+2017-02-08 16:24:21,652 INFO  Displaying user solution
+2017-02-08 16:24:22,999 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data= []\r\n    resultant_data = \"\"\r\n    i = -1\r\n    #write your logic here\r\n    for index, values in enumerate(list1) :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"    \r\n        data =  data1 + data2   \r\n        print(data)\r\n        i -= 1\r\n        \r\n        \r\n        merged_data.append(data)\r\n        \r\n        \r\n    \r\n    for val in merged_data :\r\n        val = val + \" \"\r\n        resultant_data = resultant_data + val\r\n        \r\n    return resultant_data\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:24:22,999 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:24:22,999 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:24:22,999 INFO  Invoking the service to verify the user solution
+2017-02-08 16:24:22,999 INFO  Time before invoking service:Wed Feb 08 16:24:22 IST 2017
+2017-02-08 16:24:23,015 INFO  Initialising service address for VerifySolution
+2017-02-08 16:24:23,015 INFO  Time before invoking service In SUPER:Wed Feb 08 16:24:23 IST 2017
+2017-02-08 16:24:24,934 INFO  Time after invoking service In SUPER:Wed Feb 08 16:24:24 IST 2017
+2017-02-08 16:24:24,934 INFO  Service responded successfully with required details
+2017-02-08 16:24:24,934 INFO  Time after invoking service:Wed Feb 08 16:24:24 IST 2017
+2017-02-08 16:24:24,934 INFO  User solution successfully verified
+2017-02-08 16:24:24,949 INFO  Processing the response from verify service
+2017-02-08 16:24:24,949 INFO  Starting to parse JSON response
+2017-02-08 16:24:24,949 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:24:24,949 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:24:24,949 INFO  Successfully parsed JSON response
+2017-02-08 16:24:24,949 INFO  In the process of generating verify response in HTML
+2017-02-08 16:24:25,028 INFO  Successfully generated verify response in HTML
+2017-02-08 16:24:25,028 INFO  Successfully processed the response from service
+2017-02-08 16:24:38,245 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:24:38,245 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:24:38,245 INFO  Starting to parse the user solution
+2017-02-08 16:24:38,245 INFO  Displaying user solution
+2017-02-08 16:24:38,827 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data= []\r\n    resultant_data = \"\"\r\n    i = -1\r\n    #write your logic here\r\n    for index, values in enumerate(list1) :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"    \r\n            \r\n        data =  data1 + data2   \r\n        i -= 1\r\n        \r\n        \r\n        merged_data.append(data)\r\n        \r\n        \r\n    \r\n    for val in merged_data :\r\n        val = val + \" \"\r\n        resultant_data = resultant_data + val\r\n        \r\n    return resultant_data\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:24:38,827 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:24:38,827 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:24:38,827 INFO  Invoking the service to verify the user solution
+2017-02-08 16:24:38,827 INFO  Time before invoking service:Wed Feb 08 16:24:38 IST 2017
+2017-02-08 16:24:38,827 INFO  Initialising service address for VerifySolution
+2017-02-08 16:24:38,827 INFO  Time before invoking service In SUPER:Wed Feb 08 16:24:38 IST 2017
+2017-02-08 16:24:43,277 INFO  Time after invoking service In SUPER:Wed Feb 08 16:24:43 IST 2017
+2017-02-08 16:24:43,277 INFO  Service responded successfully with required details
+2017-02-08 16:24:43,277 INFO  Time after invoking service:Wed Feb 08 16:24:43 IST 2017
+2017-02-08 16:24:43,277 INFO  User solution successfully verified
+2017-02-08 16:24:43,277 INFO  Processing the response from verify service
+2017-02-08 16:24:43,293 INFO  Starting to parse JSON response
+2017-02-08 16:24:43,293 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:24:43,293 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:24:43,293 INFO  Successfully parsed JSON response
+2017-02-08 16:24:43,293 INFO  In the process of generating verify response in HTML
+2017-02-08 16:24:43,374 INFO  Successfully generated verify response in HTML
+2017-02-08 16:24:43,374 INFO  Successfully processed the response from service
+2017-02-08 16:30:00,968 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:30:00,968 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:30:00,968 INFO  Starting to parse the user solution
+2017-02-08 16:30:00,968 INFO  Displaying user solution
+2017-02-08 16:30:04,361 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data= []\r\n    resultant_data = \"\"\r\n    i = -1\r\n    #write your logic here\r\n    for values in list1 :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"    \r\n            \r\n        data =  data1 + data2   \r\n        i -= 1\r\n        \r\n        \r\n        merged_data.append(data)\r\n        \r\n        \r\n    \r\n    for val in merged_data :\r\n        val = val + \" \"\r\n        resultant_data = resultant_data + val\r\n    \r\n    lent = len(resultant_data) - 1\r\n    #print(resultant_data[:lent])\r\n    return resultant_data[:lent]\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:30:04,361 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:30:04,361 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:30:04,361 INFO  Invoking the service to verify the user solution
+2017-02-08 16:30:04,361 INFO  Time before invoking service:Wed Feb 08 16:30:04 IST 2017
+2017-02-08 16:30:04,361 INFO  Initialising service address for VerifySolution
+2017-02-08 16:30:04,377 INFO  Time before invoking service In SUPER:Wed Feb 08 16:30:04 IST 2017
+2017-02-08 16:30:05,690 INFO  Time after invoking service In SUPER:Wed Feb 08 16:30:05 IST 2017
+2017-02-08 16:30:05,705 INFO  Service responded successfully with required details
+2017-02-08 16:30:05,705 INFO  Time after invoking service:Wed Feb 08 16:30:05 IST 2017
+2017-02-08 16:30:05,705 INFO  User solution successfully verified
+2017-02-08 16:30:05,705 INFO  Processing the response from verify service
+2017-02-08 16:30:05,705 INFO  Starting to parse JSON response
+2017-02-08 16:30:05,721 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:30:05,721 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:30:05,721 INFO  Successfully parsed JSON response
+2017-02-08 16:30:05,721 INFO  In the process of generating verify response in HTML
+2017-02-08 16:30:05,815 INFO  Successfully generated verify response in HTML
+2017-02-08 16:30:05,830 INFO  Successfully processed the response from service
+2017-02-08 16:38:03,982 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:38:04,247 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:38:04,247 INFO  Starting to parse the user solution
+2017-02-08 16:38:04,247 INFO  Displaying user solution
+2017-02-08 16:38:06,310 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-1\r\n\r\ndef merge_list(list1, list2):\r\n    merged_data= []\r\n    resultant_data = \"\"\r\n#     list3 = list2\r\n#     list2.reverse()\r\n#     #print(list2)\r\n#     print(list3)\r\n#     print(list2)\r\n#     print(id(list2))\r\n#     print(id(list3))\r\n    i = -1\r\n    for values in list1 :\r\n        data1 = values\r\n        data2 = list2[i]\r\n        if data2 == None :\r\n            data2 = \"\"\r\n        if data1 == None :\r\n            data1 = \"\"       \r\n        data =  data1 + data2   \r\n        i -= 1\r\n    \r\n        merged_data.append(data)\r\n        \r\n        \r\n    \r\n    for val in merged_data :\r\n        val = val + \" \"\r\n        resultant_data = resultant_data + val\r\n    \r\n    lent = len(resultant_data) - 1\r\n    #print(resultant_data[:lent])\r\n    return resultant_data[:lent]\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=['A', 'app','a', 'd', 'ke', 'th', 'doc', 'awa']\r\nlist2=['y','tor','e','eps','ay',None,'le','n']\r\nmerged_data=merge_list(list1,list2)\r\nprint(merged_data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n","asgnmtId":"1","SolutionFileName":"Assignment1.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:38:06,325 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:38:06,325 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:38:06,325 INFO  Invoking the service to verify the user solution
+2017-02-08 16:38:06,325 INFO  Time before invoking service:Wed Feb 08 16:38:06 IST 2017
+2017-02-08 16:38:06,325 INFO  Initialising service address for VerifySolution
+2017-02-08 16:38:06,325 INFO  Time before invoking service In SUPER:Wed Feb 08 16:38:06 IST 2017
+2017-02-08 16:38:11,772 INFO  Time after invoking service In SUPER:Wed Feb 08 16:38:11 IST 2017
+2017-02-08 16:38:11,787 INFO  Service responded successfully with required details
+2017-02-08 16:38:11,787 INFO  Time after invoking service:Wed Feb 08 16:38:11 IST 2017
+2017-02-08 16:38:11,787 INFO  User solution successfully verified
+2017-02-08 16:38:11,787 INFO  Processing the response from verify service
+2017-02-08 16:38:11,787 INFO  Starting to parse JSON response
+2017-02-08 16:38:11,787 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:38:11,787 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:38:11,787 INFO  Successfully parsed JSON response
+2017-02-08 16:38:11,803 INFO  In the process of generating verify response in HTML
+2017-02-08 16:38:11,873 INFO  Successfully generated verify response in HTML
+2017-02-08 16:38:11,876 INFO  Successfully processed the response from service
+2017-02-08 16:38:25,438 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 16:38:25,454 INFO  Displaying user solution
+2017-02-08 16:38:25,469 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 16:38:25,469 INFO  Invoking the service to submit the user solution
+2017-02-08 16:38:25,469 INFO  Initialising service address for Submit
+2017-02-08 16:38:25,469 INFO  Time before invoking service In SUPER:Wed Feb 08 16:38:25 IST 2017
+2017-02-08 16:38:25,719 INFO  Time after invoking service In SUPER:Wed Feb 08 16:38:25 IST 2017
+2017-02-08 16:38:25,719 INFO  Service responded successfully with required details
+2017-02-08 16:38:25,719 INFO  User solution successfully submitted
+2017-02-08 16:38:25,735 INFO  Displaying submission status
+2017-02-08 16:38:25,735 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-08 16:56:40,532 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:56:40,532 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:56:40,532 INFO  Starting to parse the user solution
+2017-02-08 16:56:40,532 INFO  Displaying user solution
+2017-02-08 16:56:45,287 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                return None\r\n            \r\n        return car_list_year\r\n    \r\n    \r\n    def add_cars(self,new_car_list):\r\n#         for new_car in new_car_list :\r\n#             self.get_car_list()\r\n            \r\n        \r\n        self.get_car_list().append(new_car_list)\r\n    \r\n    def remove_car_from_karnataka(self):\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            if \"KA\" in reg_string[:2] :\r\n                self.get_car_list().remove(cars_obj)\r\n    \r\n\r\n#Implement Service class here\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:56:45,287 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:56:45,287 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:56:45,287 INFO  Invoking the service to verify the user solution
+2017-02-08 16:56:45,287 INFO  Time before invoking service:Wed Feb 08 16:56:45 IST 2017
+2017-02-08 16:56:45,302 INFO  Initialising service address for VerifySolution
+2017-02-08 16:56:45,302 INFO  Time before invoking service In SUPER:Wed Feb 08 16:56:45 IST 2017
+2017-02-08 16:56:48,224 INFO  Time after invoking service In SUPER:Wed Feb 08 16:56:48 IST 2017
+2017-02-08 16:56:48,224 INFO  Service responded successfully with required details
+2017-02-08 16:56:48,224 INFO  Time after invoking service:Wed Feb 08 16:56:48 IST 2017
+2017-02-08 16:56:48,224 INFO  User solution successfully verified
+2017-02-08 16:56:48,224 INFO  Processing the response from verify service
+2017-02-08 16:56:48,226 INFO  Starting to parse JSON response
+2017-02-08 16:56:48,230 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,231 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,233 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,235 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,237 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,239 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:56:48,254 INFO  Successfully parsed JSON response
+2017-02-08 16:56:48,254 INFO  In the process of generating verify response in HTML
+2017-02-08 16:56:48,332 INFO  Successfully generated verify response in HTML
+2017-02-08 16:56:48,332 INFO  Successfully processed the response from service
+2017-02-08 16:57:04,083 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:57:04,083 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:57:04,099 INFO  Starting to parse the user solution
+2017-02-08 16:57:04,099 INFO  Displaying user solution
+2017-02-08 16:57:05,552 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                return None\r\n            \r\n        return car_list_year\r\n    \r\n    \r\n    def add_cars(self,new_car_list):\r\n#         for new_car in new_car_list :\r\n#             self.get_car_list()\r\n            \r\n        \r\n        self.get_car_list().append(new_car_list)\r\n    \r\n    def remove_car_from_karnataka(self):\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            if \"KA\" in reg_string[:2] :\r\n                self.get_car_list().remove(cars_obj)\r\n    \r\n\r\n#Implement Service class here\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:57:05,552 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:57:05,552 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:57:05,552 INFO  Invoking the service to verify the user solution
+2017-02-08 16:57:05,552 INFO  Time before invoking service:Wed Feb 08 16:57:05 IST 2017
+2017-02-08 16:57:05,568 INFO  Initialising service address for VerifySolution
+2017-02-08 16:57:05,568 INFO  Time before invoking service In SUPER:Wed Feb 08 16:57:05 IST 2017
+2017-02-08 16:57:08,254 INFO  Time after invoking service In SUPER:Wed Feb 08 16:57:08 IST 2017
+2017-02-08 16:57:08,254 INFO  Service responded successfully with required details
+2017-02-08 16:57:08,254 INFO  Time after invoking service:Wed Feb 08 16:57:08 IST 2017
+2017-02-08 16:57:08,254 INFO  User solution successfully verified
+2017-02-08 16:57:08,270 INFO  Processing the response from verify service
+2017-02-08 16:57:08,270 INFO  Starting to parse JSON response
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:08,270 INFO  Successfully parsed JSON response
+2017-02-08 16:57:08,286 INFO  In the process of generating verify response in HTML
+2017-02-08 16:57:08,379 INFO  Successfully generated verify response in HTML
+2017-02-08 16:57:08,379 INFO  Successfully processed the response from service
+2017-02-08 16:57:31,490 INFO  Setting request parameters for VerifySolution
+2017-02-08 16:57:31,490 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 16:57:31,490 INFO  Starting to parse the user solution
+2017-02-08 16:57:31,490 INFO  Displaying user solution
+2017-02-08 16:57:33,786 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                return None\r\n            \r\n        return car_list_year\r\n    \r\n    \r\n    def add_cars(self,new_car_list):\r\n#         for new_car in new_car_list :\r\n#             self.get_car_list()\r\n            \r\n        \r\n        self.get_car_list().append(new_car_list)\r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            if \"KA\" in reg_string[:2] :\r\n                self.get_car_list().remove(cars_obj)\r\n    \r\n\r\n#Implement Service class here\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 16:57:33,786 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 16:57:33,786 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 16:57:33,786 INFO  Invoking the service to verify the user solution
+2017-02-08 16:57:33,786 INFO  Time before invoking service:Wed Feb 08 16:57:33 IST 2017
+2017-02-08 16:57:33,786 INFO  Initialising service address for VerifySolution
+2017-02-08 16:57:33,786 INFO  Time before invoking service In SUPER:Wed Feb 08 16:57:33 IST 2017
+2017-02-08 16:57:36,326 INFO  Time after invoking service In SUPER:Wed Feb 08 16:57:36 IST 2017
+2017-02-08 16:57:36,326 INFO  Service responded successfully with required details
+2017-02-08 16:57:36,342 INFO  Time after invoking service:Wed Feb 08 16:57:36 IST 2017
+2017-02-08 16:57:36,342 INFO  User solution successfully verified
+2017-02-08 16:57:36,342 INFO  Processing the response from verify service
+2017-02-08 16:57:36,342 INFO  Starting to parse JSON response
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 16:57:36,342 INFO  Successfully parsed JSON response
+2017-02-08 16:57:36,342 INFO  In the process of generating verify response in HTML
+2017-02-08 16:57:36,420 INFO  Successfully generated verify response in HTML
+2017-02-08 16:57:36,420 INFO  Successfully processed the response from service
+2017-02-08 17:45:23,066 INFO  Setting request parameters for VerifySolution
+2017-02-08 17:45:23,097 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 17:45:23,097 INFO  Starting to parse the user solution
+2017-02-08 17:45:23,097 INFO  Displaying user solution
+2017-02-08 17:45:26,206 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n        \r\n    \r\n    \r\n    def add_cars(self,new_car_list):\r\n        self.get_car_list().append(new_car_list)\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n#         \r\n#         for cars_obj in self.get_car_list() :\r\n#             print(\"model : \",cars_obj.get_model() )\r\n#             print(\"year:\" ,cars_obj.get_year() )\r\n#             print(\"registration_number\" , cars_obj.get_registration_number())\r\n        print(\"dfdf\")\r\n        for cars_obj in self.get_car_list() :\r\n            print(cars_obj.get_model())\r\n            reg_string = cars_obj.get_registration_number()\r\n            print(cars_obj.get_registration_number())\r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n        \r\n#Implement Service class here\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 17:45:26,206 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 17:45:26,206 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 17:45:26,206 INFO  Invoking the service to verify the user solution
+2017-02-08 17:45:26,206 INFO  Time before invoking service:Wed Feb 08 17:45:26 IST 2017
+2017-02-08 17:45:26,206 INFO  Initialising service address for VerifySolution
+2017-02-08 17:45:26,206 INFO  Time before invoking service In SUPER:Wed Feb 08 17:45:26 IST 2017
+2017-02-08 17:45:28,659 INFO  Time after invoking service In SUPER:Wed Feb 08 17:45:28 IST 2017
+2017-02-08 17:45:28,659 INFO  Service responded successfully with required details
+2017-02-08 17:45:28,659 INFO  Time after invoking service:Wed Feb 08 17:45:28 IST 2017
+2017-02-08 17:45:28,659 INFO  User solution successfully verified
+2017-02-08 17:45:28,659 INFO  Processing the response from verify service
+2017-02-08 17:45:28,659 INFO  Starting to parse JSON response
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:45:28,675 INFO  Successfully parsed JSON response
+2017-02-08 17:45:28,675 INFO  In the process of generating verify response in HTML
+2017-02-08 17:45:28,769 INFO  Successfully generated verify response in HTML
+2017-02-08 17:45:28,769 INFO  Successfully processed the response from service
+2017-02-08 17:54:27,067 INFO  Setting request parameters for VerifySolution
+2017-02-08 17:54:27,083 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 17:54:27,083 INFO  Starting to parse the user solution
+2017-02-08 17:54:27,083 INFO  Displaying user solution
+2017-02-08 17:54:28,723 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-3\r\n\r\ndef check_double(list1,list2):\r\n    new_list=[]\r\n    \r\n    for values in list1 :\r\n        for listv in list2 :\r\n            if values*2  == listv :\r\n                new_list.append(values)\r\n    return new_list\r\n\r\n#Provide different values for the variables and test your program\r\nlist1=[11,8,23,7,25,15]\r\nlist2=[6,33,50,31,46,78,16,34]\r\nprint(check_double(list1, list2))\r\n","asgnmtId":"3","SolutionFileName":"Assignment3.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 17:54:28,723 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 17:54:28,723 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 17:54:28,723 INFO  Invoking the service to verify the user solution
+2017-02-08 17:54:28,723 INFO  Time before invoking service:Wed Feb 08 17:54:28 IST 2017
+2017-02-08 17:54:28,723 INFO  Initialising service address for VerifySolution
+2017-02-08 17:54:28,723 INFO  Time before invoking service In SUPER:Wed Feb 08 17:54:28 IST 2017
+2017-02-08 17:54:30,004 INFO  Time after invoking service In SUPER:Wed Feb 08 17:54:30 IST 2017
+2017-02-08 17:54:30,004 INFO  Service responded successfully with required details
+2017-02-08 17:54:30,004 INFO  Time after invoking service:Wed Feb 08 17:54:30 IST 2017
+2017-02-08 17:54:30,004 INFO  User solution successfully verified
+2017-02-08 17:54:30,004 INFO  Processing the response from verify service
+2017-02-08 17:54:30,019 INFO  Starting to parse JSON response
+2017-02-08 17:54:30,019 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:30,019 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:30,019 INFO  Successfully parsed JSON response
+2017-02-08 17:54:30,019 INFO  In the process of generating verify response in HTML
+2017-02-08 17:54:30,105 INFO  Successfully generated verify response in HTML
+2017-02-08 17:54:30,105 INFO  Successfully processed the response from service
+2017-02-08 17:54:46,585 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 17:54:46,585 INFO  Displaying user solution
+2017-02-08 17:54:46,601 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 17:54:46,603 INFO  Invoking the service to submit the user solution
+2017-02-08 17:54:46,604 INFO  Initialising service address for Submit
+2017-02-08 17:54:46,606 INFO  Time before invoking service In SUPER:Wed Feb 08 17:54:46 IST 2017
+2017-02-08 17:54:46,803 INFO  Time after invoking service In SUPER:Wed Feb 08 17:54:46 IST 2017
+2017-02-08 17:54:46,803 INFO  Service responded successfully with required details
+2017-02-08 17:54:46,803 INFO  User solution successfully submitted
+2017-02-08 17:54:46,803 INFO  Displaying submission status
+2017-02-08 17:54:46,803 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-08 17:54:53,028 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 17:54:53,043 INFO  Displaying user solution
+2017-02-08 17:54:53,043 INFO  Verify the solution before submitting
+2017-02-08 17:54:53,043 ERROR Exception occured while submitting the user solution
+2017-02-08 17:54:55,210 INFO  Setting request parameters for VerifySolution
+2017-02-08 17:54:55,210 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 17:54:55,210 INFO  Starting to parse the user solution
+2017-02-08 17:54:55,210 INFO  Displaying user solution
+2017-02-08 17:54:56,226 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n    def add_cars(self,new_car_list):\r\n        self.get_car_list().append(new_car_list)\r\n        #self.get_car_list().sort()\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = Car(\"WagonR\",2009,\"KY09 3056\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 17:54:56,226 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 17:54:56,226 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 17:54:56,226 INFO  Invoking the service to verify the user solution
+2017-02-08 17:54:56,226 INFO  Time before invoking service:Wed Feb 08 17:54:56 IST 2017
+2017-02-08 17:54:56,226 INFO  Initialising service address for VerifySolution
+2017-02-08 17:54:56,226 INFO  Time before invoking service In SUPER:Wed Feb 08 17:54:56 IST 2017
+2017-02-08 17:54:58,670 INFO  Time after invoking service In SUPER:Wed Feb 08 17:54:58 IST 2017
+2017-02-08 17:54:58,670 INFO  Service responded successfully with required details
+2017-02-08 17:54:58,670 INFO  Time after invoking service:Wed Feb 08 17:54:58 IST 2017
+2017-02-08 17:54:58,670 INFO  User solution successfully verified
+2017-02-08 17:54:58,670 INFO  Processing the response from verify service
+2017-02-08 17:54:58,670 INFO  Starting to parse JSON response
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,670 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 17:54:58,686 INFO  Successfully parsed JSON response
+2017-02-08 17:54:58,686 INFO  In the process of generating verify response in HTML
+2017-02-08 17:54:58,753 INFO  Successfully generated verify response in HTML
+2017-02-08 17:54:58,753 INFO  Successfully processed the response from service
+2017-02-08 17:57:05,393 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 17:57:05,409 INFO  Displaying user solution
+2017-02-08 17:57:05,409 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 17:57:05,409 INFO  Invoking the service to submit the user solution
+2017-02-08 17:57:05,409 INFO  Initialising service address for Submit
+2017-02-08 17:57:05,409 INFO  Time before invoking service In SUPER:Wed Feb 08 17:57:05 IST 2017
+2017-02-08 17:57:08,721 INFO  Time after invoking service In SUPER:Wed Feb 08 17:57:08 IST 2017
+2017-02-08 17:57:08,721 INFO  Service responded successfully with required details
+2017-02-08 17:57:08,721 INFO  User solution successfully submitted
+2017-02-08 17:57:08,721 INFO  Displaying submission status
+2017-02-08 17:57:08,721 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-08 18:35:44,218 INFO  Setting request parameters for VerifySolution
+2017-02-08 18:35:44,234 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 18:35:44,234 INFO  Starting to parse the user solution
+2017-02-08 18:35:44,234 INFO  Displaying user solution
+2017-02-08 18:35:45,810 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n    def add_cars(self,new_car_list):\r\n        print(self.__car_list)\r\n        self.get_car_list().append(new_car_list)\r\n        \r\n        car_list = self.get_car_list()\r\n        for i in range(0,len(car_list)):\r\n            for j in range(0,len(car_list)-1):\r\n                if car_list[j].get_year()>car_list[j+1].get_year():\r\n                    temp=car_list[j]\r\n                    car_list[j]=car_list[j+1]\r\n                    car_list[j+1]=temp\r\n        self.__car_list = car_list\r\n        return self.__car_list\r\n\r\n        \r\n        \r\n        \r\n        #self.get_car_list().sort()\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = Car(\"WagonR\",2009,\"KY09 3056\")\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 18:35:45,810 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 18:35:45,810 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 18:35:45,810 INFO  Invoking the service to verify the user solution
+2017-02-08 18:35:45,810 INFO  Time before invoking service:Wed Feb 08 18:35:45 IST 2017
+2017-02-08 18:35:45,810 INFO  Initialising service address for VerifySolution
+2017-02-08 18:35:45,810 INFO  Time before invoking service In SUPER:Wed Feb 08 18:35:45 IST 2017
+2017-02-08 18:35:49,341 INFO  Time after invoking service In SUPER:Wed Feb 08 18:35:49 IST 2017
+2017-02-08 18:35:49,341 INFO  Service responded successfully with required details
+2017-02-08 18:35:49,341 INFO  Time after invoking service:Wed Feb 08 18:35:49 IST 2017
+2017-02-08 18:35:49,341 INFO  User solution successfully verified
+2017-02-08 18:35:49,341 INFO  Processing the response from verify service
+2017-02-08 18:35:49,341 INFO  Starting to parse JSON response
+2017-02-08 18:35:49,341 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,341 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,341 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,341 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,356 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,356 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:35:49,356 INFO  Successfully parsed JSON response
+2017-02-08 18:35:49,356 INFO  In the process of generating verify response in HTML
+2017-02-08 18:35:49,419 INFO  Successfully generated verify response in HTML
+2017-02-08 18:35:49,419 INFO  Successfully processed the response from service
+2017-02-08 18:39:34,828 INFO  Setting request parameters for VerifySolution
+2017-02-08 18:39:34,828 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 18:39:34,828 INFO  Starting to parse the user solution
+2017-02-08 18:39:34,828 INFO  Displaying user solution
+2017-02-08 18:39:36,405 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n    def add_cars(self,new_car_list):\r\n        #self.get_car_list().append(new_car_list)\r\n        self.__car_list=self.__car_list+new_car_list\r\n        car_list = self.get_car_list()\r\n        for i in range(0,len(car_list)):\r\n            for j in range(0,len(car_list)-1):\r\n                if car_list[j].get_year()>car_list[j+1].get_year():\r\n                    temp=car_list[j]\r\n                    car_list[j]=car_list[j+1]\r\n                    car_list[j+1]=temp\r\n        self.__car_list = car_list\r\n        \r\n        \r\n        \r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n        return self.__car_list\r\n\r\n        \r\n        \r\n        \r\n        #self.get_car_list().sort()\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = [car2, car4]\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 18:39:36,405 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 18:39:36,405 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 18:39:36,405 INFO  Invoking the service to verify the user solution
+2017-02-08 18:39:36,405 INFO  Time before invoking service:Wed Feb 08 18:39:36 IST 2017
+2017-02-08 18:39:36,405 INFO  Initialising service address for VerifySolution
+2017-02-08 18:39:36,405 INFO  Time before invoking service In SUPER:Wed Feb 08 18:39:36 IST 2017
+2017-02-08 18:39:38,992 INFO  Time after invoking service In SUPER:Wed Feb 08 18:39:38 IST 2017
+2017-02-08 18:39:38,992 INFO  Service responded successfully with required details
+2017-02-08 18:39:38,992 INFO  Time after invoking service:Wed Feb 08 18:39:38 IST 2017
+2017-02-08 18:39:38,992 INFO  User solution successfully verified
+2017-02-08 18:39:38,992 INFO  Processing the response from verify service
+2017-02-08 18:39:38,992 INFO  Starting to parse JSON response
+2017-02-08 18:39:38,992 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:38,992 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:39,008 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:39,008 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:39,008 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:39,008 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:39:39,008 INFO  Successfully parsed JSON response
+2017-02-08 18:39:39,008 INFO  In the process of generating verify response in HTML
+2017-02-08 18:39:39,071 INFO  Successfully generated verify response in HTML
+2017-02-08 18:39:39,086 INFO  Successfully processed the response from service
+2017-02-08 18:40:16,588 INFO  Setting request parameters for VerifySolution
+2017-02-08 18:40:16,588 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 18:40:16,588 INFO  Starting to parse the user solution
+2017-02-08 18:40:16,588 INFO  Displaying user solution
+2017-02-08 18:40:17,580 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in car_list :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n    def add_cars(self,new_car_list):\r\n        #self.get_car_list().append(new_car_list)\r\n        self.__car_list=self.__car_list+new_car_list\r\n        car_list = self.get_car_list()\r\n        for i in range(0,len(car_list)):\r\n            for j in range(0,len(car_list)-1):\r\n                if car_list[j].get_year()>car_list[j+1].get_year():\r\n                    temp=car_list[j]\r\n                    car_list[j]=car_list[j+1]\r\n                    car_list[j+1]=temp\r\n        self.__car_list = car_list\r\n        \r\n        return self.__car_list\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = [car2, car4]\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 18:40:17,580 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 18:40:17,580 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 18:40:17,580 INFO  Invoking the service to verify the user solution
+2017-02-08 18:40:17,580 INFO  Time before invoking service:Wed Feb 08 18:40:17 IST 2017
+2017-02-08 18:40:17,580 INFO  Initialising service address for VerifySolution
+2017-02-08 18:40:17,580 INFO  Time before invoking service In SUPER:Wed Feb 08 18:40:17 IST 2017
+2017-02-08 18:40:20,643 INFO  Time after invoking service In SUPER:Wed Feb 08 18:40:20 IST 2017
+2017-02-08 18:40:20,643 INFO  Service responded successfully with required details
+2017-02-08 18:40:20,643 INFO  Time after invoking service:Wed Feb 08 18:40:20 IST 2017
+2017-02-08 18:40:20,643 INFO  User solution successfully verified
+2017-02-08 18:40:20,643 INFO  Processing the response from verify service
+2017-02-08 18:40:20,643 INFO  Starting to parse JSON response
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,643 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:40:20,659 INFO  Successfully parsed JSON response
+2017-02-08 18:40:20,659 INFO  In the process of generating verify response in HTML
+2017-02-08 18:40:20,721 INFO  Successfully generated verify response in HTML
+2017-02-08 18:40:20,721 INFO  Successfully processed the response from service
+2017-02-08 18:41:24,206 INFO  Setting request parameters for VerifySolution
+2017-02-08 18:41:24,352 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 18:41:24,352 INFO  Starting to parse the user solution
+2017-02-08 18:41:24,352 INFO  Displaying user solution
+2017-02-08 18:41:26,555 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in self.get_car_list() :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n            else :\r\n                car_result = None\r\n            \r\n        if car_list_year != None :\r\n            return car_list_year\r\n        \r\n        else :\r\n            car_list_year = car_result\r\n            \r\n    def add_cars(self,new_car_list):\r\n        #self.get_car_list().append(new_car_list)\r\n        self.__car_list=self.__car_list+new_car_list\r\n        car_list = self.get_car_list()\r\n        for i in range(0,len(car_list)):\r\n            for j in range(0,len(car_list)-1):\r\n                if car_list[j].get_year()>car_list[j+1].get_year():\r\n                    temp=car_list[j]\r\n                    car_list[j]=car_list[j+1]\r\n                    car_list[j+1]=temp\r\n        self.__car_list = car_list\r\n        \r\n        return self.__car_list\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = [car2, car4]\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 18:41:26,555 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 18:41:26,555 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 18:41:26,555 INFO  Invoking the service to verify the user solution
+2017-02-08 18:41:26,555 INFO  Time before invoking service:Wed Feb 08 18:41:26 IST 2017
+2017-02-08 18:41:26,555 INFO  Initialising service address for VerifySolution
+2017-02-08 18:41:26,555 INFO  Time before invoking service In SUPER:Wed Feb 08 18:41:26 IST 2017
+2017-02-08 18:41:28,947 INFO  Time after invoking service In SUPER:Wed Feb 08 18:41:28 IST 2017
+2017-02-08 18:41:28,947 INFO  Service responded successfully with required details
+2017-02-08 18:41:28,947 INFO  Time after invoking service:Wed Feb 08 18:41:28 IST 2017
+2017-02-08 18:41:28,947 INFO  User solution successfully verified
+2017-02-08 18:41:28,947 INFO  Processing the response from verify service
+2017-02-08 18:41:28,947 INFO  Starting to parse JSON response
+2017-02-08 18:41:28,962 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:41:28,962 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:41:28,962 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:41:28,962 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:41:28,962 INFO  Successfully parsed JSON response
+2017-02-08 18:41:28,962 INFO  In the process of generating verify response in HTML
+2017-02-08 18:41:29,025 INFO  Successfully generated verify response in HTML
+2017-02-08 18:41:29,025 INFO  Successfully processed the response from service
+2017-02-08 18:43:34,425 INFO  Setting request parameters for VerifySolution
+2017-02-08 18:43:34,425 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 18:43:34,425 INFO  Starting to parse the user solution
+2017-02-08 18:43:34,425 INFO  Displaying user solution
+2017-02-08 18:43:36,613 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-2\r\n\r\nclass Car:\r\n    def __init__(self,model,year,registration_number):\r\n        self.__model=model\r\n        self.__year=year\r\n        self.__registration_number=registration_number\r\n    \r\n    def get_model(self): \r\n        return self.__model\r\n    \r\n    def get_year(self):\r\n        return self.__year\r\n    \r\n    def get_registration_number(self):\r\n        return self.__registration_number\r\n    \r\n    def __str__(self):\r\n        return(self.__model+\" \"+self.__registration_number+\" \"+(str)(self.__year))\r\n    \r\n\r\n\r\nclass Service: \r\n    \r\n    \r\n    \r\n    def __init__(self,car_list): \r\n        self.__car_list = car_list\r\n        \r\n    def get_car_list(self):\r\n        return self.__car_list\r\n    \r\n    \r\n    def find_cars_by_year(self,year):\r\n        car_list_year = []\r\n        car_result = []\r\n        for cars_obj in self.get_car_list() :\r\n            if cars_obj.get_year() == year :\r\n                model_name = cars_obj.get_model()\r\n                car_list_year.append(model_name)\r\n    \r\n                \r\n        if len(car_list_year) > 0 :\r\n            return car_list_year\r\n        else :\r\n            return None\r\n            \r\n    def add_cars(self,new_car_list):\r\n        #self.get_car_list().append(new_car_list)\r\n        self.__car_list=self.__car_list+new_car_list\r\n        car_list = self.get_car_list()\r\n        for i in range(0,len(car_list)):\r\n            for j in range(0,len(car_list)-1):\r\n                if car_list[j].get_year()>car_list[j+1].get_year():\r\n                    temp=car_list[j]\r\n                    car_list[j]=car_list[j+1]\r\n                    car_list[j+1]=temp\r\n        self.__car_list = car_list\r\n        \r\n        return self.__car_list\r\n        \r\n        \r\n    \r\n    def remove_cars_from_karnataka(self):\r\n        new_list = []\r\n\r\n        for cars_obj in self.get_car_list() :\r\n            reg_string = cars_obj.get_registration_number()\r\n            \r\n            if \"KA\" == reg_string[:2] :\r\n                print(\"Hello\")\r\n                continue\r\n                #self.get_car_list().remove(cars_obj)\r\n                 \r\n            else : \r\n                print(\"Yellow\")\r\n                new_list.append(cars_obj)\r\n                \r\n                \r\n        self.__car_list = new_list\r\n        for cars_obj in self.get_car_list() :\r\n            print(\"model : \",cars_obj.get_model() )\r\n            print(\"year:\" ,cars_obj.get_year() )\r\n            print(\"registration_number\" , cars_obj.get_registration_number())\r\n            \r\n        return self.__car_list\r\n        \r\n\r\n\r\ncar1=Car(\"WagonR\",2010,\"KA09 3056\")\r\ncar2=Car(\"Beat\", 2011, \"MH10 6776\")\r\ncar3=Car(\"Ritz\", 2013,\"KA12 9098\")\r\ncar4=Car(\"Polo\",2013,\"GJ01 7854\")\r\ncar5=Car(\"Amaze\",2014,\"KL07 4332\")\r\nnew_car_list = [car2, car4]\r\n#Add different values to the list and test the program\r\ncar_list=[car1, car2, car3, car4 ,car5]\r\nser = Service(car_list)\r\nser.add_cars(new_car_list)\r\nprint(ser.find_cars_by_year(2013))\r\nser.remove_cars_from_karnataka()\r\nprint(ser.get_car_list())\r\n\r\n#Create object of Service class, invoke the methods and test your program\r\n","asgnmtId":"2","SolutionFileName":"Assignment2.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 18:43:36,613 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 18:43:36,613 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 18:43:36,613 INFO  Invoking the service to verify the user solution
+2017-02-08 18:43:36,613 INFO  Time before invoking service:Wed Feb 08 18:43:36 IST 2017
+2017-02-08 18:43:36,613 INFO  Initialising service address for VerifySolution
+2017-02-08 18:43:36,613 INFO  Time before invoking service In SUPER:Wed Feb 08 18:43:36 IST 2017
+2017-02-08 18:43:39,004 INFO  Time after invoking service In SUPER:Wed Feb 08 18:43:39 IST 2017
+2017-02-08 18:43:39,004 INFO  Service responded successfully with required details
+2017-02-08 18:43:39,004 INFO  Time after invoking service:Wed Feb 08 18:43:39 IST 2017
+2017-02-08 18:43:39,004 INFO  User solution successfully verified
+2017-02-08 18:43:39,004 INFO  Processing the response from verify service
+2017-02-08 18:43:39,020 INFO  Starting to parse JSON response
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,020 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 18:43:39,036 INFO  Successfully parsed JSON response
+2017-02-08 18:43:39,036 INFO  In the process of generating verify response in HTML
+2017-02-08 18:43:39,114 INFO  Successfully generated verify response in HTML
+2017-02-08 18:43:39,129 INFO  Successfully processed the response from service
+2017-02-08 18:44:08,881 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 18:44:08,881 INFO  Displaying user solution
+2017-02-08 18:44:08,881 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 18:44:08,881 INFO  Invoking the service to submit the user solution
+2017-02-08 18:44:08,881 INFO  Initialising service address for Submit
+2017-02-08 18:44:08,881 INFO  Time before invoking service In SUPER:Wed Feb 08 18:44:08 IST 2017
+2017-02-08 18:44:09,303 INFO  Time after invoking service In SUPER:Wed Feb 08 18:44:09 IST 2017
+2017-02-08 18:44:09,303 INFO  Service responded successfully with required details
+2017-02-08 18:44:09,303 INFO  User solution successfully submitted
+2017-02-08 18:44:09,303 INFO  Displaying submission status
+2017-02-08 18:44:09,303 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-08 19:11:03,638 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:11:03,654 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:11:03,654 INFO  Starting to parse the user solution
+2017-02-08 19:11:03,654 INFO  Displaying user solution
+2017-02-08 19:11:05,846 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=experience\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n#Implement Game class here\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(player_names[index_max])\r\n            player_exp.pop(index_max)\r\n            player_names.pop(index_max)\r\n            \r\n            \r\n            if len(player_names) == 0 :\r\n                break\r\n            \r\n        \r\n        \r\n            \r\n            \r\n#         car_list = self.__players_list\r\n#         for i in range(0,len(car_list)):\r\n#             for j in range(0,len(car_list)-1):\r\n#                 if car_list[j].get_experience() > car_list[j+1].get_experience():\r\n#                     temp=car_list[j]\r\n#                     car_list[j]=car_list[j+1]\r\n#                     car_list[j+1]=temp\r\n#                     \r\n#                     \r\n#         player_exp = car_list\r\n        \r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n            \r\n    \r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n        temp_replace = self.__players_list[new_index_position]\r\n        self.__players_list[new_index_position] = self.__players_list[old_index_position]\r\n        self.__players_list[old_index_position] = temp_replace\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n    \r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",13)\r\nplayer6=Player(\"Ishant\",9)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:11:05,846 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:11:05,846 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:11:05,846 INFO  Invoking the service to verify the user solution
+2017-02-08 19:11:05,846 INFO  Time before invoking service:Wed Feb 08 19:11:05 IST 2017
+2017-02-08 19:11:05,846 INFO  Initialising service address for VerifySolution
+2017-02-08 19:11:05,846 INFO  Time before invoking service In SUPER:Wed Feb 08 19:11:05 IST 2017
+2017-02-08 19:11:08,448 INFO  Time after invoking service In SUPER:Wed Feb 08 19:11:08 IST 2017
+2017-02-08 19:11:08,448 INFO  Service responded successfully with required details
+2017-02-08 19:11:08,448 INFO  Time after invoking service:Wed Feb 08 19:11:08 IST 2017
+2017-02-08 19:11:08,448 INFO  User solution successfully verified
+2017-02-08 19:11:08,448 INFO  Processing the response from verify service
+2017-02-08 19:11:08,448 INFO  Starting to parse JSON response
+2017-02-08 19:11:08,448 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:11:08,448 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:11:08,448 INFO  Successfully parsed JSON response
+2017-02-08 19:11:08,464 INFO  In the process of generating verify response in HTML
+2017-02-08 19:11:08,542 INFO  Successfully generated verify response in HTML
+2017-02-08 19:11:08,542 INFO  Successfully processed the response from service
+2017-02-08 19:12:18,110 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:12:18,110 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:12:18,110 INFO  Starting to parse the user solution
+2017-02-08 19:12:18,110 INFO  Displaying user solution
+2017-02-08 19:12:19,338 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=experience\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n#Implement Game class here\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(player_names[index_max])\r\n            player_exp.pop(index_max)\r\n            player_names.pop(index_max)\r\n            \r\n            if len(player_names) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n            \r\n    \r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n        temp_replace = self.__players_list[new_index_position]\r\n        self.__players_list[new_index_position] = self.__players_list[old_index_position]\r\n        self.__players_list[old_index_position] = temp_replace\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n    \r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",13)\r\nplayer6=Player(\"Ishant\",9)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:12:19,338 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:12:19,338 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:12:19,338 INFO  Invoking the service to verify the user solution
+2017-02-08 19:12:19,338 INFO  Time before invoking service:Wed Feb 08 19:12:19 IST 2017
+2017-02-08 19:12:19,338 INFO  Initialising service address for VerifySolution
+2017-02-08 19:12:19,338 INFO  Time before invoking service In SUPER:Wed Feb 08 19:12:19 IST 2017
+2017-02-08 19:12:21,515 INFO  Time after invoking service In SUPER:Wed Feb 08 19:12:21 IST 2017
+2017-02-08 19:12:21,515 INFO  Service responded successfully with required details
+2017-02-08 19:12:21,515 INFO  Time after invoking service:Wed Feb 08 19:12:21 IST 2017
+2017-02-08 19:12:21,515 INFO  User solution successfully verified
+2017-02-08 19:12:21,515 INFO  Processing the response from verify service
+2017-02-08 19:12:21,515 INFO  Starting to parse JSON response
+2017-02-08 19:12:21,515 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:12:21,515 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:12:21,515 INFO  Successfully parsed JSON response
+2017-02-08 19:12:21,515 INFO  In the process of generating verify response in HTML
+2017-02-08 19:12:21,624 INFO  Successfully generated verify response in HTML
+2017-02-08 19:12:21,624 INFO  Successfully processed the response from service
+2017-02-08 19:13:21,747 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 19:13:21,747 INFO  Displaying user solution
+2017-02-08 19:13:21,763 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 19:13:21,763 INFO  Invoking the service to submit the user solution
+2017-02-08 19:13:21,763 INFO  Initialising service address for Submit
+2017-02-08 19:13:21,763 INFO  Time before invoking service In SUPER:Wed Feb 08 19:13:21 IST 2017
+2017-02-08 19:13:21,888 INFO  Time after invoking service In SUPER:Wed Feb 08 19:13:21 IST 2017
+2017-02-08 19:13:21,888 INFO  Service responded successfully with required details
+2017-02-08 19:13:21,888 INFO  User solution successfully submitted
+2017-02-08 19:13:21,888 INFO  Displaying submission status
+2017-02-08 19:13:21,888 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-08 19:26:47,103 INFO  Loading Baseframework Plugin
+2017-02-08 19:26:47,103 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-08 19:26:49,103 INFO  Loading the Menu - HandsOn
+2017-02-08 19:26:49,165 INFO  Successfully loaded the Menu - HandsOn
+2017-02-08 19:28:10,160 INFO  Loading Programming Assignment Plugin
+2017-02-08 19:28:10,488 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:28:10,488 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:28:10,503 INFO  Starting to parse the user solution
+2017-02-08 19:28:10,503 INFO  Displaying user solution
+2017-02-08 19:28:12,066 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=experience\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n#Implement Game class here\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(player_names[index_max])\r\n            player_exp.pop(index_max)\r\n            player_names.pop(index_max)\r\n            \r\n            if len(player_names) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n        temp_replace = self.__players_list[old_index_position]\r\n        self.__players_list.pop(old_index_position)\r\n        self.__players_list[new_index_position] = temp_replace\r\n        #self.__players_list[old_index_position] = temp_replace\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",13)\r\nplayer6=Player(\"Ishant\",9)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:28:12,066 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:28:12,066 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:28:12,066 INFO  Invoking the service to verify the user solution
+2017-02-08 19:28:12,081 INFO  Time before invoking service:Wed Feb 08 19:28:12 IST 2017
+2017-02-08 19:28:12,081 INFO  Initialising service address for VerifySolution
+2017-02-08 19:28:12,081 INFO  Time before invoking service In SUPER:Wed Feb 08 19:28:12 IST 2017
+2017-02-08 19:28:14,222 INFO  Time after invoking service In SUPER:Wed Feb 08 19:28:14 IST 2017
+2017-02-08 19:28:14,222 INFO  Service responded successfully with required details
+2017-02-08 19:28:14,238 INFO  Time after invoking service:Wed Feb 08 19:28:14 IST 2017
+2017-02-08 19:28:14,238 INFO  User solution successfully verified
+2017-02-08 19:28:14,238 INFO  Processing the response from verify service
+2017-02-08 19:28:14,238 INFO  Starting to parse JSON response
+2017-02-08 19:28:14,238 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:28:14,238 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:28:14,238 INFO  Successfully parsed JSON response
+2017-02-08 19:28:14,238 INFO  In the process of generating verify response in HTML
+2017-02-08 19:28:14,441 INFO  Successfully generated verify response in HTML
+2017-02-08 19:28:14,441 INFO  Successfully processed the response from service
+2017-02-08 19:31:36,645 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:31:36,645 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:31:36,645 INFO  Starting to parse the user solution
+2017-02-08 19:31:36,645 INFO  Displaying user solution
+2017-02-08 19:31:37,817 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=int(experience)\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n#Implement Game class here\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(player_names[index_max])\r\n            player_exp.pop(index_max)\r\n            player_names.pop(index_max)\r\n            \r\n            if len(player_names) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n        temp_replace = self.__players_list[old_index_position]\r\n        self.__players_list.pop(old_index_position)\r\n        self.__players_list[new_index_position] = temp_replace\r\n        #self.__players_list[old_index_position] = temp_replace\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",13)\r\nplayer6=Player(\"Ishant\",9.5)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:31:37,832 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:31:37,832 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:31:37,832 INFO  Invoking the service to verify the user solution
+2017-02-08 19:31:37,832 INFO  Time before invoking service:Wed Feb 08 19:31:37 IST 2017
+2017-02-08 19:31:37,832 INFO  Initialising service address for VerifySolution
+2017-02-08 19:31:37,832 INFO  Time before invoking service In SUPER:Wed Feb 08 19:31:37 IST 2017
+2017-02-08 19:31:39,989 INFO  Time after invoking service In SUPER:Wed Feb 08 19:31:39 IST 2017
+2017-02-08 19:31:40,004 INFO  Service responded successfully with required details
+2017-02-08 19:31:40,004 INFO  Time after invoking service:Wed Feb 08 19:31:40 IST 2017
+2017-02-08 19:31:40,004 INFO  User solution successfully verified
+2017-02-08 19:31:40,004 INFO  Processing the response from verify service
+2017-02-08 19:31:40,004 INFO  Starting to parse JSON response
+2017-02-08 19:31:40,004 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:31:40,004 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:31:40,004 INFO  Successfully parsed JSON response
+2017-02-08 19:31:40,004 INFO  In the process of generating verify response in HTML
+2017-02-08 19:31:40,082 INFO  Successfully generated verify response in HTML
+2017-02-08 19:31:40,082 INFO  Successfully processed the response from service
+2017-02-08 19:35:37,744 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:35:37,744 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:35:37,744 INFO  Starting to parse the user solution
+2017-02-08 19:35:37,744 INFO  Displaying user solution
+2017-02-08 19:35:39,603 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=int(experience)\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(self.__players_list[index_max])\r\n            player_exp.pop(index_max)\r\n            self.__players_list.pop(index_max)\r\n            \r\n            if len(self.__players_list) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n        temp_replace = self.__players_list[old_index_position]\r\n        self.__players_list.pop(old_index_position)\r\n        self.__players_list[new_index_position] = temp_replace\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",12)\r\nplayer6=Player(\"Ishant\",9.5)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:35:39,603 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:35:39,603 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:35:39,603 INFO  Invoking the service to verify the user solution
+2017-02-08 19:35:39,603 INFO  Time before invoking service:Wed Feb 08 19:35:39 IST 2017
+2017-02-08 19:35:39,603 INFO  Initialising service address for VerifySolution
+2017-02-08 19:35:39,603 INFO  Time before invoking service In SUPER:Wed Feb 08 19:35:39 IST 2017
+2017-02-08 19:35:44,510 INFO  Time after invoking service In SUPER:Wed Feb 08 19:35:44 IST 2017
+2017-02-08 19:35:44,510 INFO  Service responded successfully with required details
+2017-02-08 19:35:44,510 INFO  Time after invoking service:Wed Feb 08 19:35:44 IST 2017
+2017-02-08 19:35:44,510 INFO  User solution successfully verified
+2017-02-08 19:35:44,510 INFO  Processing the response from verify service
+2017-02-08 19:35:44,510 INFO  Starting to parse JSON response
+2017-02-08 19:35:44,510 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:35:44,510 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:35:44,510 INFO  Successfully parsed JSON response
+2017-02-08 19:35:44,510 INFO  In the process of generating verify response in HTML
+2017-02-08 19:35:44,588 INFO  Successfully generated verify response in HTML
+2017-02-08 19:35:44,588 INFO  Successfully processed the response from service
+2017-02-08 19:37:11,631 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:37:11,631 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:37:11,631 INFO  Starting to parse the user solution
+2017-02-08 19:37:11,631 INFO  Displaying user solution
+2017-02-08 19:37:12,725 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=int(experience)\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(self.__players_list[index_max])\r\n            player_exp.pop(index_max)\r\n            self.__players_list.pop(index_max)\r\n            \r\n            if len(self.__players_list) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n    \r\n        temp=self.__players_list.pop(old_index_position)\r\n        self.__players_list.insert(new_index_position, temp)\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",12)\r\nplayer6=Player(\"Ishant\",9.5)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:37:12,725 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:37:12,725 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:37:12,741 INFO  Invoking the service to verify the user solution
+2017-02-08 19:37:12,741 INFO  Time before invoking service:Wed Feb 08 19:37:12 IST 2017
+2017-02-08 19:37:12,741 INFO  Initialising service address for VerifySolution
+2017-02-08 19:37:12,741 INFO  Time before invoking service In SUPER:Wed Feb 08 19:37:12 IST 2017
+2017-02-08 19:37:15,100 INFO  Time after invoking service In SUPER:Wed Feb 08 19:37:15 IST 2017
+2017-02-08 19:37:15,100 INFO  Service responded successfully with required details
+2017-02-08 19:37:15,100 INFO  Time after invoking service:Wed Feb 08 19:37:15 IST 2017
+2017-02-08 19:37:15,100 INFO  User solution successfully verified
+2017-02-08 19:37:15,116 INFO  Processing the response from verify service
+2017-02-08 19:37:15,116 INFO  Starting to parse JSON response
+2017-02-08 19:37:15,116 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:37:15,116 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:37:15,116 INFO  Successfully parsed JSON response
+2017-02-08 19:37:15,116 INFO  In the process of generating verify response in HTML
+2017-02-08 19:37:15,178 INFO  Successfully generated verify response in HTML
+2017-02-08 19:37:15,178 INFO  Successfully processed the response from service
+2017-02-08 19:37:53,497 INFO  Setting request parameters for VerifySolution
+2017-02-08 19:37:53,513 INFO  Initiating to process and prepare Input for the verify service
+2017-02-08 19:37:53,513 INFO  Starting to parse the user solution
+2017-02-08 19:37:53,513 INFO  Displaying user solution
+2017-02-08 19:37:54,560 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-4\r\n\r\nclass Player:\r\n    def __init__(self,name,experience):\r\n        self.__name=name\r\n        self.__experience=int(experience)\r\n    \r\n    def get_name(self):\r\n        return self.__name\r\n    \r\n    def get_experience(self):\r\n        return self.__experience\r\n    \r\n    def __str__(self):\r\n        return(self.__name+\" \"+(str)(self.__experience))\r\n\r\n\r\n\r\nclass Game :\r\n    \r\n    def __init__(self,players_list):\r\n        self.__players_list = players_list\r\n        \r\n    \r\n    \r\n    def sort_players_based_on_experience(self):\r\n        player_names = []\r\n        player_exp = []\r\n        for player_obj in self.__players_list :\r\n            player_names.append(player_obj.get_name())\r\n            player_exp.append(player_obj.get_experience())\r\n            \r\n        str_list = []\r\n        \r\n        while(1) :\r\n            temp_max = max(player_exp)\r\n            index_max = player_exp.index(temp_max)\r\n            str_list.append(self.__players_list[index_max])\r\n            player_exp.pop(index_max)\r\n            self.__players_list.pop(index_max)\r\n            \r\n            if len(self.__players_list) == 0 :\r\n                break\r\n\r\n        self.__players_list = str_list\r\n        return self.__players_list\r\n\r\n\r\n    def shift_player_to_new_position(self,old_index_position , new_index_position):\r\n    \r\n        temp=self.__players_list.pop(old_index_position)\r\n        self.__players_list.insert(new_index_position, temp)\r\n    \r\n    def display_player_details(self):\r\n        print(self.__players_list)\r\n\r\n\r\nplayer1=Player(\"Dhoni\",15)\r\nplayer2=Player(\"Virat\",10)\r\nplayer3=Player(\"Rohit\",12)\r\nplayer4=Player(\"Raina\",11)\r\nplayer5=Player(\"Jadeja\",12)\r\nplayer6=Player(\"Ishant\",9.5)\r\nplayer7=Player(\"Shikhar\",8)\r\nplayer8=Player(\"Axar\",7.5)\r\nplayer9=Player(\"Ashwin\",6)\r\nplayer10=Player(\"Stuart\",7)\r\nplayer11=Player(\"Bhuvneshwar\",5)\r\n#Add different values to the list and test the program\r\nplayers_list=[player1,player2,player3,player4,player5,player6,player7,player8,   player9,player10,player11]\r\n\r\ngame2 = Game(players_list)\r\ngame2.sort_players_based_on_experience()\r\ngame2.shift_player_to_new_position(0, 3)\r\ngame2.display_player_details()\r\n#Create object of Game class, invoke the methods and test your program\r\n","asgnmtId":"4","SolutionFileName":"Assignment4.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-08 19:37:54,560 INFO  Successfully processed and prepared the input for the verify service
+2017-02-08 19:37:54,560 INFO  Successfully set the request parameters for VerifySolution
+2017-02-08 19:37:54,560 INFO  Invoking the service to verify the user solution
+2017-02-08 19:37:54,560 INFO  Time before invoking service:Wed Feb 08 19:37:54 IST 2017
+2017-02-08 19:37:54,560 INFO  Initialising service address for VerifySolution
+2017-02-08 19:37:54,560 INFO  Time before invoking service In SUPER:Wed Feb 08 19:37:54 IST 2017
+2017-02-08 19:37:56,404 INFO  Time after invoking service In SUPER:Wed Feb 08 19:37:56 IST 2017
+2017-02-08 19:37:56,404 INFO  Service responded successfully with required details
+2017-02-08 19:37:56,404 INFO  Time after invoking service:Wed Feb 08 19:37:56 IST 2017
+2017-02-08 19:37:56,404 INFO  User solution successfully verified
+2017-02-08 19:37:56,419 INFO  Processing the response from verify service
+2017-02-08 19:37:56,419 INFO  Starting to parse JSON response
+2017-02-08 19:37:56,419 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:37:56,419 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-08 19:37:56,419 INFO  Successfully parsed JSON response
+2017-02-08 19:37:56,419 INFO  In the process of generating verify response in HTML
+2017-02-08 19:37:56,497 INFO  Successfully generated verify response in HTML
+2017-02-08 19:37:56,497 INFO  Successfully processed the response from service
+2017-02-08 19:38:01,490 INFO  Initiating to process and prepare Input for the submit service
+2017-02-08 19:38:01,490 INFO  Displaying user solution
+2017-02-08 19:38:01,505 INFO  Successfully processed and prepared the input for the submit service
+2017-02-08 19:38:01,505 INFO  Invoking the service to submit the user solution
+2017-02-08 19:38:01,505 INFO  Initialising service address for Submit
+2017-02-08 19:38:01,521 INFO  Time before invoking service In SUPER:Wed Feb 08 19:38:01 IST 2017
+2017-02-08 19:38:01,599 INFO  Time after invoking service In SUPER:Wed Feb 08 19:38:01 IST 2017
+2017-02-08 19:38:01,599 INFO  Service responded successfully with required details
+2017-02-08 19:38:01,599 INFO  User solution successfully submitted
+2017-02-08 19:38:01,599 INFO  Displaying submission status
+2017-02-08 19:38:02,002 INFO  Displayed submission status successfullySuccessfully Submitted!

@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+Z:\PF\.metadata\.plugins\org.eclipse.core.resources\.projects\PythonProject\com.python.pydev.analysis\v2_indexcache
+Employees.ManageEmployees|1485492380834886000|Z:\PF\PythonProject\Employees\ManageEmployees.py
+Employees.Manage|1485492020534885000|Z:\PF\PythonProject\Employees\Manage.py
+Flights.ManageFlights|1485491182442316000|Z:\PF\PythonProject\Flights\ManageFlights.py
+Flights.Manage|1485492134201584000|Z:\PF\PythonProject\Flights\Manage.py
+Employees.__init__|1485491200719657000|Z:\PF\PythonProject\Employees\__init__.py
+Flights.__init__|1485491075598169000|Z:\PF\PythonProject\Flights\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=Employees.Manage
+2=Flights.ManageFlights
+1=Flights.Manage
+-- END DICTIONARY
+-- START TREE 1
+4
+add|3|add!10@add!18@add!26@
+air|3|airline!27@airline!11@airline!19@
+sub|2|sub!10@sub!26@
+sum|1|sum!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

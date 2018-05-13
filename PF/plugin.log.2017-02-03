@@ -1,0 +1,69 @@
+2017-02-03 09:17:28,464 INFO  Loading Baseframework Plugin
+2017-02-03 09:17:28,496 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-03 09:17:31,777 INFO  Loading the Menu - HandsOn
+2017-02-03 09:17:31,792 INFO  Successfully loaded the Menu - HandsOn
+2017-02-03 10:15:25,909 INFO  Loading Programming Assignment Plugin
+2017-02-03 10:15:26,363 INFO  Setting request parameters for VerifySolution
+2017-02-03 10:15:26,363 INFO  Initiating to process and prepare Input for the verify service
+2017-02-03 10:15:26,363 INFO  Starting to parse the user solution
+2017-02-03 10:15:26,363 INFO  Displaying user solution
+2017-02-03 10:15:28,848 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-13\r\nclass Juggler:\r\n    def __init__(self,name):\r\n        self.__name=name\r\n    \r\n    def juggles(self,obj1):\r\n        print(self.__name , \"is juggling with \" , obj1.get_name())\r\n        \r\n\r\nclass JugglingItem:\r\n    def __init__(self,name):\r\n        self.__name=name\r\n\r\n    def get_name(self):\r\n        return self.__name\r\n        \r\nga = Juggler(\"Kautilya\")\r\ngugg = JugglingItem(\"Knives\")\r\nga.juggles(gugg)\r\n\r\nga1 = Juggler(\"Suresh\")\r\ngugg1 = JugglingItem(\"Balls\")\r\nga1.juggles(gugg1)\r\n\r\n","asgnmtId":"13","SolutionFileName":"Exercise13.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-03 10:15:28,848 INFO  Successfully processed and prepared the input for the verify service
+2017-02-03 10:15:28,848 INFO  Successfully set the request parameters for VerifySolution
+2017-02-03 10:15:28,848 INFO  Invoking the service to verify the user solution
+2017-02-03 10:15:28,848 INFO  Time before invoking service:Fri Feb 03 10:15:28 IST 2017
+2017-02-03 10:15:28,848 INFO  Initialising service address for VerifySolution
+2017-02-03 10:15:28,848 INFO  Time before invoking service In SUPER:Fri Feb 03 10:15:28 IST 2017
+2017-02-03 10:15:33,831 INFO  Time after invoking service In SUPER:Fri Feb 03 10:15:33 IST 2017
+2017-02-03 10:15:33,831 INFO  Service responded successfully with required details
+2017-02-03 10:15:33,831 INFO  Time after invoking service:Fri Feb 03 10:15:33 IST 2017
+2017-02-03 10:15:33,831 INFO  User solution successfully verified
+2017-02-03 10:15:33,831 INFO  Processing the response from verify service
+2017-02-03 10:15:33,831 INFO  Starting to parse JSON response
+2017-02-03 10:15:33,831 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 10:15:33,831 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 10:15:33,831 INFO  Successfully parsed JSON response
+2017-02-03 10:15:33,847 INFO  In the process of generating verify response in HTML
+2017-02-03 10:15:34,112 INFO  Successfully generated verify response in HTML
+2017-02-03 10:15:34,112 INFO  Successfully processed the response from service
+2017-02-03 10:16:45,521 INFO  Initiating to process and prepare Input for the submit service
+2017-02-03 10:16:45,521 INFO  Displaying user solution
+2017-02-03 10:16:45,537 INFO  Successfully processed and prepared the input for the submit service
+2017-02-03 10:16:45,537 INFO  Invoking the service to submit the user solution
+2017-02-03 10:16:45,537 INFO  Initialising service address for Submit
+2017-02-03 10:16:45,537 INFO  Time before invoking service In SUPER:Fri Feb 03 10:16:45 IST 2017
+2017-02-03 10:16:45,646 INFO  Time after invoking service In SUPER:Fri Feb 03 10:16:45 IST 2017
+2017-02-03 10:16:45,646 INFO  Service responded successfully with required details
+2017-02-03 10:16:45,646 INFO  User solution successfully submitted
+2017-02-03 10:16:45,646 INFO  Displaying submission status
+2017-02-03 10:16:45,646 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-03 18:24:45,001 INFO  Setting request parameters for VerifySolution
+2017-02-03 18:24:45,009 INFO  Initiating to process and prepare Input for the verify service
+2017-02-03 18:24:45,010 INFO  Starting to parse the user solution
+2017-02-03 18:24:45,014 INFO  Displaying user solution
+2017-02-03 18:24:47,817 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-15\r\n#Start writing your code here\r\n\r\nclass Ticket :\r\n    \r\n    __counter = 0\r\n    \r\n    def __init__ (self,passenger_name,source,destination):\r\n        self.__passenger_name = passenger_name\r\n        self.__ticket_id = None\r\n        self.temp_source = source.lower()\r\n        self.temp_dest = destination.lower()\r\n        self.__source = source\r\n        self.__destination = destination\r\n\r\n    def get_passenger_name(self):\r\n        return self.__passenger_name\r\n    \r\n    def get_ticket_id(self):\r\n        return self.__ticket_id\r\n\r\n    def get_source(self):\r\n        return self.__source\r\n\r\n    def get_destination(self):\r\n        return self.__destination\r\n\r\n    def validate_source_destination(self):\r\n        if (self.temp_source == \"delhi\") :\r\n            if (self.temp_dest == \"mumbai\") or (self.temp_dest == \"chennai\") or (self.temp_dest == \"pune\") or (self.temp_dest == \"kolkata\") :\r\n                return True\r\n        else :\r\n            return False\r\n        \r\n    def generate_ticket(self):\r\n        if self.validate_source_destination() :\r\n            Ticket.__counter += 1\r\n            self.__ticket_id =+ Ticket.__counter\r\n            ticket_strconv = str(Ticket.__counter)\r\n            \r\n            if Ticket.__counter < 10 :\r\n                ticket_strconv = ticket_strconv.zfill(2)\r\n        \r\n            first_source = self.get_source()\r\n            first_dest = self.get_destination()\r\n            self.__ticket_id = first_source[0] + first_dest[0] + ticket_strconv\r\n            \r\n        else : \r\n            self.__ticket_id = None\r\n        \r\n        self.print_ticket()\r\n\r\n    def print_ticket(self):\r\n        print(\"Ticket ID : \", self.get_ticket_id())\r\n        print(\"Passenger Name : \", self.get_passenger_name())\r\n        print(\"Ticket Source : \", self.get_source())\r\n        print(\"Ticket Destination : \", self.get_destination())\r\n\r\n\r\n#self,passenger_name,source,destination):        \r\np = Ticket(\"Kautilya\",\"Delhi\" , \"Mumbai\")\r\np.generate_ticket()\r\n\r\np2 = Ticket(\"Sensehack\",\"Delhi\" , \"Pune\")\r\np2.generate_ticket()\r\n# p1 = Ticket(\"sense\",\"green\")\r\n# p2 = Ticket(\"sense\",\"green\")\r\n# p3 = Ticket(\"sense\",\"green\")        \r\n        \r\n        \r\n    \r\n","asgnmtId":"15","SolutionFileName":"Assignment15.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-03 18:24:47,820 INFO  Successfully processed and prepared the input for the verify service
+2017-02-03 18:24:47,821 INFO  Successfully set the request parameters for VerifySolution
+2017-02-03 18:24:47,821 INFO  Invoking the service to verify the user solution
+2017-02-03 18:24:47,823 INFO  Time before invoking service:Fri Feb 03 18:24:47 IST 2017
+2017-02-03 18:24:47,824 INFO  Initialising service address for VerifySolution
+2017-02-03 18:24:47,828 INFO  Time before invoking service In SUPER:Fri Feb 03 18:24:47 IST 2017
+2017-02-03 18:24:50,577 INFO  Time after invoking service In SUPER:Fri Feb 03 18:24:50 IST 2017
+2017-02-03 18:24:50,579 INFO  Service responded successfully with required details
+2017-02-03 18:24:50,580 INFO  Time after invoking service:Fri Feb 03 18:24:50 IST 2017
+2017-02-03 18:24:50,581 INFO  User solution successfully verified
+2017-02-03 18:24:50,585 INFO  Processing the response from verify service
+2017-02-03 18:24:50,592 INFO  Starting to parse JSON response
+2017-02-03 18:24:50,595 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,596 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,596 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,597 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,597 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,598 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,598 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,599 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,599 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-03 18:24:50,599 INFO  Successfully parsed JSON response
+2017-02-03 18:24:50,600 INFO  In the process of generating verify response in HTML
+2017-02-03 18:24:50,799 INFO  Successfully generated verify response in HTML
+2017-02-03 18:24:50,800 INFO  Successfully processed the response from service

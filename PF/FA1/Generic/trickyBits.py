@@ -1,0 +1,217 @@
+'''
+Created on Feb 19, 2017
+
+@author: kautilya.save
+'''
+
+# 
+# def fun(x,y):
+#     try:
+#         z=x+y
+#         print(z)
+#     except ValueError:
+#         print(0)
+#     print(9)
+# try:
+#     fun(2,'2')
+#     print(1)
+# except TypeError:
+#     print(3)
+# except NameError:
+#     print(4)
+# except ValueError:
+#     print(5)
+# finally:
+#     print(6)
+# print(7)
+
+# 
+# def fun(x,y):
+#     try:
+#         z=x+y
+#         print(z)
+#     except ValueError:
+#         print(0)
+#     print(9)
+# try:
+#     fun(2,'2')
+#     print(1)
+# except Exception:
+#     print(2)
+# except TypeError:
+#     print(3)
+# except NameError:
+#     print(4)
+# except ValueError:
+#     print(5)
+# finally:
+#     print(6)
+# print(7)
+
+
+# ===============================
+'''
+def fun2(x,y):
+    try:
+        z=x+y
+        print(z)
+    except TypeError:
+        print(0)
+    print(9)
+try:
+    fun(2,'2')
+    print(1)
+except Exception:
+    print(2)
+except TypeError:
+    print(3)
+except NameError:
+    print(4)
+except ValueError:
+    print(5)
+finally:
+    print(6)
+print(7)
+
+
+
+def fun(x):
+    if(x=="qwe"):
+        return x
+    else:
+        x=x[:-1]
+        return fun(x)
+
+
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+ 
+ 
+==========================
+
+def fun(x):
+    if(x=="qwe"+x):
+        return x
+    else:
+        x=x[:-1]
+        return fun(x)
+ 
+ 
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+
+
+
+
+def fun(x):
+    if(x=="qwe"+x):
+        return x
+    else:
+        x="qwe"+x[:-1]
+        return fun(x)
+
+
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+
+
+# ======================
+def fun(x,y):
+    if(len(x)==2):
+        return x
+    else:
+        x.pop()
+        y.append(fun(x,y)+[0])
+        
+
+list1=[1,2,3,4,5]
+# print(list1.pop())
+list2=[]
+fun(list1,list2)
+print(list1,list2)
+
+
+
+from DataStructures import Stack
+
+def fun(x):
+    s1=Stack(x.get_max_size())
+    y=x.pop()+x.pop()
+    x.push(y)
+    while(not x.is_empty()):
+        s1.push(x.pop()+1)
+        x.push(2)
+        x.pop()
+    return s1
+stack1=Stack(5)
+stack1.push(1)
+stack1.push(5)
+stack1.push(7)
+stack1.push(2)
+stack1.push(9)
+fun(stack1).display()
+
+
+====================
+
+
+
+class A:
+    def __init__(self,x):
+        self.__x=x
+
+    def get_x(self):
+        return self.__x
+
+
+    def set_x(self, x):
+        self.__x = x
+
+class B(A):
+    def __init__(self,y):
+        super().__init__(y)
+        self.__y=y
+        print(self.get_x())
+        super().__init__(y+1)
+    
+
+
+    def get_y(self):
+        return self.__y
+b=B(5)
+print(b.get_x())
+
+'''
+from abc import ABCMeta,abstractmethod
+class A(metaclass=ABCMeta):
+    def __init__(self,x):
+        self.__x=x
+
+    def get_x(self):
+        return self.__x
+
+
+    def set_x(self, x):
+        self.__x = x
+    @abstractmethod
+    def A(self):
+        print("In abstract method")
+
+class B(A):
+    def __init__(self,y):
+        
+        self.__y=y
+        super().__init__(y+1)
+        print(self.get_x())
+        
+    
+
+#     def A(self):
+#         print("Importing abstract method")
+    def get_y(self):
+        return self.__y
+b=B(5)
+print(b.get_x())

@@ -1,0 +1,11 @@
+'''
+Created on Feb 18, 2017
+
+@author: kautilya.save
+'''
+
+
+for i in range(10) :
+    
+    if i == 5 :
+        continue

@@ -1,0 +1,91 @@
+'''
+Created on Mar 15, 2017
+
+@author: kautilya.save
+'''
+
+
+import pytest
+from functionality import ViewFunctions
+from validations import Validate
+
+
+ 
+def test_validate_input_is_decimal():
+    output = Validate.validate_input_is_decimal(10)
+       
+    assert output == True
+       
+   
+def test_validate_input_is_decimal2():
+    output = Validate.validate_input_is_decimal("avas")
+       
+    assert output == False
+       
+       
+       
+def test_validate_input_is_decimal3():
+    output = Validate.validate_input_is_decimal("aseasg2341314aafesa")
+       
+    assert output == False
+       
+       
+    #The category items is invalid
+       
+      
+       
+def test_validate_item_available():
+    restaurant_type = ['Starters']
+    restaurant_name = 'Modern Restaurant'
+    output = Validate.validate_item_available(restaurant_type,restaurant_name)
+    print("output")
+    print(output)
+    assert output == True
+
+
+
+ 
+def test_validate_item_available2():
+    restaurant_type = ['Egg','Chicken']
+    restaurant_name = 'Kamat'
+    output = Validate.validate_item_available(restaurant_type,restaurant_name)
+    print("output")
+    print(output)
+    assert output == True
+  
+
+def test_validate_item_available3():
+    restaurant_type = ['Starters','Chicken Tawa']
+    restaurant_name = 'Sukh Sagar'
+    output = Validate.validate_item_available(restaurant_type,restaurant_name)
+    print("output")
+    print(output)
+    assert output == False
+    
+def test_validate_item_available4():
+    category_items = ['Starters','ChickenDrama']
+    restaurant_name = 'Kamar Hotel'
+    output = []
+    overall_bool = False
+    output.append(Validate.validate_item_available(category_items,restaurant_name))
+    for bool in output :
+        if bool == False:
+            overall_bool = True
+             
+    assert  overall_bool == True
+                 
+    
+     
+def test_validate_view_category_items():
+    restaurant_type = 'Starters'
+    restaurant_name = 'Kamar Hotel'
+    count = 0
+    output = Validate.validate_view_category_items(restaurant_type,restaurant_name)
+    print("output validate_view_category")
+    for value in output :
+        count += 1 
+       
+    assert count > 0
+    
+  
+    

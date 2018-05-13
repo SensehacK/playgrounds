@@ -1,0 +1,70 @@
+2017-01-31 09:24:47,209 INFO  Loading Baseframework Plugin
+2017-01-31 09:24:47,348 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-31 09:24:50,730 INFO  Loading the Menu - HandsOn
+2017-01-31 09:24:50,793 INFO  Successfully loaded the Menu - HandsOn
+2017-01-31 09:51:45,954 INFO  Loading Programming Assignment Plugin
+2017-01-31 09:51:46,467 INFO  Setting request parameters for VerifySolution
+2017-01-31 09:51:46,469 INFO  Initiating to process and prepare Input for the verify service
+2017-01-31 09:51:46,476 INFO  Starting to parse the user solution
+2017-01-31 09:51:46,479 INFO  Displaying user solution
+2017-01-31 09:52:04,349 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-57\r\nfrom itertools import count\r\n\r\ndef check_prime(number):\r\n    for i in range(2,number):\r\n        if number % i == 0 :\r\n            return False \r\n        return  True\r\n    \r\ndef rotations(num):\r\n    result_list = []\r\n    answer_list = []\r\n\r\n    num_str = str(num)\r\n    while int(num_str) not in answer_list:\r\n        \r\n        answer_list.append(int(num_str))\r\n        num_str=num_str[1:] + num_str[0]\r\n    \r\n    return answer_list\r\n    \r\n    \r\n    \r\ndef get_circular_prime_count(limit):\r\n    \r\n    count = 0\r\n    for i in range(2,limit):\r\n        list1 = rotations(i)\r\n        for j in range(len(list1)):\r\n            status = check_prime(list1[j])\r\n            if status==False :\r\n                break\r\n        \r\n        if status :\r\n            count+=1\r\n    return count\r\n\r\n\r\n            \r\n    \r\n\r\n#Provide different values for limit and test your program\r\nprint(get_circular_prime_count(1000))\r\n\r\n    \r\n    \r\n    \r\n\r\n    \r\n","asgnmtId":"57","SolutionFileName":"Assignment57.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-31 09:52:04,351 INFO  Successfully processed and prepared the input for the verify service
+2017-01-31 09:52:04,352 INFO  Successfully set the request parameters for VerifySolution
+2017-01-31 09:52:04,354 INFO  Invoking the service to verify the user solution
+2017-01-31 09:52:04,355 INFO  Time before invoking service:Tue Jan 31 09:52:04 IST 2017
+2017-01-31 09:52:04,356 INFO  Initialising service address for VerifySolution
+2017-01-31 09:52:04,357 INFO  Time before invoking service In SUPER:Tue Jan 31 09:52:04 IST 2017
+2017-01-31 09:52:06,593 INFO  Time after invoking service In SUPER:Tue Jan 31 09:52:06 IST 2017
+2017-01-31 09:52:06,594 INFO  Service responded successfully with required details
+2017-01-31 09:52:06,595 INFO  Time after invoking service:Tue Jan 31 09:52:06 IST 2017
+2017-01-31 09:52:06,596 INFO  User solution successfully verified
+2017-01-31 09:52:06,597 INFO  Processing the response from verify service
+2017-01-31 09:52:06,601 INFO  Starting to parse JSON response
+2017-01-31 09:52:06,608 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,609 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,610 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,610 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,610 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,611 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 09:52:06,612 INFO  Successfully parsed JSON response
+2017-01-31 09:52:06,614 INFO  In the process of generating verify response in HTML
+2017-01-31 09:52:07,225 INFO  Successfully generated verify response in HTML
+2017-01-31 09:52:07,226 INFO  Successfully processed the response from service
+2017-01-31 09:53:44,047 INFO  Initiating to process and prepare Input for the submit service
+2017-01-31 09:53:44,053 INFO  Displaying user solution
+2017-01-31 09:53:44,064 INFO  Successfully processed and prepared the input for the submit service
+2017-01-31 09:53:44,065 INFO  Invoking the service to submit the user solution
+2017-01-31 09:53:44,066 INFO  Initialising service address for Submit
+2017-01-31 09:53:44,067 INFO  Time before invoking service In SUPER:Tue Jan 31 09:53:44 IST 2017
+2017-01-31 09:53:44,160 INFO  Time after invoking service In SUPER:Tue Jan 31 09:53:44 IST 2017
+2017-01-31 09:53:44,161 INFO  Service responded successfully with required details
+2017-01-31 09:53:44,162 INFO  User solution successfully submitted
+2017-01-31 09:53:44,163 INFO  Displaying submission status
+2017-01-31 09:53:44,164 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-31 10:46:41,386 INFO  Setting request parameters for VerifySolution
+2017-01-31 10:46:41,398 INFO  Initiating to process and prepare Input for the verify service
+2017-01-31 10:46:41,399 INFO  Starting to parse the user solution
+2017-01-31 10:46:41,401 INFO  Displaying user solution
+2017-01-31 10:46:51,373 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-58\r\ndef validate_credit_card_number(card_number):\r\n    credit_card_str = str(card_number)\r\n    sum = 0\r\n    for i in range(len(credit_card_str)):\r\n        if i%2 == 0 :\r\n#             print(\"i:\", i)\r\n#             print(credit_card_str[i])\r\n            value = int(credit_card_str[i]) * 2\r\n            sum+=value %10 + value // 10\r\n        else : \r\n            sum+=int(credit_card_str[i])\r\n            \r\n    return sum%10 == 0\r\n\r\n      \r\ncard_number= 1456734512345698 #4539869650133101  #1456734512345698 # #5239512608615007\r\nresult=validate_credit_card_number(card_number)\r\nif(result):\r\n    print(\"credit card number is valid\")\r\nelse:\r\n    print(\"credit card number is invalid\")\r\n\r\n\r\n","asgnmtId":"58","SolutionFileName":"Assignment58.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-31 10:46:51,374 INFO  Successfully processed and prepared the input for the verify service
+2017-01-31 10:46:51,375 INFO  Successfully set the request parameters for VerifySolution
+2017-01-31 10:46:51,375 INFO  Invoking the service to verify the user solution
+2017-01-31 10:46:51,376 INFO  Time before invoking service:Tue Jan 31 10:46:51 IST 2017
+2017-01-31 10:46:51,378 INFO  Initialising service address for VerifySolution
+2017-01-31 10:46:51,379 INFO  Time before invoking service In SUPER:Tue Jan 31 10:46:51 IST 2017
+2017-01-31 10:46:52,614 INFO  Time after invoking service In SUPER:Tue Jan 31 10:46:52 IST 2017
+2017-01-31 10:46:52,616 INFO  Service responded successfully with required details
+2017-01-31 10:46:52,617 INFO  Time after invoking service:Tue Jan 31 10:46:52 IST 2017
+2017-01-31 10:46:52,618 INFO  User solution successfully verified
+2017-01-31 10:46:52,618 INFO  Processing the response from verify service
+2017-01-31 10:46:52,621 INFO  Starting to parse JSON response
+2017-01-31 10:46:52,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 10:46:52,625 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-31 10:46:52,626 INFO  Successfully parsed JSON response
+2017-01-31 10:46:52,627 INFO  In the process of generating verify response in HTML
+2017-01-31 10:46:52,702 INFO  Successfully generated verify response in HTML
+2017-01-31 10:46:52,702 INFO  Successfully processed the response from service
+2017-01-31 13:47:14,137 INFO  Loading Baseframework Plugin
+2017-01-31 13:47:14,153 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-31 13:47:17,762 INFO  Loading the Menu - HandsOn
+2017-01-31 13:47:17,868 INFO  Successfully loaded the Menu - HandsOn

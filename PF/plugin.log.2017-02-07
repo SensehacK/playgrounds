@@ -1,0 +1,339 @@
+2017-02-07 08:49:03,549 INFO  Loading Baseframework Plugin
+2017-02-07 08:49:04,130 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-07 08:49:05,989 INFO  Loading the Menu - HandsOn
+2017-02-07 08:49:06,453 INFO  Successfully loaded the Menu - HandsOn
+2017-02-07 10:33:27,426 INFO  Loading Programming Assignment Plugin
+2017-02-07 10:33:28,124 INFO  Setting request parameters for VerifySolution
+2017-02-07 10:33:28,127 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 10:33:28,135 INFO  Starting to parse the user solution
+2017-02-07 10:33:28,137 INFO  Displaying user solution
+2017-02-07 10:33:31,930 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-14\r\n#Start writing your code here\r\n\r\nclass Parrot :\r\n    \r\n    __counter = 0\r\n    \r\n    def __init__ (self,name,color):\r\n        self.__unique_number = 7000\r\n        self.__name = name\r\n        self.__color = color\r\n        self.set_unique_number()\r\n        \r\n    def get_name(self):\r\n        return self.__name\r\n\r\n    def get_color(self):\r\n        return self.__color\r\n\r\n    def set_name(self, value):\r\n        self.__name = value\r\n\r\n    def set_color(self, value):\r\n        self.__color = value\r\n        \r\n    def set_unique_number(self):\r\n        Parrot.__counter += 1\r\n        self.__unique_number = self.__unique_number + (Parrot.__counter)\r\n        self.print()\r\n        \r\n    def get_unique_number(self):\r\n        return self.__unique_number\r\n    \r\n    def print(self):\r\n        print(\"Parrot Name : \", self.get_name())\r\n        print(\"Parrot color : \", self.get_color())\r\n        print(\"Parrot Unique ID : \", self.get_unique_number())\r\n        \r\np = Parrot(\"sense\",\"green\")\r\np1 = Parrot(\"sense\",\"green\")\r\np2 = Parrot(\"sense\",\"green\")\r\np3 = Parrot(\"sense\",\"green\")        \r\n        \r\n        \r\n    \r\n","asgnmtId":"14","SolutionFileName":"Assignment14.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 10:33:31,932 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 10:33:31,934 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 10:33:31,935 INFO  Invoking the service to verify the user solution
+2017-02-07 10:33:31,937 INFO  Time before invoking service:Tue Feb 07 10:33:31 IST 2017
+2017-02-07 10:33:31,938 INFO  Initialising service address for VerifySolution
+2017-02-07 10:33:31,940 INFO  Time before invoking service In SUPER:Tue Feb 07 10:33:31 IST 2017
+2017-02-07 10:33:34,034 INFO  Time after invoking service In SUPER:Tue Feb 07 10:33:34 IST 2017
+2017-02-07 10:33:34,036 INFO  Service responded successfully with required details
+2017-02-07 10:33:34,037 INFO  Time after invoking service:Tue Feb 07 10:33:34 IST 2017
+2017-02-07 10:33:34,038 INFO  User solution successfully verified
+2017-02-07 10:33:34,040 INFO  Processing the response from verify service
+2017-02-07 10:33:34,043 INFO  Starting to parse JSON response
+2017-02-07 10:33:34,047 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:33:34,048 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:33:34,051 INFO  Successfully parsed JSON response
+2017-02-07 10:33:34,053 INFO  In the process of generating verify response in HTML
+2017-02-07 10:33:34,444 INFO  Successfully generated verify response in HTML
+2017-02-07 10:33:34,445 INFO  Successfully processed the response from service
+2017-02-07 10:34:32,943 INFO  Setting request parameters for VerifySolution
+2017-02-07 10:34:32,945 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 10:34:32,946 INFO  Starting to parse the user solution
+2017-02-07 10:34:32,947 INFO  Displaying user solution
+2017-02-07 10:34:32,953 INFO   User Solution is unchanged since the last verification.
+2017-02-07 10:34:32,958 INFO  Problem in processing and preparing Input for the verify service
+2017-02-07 10:34:44,025 INFO  Setting request parameters for VerifySolution
+2017-02-07 10:34:44,028 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 10:34:44,030 INFO  Starting to parse the user solution
+2017-02-07 10:34:44,031 INFO  Displaying user solution
+2017-02-07 10:34:48,011 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-14\r\n#Start writing your code here\r\n\r\nclass Parrot :\r\n    \r\n    __counter = 0\r\n    \r\n    def __init__ (self,name,color):\r\n        self.__unique_number = 7000\r\n        self.__name = name\r\n        self.__color = color\r\n        self.set_unique_number()\r\n        \r\n    def get_name(self):\r\n        return self.__name\r\n\r\n    def get_color(self):\r\n        return self.__color\r\n\r\n    def set_name(self, value):\r\n        self.__name = value\r\n\r\n    def set_color(self, value):\r\n        self.__color = value\r\n        \r\n    def set_unique_number(self):\r\n        Parrot.__counter += 1\r\n        self.__unique_number = self.__unique_number + (Parrot.__counter)\r\n        self.print()\r\n        \r\n    def get_unique_number(self):\r\n        return self.__unique_number\r\n    \r\n    def print(self):\r\n        print(\"Parrot Name : \", self.get_name())\r\n        print(\"Parrot color : \", self.get_color())\r\n        print(\"Parrot Unique ID : \", self.get_unique_number())\r\n        \r\np = Parrot(\"sense\",\"green\")\r\np1 = Parrot(\"sense\",\"green\")\r\np2 = Parrot(\"sense\",\"green\")\r\np3 = Parrot(\"sense\",\"green\")        \r\n        \r\n\r\n    \r\n","asgnmtId":"14","SolutionFileName":"Assignment14.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 10:34:48,014 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 10:34:48,014 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 10:34:48,016 INFO  Invoking the service to verify the user solution
+2017-02-07 10:34:48,023 INFO  Time before invoking service:Tue Feb 07 10:34:48 IST 2017
+2017-02-07 10:34:48,024 INFO  Initialising service address for VerifySolution
+2017-02-07 10:34:48,025 INFO  Time before invoking service In SUPER:Tue Feb 07 10:34:48 IST 2017
+2017-02-07 10:34:49,764 INFO  Time after invoking service In SUPER:Tue Feb 07 10:34:49 IST 2017
+2017-02-07 10:34:49,765 INFO  Service responded successfully with required details
+2017-02-07 10:34:49,766 INFO  Time after invoking service:Tue Feb 07 10:34:49 IST 2017
+2017-02-07 10:34:49,767 INFO  User solution successfully verified
+2017-02-07 10:34:49,768 INFO  Processing the response from verify service
+2017-02-07 10:34:49,770 INFO  Starting to parse JSON response
+2017-02-07 10:34:49,772 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:34:49,773 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:34:49,773 INFO  Successfully parsed JSON response
+2017-02-07 10:34:49,775 INFO  In the process of generating verify response in HTML
+2017-02-07 10:34:49,880 INFO  Successfully generated verify response in HTML
+2017-02-07 10:34:49,881 INFO  Successfully processed the response from service
+2017-02-07 10:36:29,902 INFO  Setting request parameters for VerifySolution
+2017-02-07 10:36:29,912 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 10:36:29,913 INFO  Starting to parse the user solution
+2017-02-07 10:36:29,915 INFO  Displaying user solution
+2017-02-07 10:36:29,918 INFO   User Solution is unchanged since the last verification.
+2017-02-07 10:36:29,936 INFO  Problem in processing and preparing Input for the verify service
+2017-02-07 10:36:37,994 INFO  Setting request parameters for VerifySolution
+2017-02-07 10:36:37,998 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 10:36:37,999 INFO  Starting to parse the user solution
+2017-02-07 10:36:38,001 INFO  Displaying user solution
+2017-02-07 10:36:43,143 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-14\r\n#Start writing your code here\r\n\r\nclass Parrot :\r\n    \r\n    __counter = 0\r\n\r\n    def __init__ (self,name,color):\r\n        self.__unique_number = 7000\r\n        self.__name = name\r\n        self.__color = color\r\n        self.set_unique_number()\r\n        \r\n    def get_name(self):\r\n        return self.__name\r\n\r\n    def get_color(self):\r\n        return self.__color\r\n\r\n    def set_name(self, value):\r\n        self.__name = value\r\n\r\n    def set_color(self, value):\r\n        self.__color = value\r\n        \r\n    def set_unique_number(self):\r\n        Parrot.__counter += 1\r\n        self.__unique_number = self.__unique_number + (Parrot.__counter)\r\n        self.print()\r\n        \r\n    def get_unique_number(self):\r\n        return self.__unique_number\r\n    \r\n    def print(self):\r\n        print(\"Parrot Name : \", self.get_name())\r\n        print(\"Parrot color : \", self.get_color())\r\n        print(\"Parrot Unique ID : \", self.get_unique_number())\r\n        \r\np = Parrot(\"sense\",\"green\")\r\np1 = Parrot(\"sense\",\"green\")\r\np2 = Parrot(\"sense\",\"green\")\r\np3 = Parrot(\"sense\",\"green\")        \r\n        \r\n\r\n    \r\n","asgnmtId":"14","SolutionFileName":"Assignment14.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 10:36:43,145 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 10:36:43,145 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 10:36:43,146 INFO  Invoking the service to verify the user solution
+2017-02-07 10:36:43,147 INFO  Time before invoking service:Tue Feb 07 10:36:43 IST 2017
+2017-02-07 10:36:43,148 INFO  Initialising service address for VerifySolution
+2017-02-07 10:36:43,149 INFO  Time before invoking service In SUPER:Tue Feb 07 10:36:43 IST 2017
+2017-02-07 10:36:44,876 INFO  Time after invoking service In SUPER:Tue Feb 07 10:36:44 IST 2017
+2017-02-07 10:36:44,877 INFO  Service responded successfully with required details
+2017-02-07 10:36:44,878 INFO  Time after invoking service:Tue Feb 07 10:36:44 IST 2017
+2017-02-07 10:36:44,879 INFO  User solution successfully verified
+2017-02-07 10:36:44,880 INFO  Processing the response from verify service
+2017-02-07 10:36:44,882 INFO  Starting to parse JSON response
+2017-02-07 10:36:44,884 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:36:44,885 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 10:36:44,886 INFO  Successfully parsed JSON response
+2017-02-07 10:36:44,888 INFO  In the process of generating verify response in HTML
+2017-02-07 10:36:45,010 INFO  Successfully generated verify response in HTML
+2017-02-07 10:36:45,020 INFO  Successfully processed the response from service
+2017-02-07 11:54:00,394 INFO  Setting request parameters for VerifySolution
+2017-02-07 11:54:00,403 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 11:54:00,404 INFO  Starting to parse the user solution
+2017-02-07 11:54:00,406 INFO  Displaying user solution
+2017-02-07 11:54:04,516 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-29\r\n#Start writing your code here\r\nfrom abc import ABCMeta,abstractmethod\r\n\r\nclass Customer(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,customer_name):\r\n        self.__customer_name = customer_name\r\n        self.bill_amount = None\r\n        self.bill_id = None\r\n        \r\n    @abstractmethod    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\nclass OccasionalCustomer(Customer) :\r\n    __counter = 0\r\n    def __init__(self,customer_name,distance_in_kms):\r\n        super().__init__(customer_name)\r\n        self.__distance_in_kms = distance_in_kms\r\n    \r\n    def validate_distance_in_kms(self):\r\n        pass\r\n    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n    \r\n    \r\nclass RegularCustomer(Customer) :\r\n    __counter = 0\r\n    def __init__(self,customer_name,no_of_tiffin):\r\n        super().__init__(customer_name)\r\n        self.__no_of_tiffin = no_of_tiffin\r\n    \r\n    def validate_no_of_tiffin(self):\r\n        pass\r\n    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_no_of_tiffin(self):\r\n        return self.__no_of_tiffin\r\n    \r\n\r\n\r\n","asgnmtId":"29","SolutionFileName":"Assignment29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 11:54:04,518 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 11:54:04,519 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 11:54:04,520 INFO  Invoking the service to verify the user solution
+2017-02-07 11:54:04,521 INFO  Time before invoking service:Tue Feb 07 11:54:04 IST 2017
+2017-02-07 11:54:04,522 INFO  Initialising service address for VerifySolution
+2017-02-07 11:54:04,523 INFO  Time before invoking service In SUPER:Tue Feb 07 11:54:04 IST 2017
+2017-02-07 11:54:11,948 INFO  Time after invoking service In SUPER:Tue Feb 07 11:54:11 IST 2017
+2017-02-07 11:54:11,950 INFO  Service responded successfully with required details
+2017-02-07 11:54:11,951 INFO  Time after invoking service:Tue Feb 07 11:54:11 IST 2017
+2017-02-07 11:54:11,952 INFO  User solution successfully verified
+2017-02-07 11:54:11,953 INFO  Processing the response from verify service
+2017-02-07 11:54:11,959 INFO  Starting to parse JSON response
+2017-02-07 11:54:11,964 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,965 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,966 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,967 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,967 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,967 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,968 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,968 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,969 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,971 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 11:54:11,973 INFO  Successfully parsed JSON response
+2017-02-07 11:54:11,975 INFO  In the process of generating verify response in HTML
+2017-02-07 11:54:12,134 INFO  Successfully generated verify response in HTML
+2017-02-07 11:54:12,135 INFO  Successfully processed the response from service
+2017-02-07 12:28:30,277 INFO  Setting request parameters for VerifySolution
+2017-02-07 12:28:30,282 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 12:28:30,282 INFO  Starting to parse the user solution
+2017-02-07 12:28:30,284 INFO  Displaying user solution
+2017-02-07 12:28:34,883 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-29\r\n#Start writing your code here\r\nfrom abc import ABCMeta,abstractmethod\r\nfrom multiprocessing.connection import deliver_challenge\r\n\r\nclass Customer(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,customer_name):\r\n        self.__customer_name = customer_name\r\n        self.bill_amount = None\r\n        self.bill_id = None\r\n        \r\n    @abstractmethod    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\nclass OccasionalCustomer(Customer) :\r\n    __counter = 1000\r\n    \r\n    def __init__(self,customer_name,distance_in_kms):\r\n        super().__init__(customer_name)\r\n        self.__distance_in_kms = distance_in_kms\r\n        OccasionalCustomer.__counter += 1\r\n        self.bill_id = \"O\" + str(OccasionalCustomer.__counter)\r\n        \r\n    def validate_distance_in_kms(self):\r\n        if self.get_distance_in_kms() >= 1 and self.get_distance_in_kms() <= 5 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_distance_in_kms():\r\n            pass\r\n            distance = self.get_distance_in_kms()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            if distance >= 1 and distance <= 2 :\r\n                delivery_charge = 5 * distance\r\n            elif distance >= 2 and distance <=5 :\r\n                delivery_charge = 7.5 * distance\r\n            \r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        else :\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n    \r\n    \r\nclass RegularCustomer(Customer) :\r\n    __counter = 100\r\n    \r\n    def __init__(self,customer_name,no_of_tiffin):\r\n        super().__init__(customer_name)\r\n        self.__no_of_tiffin = no_of_tiffin\r\n        RegularCustomer.__counter += 1\r\n        self.bill_id = \"R\" + str(RegularCustomer.__counter)\r\n    \r\n    def validate_no_of_tiffin(self):\r\n        if self.get_no_of_tiffin() >= 1 and self.get_no_of_tiffin() <= 7 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_no_of_tiffin() :\r\n            tiffins = self.validate_no_of_tiffin()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            \r\n            delivery_charge = cost_tiffin * tiffins\r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        \r\n        else:\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_no_of_tiffin(self):\r\n        return self.__no_of_tiffin\r\n    \r\n\r\n\r\n\r\noc  = OccasionalCustomer(\"Kautilya\" , 4)\r\nrc = RegularCustomer(\"NAresh\", 5)\r\n\r\n\r\noc.calculate_bill_amount()\r\nrc.calculate_bill_amount()\r\n\r\n\r\n","asgnmtId":"29","SolutionFileName":"Assignment29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 12:28:34,885 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 12:28:34,886 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 12:28:34,887 INFO  Invoking the service to verify the user solution
+2017-02-07 12:28:34,888 INFO  Time before invoking service:Tue Feb 07 12:28:34 IST 2017
+2017-02-07 12:28:34,888 INFO  Initialising service address for VerifySolution
+2017-02-07 12:28:34,889 INFO  Time before invoking service In SUPER:Tue Feb 07 12:28:34 IST 2017
+2017-02-07 12:28:41,103 INFO  Time after invoking service In SUPER:Tue Feb 07 12:28:41 IST 2017
+2017-02-07 12:28:41,104 INFO  Service responded successfully with required details
+2017-02-07 12:28:41,105 INFO  Time after invoking service:Tue Feb 07 12:28:41 IST 2017
+2017-02-07 12:28:41,106 INFO  User solution successfully verified
+2017-02-07 12:28:41,107 INFO  Processing the response from verify service
+2017-02-07 12:28:41,112 INFO  Starting to parse JSON response
+2017-02-07 12:28:41,115 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,116 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,116 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,117 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,118 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,119 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,120 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,120 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 12:28:41,122 INFO  Successfully parsed JSON response
+2017-02-07 12:28:41,123 INFO  In the process of generating verify response in HTML
+2017-02-07 12:28:41,220 INFO  Successfully generated verify response in HTML
+2017-02-07 12:28:41,222 INFO  Successfully processed the response from service
+2017-02-07 12:28:42,404 INFO  Setting request parameters for VerifySolution
+2017-02-07 12:28:42,406 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 12:28:42,407 INFO  Starting to parse the user solution
+2017-02-07 12:28:42,408 INFO  Displaying user solution
+2017-02-07 12:28:42,412 INFO   User Solution is unchanged since the last verification.
+2017-02-07 12:28:42,419 INFO  Problem in processing and preparing Input for the verify service
+2017-02-07 13:30:02,565 INFO  Loading Baseframework Plugin
+2017-02-07 13:30:02,581 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-07 13:30:05,456 INFO  Loading the Menu - HandsOn
+2017-02-07 13:30:05,471 INFO  Successfully loaded the Menu - HandsOn
+2017-02-07 13:30:22,091 INFO  Loading Programming Assignment Plugin
+2017-02-07 13:30:22,597 INFO  Setting request parameters for VerifySolution
+2017-02-07 13:30:22,597 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 13:30:22,603 INFO  Starting to parse the user solution
+2017-02-07 13:30:22,608 INFO  Displaying user solution
+2017-02-07 13:30:26,489 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-22\r\n\r\nclass Patient:\r\n    def __init__(self,patient_id,patient_name,list_of_lab_test_ids):\r\n        self.__patient_id=patient_id\r\n        self.__patient_name=patient_name\r\n        self.__list_of_lab_test_ids=list_of_lab_test_ids\r\n        self.__lab_test_charge=None\r\n    def get_patient_id(self):\r\n        return self.__patient_id\r\n    def get_patient_name(self):\r\n        return self.__patient_name\r\n    def get_list_of_lab_test_ids(self):\r\n        return self.__list_of_lab_test_ids\r\n    def get_lab_test_charge(self):\r\n        return self.__lab_test_charge\r\n    def calculate_lab_test_charge(self):\r\n        total_sum = 0\r\n        for value in self.__list_of_lab_test_ids :\r\n            temp = LabTestRepository.get_test_charge(value)\r\n            if temp != -1 :\r\n                total_sum += temp\r\n            else : \r\n                total_sum += 0\r\n                \r\n        self.__lab_test_charge = total_sum\r\n    \r\n    \r\nclass LabTestRepository:\r\n    __list_of_hospital_lab_test_ids=[\"L101\",\"L102\",\"L103\",\"L104\"]\r\n    __list_of_lab_test_charge=[2020,1750.50,5700,1320.50]\r\n    \r\n    @staticmethod\r\n    def get_test_charge(lab_test_id):\r\n        flag_test = False\r\n        for index,value in enumerate(LabTestRepository.__list_of_hospital_lab_test_ids) :\r\n            if value == lab_test_id :\r\n                flag_test = True\r\n                return LabTestRepository.__list_of_lab_test_charge[index]\r\n            else :\r\n                flag_test = False\r\n                \r\n        if flag_test == False :\r\n            return -1\r\n            \r\n            \r\n#         for index , index2 in zip(LabTestRepository.__list_of_hospital_lab_test_ids , LabTestRepository.__list_of_lab_test_charge) :\r\n#             print(index)\r\n#             print(index2)\r\n        \r\n    \r\n\r\nlabTest = LabTestRepository()\r\n# labTest.get_test_charge(\"L106\")\r\nlab_test_list1=[\"L101\",\"L103\",\"L104\",'L105']\r\npatient1=Patient(1010,\"Sam\",lab_test_list1)\r\npatient1.calculate_lab_test_charge()\r\nprint(\"Patient id:\",patient1.get_patient_id(),\"\\nPatient name:\",patient1.get_patient_name(),\"\\nPatient's test ids:\",patient1.get_list_of_lab_test_ids(), \"\\nTotal lab test charge:\",patient1.get_lab_test_charge())\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 13:30:26,490 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 13:30:26,491 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 13:30:26,492 INFO  Invoking the service to verify the user solution
+2017-02-07 13:30:26,493 INFO  Time before invoking service:Tue Feb 07 13:30:26 IST 2017
+2017-02-07 13:30:26,494 INFO  Initialising service address for VerifySolution
+2017-02-07 13:30:26,495 INFO  Time before invoking service In SUPER:Tue Feb 07 13:30:26 IST 2017
+2017-02-07 13:30:29,650 INFO  Time after invoking service In SUPER:Tue Feb 07 13:30:29 IST 2017
+2017-02-07 13:30:29,650 INFO  Service responded successfully with required details
+2017-02-07 13:30:29,652 INFO  Time after invoking service:Tue Feb 07 13:30:29 IST 2017
+2017-02-07 13:30:29,654 INFO  User solution successfully verified
+2017-02-07 13:30:29,655 INFO  Processing the response from verify service
+2017-02-07 13:30:29,662 INFO  Starting to parse JSON response
+2017-02-07 13:30:29,667 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:29,690 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:29,720 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:29,729 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:29,733 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:29,788 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:30,205 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:30,207 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:30,208 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:30,208 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:30,210 INFO  Successfully parsed JSON response
+2017-02-07 13:30:30,211 INFO  In the process of generating verify response in HTML
+2017-02-07 13:30:30,667 INFO  Successfully generated verify response in HTML
+2017-02-07 13:30:30,668 INFO  Successfully processed the response from service
+2017-02-07 13:30:42,062 INFO  Setting request parameters for VerifySolution
+2017-02-07 13:30:42,063 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 13:30:42,064 INFO  Starting to parse the user solution
+2017-02-07 13:30:42,065 INFO  Displaying user solution
+2017-02-07 13:30:44,288 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-29\r\n#Start writing your code here\r\nfrom abc import ABCMeta,abstractmethod\r\nfrom multiprocessing.connection import deliver_challenge\r\n\r\nclass Customer(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,customer_name):\r\n        self.__customer_name = customer_name\r\n        self.bill_amount = None\r\n        self.bill_id = None\r\n        \r\n    @abstractmethod    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\nclass OccasionalCustomer(Customer) :\r\n    __counter = 1000\r\n    \r\n    def __init__(self,customer_name,distance_in_kms):\r\n        super().__init__(customer_name)\r\n        self.__distance_in_kms = distance_in_kms\r\n        OccasionalCustomer.__counter += 1\r\n        self.bill_id = \"O\" + str(OccasionalCustomer.__counter)\r\n        \r\n    def validate_distance_in_kms(self):\r\n        if self.get_distance_in_kms() >= 1 and self.get_distance_in_kms() <= 5 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_distance_in_kms():\r\n            pass\r\n            distance = self.get_distance_in_kms()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            if distance >= 1 and distance <= 2 :\r\n                delivery_charge = 5 * distance\r\n            elif distance >= 2 and distance <=5 :\r\n                delivery_charge = 7.5 * distance\r\n            \r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        else :\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n    \r\n    \r\nclass RegularCustomer(Customer) :\r\n    __counter = 100\r\n    \r\n    def __init__(self,customer_name,no_of_tiffin):\r\n        super().__init__(customer_name)\r\n        self.__no_of_tiffin = no_of_tiffin\r\n        RegularCustomer.__counter += 1\r\n        self.bill_id = \"R\" + str(RegularCustomer.__counter)\r\n    \r\n    def validate_no_of_tiffin(self):\r\n        if self.get_no_of_tiffin() >= 1 and self.get_no_of_tiffin() <= 7 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_no_of_tiffin() :\r\n            tiffins = self.validate_no_of_tiffin()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            \r\n            delivery_charge = cost_tiffin * tiffins\r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        \r\n        else:\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_no_of_tiffin(self):\r\n        return self.__no_of_tiffin\r\n    \r\n\r\n\r\n\r\noc  = OccasionalCustomer(\"Kautilya\" , 4)\r\nrc = RegularCustomer(\"NAresh\", 5)\r\n\r\n\r\noc.calculate_bill_amount()\r\nrc.calculate_bill_amount()\r\n\r\n\r\n","asgnmtId":"29","SolutionFileName":"Assignment29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 13:30:44,290 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 13:30:44,291 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 13:30:44,291 INFO  Invoking the service to verify the user solution
+2017-02-07 13:30:44,292 INFO  Time before invoking service:Tue Feb 07 13:30:44 IST 2017
+2017-02-07 13:30:44,292 INFO  Initialising service address for VerifySolution
+2017-02-07 13:30:44,293 INFO  Time before invoking service In SUPER:Tue Feb 07 13:30:44 IST 2017
+2017-02-07 13:30:49,266 INFO  Time after invoking service In SUPER:Tue Feb 07 13:30:49 IST 2017
+2017-02-07 13:30:49,267 INFO  Service responded successfully with required details
+2017-02-07 13:30:49,268 INFO  Time after invoking service:Tue Feb 07 13:30:49 IST 2017
+2017-02-07 13:30:49,268 INFO  User solution successfully verified
+2017-02-07 13:30:49,269 INFO  Processing the response from verify service
+2017-02-07 13:30:49,272 INFO  Starting to parse JSON response
+2017-02-07 13:30:49,273 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,274 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,274 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,275 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,275 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,276 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,276 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,277 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:30:49,278 INFO  Successfully parsed JSON response
+2017-02-07 13:30:49,279 INFO  In the process of generating verify response in HTML
+2017-02-07 13:30:49,389 INFO  Successfully generated verify response in HTML
+2017-02-07 13:30:49,390 INFO  Successfully processed the response from service
+2017-02-07 13:32:30,345 INFO  Setting request parameters for VerifySolution
+2017-02-07 13:32:30,354 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 13:32:30,354 INFO  Starting to parse the user solution
+2017-02-07 13:32:30,355 INFO  Displaying user solution
+2017-02-07 13:32:32,855 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-29\r\n#Start writing your code here\r\nfrom abc import ABCMeta,abstractmethod\r\n\r\n\r\nclass Customer(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,customer_name):\r\n        self.__customer_name = customer_name\r\n        self.bill_amount = None\r\n        self.bill_id = None\r\n        \r\n    @abstractmethod    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\nclass OccasionalCustomer(Customer) :\r\n    __counter = 1000\r\n    \r\n    def __init__(self,customer_name,distance_in_kms):\r\n        super().__init__(customer_name)\r\n        self.__distance_in_kms = distance_in_kms\r\n        OccasionalCustomer.__counter += 1\r\n        self.bill_id = \"O\" + str(OccasionalCustomer.__counter)\r\n        \r\n    def validate_distance_in_kms(self):\r\n        if self.get_distance_in_kms() >= 1 and self.get_distance_in_kms() <= 5 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_distance_in_kms():\r\n            pass\r\n            distance = self.get_distance_in_kms()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            if distance >= 1 and distance <= 2 :\r\n                delivery_charge = 5 * distance\r\n            elif distance >= 2 and distance <=5 :\r\n                delivery_charge = 7.5 * distance\r\n            \r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        else :\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n    \r\n    \r\nclass RegularCustomer(Customer) :\r\n    __counter = 100\r\n    \r\n    def __init__(self,customer_name,no_of_tiffin):\r\n        super().__init__(customer_name)\r\n        self.__no_of_tiffin = no_of_tiffin\r\n        RegularCustomer.__counter += 1\r\n        self.bill_id = \"R\" + str(RegularCustomer.__counter)\r\n    \r\n    def validate_no_of_tiffin(self):\r\n        if self.get_no_of_tiffin() >= 1 and self.get_no_of_tiffin() <= 7 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_no_of_tiffin() :\r\n            tiffins = self.__no_of_tiffin\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            \r\n            delivery_charge = cost_tiffin * tiffins\r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        \r\n        else:\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_no_of_tiffin(self):\r\n        return self.__no_of_tiffin\r\n    \r\n\r\n\r\n\r\noc  = OccasionalCustomer(\"Kautilya\" , 4)\r\nrc = RegularCustomer(\"NAresh\", 5)\r\n\r\n\r\noc.calculate_bill_amount()\r\nrc.calculate_bill_amount()\r\n\r\n\r\n","asgnmtId":"29","SolutionFileName":"Assignment29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 13:32:32,857 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 13:32:32,858 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 13:32:32,858 INFO  Invoking the service to verify the user solution
+2017-02-07 13:32:32,859 INFO  Time before invoking service:Tue Feb 07 13:32:32 IST 2017
+2017-02-07 13:32:32,860 INFO  Initialising service address for VerifySolution
+2017-02-07 13:32:32,861 INFO  Time before invoking service In SUPER:Tue Feb 07 13:32:32 IST 2017
+2017-02-07 13:32:38,092 INFO  Time after invoking service In SUPER:Tue Feb 07 13:32:38 IST 2017
+2017-02-07 13:32:38,092 INFO  Service responded successfully with required details
+2017-02-07 13:32:38,093 INFO  Time after invoking service:Tue Feb 07 13:32:38 IST 2017
+2017-02-07 13:32:38,093 INFO  User solution successfully verified
+2017-02-07 13:32:38,094 INFO  Processing the response from verify service
+2017-02-07 13:32:38,100 INFO  Starting to parse JSON response
+2017-02-07 13:32:38,101 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,102 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,102 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,103 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,103 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,104 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,104 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,105 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:32:38,105 INFO  Successfully parsed JSON response
+2017-02-07 13:32:38,107 INFO  In the process of generating verify response in HTML
+2017-02-07 13:32:38,195 INFO  Successfully generated verify response in HTML
+2017-02-07 13:32:38,197 INFO  Successfully processed the response from service
+2017-02-07 13:34:36,523 INFO  Setting request parameters for VerifySolution
+2017-02-07 13:34:36,527 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 13:34:36,528 INFO  Starting to parse the user solution
+2017-02-07 13:34:36,528 INFO  Displaying user solution
+2017-02-07 13:34:39,468 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-29\r\n#Start writing your code here\r\nfrom abc import ABCMeta,abstractmethod\r\n\r\n\r\nclass Customer(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,customer_name):\r\n        self.__customer_name = customer_name\r\n        self.bill_amount = None\r\n        self.bill_id = None\r\n        \r\n    @abstractmethod    \r\n    def calculate_bill_amount(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\nclass OccasionalCustomer(Customer) :\r\n    __counter = 1000\r\n    \r\n    def __init__(self,customer_name,distance_in_kms):\r\n        super().__init__(customer_name)\r\n        self.__distance_in_kms = distance_in_kms\r\n        OccasionalCustomer.__counter += 1\r\n        self.bill_id = \"O\" + str(OccasionalCustomer.__counter)\r\n        \r\n    def validate_distance_in_kms(self):\r\n        if self.get_distance_in_kms() >= 1 and self.get_distance_in_kms() <= 5 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_distance_in_kms():\r\n            pass\r\n            distance = self.get_distance_in_kms()\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            if distance >= 1 and distance <= 2 :\r\n                delivery_charge = 5 * distance\r\n            elif distance >= 2 and distance <=5 :\r\n                delivery_charge = 7.5 * distance\r\n            \r\n            \r\n            bill_amount = cost_tiffin + delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        else :\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n    \r\n    \r\nclass RegularCustomer(Customer) :\r\n    __counter = 100\r\n    \r\n    def __init__(self,customer_name,no_of_tiffin):\r\n        super().__init__(customer_name)\r\n        self.__no_of_tiffin = no_of_tiffin\r\n        RegularCustomer.__counter += 1\r\n        self.bill_id = \"R\" + str(RegularCustomer.__counter)\r\n    \r\n    def validate_no_of_tiffin(self):\r\n        if self.get_no_of_tiffin() >= 1 and self.get_no_of_tiffin() <= 7 :\r\n            return True\r\n        return False   \r\n    \r\n    def calculate_bill_amount(self):\r\n        if self.validate_no_of_tiffin() :\r\n            tiffins = self.__no_of_tiffin\r\n            bill_amount = 0\r\n            delivery_charge = 0\r\n            cost_tiffin  = 50\r\n            \r\n            delivery_charge = cost_tiffin * tiffins \r\n            \r\n            bill_amount = 7 * delivery_charge\r\n            self.bill_amount = bill_amount\r\n            return self.bill_amount\r\n        \r\n        else:\r\n            self.bill_amount = -1\r\n            return self.bill_amount\r\n    \r\n    def get_no_of_tiffin(self):\r\n        return self.__no_of_tiffin\r\n    \r\n\r\n\r\n\r\noc  = OccasionalCustomer(\"Kautilya\" , 4)\r\nrc = RegularCustomer(\"NAresh\", 5)\r\n\r\n\r\noc.calculate_bill_amount()\r\nrc.calculate_bill_amount()\r\n\r\n\r\n","asgnmtId":"29","SolutionFileName":"Assignment29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 13:34:39,661 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 13:34:39,662 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 13:34:39,662 INFO  Invoking the service to verify the user solution
+2017-02-07 13:34:39,664 INFO  Time before invoking service:Tue Feb 07 13:34:39 IST 2017
+2017-02-07 13:34:39,664 INFO  Initialising service address for VerifySolution
+2017-02-07 13:34:39,665 INFO  Time before invoking service In SUPER:Tue Feb 07 13:34:39 IST 2017
+2017-02-07 13:34:44,361 INFO  Time after invoking service In SUPER:Tue Feb 07 13:34:44 IST 2017
+2017-02-07 13:34:44,362 INFO  Service responded successfully with required details
+2017-02-07 13:34:44,367 INFO  Time after invoking service:Tue Feb 07 13:34:44 IST 2017
+2017-02-07 13:34:44,368 INFO  User solution successfully verified
+2017-02-07 13:34:44,369 INFO  Processing the response from verify service
+2017-02-07 13:34:44,372 INFO  Starting to parse JSON response
+2017-02-07 13:34:44,373 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,374 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,375 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,375 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,377 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,377 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,378 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 13:34:44,379 INFO  Successfully parsed JSON response
+2017-02-07 13:34:44,380 INFO  In the process of generating verify response in HTML
+2017-02-07 13:34:44,448 INFO  Successfully generated verify response in HTML
+2017-02-07 13:34:44,449 INFO  Successfully processed the response from service
+2017-02-07 14:01:02,366 INFO  Setting request parameters for VerifySolution
+2017-02-07 14:01:02,367 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 14:01:02,368 INFO  Starting to parse the user solution
+2017-02-07 14:01:02,371 INFO  Displaying user solution
+2017-02-07 14:01:07,044 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-30\r\n#Start writing your code here\r\n\r\n\r\nclass Customer :\r\n    \r\n    def __init__(self,customer_name , quantity):\r\n        self.__customer_name = customer_name\r\n        self.__quantity = quantity\r\n        \r\n    def validate_quantity(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\n    def get_quantity(self):\r\n        return  self.__quantity\r\n            \r\n        \r\n    \r\n\r\nclass Pizzaservice :\r\n    __counter = 0\r\n    def __init__(self,customer,pizza_type,additional_topping):\r\n        self.__customer = customer\r\n        self.__service_id = None\r\n        self.__pizza_type = pizza_type\r\n        self.__additional_topping = additional_topping\r\n        \r\n        self.pizza_cost = None\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_service_id(self):\r\n        return self.__service_id\r\n\r\n\r\n    def get_pizza_type(self):\r\n        return self.__pizza_type\r\n\r\n\r\n    def get_additional_topping(self):\r\n        return self.__additional_topping\r\n\r\n        \r\n    def validate_pizza_type(self):\r\n        pass\r\n\r\n    def calculate_pizza_cost(self):\r\n        pass\r\n    \r\n    \r\n    \r\nclass Doordelivery(Pizzaservice) :\r\n    \r\n    def __init__(self,customer,pizza_type,additional_topping,distance_in_kms):\r\n        super().__init__(customer, pizza_type, additional_topping)\r\n        self.__delivery_charge = None\r\n        self.__distance_in_kms = distance_in_kms\r\n\r\n    def get_delivery_charge(self):\r\n        return self.__delivery_charge\r\n\r\n\r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n\r\n    \r\n    def validate_pizza_type(self):\r\n        pass\r\n\r\n    def calculate_pizza_cost(self):\r\n        pass\r\n   \r\n    \r\n    \r\n    \r\n    \r\ncust = Customer()\r\n","asgnmtId":"30","SolutionFileName":"Assignment30.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 14:01:07,046 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 14:01:07,048 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 14:01:07,049 INFO  Invoking the service to verify the user solution
+2017-02-07 14:01:07,050 INFO  Time before invoking service:Tue Feb 07 14:01:07 IST 2017
+2017-02-07 14:01:07,051 INFO  Initialising service address for VerifySolution
+2017-02-07 14:01:07,052 INFO  Time before invoking service In SUPER:Tue Feb 07 14:01:07 IST 2017
+2017-02-07 14:01:15,804 INFO  Time after invoking service In SUPER:Tue Feb 07 14:01:15 IST 2017
+2017-02-07 14:01:15,805 INFO  Service responded successfully with required details
+2017-02-07 14:01:15,806 INFO  Time after invoking service:Tue Feb 07 14:01:15 IST 2017
+2017-02-07 14:01:15,807 INFO  User solution successfully verified
+2017-02-07 14:01:15,808 INFO  Processing the response from verify service
+2017-02-07 14:01:15,814 INFO  Starting to parse JSON response
+2017-02-07 14:01:15,816 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,816 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,817 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,817 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,819 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,819 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,820 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,820 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,821 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:01:15,822 INFO  Successfully parsed JSON response
+2017-02-07 14:01:15,823 INFO  In the process of generating verify response in HTML
+2017-02-07 14:01:15,909 INFO  Successfully generated verify response in HTML
+2017-02-07 14:01:15,910 INFO  Successfully processed the response from service
+2017-02-07 14:02:04,982 INFO  Setting request parameters for VerifySolution
+2017-02-07 14:02:04,983 INFO  Initiating to process and prepare Input for the verify service
+2017-02-07 14:02:04,984 INFO  Starting to parse the user solution
+2017-02-07 14:02:04,985 INFO  Displaying user solution
+2017-02-07 14:02:08,267 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-30\r\n#Start writing your code here\r\n\r\n\r\nclass Customer :\r\n    \r\n    def __init__(self,customer_name , quantity):\r\n        self.__customer_name = customer_name\r\n        self.__quantity = quantity\r\n        \r\n    def validate_quantity(self):\r\n        pass\r\n    \r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n    \r\n    def get_quantity(self):\r\n        return  self.__quantity\r\n            \r\n        \r\n    \r\n\r\nclass Pizzaservice :\r\n    __counter = 100\r\n    \r\n    def __init__(self,customer,pizza_type,additional_topping):\r\n        self.__customer = customer\r\n        self.__service_id = None\r\n        self.__pizza_type = pizza_type\r\n        self.__additional_topping = additional_topping\r\n        \r\n        self.pizza_cost = None\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_service_id(self):\r\n        return self.__service_id\r\n\r\n\r\n    def get_pizza_type(self):\r\n        return self.__pizza_type\r\n\r\n\r\n    def get_additional_topping(self):\r\n        return self.__additional_topping\r\n\r\n        \r\n    def validate_pizza_type(self):\r\n        pass\r\n\r\n    def calculate_pizza_cost(self):\r\n        pass\r\n    \r\n    \r\n    \r\nclass Doordelivery(Pizzaservice) :\r\n    \r\n    def __init__(self,customer,pizza_type,additional_topping,distance_in_kms):\r\n        super().__init__(customer, pizza_type, additional_topping)\r\n        self.__delivery_charge = None\r\n        self.__distance_in_kms = distance_in_kms\r\n\r\n    def get_delivery_charge(self):\r\n        return self.__delivery_charge\r\n\r\n\r\n    def get_distance_in_kms(self):\r\n        return self.__distance_in_kms\r\n\r\n    \r\n    def validate_pizza_type(self):\r\n        pass\r\n\r\n    def calculate_pizza_cost(self):\r\n        pass\r\n   \r\n    \r\n    \r\n    \r\n    \r\ncust = Customer()\r\n","asgnmtId":"30","SolutionFileName":"Assignment30.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-07 14:02:08,268 INFO  Successfully processed and prepared the input for the verify service
+2017-02-07 14:02:08,269 INFO  Successfully set the request parameters for VerifySolution
+2017-02-07 14:02:08,269 INFO  Invoking the service to verify the user solution
+2017-02-07 14:02:08,270 INFO  Time before invoking service:Tue Feb 07 14:02:08 IST 2017
+2017-02-07 14:02:08,271 INFO  Initialising service address for VerifySolution
+2017-02-07 14:02:08,275 INFO  Time before invoking service In SUPER:Tue Feb 07 14:02:08 IST 2017
+2017-02-07 14:02:16,625 INFO  Time after invoking service In SUPER:Tue Feb 07 14:02:16 IST 2017
+2017-02-07 14:02:16,626 INFO  Service responded successfully with required details
+2017-02-07 14:02:16,627 INFO  Time after invoking service:Tue Feb 07 14:02:16 IST 2017
+2017-02-07 14:02:16,628 INFO  User solution successfully verified
+2017-02-07 14:02:16,629 INFO  Processing the response from verify service
+2017-02-07 14:02:16,631 INFO  Starting to parse JSON response
+2017-02-07 14:02:16,634 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,635 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,636 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,637 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,638 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,638 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,639 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,639 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,641 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,642 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-07 14:02:16,642 INFO  Successfully parsed JSON response
+2017-02-07 14:02:16,644 INFO  In the process of generating verify response in HTML
+2017-02-07 14:02:16,714 INFO  Successfully generated verify response in HTML
+2017-02-07 14:02:16,715 INFO  Successfully processed the response from service

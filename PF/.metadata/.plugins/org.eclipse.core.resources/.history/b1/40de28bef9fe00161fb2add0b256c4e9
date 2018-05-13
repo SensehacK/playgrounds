@@ -1,0 +1,4 @@
+
+
+
+select ename , vehiclename from emp 

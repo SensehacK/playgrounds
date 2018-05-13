@@ -1,0 +1,295 @@
+2017-01-28 15:00:11,825 INFO  Loading Baseframework Plugin
+2017-01-28 15:00:11,935 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-28 15:00:13,894 INFO  Loading the Menu - HandsOn
+2017-01-28 15:00:13,909 INFO  Successfully loaded the Menu - HandsOn
+2017-01-28 15:06:29,798 INFO  Loading Programming Assignment Plugin
+2017-01-28 15:06:30,180 INFO  Setting request parameters for VerifySolution
+2017-01-28 15:06:30,181 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 15:06:30,185 INFO  Starting to parse the user solution
+2017-01-28 15:06:30,187 INFO  Displaying user solution
+2017-01-28 15:06:37,641 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-50\r\n\r\ndef sms_encoding(data):\r\n    \r\n    #print(\"Hello Sensehack\")        \r\n    data_return = []\r\n    vowels = ['a' , 'e' ,'i' ,'o' ,'u' ]\r\n    \r\n    #if data.lower \r\n#     data2 = data\r\n#     print(data2)\r\n    upper = False\r\n    data_lower = data\r\n    #print(data_lower)\r\n    #print(data)\r\n#     if data.isupper() :\r\n#         data_lower = data.lower()\r\n#         upper = True\r\n        \r\n    data_return = data_lower.split()\r\n    str_main = \"\"\r\n    for i in data_return :\r\n        j = 0\r\n        st = \"\"\r\n        for j in range(len(i)) :\r\n            if (i[j] == \"a\" or i[j] == \"e\" or i[j] == \"o\"  or i[j] == \"u\" or  i[j] == \"i\"  or i[j] == \"A\" or  i[j] == \"E\" or  i[j] == \"O\" or  i[j] == \"U\"   ) :\r\n                continue\r\n            else :\r\n                st = st + i[j]\r\n        str_main = str_main + \" \"  + st        \r\n    str_main = str_main.replace(\" \", \"\",1)\r\n    str_main = str_main.replace(\"  \", \" \")\r\n    \r\n    # Revert back to Upper case by checking the flag\r\n    if upper :\r\n        return str_main.upper()\r\n    else :\r\n        return str_main\r\n    \r\n\r\n# /////////////////////////// Old method program ////////////////\r\n\r\n#     for i in data :\r\n#         temp = data.replace(\"a\", \"\")\r\n#         temp2 = temp.replace(\"e\", \"\")\r\n#         temp3 = temp2.replace(\"i\", \"\")\r\n#         temp4 = temp3.replace(\"u\", \"\")\r\n#         temp5 = temp4.replace(\"o\", \"\")\r\n#     data_return.append(temp5)  \r\n#     return temp5\r\n           \r\n        \r\n#data=\"I love Python\"\r\n#data=\"Life is beautiful\"\r\ndata=\"Have a nice day\"\r\n \r\n#data=\"GOOD DAYS AND BAD DAYS\"\r\n \r\nprint(sms_encoding(data)) \r\n","asgnmtId":"50","SolutionFileName":"Assignment50.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 15:06:37,642 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 15:06:37,643 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 15:06:37,644 INFO  Invoking the service to verify the user solution
+2017-01-28 15:06:37,645 INFO  Time before invoking service:Sat Jan 28 15:06:37 IST 2017
+2017-01-28 15:06:37,647 INFO  Initialising service address for VerifySolution
+2017-01-28 15:06:37,648 INFO  Time before invoking service In SUPER:Sat Jan 28 15:06:37 IST 2017
+2017-01-28 15:06:39,136 INFO  Time after invoking service In SUPER:Sat Jan 28 15:06:39 IST 2017
+2017-01-28 15:06:39,137 INFO  Service responded successfully with required details
+2017-01-28 15:06:39,138 INFO  Time after invoking service:Sat Jan 28 15:06:39 IST 2017
+2017-01-28 15:06:39,138 INFO  User solution successfully verified
+2017-01-28 15:06:39,139 INFO  Processing the response from verify service
+2017-01-28 15:06:39,141 INFO  Starting to parse JSON response
+2017-01-28 15:06:39,144 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:06:39,145 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:06:39,146 INFO  Successfully parsed JSON response
+2017-01-28 15:06:39,146 INFO  In the process of generating verify response in HTML
+2017-01-28 15:06:39,780 INFO  Successfully generated verify response in HTML
+2017-01-28 15:06:39,780 INFO  Successfully processed the response from service
+2017-01-28 15:08:53,137 INFO  Setting request parameters for VerifySolution
+2017-01-28 15:08:53,138 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 15:08:53,139 INFO  Starting to parse the user solution
+2017-01-28 15:08:53,140 INFO  Displaying user solution
+2017-01-28 15:08:59,416 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-50\r\n\r\ndef sms_encoding(data):\r\n    \r\n    #print(\"Hello Sensehack\")        \r\n    data_return = []\r\n    vowels = ['a' , 'e' ,'i' ,'o' ,'u' ]\r\n    \r\n    #if data.lower \r\n#     data2 = data\r\n#     print(data2)\r\n    upper = False\r\n    data_lower = data\r\n    #print(data_lower)\r\n    #print(data)\r\n#     if data.isupper() :\r\n#         data_lower = data.lower()\r\n#         upper = True\r\n        \r\n    data_return = data_lower.split()\r\n    str_main = \"\"\r\n    for i in data_return :\r\n        j = 0\r\n        st = \"\"\r\n        for j in range(len(i)) :\r\n            if (i[j] == \"a\" or i[j] == \"e\" or i[j] == \"o\"  or i[j] == \"u\" or  i[j] == \"i\"  or i[j] == \"A\" or  i[j] == \"E\" or  i[j] == \"O\" or  i[j] == \"U\"   ) :\r\n                continue\r\n            else :\r\n                st = st + i[j]\r\n        str_main = str_main + \" \"  + st        \r\n    str_main = str_main.replace(\" \", \"\",1)\r\n    #str_main = str_main.replace(\"  \", \" \")\r\n    \r\n    # Revert back to Upper case by checking the flag\r\n    if upper :\r\n        return str_main.upper()\r\n    else :\r\n        return str_main\r\n    \r\n\r\n# /////////////////////////// Old method program ////////////////\r\n\r\n#     for i in data :\r\n#         temp = data.replace(\"a\", \"\")\r\n#         temp2 = temp.replace(\"e\", \"\")\r\n#         temp3 = temp2.replace(\"i\", \"\")\r\n#         temp4 = temp3.replace(\"u\", \"\")\r\n#         temp5 = temp4.replace(\"o\", \"\")\r\n#     data_return.append(temp5)  \r\n#     return temp5\r\n           \r\n        \r\n#data=\"I love Python\"\r\n#data=\"Life is beautiful\"\r\ndata=\"Have a nice day\"\r\n#data=\"MSD says I love cricket and tennis too\"\r\n\r\n \r\n#data=\"GOOD DAYS AND BAD DAYS\"\r\n \r\nprint(sms_encoding(data)) \r\n","asgnmtId":"50","SolutionFileName":"Assignment50.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 15:08:59,424 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 15:08:59,427 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 15:08:59,428 INFO  Invoking the service to verify the user solution
+2017-01-28 15:08:59,428 INFO  Time before invoking service:Sat Jan 28 15:08:59 IST 2017
+2017-01-28 15:08:59,429 INFO  Initialising service address for VerifySolution
+2017-01-28 15:08:59,430 INFO  Time before invoking service In SUPER:Sat Jan 28 15:08:59 IST 2017
+2017-01-28 15:09:00,389 INFO  Time after invoking service In SUPER:Sat Jan 28 15:09:00 IST 2017
+2017-01-28 15:09:00,390 INFO  Service responded successfully with required details
+2017-01-28 15:09:00,390 INFO  Time after invoking service:Sat Jan 28 15:09:00 IST 2017
+2017-01-28 15:09:00,391 INFO  User solution successfully verified
+2017-01-28 15:09:00,392 INFO  Processing the response from verify service
+2017-01-28 15:09:00,394 INFO  Starting to parse JSON response
+2017-01-28 15:09:00,396 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:09:00,396 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:09:00,397 INFO  Successfully parsed JSON response
+2017-01-28 15:09:00,397 INFO  In the process of generating verify response in HTML
+2017-01-28 15:09:00,451 INFO  Successfully generated verify response in HTML
+2017-01-28 15:09:00,452 INFO  Successfully processed the response from service
+2017-01-28 15:50:34,751 INFO  Setting request parameters for VerifySolution
+2017-01-28 15:50:34,758 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 15:50:34,758 INFO  Starting to parse the user solution
+2017-01-28 15:50:34,759 INFO  Displaying user solution
+2017-01-28 15:50:42,477 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-48\r\n\r\ndef find_correct(word_dict):\r\n    answer_list = []\r\n    right_count = 0\r\n    almost_correct_count = 0\r\n    wrong_count = 0\r\n    for keys , values in word_dict.items() :\r\n        count_not_same = 0\r\n        count_same = 0\r\n        i1 = 0\r\n        \r\n#         print(\"Inside Dict loop\")\r\n#         print(type(keys))\r\n#         print(type(values))\r\n#         print(keys)\r\n#         print(values)\r\n#         for i in keys :\r\n#             print(i)\r\n#         print(\"String End ././///////////.\")\r\n#         for j in values :\r\n#             print(j)\r\n            \r\n        for i in keys :\r\n#             print(\"values[i]\")\r\n#             print(values[i1])\r\n#             print(\"keys[i1]\")\r\n#             print(keys[i1])\r\n\r\n            if keys[i1] == values[i1] :\r\n                count_same += 1\r\n            else :\r\n                count_not_same += 1\r\n            \r\n            i1 += 1\r\n            \r\n#         print(\"count_same\")\r\n#         print(count_same)\r\n#         print(\"count_not_same\")\r\n#         print(count_not_same)\r\n#         print(\"len(keys)\")\r\n#         print(len(keys))\r\n        \r\n        if count_same == len(keys) :\r\n            right_count += 1\r\n#             print(\"Yes right_count\")      \r\n#             print(keys)\r\n#             print(\"right_count\")\r\n#             print(right_count)\r\n        elif count_not_same <= 2 :\r\n            almost_correct_count += 1\r\n#             print(\"Yes almost_correct_count\")      \r\n#             print(keys)\r\n#             print(\"almost_correct_count\")\r\n#             print(almost_correct_count)\r\n        elif count_not_same > 2 :\r\n            wrong_count += 1\r\n#             print(\"Yes wrong_count\")      \r\n#             print(keys)\r\n#             print(\"wrong_count\")\r\n#             print(wrong_count)\r\n \r\n    \r\n#     print(\"Final Counts Right\")\r\n#     print(\"right_count\")\r\n#     print(right_count)\r\n# \r\n#     print(\"Final almost_correct_count \")\r\n#     print(\"almost_correct_count\")\r\n#     print(type(almost_correct_count))\r\n#     print(almost_correct_count)\r\n#     \r\n#     print(\"Final wrong_count \")\r\n#     print(\"wrong_count\")\r\n#     print(wrong_count)\r\n    \r\n    answer_list.append(right_count)\r\n    answer_list.append(almost_correct_count)\r\n    answer_list.append(wrong_count)\r\n\r\n    #print(answer_list)\r\n    return answer_list\r\n\r\n\r\n\r\nword_dict={\"THEIR\": \"THEIR\",\"BUSINESS\":\"BISINESS\",\"WINDOWS\":\"WINDMILL\",\"WERE\":\"WEAR\",\"SAMPLE\":\"SAMPLE\"}  \r\nprint(find_correct(word_dict))\r\n","asgnmtId":"48","SolutionFileName":"Assignment48.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 15:50:42,479 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 15:50:42,480 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 15:50:42,480 INFO  Invoking the service to verify the user solution
+2017-01-28 15:50:42,481 INFO  Time before invoking service:Sat Jan 28 15:50:42 IST 2017
+2017-01-28 15:50:42,482 INFO  Initialising service address for VerifySolution
+2017-01-28 15:50:42,482 INFO  Time before invoking service In SUPER:Sat Jan 28 15:50:42 IST 2017
+2017-01-28 15:50:44,130 INFO  Time after invoking service In SUPER:Sat Jan 28 15:50:44 IST 2017
+2017-01-28 15:50:44,131 INFO  Service responded successfully with required details
+2017-01-28 15:50:44,132 INFO  Time after invoking service:Sat Jan 28 15:50:44 IST 2017
+2017-01-28 15:50:44,133 INFO  User solution successfully verified
+2017-01-28 15:50:44,134 INFO  Processing the response from verify service
+2017-01-28 15:50:44,136 INFO  Starting to parse JSON response
+2017-01-28 15:50:44,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:50:44,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:50:44,138 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:50:44,138 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 15:50:44,139 INFO  Successfully parsed JSON response
+2017-01-28 15:50:44,141 INFO  In the process of generating verify response in HTML
+2017-01-28 15:50:44,213 INFO  Successfully generated verify response in HTML
+2017-01-28 15:50:44,214 INFO  Successfully processed the response from service
+2017-01-28 16:20:23,619 INFO  Setting request parameters for VerifySolution
+2017-01-28 16:20:23,631 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 16:20:23,632 INFO  Starting to parse the user solution
+2017-01-28 16:20:23,634 INFO  Displaying user solution
+2017-01-28 16:20:30,248 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-48\r\n\r\ndef find_correct(word_dict):\r\n    answer_list = []\r\n    right_count = 0\r\n    almost_correct_count = 0\r\n    wrong_count = 0\r\n    \r\n    for keys , values in word_dict.items() :\r\n        count_not_same = 0\r\n        count_same = 0\r\n        i1 = 0\r\n        for i in keys : \r\n            if keys[i1] == values[i1] :\r\n                count_same += 1\r\n            else :\r\n                count_not_same += 1\r\n            i1 += 1\r\n            \r\n        if count_same == len(keys) :\r\n                right_count += 1\r\n    \r\n        elif count_not_same <= 2 :\r\n                almost_correct_count += 1\r\n    \r\n        elif count_not_same > 2 :\r\n                wrong_count += 1\r\n\r\n    answer_list.append(right_count)\r\n    answer_list.append(almost_correct_count)\r\n    answer_list.append(wrong_count)\r\n\r\n    #print(answer_list)\r\n    return answer_list\r\n\r\n#word_dict = {\"POLICY\":\"POLICY\", \"WIND\": \"WIPE\", \"WELCOME\": \"WELL\"}\r\n\r\nword_dict={\"THEIR\": \"THEIR\",\"BUSINESS\":\"BISINESS\",\"WINDOWS\":\"WINDMILL\",\"WERE\":\"WEAR\",\"SAMPLE\":\"SAMPLE\"}  \r\nprint(find_correct(word_dict))\r\n","asgnmtId":"48","SolutionFileName":"Assignment48.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 16:20:30,250 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 16:20:30,251 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 16:20:30,252 INFO  Invoking the service to verify the user solution
+2017-01-28 16:20:30,253 INFO  Time before invoking service:Sat Jan 28 16:20:30 IST 2017
+2017-01-28 16:20:30,253 INFO  Initialising service address for VerifySolution
+2017-01-28 16:20:30,255 INFO  Time before invoking service In SUPER:Sat Jan 28 16:20:30 IST 2017
+2017-01-28 16:20:32,033 INFO  Time after invoking service In SUPER:Sat Jan 28 16:20:32 IST 2017
+2017-01-28 16:20:32,034 INFO  Service responded successfully with required details
+2017-01-28 16:20:32,034 INFO  Time after invoking service:Sat Jan 28 16:20:32 IST 2017
+2017-01-28 16:20:32,035 INFO  User solution successfully verified
+2017-01-28 16:20:32,036 INFO  Processing the response from verify service
+2017-01-28 16:20:32,038 INFO  Starting to parse JSON response
+2017-01-28 16:20:32,039 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:20:32,039 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:20:32,040 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:20:32,040 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:20:32,041 INFO  Successfully parsed JSON response
+2017-01-28 16:20:32,042 INFO  In the process of generating verify response in HTML
+2017-01-28 16:20:32,127 INFO  Successfully generated verify response in HTML
+2017-01-28 16:20:32,128 INFO  Successfully processed the response from service
+2017-01-28 16:23:02,554 INFO  Setting request parameters for VerifySolution
+2017-01-28 16:23:02,559 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 16:23:02,559 INFO  Starting to parse the user solution
+2017-01-28 16:23:02,560 INFO  Displaying user solution
+2017-01-28 16:23:08,662 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-48\r\n\r\ndef find_correct(word_dict):\r\n    answer_list = []\r\n    right_count = 0\r\n    almost_correct_count = 0\r\n    wrong_count = 0\r\n    \r\n    for keys , values in word_dict.items() :\r\n        count_not_same = 0\r\n        count_same = 0\r\n        i1 = 0\r\n        if len(keys) != len(values) :\r\n            wrong_count += 1\r\n        for i in keys : \r\n            if keys[i1] == values[i1] :\r\n                count_same += 1\r\n            else :\r\n                count_not_same += 1\r\n            i1 += 1\r\n        if count_same == len(keys) :\r\n                right_count += 1\r\n        elif count_not_same <= 2 :\r\n                almost_correct_count += 1\r\n#         elif count_not_same > 2 :\r\n#                 wrong_count += 1\r\n                \r\n    answer_list.append(right_count)\r\n    answer_list.append(almost_correct_count)\r\n    answer_list.append(wrong_count)\r\n\r\n    return answer_list\r\n\r\n#word_dict = {\"POLICY\":\"POLICY\", \"WIND\": \"WIPE\", \"WELCOME\": \"WELL\"}\r\nword_dict={\"THEIR\": \"THEIR\",\"BUSINESS\":\"BISINESS\",\"WINDOWS\":\"WINDMILL\",\"WERE\":\"WEAR\",\"SAMPLE\":\"SAMPLE\"}  \r\nprint(find_correct(word_dict))\r\n","asgnmtId":"48","SolutionFileName":"Assignment48.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 16:23:08,663 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 16:23:08,664 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 16:23:08,664 INFO  Invoking the service to verify the user solution
+2017-01-28 16:23:08,666 INFO  Time before invoking service:Sat Jan 28 16:23:08 IST 2017
+2017-01-28 16:23:08,667 INFO  Initialising service address for VerifySolution
+2017-01-28 16:23:08,670 INFO  Time before invoking service In SUPER:Sat Jan 28 16:23:08 IST 2017
+2017-01-28 16:23:10,248 INFO  Time after invoking service In SUPER:Sat Jan 28 16:23:10 IST 2017
+2017-01-28 16:23:10,249 INFO  Service responded successfully with required details
+2017-01-28 16:23:10,250 INFO  Time after invoking service:Sat Jan 28 16:23:10 IST 2017
+2017-01-28 16:23:10,250 INFO  User solution successfully verified
+2017-01-28 16:23:10,251 INFO  Processing the response from verify service
+2017-01-28 16:23:10,253 INFO  Starting to parse JSON response
+2017-01-28 16:23:10,255 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:23:10,255 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:23:10,256 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:23:10,256 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:23:10,256 INFO  Successfully parsed JSON response
+2017-01-28 16:23:10,259 INFO  In the process of generating verify response in HTML
+2017-01-28 16:23:10,333 INFO  Successfully generated verify response in HTML
+2017-01-28 16:23:10,334 INFO  Successfully processed the response from service
+2017-01-28 16:23:58,427 INFO  Setting request parameters for VerifySolution
+2017-01-28 16:23:58,428 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 16:23:58,430 INFO  Starting to parse the user solution
+2017-01-28 16:23:58,431 INFO  Displaying user solution
+2017-01-28 16:24:04,222 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-48\r\n\r\ndef find_correct(word_dict):\r\n    answer_list = []\r\n    right_count = 0\r\n    almost_correct_count = 0\r\n    wrong_count = 0\r\n    \r\n    for keys , values in word_dict.items() :\r\n        count_not_same = 0\r\n        count_same = 0\r\n        i1 = 0\r\n        if len(keys) != len(values) :\r\n            wrong_count += 1\r\n        else : \r\n            \r\n            for i in keys : \r\n                if keys[i1] == values[i1] :\r\n                    count_same += 1\r\n                else :\r\n                    count_not_same += 1\r\n                i1 += 1\r\n            if count_same == len(keys) :\r\n                    right_count += 1\r\n            elif count_not_same <= 2 :\r\n                    almost_correct_count += 1\r\n            elif count_not_same > 2 :\r\n                    wrong_count += 1\r\n                \r\n    answer_list.append(right_count)\r\n    answer_list.append(almost_correct_count)\r\n    answer_list.append(wrong_count)\r\n\r\n    return answer_list\r\n\r\n#word_dict = {\"POLICY\":\"POLICY\", \"WIND\": \"WIPE\", \"WELCOME\": \"WELL\"}\r\nword_dict={\"THEIR\": \"THEIR\",\"BUSINESS\":\"BISINESS\",\"WINDOWS\":\"WINDMILL\",\"WERE\":\"WEAR\",\"SAMPLE\":\"SAMPLE\"}  \r\nprint(find_correct(word_dict))\r\n","asgnmtId":"48","SolutionFileName":"Assignment48.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 16:24:04,223 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 16:24:04,224 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 16:24:04,224 INFO  Invoking the service to verify the user solution
+2017-01-28 16:24:04,225 INFO  Time before invoking service:Sat Jan 28 16:24:04 IST 2017
+2017-01-28 16:24:04,226 INFO  Initialising service address for VerifySolution
+2017-01-28 16:24:04,227 INFO  Time before invoking service In SUPER:Sat Jan 28 16:24:04 IST 2017
+2017-01-28 16:24:05,667 INFO  Time after invoking service In SUPER:Sat Jan 28 16:24:05 IST 2017
+2017-01-28 16:24:05,668 INFO  Service responded successfully with required details
+2017-01-28 16:24:05,668 INFO  Time after invoking service:Sat Jan 28 16:24:05 IST 2017
+2017-01-28 16:24:05,669 INFO  User solution successfully verified
+2017-01-28 16:24:05,670 INFO  Processing the response from verify service
+2017-01-28 16:24:05,671 INFO  Starting to parse JSON response
+2017-01-28 16:24:05,673 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:24:05,678 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:24:05,678 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:24:05,679 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:24:05,679 INFO  Successfully parsed JSON response
+2017-01-28 16:24:05,680 INFO  In the process of generating verify response in HTML
+2017-01-28 16:24:05,751 INFO  Successfully generated verify response in HTML
+2017-01-28 16:24:05,754 INFO  Successfully processed the response from service
+2017-01-28 16:27:02,687 INFO  Setting request parameters for VerifySolution
+2017-01-28 16:27:02,688 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 16:27:02,691 INFO  Starting to parse the user solution
+2017-01-28 16:27:02,692 INFO  Displaying user solution
+2017-01-28 16:27:08,249 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-48\r\n\r\ndef find_correct(word_dict):\r\n    answer_list = []\r\n    right_count = 0\r\n    almost_correct_count = 0\r\n    wrong_count = 0\r\n    \r\n    for keys , values in word_dict.items() :\r\n        count_not_same = 0\r\n        count_same = 0\r\n        i1 = 0\r\n        if len(keys) != len(values) :\r\n            wrong_count += 1\r\n        else : \r\n            for i in keys : \r\n                if keys[i1] == values[i1] :\r\n                    count_same += 1\r\n                else :\r\n                    count_not_same += 1\r\n                i1 += 1\r\n            if count_same == len(keys) :\r\n                    right_count += 1\r\n            elif count_not_same <= 2 :\r\n                    almost_correct_count += 1\r\n            elif count_not_same > 2 :\r\n                    wrong_count += 1\r\n                \r\n    answer_list.append(right_count)\r\n    answer_list.append(almost_correct_count)\r\n    answer_list.append(wrong_count)\r\n\r\n    return answer_list\r\n\r\nword_dict = {\"POLICY\":\"POLICY\", \"WIND\": \"WIPE\", \"WELCOME\": \"WELL\"}\r\n#word_dict={\"THEIR\": \"THEIR\",\"BUSINESS\":\"BISINESS\",\"WINDOWS\":\"WINDMILL\",\"WERE\":\"WEAR\",\"SAMPLE\":\"SAMPLE\"}  \r\nprint(find_correct(word_dict))\r\n","asgnmtId":"48","SolutionFileName":"Assignment48.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 16:27:08,251 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 16:27:08,251 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 16:27:08,252 INFO  Invoking the service to verify the user solution
+2017-01-28 16:27:08,253 INFO  Time before invoking service:Sat Jan 28 16:27:08 IST 2017
+2017-01-28 16:27:08,253 INFO  Initialising service address for VerifySolution
+2017-01-28 16:27:08,255 INFO  Time before invoking service In SUPER:Sat Jan 28 16:27:08 IST 2017
+2017-01-28 16:27:10,127 INFO  Time after invoking service In SUPER:Sat Jan 28 16:27:10 IST 2017
+2017-01-28 16:27:10,128 INFO  Service responded successfully with required details
+2017-01-28 16:27:10,128 INFO  Time after invoking service:Sat Jan 28 16:27:10 IST 2017
+2017-01-28 16:27:10,129 INFO  User solution successfully verified
+2017-01-28 16:27:10,130 INFO  Processing the response from verify service
+2017-01-28 16:27:10,132 INFO  Starting to parse JSON response
+2017-01-28 16:27:10,134 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:27:10,134 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:27:10,135 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:27:10,135 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:27:10,136 INFO  Successfully parsed JSON response
+2017-01-28 16:27:10,137 INFO  In the process of generating verify response in HTML
+2017-01-28 16:27:10,211 INFO  Successfully generated verify response in HTML
+2017-01-28 16:27:10,212 INFO  Successfully processed the response from service
+2017-01-28 16:30:28,930 INFO  Initiating to process and prepare Input for the submit service
+2017-01-28 16:30:28,935 INFO  Displaying user solution
+2017-01-28 16:30:28,944 INFO  Successfully processed and prepared the input for the submit service
+2017-01-28 16:30:28,945 INFO  Invoking the service to submit the user solution
+2017-01-28 16:30:28,946 INFO  Initialising service address for Submit
+2017-01-28 16:30:28,947 INFO  Time before invoking service In SUPER:Sat Jan 28 16:30:28 IST 2017
+2017-01-28 16:30:29,209 INFO  Time after invoking service In SUPER:Sat Jan 28 16:30:29 IST 2017
+2017-01-28 16:30:29,210 INFO  Service responded successfully with required details
+2017-01-28 16:30:29,211 INFO  User solution successfully submitted
+2017-01-28 16:30:29,212 INFO  Displaying submission status
+2017-01-28 16:30:29,213 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-28 16:49:28,612 INFO  Setting request parameters for VerifySolution
+2017-01-28 16:49:28,620 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 16:49:28,621 INFO  Starting to parse the user solution
+2017-01-28 16:49:28,623 INFO  Displaying user solution
+2017-01-28 16:49:35,736 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-46\r\nimport numbers\r\ndef nearest_palindrome(number):\r\n    number = number + 1\r\n    while(1) :\r\n        num1 = str(number)\r\n        if num1 == (str(number)[::-1]) :\r\n            return int(num1)\r\n        else :\r\n            number += 1\r\nnumber=12300\r\nprint(nearest_palindrome(number)) \r\n\r\n\r\n        \r\n","asgnmtId":"46","SolutionFileName":"Assignment46.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 16:49:35,738 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 16:49:35,738 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 16:49:35,739 INFO  Invoking the service to verify the user solution
+2017-01-28 16:49:35,745 INFO  Time before invoking service:Sat Jan 28 16:49:35 IST 2017
+2017-01-28 16:49:35,746 INFO  Initialising service address for VerifySolution
+2017-01-28 16:49:35,747 INFO  Time before invoking service In SUPER:Sat Jan 28 16:49:35 IST 2017
+2017-01-28 16:49:37,103 INFO  Time after invoking service In SUPER:Sat Jan 28 16:49:37 IST 2017
+2017-01-28 16:49:37,104 INFO  Service responded successfully with required details
+2017-01-28 16:49:37,105 INFO  Time after invoking service:Sat Jan 28 16:49:37 IST 2017
+2017-01-28 16:49:37,106 INFO  User solution successfully verified
+2017-01-28 16:49:37,106 INFO  Processing the response from verify service
+2017-01-28 16:49:37,107 INFO  Starting to parse JSON response
+2017-01-28 16:49:37,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:49:37,109 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 16:49:37,109 INFO  Successfully parsed JSON response
+2017-01-28 16:49:37,111 INFO  In the process of generating verify response in HTML
+2017-01-28 16:49:37,201 INFO  Successfully generated verify response in HTML
+2017-01-28 16:49:37,202 INFO  Successfully processed the response from service
+2017-01-28 16:49:45,335 INFO  Initiating to process and prepare Input for the submit service
+2017-01-28 16:49:45,339 INFO  Displaying user solution
+2017-01-28 16:49:45,350 INFO  Successfully processed and prepared the input for the submit service
+2017-01-28 16:49:45,351 INFO  Invoking the service to submit the user solution
+2017-01-28 16:49:45,351 INFO  Initialising service address for Submit
+2017-01-28 16:49:45,353 INFO  Time before invoking service In SUPER:Sat Jan 28 16:49:45 IST 2017
+2017-01-28 16:49:45,607 INFO  Time after invoking service In SUPER:Sat Jan 28 16:49:45 IST 2017
+2017-01-28 16:49:45,608 INFO  Service responded successfully with required details
+2017-01-28 16:49:45,608 INFO  User solution successfully submitted
+2017-01-28 16:49:45,609 INFO  Displaying submission status
+2017-01-28 16:49:45,609 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-28 17:03:57,948 INFO  Setting request parameters for VerifySolution
+2017-01-28 17:03:57,955 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 17:03:57,956 INFO  Starting to parse the user solution
+2017-01-28 17:03:57,956 INFO  Displaying user solution
+2017-01-28 17:04:03,952 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"# PF-Assgn-47\r\ndef encrypt_sentence(sentence):\r\n    # start writing your code here\r\n    encrypted_sentence = \"\"\r\n    for index, word in enumerate(sentence.split(\" \")):\r\n        # for words at even position\r\n        if index % 2 == 0:\r\n            for character in reversed(word):\r\n                encrypted_sentence += character\r\n            encrypted_sentence += \" \"\r\n        else:\r\n            vowels = \"\"\r\n            consonants = \"\"\r\n            for character in word:\r\n                if character in \"aeiou\":\r\n                    vowels += character\r\n                else:\r\n                    consonants += character\r\n            encrypted_sentence += consonants\r\n            encrypted_sentence += vowels\r\n            encrypted_sentence+=\" \"\r\n    # strip() removes blank space from both ends\r\n    return encrypted_sentence.strip()\r\nsentence = \"The sun rises in the east\"\r\nencrypted_sentence = encrypt_sentence(sentence)\r\nprint(encrypted_sentence)\r\n","asgnmtId":"47","SolutionFileName":"Assignment47.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 17:04:03,953 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 17:04:03,954 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 17:04:03,955 INFO  Invoking the service to verify the user solution
+2017-01-28 17:04:03,955 INFO  Time before invoking service:Sat Jan 28 17:04:03 IST 2017
+2017-01-28 17:04:03,956 INFO  Initialising service address for VerifySolution
+2017-01-28 17:04:03,957 INFO  Time before invoking service In SUPER:Sat Jan 28 17:04:03 IST 2017
+2017-01-28 17:04:05,321 INFO  Time after invoking service In SUPER:Sat Jan 28 17:04:05 IST 2017
+2017-01-28 17:04:05,322 INFO  Service responded successfully with required details
+2017-01-28 17:04:05,323 INFO  Time after invoking service:Sat Jan 28 17:04:05 IST 2017
+2017-01-28 17:04:05,323 INFO  User solution successfully verified
+2017-01-28 17:04:05,324 INFO  Processing the response from verify service
+2017-01-28 17:04:05,325 INFO  Starting to parse JSON response
+2017-01-28 17:04:05,326 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:04:05,327 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:04:05,327 INFO  Successfully parsed JSON response
+2017-01-28 17:04:05,329 INFO  In the process of generating verify response in HTML
+2017-01-28 17:04:05,403 INFO  Successfully generated verify response in HTML
+2017-01-28 17:04:05,404 INFO  Successfully processed the response from service
+2017-01-28 17:04:10,206 INFO  Initiating to process and prepare Input for the submit service
+2017-01-28 17:04:10,208 INFO  Displaying user solution
+2017-01-28 17:04:10,218 INFO  Successfully processed and prepared the input for the submit service
+2017-01-28 17:04:10,219 INFO  Invoking the service to submit the user solution
+2017-01-28 17:04:10,219 INFO  Initialising service address for Submit
+2017-01-28 17:04:10,220 INFO  Time before invoking service In SUPER:Sat Jan 28 17:04:10 IST 2017
+2017-01-28 17:04:10,438 INFO  Time after invoking service In SUPER:Sat Jan 28 17:04:10 IST 2017
+2017-01-28 17:04:10,439 INFO  Service responded successfully with required details
+2017-01-28 17:04:10,440 INFO  User solution successfully submitted
+2017-01-28 17:04:10,440 INFO  Displaying submission status
+2017-01-28 17:04:10,441 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-28 17:05:05,640 INFO  Initiating to process and prepare Input for the submit service
+2017-01-28 17:05:05,641 INFO  Displaying user solution
+2017-01-28 17:05:05,642 INFO  No changes made in the assignment since the last submission
+2017-01-28 17:05:05,644 ERROR Exception occured while submitting the user solution
+2017-01-28 17:09:35,742 INFO  Setting request parameters for VerifySolution
+2017-01-28 17:09:35,746 INFO  Initiating to process and prepare Input for the verify service
+2017-01-28 17:09:35,746 INFO  Starting to parse the user solution
+2017-01-28 17:09:35,747 INFO  Displaying user solution
+2017-01-28 17:09:43,021 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-44\r\n\r\ndef find_duplicates(list_of_numbers):\r\n    #start writing your code here\r\n    list_of_duplicates = []\r\n    for number in list_of_numbers[:]:\r\n        if list_of_numbers.count(number) > 1:\r\n            list_of_duplicates.append(number)\r\n            while number in list_of_numbers:\r\n                list_of_numbers.remove(number)\r\n    return list_of_duplicates\r\n\r\nlist_of_numbers=[1,2,3,3,2,1,4,4,4,1]  #[1,2,2,3,3,3,4,4,4,4]\r\nlist_of_duplicates=find_duplicates(list_of_numbers)\r\nprint(list_of_duplicates)\r\n","asgnmtId":"44","SolutionFileName":"Assignment44.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-28 17:09:43,022 INFO  Successfully processed and prepared the input for the verify service
+2017-01-28 17:09:43,023 INFO  Successfully set the request parameters for VerifySolution
+2017-01-28 17:09:43,024 INFO  Invoking the service to verify the user solution
+2017-01-28 17:09:43,024 INFO  Time before invoking service:Sat Jan 28 17:09:43 IST 2017
+2017-01-28 17:09:43,025 INFO  Initialising service address for VerifySolution
+2017-01-28 17:09:43,026 INFO  Time before invoking service In SUPER:Sat Jan 28 17:09:43 IST 2017
+2017-01-28 17:09:44,608 INFO  Time after invoking service In SUPER:Sat Jan 28 17:09:44 IST 2017
+2017-01-28 17:09:44,609 INFO  Service responded successfully with required details
+2017-01-28 17:09:44,609 INFO  Time after invoking service:Sat Jan 28 17:09:44 IST 2017
+2017-01-28 17:09:44,610 INFO  User solution successfully verified
+2017-01-28 17:09:44,610 INFO  Processing the response from verify service
+2017-01-28 17:09:44,616 INFO  Starting to parse JSON response
+2017-01-28 17:09:44,617 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:09:44,617 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:09:44,618 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:09:44,618 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-28 17:09:44,619 INFO  Successfully parsed JSON response
+2017-01-28 17:09:44,620 INFO  In the process of generating verify response in HTML
+2017-01-28 17:09:44,687 INFO  Successfully generated verify response in HTML
+2017-01-28 17:09:44,688 INFO  Successfully processed the response from service
+2017-01-28 17:10:11,445 INFO  Initiating to process and prepare Input for the submit service
+2017-01-28 17:10:11,448 INFO  Displaying user solution
+2017-01-28 17:10:11,457 INFO  Successfully processed and prepared the input for the submit service
+2017-01-28 17:10:11,458 INFO  Invoking the service to submit the user solution
+2017-01-28 17:10:11,459 INFO  Initialising service address for Submit
+2017-01-28 17:10:11,460 INFO  Time before invoking service In SUPER:Sat Jan 28 17:10:11 IST 2017
+2017-01-28 17:10:11,722 INFO  Time after invoking service In SUPER:Sat Jan 28 17:10:11 IST 2017
+2017-01-28 17:10:11,723 INFO  Service responded successfully with required details
+2017-01-28 17:10:11,724 INFO  User solution successfully submitted
+2017-01-28 17:10:11,724 INFO  Displaying submission status
+2017-01-28 17:10:11,725 INFO  Displayed submission status successfullySuccessfully Submitted!

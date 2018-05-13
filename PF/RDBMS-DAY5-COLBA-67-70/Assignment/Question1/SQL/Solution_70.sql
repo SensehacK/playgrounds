@@ -1,0 +1,9 @@
+
+
+
+select e1.ename , nvl(vh.vehiclename,null) as "VEHICLENAME" 
+from emp e1 left outer join
+empvehicle ev1 on e1.empno = ev1.empno left outer join vehicle vh 
+on ev1.vehicleid = vh.vehicleid
+
+

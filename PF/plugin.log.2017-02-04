@@ -1,0 +1,506 @@
+2017-02-04 10:18:50,998 INFO  Loading Baseframework Plugin
+2017-02-04 10:18:51,470 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-04 10:18:52,206 INFO  Loading the Menu - HandsOn
+2017-02-04 10:18:52,442 INFO  Successfully loaded the Menu - HandsOn
+2017-02-04 10:57:52,427 INFO  Loading Programming Assignment Plugin
+2017-02-04 10:57:52,972 INFO  Setting request parameters for VerifySolution
+2017-02-04 10:57:52,987 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 10:57:52,994 INFO  Starting to parse the user solution
+2017-02-04 10:57:52,999 INFO  Displaying user solution
+2017-02-04 10:57:58,577 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-22\r\n\r\nclass Patient:\r\n    def __init__(self,patient_id,patient_name,list_of_lab_test_ids):\r\n        self.__patient_id=patient_id\r\n        self.__patient_name=patient_name\r\n        self.__list_of_lab_test_ids=list_of_lab_test_ids\r\n        self.__lab_test_charge=None\r\n    def get_patient_id(self):\r\n        return self.__patient_id\r\n    def get_patient_name(self):\r\n        return self.__patient_name\r\n    def get_list_of_lab_test_ids(self):\r\n        return self.__list_of_lab_test_ids\r\n    def get_lab_test_charge(self):\r\n        return self.__lab_test_charge\r\n    def calculate_lab_test_charge(self):\r\n        total_sum = 0\r\n        for value in self.__list_of_lab_test_ids :\r\n            temp = LabTestRepository.get_test_charge(value)\r\n            if temp != -1 :\r\n                total_sum += temp\r\n            else : \r\n                total_sum += 0\r\n                \r\n        self.__lab_test_charge = total_sum\r\n    \r\n    \r\nclass LabTestRepository:\r\n    __list_of_hospital_lab_test_ids=[\"L101\",\"L102\",\"L103\",\"L104\"]\r\n    __list_of_lab_test_charge=[2020,1750.50,5700,1320.50]\r\n    \r\n    @staticmethod\r\n    def get_test_charge(lab_test_id):\r\n        flag_test = False\r\n        for index,value in enumerate(LabTestRepository.__list_of_hospital_lab_test_ids) :\r\n            if value == lab_test_id :\r\n                flag_test = True\r\n                return LabTestRepository.__list_of_lab_test_charge[index]\r\n            else :\r\n                flag_test = False\r\n                \r\n        if flag_test == False :\r\n            return -1\r\n            \r\n            \r\n#         for index , index2 in zip(LabTestRepository.__list_of_hospital_lab_test_ids , LabTestRepository.__list_of_lab_test_charge) :\r\n#             print(index)\r\n#             print(index2)\r\n        \r\n    \r\n\r\nlabTest = LabTestRepository()\r\n# labTest.get_test_charge(\"L106\")\r\nlab_test_list1=[\"L101\",\"L103\",\"L104\",'L105']\r\npatient1=Patient(1010,\"Sam\",lab_test_list1)\r\npatient1.calculate_lab_test_charge()\r\nprint(\"Patient id:\",patient1.get_patient_id(),\"\\nPatient name:\",patient1.get_patient_name(),\"\\nPatient's test ids:\",patient1.get_list_of_lab_test_ids(), \"\\nTotal lab test charge:\",patient1.get_lab_test_charge())\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 10:57:58,578 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 10:57:58,585 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 10:57:58,585 INFO  Invoking the service to verify the user solution
+2017-02-04 10:57:58,587 INFO  Time before invoking service:Sat Feb 04 10:57:58 IST 2017
+2017-02-04 10:57:58,589 INFO  Initialising service address for VerifySolution
+2017-02-04 10:57:58,590 INFO  Time before invoking service In SUPER:Sat Feb 04 10:57:58 IST 2017
+2017-02-04 10:58:01,607 INFO  Time after invoking service In SUPER:Sat Feb 04 10:58:01 IST 2017
+2017-02-04 10:58:01,608 INFO  Service responded successfully with required details
+2017-02-04 10:58:01,609 INFO  Time after invoking service:Sat Feb 04 10:58:01 IST 2017
+2017-02-04 10:58:01,609 INFO  User solution successfully verified
+2017-02-04 10:58:01,610 INFO  Processing the response from verify service
+2017-02-04 10:58:01,616 INFO  Starting to parse JSON response
+2017-02-04 10:58:01,620 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,621 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,622 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,622 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,624 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,624 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,625 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,625 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 10:58:01,627 INFO  Successfully parsed JSON response
+2017-02-04 10:58:01,629 INFO  In the process of generating verify response in HTML
+2017-02-04 10:58:01,993 INFO  Successfully generated verify response in HTML
+2017-02-04 10:58:01,994 INFO  Successfully processed the response from service
+2017-02-04 11:52:04,114 INFO  Setting request parameters for VerifySolution
+2017-02-04 11:52:04,117 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 11:52:04,118 INFO  Starting to parse the user solution
+2017-02-04 11:52:04,120 INFO  Displaying user solution
+2017-02-04 11:52:09,718 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-23\r\n\r\nclass Apparel:\r\n    __counter = 100\r\n    def __init__(self,price,item_type):\r\n        self.__item_id=None\r\n        if item_type == \"Silk\" :\r\n            Apparel.__counter += 1\r\n            self.__item_id=\"S\" + str(Apparel.__counter)\r\n        elif item_type == \"Cotton\" :\r\n            Apparel.__counter += 1\r\n            self.__item_id=\"C\" + str(Apparel.__counter) \r\n        \r\n        self.__item_type=item_type\r\n        self.__price=price\r\n\r\n    def get_item_id(self):\r\n        return self.__item_id\r\n\r\n    def get_item_type(self):\r\n        return self.__item_type\r\n\r\n    def get_price(self):\r\n        return self.__price\r\n\r\n    def set_price(self, value):\r\n        self.__price = value\r\n\r\n    def calculate_price(self):\r\n        price = self.get_price() + (self.get_price()  * 5 / 100 )\r\n        self.set_price(price)\r\n    \r\nclass Cotton(Apparel):\r\n    def __init__(self,price,discount):\r\n        self.__discount=discount\r\n        super().__init__(price,\"Cotton\")\r\n        \r\n        \r\n    def calculate_price(self):\r\n        super().calculate_price()\r\n        price_super = super().get_price()\r\n        #Calculate Discounted Price\r\n        price_super = price_super - (price_super * self.get_discount() / 100)\r\n        # Add 5% VAT\r\n        total_price_vat = price_super + (price_super * 5 / 100)\r\n        \r\n        super().set_price(total_price_vat)\r\n        \r\n    def get_discount(self):\r\n        return self.__discount\r\n        \r\n        \r\nclass Silk(Apparel):\r\n    def __init__(self,price):\r\n        self.__points = None\r\n        super().__init__(price,\"Silk\")\r\n        \r\n        \r\n    def calculate_price(self):\r\n        super().calculate_price()\r\n        price_super = super().get_price()\r\n        #Calculate Points\r\n        if price_super > 10000 :\r\n            self.__points = 10\r\n        elif price_super <= 10000 :\r\n            self.__points = 3\r\n        # Add 10% VAT\r\n        total_price_vat = price_super + (price_super * 10 / 100)\r\n        \r\n        super().set_price(total_price_vat)\r\n    \r\n    def get_points(self):\r\n        return self.__points\r\n\r\n\r\n\r\n\r\ncot = Cotton(1000,10)\r\ncot.calculate_price()\r\nprint(\"Cotton Total Price : \" , cot.get_price())\r\nsil = Silk(9000)\r\nsil.calculate_price()\r\nprint(\"Silk Total Price : \" , sil.get_price())\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n# \r\n# labTest = LabTestRepository()\r\n# # labTest.get_test_charge(\"L106\")\r\n# lab_test_list1=[\"L101\",\"L103\",\"L104\",'L105']\r\n# patient1=Patient(1010,\"Sam\",lab_test_list1)\r\n# patient1.calculate_lab_test_charge()\r\n# print(\"Patient id:\",patient1.get_patient_id(),\"\\nPatient name:\",patient1.get_patient_name(),\"\\nPatient's test ids:\",patient1.get_list_of_lab_test_ids(), \"\\nTotal lab test charge:\",patient1.get_lab_test_charge())\r\n","asgnmtId":"23","SolutionFileName":"Assignment23.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 11:52:09,719 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 11:52:09,720 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 11:52:09,720 INFO  Invoking the service to verify the user solution
+2017-02-04 11:52:09,721 INFO  Time before invoking service:Sat Feb 04 11:52:09 IST 2017
+2017-02-04 11:52:09,722 INFO  Initialising service address for VerifySolution
+2017-02-04 11:52:09,723 INFO  Time before invoking service In SUPER:Sat Feb 04 11:52:09 IST 2017
+2017-02-04 11:52:12,935 INFO  Time after invoking service In SUPER:Sat Feb 04 11:52:12 IST 2017
+2017-02-04 11:52:12,936 INFO  Service responded successfully with required details
+2017-02-04 11:52:12,937 INFO  Time after invoking service:Sat Feb 04 11:52:12 IST 2017
+2017-02-04 11:52:12,938 INFO  User solution successfully verified
+2017-02-04 11:52:12,941 INFO  Processing the response from verify service
+2017-02-04 11:52:12,949 INFO  Starting to parse JSON response
+2017-02-04 11:52:12,952 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,953 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,954 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,955 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,956 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,956 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,956 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,959 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,960 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,960 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:52:12,961 INFO  Successfully parsed JSON response
+2017-02-04 11:52:12,963 INFO  In the process of generating verify response in HTML
+2017-02-04 11:52:13,093 INFO  Successfully generated verify response in HTML
+2017-02-04 11:52:13,094 INFO  Successfully processed the response from service
+2017-02-04 11:53:07,701 INFO  Setting request parameters for VerifySolution
+2017-02-04 11:53:07,707 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 11:53:07,709 INFO  Starting to parse the user solution
+2017-02-04 11:53:07,710 INFO  Displaying user solution
+2017-02-04 11:53:14,865 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-23\r\n\r\nclass Apparel:\r\n    __counter = 100\r\n    def __init__(self,price,item_type):\r\n        self.__item_id=None\r\n        if item_type == \"Silk\" :\r\n            Apparel.__counter += 1\r\n            self.__item_id=\"S\" + str(Apparel.__counter)\r\n        elif item_type == \"Cotton\" :\r\n            Apparel.__counter += 1\r\n            self.__item_id=\"C\" + str(Apparel.__counter) \r\n        \r\n        self.__item_type=item_type\r\n        self.__price=price\r\n\r\n    def get_item_id(self):\r\n        return self.__item_id\r\n\r\n    def get_item_type(self):\r\n        return self.__item_type\r\n\r\n    def get_price(self):\r\n        return self.__price\r\n\r\n    def set_price(self, value):\r\n        self.__price = value\r\n\r\n    def calculate_price(self):\r\n        price = self.get_price() + (self.get_price()  * 5 / 100 )\r\n        self.set_price(price)\r\n    \r\nclass Cotton(Apparel):\r\n    def __init__(self,price,discount):\r\n        self.__discount=discount\r\n        super().__init__(price,\"Cotton\")\r\n           \r\n    def calculate_price(self):\r\n        super().calculate_price()\r\n        price_super = super().get_price()\r\n        #Calculate Discounted Price\r\n        price_super = price_super - (price_super * self.get_discount() / 100)\r\n        # Add 5% VAT\r\n        total_price_vat = price_super + (price_super * 5 / 100)\r\n        \r\n        super().set_price(total_price_vat)\r\n        \r\n    def get_discount(self):\r\n        return self.__discount\r\n        \r\n        \r\nclass Silk(Apparel):\r\n    def __init__(self,price):\r\n        self.__points = None\r\n        super().__init__(price,\"Silk\")\r\n             \r\n    def calculate_price(self):\r\n        super().calculate_price()\r\n        price_super = super().get_price()\r\n        #Calculate Points\r\n        if price_super > 10000 :\r\n            self.__points = 10\r\n        elif price_super <= 10000 :\r\n            self.__points = 3\r\n        # Add 10% VAT\r\n        total_price_vat = price_super + (price_super * 10 / 100)\r\n        \r\n        super().set_price(total_price_vat)\r\n    \r\n    def get_points(self):\r\n        return self.__points\r\n\r\n\r\ncot = Cotton(1000,10)\r\ncot.calculate_price()\r\nprint(\"Cotton Total Price : \" , cot.get_price())\r\nsil = Silk(9000)\r\nsil.calculate_price()\r\nprint(\"Silk Total Price : \" , sil.get_price())\r\n","asgnmtId":"23","SolutionFileName":"Assignment23.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 11:53:15,041 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 11:53:15,042 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 11:53:15,043 INFO  Invoking the service to verify the user solution
+2017-02-04 11:53:15,044 INFO  Time before invoking service:Sat Feb 04 11:53:15 IST 2017
+2017-02-04 11:53:15,045 INFO  Initialising service address for VerifySolution
+2017-02-04 11:53:15,046 INFO  Time before invoking service In SUPER:Sat Feb 04 11:53:15 IST 2017
+2017-02-04 11:53:18,515 INFO  Time after invoking service In SUPER:Sat Feb 04 11:53:18 IST 2017
+2017-02-04 11:53:18,516 INFO  Service responded successfully with required details
+2017-02-04 11:53:18,517 INFO  Time after invoking service:Sat Feb 04 11:53:18 IST 2017
+2017-02-04 11:53:18,518 INFO  User solution successfully verified
+2017-02-04 11:53:18,519 INFO  Processing the response from verify service
+2017-02-04 11:53:18,521 INFO  Starting to parse JSON response
+2017-02-04 11:53:18,523 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,524 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,525 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,526 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,526 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,527 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,527 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,528 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,530 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,530 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:53:18,531 INFO  Successfully parsed JSON response
+2017-02-04 11:53:18,533 INFO  In the process of generating verify response in HTML
+2017-02-04 11:53:18,615 INFO  Successfully generated verify response in HTML
+2017-02-04 11:53:18,617 INFO  Successfully processed the response from service
+2017-02-04 11:54:29,445 INFO  Initiating to process and prepare Input for the submit service
+2017-02-04 11:54:29,453 INFO  Displaying user solution
+2017-02-04 11:54:29,466 INFO  Successfully processed and prepared the input for the submit service
+2017-02-04 11:54:29,470 INFO  Invoking the service to submit the user solution
+2017-02-04 11:54:29,472 INFO  Initialising service address for Submit
+2017-02-04 11:54:29,474 INFO  Time before invoking service In SUPER:Sat Feb 04 11:54:29 IST 2017
+2017-02-04 11:54:29,574 INFO  Time after invoking service In SUPER:Sat Feb 04 11:54:29 IST 2017
+2017-02-04 11:54:29,576 INFO  Service responded successfully with required details
+2017-02-04 11:54:29,578 INFO  User solution successfully submitted
+2017-02-04 11:54:29,580 INFO  Displaying submission status
+2017-02-04 11:54:29,582 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-04 11:54:36,642 INFO  Setting request parameters for VerifySolution
+2017-02-04 11:54:36,644 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 11:54:36,646 INFO  Starting to parse the user solution
+2017-02-04 11:54:36,648 INFO  Displaying user solution
+2017-02-04 11:54:43,359 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-22\r\n\r\nclass Patient:\r\n    def __init__(self,patient_id,patient_name,list_of_lab_test_ids):\r\n        self.__patient_id=patient_id\r\n        self.__patient_name=patient_name\r\n        self.__list_of_lab_test_ids=list_of_lab_test_ids\r\n        self.__lab_test_charge=None\r\n    def get_patient_id(self):\r\n        return self.__patient_id\r\n    def get_patient_name(self):\r\n        return self.__patient_name\r\n    def get_list_of_lab_test_ids(self):\r\n        return self.__list_of_lab_test_ids\r\n    def get_lab_test_charge(self):\r\n        return self.__lab_test_charge\r\n    def calculate_lab_test_charge(self):\r\n        total_sum = 0\r\n        for value in self.__list_of_lab_test_ids :\r\n            temp = LabTestRepository.get_test_charge(value)\r\n            if temp != -1 :\r\n                total_sum += temp\r\n            else : \r\n                total_sum += 0\r\n                \r\n        self.__lab_test_charge = total_sum\r\n    \r\n    \r\nclass LabTestRepository:\r\n    __list_of_hospital_lab_test_ids=[\"L101\",\"L102\",\"L103\",\"L104\"]\r\n    __list_of_lab_test_charge=[2020,1750.50,5700,1320.50]\r\n    \r\n    @staticmethod\r\n    def get_test_charge(lab_test_id):\r\n        flag_test = False\r\n        for index,value in enumerate(LabTestRepository.__list_of_hospital_lab_test_ids) :\r\n            if value == lab_test_id :\r\n                flag_test = True\r\n                return LabTestRepository.__list_of_lab_test_charge[index]\r\n            else :\r\n                flag_test = False\r\n                \r\n        if flag_test == False :\r\n            return -1\r\n            \r\n            \r\n#         for index , index2 in zip(LabTestRepository.__list_of_hospital_lab_test_ids , LabTestRepository.__list_of_lab_test_charge) :\r\n#             print(index)\r\n#             print(index2)\r\n        \r\n    \r\n\r\nlabTest = LabTestRepository()\r\n# labTest.get_test_charge(\"L106\")\r\nlab_test_list1=[\"L101\",\"L103\",\"L104\",'L105']\r\npatient1=Patient(1010,\"Sam\",lab_test_list1)\r\npatient1.calculate_lab_test_charge()\r\nprint(\"Patient id:\",patient1.get_patient_id(),\"\\nPatient name:\",patient1.get_patient_name(),\"\\nPatient's test ids:\",patient1.get_list_of_lab_test_ids(), \"\\nTotal lab test charge:\",patient1.get_lab_test_charge())\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 11:54:43,363 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 11:54:43,365 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 11:54:43,370 INFO  Invoking the service to verify the user solution
+2017-02-04 11:54:43,388 INFO  Time before invoking service:Sat Feb 04 11:54:43 IST 2017
+2017-02-04 11:54:43,389 INFO  Initialising service address for VerifySolution
+2017-02-04 11:54:43,390 INFO  Time before invoking service In SUPER:Sat Feb 04 11:54:43 IST 2017
+2017-02-04 11:54:46,227 INFO  Time after invoking service In SUPER:Sat Feb 04 11:54:46 IST 2017
+2017-02-04 11:54:46,228 INFO  Service responded successfully with required details
+2017-02-04 11:54:46,229 INFO  Time after invoking service:Sat Feb 04 11:54:46 IST 2017
+2017-02-04 11:54:46,230 INFO  User solution successfully verified
+2017-02-04 11:54:46,230 INFO  Processing the response from verify service
+2017-02-04 11:54:46,233 INFO  Starting to parse JSON response
+2017-02-04 11:54:46,240 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,241 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,243 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,244 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,245 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,245 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,246 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,247 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,248 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,248 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 11:54:46,249 INFO  Successfully parsed JSON response
+2017-02-04 11:54:46,251 INFO  In the process of generating verify response in HTML
+2017-02-04 11:54:46,434 INFO  Successfully generated verify response in HTML
+2017-02-04 11:54:46,436 INFO  Successfully processed the response from service
+2017-02-04 11:54:49,676 INFO  Initiating to process and prepare Input for the submit service
+2017-02-04 11:54:49,678 INFO  Displaying user solution
+2017-02-04 11:54:49,690 INFO  Successfully processed and prepared the input for the submit service
+2017-02-04 11:54:49,691 INFO  Invoking the service to submit the user solution
+2017-02-04 11:54:49,692 INFO  Initialising service address for Submit
+2017-02-04 11:54:49,693 INFO  Time before invoking service In SUPER:Sat Feb 04 11:54:49 IST 2017
+2017-02-04 11:54:49,730 INFO  Time after invoking service In SUPER:Sat Feb 04 11:54:49 IST 2017
+2017-02-04 11:54:49,730 INFO  Service responded successfully with required details
+2017-02-04 11:54:49,731 INFO  User solution successfully submitted
+2017-02-04 11:54:49,732 INFO  Displaying submission status
+2017-02-04 11:54:49,732 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-04 12:20:26,473 INFO  Loading Baseframework Plugin
+2017-02-04 12:20:26,485 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-04 12:20:29,921 INFO  Loading the Menu - HandsOn
+2017-02-04 12:20:29,931 INFO  Successfully loaded the Menu - HandsOn
+2017-02-04 16:34:46,017 INFO  Loading Programming Assignment Plugin
+2017-02-04 16:34:46,423 INFO  Setting request parameters for VerifySolution
+2017-02-04 16:34:46,423 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 16:34:46,423 INFO  Starting to parse the user solution
+2017-02-04 16:34:46,423 INFO  Displaying user solution
+2017-02-04 16:34:55,024 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" , \"Guava\", \"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list(self):\r\n        return self.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list(self):\r\n        return self.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(self,fruit_name):\r\n        for index,values in enumerate(FruitInfo.__fruit_name_list) :\r\n            if fruit_name == values :\r\n                return FruitInfo.__fruit_price_list[index]\r\n            else :\r\n                return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(fru.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101\r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n            \r\n            max_fruit = max(FruitInfo.get_fruit_price_list)\r\n            \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            Purchase.__counter += 1\r\n            self.__purchase_id += \"P\" + str(Purchase.__counter)\r\n            \r\n            \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 2 / 100)\r\n                \r\n            elif self.get_quantity() > 5 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 5 / 100)\r\n                   \r\n            if self.__customer.get_cust_type() == \"WholeSeller\" :\r\n                discounted_price = qdiscounted_price - (qdiscounted_price * 10 / 100)\r\n                \r\n            else :\r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                \r\n            \r\n            return discounted_price\r\n        else :\r\n            return -1\r\n        \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\ncust = Customer(\"Kautilya\", \"WholeSeller\")\r\ncust.calculate_price()\r\npur = Purchase(cust,\"Guava\",100)\r\n","asgnmtId":"25","SolutionFileName":"Assignment25.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 16:34:55,024 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 16:34:55,024 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 16:34:55,024 INFO  Invoking the service to verify the user solution
+2017-02-04 16:34:55,024 INFO  Time before invoking service:Sat Feb 04 16:34:55 IST 2017
+2017-02-04 16:34:55,039 INFO  Initialising service address for VerifySolution
+2017-02-04 16:34:55,039 INFO  Time before invoking service In SUPER:Sat Feb 04 16:34:55 IST 2017
+2017-02-04 16:34:59,761 INFO  Time after invoking service In SUPER:Sat Feb 04 16:34:59 IST 2017
+2017-02-04 16:34:59,761 INFO  Service responded successfully with required details
+2017-02-04 16:34:59,761 INFO  Time after invoking service:Sat Feb 04 16:34:59 IST 2017
+2017-02-04 16:34:59,761 INFO  User solution successfully verified
+2017-02-04 16:34:59,761 INFO  Processing the response from verify service
+2017-02-04 16:34:59,777 INFO  Starting to parse JSON response
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,777 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:34:59,792 INFO  Successfully parsed JSON response
+2017-02-04 16:34:59,792 INFO  In the process of generating verify response in HTML
+2017-02-04 16:35:00,089 INFO  Successfully generated verify response in HTML
+2017-02-04 16:35:00,105 INFO  Successfully processed the response from service
+2017-02-04 16:48:57,321 INFO  Setting request parameters for VerifySolution
+2017-02-04 16:48:57,336 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 16:48:57,336 INFO  Starting to parse the user solution
+2017-02-04 16:48:57,336 INFO  Displaying user solution
+2017-02-04 16:49:02,450 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" , \"Guava\", \"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        for index,values in enumerate(FruitInfo.__fruit_name_list) :\r\n            if fruit_name == values :\r\n                return FruitInfo.__fruit_price_list[index]\r\n            else :\r\n                return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101\r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        print(\"Hello\")  \r\n        print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list)\r\n             \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            Purchase.__counter += 1\r\n            self.__purchase_id += \"P\" + str(Purchase.__counter)\r\n\r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.__customer.get_cust_type() == \"WholeSeller\" :\r\n                discounted_price = qdiscounted_price - (qdiscounted_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\ncust = Customer(\"Kautilya\", \"WholeSeller\")\r\npur = Purchase(cust,\"Guava\",100)\r\npur.calculate_price()\r\n","asgnmtId":"25","SolutionFileName":"Assignment25.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 16:49:02,450 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 16:49:02,450 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 16:49:02,450 INFO  Invoking the service to verify the user solution
+2017-02-04 16:49:02,450 INFO  Time before invoking service:Sat Feb 04 16:49:02 IST 2017
+2017-02-04 16:49:02,450 INFO  Initialising service address for VerifySolution
+2017-02-04 16:49:02,465 INFO  Time before invoking service In SUPER:Sat Feb 04 16:49:02 IST 2017
+2017-02-04 16:49:06,665 INFO  Time after invoking service In SUPER:Sat Feb 04 16:49:06 IST 2017
+2017-02-04 16:49:06,665 INFO  Service responded successfully with required details
+2017-02-04 16:49:06,665 INFO  Time after invoking service:Sat Feb 04 16:49:06 IST 2017
+2017-02-04 16:49:06,665 INFO  User solution successfully verified
+2017-02-04 16:49:06,665 INFO  Processing the response from verify service
+2017-02-04 16:49:06,680 INFO  Starting to parse JSON response
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 16:49:06,680 INFO  Successfully parsed JSON response
+2017-02-04 16:49:06,696 INFO  In the process of generating verify response in HTML
+2017-02-04 16:49:06,774 INFO  Successfully generated verify response in HTML
+2017-02-04 16:49:06,774 INFO  Successfully processed the response from service
+2017-02-04 19:02:02,637 INFO  Loading Baseframework Plugin
+2017-02-04 19:02:02,684 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-04 19:02:05,432 INFO  Loading the Menu - HandsOn
+2017-02-04 19:02:05,546 INFO  Successfully loaded the Menu - HandsOn
+2017-02-04 19:24:13,511 INFO  Loading Programming Assignment Plugin
+2017-02-04 19:24:14,041 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:24:14,042 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:24:14,047 INFO  Starting to parse the user solution
+2017-02-04 19:24:14,050 INFO  Displaying user solution
+2017-02-04 19:24:21,463 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101\r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        qdiscounted_price  =  0\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n             \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            Purchase.__counter += 1\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            qdiscounted_price = calculated_price\r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == max_fruit :\r\n                qdiscounted_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.__customer.get_cust_type() == \"wholesale\" :\r\n                discounted_price = qdiscounted_price - (qdiscounted_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\ncust = Customer(\"Kautilya\", \"WholeSeller\")\r\npur = Purchase(cust,\"Guava\",100)\r\npur.calculate_price()\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:24:21,466 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:24:21,467 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:24:21,468 INFO  Invoking the service to verify the user solution
+2017-02-04 19:24:21,469 INFO  Time before invoking service:Sat Feb 04 19:24:21 IST 2017
+2017-02-04 19:24:21,471 INFO  Initialising service address for VerifySolution
+2017-02-04 19:24:21,472 INFO  Time before invoking service In SUPER:Sat Feb 04 19:24:21 IST 2017
+2017-02-04 19:24:28,457 INFO  Time after invoking service In SUPER:Sat Feb 04 19:24:28 IST 2017
+2017-02-04 19:24:28,459 INFO  Service responded successfully with required details
+2017-02-04 19:24:28,459 INFO  Time after invoking service:Sat Feb 04 19:24:28 IST 2017
+2017-02-04 19:24:28,459 INFO  User solution successfully verified
+2017-02-04 19:24:28,460 INFO  Processing the response from verify service
+2017-02-04 19:24:28,466 INFO  Starting to parse JSON response
+2017-02-04 19:24:28,474 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,474 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,475 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,476 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,476 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,477 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,477 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,478 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,478 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,479 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:24:28,480 INFO  Successfully parsed JSON response
+2017-02-04 19:24:28,482 INFO  In the process of generating verify response in HTML
+2017-02-04 19:24:28,807 INFO  Successfully generated verify response in HTML
+2017-02-04 19:24:28,808 INFO  Successfully processed the response from service
+2017-02-04 19:31:42,466 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:31:42,536 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:31:42,537 INFO  Starting to parse the user solution
+2017-02-04 19:31:42,539 INFO  Displaying user solution
+2017-02-04 19:31:46,353 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101\r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #qdiscounted_price  =  0\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n            print(max_fruit)\r\n            print(min_fruit)\r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            Purchase.__counter += 1\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            #qdiscounted_price = calculated_price\r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.__customer.get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\ncust = Customer(\"Kautilya\", \"wholesale\")\r\npur = Purchase(cust,\"Guava\",100)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:31:46,355 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:31:46,355 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:31:46,356 INFO  Invoking the service to verify the user solution
+2017-02-04 19:31:46,357 INFO  Time before invoking service:Sat Feb 04 19:31:46 IST 2017
+2017-02-04 19:31:46,357 INFO  Initialising service address for VerifySolution
+2017-02-04 19:31:46,358 INFO  Time before invoking service In SUPER:Sat Feb 04 19:31:46 IST 2017
+2017-02-04 19:31:51,239 INFO  Time after invoking service In SUPER:Sat Feb 04 19:31:51 IST 2017
+2017-02-04 19:31:51,241 INFO  Service responded successfully with required details
+2017-02-04 19:31:51,242 INFO  Time after invoking service:Sat Feb 04 19:31:51 IST 2017
+2017-02-04 19:31:51,243 INFO  User solution successfully verified
+2017-02-04 19:31:51,244 INFO  Processing the response from verify service
+2017-02-04 19:31:51,248 INFO  Starting to parse JSON response
+2017-02-04 19:31:51,251 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,251 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,252 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,253 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,254 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,254 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,255 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,255 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,256 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:31:51,256 INFO  Successfully parsed JSON response
+2017-02-04 19:31:51,258 INFO  In the process of generating verify response in HTML
+2017-02-04 19:31:51,344 INFO  Successfully generated verify response in HTML
+2017-02-04 19:31:51,345 INFO  Successfully processed the response from service
+2017-02-04 19:35:56,211 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:35:56,269 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:35:56,270 INFO  Starting to parse the user solution
+2017-02-04 19:35:56,271 INFO  Displaying user solution
+2017-02-04 19:36:02,080 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n            print(max_fruit)\r\n            print(min_fruit)\r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.__customer.get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\ncust2 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust2,\"Apple\",10)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:36:02,083 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:36:02,084 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:36:02,086 INFO  Invoking the service to verify the user solution
+2017-02-04 19:36:02,087 INFO  Time before invoking service:Sat Feb 04 19:36:02 IST 2017
+2017-02-04 19:36:02,088 INFO  Initialising service address for VerifySolution
+2017-02-04 19:36:02,089 INFO  Time before invoking service In SUPER:Sat Feb 04 19:36:02 IST 2017
+2017-02-04 19:36:05,910 INFO  Time after invoking service In SUPER:Sat Feb 04 19:36:05 IST 2017
+2017-02-04 19:36:05,911 INFO  Service responded successfully with required details
+2017-02-04 19:36:05,913 INFO  Time after invoking service:Sat Feb 04 19:36:05 IST 2017
+2017-02-04 19:36:05,913 INFO  User solution successfully verified
+2017-02-04 19:36:05,914 INFO  Processing the response from verify service
+2017-02-04 19:36:05,936 INFO  Starting to parse JSON response
+2017-02-04 19:36:05,940 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,942 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,945 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,945 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,946 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,946 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,947 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,947 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:36:05,948 INFO  Successfully parsed JSON response
+2017-02-04 19:36:05,962 INFO  In the process of generating verify response in HTML
+2017-02-04 19:36:06,195 INFO  Successfully generated verify response in HTML
+2017-02-04 19:36:06,196 INFO  Successfully processed the response from service
+2017-02-04 19:37:25,353 INFO  Initiating to process and prepare Input for the submit service
+2017-02-04 19:37:25,358 INFO  Displaying user solution
+2017-02-04 19:37:25,370 INFO  Successfully processed and prepared the input for the submit service
+2017-02-04 19:37:25,371 INFO  Invoking the service to submit the user solution
+2017-02-04 19:37:25,371 INFO  Initialising service address for Submit
+2017-02-04 19:37:25,372 INFO  Time before invoking service In SUPER:Sat Feb 04 19:37:25 IST 2017
+2017-02-04 19:37:25,473 INFO  Time after invoking service In SUPER:Sat Feb 04 19:37:25 IST 2017
+2017-02-04 19:37:25,474 INFO  Service responded successfully with required details
+2017-02-04 19:37:25,475 INFO  User solution successfully submitted
+2017-02-04 19:37:25,476 INFO  Displaying submission status
+2017-02-04 19:37:25,476 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-04 19:49:28,742 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:49:29,178 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:49:29,179 INFO  Starting to parse the user solution
+2017-02-04 19:49:29,180 INFO  Displaying user solution
+2017-02-04 19:49:33,270 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer:\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\ncust2 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust2,\"Apple\",10)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:49:33,273 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:49:33,275 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:49:33,276 INFO  Invoking the service to verify the user solution
+2017-02-04 19:49:33,277 INFO  Time before invoking service:Sat Feb 04 19:49:33 IST 2017
+2017-02-04 19:49:33,278 INFO  Initialising service address for VerifySolution
+2017-02-04 19:49:33,279 INFO  Time before invoking service In SUPER:Sat Feb 04 19:49:33 IST 2017
+2017-02-04 19:49:38,621 INFO  Time after invoking service In SUPER:Sat Feb 04 19:49:38 IST 2017
+2017-02-04 19:49:38,623 INFO  Service responded successfully with required details
+2017-02-04 19:49:38,624 INFO  Time after invoking service:Sat Feb 04 19:49:38 IST 2017
+2017-02-04 19:49:38,625 INFO  User solution successfully verified
+2017-02-04 19:49:38,626 INFO  Processing the response from verify service
+2017-02-04 19:49:38,631 INFO  Starting to parse JSON response
+2017-02-04 19:49:38,644 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,647 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,656 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,660 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,662 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,663 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,664 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:49:38,665 INFO  Successfully parsed JSON response
+2017-02-04 19:49:38,668 INFO  In the process of generating verify response in HTML
+2017-02-04 19:49:38,793 INFO  Successfully generated verify response in HTML
+2017-02-04 19:49:38,794 INFO  Successfully processed the response from service
+2017-02-04 19:49:52,693 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:49:52,696 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:49:52,697 INFO  Starting to parse the user solution
+2017-02-04 19:49:52,698 INFO  Displaying user solution
+2017-02-04 19:49:56,322 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    __fruit_price_list = [200, 80, 70 , 110, 60]\r\n    \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer(Purchase):\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\ncust2 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust2,\"Apple\",10)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:49:56,323 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:49:56,324 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:49:56,324 INFO  Invoking the service to verify the user solution
+2017-02-04 19:49:56,325 INFO  Time before invoking service:Sat Feb 04 19:49:56 IST 2017
+2017-02-04 19:49:56,326 INFO  Initialising service address for VerifySolution
+2017-02-04 19:49:56,327 INFO  Time before invoking service In SUPER:Sat Feb 04 19:49:56 IST 2017
+2017-02-04 19:50:00,542 INFO  Time after invoking service In SUPER:Sat Feb 04 19:50:00 IST 2017
+2017-02-04 19:50:00,543 INFO  Service responded successfully with required details
+2017-02-04 19:50:00,545 INFO  Time after invoking service:Sat Feb 04 19:50:00 IST 2017
+2017-02-04 19:50:00,546 INFO  User solution successfully verified
+2017-02-04 19:50:00,547 INFO  Processing the response from verify service
+2017-02-04 19:50:00,550 INFO  Starting to parse JSON response
+2017-02-04 19:50:00,551 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,552 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,552 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,553 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,554 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,554 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,555 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,555 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:00,556 INFO  Successfully parsed JSON response
+2017-02-04 19:50:00,558 INFO  In the process of generating verify response in HTML
+2017-02-04 19:50:00,636 INFO  Successfully generated verify response in HTML
+2017-02-04 19:50:00,638 INFO  Successfully processed the response from service
+2017-02-04 19:50:50,306 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:50:50,309 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:50:50,310 INFO  Starting to parse the user solution
+2017-02-04 19:50:50,312 INFO  Displaying user solution
+2017-02-04 19:50:54,057 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    #__fruit_price_list = [200, 80, 70 , 110, 60]\r\n    __fruit_price_list = [100,800,70,110,600] \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer:\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\ncust2 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust2,\"Apple\",10)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:50:54,058 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:50:54,059 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:50:54,060 INFO  Invoking the service to verify the user solution
+2017-02-04 19:50:54,061 INFO  Time before invoking service:Sat Feb 04 19:50:54 IST 2017
+2017-02-04 19:50:54,062 INFO  Initialising service address for VerifySolution
+2017-02-04 19:50:54,063 INFO  Time before invoking service In SUPER:Sat Feb 04 19:50:54 IST 2017
+2017-02-04 19:50:58,946 INFO  Time after invoking service In SUPER:Sat Feb 04 19:50:58 IST 2017
+2017-02-04 19:50:58,947 INFO  Service responded successfully with required details
+2017-02-04 19:50:58,948 INFO  Time after invoking service:Sat Feb 04 19:50:58 IST 2017
+2017-02-04 19:50:58,949 INFO  User solution successfully verified
+2017-02-04 19:50:58,950 INFO  Processing the response from verify service
+2017-02-04 19:50:58,953 INFO  Starting to parse JSON response
+2017-02-04 19:50:58,955 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,956 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,956 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,957 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,958 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,958 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,959 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:50:58,960 INFO  Successfully parsed JSON response
+2017-02-04 19:50:58,962 INFO  In the process of generating verify response in HTML
+2017-02-04 19:50:59,054 INFO  Successfully generated verify response in HTML
+2017-02-04 19:50:59,055 INFO  Successfully processed the response from service
+2017-02-04 19:51:33,475 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:51:33,480 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:51:33,481 INFO  Starting to parse the user solution
+2017-02-04 19:51:33,482 INFO  Displaying user solution
+2017-02-04 19:51:36,983 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    #__fruit_price_list = [200, 80, 70 , 110, 60]\r\n    __fruit_price_list = [100,800,70,110,600] \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() > 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer:\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\n# cust2 = Customer(\"num\", \"wholesale\")\r\n# pur = Purchase(cust2,\"Apple\",10)\r\n# print(pur.calculate_price())\r\n\r\ncust3 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust3,\"Orange\",5)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:51:36,984 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:51:36,985 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:51:36,986 INFO  Invoking the service to verify the user solution
+2017-02-04 19:51:36,987 INFO  Time before invoking service:Sat Feb 04 19:51:36 IST 2017
+2017-02-04 19:51:36,988 INFO  Initialising service address for VerifySolution
+2017-02-04 19:51:36,989 INFO  Time before invoking service In SUPER:Sat Feb 04 19:51:36 IST 2017
+2017-02-04 19:51:41,342 INFO  Time after invoking service In SUPER:Sat Feb 04 19:51:41 IST 2017
+2017-02-04 19:51:41,343 INFO  Service responded successfully with required details
+2017-02-04 19:51:41,344 INFO  Time after invoking service:Sat Feb 04 19:51:41 IST 2017
+2017-02-04 19:51:41,345 INFO  User solution successfully verified
+2017-02-04 19:51:41,346 INFO  Processing the response from verify service
+2017-02-04 19:51:41,349 INFO  Starting to parse JSON response
+2017-02-04 19:51:41,351 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,352 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,352 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,353 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,354 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,354 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,355 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:51:41,356 INFO  Successfully parsed JSON response
+2017-02-04 19:51:41,357 INFO  In the process of generating verify response in HTML
+2017-02-04 19:51:41,437 INFO  Successfully generated verify response in HTML
+2017-02-04 19:51:41,438 INFO  Successfully processed the response from service
+2017-02-04 19:52:37,261 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:52:37,264 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:52:37,266 INFO  Starting to parse the user solution
+2017-02-04 19:52:37,267 INFO  Displaying user solution
+2017-02-04 19:52:40,880 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    #__fruit_price_list = [200, 80, 70 , 110, 60]\r\n    __fruit_price_list = [100,800,70,110,600] \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() >= 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer:\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type.lower()\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\n# cust2 = Customer(\"num\", \"wholesale\")\r\n# pur = Purchase(cust2,\"Apple\",10)\r\n# print(pur.calculate_price())\r\n\r\ncust3 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust3,\"Orange\",5)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:52:40,884 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:52:40,885 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:52:40,885 INFO  Invoking the service to verify the user solution
+2017-02-04 19:52:40,886 INFO  Time before invoking service:Sat Feb 04 19:52:40 IST 2017
+2017-02-04 19:52:40,887 INFO  Initialising service address for VerifySolution
+2017-02-04 19:52:40,889 INFO  Time before invoking service In SUPER:Sat Feb 04 19:52:40 IST 2017
+2017-02-04 19:52:45,138 INFO  Time after invoking service In SUPER:Sat Feb 04 19:52:45 IST 2017
+2017-02-04 19:52:45,139 INFO  Service responded successfully with required details
+2017-02-04 19:52:45,140 INFO  Time after invoking service:Sat Feb 04 19:52:45 IST 2017
+2017-02-04 19:52:45,141 INFO  User solution successfully verified
+2017-02-04 19:52:45,142 INFO  Processing the response from verify service
+2017-02-04 19:52:45,148 INFO  Starting to parse JSON response
+2017-02-04 19:52:45,150 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,151 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,152 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,152 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,153 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,153 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:52:45,154 INFO  Successfully parsed JSON response
+2017-02-04 19:52:45,155 INFO  In the process of generating verify response in HTML
+2017-02-04 19:52:45,237 INFO  Successfully generated verify response in HTML
+2017-02-04 19:52:45,242 INFO  Successfully processed the response from service
+2017-02-04 19:53:51,481 INFO  Setting request parameters for VerifySolution
+2017-02-04 19:53:51,483 INFO  Initiating to process and prepare Input for the verify service
+2017-02-04 19:53:51,484 INFO  Starting to parse the user solution
+2017-02-04 19:53:51,486 INFO  Displaying user solution
+2017-02-04 19:53:54,780 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-25\r\n#Start writing your code here\r\n\r\nclass FruitInfo:\r\n    __fruit_name_list = [\"Apple\" ,\"Guava\",\"Orange\" , \"Grape\" , \"Sweet Lime\"]\r\n    #__fruit_price_list = [200, 80, 70 , 110, 60]\r\n    __fruit_price_list = [100,800,70,110,600] \r\n    @staticmethod\r\n    def get_fruit_name_list():\r\n        return FruitInfo.__fruit_name_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price_list():\r\n        return FruitInfo.__fruit_price_list\r\n\r\n    @staticmethod\r\n    def get_fruit_price(fruit_name):\r\n        if fruit_name in FruitInfo.__fruit_name_list :\r\n            index= FruitInfo.__fruit_name_list.index(fruit_name)\r\n            return FruitInfo.__fruit_price_list[index]\r\n        else :\r\n            return -1\r\n            \r\n\r\n\r\n# fru = FruitInfo()\r\n# print(FruitInfo.get_fruit_price(\"Orange\"))\r\n\r\nclass Purchase:\r\n    __counter = 101 \r\n    def __init__(self,customer,fruit_name,quantity):\r\n        self.__purchase_id=None\r\n        self.__customer=customer\r\n        self.__fruit_name=fruit_name\r\n        self.__quantity=quantity\r\n\r\n    def get_purchase_id(self):\r\n        return self.__purchase_id\r\n\r\n\r\n    def get_customer(self):\r\n        return self.__customer\r\n\r\n\r\n    def get_quantity(self):\r\n        return self.__quantity\r\n\r\n        \r\n           \r\n    def calculate_price(self):\r\n\r\n        #print(FruitInfo.get_fruit_price(self.__fruit_name))\r\n        if FruitInfo.get_fruit_price(self.__fruit_name) != -1 :\r\n            fruit_selected_price = FruitInfo.get_fruit_price(self.__fruit_name)\r\n             \r\n            max_fruit = max(FruitInfo.get_fruit_price_list())\r\n            min_fruit = min(FruitInfo.get_fruit_price_list()) \r\n    \r\n            calculated_price = self.__quantity * fruit_selected_price\r\n            self.__purchase_id=\"P\" +str(Purchase.__counter)\r\n            Purchase.__counter += 1\r\n        \r\n            if self.get_quantity() > 1 and fruit_selected_price == max_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 2 / 100)\r\n                 \r\n            elif self.get_quantity() >= 5 and fruit_selected_price == min_fruit :\r\n                calculated_price = calculated_price - (calculated_price * 5 / 100)\r\n                    \r\n            if self.get_customer().get_cust_type() == \"wholesale\" :\r\n                \r\n                discounted_price = calculated_price - (calculated_price * 10 / 100)\r\n                 \r\n            else :\r\n                discounted_price = calculated_price\r\n                 \r\n             \r\n            return discounted_price\r\n    \r\n        else :\r\n            \r\n            return -1\r\n          \r\n\r\n        \r\nclass Customer:\r\n    def __init__(self,customer_name,cust_type):\r\n        self.__customer_name=customer_name\r\n        self.__cust_type=cust_type\r\n\r\n    def get_customer_name(self):\r\n        return self.__customer_name\r\n\r\n    def get_cust_type(self):\r\n        return self.__cust_type\r\n\r\n# cust = Customer(\"Kautilya\", \"wholesale\")\r\n# pur = Purchase(cust,\"Guava\",100)\r\n# print(pur.calculate_price())\r\n\r\n# cust2 = Customer(\"num\", \"wholesale\")\r\n# pur = Purchase(cust2,\"Apple\",10)\r\n# print(pur.calculate_price())\r\n\r\ncust3 = Customer(\"num\", \"wholesale\")\r\npur = Purchase(cust3,\"Orange\",5)\r\nprint(pur.calculate_price())\r\n","asgnmtId":"25","SolutionFileName":"Assignment25r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-04 19:53:54,781 INFO  Successfully processed and prepared the input for the verify service
+2017-02-04 19:53:54,782 INFO  Successfully set the request parameters for VerifySolution
+2017-02-04 19:53:54,782 INFO  Invoking the service to verify the user solution
+2017-02-04 19:53:54,783 INFO  Time before invoking service:Sat Feb 04 19:53:54 IST 2017
+2017-02-04 19:53:54,784 INFO  Initialising service address for VerifySolution
+2017-02-04 19:53:54,784 INFO  Time before invoking service In SUPER:Sat Feb 04 19:53:54 IST 2017
+2017-02-04 19:53:58,777 INFO  Time after invoking service In SUPER:Sat Feb 04 19:53:58 IST 2017
+2017-02-04 19:53:58,778 INFO  Service responded successfully with required details
+2017-02-04 19:53:58,779 INFO  Time after invoking service:Sat Feb 04 19:53:58 IST 2017
+2017-02-04 19:53:58,780 INFO  User solution successfully verified
+2017-02-04 19:53:58,781 INFO  Processing the response from verify service
+2017-02-04 19:53:58,783 INFO  Starting to parse JSON response
+2017-02-04 19:53:58,786 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,786 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,787 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,787 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,788 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,789 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,790 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,790 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,791 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,791 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-04 19:53:58,792 INFO  Successfully parsed JSON response
+2017-02-04 19:53:58,794 INFO  In the process of generating verify response in HTML
+2017-02-04 19:53:58,861 INFO  Successfully generated verify response in HTML
+2017-02-04 19:53:58,862 INFO  Successfully processed the response from service
+2017-02-04 19:54:13,946 INFO  Initiating to process and prepare Input for the submit service
+2017-02-04 19:54:13,948 INFO  Displaying user solution
+2017-02-04 19:54:13,961 INFO  Successfully processed and prepared the input for the submit service
+2017-02-04 19:54:13,962 INFO  Invoking the service to submit the user solution
+2017-02-04 19:54:13,963 INFO  Initialising service address for Submit
+2017-02-04 19:54:13,964 INFO  Time before invoking service In SUPER:Sat Feb 04 19:54:13 IST 2017
+2017-02-04 19:54:14,044 INFO  Time after invoking service In SUPER:Sat Feb 04 19:54:14 IST 2017
+2017-02-04 19:54:14,045 INFO  Service responded successfully with required details
+2017-02-04 19:54:14,045 INFO  User solution successfully submitted
+2017-02-04 19:54:14,046 INFO  Displaying submission status
+2017-02-04 19:54:14,047 INFO  Displayed submission status successfullySuccessfully Submitted!

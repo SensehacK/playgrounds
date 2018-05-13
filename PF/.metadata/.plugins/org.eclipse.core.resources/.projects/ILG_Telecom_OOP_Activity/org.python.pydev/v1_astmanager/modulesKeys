@@ -1,0 +1,14 @@
+MODULES_MANAGER_V2
+BusinessLogic.__init__|Z:\PF\ILG_Telecom_OOP_Activity\BusinessLogic\__init__.py
+BusinessLogic.validation|Z:\PF\ILG_Telecom_OOP_Activity\BusinessLogic\validation.py
+DataAccess.DAO|Z:\PF\ILG_Telecom_OOP_Activity\DataAccess\DAO.py
+DataAccess.__init__|Z:\PF\ILG_Telecom_OOP_Activity\DataAccess\__init__.py
+DataAccess.bean|Z:\PF\ILG_Telecom_OOP_Activity\DataAccess\bean.py
+DataAccess.loader|Z:\PF\ILG_Telecom_OOP_Activity\DataAccess\loader.py
+Presentation.__init__|Z:\PF\ILG_Telecom_OOP_Activity\Presentation\__init__.py
+Presentation.driver|Z:\PF\ILG_Telecom_OOP_Activity\Presentation\driver.py
+Presentation.menu|Z:\PF\ILG_Telecom_OOP_Activity\Presentation\menu.py
+Test.__init__|Z:\PF\ILG_Telecom_OOP_Activity\Test\__init__.py
+Test.ex_aggregation|Z:\PF\ILG_Telecom_OOP_Activity\Test\ex_aggregation.py
+Test.ex_association|Z:\PF\ILG_Telecom_OOP_Activity\Test\ex_association.py
+Test.ex_inheritance|Z:\PF\ILG_Telecom_OOP_Activity\Test\ex_inheritance.py

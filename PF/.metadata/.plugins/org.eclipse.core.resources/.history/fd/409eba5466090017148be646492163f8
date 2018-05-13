@@ -1,0 +1,42 @@
+'''
+Created on Mar 15, 2017
+
+@author: kautilya.save
+'''
+
+
+'''
+This class represents a product
+'''
+
+class ItemModule3:
+    def __init__(self):
+        self.__fcid=None
+        self.__categoryName=None
+        self.__restaurant_Type=None
+
+
+    def get_fcid(self):
+        return self.__fcid
+
+
+    def get_category_name(self):
+        return self.__categoryName
+
+
+    def get_restaurant_type(self):
+        return self.__restaurant_Type
+
+
+    def set_fcid(self, value):
+        self.__fcid = value
+
+
+    def set_category_name(self, value):
+        self.__categoryName = value
+
+
+    def set_restaurant_type(self, value):
+        self.__restaurant_Type = value
+
+    
