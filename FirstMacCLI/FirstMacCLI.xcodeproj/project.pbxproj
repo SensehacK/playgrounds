@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		439317F420B5984100F0E258 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 439317F320B5984100F0E258 /* main.m */; };
+		439317FC20B598A900F0E258 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 439317FB20B598A900F0E258 /* House.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		439317F020B5984100F0E258 /* FirstMacCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstMacCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		439317F320B5984100F0E258 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		439317FA20B598A900F0E258 /* House.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		439317FB20B598A900F0E258 /* House.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				439317F320B5984100F0E258 /* main.m */,
+				439317FA20B598A900F0E258 /* House.h */,
+				439317FB20B598A900F0E258 /* House.m */,
 			);
 			path = FirstMacCLI;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439317FC20B598A900F0E258 /* House.m in Sources */,
 				439317F420B5984100F0E258 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
