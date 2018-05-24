@@ -11,9 +11,10 @@
 @interface House : NSObject
 
 @property (nonatomic) NSString *address;
-@property (nonatomic) int numberOfBedrooms;
+@property (nonatomic, readonly) int numberOfBedrooms;
 @property (nonatomic) bool hasHotTub;
 
 
+-(instancetype)initWithFakeAddress : (NSString*)address;
 
 @end

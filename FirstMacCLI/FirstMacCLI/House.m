@@ -8,6 +8,30 @@
 
 #import "House.h"
 
+
+
+@interface House()
+
+@property  (nonatomic, readwrite) int numberOfBedrooms;
+
+@end
+
+
 @implementation House
+
+-(instancetype)initWithFakeAddress:(NSString *)address {
+    
+    self = [super init];
+    
+    if (self) {
+        _address = [address copy];
+        _numberOfBedrooms = 5;
+        _hasHotTub = false;
+
+    }
+    
+    return self;
+}
+
 
 @end
