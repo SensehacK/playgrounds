@@ -8,7 +8,10 @@
 
 
 function UserAction() {
-    var url = "http://ip.jsontest.com/"
+    var url3 = "http://ip.jsontest.com/"
+    var url2 = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sensehack&limit=5&api_key=4ba03f783090e2ff9ec08e2a63be196b&format=json";
+    var url = "http://echo.jsontest.com/key/value/one/two"
+    
     var xhttp = new XMLHttpRequest();
     xhttp.responseType = 'json';
     console.log(xhttp);
@@ -27,6 +30,11 @@ function UserAction() {
   //  console.log(responsed.responseText)
     // var responsed = JSON.parse(xhttp);
    	// console.log("helo"+responsed);
+
+
+
+
+
 }
 
 </script>
