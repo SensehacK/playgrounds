@@ -25,8 +25,6 @@ function UserAction() {
 
 fetch(url)
     .then(function(response) {
-        // console.log("ataegeav4f35234223532523552")
-        //  console.log(response.json)
     return response.json();
         })
         .then(function(jsonResponse) {
@@ -36,18 +34,11 @@ fetch(url)
 
             console.log(jsonResponse)
             console.log(typeof(jsonResponse))
-           
+            console.log(jsonResponse.one)
+            console.log(jsonResponse.key)
             
-            // var responsed = JSON.parse(jsonResponse);
-            
-            // console.log("afwrn json parse")
-            // console.log(responsed)
 
          });
-
-
-        //  console.log("SAGawrab")
-        //  console.log(fetch(url))
 
 
 
