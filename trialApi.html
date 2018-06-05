@@ -23,7 +23,31 @@ function UserAction() {
     console.log(xhttp.response)
 
 
+fetch(url)
+    .then(function(response) {
+        // console.log("ataegeav4f35234223532523552")
+        //  console.log(response.json)
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+            // print("AGawrnw Hello")
+            // console.log(xhttp.response)
+    // do something with jsonResponse
 
+            console.log(jsonResponse)
+            console.log(typeof(jsonResponse))
+           
+            
+            // var responsed = JSON.parse(jsonResponse);
+            
+            // console.log("afwrn json parse")
+            // console.log(responsed)
+
+         });
+
+
+        //  console.log("SAGawrab")
+        //  console.log(fetch(url))
 
 
 
