@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="beta"></div>
+
+<script>
+
+
+function UserAction() {
+    var url = "http://ip.jsontest.com/"
+    var xhttp = new XMLHttpRequest();
+    // xhttp.responseType = 'json';
+    console.log(xhttp);
+    // console.log(JSON.parse(xhttp));
+    xhttp.open("GET", url, true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    console.log("agnkafkenj Hellos sens js")
+    console.log(xhttp.response)
+
+
+    // var newData = (XMLHttpRequest.responseText)
+ //   var responsed = JSON.parse(newData);
+ //   console.log(responsed)
+    // console.log(newData)
+  //  console.log(responsed.responseText)
+    // var responsed = JSON.parse(xhttp);
+   	// console.log("helo"+responsed);
+}
+
+</script>
+
+<button type="submit" onclick="UserAction()">Search</button>
+
+</body>
+</html>
