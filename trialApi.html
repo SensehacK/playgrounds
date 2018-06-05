@@ -41,13 +41,32 @@ fetch(url)
          });
 
 
+// Last FM API Integration Testing
+fetch(url2)
+    .then(function(response) {
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+            // print("AGawrnw Hello")
+            // console.log(xhttp.response)
+    // do something with jsonResponse
+
+            console.log(jsonResponse)
+            console.log(typeof(jsonResponse))
+            // console.log(jsonResponse.one)
+            // console.log(jsonResponse.key)
+            
+
+         });
+
 
 
 
     var newData = (XMLHttpRequest.responseText)
+    console.log(newData)
  //   var responsed = JSON.parse(newData);
  //   console.log(responsed)
-    console.log(newData)
+    
   //  console.log(responsed.responseText)
     // var responsed = JSON.parse(xhttp);
    	// console.log("helo"+responsed);
