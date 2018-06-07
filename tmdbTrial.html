@@ -4,6 +4,9 @@
 
 <div id="beta"></div>
 
+<img id="output">
+    <!-- output will go here -->
+</div>
 <script>
 
 
@@ -36,6 +39,8 @@ fetch(urlTMDB)
             // http://image.tmdb.org/t/p/w342//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg
             // http://image.tmdb.org/t/p/w342//5TQ6YDmymBpnF005OyoB7ohZps9.jpg
             
+            document.getElementById('output').src = fullImageTMDB;
+
 
     })
 }
