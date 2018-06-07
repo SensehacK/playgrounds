@@ -11,10 +11,21 @@
 
 
 function UserAction() {
-    var urlTMDB = "https://api.themoviedb.org/3/movie/100402?api_key=eab66c078f08232f3a3dec068c6a14d3&language=en-US";
+    var movieNo = "100402"
+    var urlTMDB = "https://api.themoviedb.org/3/movie/"
+    var movieID = movieNo;
+    var apiKeyTMDB = "?api_key=eab66c078f08232f3a3dec068c6a14d3";
+    var langTMDB = "&language=en-US";
+    var fullUrlTMDB = "https://api.themoviedb.org/3/movie/100402?api_key=eab66c078f08232f3a3dec068c6a14d3&language=en-US";
 
+
+    var concatTmdbMovieURL = urlTMDB + movieID + apiKeyTMDB + langTMDB
+    console.log("concatTmdbMovieURL urlTMDB + movieID + apiKeyTMDB + langTMDB")
+    console.log(concatTmdbMovieURL)
+
+    
 // Last FM API Integration Testing
-fetch(urlTMDB)
+fetch(concatTmdbMovieURL)
     .then(function(response) {
     return response.json();
         })
@@ -25,9 +36,9 @@ fetch(urlTMDB)
             console.log("type of jsonresponse")
             console.log(typeof(jsonResponse))
 
-            var data = jsonResponse.belongs_to_collection.name
+            // var data = jsonResponse.belongs_to_collection.name
             console.log("printing jsonResponse.belongs_to_collection.name")
-            console.log(jsonResponse.belongs_to_collection.name)
+            // console.log(jsonResponse.belongs_to_collection.name)
             
             var poster = jsonResponse.poster_path
             console.log("printing jsonResponse.poster_path")
