@@ -25,7 +25,16 @@ fetch(urlTMDB)
             var data = jsonResponse.belongs_to_collection.name
             console.log("printing jsonResponse.belongs_to_collection.name")
             console.log(jsonResponse.belongs_to_collection.name)
-
+            
+            var poster = jsonResponse.poster_path
+            console.log("printing jsonResponse.poster_path")
+            console.log(jsonResponse.poster_path)
+            var imageTMDB = "http://image.tmdb.org/t/p/w342/"
+            var fullImageTMDB = imageTMDB + poster
+            console.log("fullImageTMDB imageTMDB + poster")
+            console.log(fullImageTMDB)
+            // http://image.tmdb.org/t/p/w342//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg
+            // http://image.tmdb.org/t/p/w342//5TQ6YDmymBpnF005OyoB7ohZps9.jpg
             
 
     })
