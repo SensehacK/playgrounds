@@ -28,8 +28,8 @@ function UserAction() {
           
           var url4 = "https://api.trakt.tv/users/sensehack/stats"
           
-          var traktJSON = ""
-
+          
+          // var traktObj
           // call url
           request.open('GET', getRecentShowsHistory);
 
@@ -42,22 +42,35 @@ function UserAction() {
 
           
           request.onreadystatechange = function () {
+
             if (this.readyState === 4) {
               console.log('Status:', this.status);
               console.log('Headers:', this.getAllResponseHeaders());
 
               
               // console.log('Body:', this.responseText);
-              traktJSON = this.responseText;
+              var traktJSON = this.responseText;
               
-            }
+
             console.log(typeof(traktJSON))
             console.log("Trakt TV sensehack Data")
             console.log(traktJSON)
             
             var traktObj = JSON.parse(traktJSON)
+            console.log(typeof(traktObj))
             console.log("Printing trakt Obj")
             console.log(traktObj)
+            
+            // Trying to access show titles & episode details  
+            console.log("traktObj[0].id")
+            // console.log(traktObj[0].id)
+
+
+
+              
+            }
+            
+
 
           };
 
