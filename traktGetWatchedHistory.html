@@ -51,23 +51,34 @@ function UserAction() {
               // console.log('Body:', this.responseText);
               var traktJSON = this.responseText;
               
-
-            console.log(typeof(traktJSON))
-            console.log("Trakt TV sensehack Data")
-            console.log(traktJSON)
-            
-            var traktObj = JSON.parse(traktJSON)
-            console.log(typeof(traktObj))
-            console.log("Printing trakt Obj")
-            console.log(traktObj)
-            
-            // Trying to access show titles & episode details  
-            console.log("traktObj[0].id")
-            // console.log(traktObj[0].id)
-
-
-
+              //Code printing for traktJSON raw string data
+              // console.log(typeof(traktJSON))
+              // console.log("Trakt TV sensehack Data")
+              // console.log(traktJSON)
               
+              var traktObj = JSON.parse(traktJSON)
+              console.log(typeof(traktObj))
+              console.log("Printing trakt Obj")
+              console.log(traktObj)
+              
+              //Accessing 8 json elements overall
+              for (var i = 0; i < 10; i++) {
+              // Trying to access show titles & episode details  
+              console.log("traktObj[i].id")
+              console.log(traktObj[i].id)
+              
+              // Accessing show title
+              console.log("accessing episode.title")
+              console.log(traktObj[i].episode.title)
+
+              // Accessing show title
+              console.log("accessing .show.title")
+              console.log(traktObj[i].show.title)
+              
+
+              }
+
+
             }
             
 
