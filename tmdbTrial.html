@@ -8,12 +8,96 @@
     <!-- output will go here -->
 </div>
 <script>
+function movieTrakt() {
+          var request = new XMLHttpRequest();
+
+          var getRecentShowsHistory = "https://api.trakt.tv/users/sensehack/history/shows/"
+
+          var getRecentMoviesHistory = "https://api.trakt.tv/users/sensehack/history/movies/"
+
+          var getOverallWatchedShowsHistory = "https://api.trakt.tv/users/sensehack/watched/shows/"
+
+          var getOverallWatchedMoviesHistory = "https://api.trakt.tv/users/sensehack/watched/movies/"
+
+          var getRecentShowsHistory = "https://api.trakt.tv/users/sensehack/history/shows/"
+          
+          var url = "https://api.trakt.tv/users/sensehack/stats"
+          
+          var url4 = "https://api.trakt.tv/users/sensehack/stats"
+
+          // call url
+          request.open('GET', getRecentMoviesHistory);
 
 
-function UserAction() {
-    var movieNo = "100402"
+          request.setRequestHeader('Content-Type', 'application/json');
+          request.setRequestHeader('trakt-api-version', '2');
+
+          // Client ID of Trial 2 cors.io
+          request.setRequestHeader('trakt-api-key', 'e76f84733301c6380989637d3c7cc0394f58ae5046b94649d9d65f18e31e43fa');
+
+          
+          request.onreadystatechange = function () {
+
+            if (this.readyState === 4) {
+              console.log('Status:', this.status);
+              console.log('Headers:', this.getAllResponseHeaders());
+
+              
+              // console.log('Body:', this.responseText);
+              var traktJSON = this.responseText;
+              var movieIDTr = ""
+              //Code printing for traktJSON raw string data
+              // console.log(typeof(traktJSON))
+              // console.log("Trakt TV sensehack Data")
+              // console.log(traktJSON)
+              
+              var traktObj = JSON.parse(traktJSON)
+              console.log(typeof(traktObj))
+              console.log("Printing trakt Obj")
+              console.log(traktObj)
+              
+              //Accessing 8 json elements overall
+              for (var i = 0; i < 8; i++) {
+                console.log("Printing iteration number", i) 
+                // Trying to access show titles & episode details  
+                console.log("traktObj[i].id")
+                console.log(traktObj[i].id)
+                
+                // Accessing show title
+                console.log("accessing movie.title")
+                console.log(traktObj[i].movie.title)
+
+                // Accessing show title
+                console.log("accessing .movie.year")
+                console.log(traktObj[i].movie.year)
+
+                // Accessing show title
+                console.log("accessing .traktObj[i].movie.id.tmdb")
+                var movieTvdbId = traktObj[i].movie.ids.tmdb
+                console.log(movieTvdbId) 
+                movieIDTr = movieTvdbId
+
+              }
+              // Calling the function with user Movie ID
+              UserAction(movieIDTr)
+
+            }
+            
+
+
+          };
+
+          
+
+          request.send();
+          
+
+}
+
+function UserAction(movieIDT) {
+    var movieNo = "284053"
     var urlTMDB = "https://api.themoviedb.org/3/movie/"
-    var movieID = movieNo;
+    var movieID = movieIDT;
     var apiKeyTMDB = "?api_key=eab66c078f08232f3a3dec068c6a14d3";
     var langTMDB = "&language=en-US";
     var fullUrlTMDB = "https://api.themoviedb.org/3/movie/100402?api_key=eab66c078f08232f3a3dec068c6a14d3&language=en-US";
@@ -58,7 +142,7 @@ fetch(concatTmdbMovieURL)
 
 </script>
 
-<button type="submit" onclick="UserAction()">Search</button>
+<button type="submit" onclick="movieTrakt()">Search</button>
 
 </body>
 </html>
