@@ -4,10 +4,21 @@
 
 <div id="beta"></div>
 
-<img id="output">
+<img id="output1">
+<img id="output2">
+
+<img id="output3">
+<img id="output4">
+<img id="output5">
+<img id="output6">
+
+<img id="output7">
+<img id="output8">
     <!-- output will go here -->
 </div>
 <script>
+var movieImgsPath = []
+var movieIDsPath = []
 function movieTrakt() {
           var request = new XMLHttpRequest();
 
@@ -19,7 +30,7 @@ function movieTrakt() {
 
           var getOverallWatchedMoviesHistory = "https://api.trakt.tv/users/sensehack/watched/movies/"
 
-          var getRecentShowsHistory = "https://api.trakt.tv/users/sensehack/history/shows/"
+          
           
           var url = "https://api.trakt.tv/users/sensehack/stats"
           
@@ -58,28 +69,43 @@ function movieTrakt() {
               
               //Accessing 8 json elements overall
               for (var i = 0; i < 8; i++) {
-                console.log("Printing iteration number", i) 
-                // Trying to access show titles & episode details  
-                console.log("traktObj[i].id")
-                console.log(traktObj[i].id)
-                
-                // Accessing show title
-                console.log("accessing movie.title")
-                console.log(traktObj[i].movie.title)
+                    console.log("Printing iteration number", i) 
+                    // Trying to access show titles & episode details  
+                    console.log("traktObj[i].id")
+                    console.log(traktObj[i].id)
+                    
+                    // Accessing show title
+                    console.log("accessing movie.title")
+                    console.log(traktObj[i].movie.title)
 
-                // Accessing show title
-                console.log("accessing .movie.year")
-                console.log(traktObj[i].movie.year)
+                    // Accessing show title
+                    console.log("accessing .movie.year")
+                    console.log(traktObj[i].movie.year)
 
-                // Accessing show title
-                console.log("accessing .traktObj[i].movie.id.tmdb")
-                var movieTvdbId = traktObj[i].movie.ids.tmdb
-                console.log(movieTvdbId) 
-                movieIDTr = movieTvdbId
+                    // Accessing show title
+                    console.log("accessing .traktObj[i].movie.id.tmdb")
+                    var movieTvdbId = traktObj[i].movie.ids.tmdb
+                    console.log(movieTvdbId) 
+                    movieIDTr = movieTvdbId
+                    
 
+                    // Storing movie ID's in array
+                    movieIDsPath.push(movieIDTr)
+
+
+                    // Calling the function with user Movie ID
+                    UserAction(movieIDTr)
               }
-              // Calling the function with user Movie ID
-              UserAction(movieIDTr)
+              console.log("movieIDsPathMediaStreamTrackEvent")
+              console.log(movieIDsPath)
+              
+            //   // Calling the function with user Movie ID
+            // for (i=0; i < 8; i++) {
+            //     UserAction(movieIDsPath[i])
+            // }
+            // imageDisplay()
+            
+            
 
             }
             
@@ -88,13 +114,16 @@ function movieTrakt() {
           };
 
           
-
+          
           request.send();
+          
           
 
 }
 
 function UserAction(movieIDT) {
+
+
     var movieNo = "284053"
     var urlTMDB = "https://api.themoviedb.org/3/movie/"
     var movieID = movieIDT;
@@ -134,15 +163,57 @@ fetch(concatTmdbMovieURL)
             // http://image.tmdb.org/t/p/w342//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg
             // http://image.tmdb.org/t/p/w342//5TQ6YDmymBpnF005OyoB7ohZps9.jpg
             
-            document.getElementById('output').src = fullImageTMDB;
+            movieImgsPath.push(fullImageTMDB)
+
+            
 
 
     })
+
+
 }
+/*
+function callback() {
+
+function some_3secs_function(value, callback){
+  //do stuff
+  callback();
+}
+then you can call then in order, like this:
+
+some_3secs_function(some_value, function() {
+  some_5secs_function(other_value, function() {
+    some_8secs_function(third_value, function() {
+      //All three functions have completed, in order.
+    });
+  });
+});
+
+
+}
+
+*/
+
+function imageDisplay() {
+    // Displaying 8 last watch movies images
+    for (i = 0; i < 8; i++) {
+        var outputStr = "output"
+        outputStr = outputStr + (i + 1)
+        console.log(outputStr)
+        console.log(outputStr)
+        console.log("movieImgsPath[i]")
+        console.log(movieImgsPath[i])
+        document.getElementById(outputStr).src = movieImgsPath[i];
+    }
+}
+
+
 
 </script>
 
 <button type="submit" onclick="movieTrakt()">Search</button>
-
+<button type="submit" onclick="imageDisplay()">Images</button>
+<!-- // Calling image display function after all the 8 images web url is created. -->
+          <!-- imageDisplay() -->
 </body>
 </html>
