@@ -19,6 +19,9 @@
 <script>
 var movieImgsPath = []
 var movieIDsPath = []
+var imagesNotDisplayed = true
+var outputStrNo = 1;
+
 function movieTrakt() {
           var request = new XMLHttpRequest();
 
@@ -99,17 +102,16 @@ function movieTrakt() {
               console.log("movieIDsPathMediaStreamTrackEvent")
               console.log(movieIDsPath)
               
-            //   // Calling the function with user Movie ID
-            // for (i=0; i < 8; i++) {
-            //     UserAction(movieIDsPath[i])
-            // }
+              
+              // Calling the function with user Movie ID
+            for (i=0; i < 8; i++) {
+                UserAction(movieIDsPath[i])
+            }
             // imageDisplay()
             
             
 
             }
-            
-
 
           };
 
@@ -164,35 +166,59 @@ fetch(concatTmdbMovieURL)
             // http://image.tmdb.org/t/p/w342//5TQ6YDmymBpnF005OyoB7ohZps9.jpg
             
             movieImgsPath.push(fullImageTMDB)
-
+            imageDisplay2(fullImageTMDB)
             
 
 
     })
 
-
 }
-/*
-function callback() {
 
-function some_3secs_function(value, callback){
-  //do stuff
-  callback();
-}
-then you can call then in order, like this:
 
-some_3secs_function(some_value, function() {
-  some_5secs_function(other_value, function() {
-    some_8secs_function(third_value, function() {
-      //All three functions have completed, in order.
+///*
+function callback2() {
+
+movieTrakt(function() {
+    for (i = 0 ; i < 8 ; i++) {
+
+        UserAction(movieIDsPath[i], function() {
+        });
+        }
+
+    imageDisplay();
+    //         some_8secs_function(third_value, function() {
+    //   //All three functions have completed, in order.
+    // });
+
     });
-  });
-});
-
-
 }
 
-*/
+
+//*/
+
+function timeout() {
+    movieTrakt()
+    if (movieImgsPath.length > 6) {
+        // setTimeout(imageDisplay(), 5);
+        imageDisplay()
+    } else {
+        setTimeout(checkArray(), 100);
+    }
+    
+}
+
+function checkArray() {
+    if (imagesNotDisplayed) {
+            if (movieImgsPath.length > 6) {
+            imageDisplay()
+        } 
+        else {
+            checkArray()
+        }
+    }
+    
+
+}
 
 function imageDisplay() {
     // Displaying 8 last watch movies images
@@ -205,7 +231,25 @@ function imageDisplay() {
         console.log(movieImgsPath[i])
         document.getElementById(outputStr).src = movieImgsPath[i];
     }
+    imagesNotDisplayed = false;
+
 }
+
+
+function imageDisplay2(imgPath) {
+    // Displaying 8 last watch movies images
+         console.log("imageDisplay2(imgPath")
+        console.log(imgPath)
+        var outputStr = "output"
+        console.log(outputStr)
+        outputStr = outputStr + outputStrNo;
+        console.log("outputStr = outputStr + outputStrNo;")
+        console.log(outputStr)
+        document.getElementById(outputStr).src = imgPath ;
+        outputStrNo = (outputStrNo + 1)
+        outputStr =  outputStr + outputStrNo;
+        console.log(outputStr)
+    }
 
 
 
@@ -213,7 +257,10 @@ function imageDisplay() {
 
 <button type="submit" onclick="movieTrakt()">Search</button>
 <button type="submit" onclick="imageDisplay()">Images</button>
-<!-- // Calling image display function after all the 8 images web url is created. -->
+ <!-- Calling image display function after all the 8 images web url is created. -->
           <!-- imageDisplay() -->
+
+<button type="submit" onclick="callback2()">Callback</button>    
+<button type="submit" onclick="timeout()">Timeout</button>        
 </body>
 </html>
