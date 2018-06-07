@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="beta"></div>
+
+<script>
+
+
+function UserAction() {
+    var urlTMDB = "https://api.themoviedb.org/3/movie/100402?api_key=eab66c078f08232f3a3dec068c6a14d3&language=en-US";
+
+// Last FM API Integration Testing
+fetch(urlTMDB)
+    .then(function(response) {
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+
+
+            console.log(jsonResponse)
+            console.log("type of jsonresponse")
+            console.log(typeof(jsonResponse))
+
+            var data = jsonResponse.belongs_to_collection.name
+            console.log("printing jsonResponse.belongs_to_collection.name")
+            console.log(jsonResponse.belongs_to_collection.name)
+
+            
+
+    })
+}
+
+</script>
+
+<button type="submit" onclick="UserAction()">Search</button>
+
+</body>
+</html>
