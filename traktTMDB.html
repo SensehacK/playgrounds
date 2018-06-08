@@ -4,21 +4,40 @@
 
 <div id="beta"></div>
 
-<img id="output1"> <p id "movieTitle1"> Sensehack </p> <p id "movieYear1"> Sensehack movieYear1</p> 
-<img id="output2"> <p id "movieTitle2"> </p> <p id "movieYear2"> </p> 
-<img id="output3"> <p id "movieTitle3"> </p> <p id "movieYear3"> </p> 
-<img id="output4"> <p id "movieTitle4"> </p> <p id "movieYear4"> </p> 
-<img id="output5"> <p id "movieTitle5"> </p> <p id "movieYear5"> </p> 
-<img id="output6"> <p id "movieTitle6"> </p> <p id "movieYear6"> </p> 
-<img id="output7"> <p id "movieTitle7"> </p> <p id "movieYear7"> </p> 
-<img id="output8"> <p id "movieTitle8"> </p> <p id "movieYear8"> </p> 
+<img id="output1"> 
+<p id = "movieTitle1"> Sensehack </p> 
+<p id = "movieYear1"> Sensehack movieYear1</p> 
+<img id="output2">
+ <p id = "movieTitle2"> </p> 
+ <p id = "movieYear2"> </p> 
+<img id="output3"> 
+<p id = "movieTitle3"> </p> 
+<p id = "movieYear3"> </p> 
+<img id="output4">
+ <p id = "movieTitle4"> </p> 
+ <p id = "movieYear4"> </p> 
+<img id="output5"> 
+<p id = "movieTitle5"> </p> 
+<p id = "movieYear5"> </p> 
+<img id="output6">
+ <p id = "movieTitle6"> </p> 
+ <p id = "movieYear6"> </p> 
+<img id="output7">
+ <p id = "movieTitle7"> </p> 
+ <p id = "movieYear7"> </p> 
+<img id="output8"> 
+<p id = "movieTitle8"> </p> 
+<p id = "movieYear8"> </p> 
     <!-- output will go here -->
 
+    <p id = "kautilya"> wass up</p>
 
 
 <button type="submit" onclick="movieTrakt()">Search</button>
 <button type="submit" onclick="imageDisplay()">Images</button>  
+<button type="submit" onclick="displayMovieDetails()">Movies</button>  
 
+Hello SensehacK
 
 <script>
 
@@ -99,6 +118,9 @@ function movieTrakt() {
               
               console.log("movieIDsPathMediaStreamTrackEvent")
               console.log(movieIDsPath)
+
+              // Display Movie Text
+            //   displayMovieDetails()
 
             }
 
@@ -286,21 +308,21 @@ function singleImageDisplay(imgPath,mvieTitle,mvieYear) {
 
 
 function displayMovieDetails () {
-    var movieTitleStr = "movieTitle"
-    var movieYearStr = "movieYear"    
+     
 
     // //Appending String 
     // movieTitleStr = movieTitleStr + ( i + 1)
     // movieYearStr = movieYearStr + ( i + 1)
 
-    // // Incrementing the html tag ID string value
-    // movieTitleStrNo = (movieTitleStrNo + 1)
-    // movieYearStrNo = (movieYearStrNo + 1)
+    
 
     for (i = 0 ; i < 8 ; i++ ) {
-                
-                movieTitleStr = movieTitleStr + ( i + 1)
-                movieYearStr = movieYearStr + ( i + 1)
+        
+                var movieTitleStr = "movieTitle"
+                var movieYearStr = "movieYear"   
+
+                movieTitleStr = movieTitleStr + movieTitleStrNo
+                movieYearStr = movieYearStr + movieYearStrNo
 
                 console.log("movieTitleStr")
                 console.log(movieTitleStr)
@@ -312,9 +334,22 @@ function displayMovieDetails () {
                 console.log("movieYearArr[i]")
                 console.log(movieYearArr[i])
 
+                console.log(typeof(movieTitleArr[i]))
+                console.log(typeof(movieYearArr[i]))
+                console.log(typeof(String(movieYearArr[i])))
+                
+                console.log(typeof(movieTitleStr))
+                console.log(typeof(movieYearStr))
+                //Trial 
+                document.getElementById("kautilya").innerHTML =  movieTitleArr[i] ; 
+
+                //Actual Movie Details
+                document.getElementById(movieYearStr).innerHTML = String(movieYearArr[i]) ;
                 document.getElementById(movieTitleStr).innerHTML = movieTitleArr[i] ;
                 
-                document.getElementById(movieYearStr).innerHTML = movieYearArr[i] ;
+                // Incrementing the html tag ID string value
+                movieTitleStrNo = (movieTitleStrNo + 1)
+                movieYearStrNo = (movieYearStrNo + 1)
 
     }
 
@@ -322,6 +357,6 @@ function displayMovieDetails () {
 
 }
 </script>
-
 </body>
+
 </html>
