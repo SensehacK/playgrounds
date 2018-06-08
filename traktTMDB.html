@@ -73,60 +73,45 @@ function movieTrakt() {
               //Accessing 8 json elements overall
               for (var i = 0; i < 8; i++) {
                     console.log("Printing iteration number", i) 
-                    // Trying to access show titles & episode details  
+                    // Trying to access movie titles & year details  
                     console.log("traktObj[i].id")
                     console.log(traktObj[i].id)
                     
-                    // Accessing show title
+                    // Accessing movie title
                     console.log("accessing movie.title")
                     console.log(traktObj[i].movie.title)
 
-                    // Accessing show title
+                    // Accessing movie title
                     console.log("accessing .movie.year")
                     console.log(traktObj[i].movie.year)
 
-                    // Accessing show title
+                    // Accessing movie title
                     console.log("accessing .traktObj[i].movie.id.tmdb")
-                    var movieTvdbId = traktObj[i].movie.ids.tmdb
-                    console.log(movieTvdbId) 
-                    movieIDTr = movieTvdbId
+                    var movieTmdbId = traktObj[i].movie.ids.tmdb
+                    console.log(movieTmdbId) 
+                    movieIDTr = movieTmdbId
                     
-
                     // Storing movie ID's in array
                     movieIDsPath.push(movieIDTr)
-
 
                     // Calling the function with user Movie ID
                     UserAction(movieIDTr)
               }
+
               console.log("movieIDsPathMediaStreamTrackEvent")
               console.log(movieIDsPath)
-              
-              
-              // Calling the function with user Movie ID
-            for (i=0; i < 8; i++) {
-                UserAction(movieIDsPath[i])
-            }
-            // imageDisplay()
-            
-            
 
             }
 
           };
 
-          
-          
           request.send();
-          
-          
 
 }
 
 function UserAction(movieIDT) {
 
-
-    var movieNo = "284053"
+    // Variables 
     var urlTMDB = "https://api.themoviedb.org/3/movie/"
     var movieID = movieIDT;
     var apiKeyTMDB = "?api_key=eab66c078f08232f3a3dec068c6a14d3";
@@ -137,7 +122,8 @@ function UserAction(movieIDT) {
     var concatTmdbMovieURL = urlTMDB + movieID + apiKeyTMDB + langTMDB
     console.log("concatTmdbMovieURL urlTMDB + movieID + apiKeyTMDB + langTMDB")
     console.log(concatTmdbMovieURL)
-
+    console.log("movieIDT")
+    console.log(movieIDT)
     
 // Last FM API Integration Testing
 fetch(concatTmdbMovieURL)
@@ -146,15 +132,11 @@ fetch(concatTmdbMovieURL)
         })
         .then(function(jsonResponse) {
 
-
             console.log(jsonResponse)
             console.log("type of jsonresponse")
             console.log(typeof(jsonResponse))
-
-            // var data = jsonResponse.belongs_to_collection.name
-            console.log("printing jsonResponse.belongs_to_collection.name")
-            // console.log(jsonResponse.belongs_to_collection.name)
             
+
             var poster = jsonResponse.poster_path
             console.log("printing jsonResponse.poster_path")
             console.log(jsonResponse.poster_path)
@@ -193,7 +175,7 @@ function imageDisplay() {
 
 function singleImageDisplay(imgPath) {
     // Displaying 8 last watch movies images
-         console.log("imageDisplay2(imgPath")
+        console.log("imageDisplay2(imgPath")
         console.log(imgPath)
         var outputStr = "output"
         console.log(outputStr)
@@ -201,13 +183,13 @@ function singleImageDisplay(imgPath) {
         console.log("outputStr = outputStr + outputStrNo;")
         console.log(outputStr)
         document.getElementById(outputStr).src = imgPath ;
+        console.log("outputStrNo")
+        console.log(outputStrNo)
         outputStrNo = (outputStrNo + 1)
         outputStr =  outputStr + outputStrNo;
-        console.log("outputStr =  outputStr + outputStrNo;")
+        console.log("outputStr =  outputStr + outputStrNo231311;")
         console.log(outputStr)
     }
-
-
 
 </script>
 
