@@ -176,7 +176,7 @@ fetch(concatTmdbMovieURL)
             console.log(movieTitle)
             console.log(movieYear)
             //Calling individual function image paths urls from TMDB
-            singleImageDisplay(fullImageTMDB,movieTitle,movieYear)
+            singleImageDisplay(fullImageTMDB)
             
 
 
@@ -184,23 +184,8 @@ fetch(concatTmdbMovieURL)
 
 }
 
-function imageDisplay() {
-    // Displaying 8 last watch movies images
-    for (i = 0; i < 8; i++) {
-        var outputStr = "output"
-        outputStr = outputStr + (i + 1)
-        console.log(outputStr)
-        console.log(outputStr)
-        console.log("movieImgsPath[i]")
-        console.log(movieImgsPath[i])
-        document.getElementById(outputStr).src = movieImgsPath[i];
-    }
-    imagesNotDisplayed = false;
 
-}
-
-
-function singleImageDisplay(imgPath,mvieTitle,mvieYear) {
+function singleImageDisplay(imgPath) {
     var outputStr = "output"
 
     // Displaying 8 last watch movies images
@@ -209,8 +194,6 @@ function singleImageDisplay(imgPath,mvieTitle,mvieYear) {
 
         console.log(outputStr)
         outputStr = outputStr + outputStrNo;
-
-       
 
         console.log("outputStr = outputStr + outputStrNo;")
         console.log(outputStr)
