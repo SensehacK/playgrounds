@@ -4,23 +4,23 @@
 
 <div id="beta"></div>
 
-<img id="output1">
-<img id="output2">
-
-<img id="output3">
-<img id="output4">
-<img id="output5">
-<img id="output6">
-
-<img id="output7">
-<img id="output8">
+<img id="output1"> <p id "movieTitle1"> </p> <p id "movieYear1"> </p> 
+<img id="output2"> <p id "movieTitle2"> </p> <p id "movieYear2"> </p> 
+<img id="output3"> <p id "movieTitle3"> </p> <p id "movieYear3"> </p> 
+<img id="output4"> <p id "movieTitle4"> </p> <p id "movieYear4"> </p> 
+<img id="output5"> <p id "movieTitle5"> </p> <p id "movieYear5"> </p> 
+<img id="output6"> <p id "movieTitle6"> </p> <p id "movieYear6"> </p> 
+<img id="output7"> <p id "movieTitle7"> </p> <p id "movieYear7"> </p> 
+<img id="output8"> <p id "movieTitle8"> </p> <p id "movieYear8"> </p> 
     <!-- output will go here -->
 </div>
 <script>
+
 var movieImgsPath = []
 var movieIDsPath = []
-var imagesNotDisplayed = true
 var outputStrNo = 1;
+// var movieTitleStrNo = 1;
+// var movieYearStrNo = 1;
 
 function movieTrakt() {
           var request = new XMLHttpRequest();
@@ -28,16 +28,6 @@ function movieTrakt() {
           var getRecentShowsHistory = "https://api.trakt.tv/users/sensehack/history/shows/"
 
           var getRecentMoviesHistory = "https://api.trakt.tv/users/sensehack/history/movies/"
-
-          var getOverallWatchedShowsHistory = "https://api.trakt.tv/users/sensehack/watched/shows/"
-
-          var getOverallWatchedMoviesHistory = "https://api.trakt.tv/users/sensehack/watched/movies/"
-
-          
-          
-          var url = "https://api.trakt.tv/users/sensehack/stats"
-          
-          var url4 = "https://api.trakt.tv/users/sensehack/stats"
 
           // call url
           request.open('GET', getRecentMoviesHistory);
@@ -55,35 +45,32 @@ function movieTrakt() {
             if (this.readyState === 4) {
               console.log('Status:', this.status);
               console.log('Headers:', this.getAllResponseHeaders());
+              console.log('Body:', this.responseText);
 
-              
-              // console.log('Body:', this.responseText);
+
+              //Converting responseText String JSON to Javascript Object JSON.
               var traktJSON = this.responseText;
               var movieIDTr = ""
-              //Code printing for traktJSON raw string data
-              // console.log(typeof(traktJSON))
-              // console.log("Trakt TV sensehack Data")
-              // console.log(traktJSON)
-              
               var traktObj = JSON.parse(traktJSON)
-              console.log(typeof(traktObj))
-              console.log("Printing trakt Obj")
-              console.log(traktObj)
+
               
               //Accessing 8 json elements overall
               for (var i = 0; i < 8; i++) {
                     console.log("Printing iteration number", i) 
+
                     // Trying to access movie titles & year details  
                     console.log("traktObj[i].id")
                     console.log(traktObj[i].id)
                     
                     // Accessing movie title
-                    console.log("accessing movie.title")
-                    console.log(traktObj[i].movie.title)
+                    var movieTitle = traktObj[i].movie.title
+                    console.log("accessing movie title")
+                    console.log(movieTitle)
 
                     // Accessing movie title
-                    console.log("accessing .movie.year")
-                    console.log(traktObj[i].movie.year)
+                    var movieYear = traktObj[i].movie.year
+                    console.log("accessing movie year")
+                    console.log(movieYear)
 
                     // Accessing movie title
                     console.log("accessing .traktObj[i].movie.id.tmdb")
@@ -95,9 +82,9 @@ function movieTrakt() {
                     movieIDsPath.push(movieIDTr)
 
                     // Calling the function with user Movie ID
-                    UserAction(movieIDTr)
+                    UserAction(movieIDTr,movieTitle,movieYear)
               }
-
+              
               console.log("movieIDsPathMediaStreamTrackEvent")
               console.log(movieIDsPath)
 
@@ -174,21 +161,26 @@ function imageDisplay() {
 
 
 function singleImageDisplay(imgPath) {
+    var outputStr = "output"
+    var movieTitleStr = "movieTitle"
+    var movieYearStr = "movieYear"
     // Displaying 8 last watch movies images
         console.log("imageDisplay2(imgPath")
         console.log(imgPath)
         var outputStr = "output"
         console.log(outputStr)
         outputStr = outputStr + outputStrNo;
+        movieTitleStr = movieTitleStr + outputStrNo
+        movieYearStr = movieYearStr + outputStrNo
         console.log("outputStr = outputStr + outputStrNo;")
         console.log(outputStr)
         document.getElementById(outputStr).src = imgPath ;
+        document.getElementById(outputStr).src = imgPath ;
+        document.getElementById(outputStr).src = imgPath ;
         console.log("outputStrNo")
         console.log(outputStrNo)
+        // Incrementing the html tag ID string value
         outputStrNo = (outputStrNo + 1)
-        outputStr =  outputStr + outputStrNo;
-        console.log("outputStr =  outputStr + outputStrNo231311;")
-        console.log(outputStr)
     }
 
 </script>
