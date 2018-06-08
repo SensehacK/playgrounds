@@ -2,11 +2,12 @@
 <html>
 <body>
 
-<div id="beta"></div>
+
+<p>Hello SensehacK</p>
 
 <img id="output1"> 
-<p id = "movieTitle1"> Sensehack </p> 
-<p id = "movieYear1"> Sensehack movieYear1</p> 
+<p id = "movieTitle1"> </p> 
+<p id = "movieYear1"> </p> 
 <img id="output2">
  <p id = "movieTitle2"> </p> 
  <p id = "movieYear2"> </p> 
@@ -30,14 +31,15 @@
 <p id = "movieYear8"> </p> 
     <!-- output will go here -->
 
-    <p id = "kautilya"> wass up</p>
+
+<p id = "kautilya"> Get my recent Movies History</p>
 
 
 <button type="submit" onclick="movieTrakt()">Search</button>
 <button type="submit" onclick="imageDisplay()">Images</button>  
 <button type="submit" onclick="displayMovieDetails()">Movies</button>  
 
-Hello SensehacK
+
 
 <script>
 
@@ -119,8 +121,10 @@ function movieTrakt() {
               console.log("movieIDsPathMediaStreamTrackEvent")
               console.log(movieIDsPath)
 
+              //You can call whatever you want after the function of API Movie Details & Movie Images are retrieved. 
+              // After this stage the synchronous dependency of Movie images & text is already done.
               // Display Movie Text
-            //   displayMovieDetails()
+              displayMovieDetails()
 
             }
 
@@ -235,14 +239,13 @@ function displayMovieDetails () {
                 
                 console.log(typeof(movieTitleStr))
                 console.log(typeof(movieYearStr))
-                //Trial 
-                document.getElementById("kautilya").innerHTML =  movieTitleArr[i] ; 
 
                 //Actual Movie Details
-                document.getElementById(movieYearStr).innerHTML = String(movieYearArr[i]) ;
+                document.getElementById(movieYearStr).innerHTML = movieYearArr[i] ;
                 document.getElementById(movieTitleStr).innerHTML = movieTitleArr[i] ;
                 
                 // Incrementing the html tag ID string value
+                console.log("// Incrementing the html tag ID string value")
                 movieTitleStrNo = (movieTitleStrNo + 1)
                 movieYearStrNo = (movieYearStrNo + 1)
 
