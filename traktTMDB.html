@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="beta"></div>
+
+<img id="output1">
+<img id="output2">
+
+<img id="output3">
+<img id="output4">
+<img id="output5">
+<img id="output6">
+
+<img id="output7">
+<img id="output8">
+    <!-- output will go here -->
+</div>
+<script>
+var movieImgsPath = []
+var movieIDsPath = []
+var imagesNotDisplayed = true
+var outputStrNo = 1;
+
+function movieTrakt() {
+          var request = new XMLHttpRequest();
+
+          var getRecentShowsHistory = "https://api.trakt.tv/users/sensehack/history/shows/"
+
+          var getRecentMoviesHistory = "https://api.trakt.tv/users/sensehack/history/movies/"
+
+          var getOverallWatchedShowsHistory = "https://api.trakt.tv/users/sensehack/watched/shows/"
+
+          var getOverallWatchedMoviesHistory = "https://api.trakt.tv/users/sensehack/watched/movies/"
+
+          
+          
+          var url = "https://api.trakt.tv/users/sensehack/stats"
+          
+          var url4 = "https://api.trakt.tv/users/sensehack/stats"
+
+          // call url
+          request.open('GET', getRecentMoviesHistory);
+
+
+          request.setRequestHeader('Content-Type', 'application/json');
+          request.setRequestHeader('trakt-api-version', '2');
+
+          // Client ID of Trial 2 cors.io
+          request.setRequestHeader('trakt-api-key', 'e76f84733301c6380989637d3c7cc0394f58ae5046b94649d9d65f18e31e43fa');
+
+          
+          request.onreadystatechange = function () {
+
+            if (this.readyState === 4) {
+              console.log('Status:', this.status);
+              console.log('Headers:', this.getAllResponseHeaders());
+
+              
+              // console.log('Body:', this.responseText);
+              var traktJSON = this.responseText;
+              var movieIDTr = ""
+              //Code printing for traktJSON raw string data
+              // console.log(typeof(traktJSON))
+              // console.log("Trakt TV sensehack Data")
+              // console.log(traktJSON)
+              
+              var traktObj = JSON.parse(traktJSON)
+              console.log(typeof(traktObj))
+              console.log("Printing trakt Obj")
+              console.log(traktObj)
+              
+              //Accessing 8 json elements overall
+              for (var i = 0; i < 8; i++) {
+                    console.log("Printing iteration number", i) 
+                    // Trying to access show titles & episode details  
+                    console.log("traktObj[i].id")
+                    console.log(traktObj[i].id)
+                    
+                    // Accessing show title
+                    console.log("accessing movie.title")
+                    console.log(traktObj[i].movie.title)
+
+                    // Accessing show title
+                    console.log("accessing .movie.year")
+                    console.log(traktObj[i].movie.year)
+
+                    // Accessing show title
+                    console.log("accessing .traktObj[i].movie.id.tmdb")
+                    var movieTvdbId = traktObj[i].movie.ids.tmdb
+                    console.log(movieTvdbId) 
+                    movieIDTr = movieTvdbId
+                    
+
+                    // Storing movie ID's in array
+                    movieIDsPath.push(movieIDTr)
+
+
+                    // Calling the function with user Movie ID
+                    UserAction(movieIDTr)
+              }
+              console.log("movieIDsPathMediaStreamTrackEvent")
+              console.log(movieIDsPath)
+              
+              
+              // Calling the function with user Movie ID
+            for (i=0; i < 8; i++) {
+                UserAction(movieIDsPath[i])
+            }
+            // imageDisplay()
+            
+            
+
+            }
+
+          };
+
+          
+          
+          request.send();
+          
+          
+
+}
+
+function UserAction(movieIDT) {
+
+
+    var movieNo = "284053"
+    var urlTMDB = "https://api.themoviedb.org/3/movie/"
+    var movieID = movieIDT;
+    var apiKeyTMDB = "?api_key=eab66c078f08232f3a3dec068c6a14d3";
+    var langTMDB = "&language=en-US";
+    var fullUrlTMDB = "https://api.themoviedb.org/3/movie/100402?api_key=eab66c078f08232f3a3dec068c6a14d3&language=en-US";
+
+
+    var concatTmdbMovieURL = urlTMDB + movieID + apiKeyTMDB + langTMDB
+    console.log("concatTmdbMovieURL urlTMDB + movieID + apiKeyTMDB + langTMDB")
+    console.log(concatTmdbMovieURL)
+
+    
+// Last FM API Integration Testing
+fetch(concatTmdbMovieURL)
+    .then(function(response) {
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+
+
+            console.log(jsonResponse)
+            console.log("type of jsonresponse")
+            console.log(typeof(jsonResponse))
+
+            // var data = jsonResponse.belongs_to_collection.name
+            console.log("printing jsonResponse.belongs_to_collection.name")
+            // console.log(jsonResponse.belongs_to_collection.name)
+            
+            var poster = jsonResponse.poster_path
+            console.log("printing jsonResponse.poster_path")
+            console.log(jsonResponse.poster_path)
+            var imageTMDB = "http://image.tmdb.org/t/p/w342/"
+            var fullImageTMDB = imageTMDB + poster
+            console.log("fullImageTMDB imageTMDB + poster")
+            console.log(fullImageTMDB)
+            
+            //Adding image paths to the array
+            movieImgsPath.push(fullImageTMDB)
+
+            //Calling individual function image paths urls from TMDB
+            singleImageDisplay(fullImageTMDB)
+            
+
+
+    })
+
+}
+
+function imageDisplay() {
+    // Displaying 8 last watch movies images
+    for (i = 0; i < 8; i++) {
+        var outputStr = "output"
+        outputStr = outputStr + (i + 1)
+        console.log(outputStr)
+        console.log(outputStr)
+        console.log("movieImgsPath[i]")
+        console.log(movieImgsPath[i])
+        document.getElementById(outputStr).src = movieImgsPath[i];
+    }
+    imagesNotDisplayed = false;
+
+}
+
+
+function singleImageDisplay(imgPath) {
+    // Displaying 8 last watch movies images
+         console.log("imageDisplay2(imgPath")
+        console.log(imgPath)
+        var outputStr = "output"
+        console.log(outputStr)
+        outputStr = outputStr + outputStrNo;
+        console.log("outputStr = outputStr + outputStrNo;")
+        console.log(outputStr)
+        document.getElementById(outputStr).src = imgPath ;
+        outputStrNo = (outputStrNo + 1)
+        outputStr =  outputStr + outputStrNo;
+        console.log("outputStr =  outputStr + outputStrNo;")
+        console.log(outputStr)
+    }
+
+
+
+</script>
+
+<button type="submit" onclick="movieTrakt()">Search</button>
+<button type="submit" onclick="imageDisplay()">Images</button>  
+
+</body>
+</html>
