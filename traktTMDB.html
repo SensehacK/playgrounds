@@ -202,17 +202,6 @@ function imageDisplay() {
 
 function singleImageDisplay(imgPath,mvieTitle,mvieYear) {
     var outputStr = "output"
-    var movieTitleStr = "movieTitle"
-    var movieYearStr = "movieYear"
-    console.log("movieTitle")
-    console.log(mvieTitle)
-    var movieTitle = mvieTitle;
-    console.log(movieTitle)
-
-    console.log("movieYear")
-    console.log(mvieYear)
-    var movieYear = mvieYear;
-    console.log(movieYear)
 
     // Displaying 8 last watch movies images
         console.log("imageDisplay2(imgPath")
@@ -220,104 +209,27 @@ function singleImageDisplay(imgPath,mvieTitle,mvieYear) {
 
         console.log(outputStr)
         outputStr = outputStr + outputStrNo;
-        movieTitleStr = movieTitleStr + outputStrNo
-        movieYearStr = movieYearStr + outputStrNo
+
        
 
         console.log("outputStr = outputStr + outputStrNo;")
         console.log(outputStr)
-        
-        console.log("movieTitleStr = outputStr + outputStrNo;")
-        console.log(movieTitleStr)
-        console.log("movieTitleStr = outputStr + outputStrNo;")
-        console.log(movieYearStr)
-
-        console.log("movieTitle movieYear")
-        console.log(movieTitle)
-        console.log(movieYear)
 
         // Incrementing the html tag ID string value
         outputStrNo = (outputStrNo + 1)
         console.log("outputStrNo = (outputStrNo + 1)")
         console.log(outputStrNo)
 
-
         document.getElementById(outputStr).src = imgPath ;
-        // console.log("movieTitleStr = outputStr + outputStrNo;")
-        // console.log(movieTitleStr)
-        // console.log(movieTitle)
-        // console.log("movieYearStr = outputStr + outputStrNo;")
-        // console.log(movieYearStr)
-        // console.log(movieYear)
-        // document.getElementById(movieTitleStr).innerHTML = movieTitle ;
-        
-        // document.getElementById(movieYearStr).innerHTML = movieYear ;
-        // console.log("outputStrNo")
-        // console.log(outputStrNo)
-        
-        //Call this function when we want every image & text to be displayed.
-        // singleMovieDataDisplay(movieTitle,movieYear)
-
+    
     }
 
 
-    function singleMovieDataDisplay(mvieTitle,mvieYear) {
-            console.log("function singleMovieDataDisplay(mvieTitle,mvieYear) {")
-            var movieTitleStr = "movieTitle"
-            var movieYearStr = "movieYear"
-            console.log("movieTitle")
-            console.log(mvieTitle)
-            var movieTitle = mvieTitle;
-            console.log(movieTitle)
-
-            console.log("movieYear")
-            console.log(mvieYear)
-            var movieYear = mvieYear;
-            console.log(movieYear)
-
-                movieTitleStr = movieTitleStr + movieTitleStrNo
-                movieYearStr = movieYearStr + movieYearStrNo
-                
-                // Incrementing the html tag ID string value
-                movieTitleStrNo = (movieTitleStrNo + 1)
-                movieYearStrNo = (movieYearStrNo + 1)
-
-                console.log("movieTitleStr = outputStr + outputStrNo;")
-                console.log(movieTitleStr)
-                console.log("movieTitleStr = outputStr + outputStrNo;")
-                console.log(movieYearStr)
-
-                console.log("movieTitle movieYear")
-                console.log(movieTitle)
-                console.log(movieYear)
-
-                
-
-                console.log("movieTitleStr = outputStr + outputStrNo;")
-                console.log(movieTitleStr)
-                console.log(movieTitle)
-                console.log("movieYearStr = outputStr + outputStrNo;")
-                console.log(movieYearStr)
-                console.log(movieYear)
-                // document.getElementById(movieTitleStr).innerHTML = movieTitle ;
-                
-                // document.getElementById(movieYearStr).innerHTML = movieYear ;
-
-                console.log("ending iiiinnnnnnnngggggg function singleMovieDataDisplay(mvieTitle,mvieYear) {")
-    }
 
 
 function displayMovieDetails () {
-     
-
-    // //Appending String 
-    // movieTitleStr = movieTitleStr + ( i + 1)
-    // movieYearStr = movieYearStr + ( i + 1)
-
-    
-
     for (i = 0 ; i < 8 ; i++ ) {
-        
+
                 var movieTitleStr = "movieTitle"
                 var movieYearStr = "movieYear"   
 
