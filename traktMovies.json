@@ -1,0 +1,16 @@
+{
+    "id": 3589315083,
+    "watched_at": "2018-05-04T19:03:40.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+        "title": "Black Panther",
+        "year": 2018,
+        "ids": {
+            "trakt": 181313,
+            "slug": "black-panther-2018",
+            "imdb": "tt1825683",
+            "tmdb": 284054
+        }
+    }
+}
