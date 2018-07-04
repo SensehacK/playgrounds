@@ -67,6 +67,7 @@
                     drawChart();
                     drawChart3();
                     rescueTimeChart();
+                    rescueTimeChartBar();
                     // // Load the Visualization API and the corechart package.
                     // google.charts.load('current', {
                     //     'packages': ['corechart']
@@ -303,6 +304,39 @@
             };
 
             var rescueTimeChart2 = new google.visualization.PieChart(document.getElementById(
+                'rescueTimeChartPie_div3'));
+            rescueTimeChart2.draw(rescueData2, rescueTimeOptions);
+        }
+
+        function rescueTimeChartBar() {
+
+            var rescueData2 = new google.visualization.DataTable();
+            rescueData2.addColumn('string', 'Topping');
+            rescueData2.addColumn('number', 'Slices');
+            // rescueData2.addColumn('number', 'Percentage');
+
+            rescueData2.addRows([
+                ['Very_Productive', rTvery_productive_percentage],
+                ['Productive', rTproductive_percentage],
+                ['Neutral', rTneutral_percentage],
+                ['Distracting', rTdistracting_percentage],
+                ['Very_Distracting', rTvery_distracting_percentage]
+            ]);
+            // rescueData2.addRows([
+            //     ['Mushrooms', 54],
+            //     ['Onions', 32],
+            //     ['Olives', 23],
+            //     ['Zucchini', 21],
+            //     ['Onions', 12]
+            // ]);
+            console.log("In drawChart3 google 23 piechart");
+            var rescueTimeOptions = {
+                'title': 'How Much Time I utilize yesterday.',
+                'width': 600,
+                'height': 400
+            };
+
+            var rescueTimeChart2 = new google.visualization.BarChart(document.getElementById(
                 'rescueTimeChartBar_div3'));
             rescueTimeChart2.draw(rescueData2, rescueTimeOptions);
         }
@@ -316,6 +350,7 @@
     <div id="rescueTimeChartBar_div"></div>
     <div id="rescueTimeChartBar_div2"></div>
     <h1> Hello Everybody</h1>
+    <div id="rescueTimeChartPie_div3"></div>
     <div id="rescueTimeChartBar_div3"></div>
 </body>
 
