@@ -65,7 +65,8 @@
                     console.log("end of Rescue Time call");
                     // drawChart3();
                     drawChart();
-
+                    drawChart3();
+                    rescueTimeChart();
                     // // Load the Visualization API and the corechart package.
                     // google.charts.load('current', {
                     //     'packages': ['corechart']
@@ -232,7 +233,7 @@
             };
 
             var rescueTimeChart2 = new google.visualization.PieChart(document.getElementById(
-                'rescueTimeChartBar_div2'));
+                'rescueTimeChartBar_div'));
             rescueTimeChart2.draw(rescueData2, rescueTimeOptions);
 
         }
@@ -240,9 +241,9 @@
 
         function drawChart3() {
             // Calling Rescue Time + google Pie chart
-            var rescueData2 = new google.visualization.DataTable();
-            rescueData2.addColumn('string', 'Topping');
-            rescueData2.addColumn('number', 'Slices');
+            var rescueData3 = new google.visualization.DataTable();
+            rescueData3.addColumn('string', 'Topping');
+            rescueData3.addColumn('number', 'Slices');
             // rescueData2.addColumn('number', 'Percentage');
 
             // rescueData.addRows([
@@ -252,7 +253,7 @@
             //     ['Zucchini', rTdistracting_percentage],
             //     ['Onions', rTvery_distracting_percentage]
             // ]);
-            rescueData2.addRows([
+            rescueData3.addRows([
                 ['Mushrooms', 54],
                 ['Onions', 32],
                 ['Olives', 23],
@@ -260,17 +261,50 @@
                 ['Onions', 12]
             ]);
             console.log("In drawChart3 google 23 piechart");
-            var rescueTimeChart2 = {
+            var rTOptions = {
+                'title': 'How Much Time I utilize yesterday.',
+                'width': 600,
+                'height': 400
+            };
+
+            var rescueTimeChart4 = new google.visualization.PieChart(document.getElementById(
+                'rescueTimeChartBar_div2'));
+            rescueTimeChart4.draw(rescueData3, rTOptions);
+
+
+        }
+
+        function rescueTimeChart() {
+
+            var rescueData2 = new google.visualization.DataTable();
+            rescueData2.addColumn('string', 'Topping');
+            rescueData2.addColumn('number', 'Slices');
+            // rescueData2.addColumn('number', 'Percentage');
+
+            rescueData2.addRows([
+                ['Very_Productive', rTvery_productive_percentage],
+                ['Productive', rTproductive_percentage],
+                ['Neutral', rTneutral_percentage],
+                ['Distracting', rTdistracting_percentage],
+                ['Very_Distracting', rTvery_distracting_percentage]
+            ]);
+            // rescueData2.addRows([
+            //     ['Mushrooms', 54],
+            //     ['Onions', 32],
+            //     ['Olives', 23],
+            //     ['Zucchini', 21],
+            //     ['Onions', 12]
+            // ]);
+            console.log("In drawChart3 google 23 piechart");
+            var rescueTimeOptions = {
                 'title': 'How Much Time I utilize yesterday.',
                 'width': 600,
                 'height': 400
             };
 
             var rescueTimeChart2 = new google.visualization.PieChart(document.getElementById(
-                'rescueTimeChartBar_div2'));
-            rescueTimeChart2.draw(rescueData2, rescueTimeChart2);
-
-
+                'rescueTimeChartBar_div3'));
+            rescueTimeChart2.draw(rescueData2, rescueTimeOptions);
         }
     </script>
 </head>
@@ -282,6 +316,7 @@
     <div id="rescueTimeChartBar_div"></div>
     <div id="rescueTimeChartBar_div2"></div>
     <h1> Hello Everybody</h1>
+    <div id="rescueTimeChartBar_div3"></div>
 </body>
 
 </html>
