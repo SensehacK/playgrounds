@@ -1,3 +1,49 @@
 <h1>
   {{title}}
 </h1>
+
+<body>
+  {{awesome}}
+  <p> {{ age }}</p>
+  <p> {{ person }}</p>
+
+  <input type="text" [value]="age">
+
+  <!-- Checking Javascript object via String interpolation data binding -->
+  <p> {{ person.age }} : {{ person.name }} </p>
+  <p> {{ person.name }} </p>
+
+  <!-- input value property data binding  -->
+  <input type="text" [value]="person.name">
+  <!-- Method call property data binding -->
+  <br>
+  <input type="url" [value]="getRickRolled()">
+
+  {{ getRickRolled() }} Hello
+  <!-- Method call string interpolation -->
+  <p> Calling getName</p>
+  <p> {{ getName() }}</p>
+
+  <br>
+  <!-- Update data using button -->
+  <button (click)="age = 30"> Click to update Age to 30 </button>
+  <br>
+  <button (click)="setAge()"> Click to Call Update Age()</button>
+  <br>
+  <!-- method update string interpolation -->
+  <button (click)="setPersonAge(47)"> Click to update Age with parameter</button>
+  <br>
+
+  <!--  Two way data binding -->
+  <input type="text" [(ngModel)]="person.age">
+  <br>
+
+  <!-- enter value for updating everywhere -->
+  <p>Enter the value you want it updated with Button Click</p>
+  <input type="text" [(ngModel)]="inputT">
+  <br>
+  <button (click)="setPersonAge(inputT)">Update Inputted Value </button>
+
+</body>
+
+<app-users></app-users>
