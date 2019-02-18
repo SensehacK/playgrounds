@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,13 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {
+  constructor(private navCtrl: NavController, private router: Router) {
 
   }
 
   onGoToUsers() {
-    this.navCtrl.navigateForward('/users');
+    // this.navC trl.navigateForward('/users');
+    // this.router.navigate(['/users']);
+    this.router.navigateByUrl('/users');
   }
 }
