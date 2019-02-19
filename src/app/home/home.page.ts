@@ -13,8 +13,8 @@ export class HomePage {
   }
 
   onGoToUsers() {
-    // this.navC trl.navigateForward('/users');
-    // this.router.navigate(['/users']);
-    this.router.navigateByUrl('/users');
+    // this.navCtrl.navigateForward('/users');
+    this.router.navigate(['users']); // Send path/ object in array
+    // this.router.navigateByUrl('/users'); // Send path/ object in URL string
   }
 }
