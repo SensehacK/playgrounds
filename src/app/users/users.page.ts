@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 // import { UserPage } from './user/user';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-users',
   templateUrl: './users.page.html',
   styleUrls: ['./users.page.scss'],
 })
-export class UsersPage {
+export class UsersPage implements OnInit {
   usersPageName: string;
-  constructor(private navCtrl: NavController, private router: Router) { }
+  urlPath: string;
+
+  constructor(private navCtrl: NavController, private router: Router, private activeRou: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.urlPath = this.activeRou.snapshot.paramMap.get('id');
+  }
 
   onLoadUser(name: string) {
     console.log('Hello On Load User', name);

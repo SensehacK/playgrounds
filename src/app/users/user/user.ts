@@ -50,7 +50,9 @@ export class UserPage implements OnInit {
         console.log(valueRoute['value'].name);
     }
     onGoBack() {
+        console.log('in function Go back');
         this.router.navigate(['users']);
+        // this
 
     }
 }
