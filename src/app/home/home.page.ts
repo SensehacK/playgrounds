@@ -17,4 +17,13 @@ export class HomePage {
     this.router.navigate(['users']); // Send path/ object in array
     // this.router.navigateByUrl('/users'); // Send path/ object in URL string
   }
+
+  onGoToShop() {
+    this.router.navigate(['shop']);
+  }
+
+  onGoToBuy() {
+    this.router.navigate(['buy']);
+    // this.router.navigateByUrl('/buyout');
+  }
 }
