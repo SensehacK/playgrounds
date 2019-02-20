@@ -22,6 +22,7 @@ export class UsersPage {
     // this.navCtrl.navigateForward(UserPage, { queryParams: { 'userName': name } });
     // this.router.navigate([UserPage], name);
     // this.router.navigateByUrl('./user/user#UserPage');
+    // Send parameter String directly in URL with angular navigation.
     this.router.navigate([`user/${name}`]);
 
     // this.router.navigate(UserPage, { userName: name });

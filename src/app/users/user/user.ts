@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersPage } from '../users.page';
-import { Router } from '@angular/router'
+import { Router, ActivatedRoute } from '@angular/router';
 // import { UsersPage } from './user';
 // import { NavParams } from '@ionic/angular';
 
@@ -25,26 +25,32 @@ export class UserPage implements OnInit {
     //     this.name = userPage.usersPageName;
     // }
 
-    constructor(private router: Router) {
-        // console.log('In UserPage');
+    constructor(private router: Router, private activeRoute: ActivatedRoute) {
+        console.log('In UserPage');
         // this.name = userPage.getUserPageName();
     }
 
     ngOnInit() {
+        // calling function to set Name
+        this.setName();
+
+    }
+
+    setName() {
+        // Inefficient method of accessing URL path
         console.log('In ngOnInit');
         this.name = 'Kautilya';
-        console.log(this.router.url);
-        // this.name = this.navParams.get('userName');
-
-        // Trying to access variable from Users Page ts file
-
-        // splitting the url values
-        // let nameURL = this.router.url;
-        // let stringArr = nameURL.split("/");
-        // // console.log(nameURL.replace())
-        // console.log(stringArr[2]);
-
+        console.log(this.router);
         this.name = (this.router.url).split('/')[2];
+
+        // second method of accessing router params object values / Right way
+        console.log(this.activeRoute);
+        console.log(this.activeRoute.params);
+        const valueRoute = this.activeRoute.params;
+        console.log(valueRoute['value'].name);
+    }
+    onGoBack() {
+        this.router.navigate(['users']);
 
     }
 }
