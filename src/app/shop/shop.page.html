@@ -9,4 +9,9 @@
 
 <ion-content padding>
   <p> Hello Shop Page</p>
+  <button ion-button (click)="onBuyout({name: 'Milk', quantity: 2})">Milk</button>
+  <button ion-button (click)="onBuyout({name: 'Bread', quantity: 3})">Bread</button>
+  <button ion-button (click)="onBuyout({name: 'Apples', quantity: 4})">Apples</button>
+  <button ion-button (click)="onBuyout({name: 'Coffee', quantity: 7})">Coffee</button>
+  <!-- <page-buyout [productData]="test"></page-buyout> -->
 </ion-content>
