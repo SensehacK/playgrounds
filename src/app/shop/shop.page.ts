@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-shop',
@@ -7,13 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./shop.page.scss'],
 })
 export class ShopPage {
-
-  constructor(private router: Router) {
-
-  }
   productData: { name: string, quantity: number };
   // shopPObj: ShopPage();
   nameQty: string;
+  testData: string;
+
+  constructor(private router: Router, private data2: DataService) {
+    this.testData = 'gaakf';
+    this.testData = data2.getMessage();
+  }
+
+
 
   onBuyout(productData: { name: string, quantity: number }) {
 
@@ -23,7 +28,7 @@ export class ShopPage {
 
     this.productData = productData;
     console.log(this.productData);
-    let nameQ: string
+    let nameQ: string;
     this.nameQty = this.productData.name + this.productData.quantity;
     nameQ = this.productData.name + ' ' + this.productData.quantity;
     console.log(nameQ);
