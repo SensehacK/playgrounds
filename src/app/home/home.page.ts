@@ -14,8 +14,11 @@ export class HomePage {
 
   onGoToUsers() {
     // this.navCtrl.navigateForward('/users');
-    this.router.navigate(['users']); // Send path/ object in array
+    // this.router.navigate(['users']); // Send path/ object in array
     // this.router.navigateByUrl('/users'); // Send path/ object in URL string
+
+    // checking with local authentication
+    this.router.navigate(['users']).catch((error) => console.log('Access is Denied' + error));
   }
 
   onGoToShop() {

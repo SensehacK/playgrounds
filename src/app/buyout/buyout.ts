@@ -10,18 +10,15 @@ export class BuyoutPage {
     // @Input() parentData: object;
     parentData1: string;
     @Input() productData: any;
-    productData2: { name: string, quantity: number };
+    productData2: { name: string, quantity: number } = { name: null, quantity: null };
     productName: string;
     productQty: number;
 
     constructor(private router: Router, private activeRoute: ActivatedRoute) {
-        // console.log(this.parentData['name']);
-        // this.productData = { name: "milk" }
         console.log('in buyout Page');
         this.parentData1 = 'Kautilya';
         console.log(this.productData);
         console.log(this.parentData1);
-        // this.parentData1 = this.parentData['name'];
 
         // Calling function for parsing data which is retrieved.
         this.retrieveData();
@@ -45,12 +42,14 @@ export class BuyoutPage {
         console.log('Quantity:', this.productQty);
 
         // Try to save it in object | first method works & without { } doesn't work but for retrieving data it works just independently.
-        this.productData2 = { name: this.productName, quantity: this.productQty };
+        // this.productData2 = { name: this.productName, quantity: this.productQty };
 
-
-        /* second method. If I save it with this method it gives this error : Uncaught (in promise): 
+        // this.productData2[name] = this.productName;
+        this.productData2.name = this.productName;
+        this.productData2['quantity'] = this.productQty;
+        /* second method. If I save it with this method it gives this error : Uncaught (in promise):
         // TypeError: Cannot set property 'name' of undefined
-        this.productData2['name'] = this.productName;
+        //
         this.productData2['name'] = "Kautilya";
         this.productData2['quantity'] = this.productQty;
         */
@@ -63,6 +62,11 @@ export class BuyoutPage {
         console.log('Quantity:', this.productData2.quantity);
         // console.log((this.activeRoute.params['value'].id).split(' ')[1]);
 
+    }
+
+    onConfirmPurchase() {
+        // navigating to home , empty string redirects to home folder.
+        this.router.navigate(['']);
     }
 
 }

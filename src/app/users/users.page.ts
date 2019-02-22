@@ -7,14 +7,30 @@ import { Router, ActivatedRoute } from '@angular/router';
   templateUrl: './users.page.html',
   styleUrls: ['./users.page.scss'],
 })
-export class UsersPage implements OnInit {
+export class UsersPage {
   usersPageName: string;
   urlPath: string;
 
-  constructor(private navCtrl: NavController, private router: Router, private activeRou: ActivatedRoute) { }
+  constructor(private navCtrl: NavController, private router: Router, private activeRou: ActivatedRoute) {
+    console.log('before ionViewCanEnter');
+    this.setUpPage();
 
-  ngOnInit() {
-    this.urlPath = this.activeRou.snapshot.paramMap.get('id');
+  }
+
+  // ngOnInit() {
+  //   this.urlPath = this.activeRou.snapshot.paramMap.get('id');
+  // }
+
+  ionViewCanEnter(): boolean {
+    console.log('ionViewCanEnter');
+
+    // return true;
+    return false;
+
+  }
+
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter');
   }
 
   onLoadUser(name: string) {
@@ -37,6 +53,10 @@ export class UsersPage implements OnInit {
 
   public getUserPageName() {
     return this.usersPageName;
+  }
+
+  setUpPage() {
+    this.urlPath = this.activeRou.snapshot.paramMap.get('id');
   }
 
 

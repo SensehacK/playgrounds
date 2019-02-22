@@ -40,7 +40,7 @@ export class UserPage implements OnInit {
         // Inefficient method of accessing URL path
         console.log('In ngOnInit');
         this.name = 'Kautilya';
-        console.log(this.router);
+        // console.log(this.router);
         this.name = (this.router.url).split('/')[2];
 
         // second method of accessing router params object values / Right way

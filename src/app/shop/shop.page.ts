@@ -14,11 +14,9 @@ export class ShopPage {
   testData: string;
 
   constructor(private router: Router, private data2: DataService) {
-    this.testData = 'gaakf';
+    // this.testData = 'YOLO!';
     this.testData = data2.getMessage();
   }
-
-
 
   onBuyout(productData: { name: string, quantity: number }) {
 
