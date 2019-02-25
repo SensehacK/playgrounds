@@ -10,10 +10,11 @@ import { LibraryPage } from '../library/library.page';
 import { QuotePage } from '../quote/quote.page';
 import { QuotesPage } from '../quotes/quotes.page';
 import { SettingsPage } from '../settings/settings.page';
+import { QuotesPageModule } from '../quotes/quotes.module';
+import { SettingsPageModule } from '../settings/settings.module';
 
 const routes: Routes = [
     {
-
         path: 'tabs',
         component: TabsPage,
         children: [
@@ -37,16 +38,22 @@ const routes: Routes = [
             },
             {
                 path: 'quotes',
-                redirectTo: '/quotes'
+                children: [
+                    {
+                        path: '',
+                        loadChildren: './quotes/quotes.module#QuotesPageModule'
+                    }
+                ]
             },
             {
                 path: 'quote',
-                redirectTo: '/quote'
-            },
-            {
-                path: 'settings',
-                redirectTo: '/settings'
-            },
+                children: [
+                    {
+                        path: '',
+                        loadChildren: './quote/quote.module#QuotePageModule'
+                    }
+                ]
+            }
         ]
 
     },
