@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from 'src/data/quote.interface';
 import { Router, ActivatedRoute } from '@angular/router';
+import { DataService } from '../services/data.services';
 
 @Component({
   selector: 'app-quotes',
@@ -8,17 +9,53 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./quotes.page.scss'],
 })
 export class QuotesPage implements OnInit {
-  quotePageObj: { category: string, quotes: Quote[], icon: string };
+  quotePageData: { category: string, quotes: Quote[], icon: string };
   quoteObjCategory: string;
   quoteObjArr: Quote[];
   quoteObjIcon: string;
 
-  constructor(private router: Router, private routerP: ActivatedRoute) { }
+  constructor(private router: Router, private routerP: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit() {
-    console.log("Hello");
+
+    console.log('Printing from data service');
+    console.log(this.dataService.getQuotePageData());
+    this.quotePageData = this.dataService.getQuotePageData();
+
+    console.log('Hello Sensehack printing this.quotePageData');
+    console.log(typeof (this.quotePageData));
+    console.log(this.quotePageData.category);
+    this.quotePageData.quotes.forEach(element => {
+      console.log(element.person);
+
+    });
+
+
+
+    //calling function of getting data parameters.
+    // this.gettingDataParameters();
+
+
+
+
+
+
+  }
+
+  gettingDataParameters() {
+    // const ar = this.quotePageData();
+    console.log('Hello');
     // console.log(this.navParams.data);
     this.routerP.queryParams.subscribe(params => {
+      console.log('$%#$^#^^#');
+      console.log(params.category);
+      console.log(this.quotePageData.category);
+      this.quotePageData.category = params.category;
+      console.log(this.quotePageData.category);
+
+      console.log('Data of Quotes Category', this.quotePageData.category);
+
+      // Printing console logs for trial & error
       console.log(params.category);
       console.log(params.quotesText);
       console.log('Printing early object');
@@ -57,7 +94,6 @@ export class QuotesPage implements OnInit {
       // };
       // this.quoteObjCategory = params[0].category;
     });
-
   }
 
 }

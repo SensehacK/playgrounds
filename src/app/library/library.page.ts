@@ -3,6 +3,7 @@ import { Quote } from 'src/data/quote.interface';
 import quotes from 'src/data/quotes';
 import { QuotesPage } from '../quotes/quotes.page';
 import { Router } from '@angular/router';
+import { DataService } from '../services/data.services';
 
 @Component({
   selector: 'app-library',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class LibraryPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private dataService: DataService) { }
 
   quoteCollection: { category: string, quotes: Quote[], icon: string }[];
   quoteObj: { category: string, quotes: Quote[], icon: string };
@@ -23,6 +24,12 @@ export class LibraryPage implements OnInit {
   }
 
   goToQuotesPage(quoteL: any) {
+    // Trying to set object data in data service
+    this.dataService.setQuotePageData(quoteL);
+    console.log('Printing from data service');
+    console.log(this.dataService.getQuotePageData());
+
+
     console.log(quoteL);
     const navigationExt = {
       queryParams: { 'category': quoteL.category, 'quotesText': quoteL.quotes[0].text, 'quotesArr': quoteL.quotes, 'quotesObj': quoteL, 'quoteLObj2': this.quoteObj }
