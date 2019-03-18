@@ -14,6 +14,7 @@ export class AppComponent {
     age: 66
   };
 
+  RegUsers = ['KL', 'RL', 'TY'];
 
   getName() {
     return 'K$';
