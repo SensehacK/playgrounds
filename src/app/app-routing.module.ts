@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: 'recipes',
     loadChildren: './recipes/recipes.module#RecipesPageModule'
+  },
+  {
+    path: 'recipe-detail',
+    loadChildren:
+      './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
   }
 ];
 
