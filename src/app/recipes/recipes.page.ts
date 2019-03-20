@@ -15,4 +15,10 @@ export class RecipesPage implements OnInit {
   ngOnInit() {
     this.localRecipe = this.recipeService.getAllRecipes();
   }
+
+  ionViewWillEnter() {
+    console.log('in Ion View Will Enter');
+
+    this.localRecipe = this.recipeService.getAllRecipes();
+  }
 }

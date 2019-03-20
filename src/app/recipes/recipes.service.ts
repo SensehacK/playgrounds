@@ -19,10 +19,27 @@ export class RecipesService {
       imageURL:
         'https://images.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg?cs=srgb&dl=close-up-cooking-dinner-46239.jpg&fm=jpg',
       ingredients: ['Meat', 'Tomato', 'Salad']
+    },
+    {
+      id: 'r3',
+      title: 'Pasta',
+      imageURL:
+        'https://drop.ndtv.com/albums/COOKS/pasta-vegetarian/pastaveg_640x480.jpg',
+      ingredients: ['French Pasta', 'Tomato', 'Salad']
+    },
+    {
+      id: 'r4',
+      title: 'Beef',
+      imageURL:
+        'https://images.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg?cs=srgb&dl=close-up-cooking-dinner-46239.jpg&fm=jpg',
+      ingredients: ['Meat', 'Onion', 'Salad']
     }
   ];
 
-  constructor() {}
+
+
+  constructor() {
+  }
 
   getAllRecipes() {
     return [...this.recipesArr];
@@ -34,5 +51,12 @@ export class RecipesService {
         return recipe.id === recipeID;
       })
     };
+  }
+
+  deleteRecipe(recipeID: string) {
+    console.log('deleting recipe');
+    this.recipesArr = this.recipesArr.filter(recipe => {
+      return recipe.id !== recipeID;
+    });
   }
 }
