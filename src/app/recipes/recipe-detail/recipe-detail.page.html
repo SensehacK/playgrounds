@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="recipes"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ loadedRecipe.title }}</ion-title>
+    <ion-title>{{ loadedRecipeMaster.name }}</ion-title>
     <ion-buttons slot="primary">
       <ion-button (click)="onDeleteRecipe()">
         <ion-icon name="trash" slot="icon-only"> </ion-icon>
@@ -16,28 +16,49 @@
   <ion-grid>
     <ion-row>
       <ion-col no-padding>
-        <ion-img [src]="loadedRecipe.imageURL"> </ion-img>
+        <ion-img [src]="loadedRecipeMaster.imageURL"> </ion-img>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col>
         <h1 text-center>
-          {{ loadedRecipe.title }}
+          {{ loadedRecipeMaster.name }}
         </h1>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <ion-list>
-          <ion-item *ngFor="let item of loadedRecipe.ingredients">
-            {{ item }}
+          <p>Ingredients</p>
+          <ion-item *ngFor="let item of loadedRecipeMaster.ingredients">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>
+                    <span> Name: {{ item.name }} </span>
+                  </div>
+                </ion-col>
+
+                <ion-col>
+                  <div>
+                    <span> Quantity: {{ item.quantity }} </span>
+                  </div>
+                </ion-col>
+
+                <ion-col>
+                  <div>
+                    <span> Type: {{ item.type }}</span>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
           </ion-item>
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <p>Hello Recipe Details Page!</p>
-  <p>{{ recipeMasterName }}</p>
+  <!-- <p>Hello Recipe Details Page!</p>
+  <p>{{ recipeMasterName }}</p> -->
 </ion-content>

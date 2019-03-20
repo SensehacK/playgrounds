@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { RecipesService } from '../recipes.service';
 import { Recipe } from '../recipe.model';
 import { AlertController } from '@ionic/angular';
+import { RecipeMaster } from '../recipeMaster.model';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -12,6 +13,9 @@ import { AlertController } from '@ionic/angular';
 export class RecipeDetailPage implements OnInit {
   loadedRecipe: Recipe;
   recipeID: string;
+  recipeMasterName: string;
+  recipeMaster: RecipeMaster[];
+  loadedRecipeMaster: RecipeMaster;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -29,6 +33,15 @@ export class RecipeDetailPage implements OnInit {
       this.recipeID = paramMap.get('recipeID');
       console.log('Recipe ID ', this.recipeID);
       this.loadedRecipe = this.recipeService.getRecipe(this.recipeID);
+
+      // MAster Recipe JSON data
+      this.recipeMasterName = this.recipeService.displayRecipeMaster();
+
+      this.recipeMaster = this.recipeService.getAllMasterRecipes();
+      // calling specific object for recipe
+      this.loadedRecipeMaster = this.recipeService.getMasterRecipe(
+        this.recipeID
+      );
     });
   }
 
@@ -46,7 +59,10 @@ export class RecipeDetailPage implements OnInit {
           {
             text: 'Delete',
             handler: () => {
+              // Old recipe data call
               this.recipeService.deleteRecipe(this.recipeID);
+              // new recipe data call
+              this.recipeService.deleteMasterRecipe(this.recipeID);
               this.router.navigate(['/recipes']);
             }
           }

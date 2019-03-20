@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from './recipe.model';
+import { RecipeMaster } from './recipeMaster.model';
+import { utils } from 'protractor';
+// import data from 'src/app/recipes/reci';
 
 @Injectable({
   providedIn: 'root'
@@ -36,9 +39,13 @@ export class RecipesService {
     }
   ];
 
+  // let routesObject:  = require('./src/app/recipes/recipeMaster.json');
 
+  private recipeMaster: RecipeMaster[];
 
   constructor() {
+    this.recipeMaster = require('./recipeMaster.json');
+    // this.recipeMaster = data;
   }
 
   getAllRecipes() {
@@ -56,6 +63,33 @@ export class RecipesService {
   deleteRecipe(recipeID: string) {
     console.log('deleting recipe');
     this.recipesArr = this.recipesArr.filter(recipe => {
+      return recipe.id !== recipeID;
+    });
+  }
+
+  displayRecipeMaster() {
+    console.log(this.recipeMaster);
+    console.log('$$$$$$');
+    console.log(this.recipeMaster[0].name);
+
+    return this.recipeMaster[0].name;
+  }
+
+  getAllMasterRecipes() {
+    return [...this.recipeMaster];
+  }
+
+  getMasterRecipe(recipeID: string) {
+    return {
+      ...this.recipeMaster.find(recipe => {
+        return recipe.id === recipeID;
+      })
+    };
+  }
+
+  deleteMasterRecipe(recipeID: string) {
+    console.log('deleting  Master recipe');
+    this.recipeMaster = this.recipeMaster.filter(recipe => {
       return recipe.id !== recipeID;
     });
   }
