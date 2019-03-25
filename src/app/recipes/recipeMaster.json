@@ -417,7 +417,7 @@
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless Chicken breasts, halved lengthwise",
+        "name": "Chicken",
         "type": "Meat"
       },
       {
@@ -497,7 +497,7 @@
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "name": "Goat",
         "type": "Meat"
       },
       {
@@ -573,11 +573,11 @@
   },
   {
     "id": "r11",
-    "name": "Chicken Feista",
+    "name": "Chicken Fiesta",
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "name": "Chicken Fiery",
         "type": "Meat"
       },
       {
@@ -657,7 +657,7 @@
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "name": "Chicken Ribs",
         "type": "Meat"
       },
       {
@@ -737,7 +737,7 @@
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "name": "Chicken Legs",
         "type": "Meat"
       },
       {
@@ -817,7 +817,7 @@
     "ingredients": [
       {
         "quantity": "3",
-        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "name": "Chicken Skin",
         "type": "Meat"
       },
       {

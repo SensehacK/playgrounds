@@ -30,25 +30,25 @@
     <ion-row>
       <ion-col>
         <ion-list>
-          <p>Ingredients</p>
+          <p><b>Ingredients</b></p>
           <ion-item *ngFor="let item of loadedRecipeMaster.ingredients">
             <ion-grid>
               <ion-row>
                 <ion-col>
                   <div>
-                    <span> Name: {{ item.name }} </span>
+                    <span><b> Name: </b><br />{{ item.name }} </span>
                   </div>
                 </ion-col>
 
                 <ion-col>
                   <div>
-                    <span> Quantity: {{ item.quantity }} </span>
+                    <span> Quantity: <br />{{ item.quantity }} </span>
                   </div>
                 </ion-col>
 
                 <ion-col>
                   <div>
-                    <span> Type: {{ item.type }}</span>
+                    <span> Type: <br />{{ item.type }}</span>
                   </div>
                 </ion-col>
               </ion-row>
