@@ -1,6 +1,15 @@
 const express = require('express');
 const app = express();
 
+// enable parsing object
+app.use(express.json());
+
+const courses = [
+    { id: 1, name: 'MobileWeb' },
+    { id: 2, name: 'InternetComp' },
+    { id: 3, name: 'Algorithm' },
+]
+
 
 app.get('/', (req, res) => {
     console.log('Hi reached main server');
@@ -10,11 +19,31 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/courses', (req, res) => {
-    res.send([1, 4, 6]);
+    res.send(courses);
 });
 
 app.get('/api/courses/:id', (req, res) => {
-    res.send(req.params.id);
+
+    let course = (courses.find(c => c.id === parseInt(req.params.id)));
+
+    if (!course) {
+        // 404 
+        res.status(404).send('The course wasn\'t found');
+    }
+    else {
+        res.send(course);
+    }
+
+    // res.send(req.params.id);
+});
+
+app.post('/api/courses', (req, res) => {
+    const course = {
+        id: courses.length + 1,
+        name: req.body.name
+    };
+    courses.push(course);
+    res.send(course);
 });
 
 /*
