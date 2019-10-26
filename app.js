@@ -1,21 +1,13 @@
 
 const EventEmitter = require('events')
-const emitter = new EventEmitter();
-
-
-var log = require('./logger');
-// Running the exported module for logger.
-
-log.log("Kautilya");
-
 
 // Trying Emitter and events
 
+const Logger = require('./logger');
+const logger = new Logger();
+
 // Listening an event
-emitter.on('Kautilya', function () {
-    console.log('Event Listened');
+logger.on('Kautilya', (args) => {
+    console.log('Event Listened', args);
 })
-
-// Raising an event
-emitter.emit('Kautilya');
-
+logger.log('SensehacK');
