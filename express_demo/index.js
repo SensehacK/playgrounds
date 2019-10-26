@@ -1,5 +1,7 @@
 const express = require('express');
+const Joi = require('joi');
 const app = express();
+
 
 // enable parsing object
 app.use(express.json());
@@ -38,6 +40,28 @@ app.get('/api/courses/:id', (req, res) => {
 });
 
 app.post('/api/courses', (req, res) => {
+
+
+    // Using Joi package for request input validation
+    const schema = {
+        name: Joi.string().min(3).required()
+    };
+
+    const result = Joi.validate(req.body, schema);
+    console.log(result);
+    if (result.error) {
+        res.status(400).send(result.error);
+        res.status(400).send(result.error.details[0].message);
+    }
+
+    if (!req.body.name || req.body.name.length < 3) {
+        //400 Bad request
+        res.status(400).send('Name is mandatory and should be greater than 3');
+        return;
+    }
+
+
+
     const course = {
         id: courses.length + 1,
         name: req.body.name
