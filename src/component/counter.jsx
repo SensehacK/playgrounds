@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { stat } from "fs";
 
 class Counter extends Component {
   state = {
