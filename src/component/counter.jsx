@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import { stat } from "fs";
 
 class Counter extends Component {
   state = {
     count: 2,
-    imgURL: "https://picsum.photos/250"
+    imgURL: "https://picsum.photos/250",
+    // tags: []
+    tags: ["tag1", "tag2", "tag3"]
   };
 
   styles = {
@@ -25,24 +28,45 @@ class Counter extends Component {
         <div>
           <span> {this.formatCountJSXExpressions()}</span>
         </div>
-
         <h4>
           <span> Setting Attributes</span>
         </h4>
         <img src={this.state.imgURL} />
-
-        <text> PAssing style object in expressions {"this.se"}</text>
+        <p> PAssing style object in expressions {"this.se"}</p>
         <p style={this.styles}> Img Random</p>
-
         <h5>Classes in React for Bootstrap CSs</h5>
         <span className="badge badge-primary m-2">YO YO </span>
         <button className="btn btn-secondary btn-sm">Counter</button>
-
         <p style={{ fontSize: 30 }}> Font size : 30</p>
-
         <h5> Conditional CSS properties</h5>
         <span className={this.getButtonColor()}>YO YO </span>
         <button className="btn btn-secondary btn-sm">Counter</button>
+        <ul>
+          {this.state.tags.map(tag => (
+            <li key={tag}> {tag} </li>
+          ))}
+        </ul>
+        <p> One more refactored array method</p>
+        {this.state.tags.length === 0 && "Please enter the array tags"}
+        {this.renderTagsArr()}
+
+        <h3>Increment Counters and properly set data</h3>
+        <span className="badge badge-primary m-2">{this.state.count} </span>
+        <button
+          className="btn btn-secondary btn-sm"
+          onClick={this.handleIncrement}
+        >
+          Counter+1
+        </button>
+
+        <h3>Parameter passing</h3>
+        <span className="badge badge-primary m-2">{this.state.count} </span>
+        <button
+          className="btn btn-secondary btn-sm"
+          onClick={() => this.onHandleIncrement({ id: 1 })}
+        >
+          Counter+2
+        </button>
       </React.Fragment>
     );
   }
@@ -53,6 +77,15 @@ class Counter extends Component {
     return classes;
   }
 
+  renderTagsArr() {
+    return (
+      <ul>
+        {this.state.tags.map(tag => (
+          <li key={tag}>{tag}</li>
+        ))}
+      </ul>
+    );
+  }
   formatCount() {
     return this.state.count === 0 ? "Zero" : this.state.count;
   }
@@ -61,6 +94,18 @@ class Counter extends Component {
     const { count } = this.state;
     return count === 5 ? <h1>Hell Sense {count}</h1> : count;
   }
+
+  handleIncrement = () => {
+    console.log("Hi in func increment");
+    // Updating the state
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  onHandleIncrement = product => {
+    console.log(product);
+    // Updating the state
+    this.setState({ count: this.state.count + 2 });
+  };
 }
 
 export default Counter;
