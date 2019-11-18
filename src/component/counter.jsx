@@ -30,7 +30,7 @@ class Counter extends Component {
         <h4>
           <span> Setting Attributes</span>
         </h4>
-        <img src={this.state.imgURL} />
+        <img src={this.state.imgURL} alt="Random Img Sum" />
         <p> PAssing style object in expressions {"this.se"}</p>
         <p style={this.styles}> Img Random</p>
         <h5>Classes in React for Bootstrap CSs</h5>
@@ -85,6 +85,7 @@ class Counter extends Component {
       </ul>
     );
   }
+
   formatCount() {
     return this.state.count === 0 ? "Zero" : this.state.count;
   }
