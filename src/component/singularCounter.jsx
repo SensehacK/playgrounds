@@ -5,7 +5,17 @@ class SingularCounter extends Component {
   //   value: this.props.counter.value ? this.props.counter.value : 0 // Setting counter value via props
   // };
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Singular Counter - Component Update");
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+  }
+  componentWillUnmount() {
+    console.log("Singular Counter - Component Unmount");
+  }
+
   render() {
+    console.log("Singular Counter - Rendered");
     // console.log("Render function called");
 
     // console.log(this.props);

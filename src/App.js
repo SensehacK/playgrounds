@@ -13,6 +13,19 @@ class App extends Component {
         ]
     };
 
+    constructor() {
+        super();
+        console.log('App - Constructor');
+    }
+
+    componentDidMount() {
+        console.log('App - ComponentDidMount');
+        // AJAX call are recommended after mounting
+
+    }
+
+
+
     resetCounters = () => {
         const counters = this.state.counters.map(c => {
             c.value = 0;
@@ -41,6 +54,8 @@ class App extends Component {
 
 
     render() {
+        console.log('App  - Rendered Component');
+
         return (
             <React.Fragment>
                 <NavBar
