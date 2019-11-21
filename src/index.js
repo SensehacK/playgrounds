@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import MainApp from './sense_blog/mainApp.js'
 // import 'font-awesome/css/font-awesome.min.css';
 
+// CSS
+import './css/App.css';
+
 const element = <h1>Hello SensehacK!</h1>
 
 /* Earlier Counters App code, 

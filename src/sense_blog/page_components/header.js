@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 // Font Awesome 
 // get our fontawesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab, faGithub, faLinkedinIn, faInstagram, faSpotify, faXbox, faLastfm } from '@fortawesome/free-brands-svg-icons'
-import { faCoffee, faTv } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn, faInstagram, faSpotify, faXbox, faLastfm } from '@fortawesome/free-brands-svg-icons'
+import { faTv } from '@fortawesome/free-solid-svg-icons';
 
 class Header extends Component {
     state = {}
@@ -48,9 +48,6 @@ class Header extends Component {
                         </a>
                     </li>
                 </ul>
-
-                <p>Header className!</p>
-
             </React.Fragment >
         );
     }
