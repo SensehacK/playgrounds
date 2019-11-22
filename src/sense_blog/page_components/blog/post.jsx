@@ -9,7 +9,10 @@ class Post extends Component {
     // debugger;
     return (
       <React.Fragment>
-        <h3>Counter #{this.props.id}</h3>
+        {/* <h3>Counter #{this.props.id}</h3> */}
+
+        <h1>Hello Kautilya</h1>
+
         <div className="title">
           <p>Title: {this.props.postObj.title}</p>
         </div>
