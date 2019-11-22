@@ -10,10 +10,12 @@ class MainApp extends Component {
     render() {
         return (
             <div>
-                <h1>Hello Sensehack!</h1>
                 <Header />
-                <Main />
-                <Nav />
+                <section>
+                    <Main />
+                    <Nav />
+                </section>
+                <h1>Hello Sensehack!</h1>
                 <Footer />
             </div>
 

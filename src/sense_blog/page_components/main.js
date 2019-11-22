@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import Post from './blog/post';
+import Posts from './blog/posts'
 
 class Main extends Component {
     state = {
@@ -32,22 +33,27 @@ class Main extends Component {
 
     render() {
         return (
-            <HashRouter>
-                <Switch>
-                    <Route exact path='/'
-                        render={(props) => <Post postObj={this.state.blog[0]} />}
-                    />
-                    <Route path='/post1'
-                        render={(props) => <Post postObj={this.state.blog[0]} />}
-                    />
-                    <Route path='/post2'
-                        render={(props) => <Post postObj={this.state.blog[1]} />}
-                    />
-                    <Route path='/post3'
-                        render={(props) => <Post postObj={this.state.blog[2]} />}
-                    />
-                </Switch>
-            </HashRouter>
+            <main>
+                <HashRouter>
+                    <Switch>
+                        <Route exact path='/'
+                            render={(props) => <Posts postsObj={this.state.blog} />}
+                        />
+                        {/* <Route exact path='/'
+                            render={(props) => <Post postObj={this.state.blog[0]} />}
+                        /> */}
+                        <Route path='/post1'
+                            render={(props) => <Post postObj={this.state.blog[0]} />}
+                        />
+                        <Route path='/post2'
+                            render={(props) => <Post postObj={this.state.blog[1]} />}
+                        />
+                        <Route path='/post3'
+                            render={(props) => <Post postObj={this.state.blog[2]} />}
+                        />
+                    </Switch>
+                </HashRouter>
+            </main>
         );
     }
 }

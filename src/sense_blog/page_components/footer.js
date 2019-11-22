@@ -8,20 +8,17 @@ class Footer extends Component {
     state = {}
     render() {
         return (
-            <div>
-                <p> Footer Class!</p>
-                <footer>
-                    <span>
-                        Copyright © Kautilya Save.
+            <footer>
+                <span>
+                    Copyright © Kautilya Save.
                     </span>
-                    <p>
-                        <a href="https://sensehack.github.io/" title="Sensehack" target="_blank">
-                            <FontAwesomeIcon icon={faUserCircle} />
-                            Kautilya Save.
+                <p>
+                    <a href="https://sensehack.github.io/" title="Sensehack" target="_blank">
+                        <FontAwesomeIcon icon={faUserCircle} />
+                        Kautilya Save.
                         </a>
-                    </p>
-                </footer>
-            </div >
+                </p>
+            </footer>
         );
     }
 }

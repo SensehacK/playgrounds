@@ -10,7 +10,7 @@ class Header extends Component {
     state = {}
     render() {
         return (
-            <React.Fragment>
+            <header>
                 <ul className="social">
                     <li>
                         <a href="https://github.com/SensehacK" title="Github" target="_blank">
@@ -48,7 +48,7 @@ class Header extends Component {
                         </a>
                     </li>
                 </ul>
-            </React.Fragment >
+            </header>
         );
     }
 }
