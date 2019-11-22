@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 class Footer extends Component {
@@ -10,8 +10,18 @@ class Footer extends Component {
         return (
             <div>
                 <p> Footer Class!</p>
-                <FontAwesomeIcon icon={faCoffee} />
-            </div>
+                <footer>
+                    <span>
+                        Copyright © Kautilya Save.
+                    </span>
+                    <p>
+                        <a href="https://sensehack.github.io/" title="Sensehack" target="_blank">
+                            <FontAwesomeIcon icon={faUserCircle} />
+                            Kautilya Save.
+                        </a>
+                    </p>
+                </footer>
+            </div >
         );
     }
 }
