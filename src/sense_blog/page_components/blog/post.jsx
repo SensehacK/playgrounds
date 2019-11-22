@@ -2,18 +2,21 @@ import React, { Component } from "react";
 
 class Post extends Component {
   state = {};
+
   render() {
-    console.log("In Post component");
+    console.log("In Post child component");
 
     console.log(this.props.postObj);
+    console.log(this.props.obj);
+
     // debugger;
     return (
       <React.Fragment>
         {/* <h3>Counter #{this.props.id}</h3> */}
 
-        <h1>Hello Kautilya</h1>
+        <h1>Hello Post child</h1>
 
-        <div className="title">
+        {/* <div className="title">
           <p>Title: {this.props.postObj.title}</p>
         </div>
         <div className="date">
@@ -24,7 +27,7 @@ class Post extends Component {
         </div>
         <div className="body">
           <p>Body: {this.props.postObj.body}</p>
-        </div>
+        </div> */}
       </React.Fragment>
     );
   }
