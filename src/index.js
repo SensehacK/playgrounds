@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "bootstrap/dist/css/bootstrap.css";
 // import App from './App.js'
-import MainApp from './sense_blog/mainApp.js'
+import MainApp from './sense_blog/mainApp'
 // import 'font-awesome/css/font-awesome.min.css';
 
 // CSS
