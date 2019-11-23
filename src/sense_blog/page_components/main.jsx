@@ -9,56 +9,81 @@ class Main extends Component {
     blog: [
       {
         id: 1,
-        title: "Dummy_Title 1",
+        title: "Save your Eyes in Digital Life!",
         date: "28/10/2019",
-        summary: "HEDFAFW",
+        summary: (
+          <p>
+            21st century we have been surrounded by screens everywhere &
+            excessive dependency on digital lifestyle could lead to weak eye
+            sight or eye strain. This article would help you to reduce some
+            symptoms related to headache & eye strains.
+          </p>
+        ),
+        body: (
+          <p>
+            <p>
+              Use apps who support Dark Mode extensively if you’re using your
+              phone or laptop at night before bed in poor light conditions.
+              AMOLED Screens are more beneficial for Dark Mode apps as they
+              would turn only the pixels which needs to be lighten up & others
+              would be off.
+            </p>
+            <p>
+              <a href="https://medium.com/@kautilyasave/save-your-eyes-in-digital-life-d1269f50c06e">
+                Save your Eyes in Digital Life!
+              </a>
+            </p>
+          </p>
+        )
+      },
+      {
+        id: 2,
+        title: "Apple Watch — Apple iOS Developer’s Perspective.",
+        date: "28/11/2019",
+        summary:
+          "A powerful device at your wrist available 24 x 7 at your disposal.",
         body: (
           <div>
-            <p>Dark Mode</p>
-
             <p>
-              Use apps who support Dark Mode extensively if you&rsquo;re using
-              your phone or laptop at night before bed in poor light conditions.
+              Being a user of Apple Watch S4 for the past month here is my
+              conclusive review of the newest series 4 by Apple from iOS
+              developer’s perspective. First of all, I would like to start with
+              the buyer’s perspective of whether 44k INR / US$ 429 is worth it
+              for you? Straight answer: I would say no, yet I went ahead and
+              pull the trigger on it. So opting in for No cost EMI x 9 months
+              gave me a perspective of investing in my health not directly
+              paying just once and getting over it.
             </p>
-
             <p>
-              AMOLED Screens are more beneficial for Dark Mode apps as they
-              would turn only the pixels which needs to be lighten up &amp;
-              others would be off. &quot;Dark Mode\n&quot; + \n&quot; + Use apps
-              who support Dark Mode extensively if you&rsquo;re using your phone
-              or laptop at night before bed in poor light conditions.\n&quot; +
-              \n&quot; + AMOLED Screens are more beneficial for Dark Mode apps
-              as they would turn only the pixels which needs to be lighten up
-              &amp; others would be off.\n&quot; + &quot;
+              <a href="https://medium.com/@kautilyasave/a-powerful-device-at-your-wrist-apple-ios-developers-perspective-a9237c51528a">
+                Apple Watch S4
+              </a>
             </p>
           </div>
         )
       },
       {
-        id: 2,
-        title: "Dummy_Title 2",
-        date: "28/11/2019",
-        summary: "HEDFAFW",
-        body:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus architecto voluptatibus ab iusto magni consequuntur \n" +
-          "fuga quas deserunt aspernatur unde, veritatis non, sapiente officiis officia recusandae hic commodi voluptatum, excepturi odio quod! \n" +
-          "Obcaecati saepe velit cumque sapiente in, nemo tenetur, aspernatur porro beatae dolorem sunt maiores error. Placeat blanditiis excepturi \n" +
-          "alias ex maxime earum eum dolore tempore. Optio qui, sapiente voluptatem laborum quis corporis voluptate error eligendi nihil \n" +
-          "autem officia recusandae odit tenetur totam amet, adipisci, iusto atque quia tempore modi. Sunt, excepturi praesentium vero enim ex\n" +
-          "earum similique quibusdam, consectetur pariatur ut aut nihil? Molestiae inventore eum qui?"
-      },
-      {
         id: 3,
-        title: "Dummy_Title 3",
+        title: "Top Ten Apple Watch Apps.",
         date: "28/12/2019",
-        summary: "HEDFAFW",
-        body:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus architecto voluptatibus ab iusto magni consequuntur \n" +
-          "fuga quas deserunt aspernatur unde, veritatis non, sapiente officiis officia recusandae hic commodi voluptatum, excepturi odio quod! \n" +
-          "Obcaecati saepe velit cumque sapiente in, nemo tenetur, aspernatur porro beatae dolorem sunt maiores error. Placeat blanditiis excepturi \n" +
-          "alias ex maxime earum eum dolore tempore. Optio qui, sapiente voluptatem laborum quis corporis voluptate error eligendi nihil \n" +
-          "autem officia recusandae odit tenetur totam amet, adipisci, iusto atque quia tempore modi. Sunt, excepturi praesentium vero enim ex\n" +
-          "earum similique quibusdam, consectetur pariatur ut aut nihil? Molestiae inventore eum qui?"
+        summary:
+          "When Apple released its new product as smartwatch developers & users began to wonder about its use case scenarios in daily life. Over the past few years, Apple has truly worked towards a common goal of making Apple Watch a great accessory or even a necessity. ",
+        body: (
+          <article>
+            <p>
+              Watch OS 5 also opens up new possibilities & various API for audio
+              streaming apps which overall has also driven more apps released
+              specifically for the Watch. A powerful device at your wrist
+              available 24 x 7 at your disposal could benefit powerful apps to
+              accelerate your lifestyle.
+            </p>
+            <p>
+              <a href="https://medium.com/@kautilyasave/top-ten-apple-watch-apps-4ac3af1eab1f">
+                Top Ten Watch OS Apps
+              </a>
+            </p>
+          </article>
+        )
       }
     ]
   };
