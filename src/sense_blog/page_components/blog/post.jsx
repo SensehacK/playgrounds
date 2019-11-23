@@ -10,19 +10,19 @@ class Post extends Component {
     return (
       <div className="postComponent">
         <div className="title">
-          <p>Title: {this.props.postObj.title}</p>
+          <span>Title: {this.props.postObj.title}</span>
         </div>
         <div className="date">
-          <p>Date: {this.props.postObj.date}</p>
+          <span>Date: {this.props.postObj.date}</span>
         </div>
         <div className="summary">
-          <p>Summary: {this.props.postObj.summary}</p>
+          <span>Summary: {this.props.postObj.summary}</span>
         </div>
         <div className="body">
-          <p>Body: {this.props.postObj.body}</p>
+          <span>Body: {this.props.postObj.body}</span>
         </div>
 
-        <p>Thanks!</p>
+        <span>Thanks!</span>
         <hr />
       </div>
     );
