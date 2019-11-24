@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-// TODO:
+import { BrowserRouter as Router } from "react-router-dom";
+
 class Header extends Component {
   state = {};
   render() {
@@ -8,17 +8,8 @@ class Header extends Component {
       <Router>
         <header>
           <ul className="social">
-            {/* Couldn't figure this out */}
-            {/* Link doesn't route properly but a href does */}
-            <li>
-              <Link to="/" />
-              !Hom
-            </li>
             <li>
               <a href="/">Home</a>
-            </li>
-            <li>
-              <Link to="/post2">!Post</Link>
             </li>
             <li>
               <a href="#/post1">Post1</a>

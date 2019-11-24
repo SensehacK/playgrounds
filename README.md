@@ -1,3 +1,38 @@
+# React Assignment 4
+
+The react webapp comprises of 3 blogs posts written by me and is consuming Google News API which refreshes its API content every 5 secs.
+
+I'm using Font awesome for awesome fonts as a dependency.
+Local JSON for my articles, many components for react and functions.
+
+For setting up you would need yarn or npm
+
+> npm install
+
+for installing all the node modules and dependencies
+
+And then running up the localhost server would be
+
+> npm start
+
+## Errors of package importing
+
+Execute these commands one at time depending on the package import error.
+Most probably, package.json should install just fine using Npm install but we never know.
+Web development breaks more things than it creates!
+
+```
+yarn add @fortawesome/free-brands-svg-icons
+yarn add @fortawesome/react-fontawesome
+yarn add --dev @fortawesome/fontawesome-svg-core
+yarn add react-router
+npm install react-router-dom
+```
+
+Thats it
+
+## Including the video of the website running properly.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

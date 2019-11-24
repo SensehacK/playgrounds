@@ -19,27 +19,37 @@ class Nav extends Component {
     var url =
       "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + apiKey;
 
-    // Without using await keyword, async programming
-    const newsApi = fetch(url)
-      .then(data => data.json())
-      .then(articles => articles["articles"]);
+    setInterval(async () => {
+      // Without using await keyword, async programming
+      const newsApi = fetch(url)
+        .then(data => data.json())
+        .then(articles => articles["articles"]);
 
-    // Unwrapping the data of a async promise
-    newsApi.then(jsonD => {
-      this.setState({
-        statePosts: jsonD,
-        isLoaded: true
+      console.log("Hi in NewsAPI");
+
+      // Unwrapping the data of a async promise
+      newsApi.then(jsonD => {
+        console.log(jsonD);
+        this.setState({
+          statePosts: jsonD,
+          isLoaded: true
+        });
       });
-    });
+    }, 5000);
   }
 
   render() {
+    console.log("Hi in Nav news Api");
+
     const { statePosts, isLoaded } = this.state;
     if (isLoaded) {
       return (
         <nav>
           <div>
             <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
               {statePosts &&
                 statePosts.map((post, key) => <li key={key}>{post.title}</li>)}
             </ul>

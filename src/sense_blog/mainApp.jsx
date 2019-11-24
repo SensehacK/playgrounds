@@ -13,6 +13,7 @@ class MainApp extends Component {
     };
     return (
       <div>
+        <Social />
         <Header />
         <section>
           <Main />
