@@ -15,6 +15,7 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+    var apiKey = "YOUR_GOOGLE_WEB_API_KEY";
     var url =
       "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + apiKey;
 
