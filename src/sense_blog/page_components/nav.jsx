@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { config } from "../../config";
+// import { config } from "../../config";
 
 class Nav extends Component {
   state = {
@@ -11,7 +11,7 @@ class Nav extends Component {
     super();
     console.log("In Nav, trying to access keys from config file");
 
-    console.log(config.SECRET_KEY);
+    // console.log(config.SECRET_KEY);
   }
 
   componentDidMount() {
