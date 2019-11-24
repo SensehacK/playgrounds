@@ -6,7 +6,6 @@ class Post extends Component {
 
   render() {
     var { postObj } = this.props;
-    console.log(postObj);
 
     return (
       <div className="postComponent">

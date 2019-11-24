@@ -31,9 +31,9 @@ npm install react-router-dom
 
 Thats it
 
-## Including the video of the website running properly.
+## Including the video of the website running properly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Link Photos](https://photos.app.goo.gl/rPuuhA8yqXSZFLGt7)
 
 ## Available Scripts
 
