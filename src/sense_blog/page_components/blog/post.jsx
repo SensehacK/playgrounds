@@ -1,28 +1,38 @@
 import React, { Component } from "react";
+// import { Link } from "react-router";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 class Post extends Component {
   state = {};
 
   render() {
     console.log("In Post child component");
-    console.log(this.props.postObj);
-    // debugger;
+    var { postObj } = this.props;
+    console.log(postObj);
+    console.log("/post" + postObj.id);
+
     return (
+      // <Link to {} > </Link>
       <div className="postComponent">
-        <div className="title">
-          <span>Title: {this.props.postObj.title}</span>
-        </div>
+        <Link to={`/post${postObj.id}`}>
+          <div className="title">
+            <span>Title: {postObj.title}</span>
+          </div>
+        </Link>
         <div className="date">
-          <span>Date: {this.props.postObj.date}</span>
+          <span>Date: {postObj.date}</span>
         </div>
         <div className="summary">
-          <span>Summary: {this.props.postObj.summary}</span>
+          <span>Summary: {postObj.summary}</span>
         </div>
         <div className="body">
-          <span>Body: {this.props.postObj.body}</span>
+          <span>Body: {postObj.body}</span>
         </div>
-
-        <span>Thanks!</span>
+        <div className="link">
+          <span>
+            <a href={postObj.ogUrl}>{postObj.ogUrl}</a>
+          </span>
+        </div>
         <hr />
       </div>
     );

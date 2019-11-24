@@ -7,7 +7,6 @@ class Posts extends Component {
   };
 
   componentWillMount() {
-    console.log("Component Will mount");
     // setting temporary array back to state
     const posts = [];
     this.props.postsObj.map(post => posts.push(post));
@@ -17,11 +16,10 @@ class Posts extends Component {
   }
 
   render() {
-    console.log("In Posts component");
     var { statePosts } = this.state;
     return (
       <div>
-        <h1>Hello Kautilya Posts Parent</h1>
+        <h1>Hello Kautilya</h1>
         {statePosts.map(post => (
           <Post key={post.id} postObj={post} />
         ))}

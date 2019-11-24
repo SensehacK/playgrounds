@@ -20,7 +20,7 @@ class Main extends Component {
           </p>
         ),
         body: (
-          <p>
+          <article>
             <p>
               Use apps who support Dark Mode extensively if you’re using your
               phone or laptop at night before bed in poor light conditions.
@@ -28,13 +28,10 @@ class Main extends Component {
               would turn only the pixels which needs to be lighten up & others
               would be off.
             </p>
-            <p>
-              <a href="https://medium.com/@kautilyasave/save-your-eyes-in-digital-life-d1269f50c06e">
-                Save your Eyes in Digital Life!
-              </a>
-            </p>
-          </p>
-        )
+          </article>
+        ),
+        ogUrl:
+          "https://medium.com/@kautilyasave/save-your-eyes-in-digital-life-d1269f50c06e"
       },
       {
         id: 2,
@@ -54,13 +51,10 @@ class Main extends Component {
               gave me a perspective of investing in my health not directly
               paying just once and getting over it.
             </p>
-            <p>
-              <a href="https://medium.com/@kautilyasave/a-powerful-device-at-your-wrist-apple-ios-developers-perspective-a9237c51528a">
-                Apple Watch S4
-              </a>
-            </p>
           </div>
-        )
+        ),
+        ogUrl:
+          "https://medium.com/@kautilyasave/a-powerful-device-at-your-wrist-apple-ios-developers-perspective-a9237c51528a"
       },
       {
         id: 3,
@@ -77,13 +71,10 @@ class Main extends Component {
               available 24 x 7 at your disposal could benefit powerful apps to
               accelerate your lifestyle.
             </p>
-            <p>
-              <a href="https://medium.com/@kautilyasave/top-ten-apple-watch-apps-4ac3af1eab1f">
-                Top Ten Watch OS Apps
-              </a>
-            </p>
           </article>
-        )
+        ),
+        ogUrl:
+          "https://medium.com/@kautilyasave/top-ten-apple-watch-apps-4ac3af1eab1f"
       }
     ]
   };
