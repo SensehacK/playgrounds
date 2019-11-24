@@ -24,7 +24,7 @@ class Posts extends Component {
         {/* Two Methods of accessing the same data */}
         <div>
           {/* Local Obj from React State */}
-          <h1>Hello Kautilya</h1>
+          <h2>Hello Kautilya</h2>
           {statePosts.map(post => (
             <Post key={post.id} postObj={post} />
           ))}

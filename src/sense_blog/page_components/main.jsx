@@ -10,7 +10,19 @@ class Main extends Component {
     blog: [...ArticlesData]
   };
 
+  constructor() {
+    super();
+  }
+
+  // componentDidMount() {
+  //   this.setState({
+  //     blog: [...ArticlesData]
+  //   });
+  // }
+
   render() {
+    console.log("In render method of Main");
+
     return (
       <main>
         <HashRouter>
