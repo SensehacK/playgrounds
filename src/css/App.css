@@ -48,11 +48,13 @@ nav {
 }
 
 a {
-  color: blueviolet;
+  color: #666;
+  /* Devil 666 Snip snip snip (Pusha T diss to Drake) */
 }
 
 a:hover {
-  color: greenyellow;
+  color: #680;
+  text-decoration: none;
 }
 
 /* Container for flexboxes */
@@ -70,10 +72,18 @@ section {
   padding: 20px;
 } */
 
+nav {
+  max-width: 200px;
+}
+
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0;
+}
+
+nav ul li {
+  padding: 15px;
 }
 
 /* Style the content */
@@ -99,4 +109,42 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+.postComponent {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  text-decoration: none;
+  /* font-size: 20em; */
+}
+
+.postComponent .title {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.postComponent .date {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.postComponent .summary {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.postComponent .body {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.postComponent .link {
+  background-color: rgb(219, 216, 216);
+  padding: 10px;
+  font-size: 1rem;
 }
