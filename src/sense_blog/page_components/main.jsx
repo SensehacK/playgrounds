@@ -14,12 +14,6 @@ class Main extends Component {
     super();
   }
 
-  // componentDidMount() {
-  //   this.setState({
-  //     blog: [...ArticlesData]
-  //   });
-  // }
-
   render() {
     console.log("In render method of Main");
 

@@ -40,9 +40,8 @@ class Nav extends Component {
         <nav>
           <div>
             <ul>
-              {statePosts.map((post, key) => (
-                <li key={key}>{post.title}</li>
-              ))}
+              {statePosts &&
+                statePosts.map((post, key) => <li key={key}>{post.title}</li>)}
             </ul>
           </div>
         </nav>

@@ -11,7 +11,8 @@ class Header extends Component {
             {/* Couldn't figure this out */}
             {/* Link doesn't route properly but a href does */}
             <li>
-              <Link to="/">!Home</Link>
+              <Link to="/" />
+              !Hom
             </li>
             <li>
               <a href="/">Home</a>

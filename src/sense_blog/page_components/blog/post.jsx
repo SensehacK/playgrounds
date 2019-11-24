@@ -18,6 +18,9 @@ class Post extends Component {
         <div className="date">
           <span>Date: {postObj.date}</span>
         </div>
+        <div className="postImage">
+          <img src={postObj.imgURL} alt="" />
+        </div>
         <div className="summary">
           <span>Summary: {postObj.summary}</span>
         </div>
@@ -26,7 +29,9 @@ class Post extends Component {
         </div>
         <div className="link">
           <span>Hosted on: </span>
-          <a href={postObj.ogUrl}>{postObj.ogUrl}</a>
+          <a href={postObj.ogUrl} target="_blank">
+            {postObj.ogUrl}
+          </a>
         </div>
         <hr />
       </div>

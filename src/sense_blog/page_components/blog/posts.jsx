@@ -22,20 +22,19 @@ class Posts extends Component {
     return (
       <div>
         {/* Two Methods of accessing the same data */}
-        <div>
-          {/* Local Obj from React State */}
-          <h2>Hello Kautilya</h2>
-          {statePosts.map(post => (
-            <Post key={post.id} postObj={post} />
-          ))}
-        </div>
 
+        {/* Local Obj from React State */}
+        {/* <div>
+          <h2>Hello Kautilya</h2>
+          {statePosts &&
+            statePosts.map(post => <Post key={post.id} postObj={post} />)}
+        </div> */}
+
+        {/* Local JSON import and direct map */}
         <div>
-          {/* Local JSON import and direct map */}
           <h2>Hello Sensehack</h2>
-          {ArticlesData.map((post, key) => (
-            <Post key={key} postObj={post} />
-          ))}
+          {ArticlesData &&
+            ArticlesData.map((post, key) => <Post key={key} postObj={post} />)}
         </div>
       </div>
     );
