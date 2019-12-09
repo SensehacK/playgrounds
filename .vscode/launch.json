@@ -8,8 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Node express_demo",
-      "program": "${workspaceFolder}/express_demo/app.js",
-      "skipFiles": ["<node_internals>/**"]
+      "program": "${workspaceFolder}/express_demo/app.js"
     },
 
     {
