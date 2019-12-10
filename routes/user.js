@@ -2,6 +2,7 @@
 const express = require('express')
 const mysql = require('mysql')
 
+
 const router = express.Router()
 
 
@@ -121,6 +122,14 @@ const pool = mysql.createPool({
     password: 'kautilya',
     database: 'node_js'
 })
+
+const pool_heroku = mysql.createPool({
+    host: 'host_name',
+    user: 'username',
+    password: 'password',
+    database: 'database_name'
+})
+
 
 function getConnection() {
     return pool
