@@ -22,14 +22,44 @@ router.get('/custom_user', (req, res) => {
 
 })
 
-router.get('/user/:id', (req, res) => {
+// Getting all the users
+router.get('/users', (req, res) => {
+    const connection = getConnection()
+
+    const queryString = 'SELECT * FROM users_test'
+    connection.query(queryString, (err, rows, field) => {
+
+        if (err) {
+            console.log('Error in the executing query', err);
+            res.send('Something unexpected happened');
+            // res.end()
+        }
+
+        if (rows.length === 0) {
+            console.log('Empty row query');
+            res.send('Query resulted no results, Please try with different input!')
+            res.end()
+        } else {
+            console.log('Hi fetching users successfully', rows);
+            const users = rows.map((row) => {
+                return {
+                    firstName: row.first_name,
+                    lastName: row.last_name
+                }
+            })
+            res.json(users)
+        }
+    })
+})
+
+router.get('/users/:id', (req, res) => {
     const id = req.params.id;
     console.log('Fetching user ID', id);
     // res.send('Getting the user ID')
 
     const connection = getConnection();
 
-    const queryString = 'SELECT * FROM users WHERE id = ?'
+    const queryString = 'SELECT * FROM users_test WHERE id = ?'
     connection.query(queryString, [id], (err, rows, fields) => {
 
         if (err) {
@@ -57,20 +87,25 @@ router.get('/user/:id', (req, res) => {
     // res.end()
 })
 
-// Getting all the users
-router.get('/users', (req, res) => {
-    const connection = getConnection()
 
-    const queryString = 'SELECT * FROM users'
-    connection.query(queryString, (err, rows, field) => {
+router.get('/user/:country', (req, res) => {
+    const country = req.params.country;
+    console.log('Fetching user country', country);
+    // res.send('Getting the user country')
+
+    const connection = getConnection();
+    // SELECT * FROM users_test WHERE country = 'usa';
+    const queryString = 'SELECT * FROM users_test WHERE country = ?'
+    connection.query(queryString, [country], (err, rows, fields) => {
 
         if (err) {
             console.log('Error in the executing query', err);
             res.send('Something unexpected happened');
             // res.end()
         }
-
         if (rows.length === 0) {
+            console.log(rows);
+
             console.log('Empty row query');
             res.send('Query resulted no results, Please try with different input!')
             res.end()
@@ -84,8 +119,60 @@ router.get('/users', (req, res) => {
             })
             res.json(users)
         }
+
     })
+
+    // res.end()
 })
+
+
+router.get('/user/:country/profession/:work', (req, res) => {
+    const country = req.params.country;
+    console.log('Fetching user country', country);
+
+    const work = req.params.work;
+    console.log('Fetching user work', work);
+
+    // res.send('Getting the user country')
+
+    const connection = getConnection();
+    // SELECT * FROM users_test WHERE country = 'usa';
+    // SELECT  *  FROM  users_test  WHERE  country = 'usa'  AND profession = 'programming';
+    const queryString = 'SELECT * FROM users_test WHERE country = ? AND profession = ?'
+    connection.query(queryString, [country, work], (err, rows, fields) => {
+
+        if (err) {
+            console.log('Error in the executing query', err);
+            res.send('Something unexpected happened');
+            // res.end()
+        }
+        if (rows.length === 0) {
+            console.log(rows);
+
+            console.log('Empty row query');
+            res.send('Query resulted no results, Please try with different input!')
+            res.end()
+        } else {
+            console.log('Hi fetching users successfully', rows);
+            const users = rows.map((row) => {
+                return {
+                    firstName: row.first_name,
+                    lastName: row.last_name
+                }
+            })
+            res.json(users)
+        }
+
+    })
+
+    // res.end()
+})
+
+
+
+
+
+
 
 router.post('/user_create', (req, res) => {
     console.log('In user Create service API endpoint');
@@ -95,7 +182,7 @@ router.post('/user_create', (req, res) => {
     const last_name = req.body.last_name
 
 
-    const queryString = 'INSERT INTO  users (first_name, last_name) VALUES (? , ?)'
+    const queryString = 'INSERT INTO users_test (first_name, last_name) VALUES (? , ?)'
 
     getConnection().query(queryString, [first_name, last_name], (err, results, field) => {
 
