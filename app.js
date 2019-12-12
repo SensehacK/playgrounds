@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 const router = require('./routes/user.js')
 app.use(router)
 
-const PORT = process.env.PORT || 3003
+const PORT = process.env.PORT || 3000
 
 // Wake up init PORT 3003
 app.listen(PORT, () => {

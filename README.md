@@ -64,6 +64,8 @@ Task Manager: Things by Cultured Code
 
 Terminal : iTerm
 
-### Authored by : [Kautilya Save](https://sensehack.github.io/)
+### Authored by : [Kautilya Save][abbas shamshi]
 
 ### [GitHub](https://github.com/SensehacK)
+
+### [GitHub](https://github.com/Abbas-shamshi)
