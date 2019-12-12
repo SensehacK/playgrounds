@@ -10,12 +10,18 @@
       "name": "Node express_demo",
       "program": "${workspaceFolder}/app.js"
     },
-
     {
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceFolder}/express_demo/index.js"
+    },
+    {
+      "name": "Docker Node.js Launch and Attach",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug",
+      "platform": "node"
     }
   ]
 }

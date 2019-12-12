@@ -26,6 +26,42 @@ docker run  -d --publish 6603:3306 --volume=/Users/SensehacK/Documents/GitHub/no
 /Users/SensehacK/Downloads/getting-started-docker-mysql-nodejs-master/mysql-microservice
 
 
+## Docker Hub publish
+
+
+### MYSQL Image
+docker build -t kautilyasave/sensehack-mysql .
+
+// Push the image to docker Hub
+docker push kautilyasave/sensehack-mysql
+
+// Run command with port and environment variables
+docker run  -d \
+--publish 3306:3306 \
+--volume=/Users/SensehacK/Documents/GitHub/nodejs/mysql/data:/var/lib/mysql \
+--name=sensehack-mysql-img kautilyasave/sensehack-mysql
+
+
+### Node JS Image
+docker build -t kautilyasave/sensehack-nodejs .
+
+// Push the image to docker Hub
+docker push kautilyasave/sensehack-nodejs
+
+
+// Run command
+docker run  -d \
+--publish 3000:3000 \
+-e MYSQL_USER='root' \
+-e MYSQL_PASSWORD='kautilya' \
+-e MYSQL_DATABASE='node_js' \
+-e MYSQL_HOST='172.17.0.2' \
+--link sensehack-mysql-img:db \
+--name=sensehack-nodejs-img kautilyasave/sensehack-nodejs
+
+// GREP IP address of MYSQL docker image running container
+MYSQL_HOST=  docker inspect sensehack-mysql-img | grep IPAddress
+
 
 
 docker build -t user-mysql-666 .
