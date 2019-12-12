@@ -18,9 +18,9 @@ Just npm install and nodemon app.js
 To get all the users
 https://vast-reef-06229.herokuapp.com/users
 
-/user/:id
+/users/:id
 To get specific ID of the user.
-https://vast-reef-06229.herokuapp.com/user/2
+https://vast-reef-06229.herokuapp.com/users/2
 
 Connected with MySql server for dynamic data
 
