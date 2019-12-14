@@ -44,7 +44,10 @@ router.get('/users', (req, res) => {
             const users = rows.map((row) => {
                 return {
                     firstName: row.first_name,
-                    lastName: row.last_name
+                    lastName: row.last_name,
+                    profession: row.profession,
+                    country: row.country,
+                    relation: row.relation
                 }
             })
             res.json(users)
@@ -52,7 +55,7 @@ router.get('/users', (req, res) => {
     })
 })
 
-router.get('/users/:id', (req, res) => {
+router.get('/user/:id', (req, res) => {
     const id = req.params.id;
     console.log('Fetching user ID', id);
     // res.send('Getting the user ID')
@@ -76,7 +79,10 @@ router.get('/users/:id', (req, res) => {
             const users = rows.map((row) => {
                 return {
                     firstName: row.first_name,
-                    lastName: row.last_name
+                    lastName: row.last_name,
+                    profession: row.profession,
+                    country: row.country,
+                    relation: row.relation
                 }
             })
             res.json(users)
@@ -88,7 +94,7 @@ router.get('/users/:id', (req, res) => {
 })
 
 
-router.get('/user/:country', (req, res) => {
+router.get('/users/:country', (req, res) => {
     const country = req.params.country;
     console.log('Fetching user country', country);
     // res.send('Getting the user country')
@@ -114,7 +120,10 @@ router.get('/user/:country', (req, res) => {
             const users = rows.map((row) => {
                 return {
                     firstName: row.first_name,
-                    lastName: row.last_name
+                    lastName: row.last_name,
+                    profession: row.profession,
+                    country: row.country,
+                    relation: row.relation
                 }
             })
             res.json(users)
@@ -126,7 +135,7 @@ router.get('/user/:country', (req, res) => {
 })
 
 
-router.get('/user/:country/profession/:work', (req, res) => {
+router.get('/users/:country/profession/:work', (req, res) => {
     const country = req.params.country;
     console.log('Fetching user country', country);
 
@@ -157,7 +166,10 @@ router.get('/user/:country/profession/:work', (req, res) => {
             const users = rows.map((row) => {
                 return {
                     firstName: row.first_name,
-                    lastName: row.last_name
+                    lastName: row.last_name,
+                    profession: row.profession,
+                    country: row.country,
+                    relation: row.relation
                 }
             })
             res.json(users)
@@ -176,22 +188,26 @@ router.get('/user/:country/profession/:work', (req, res) => {
 
 router.post('/user_create', (req, res) => {
     console.log('In user Create service API endpoint');
-    console.log('Logging the req of post data');
+    console.log('Logging the req of post data', req.body);
 
     const first_name = req.body.first_name
     const last_name = req.body.last_name
+    const profession = req.body.profession
+    const country = req.body.country
+    const location = req.body.location
+    const relation = req.body.relation
 
 
-    const queryString = 'INSERT INTO users_test (first_name, last_name) VALUES (? , ?)'
+    const queryString = 'INSERT INTO users_test (first_name, last_name, profession, country, location, relation) VALUES (?, ?, ?, ?, ?, ?)'
 
-    getConnection().query(queryString, [first_name, last_name], (err, results, field) => {
+    getConnection().query(queryString, [first_name, last_name, profession, country, location, relation], (err, results, field) => {
 
         if (err) {
             console.log('Error in the executing query', err);
             res.sendStatus(500);
             return;
         }
-        console.log('Inserted data to Database', first_name, last_name)
+        console.log('Inserted data to Database', first_name, last_name, profession, country)
 
         // We can't use "res object while in the body of executing the query"
         // res.send('Inserted data to Database', first_name, last_name);
@@ -203,6 +219,7 @@ router.post('/user_create', (req, res) => {
 
 })
 
+// '172.17.0.2' By default set code to get this host for docker image.
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
