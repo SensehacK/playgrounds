@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=16&amp;CharacterRangeLoc=968&amp;EndingColumnNumber=17&amp;EndingLineNumber=24&amp;StartingColumnNumber=1&amp;StartingLineNumber=24&amp;Timestamp=605380187.706618"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=30&amp;CharacterRangeLoc=1014&amp;EndingColumnNumber=0&amp;EndingLineNumber=26&amp;StartingColumnNumber=1&amp;StartingLineNumber=25&amp;Timestamp=605380187.70676"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1192&amp;EndingColumnNumber=1&amp;EndingLineNumber=32&amp;StartingColumnNumber=1&amp;StartingLineNumber=32&amp;Timestamp=605380187.70691"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=87&amp;CharacterRangeLoc=1192&amp;EndingColumnNumber=0&amp;EndingLineNumber=34&amp;StartingColumnNumber=1&amp;StartingLineNumber=32&amp;Timestamp=605380187.707103"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=16&amp;CharacterRangeLoc=1078&amp;EndingColumnNumber=0&amp;EndingLineNumber=29&amp;StartingColumnNumber=1&amp;StartingLineNumber=28&amp;Timestamp=605380187.707283"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1279&amp;EndingColumnNumber=0&amp;EndingLineNumber=34&amp;StartingColumnNumber=0&amp;StartingLineNumber=34&amp;Timestamp=605380187.7075289"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=13&amp;CharacterRangeLoc=1123&amp;EndingColumnNumber=18&amp;EndingLineNumber=30&amp;StartingColumnNumber=5&amp;StartingLineNumber=30&amp;Timestamp=605380187.7076989"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=15&amp;CharacterRangeLoc=1197&amp;EndingColumnNumber=21&amp;EndingLineNumber=32&amp;StartingColumnNumber=6&amp;StartingLineNumber=32&amp;Timestamp=605380187.707862"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=1314&amp;EndingColumnNumber=14&amp;EndingLineNumber=38&amp;StartingColumnNumber=4&amp;StartingLineNumber=38&amp;Timestamp=605380187.7080261"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/SensehacK/Documents/GitHub/Playgrounds/swift/Ex_Files_Swift_5_EssT/Exercise%20Files/AdventureSwift_Starter/Ch3_Working_with_Collections.playground/Pages/Core%20Array%20Methods.xcplaygroundpage#CharacterRangeLen=15&amp;CharacterRangeLoc=1424&amp;EndingColumnNumber=20&amp;EndingLineNumber=43&amp;StartingColumnNumber=5&amp;StartingLineNumber=43&amp;Timestamp=605380187.708182"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>
