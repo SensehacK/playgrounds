@@ -19,6 +19,10 @@ struct Item {
 
 struct Owner {
     var name: String
+    
+    func returnOwnerInfo() -> String {
+        return "\(name) is the current owner"
+    }
 }
 
 var questDirectory = [
@@ -33,4 +37,37 @@ var questDirectory = [
 ]
 
 // Creating the chain
+var rareDagger = Item(description: "Unique dagger", previousOwner: nil)
 
+var ownerName = Owner(name: "Kautilya")
+
+rareDagger.previousOwner = ownerName
+// Object needs to be initialized to work for optionals to go through next property : ?.name
+
+
+
+if let owner = rareDagger.previousOwner?.name {
+    print("The item used to be owned by \(owner)")
+} else {
+    print("The items history is not known")
+}
+
+rareDagger.previousOwner?.name = "Sensehack"
+
+if let ownerInfo = rareDagger.previousOwner?.returnOwnerInfo() {
+    print(ownerInfo)
+} else {
+    print("The owner is no where to be found.")
+}
+
+
+// Optional unwrapping dictionary
+
+if let gemstoneObjective = questDirectory["Fetch Gemstones"]?["Objective"] {
+    print(type(of: gemstoneObjective))
+    print(gemstoneObjective)
+    // Only if we wanted to directly get the object and then force unwrap optionals
+//    print(gemstoneObjective["Objective"])
+} else {
+    print("No gemstones objective found")
+}
