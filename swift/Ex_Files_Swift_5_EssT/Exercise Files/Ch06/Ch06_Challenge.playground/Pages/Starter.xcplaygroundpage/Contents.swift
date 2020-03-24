@@ -16,18 +16,48 @@
  
  */
 // 1
+class Item {
+    var name: String
+    var price: Int
+    var secret: BonusEffect?
 
 // 2
+    init(name:String = "Kautilya", price:Int = 666) {
+        self.name = name
+        self.price = price
+    }
+}
 
 // 3
-
+struct BonusEffect {
+   var bonus: Int
 // 4
+}
 
 // 5
+class Inventory  {
+    var storedItems: [Item]
 
 // 6
-
+    init(items: [Item]) {
+        self.storedItems = items
+    }
+}
 // 7
+var bonusEff = BonusEffect(bonus: 230)
+var item1 = Item(name: "Sensehack", price: 342)
+var item2 = Item(name: "Naresh", price: 123)
+
+// setting the optional bonus object and initializing the variable to item1 instance
+item1.secret = bonusEff
+
 
 // 8
 
+var inventoryObj = Inventory(items: [item1, item2])
+
+if let item1Bonus = inventoryObj.storedItems[0].secret?.bonus {
+    print("The item bonus is \(item1Bonus)")
+} else {
+    print("Item bonus not found")
+}

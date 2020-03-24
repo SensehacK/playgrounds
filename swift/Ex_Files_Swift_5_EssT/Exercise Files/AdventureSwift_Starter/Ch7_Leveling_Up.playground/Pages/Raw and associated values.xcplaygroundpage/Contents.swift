@@ -14,7 +14,39 @@
 
  */
 // Raw values
+enum NPCs: String {
+    case Village = "Not much useful for game"
+    case Blacksmith = "Gives all of the quest info"
+    case Merchant = "Unlimited number of users"
+}
+
+
+var blacksmith = NPCs.Blacksmith
+print(blacksmith.rawValue)
+
 
 
 // Associated values
 
+enum PlayerState {
+    case Alive
+    case KO(level: Int)
+    case Unknown(debugError: String)
+    
+    func evaluateState() {
+        switch self {
+        case .Alive:
+            print("The player is kicking")
+        case .KO(let restartLevel):
+            print("Game Over! Back to level \(restartLevel)")
+        case .Unknown(let errorStrg):
+            print(errorStrg)
+            
+        default :
+            print("Unknown state encountered")
+        }
+    }
+}
+
+
+PlayerState.KO(level: 3).evaluateState()

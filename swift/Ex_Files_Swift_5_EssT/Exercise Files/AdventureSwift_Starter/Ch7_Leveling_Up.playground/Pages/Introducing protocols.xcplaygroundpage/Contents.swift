@@ -15,7 +15,78 @@
 
  */
 // Declare a protocol
+protocol Collectable {
+    var name: String { get  }
+    var price: Int { get set }
+    
+    init(withName: String, startingPrice: Int)
+    
+    func collect() -> Bool
+    
+}
 
+extension Collectable {
+    var priceIncrease: Int {
+        return self.price * 10
+    }
+    
+    init(name: String) {
+        self.init(withName: name, startingPrice: 100)
+    }
+    
+    func collect() -> Bool {
+        print("Default item couldn't be collected...")
+        return false
+    }
+}
+
+
+
+protocol Useable {
+    func use()
+}
 
 // Protocol adoption
 
+class Item: Collectable, Useable {
+    
+    
+    var name: String
+    var price: Int
+    
+    required init(withName: String, startingPrice: Int) {
+        self.name = withName
+        self.price = startingPrice
+    }
+    
+//    func collect() -> Bool {
+//        print("Collected price")
+//        return true
+//    }
+    
+    func use() {
+        print("Item used")
+    }
+    
+    
+    
+}
+
+
+var potion = Item(withName: "HealthPotion", startingPrice: 23)
+potion.collect()
+potion.use()
+
+
+var antidote = Item(name: "Antidote")
+antidote.price
+antidote.priceIncrease
+
+
+extension String {
+    func fancyDebug() {
+        print("The string has \(self.count) characters")
+    }
+}
+
+antidote.name.fancyDebug()
