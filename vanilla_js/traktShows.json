@@ -1,0 +1,30 @@
+{
+    "id": 3682744386,
+    "watched_at": "2018-06-19T03:28:03.000Z",
+    "action": "checkin",
+    "type": "episode",
+    "episode": {
+        "season": 1,
+        "number": 11,
+        "title": "Tom's Rhinoplasty",
+        "ids": {
+            "trakt": 166536,
+            "tvdb": 179550,
+            "imdb": null,
+            "tmdb": 153597,
+            "tvrage": 159565
+        }
+    },
+    "show": {
+        "title": "South Park",
+        "year": 1997,
+        "ids": {
+            "trakt": 2177,
+            "slug": "south-park",
+            "tvdb": 75897,
+            "imdb": "tt0121955",
+            "tmdb": 2190,
+            "tvrage": 5266
+        }
+    }
+},

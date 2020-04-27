@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="beta"></div>
+
+<script>
+
+
+function UserAction() {
+    var url3 = "https://ip.jsontest.com/"
+    var url2 = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sensehack&limit=5&api_key=4ba03f783090e2ff9ec08e2a63be196b&format=json";
+    var url = "https://echo.jsontest.com/key/value/one/two"
+    var urlLastFm = `https://ws.audioscrobbler.com/2.0/
+                    ?method=user.getrecenttracks
+                    &user=sensehack
+                    &limit=5
+                    &api_key=4ba03f783090e2ff9ec08e2a63be196b
+                    &format=json`;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.responseType = 'json';
+    console.log(xhttp);
+    // console.log(JSON.parse(xhttp));
+    xhttp.open("GET", url, true);
+    // xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    console.log("agnkafkenj Hellos sens js")
+    console.log(xhttp.response)
+
+
+fetch(url)
+    .then(function(response) {
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+            // print("AGawrnw Hello")
+            // console.log(xhttp.response)
+    // do something with jsonResponse
+
+            console.log(jsonResponse)
+            console.log(typeof(jsonResponse))
+            console.log(jsonResponse.one)
+            console.log(jsonResponse.key)
+            
+
+         });
+
+
+// Last FM API Integration Testing
+fetch(url2)
+    .then(function(response) {
+    return response.json();
+        })
+        .then(function(jsonResponse) {
+            // print("AGawrnw Hello")
+            // console.log(xhttp.response)
+    // do something with jsonResponse
+
+            console.log(jsonResponse)
+            console.log("type of jsonresponse")
+            console.log(typeof(jsonResponse))
+           console.log("printing try artists")
+            console.log(jsonResponse.recenttracks.track[0].artist)
+            // console.log(jsonResponse.key)
+            
+            var data = jsonResponse.recenttracks.track[0].artist
+            console.log("printing url 2 data ")
+            console.log(data)
+
+            console.log("accessing artists")    
+            console.log(data['#text']) 
+
+            console.log("Finally was able to access the json data")
+            console.log("Thanks to Debashis")
+
+            /*
+    {
+    "recenttracks": {
+        "track": [
+            {
+                "artist": {
+                    "#text": "Kanye West",
+                    "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+                },
+                "name": "I Thought About Killing You",
+                "streamable": "0",
+            */
+         });
+
+
+
+
+    var newData = (XMLHttpRequest.responseText)
+    console.log(newData)
+ //   var responsed = JSON.parse(newData);
+ //   console.log(responsed)
+    
+  //  console.log(responsed.responseText)
+    // var responsed = JSON.parse(xhttp);
+   	// console.log("helo"+responsed);
+
+// console.log(xhttp.responseText);
+
+    // console.log(xhttp.responseText.toString)
+
+    // var dataR = xhttp.responseText.toString
+    // var dataRr = xhttp.toString
+
+//     console.log("Hello Sensehack")
+//     console.log(typeof(dataR))
+//     console.log(dataR)
+
+//     console.log("Hello Sensehack2")
+//     console.log(typeof(dataRr))
+//     console.log(dataRr)
+    
+//     console.log("Hello Sensehack3")
+//     // var userData = one;
+//     // var newData = userData;
+//     // console.log(newData)
+
+//     console.log(typeof(xhttp))
+//     console.log(typeof(xhttp.response))
+//     console.log(typeof(xhttp.responseText))
+//     console.log(xhttp.responseText) -->
+
+
+
+
+
+}
+
+</script>
+
+<button type="submit" onclick="UserAction()">Search</button>
+
+</body>
+</html>
