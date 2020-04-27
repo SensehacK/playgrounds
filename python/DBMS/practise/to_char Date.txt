@@ -1,8 +1,0 @@
-select * from sale
-select count(sid) from sale group by sldate
-
-select to_char(sldate , 'Month') as "Month" from sale
- 
-select to_char(sldate , 'Year') from sale
-select to_char(sldate , 'DD') from sale
-select to_char(sldate , 'YYYY') from sale

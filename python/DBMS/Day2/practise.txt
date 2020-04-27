@@ -1,8 +1,0 @@
-select * from employee;
-select concat(upper(ENAME),', ')||designation "Employee Details" from employee;
-select ename, to_char(doj,'Month-YYYY (Day)') "Joined In" from employee;
-select ename from employee where length(ename)>12;
-select ename, substr(ename,12,10) from employee where length(ename)>12;
-select ename from employee where upper(ename) like '%Y%';
-select salary from employee where salary = max(salary);
-select doj, round(abs(months_between(doj, sysdate)),2) "Experience in Months" from employee;
