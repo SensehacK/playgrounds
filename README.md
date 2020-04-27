@@ -18,9 +18,19 @@ Content would include :
 
 - Future plans -> - React Playground
 
+## Language
+
+Python: [Python](https://github.com/SensehacK/playgrounds/tree/master/python/)
+
 ## Projects
 
 Currently nothing is hosted to preview you would have to manually clone/download the project and build using respective instructions.
+
+### Python
+
+This repository consist most of my python coding experience at Infosys Foundation program. As much I love python, I just find it a bit slow and its indentation approach leaves much to desire. If I have to choose between Python, Java, Swift and Typescript. I’ll probably ditch python first.
+
+PyFoodSystem: [PyFoodSystem](https://github.com/SensehacK/playgrounds/tree/master/python/py-food-system)
 
 ## Build
 
