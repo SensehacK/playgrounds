@@ -1,3 +1,0 @@
-BEGIN
-INSERT INTO <Tablename> VALUES ();
-END;

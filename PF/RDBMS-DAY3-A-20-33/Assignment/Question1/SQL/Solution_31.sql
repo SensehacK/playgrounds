@@ -1,1 +1,0 @@
-select orderid,quotationid, status,pymtdate from orders where Status='Ordered';

@@ -1,1 +1,0 @@
-select itemcode , descr , price from item ;
