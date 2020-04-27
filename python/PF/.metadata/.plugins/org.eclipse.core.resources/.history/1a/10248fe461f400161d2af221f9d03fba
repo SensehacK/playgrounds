@@ -1,0 +1,36 @@
+'''
+Created on Feb 16, 2017
+
+@author: kautilya.save
+'''
+
+
+Val=3
+while(Val<6):
+    Val=Val+2
+    print( Val )
+
+
+n = [[4, 5, 7], [3, 5, 8], [4, 9, 6]]
+print (n[2])
+
+
+
+trainee_marks=[80,90,50]
+print(trainee_marks * 3)
+
+
+employee_id_list=[100,101,102,103,104]
+new_list=employee_id_list[-5:-2]
+print(new_list)
+
+
+
+
+
+tuple_of_banks=("SBI","RRB","HDFC")
+tuple_of_banks[1]="PNB"
+print(tuple_of_banks)
+   4. types_of_banks=["SBI","RRB","HDFC"]
+   5. types_of_banks[1]="PNB"
+   6. print(types_of_banks)

@@ -1,0 +1,5 @@
+
+
+
+select ename , vehiclename from emp e1 join
+vehicle v1

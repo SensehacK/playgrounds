@@ -1,0 +1,25 @@
+drop table registration;
+create table Registration(
+    UserName varchar2(50) primary key,
+    emailid varchar2(25),
+    mobilenumber number(10),
+    password varchar2(30) not null,
+    question varchar2(200) not null,
+    answer varchar2(100) not null,
+    cityname varchar2(20) not null,
+    area varchar2(20) not null,
+    state varchar2(20)
+);
+
+insert into registration values('Rohita','gvsrohita@dummymail.com',0123456789,'rohita@99','who is your favourite hero?','SRK','mysore','vijayanagara','karnataka');
+insert into registration values('Ritvik','gvkcritvik@dummymail.com',9087654321,'ritvik@97','who is your favourite hero?','Rajni Kanth','mysore','Infosys','karnataka');
+insert into registration values('Ramesh','gvramesh67@dummymail.com',8492348524,'ramesh@90','who is your favourite hero?','Daniel Crag','delhi','cp','karnataka');
+insert into registration values('Kautilya','kautilya@dummymail.com',1234567890,'kautilya@50','what is your favourite palce?','Shimla','delhi','cp','Delhi');
+insert into registration values('Gaurav','gaurav@dummymail.com',0987654321,'gaurav@20','what is your favourite food','noodles','delhi','rohini','delhi');
+insert into registration values('Anand','anand@dummymail.com',0987654321,'anand@21','what is your favourite food','pizza','pune','neru','pune');
+insert into registration values('Komal','komal@dummymail.com',0987654321,'komal@21','what is your favourite movie','ddlj','pune','neru','pune');
+insert into registration values('Vaibhav','vaibhav@dummymail.com',0987654321,'vaibhav@99','what is your favourite movie','ddlj','pune','magarpatta','pune');
+
+
+commit;
+select * from registration;

@@ -1,0 +1,514 @@
+2017-02-06 08:51:30,575 INFO  Loading Baseframework Plugin
+2017-02-06 08:51:30,700 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-06 08:51:33,174 INFO  Loading the Menu - HandsOn
+2017-02-06 08:51:33,189 INFO  Successfully loaded the Menu - HandsOn
+2017-02-06 11:23:35,898 INFO  Loading Programming Assignment Plugin
+2017-02-06 11:23:35,929 INFO  First line is not as expected!!!
+2017-02-06 11:23:55,104 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:23:55,104 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:23:55,104 INFO  Starting to parse the user solution
+2017-02-06 11:23:55,104 INFO  Displaying user solution
+2017-02-06 11:24:01,866 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n            return False\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = None\r\n                final_monthly_rent = None\r\n                discount_price = None\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() >= 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() >= 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() >= 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                return -1\r\n            \r\n            \r\n\r\nbasep = BasePackage(\"Kautilya\",\"Gold\",13)\r\nbasep.calculate_monthly_rent()\r\n                            \r\n                \r\n\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:24:01,866 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:24:01,866 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:24:01,866 INFO  Invoking the service to verify the user solution
+2017-02-06 11:24:01,866 INFO  Time before invoking service:Mon Feb 06 11:24:01 IST 2017
+2017-02-06 11:24:01,866 INFO  Initialising service address for VerifySolution
+2017-02-06 11:24:01,866 INFO  Time before invoking service In SUPER:Mon Feb 06 11:24:01 IST 2017
+2017-02-06 11:24:06,913 INFO  Time after invoking service In SUPER:Mon Feb 06 11:24:06 IST 2017
+2017-02-06 11:24:06,928 INFO  Service responded successfully with required details
+2017-02-06 11:24:06,928 INFO  Time after invoking service:Mon Feb 06 11:24:06 IST 2017
+2017-02-06 11:24:06,928 INFO  User solution successfully verified
+2017-02-06 11:24:06,928 INFO  Processing the response from verify service
+2017-02-06 11:24:06,928 INFO  Starting to parse JSON response
+2017-02-06 11:24:06,928 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,928 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,928 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,928 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,928 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:24:06,944 INFO  Successfully parsed JSON response
+2017-02-06 11:24:06,944 INFO  In the process of generating verify response in HTML
+2017-02-06 11:24:07,234 INFO  Successfully generated verify response in HTML
+2017-02-06 11:24:07,234 INFO  Successfully processed the response from service
+2017-02-06 11:25:07,963 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:25:07,963 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:25:07,963 INFO  Starting to parse the user solution
+2017-02-06 11:25:07,963 INFO  Displaying user solution
+2017-02-06 11:25:13,525 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n            return False\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = None\r\n                final_monthly_rent = None\r\n                discount_price = None\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                return -1\r\n            \r\n            \r\n\r\nbasep = BasePackage(\"Kautilya\",\"Gold\",13)\r\nbasep.calculate_monthly_rent()\r\n                            \r\n                \r\n\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:25:13,525 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:25:13,525 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:25:13,525 INFO  Invoking the service to verify the user solution
+2017-02-06 11:25:13,541 INFO  Time before invoking service:Mon Feb 06 11:25:13 IST 2017
+2017-02-06 11:25:13,541 INFO  Initialising service address for VerifySolution
+2017-02-06 11:25:13,541 INFO  Time before invoking service In SUPER:Mon Feb 06 11:25:13 IST 2017
+2017-02-06 11:25:17,661 INFO  Time after invoking service In SUPER:Mon Feb 06 11:25:17 IST 2017
+2017-02-06 11:25:17,661 INFO  Service responded successfully with required details
+2017-02-06 11:25:17,661 INFO  Time after invoking service:Mon Feb 06 11:25:17 IST 2017
+2017-02-06 11:25:17,661 INFO  User solution successfully verified
+2017-02-06 11:25:17,661 INFO  Processing the response from verify service
+2017-02-06 11:25:17,661 INFO  Starting to parse JSON response
+2017-02-06 11:25:17,661 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,661 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,661 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,661 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,661 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:25:17,676 INFO  Successfully parsed JSON response
+2017-02-06 11:25:17,676 INFO  In the process of generating verify response in HTML
+2017-02-06 11:25:17,770 INFO  Successfully generated verify response in HTML
+2017-02-06 11:25:17,770 INFO  Successfully processed the response from service
+2017-02-06 11:26:50,834 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:26:50,850 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:26:50,850 INFO  Starting to parse the user solution
+2017-02-06 11:26:50,865 INFO  Displaying user solution
+2017-02-06 11:26:55,446 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n            return False\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\nbasep2 = BasePackage(\"Sita\",\"Silver\",12)\r\nbasep2.calculate_monthly_rent()\r\n\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:26:55,446 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:26:55,446 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:26:55,446 INFO  Invoking the service to verify the user solution
+2017-02-06 11:26:55,446 INFO  Time before invoking service:Mon Feb 06 11:26:55 IST 2017
+2017-02-06 11:26:55,446 INFO  Initialising service address for VerifySolution
+2017-02-06 11:26:55,446 INFO  Time before invoking service In SUPER:Mon Feb 06 11:26:55 IST 2017
+2017-02-06 11:27:00,331 INFO  Time after invoking service In SUPER:Mon Feb 06 11:27:00 IST 2017
+2017-02-06 11:27:00,331 INFO  Service responded successfully with required details
+2017-02-06 11:27:00,331 INFO  Time after invoking service:Mon Feb 06 11:27:00 IST 2017
+2017-02-06 11:27:00,331 INFO  User solution successfully verified
+2017-02-06 11:27:00,331 INFO  Processing the response from verify service
+2017-02-06 11:27:00,331 INFO  Starting to parse JSON response
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:27:00,347 INFO  Successfully parsed JSON response
+2017-02-06 11:27:00,362 INFO  In the process of generating verify response in HTML
+2017-02-06 11:27:00,472 INFO  Successfully generated verify response in HTML
+2017-02-06 11:27:00,472 INFO  Successfully processed the response from service
+2017-02-06 11:28:52,747 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:28:52,747 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:28:52,747 INFO  Starting to parse the user solution
+2017-02-06 11:28:52,762 INFO  Displaying user solution
+2017-02-06 11:28:57,241 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\nbasep2 = BasePackage(\"Sita\",\"Silver\",12)\r\nbasep2.calculate_monthly_rent()\r\n\r\nbasep3 = BasePackage(\"Sita\",\"Gold\",25)\r\nbasep3.calculate_monthly_rent()\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:28:57,241 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:28:57,241 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:28:57,241 INFO  Invoking the service to verify the user solution
+2017-02-06 11:28:57,241 INFO  Time before invoking service:Mon Feb 06 11:28:57 IST 2017
+2017-02-06 11:28:57,241 INFO  Initialising service address for VerifySolution
+2017-02-06 11:28:57,241 INFO  Time before invoking service In SUPER:Mon Feb 06 11:28:57 IST 2017
+2017-02-06 11:29:01,469 INFO  Time after invoking service In SUPER:Mon Feb 06 11:29:01 IST 2017
+2017-02-06 11:29:01,469 INFO  Service responded successfully with required details
+2017-02-06 11:29:01,469 INFO  Time after invoking service:Mon Feb 06 11:29:01 IST 2017
+2017-02-06 11:29:01,469 INFO  User solution successfully verified
+2017-02-06 11:29:01,469 INFO  Processing the response from verify service
+2017-02-06 11:29:01,469 INFO  Starting to parse JSON response
+2017-02-06 11:29:01,469 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,469 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:29:01,485 INFO  Successfully parsed JSON response
+2017-02-06 11:29:01,485 INFO  In the process of generating verify response in HTML
+2017-02-06 11:29:01,579 INFO  Successfully generated verify response in HTML
+2017-02-06 11:29:01,579 INFO  Successfully processed the response from service
+2017-02-06 11:30:02,454 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:30:02,454 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:30:02,454 INFO  Starting to parse the user solution
+2017-02-06 11:30:02,469 INFO  Displaying user solution
+2017-02-06 11:30:06,202 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n        else :\r\n            return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\n# basep2 = BasePackage(\"Sita\",\"Silver\",12)\r\n# basep2.calculate_monthly_rent()\r\n\r\nbasep3 = BasePackage(\"Sita\",\"Gold\",25)\r\nbasep3.calculate_monthly_rent()\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:30:06,202 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:30:06,202 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:30:06,202 INFO  Invoking the service to verify the user solution
+2017-02-06 11:30:06,202 INFO  Time before invoking service:Mon Feb 06 11:30:06 IST 2017
+2017-02-06 11:30:06,202 INFO  Initialising service address for VerifySolution
+2017-02-06 11:30:06,202 INFO  Time before invoking service In SUPER:Mon Feb 06 11:30:06 IST 2017
+2017-02-06 11:30:10,352 INFO  Time after invoking service In SUPER:Mon Feb 06 11:30:10 IST 2017
+2017-02-06 11:30:10,352 INFO  Service responded successfully with required details
+2017-02-06 11:30:10,352 INFO  Time after invoking service:Mon Feb 06 11:30:10 IST 2017
+2017-02-06 11:30:10,352 INFO  User solution successfully verified
+2017-02-06 11:30:10,352 INFO  Processing the response from verify service
+2017-02-06 11:30:10,352 INFO  Starting to parse JSON response
+2017-02-06 11:30:10,352 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:30:10,368 INFO  Successfully parsed JSON response
+2017-02-06 11:30:10,368 INFO  In the process of generating verify response in HTML
+2017-02-06 11:30:10,462 INFO  Successfully generated verify response in HTML
+2017-02-06 11:30:10,477 INFO  Successfully processed the response from service
+2017-02-06 11:31:06,419 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:31:06,419 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:31:06,419 INFO  Starting to parse the user solution
+2017-02-06 11:31:06,419 INFO  Displaying user solution
+2017-02-06 11:31:09,942 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        \r\n        else :\r\n            \r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n        else :\r\n            return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\n# basep2 = BasePackage(\"Sita\",\"Silver\",12)\r\n# basep2.calculate_monthly_rent()\r\n\r\n# basep3 = BasePackage(\"Sita\",\"Gold\",25)\r\n# basep3.calculate_monthly_rent()\r\n\r\nbasep4 = BasePackage(\"Sita\",\"Silver\",15)\r\nbasep4.calculate_monthly_rent()\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:31:09,942 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:31:09,942 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:31:09,942 INFO  Invoking the service to verify the user solution
+2017-02-06 11:31:09,942 INFO  Time before invoking service:Mon Feb 06 11:31:09 IST 2017
+2017-02-06 11:31:09,942 INFO  Initialising service address for VerifySolution
+2017-02-06 11:31:09,942 INFO  Time before invoking service In SUPER:Mon Feb 06 11:31:09 IST 2017
+2017-02-06 11:31:13,665 INFO  Time after invoking service In SUPER:Mon Feb 06 11:31:13 IST 2017
+2017-02-06 11:31:13,665 INFO  Service responded successfully with required details
+2017-02-06 11:31:13,665 INFO  Time after invoking service:Mon Feb 06 11:31:13 IST 2017
+2017-02-06 11:31:13,665 INFO  User solution successfully verified
+2017-02-06 11:31:13,665 INFO  Processing the response from verify service
+2017-02-06 11:31:13,680 INFO  Starting to parse JSON response
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:31:13,680 INFO  Successfully parsed JSON response
+2017-02-06 11:31:13,680 INFO  In the process of generating verify response in HTML
+2017-02-06 11:31:13,790 INFO  Successfully generated verify response in HTML
+2017-02-06 11:31:13,790 INFO  Successfully processed the response from service
+2017-02-06 11:36:05,119 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:36:05,119 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:36:05,134 INFO  Starting to parse the user solution
+2017-02-06 11:36:05,134 INFO  Displaying user solution
+2017-02-06 11:36:10,063 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        \r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        else :\r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n            return True\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                print(base_pack)\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                print(\"validate else false\")\r\n                return -1\r\n        else :\r\n            return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\n# basep2 = BasePackage(\"Sita\",\"Silver\",12)\r\n# basep2.calculate_monthly_rent()\r\n\r\n# basep3 = BasePackage(\"Sita\",\"Gold\",25)\r\n# basep3.calculate_monthly_rent()\r\n\r\nbasep4 = BasePackage(\"Sita\",\"silver\",15)\r\nbasep4.calculate_monthly_rent()\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:36:10,063 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:36:10,063 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:36:10,079 INFO  Invoking the service to verify the user solution
+2017-02-06 11:36:10,079 INFO  Time before invoking service:Mon Feb 06 11:36:10 IST 2017
+2017-02-06 11:36:10,079 INFO  Initialising service address for VerifySolution
+2017-02-06 11:36:10,079 INFO  Time before invoking service In SUPER:Mon Feb 06 11:36:10 IST 2017
+2017-02-06 11:36:13,964 INFO  Time after invoking service In SUPER:Mon Feb 06 11:36:13 IST 2017
+2017-02-06 11:36:13,964 INFO  Service responded successfully with required details
+2017-02-06 11:36:13,964 INFO  Time after invoking service:Mon Feb 06 11:36:13 IST 2017
+2017-02-06 11:36:13,964 INFO  User solution successfully verified
+2017-02-06 11:36:13,964 INFO  Processing the response from verify service
+2017-02-06 11:36:13,979 INFO  Starting to parse JSON response
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:36:13,979 INFO  Successfully parsed JSON response
+2017-02-06 11:36:13,979 INFO  In the process of generating verify response in HTML
+2017-02-06 11:36:14,104 INFO  Successfully generated verify response in HTML
+2017-02-06 11:36:14,104 INFO  Successfully processed the response from service
+2017-02-06 11:37:36,011 INFO  Setting request parameters for VerifySolution
+2017-02-06 11:37:36,011 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 11:37:36,011 INFO  Starting to parse the user solution
+2017-02-06 11:37:36,011 INFO  Displaying user solution
+2017-02-06 11:37:39,934 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Exer-18\r\n#Start writing your code here\r\n\r\n\r\nfrom abc import ABCMeta , abstractmethod\r\n\r\nclass DirectToHomeService(metaclass = ABCMeta) :\r\n    __counter = 101\r\n    \r\n    def __init__(self,consumer_name):\r\n        self.__consumer_name = consumer_name\r\n        self.__consumer_number = DirectToHomeService.__counter\r\n        DirectToHomeService.__counter += 1\r\n\r\n    def get_consumer_name(self):\r\n        return self.__consumer_name\r\n\r\n    def get_consumer_number(self):\r\n        return self.__consumer_number\r\n        \r\n    @abstractmethod\r\n    def calculate_monthly_rent(self):\r\n        pass\r\n    \r\n    \r\n    \r\n    \r\nclass BasePackage(DirectToHomeService):\r\n    \r\n    def __init__(self,consumer_name,base_pack_name,subscription_period):\r\n        self.__base_pack_name = base_pack_name\r\n        self.__subscription_period = subscription_period\r\n        super().__init__(consumer_name)\r\n\r\n    def get_base_pack_name(self):\r\n        return self.__base_pack_name\r\n\r\n\r\n    def get_subscription_period(self):\r\n        return self.__subscription_period\r\n    \r\n    def validate_base_pack_name(self):\r\n        if self.get_base_pack_name() == \"Silver\" or self.get_base_pack_name() == \"Gold\" or self.get_base_pack_name() == \"Platinum\" :\r\n            return True\r\n        else :\r\n            self.__base_pack_name = \"Silver\"\r\n            print(\"Base package name is incorrect, set to Silver\")\r\n            return True\r\n        \r\n    \r\n    def calculate_monthly_rent(self):\r\n        \r\n        if self.get_subscription_period() >= 1 and self.get_subscription_period() <= 24 :\r\n            if self.validate_base_pack_name() :\r\n                base_pack = self.get_base_pack_name()\r\n                #print(base_pack)\r\n                base_price = 0\r\n                final_monthly_rent = None\r\n                discount_price = 0\r\n                if base_pack == \"Silver\" :\r\n                    base_price = 350.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 350.00\r\n                        \r\n                elif base_pack == \"Gold\" :\r\n                    base_price = 440.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 440.00\r\n                        \r\n                elif base_pack == \"Platinum\" :\r\n                    base_price = 560.00\r\n                    if self.get_subscription_period() > 12 :\r\n                        discount_price = 560.00\r\n                        \r\n                        \r\n                final_monthly_rent = ( (base_price * self.get_subscription_period() ) - discount_price ) / self.get_subscription_period()\r\n                print(final_monthly_rent)\r\n                \r\n                return final_monthly_rent\r\n            \r\n            else :\r\n                print(\"validate else false\")\r\n                return -1\r\n        else :\r\n            return -1\r\n            \r\n            \r\n\r\n# basep = BasePackage(\"Kautilya\",\"Gold\",13)\r\n# basep.calculate_monthly_rent()\r\n#                             \r\n# basep2 = BasePackage(\"Sita\",\"Silver\",12)\r\n# basep2.calculate_monthly_rent()\r\n\r\n# basep3 = BasePackage(\"Sita\",\"Gold\",25)\r\n# basep3.calculate_monthly_rent()\r\n\r\nbasep4 = BasePackage(\"Sita\",\"silver\",15)\r\nbasep4.calculate_monthly_rent()\r\n\r\n            \r\n                \r\n        \r\n    \r\n    \r\n    \r\n    \r\n","asgnmtId":"18","SolutionFileName":"Exercise18.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-06 11:37:39,934 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 11:37:39,934 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 11:37:39,934 INFO  Invoking the service to verify the user solution
+2017-02-06 11:37:39,950 INFO  Time before invoking service:Mon Feb 06 11:37:39 IST 2017
+2017-02-06 11:37:39,950 INFO  Initialising service address for VerifySolution
+2017-02-06 11:37:39,950 INFO  Time before invoking service In SUPER:Mon Feb 06 11:37:39 IST 2017
+2017-02-06 11:37:43,479 INFO  Time after invoking service In SUPER:Mon Feb 06 11:37:43 IST 2017
+2017-02-06 11:37:43,479 INFO  Service responded successfully with required details
+2017-02-06 11:37:43,479 INFO  Time after invoking service:Mon Feb 06 11:37:43 IST 2017
+2017-02-06 11:37:43,479 INFO  User solution successfully verified
+2017-02-06 11:37:43,479 INFO  Processing the response from verify service
+2017-02-06 11:37:43,495 INFO  Starting to parse JSON response
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 11:37:43,495 INFO  Successfully parsed JSON response
+2017-02-06 11:37:43,495 INFO  In the process of generating verify response in HTML
+2017-02-06 11:37:43,589 INFO  Successfully generated verify response in HTML
+2017-02-06 11:37:43,589 INFO  Successfully processed the response from service
+2017-02-06 11:39:20,467 INFO  Initiating to process and prepare Input for the submit service
+2017-02-06 11:39:20,467 INFO  Displaying user solution
+2017-02-06 11:39:20,498 INFO  Successfully processed and prepared the input for the submit service
+2017-02-06 11:39:20,498 INFO  Invoking the service to submit the user solution
+2017-02-06 11:39:20,498 INFO  Initialising service address for Submit
+2017-02-06 11:39:20,498 INFO  Time before invoking service In SUPER:Mon Feb 06 11:39:20 IST 2017
+2017-02-06 11:39:20,623 INFO  Time after invoking service In SUPER:Mon Feb 06 11:39:20 IST 2017
+2017-02-06 11:39:20,623 INFO  Service responded successfully with required details
+2017-02-06 11:39:20,623 INFO  User solution successfully submitted
+2017-02-06 11:39:20,639 INFO  Displaying submission status
+2017-02-06 11:39:20,639 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-06 14:58:40,587 INFO  Setting request parameters for VerifySolution
+2017-02-06 14:58:40,587 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 14:58:40,603 INFO  Starting to parse the user solution
+2017-02-06 14:58:40,603 INFO  Displaying user solution
+2017-02-06 14:58:53,115 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            self.set_required_stock_available(required_quantity)\r\n            return True\r\n        else :\r\n            self.set_required_stock_available(required_quantity)\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        \r\n         \r\n    \r\n    \r\n    def check_level(self):\r\n        if self.get_flower_name() == \"Orchid\" :\r\n            self.set_stock_available(15)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            self.set_stock_available(25)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            self.set_stock_available(40)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n        \r\n        \r\n        return False\r\n    \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.sell_flower(10)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rose\")\r\nf2.set_price_per_kg(20)\r\nf2.sell_flower(23)\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 14:58:53,130 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 14:58:53,130 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 14:58:53,130 INFO  Invoking the service to verify the user solution
+2017-02-06 14:58:53,130 INFO  Time before invoking service:Mon Feb 06 14:58:53 IST 2017
+2017-02-06 14:58:53,130 INFO  Initialising service address for VerifySolution
+2017-02-06 14:58:53,130 INFO  Time before invoking service In SUPER:Mon Feb 06 14:58:53 IST 2017
+2017-02-06 14:58:57,304 INFO  Time after invoking service In SUPER:Mon Feb 06 14:58:57 IST 2017
+2017-02-06 14:58:57,304 INFO  Service responded successfully with required details
+2017-02-06 14:58:57,304 INFO  Time after invoking service:Mon Feb 06 14:58:57 IST 2017
+2017-02-06 14:58:57,304 INFO  User solution successfully verified
+2017-02-06 14:58:57,304 INFO  Processing the response from verify service
+2017-02-06 14:58:57,320 INFO  Starting to parse JSON response
+2017-02-06 14:58:57,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,320 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 14:58:57,335 INFO  Successfully parsed JSON response
+2017-02-06 14:58:57,335 INFO  In the process of generating verify response in HTML
+2017-02-06 14:58:57,460 INFO  Successfully generated verify response in HTML
+2017-02-06 14:58:57,460 INFO  Successfully processed the response from service
+2017-02-06 15:02:09,056 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:02:09,203 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:02:09,203 INFO  Starting to parse the user solution
+2017-02-06 15:02:09,203 INFO  Displaying user solution
+2017-02-06 15:02:18,391 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            self.set_required_stock_available(required_quantity)\r\n            return True\r\n        else :\r\n            self.set_required_stock_available(required_quantity)\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        \r\n         \r\n    \r\n    \r\n    def check_level(self):\r\n        if self.get_flower_name() == \"Orchid\" :\r\n            #self.set_stock_available(15)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            #self.set_stock_available(25)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            #self.set_stock_available(40)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n        \r\n        \r\n        return False\r\n    \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.sell_flower(10)\r\nf1.set_stock_available(40)\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rose\")\r\nf2.set_price_per_kg(20)\r\nf2.sell_flower(23)\r\nf2.set_stock_available(40)\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.sell_flower(32)\r\nf3.set_stock_available(40)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:02:18,391 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:02:18,391 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:02:18,391 INFO  Invoking the service to verify the user solution
+2017-02-06 15:02:18,391 INFO  Time before invoking service:Mon Feb 06 15:02:18 IST 2017
+2017-02-06 15:02:18,391 INFO  Initialising service address for VerifySolution
+2017-02-06 15:02:18,391 INFO  Time before invoking service In SUPER:Mon Feb 06 15:02:18 IST 2017
+2017-02-06 15:02:22,344 INFO  Time after invoking service In SUPER:Mon Feb 06 15:02:22 IST 2017
+2017-02-06 15:02:22,360 INFO  Service responded successfully with required details
+2017-02-06 15:02:22,360 INFO  Time after invoking service:Mon Feb 06 15:02:22 IST 2017
+2017-02-06 15:02:22,360 INFO  User solution successfully verified
+2017-02-06 15:02:22,360 INFO  Processing the response from verify service
+2017-02-06 15:02:22,360 INFO  Starting to parse JSON response
+2017-02-06 15:02:22,360 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,360 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,376 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,391 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,391 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:02:22,391 INFO  Successfully parsed JSON response
+2017-02-06 15:02:22,391 INFO  In the process of generating verify response in HTML
+2017-02-06 15:02:22,470 INFO  Successfully generated verify response in HTML
+2017-02-06 15:02:22,470 INFO  Successfully processed the response from service
+2017-02-06 15:07:21,405 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:07:21,405 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:07:21,405 INFO  Starting to parse the user solution
+2017-02-06 15:07:21,405 INFO  Displaying user solution
+2017-02-06 15:07:28,494 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            print(\"Hello\")\r\n            return True\r\n        else :\r\n            print(\"Hello else \" )\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        \r\n         \r\n    \r\n    \r\n    def check_level(self):\r\n        print()\r\n        if self.get_flower_name() == \"Orchid\" :\r\n            #self.set_stock_available(15)\r\n            print(self.get_stock_available())\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            #self.set_stock_available(25)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            #self.set_stock_available(40)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n        \r\n        \r\n        return False\r\n    \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(40)\r\nf1.sell_flower(10)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rose\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:07:28,494 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:07:28,494 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:07:28,494 INFO  Invoking the service to verify the user solution
+2017-02-06 15:07:28,494 INFO  Time before invoking service:Mon Feb 06 15:07:28 IST 2017
+2017-02-06 15:07:28,494 INFO  Initialising service address for VerifySolution
+2017-02-06 15:07:28,494 INFO  Time before invoking service In SUPER:Mon Feb 06 15:07:28 IST 2017
+2017-02-06 15:07:32,155 INFO  Time after invoking service In SUPER:Mon Feb 06 15:07:32 IST 2017
+2017-02-06 15:07:32,155 INFO  Service responded successfully with required details
+2017-02-06 15:07:32,155 INFO  Time after invoking service:Mon Feb 06 15:07:32 IST 2017
+2017-02-06 15:07:32,171 INFO  User solution successfully verified
+2017-02-06 15:07:32,171 INFO  Processing the response from verify service
+2017-02-06 15:07:32,171 INFO  Starting to parse JSON response
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,171 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:07:32,187 INFO  Successfully parsed JSON response
+2017-02-06 15:07:32,187 INFO  In the process of generating verify response in HTML
+2017-02-06 15:07:32,300 INFO  Successfully generated verify response in HTML
+2017-02-06 15:07:32,300 INFO  Successfully processed the response from service
+2017-02-06 15:14:16,262 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:14:16,278 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:14:16,278 INFO  Starting to parse the user solution
+2017-02-06 15:14:16,278 INFO  Displaying user solution
+2017-02-06 15:14:31,275 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        \r\n         \r\n    \r\n    \r\n    def check_level(self):\r\n        print()\r\n        if self.get_flower_name() == \"Orchid\" :\r\n            #self.set_stock_available(15)\r\n            print(self.get_stock_available())\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            #self.set_stock_available(25)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            #self.set_stock_available(40)\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n        \r\n        \r\n        return False\r\n    \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(40)\r\nf1.sell_flower(10)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rose\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:14:31,275 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:14:31,275 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:14:31,275 INFO  Invoking the service to verify the user solution
+2017-02-06 15:14:31,291 INFO  Time before invoking service:Mon Feb 06 15:14:31 IST 2017
+2017-02-06 15:14:31,291 INFO  Initialising service address for VerifySolution
+2017-02-06 15:14:31,291 INFO  Time before invoking service In SUPER:Mon Feb 06 15:14:31 IST 2017
+2017-02-06 15:14:35,090 INFO  Time after invoking service In SUPER:Mon Feb 06 15:14:35 IST 2017
+2017-02-06 15:14:35,090 INFO  Service responded successfully with required details
+2017-02-06 15:14:35,090 INFO  Time after invoking service:Mon Feb 06 15:14:35 IST 2017
+2017-02-06 15:14:35,105 INFO  User solution successfully verified
+2017-02-06 15:14:35,105 INFO  Processing the response from verify service
+2017-02-06 15:14:35,105 INFO  Starting to parse JSON response
+2017-02-06 15:14:35,121 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,121 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,121 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,121 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,152 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,152 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:14:35,152 INFO  Successfully parsed JSON response
+2017-02-06 15:14:35,168 INFO  In the process of generating verify response in HTML
+2017-02-06 15:14:35,246 INFO  Successfully generated verify response in HTML
+2017-02-06 15:14:35,262 INFO  Successfully processed the response from service
+2017-02-06 15:23:18,284 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:23:18,300 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:23:18,315 INFO  Starting to parse the user solution
+2017-02-06 15:23:18,315 INFO  Displaying user solution
+2017-02-06 15:23:34,699 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            return True\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        else : \r\n            print(\"Didnt execute\")            \r\n\r\n    \r\n    def check_level(self):\r\n        \r\n        if self.get_flower_name() == \"Orchid\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n        \r\n     \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(40)\r\nf1.sell_flower(10)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rosee\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:23:34,699 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:23:34,699 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:23:34,715 INFO  Invoking the service to verify the user solution
+2017-02-06 15:23:34,715 INFO  Time before invoking service:Mon Feb 06 15:23:34 IST 2017
+2017-02-06 15:23:34,715 INFO  Initialising service address for VerifySolution
+2017-02-06 15:23:34,716 INFO  Time before invoking service In SUPER:Mon Feb 06 15:23:34 IST 2017
+2017-02-06 15:23:38,772 INFO  Time after invoking service In SUPER:Mon Feb 06 15:23:38 IST 2017
+2017-02-06 15:23:38,772 INFO  Service responded successfully with required details
+2017-02-06 15:23:38,772 INFO  Time after invoking service:Mon Feb 06 15:23:38 IST 2017
+2017-02-06 15:23:38,772 INFO  User solution successfully verified
+2017-02-06 15:23:38,787 INFO  Processing the response from verify service
+2017-02-06 15:23:38,787 INFO  Starting to parse JSON response
+2017-02-06 15:23:38,803 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,803 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,803 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,803 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,803 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,818 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:23:38,834 INFO  Successfully parsed JSON response
+2017-02-06 15:23:38,834 INFO  In the process of generating verify response in HTML
+2017-02-06 15:23:38,928 INFO  Successfully generated verify response in HTML
+2017-02-06 15:23:39,335 INFO  Successfully processed the response from service
+2017-02-06 15:30:49,425 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:30:49,440 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:30:49,440 INFO  Starting to parse the user solution
+2017-02-06 15:30:49,440 INFO  Displaying user solution
+2017-02-06 15:31:09,766 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        else : \r\n            self.set_stock_available(False)\r\n            print(\"Didnt execute\")            \r\n\r\n    \r\n    def check_level(self):\r\n        \r\n        if self.get_flower_name() == \"Orchid\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n     \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(50)\r\nf1.sell_flower(60)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rosee\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:31:09,781 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:31:09,781 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:31:09,797 INFO  Invoking the service to verify the user solution
+2017-02-06 15:31:09,797 INFO  Time before invoking service:Mon Feb 06 15:31:09 IST 2017
+2017-02-06 15:31:09,797 INFO  Initialising service address for VerifySolution
+2017-02-06 15:31:09,813 INFO  Time before invoking service In SUPER:Mon Feb 06 15:31:09 IST 2017
+2017-02-06 15:31:14,731 INFO  Time after invoking service In SUPER:Mon Feb 06 15:31:14 IST 2017
+2017-02-06 15:31:14,731 INFO  Service responded successfully with required details
+2017-02-06 15:31:14,746 INFO  Time after invoking service:Mon Feb 06 15:31:14 IST 2017
+2017-02-06 15:31:14,746 INFO  User solution successfully verified
+2017-02-06 15:31:14,746 INFO  Processing the response from verify service
+2017-02-06 15:31:14,746 INFO  Starting to parse JSON response
+2017-02-06 15:31:14,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,778 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,778 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,778 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,778 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,778 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,793 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:31:14,793 INFO  Successfully parsed JSON response
+2017-02-06 15:31:14,793 INFO  In the process of generating verify response in HTML
+2017-02-06 15:31:14,918 INFO  Successfully generated verify response in HTML
+2017-02-06 15:31:14,918 INFO  Successfully processed the response from service
+2017-02-06 15:32:16,536 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:32:16,552 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:32:16,552 INFO  Starting to parse the user solution
+2017-02-06 15:32:16,567 INFO  Displaying user solution
+2017-02-06 15:32:27,405 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"Orchid\"  or self.get_flower_name() == \"Rose\" or  self.get_flower_name() == \"Jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        else : \r\n            return False\r\n#             print(\"Didnt execute\")            \r\n\r\n    \r\n    def check_level(self):\r\n        \r\n        if self.get_flower_name() == \"Orchid\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"Rose\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"Jasmine\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n            \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(50)\r\nf1.sell_flower(60)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rosee\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:32:27,405 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:32:27,405 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:32:27,420 INFO  Invoking the service to verify the user solution
+2017-02-06 15:32:27,420 INFO  Time before invoking service:Mon Feb 06 15:32:27 IST 2017
+2017-02-06 15:32:27,420 INFO  Initialising service address for VerifySolution
+2017-02-06 15:32:27,420 INFO  Time before invoking service In SUPER:Mon Feb 06 15:32:27 IST 2017
+2017-02-06 15:32:31,092 INFO  Time after invoking service In SUPER:Mon Feb 06 15:32:31 IST 2017
+2017-02-06 15:32:31,092 INFO  Service responded successfully with required details
+2017-02-06 15:32:31,108 INFO  Time after invoking service:Mon Feb 06 15:32:31 IST 2017
+2017-02-06 15:32:31,108 INFO  User solution successfully verified
+2017-02-06 15:32:31,108 INFO  Processing the response from verify service
+2017-02-06 15:32:31,108 INFO  Starting to parse JSON response
+2017-02-06 15:32:31,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,123 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,139 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,139 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:32:31,139 INFO  Successfully parsed JSON response
+2017-02-06 15:32:31,139 INFO  In the process of generating verify response in HTML
+2017-02-06 15:32:31,248 INFO  Successfully generated verify response in HTML
+2017-02-06 15:32:31,248 INFO  Successfully processed the response from service
+2017-02-06 15:33:32,717 INFO  Setting request parameters for VerifySolution
+2017-02-06 15:33:32,717 INFO  Initiating to process and prepare Input for the verify service
+2017-02-06 15:33:32,717 INFO  Starting to parse the user solution
+2017-02-06 15:33:32,718 INFO  Displaying user solution
+2017-02-06 15:33:40,706 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-10\r\n#Start writing your code here\r\n\r\n\r\n\r\nclass Flower :\r\n    \r\n    def __init__(self):\r\n        self.__flower_name = None\r\n        self.__price_per_kg = None\r\n        self.__stock_available = None\r\n        self.__required_stock_available = None\r\n        \r\n    def get_flower_name(self):\r\n        return self.__flower_name\r\n\r\n\r\n    def get_price_per_kg(self):\r\n        return self.__price_per_kg\r\n\r\n    def get_required_stock_available(self):\r\n        return self.__required_stock_available \r\n     \r\n    def get_stock_available(self):\r\n        return self.__stock_available\r\n\r\n\r\n    def set_flower_name(self, value):\r\n        self.__flower_name = value.lower()\r\n\r\n\r\n    def set_price_per_kg(self, value):\r\n        self.__price_per_kg = value\r\n\r\n    def set_required_stock_available(self,value):\r\n        self.__required_stock_available = value\r\n        \r\n    def set_stock_available(self, value):\r\n        self.__stock_available = value\r\n\r\n\r\n    def validate_flower(self):\r\n        if self.get_flower_name() == \"orchid\"  or self.get_flower_name() == \"rose\" or  self.get_flower_name() == \"jasmine\" :\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def validate_stock(self,required_quantity):\r\n        if self.check_level():\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def sell_flower(self,required_quantity):\r\n        self.set_required_stock_available(required_quantity)\r\n        if self.validate_flower() and self.validate_stock(required_quantity) :\r\n            self.set_stock_available( self.get_stock_available() - required_quantity )\r\n        else : \r\n            return False\r\n#             print(\"Didnt execute\")            \r\n\r\n    \r\n    def check_level(self):\r\n        \r\n        if self.get_flower_name() == \"orchid\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                \r\n            \r\n        elif self.get_flower_name() == \"rose\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return True\r\n                        \r\n            \r\n        elif  self.get_flower_name() == \"jasmine\" :\r\n            if self.get_stock_available() >  self.get_required_stock_available() :\r\n                return  True\r\n            \r\nf1 = Flower()\r\nf1.set_flower_name(\"Orchid\")\r\nf1.set_price_per_kg(35)\r\nf1.set_stock_available(50)\r\nf1.sell_flower(60)\r\n\r\n\r\nf2 = Flower()\r\nf2.set_flower_name(\"Rosee\")\r\nf2.set_price_per_kg(20)\r\nf2.set_stock_available(40)\r\nf2.sell_flower(23)\r\n\r\n\r\nf3 = Flower()\r\nf3.set_flower_name(\"Jasmine\")\r\nf3.set_price_per_kg(39)\r\nf3.set_stock_available(40)\r\nf3.sell_flower(32)\r\n","asgnmtId":"10","SolutionFileName":"Assignment10.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-06 15:33:40,706 INFO  Successfully processed and prepared the input for the verify service
+2017-02-06 15:33:40,706 INFO  Successfully set the request parameters for VerifySolution
+2017-02-06 15:33:40,706 INFO  Invoking the service to verify the user solution
+2017-02-06 15:33:40,706 INFO  Time before invoking service:Mon Feb 06 15:33:40 IST 2017
+2017-02-06 15:33:40,706 INFO  Initialising service address for VerifySolution
+2017-02-06 15:33:40,722 INFO  Time before invoking service In SUPER:Mon Feb 06 15:33:40 IST 2017
+2017-02-06 15:33:44,608 INFO  Time after invoking service In SUPER:Mon Feb 06 15:33:44 IST 2017
+2017-02-06 15:33:44,608 INFO  Service responded successfully with required details
+2017-02-06 15:33:44,608 INFO  Time after invoking service:Mon Feb 06 15:33:44 IST 2017
+2017-02-06 15:33:44,608 INFO  User solution successfully verified
+2017-02-06 15:33:44,608 INFO  Processing the response from verify service
+2017-02-06 15:33:44,623 INFO  Starting to parse JSON response
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,623 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,639 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-06 15:33:44,639 INFO  Successfully parsed JSON response
+2017-02-06 15:33:44,639 INFO  In the process of generating verify response in HTML
+2017-02-06 15:33:44,748 INFO  Successfully generated verify response in HTML
+2017-02-06 15:33:44,748 INFO  Successfully processed the response from service
+2017-02-06 15:34:45,193 INFO  Initiating to process and prepare Input for the submit service
+2017-02-06 15:34:45,193 INFO  Displaying user solution
+2017-02-06 15:34:45,209 INFO  Successfully processed and prepared the input for the submit service
+2017-02-06 15:34:45,209 INFO  Invoking the service to submit the user solution
+2017-02-06 15:34:45,209 INFO  Initialising service address for Submit
+2017-02-06 15:34:45,225 INFO  Time before invoking service In SUPER:Mon Feb 06 15:34:45 IST 2017
+2017-02-06 15:34:45,335 INFO  Time after invoking service In SUPER:Mon Feb 06 15:34:45 IST 2017
+2017-02-06 15:34:45,335 INFO  Service responded successfully with required details
+2017-02-06 15:34:45,335 INFO  User solution successfully submitted
+2017-02-06 15:34:45,335 INFO  Displaying submission status
+2017-02-06 15:34:45,335 INFO  Displayed submission status successfullySuccessfully Submitted!

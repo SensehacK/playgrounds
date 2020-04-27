@@ -1,0 +1,324 @@
+2017-02-11 12:25:12,966 INFO  Loading Baseframework Plugin
+2017-02-11 12:25:13,209 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-11 12:25:16,216 INFO  Loading the Menu - HandsOn
+2017-02-11 12:25:16,487 INFO  Successfully loaded the Menu - HandsOn
+2017-02-11 13:38:57,158 INFO  Loading Programming Assignment Plugin
+2017-02-11 13:38:57,845 INFO  Setting request parameters for VerifySolution
+2017-02-11 13:38:57,846 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 13:38:57,853 INFO  Starting to parse the user solution
+2017-02-11 13:38:57,855 INFO  Displaying user solution
+2017-02-11 13:39:02,357 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    #write your logic here\r\n    \r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    min_stack = 0\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    \r\n    \r\n    min_list = min(list1)\r\n    extra_stack = Stack (length1)\r\n    \r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n            list2.append(values)\r\n            list1.remove(values)\r\n    \r\n    for values2 in list1 :\r\n        list2.append(values2)\r\n    \r\n    for st in list2[::-1] :\r\n        extra_stack.push(st)\r\n        \r\n        \r\n\r\n          \r\n#     top_temp = number_stack.get_top()\r\n#     print(\"Top_tmp\" , top_temp)\r\n#      \r\n#      \r\n#     temp = number_stack.pop()\r\n#     min_stack = temp\r\n#     while not number_stack.is_empty() :\r\n#           \r\n#         temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n#         if temp_min <= min_stack :\r\n#             print(\"Smallest\")\r\n#             min_stack = temp_min\r\n#                       \r\n#       \r\n#     print(min_stack)    \r\n\r\n\r\n    \r\n    return extra_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nnumber_stack = change_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 13:39:02,359 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 13:39:02,359 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 13:39:02,360 INFO  Invoking the service to verify the user solution
+2017-02-11 13:39:02,361 INFO  Time before invoking service:Sat Feb 11 13:39:02 IST 2017
+2017-02-11 13:39:02,362 INFO  Initialising service address for VerifySolution
+2017-02-11 13:39:02,364 INFO  Time before invoking service In SUPER:Sat Feb 11 13:39:02 IST 2017
+2017-02-11 13:39:04,245 INFO  Time after invoking service In SUPER:Sat Feb 11 13:39:04 IST 2017
+2017-02-11 13:39:04,246 INFO  Service responded successfully with required details
+2017-02-11 13:39:04,247 INFO  Time after invoking service:Sat Feb 11 13:39:04 IST 2017
+2017-02-11 13:39:04,247 INFO  User solution successfully verified
+2017-02-11 13:39:04,248 INFO  Processing the response from verify service
+2017-02-11 13:39:04,251 INFO  Starting to parse JSON response
+2017-02-11 13:39:04,254 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:39:04,255 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:39:04,256 INFO  Successfully parsed JSON response
+2017-02-11 13:39:04,258 INFO  In the process of generating verify response in HTML
+2017-02-11 13:39:04,472 INFO  Successfully generated verify response in HTML
+2017-02-11 13:39:04,473 INFO  Successfully processed the response from service
+2017-02-11 13:41:08,336 INFO  Setting request parameters for VerifySolution
+2017-02-11 13:41:08,337 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 13:41:08,338 INFO  Starting to parse the user solution
+2017-02-11 13:41:08,339 INFO  Displaying user solution
+2017-02-11 13:41:10,804 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    #write your logic here\r\n    \r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    min_stack = 0\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    \r\n    \r\n    min_list = min(list1)\r\n    extra_stack = Stack (length1)\r\n    \r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n            list2.append(values)\r\n            list1.remove(values)\r\n    \r\n    list2 += list1\r\n#     for values2 in list1 :\r\n#         list2.append(values2)\r\n#     \r\n    for st in list2[::-1] :\r\n        number_stack.push(st)\r\n        \r\n        \r\n\r\n          \r\n#     top_temp = number_stack.get_top()\r\n#     print(\"Top_tmp\" , top_temp)\r\n#      \r\n#      \r\n#     temp = number_stack.pop()\r\n#     min_stack = temp\r\n#     while not number_stack.is_empty() :\r\n#           \r\n#         temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n#         if temp_min <= min_stack :\r\n#             print(\"Smallest\")\r\n#             min_stack = temp_min\r\n#                       \r\n#       \r\n#     print(min_stack)    \r\n\r\n\r\n    \r\n    return extra_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 13:41:10,808 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 13:41:10,811 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 13:41:10,811 INFO  Invoking the service to verify the user solution
+2017-02-11 13:41:10,813 INFO  Time before invoking service:Sat Feb 11 13:41:10 IST 2017
+2017-02-11 13:41:10,813 INFO  Initialising service address for VerifySolution
+2017-02-11 13:41:10,814 INFO  Time before invoking service In SUPER:Sat Feb 11 13:41:10 IST 2017
+2017-02-11 13:41:12,292 INFO  Time after invoking service In SUPER:Sat Feb 11 13:41:12 IST 2017
+2017-02-11 13:41:12,292 INFO  Service responded successfully with required details
+2017-02-11 13:41:12,293 INFO  Time after invoking service:Sat Feb 11 13:41:12 IST 2017
+2017-02-11 13:41:12,294 INFO  User solution successfully verified
+2017-02-11 13:41:12,295 INFO  Processing the response from verify service
+2017-02-11 13:41:12,296 INFO  Starting to parse JSON response
+2017-02-11 13:41:12,297 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:41:12,298 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:41:12,298 INFO  Successfully parsed JSON response
+2017-02-11 13:41:12,300 INFO  In the process of generating verify response in HTML
+2017-02-11 13:41:12,377 INFO  Successfully generated verify response in HTML
+2017-02-11 13:41:12,378 INFO  Successfully processed the response from service
+2017-02-11 13:41:50,798 INFO  Setting request parameters for VerifySolution
+2017-02-11 13:41:50,801 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 13:41:50,801 INFO  Starting to parse the user solution
+2017-02-11 13:41:50,802 INFO  Displaying user solution
+2017-02-11 13:41:53,026 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    #write your logic here\r\n    \r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    min_stack = 0\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    \r\n    \r\n    min_list = min(list1)\r\n    extra_stack = Stack (length1)\r\n    \r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n            list2.append(values)\r\n            list1.remove(values)\r\n    \r\n    list2 += list1\r\n#     for values2 in list1 :\r\n#         list2.append(values2)\r\n#     \r\n    for st in list2[::-1] :\r\n        number_stack.push(st)\r\n        \r\n        \r\n\r\n          \r\n#     top_temp = number_stack.get_top()\r\n#     print(\"Top_tmp\" , top_temp)\r\n#      \r\n#      \r\n#     temp = number_stack.pop()\r\n#     min_stack = temp\r\n#     while not number_stack.is_empty() :\r\n#           \r\n#         temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n#         if temp_min <= min_stack :\r\n#             print(\"Smallest\")\r\n#             min_stack = temp_min\r\n#                       \r\n#       \r\n#     print(min_stack)    \r\n\r\n\r\n    \r\n    return number_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 13:41:53,027 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 13:41:53,028 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 13:41:53,029 INFO  Invoking the service to verify the user solution
+2017-02-11 13:41:53,031 INFO  Time before invoking service:Sat Feb 11 13:41:53 IST 2017
+2017-02-11 13:41:53,032 INFO  Initialising service address for VerifySolution
+2017-02-11 13:41:53,033 INFO  Time before invoking service In SUPER:Sat Feb 11 13:41:53 IST 2017
+2017-02-11 13:41:54,354 INFO  Time after invoking service In SUPER:Sat Feb 11 13:41:54 IST 2017
+2017-02-11 13:41:54,355 INFO  Service responded successfully with required details
+2017-02-11 13:41:54,355 INFO  Time after invoking service:Sat Feb 11 13:41:54 IST 2017
+2017-02-11 13:41:54,356 INFO  User solution successfully verified
+2017-02-11 13:41:54,357 INFO  Processing the response from verify service
+2017-02-11 13:41:54,359 INFO  Starting to parse JSON response
+2017-02-11 13:41:54,361 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:41:54,361 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:41:54,362 INFO  Successfully parsed JSON response
+2017-02-11 13:41:54,364 INFO  In the process of generating verify response in HTML
+2017-02-11 13:41:54,439 INFO  Successfully generated verify response in HTML
+2017-02-11 13:41:54,440 INFO  Successfully processed the response from service
+2017-02-11 13:44:03,466 INFO  Setting request parameters for VerifySolution
+2017-02-11 13:44:03,467 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 13:44:03,469 INFO  Starting to parse the user solution
+2017-02-11 13:44:03,470 INFO  Displaying user solution
+2017-02-11 13:44:05,880 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    #write your logic here\r\n    \r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    min_stack = 0\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    \r\n    \r\n    min_list = min(list1)\r\n    extra_stack = Stack (length1)\r\n    \r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n            list2.append(values)\r\n            number_stack.push(values)\r\n            list1.remove(values)\r\n    \r\n    #list2 += list1\r\n#     for values2 in list1 :\r\n#         list2.append(values2)\r\n#     \r\n    for st in list1[::-1] :\r\n        number_stack.push(st)\r\n        \r\n        \r\n\r\n          \r\n#     top_temp = number_stack.get_top()\r\n#     print(\"Top_tmp\" , top_temp)\r\n#      \r\n#      \r\n#     temp = number_stack.pop()\r\n#     min_stack = temp\r\n#     while not number_stack.is_empty() :\r\n#           \r\n#         temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n#         if temp_min <= min_stack :\r\n#             print(\"Smallest\")\r\n#             min_stack = temp_min\r\n#                       \r\n#       \r\n#     print(min_stack)    \r\n\r\n\r\n    \r\n    return number_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 13:44:05,882 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 13:44:05,883 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 13:44:05,883 INFO  Invoking the service to verify the user solution
+2017-02-11 13:44:05,884 INFO  Time before invoking service:Sat Feb 11 13:44:05 IST 2017
+2017-02-11 13:44:05,884 INFO  Initialising service address for VerifySolution
+2017-02-11 13:44:05,885 INFO  Time before invoking service In SUPER:Sat Feb 11 13:44:05 IST 2017
+2017-02-11 13:44:07,160 INFO  Time after invoking service In SUPER:Sat Feb 11 13:44:07 IST 2017
+2017-02-11 13:44:07,161 INFO  Service responded successfully with required details
+2017-02-11 13:44:07,161 INFO  Time after invoking service:Sat Feb 11 13:44:07 IST 2017
+2017-02-11 13:44:07,162 INFO  User solution successfully verified
+2017-02-11 13:44:07,163 INFO  Processing the response from verify service
+2017-02-11 13:44:07,163 INFO  Starting to parse JSON response
+2017-02-11 13:44:07,165 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:44:07,165 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 13:44:07,166 INFO  Successfully parsed JSON response
+2017-02-11 13:44:07,166 INFO  In the process of generating verify response in HTML
+2017-02-11 13:44:07,229 INFO  Successfully generated verify response in HTML
+2017-02-11 13:44:07,229 INFO  Successfully processed the response from service
+2017-02-11 14:11:20,000 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:11:20,004 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:11:20,005 INFO  Starting to parse the user solution
+2017-02-11 14:11:20,006 INFO  Displaying user solution
+2017-02-11 14:11:23,027 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    extra_stack = Stack(length1)\r\n    extra_stack2 = Stack(length1)\r\n\r\n    temp = number_stack.pop()\r\n    min_stack = temp\r\n    copy_stack.push(min_stack)\r\n    \r\n    while not number_stack.is_empty() :\r\n           \r\n        temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n        if temp_min < min_stack :\r\n            #print(\"Smallest\")\r\n            min_stack = temp_min\r\n            copy_stack.push(temp_min)\r\n        else :\r\n            copy_stack.push(temp_min)\r\n            \r\n    \r\n                \r\n    \r\n    while not copy_stack.is_empty() :\r\n        temp_min = copy_stack.pop()\r\n        \r\n        if temp_min ==  min_stack :\r\n            extra_stack.push(temp_min)\r\n        elif temp_min !=  min_stack :\r\n            extra_stack2.push(temp_min)\r\n    \r\n    while not extra_stack2.is_empty() :\r\n        temp_min = extra_stack2.pop()\r\n        extra_stack.push(temp_min)\r\n        \r\n        \r\n#     print(min_stack)    \r\n#     print(\"number_stack////////////\")\r\n    extra_stack.display()\r\n    \r\n#     print(\"copy_stack\")\r\n#     extra_stack2.display()\r\n#     \r\n    return extra_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(11)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nnumber_stack = change_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:11:23,028 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:11:23,029 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:11:23,029 INFO  Invoking the service to verify the user solution
+2017-02-11 14:11:23,029 INFO  Time before invoking service:Sat Feb 11 14:11:23 IST 2017
+2017-02-11 14:11:23,030 INFO  Initialising service address for VerifySolution
+2017-02-11 14:11:23,031 INFO  Time before invoking service In SUPER:Sat Feb 11 14:11:23 IST 2017
+2017-02-11 14:11:24,468 INFO  Time after invoking service In SUPER:Sat Feb 11 14:11:24 IST 2017
+2017-02-11 14:11:24,469 INFO  Service responded successfully with required details
+2017-02-11 14:11:24,469 INFO  Time after invoking service:Sat Feb 11 14:11:24 IST 2017
+2017-02-11 14:11:24,470 INFO  User solution successfully verified
+2017-02-11 14:11:24,471 INFO  Processing the response from verify service
+2017-02-11 14:11:24,473 INFO  Starting to parse JSON response
+2017-02-11 14:11:24,474 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:11:24,475 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:11:24,475 INFO  Successfully parsed JSON response
+2017-02-11 14:11:24,476 INFO  In the process of generating verify response in HTML
+2017-02-11 14:11:24,567 INFO  Successfully generated verify response in HTML
+2017-02-11 14:11:24,580 INFO  Successfully processed the response from service
+2017-02-11 14:13:12,647 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:13:12,651 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:13:12,651 INFO  Starting to parse the user solution
+2017-02-11 14:13:12,652 INFO  Displaying user solution
+2017-02-11 14:13:15,218 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    extra_stack = Stack(length1)\r\n    extra_stack2 = Stack(length1)\r\n\r\n    temp = number_stack.pop()\r\n    min_stack = temp\r\n    copy_stack.push(min_stack)\r\n    \r\n    while not number_stack.is_empty() :\r\n           \r\n        temp_min = number_stack.pop()\r\n#         print(\"temp\" ,temp)\r\n#         print(\"temp_min\", temp_min)\r\n#         print(\"min_stack\", min_stack)\r\n        if temp_min < min_stack :\r\n            #print(\"Smallest\")\r\n            min_stack = temp_min\r\n            copy_stack.push(temp_min)\r\n        else :\r\n            copy_stack.push(temp_min)\r\n            \r\n    \r\n                \r\n    \r\n    while not copy_stack.is_empty() :\r\n        temp_min = copy_stack.pop()\r\n        \r\n        if temp_min ==  min_stack :\r\n            extra_stack.push(temp_min)\r\n        elif temp_min !=  min_stack :\r\n            extra_stack2.push(temp_min)\r\n    \r\n    while not extra_stack2.is_empty() :\r\n        temp_min = extra_stack2.pop()\r\n        \r\n        copy_stack.push(temp_min)\r\n       \r\n    while not copy_stack.is_empty() :\r\n        temp_min = copy_stack.pop() \r\n        extra_stack.push(temp_min) \r\n        \r\n        \r\n#     print(min_stack)    \r\n#     print(\"number_stack////////////\")\r\n    extra_stack.display()\r\n    \r\n#     print(\"copy_stack\")\r\n#     extra_stack2.display()\r\n#     \r\n    return extra_stack   \r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(11)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nnumber_stack = change_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:13:15,220 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:13:15,221 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:13:15,222 INFO  Invoking the service to verify the user solution
+2017-02-11 14:13:15,222 INFO  Time before invoking service:Sat Feb 11 14:13:15 IST 2017
+2017-02-11 14:13:15,223 INFO  Initialising service address for VerifySolution
+2017-02-11 14:13:15,223 INFO  Time before invoking service In SUPER:Sat Feb 11 14:13:15 IST 2017
+2017-02-11 14:13:16,532 INFO  Time after invoking service In SUPER:Sat Feb 11 14:13:16 IST 2017
+2017-02-11 14:13:16,534 INFO  Service responded successfully with required details
+2017-02-11 14:13:16,535 INFO  Time after invoking service:Sat Feb 11 14:13:16 IST 2017
+2017-02-11 14:13:16,536 INFO  User solution successfully verified
+2017-02-11 14:13:16,537 INFO  Processing the response from verify service
+2017-02-11 14:13:16,538 INFO  Starting to parse JSON response
+2017-02-11 14:13:16,540 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:13:16,540 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:13:16,541 INFO  Successfully parsed JSON response
+2017-02-11 14:13:16,542 INFO  In the process of generating verify response in HTML
+2017-02-11 14:13:16,606 INFO  Successfully generated verify response in HTML
+2017-02-11 14:13:16,608 INFO  Successfully processed the response from service
+2017-02-11 14:18:58,657 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:18:58,658 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:18:58,658 INFO  Starting to parse the user solution
+2017-02-11 14:18:58,660 INFO  Displaying user solution
+2017-02-11 14:19:01,265 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    min_list = min(list1)\r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n#             list2.append(values)\r\n            number_stack.push(values)\r\n            list1.remove(values)\r\n    \r\n    for st in list1[::-1] :\r\n        number_stack.push(st)\r\n    return number_stack   \r\n\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:19:01,267 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:19:01,267 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:19:01,268 INFO  Invoking the service to verify the user solution
+2017-02-11 14:19:01,269 INFO  Time before invoking service:Sat Feb 11 14:19:01 IST 2017
+2017-02-11 14:19:01,269 INFO  Initialising service address for VerifySolution
+2017-02-11 14:19:01,271 INFO  Time before invoking service In SUPER:Sat Feb 11 14:19:01 IST 2017
+2017-02-11 14:19:02,655 INFO  Time after invoking service In SUPER:Sat Feb 11 14:19:02 IST 2017
+2017-02-11 14:19:02,656 INFO  Service responded successfully with required details
+2017-02-11 14:19:02,657 INFO  Time after invoking service:Sat Feb 11 14:19:02 IST 2017
+2017-02-11 14:19:02,658 INFO  User solution successfully verified
+2017-02-11 14:19:02,658 INFO  Processing the response from verify service
+2017-02-11 14:19:02,660 INFO  Starting to parse JSON response
+2017-02-11 14:19:02,662 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:19:02,662 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:19:02,663 INFO  Successfully parsed JSON response
+2017-02-11 14:19:02,664 INFO  In the process of generating verify response in HTML
+2017-02-11 14:19:02,725 INFO  Successfully generated verify response in HTML
+2017-02-11 14:19:02,726 INFO  Successfully processed the response from service
+2017-02-11 14:24:29,216 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:24:29,218 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:24:29,219 INFO  Starting to parse the user solution
+2017-02-11 14:24:29,221 INFO  Displaying user solution
+2017-02-11 14:24:31,847 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    list1 = []\r\n    list2 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    min_list = min(list1)\r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n#             list2.append(values)\r\n            number_stack.push(values)\r\n            \r\n    \r\n    print(list1)\r\n    for st in list1[::-1] :\r\n        if st != min_list :\r\n            number_stack.push(st)\r\n    return number_stack   \r\n\r\nnumber_stack=Stack(10)\r\n# number_stack.push(7)\r\n# number_stack.push(8)\r\n# number_stack.push(5)\r\n# number_stack.push(1)\r\n# number_stack.push(66)\r\n# number_stack.push(5)\r\n# number_stack.push(1)\r\n# number_stack.push(3)\r\n# number_stack.push(8)\r\n# number_stack.push(5)\r\n\r\nnumber_stack.push(90)\r\nnumber_stack.push(3)\r\nnumber_stack.push(3)\r\nnumber_stack.push(7)\r\nnumber_stack.push(4)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:24:31,848 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:24:31,849 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:24:31,850 INFO  Invoking the service to verify the user solution
+2017-02-11 14:24:31,851 INFO  Time before invoking service:Sat Feb 11 14:24:31 IST 2017
+2017-02-11 14:24:31,851 INFO  Initialising service address for VerifySolution
+2017-02-11 14:24:31,853 INFO  Time before invoking service In SUPER:Sat Feb 11 14:24:31 IST 2017
+2017-02-11 14:24:33,368 INFO  Time after invoking service In SUPER:Sat Feb 11 14:24:33 IST 2017
+2017-02-11 14:24:33,369 INFO  Service responded successfully with required details
+2017-02-11 14:24:33,369 INFO  Time after invoking service:Sat Feb 11 14:24:33 IST 2017
+2017-02-11 14:24:33,370 INFO  User solution successfully verified
+2017-02-11 14:24:33,371 INFO  Processing the response from verify service
+2017-02-11 14:24:33,372 INFO  Starting to parse JSON response
+2017-02-11 14:24:33,373 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:24:33,374 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:24:33,375 INFO  Successfully parsed JSON response
+2017-02-11 14:24:33,376 INFO  In the process of generating verify response in HTML
+2017-02-11 14:24:33,444 INFO  Successfully generated verify response in HTML
+2017-02-11 14:24:33,453 INFO  Successfully processed the response from service
+2017-02-11 14:26:34,541 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:26:34,543 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:26:34,545 INFO  Starting to parse the user solution
+2017-02-11 14:26:34,546 INFO  Displaying user solution
+2017-02-11 14:26:36,992 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    list1 = []\r\n    while not number_stack.is_empty() :\r\n        list1.append(number_stack.pop())\r\n    min_list = min(list1)\r\n    \r\n    for values in list1:\r\n        if values == min_list :\r\n            number_stack.push(values)\r\n    for st in list1[::-1] :\r\n        if st != min_list :\r\n            number_stack.push(st)\r\n    return number_stack   \r\n\r\nnumber_stack=Stack(10)\r\nnumber_stack.push(90)\r\nnumber_stack.push(3)\r\nnumber_stack.push(3)\r\nnumber_stack.push(7)\r\nnumber_stack.push(4)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nchange_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:26:36,992 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:26:36,992 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:26:36,993 INFO  Invoking the service to verify the user solution
+2017-02-11 14:26:36,993 INFO  Time before invoking service:Sat Feb 11 14:26:36 IST 2017
+2017-02-11 14:26:36,994 INFO  Initialising service address for VerifySolution
+2017-02-11 14:26:36,995 INFO  Time before invoking service In SUPER:Sat Feb 11 14:26:36 IST 2017
+2017-02-11 14:26:38,339 INFO  Time after invoking service In SUPER:Sat Feb 11 14:26:38 IST 2017
+2017-02-11 14:26:38,340 INFO  Service responded successfully with required details
+2017-02-11 14:26:38,341 INFO  Time after invoking service:Sat Feb 11 14:26:38 IST 2017
+2017-02-11 14:26:38,342 INFO  User solution successfully verified
+2017-02-11 14:26:38,342 INFO  Processing the response from verify service
+2017-02-11 14:26:38,344 INFO  Starting to parse JSON response
+2017-02-11 14:26:38,345 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:26:38,346 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:26:38,346 INFO  Successfully parsed JSON response
+2017-02-11 14:26:38,348 INFO  In the process of generating verify response in HTML
+2017-02-11 14:26:38,434 INFO  Successfully generated verify response in HTML
+2017-02-11 14:26:38,435 INFO  Successfully processed the response from service
+2017-02-11 14:27:17,749 INFO  Initiating to process and prepare Input for the submit service
+2017-02-11 14:27:17,755 INFO  Displaying user solution
+2017-02-11 14:27:17,766 INFO  Successfully processed and prepared the input for the submit service
+2017-02-11 14:27:17,767 INFO  Invoking the service to submit the user solution
+2017-02-11 14:27:17,767 INFO  Initialising service address for Submit
+2017-02-11 14:27:17,768 INFO  Time before invoking service In SUPER:Sat Feb 11 14:27:17 IST 2017
+2017-02-11 14:27:17,878 INFO  Time after invoking service In SUPER:Sat Feb 11 14:27:17 IST 2017
+2017-02-11 14:27:17,879 INFO  Service responded successfully with required details
+2017-02-11 14:27:17,879 INFO  User solution successfully submitted
+2017-02-11 14:27:17,880 INFO  Displaying submission status
+2017-02-11 14:27:17,880 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-11 14:28:11,160 INFO  Initiating to process and prepare Input for the submit service
+2017-02-11 14:28:11,161 INFO  Displaying user solution
+2017-02-11 14:28:11,165 INFO  No changes made in the assignment since the last submission
+2017-02-11 14:28:11,168 ERROR Exception occured while submitting the user solution
+2017-02-11 14:28:14,251 INFO  Setting request parameters for VerifySolution
+2017-02-11 14:28:14,254 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 14:28:14,255 INFO  Starting to parse the user solution
+2017-02-11 14:28:14,256 INFO  Displaying user solution
+2017-02-11 14:28:16,739 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-13\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n# Done with Stacks & not lists\r\nfrom DataStructures import Stack\r\n\r\ndef change_smallest_value(number_stack):\r\n    \r\n    \r\n    length1 = number_stack.get_max_size()\r\n    copy_stack = Stack(length1)\r\n    extra_stack = Stack(length1)\r\n    extra_stack2 = Stack(length1)\r\n    \r\n    temp = number_stack.pop()\r\n    min_stack = temp\r\n    copy_stack.push(min_stack)\r\n    \r\n    while not number_stack.is_empty() :\r\n        temp_min = number_stack.pop()\r\n        if temp_min < min_stack :\r\n            min_stack = temp_min\r\n            copy_stack.push(temp_min)\r\n        else :\r\n            copy_stack.push(temp_min)\r\n\r\n    while not copy_stack.is_empty() :\r\n        temp_min = copy_stack.pop()\r\n        \r\n        if temp_min ==  min_stack :\r\n            extra_stack.push(temp_min)\r\n        elif temp_min !=  min_stack :\r\n            extra_stack2.push(temp_min)\r\n    \r\n    while not extra_stack2.is_empty() :\r\n        temp_min = extra_stack2.pop()\r\n        copy_stack.push(temp_min)\r\n       \r\n    while not copy_stack.is_empty() :\r\n        temp_min = copy_stack.pop() \r\n        extra_stack.push(temp_min) \r\n        \r\n    return extra_stack   \r\n\r\n\r\n#Add different values to the stack and test your program\r\nnumber_stack=Stack(11)\r\nnumber_stack.push(7)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(66)\r\nnumber_stack.push(5)\r\nnumber_stack.push(1)\r\nnumber_stack.push(3)\r\nnumber_stack.push(8)\r\nnumber_stack.push(5)\r\n\r\nprint(\"Initial Stack:\")\r\nnumber_stack.display()\r\nnumber_stack = change_smallest_value(number_stack)\r\nprint(\"After the change:\")\r\nnumber_stack.display()\r\n","asgnmtId":"13","SolutionFileName":"Assignment13r.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 14:28:16,740 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 14:28:16,741 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 14:28:16,742 INFO  Invoking the service to verify the user solution
+2017-02-11 14:28:16,743 INFO  Time before invoking service:Sat Feb 11 14:28:16 IST 2017
+2017-02-11 14:28:16,744 INFO  Initialising service address for VerifySolution
+2017-02-11 14:28:16,745 INFO  Time before invoking service In SUPER:Sat Feb 11 14:28:16 IST 2017
+2017-02-11 14:28:18,050 INFO  Time after invoking service In SUPER:Sat Feb 11 14:28:18 IST 2017
+2017-02-11 14:28:18,050 INFO  Service responded successfully with required details
+2017-02-11 14:28:18,051 INFO  Time after invoking service:Sat Feb 11 14:28:18 IST 2017
+2017-02-11 14:28:18,051 INFO  User solution successfully verified
+2017-02-11 14:28:18,052 INFO  Processing the response from verify service
+2017-02-11 14:28:18,054 INFO  Starting to parse JSON response
+2017-02-11 14:28:18,056 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:28:18,056 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 14:28:18,057 INFO  Successfully parsed JSON response
+2017-02-11 14:28:18,058 INFO  In the process of generating verify response in HTML
+2017-02-11 14:28:18,117 INFO  Successfully generated verify response in HTML
+2017-02-11 14:28:18,118 INFO  Successfully processed the response from service
+2017-02-11 14:28:19,273 INFO  Initiating to process and prepare Input for the submit service
+2017-02-11 14:28:19,275 INFO  Displaying user solution
+2017-02-11 14:28:19,285 INFO  Successfully processed and prepared the input for the submit service
+2017-02-11 14:28:19,286 INFO  Invoking the service to submit the user solution
+2017-02-11 14:28:19,286 INFO  Initialising service address for Submit
+2017-02-11 14:28:19,288 INFO  Time before invoking service In SUPER:Sat Feb 11 14:28:19 IST 2017
+2017-02-11 14:28:19,326 INFO  Time after invoking service In SUPER:Sat Feb 11 14:28:19 IST 2017
+2017-02-11 14:28:19,327 INFO  Service responded successfully with required details
+2017-02-11 14:28:19,328 INFO  User solution successfully submitted
+2017-02-11 14:28:19,329 INFO  Displaying submission status
+2017-02-11 14:28:19,330 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-11 15:46:00,235 INFO  Setting request parameters for VerifySolution
+2017-02-11 15:46:00,238 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 15:46:00,239 INFO  Starting to parse the user solution
+2017-02-11 15:46:00,240 INFO  Displaying user solution
+2017-02-11 15:46:03,469 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-14\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Queue\r\n\r\ndef check_numbers(number_queue):\r\n    #write your logic here  \r\n    lent = number_queue.get_max_size()\r\n    solution_queue1 = Queue(lent)\r\n    \r\n    while not number_queue.is_empty() :\r\n        data = number_queue.dequeue()\r\n        count = 0\r\n        for i in range(1,11) :\r\n            if data % i == 0 :\r\n                count += 1\r\n                \r\n        \r\n        if count == 10 :\r\n            solution_queue1.enqueue(data)\r\n            \r\n        \r\n        \r\n        \r\n        \r\n    \r\n    \r\n    \r\n    return solution_queue1\r\n\r\n#Add different values to the queue and test your program\r\nnumber_queue=Queue(5)\r\nnumber_queue.enqueue(13983)\r\nnumber_queue.enqueue(10080)\r\nnumber_queue.enqueue(7113)\r\nnumber_queue.enqueue(2520)\r\nnumber_queue.enqueue(2500)\r\ncheck_numbers(number_queue)\r\n","asgnmtId":"14","SolutionFileName":"Assignment14.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 15:46:03,470 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 15:46:03,471 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 15:46:03,472 INFO  Invoking the service to verify the user solution
+2017-02-11 15:46:03,473 INFO  Time before invoking service:Sat Feb 11 15:46:03 IST 2017
+2017-02-11 15:46:03,474 INFO  Initialising service address for VerifySolution
+2017-02-11 15:46:03,475 INFO  Time before invoking service In SUPER:Sat Feb 11 15:46:03 IST 2017
+2017-02-11 15:46:05,125 INFO  Time after invoking service In SUPER:Sat Feb 11 15:46:05 IST 2017
+2017-02-11 15:46:05,127 INFO  Service responded successfully with required details
+2017-02-11 15:46:05,128 INFO  Time after invoking service:Sat Feb 11 15:46:05 IST 2017
+2017-02-11 15:46:05,129 INFO  User solution successfully verified
+2017-02-11 15:46:05,130 INFO  Processing the response from verify service
+2017-02-11 15:46:05,132 INFO  Starting to parse JSON response
+2017-02-11 15:46:05,134 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 15:46:05,135 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 15:46:05,135 INFO  Successfully parsed JSON response
+2017-02-11 15:46:05,137 INFO  In the process of generating verify response in HTML
+2017-02-11 15:46:05,209 INFO  Successfully generated verify response in HTML
+2017-02-11 15:46:05,211 INFO  Successfully processed the response from service
+2017-02-11 15:46:05,706 INFO  Setting request parameters for VerifySolution
+2017-02-11 15:46:05,707 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 15:46:05,708 INFO  Starting to parse the user solution
+2017-02-11 15:46:05,709 INFO  Displaying user solution
+2017-02-11 15:46:05,713 INFO   User Solution is unchanged since the last verification.
+2017-02-11 15:46:05,718 INFO  Problem in processing and preparing Input for the verify service
+2017-02-11 16:04:36,726 INFO  Setting request parameters for VerifySolution
+2017-02-11 16:04:36,730 INFO  Initiating to process and prepare Input for the verify service
+2017-02-11 16:04:36,731 INFO  Starting to parse the user solution
+2017-02-11 16:04:36,732 INFO  Displaying user solution
+2017-02-11 16:04:39,833 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-14\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\n\r\nfrom DataStructures import Queue\r\n\r\ndef check_numbers(number_queue):\r\n    #write your logic here  \r\n    lent = number_queue.get_max_size()\r\n    solution_queue1 = Queue(lent)\r\n    \r\n    while not number_queue.is_empty() :\r\n        data = number_queue.dequeue()\r\n        count = 0\r\n        for i in range(1,11) :\r\n            if data % i == 0 :\r\n                count += 1\r\n        if count == 10 :\r\n            solution_queue1.enqueue(data)\r\n            \r\n    return solution_queue1\r\n\r\n#Add different values to the queue and test your program\r\nnumber_queue=Queue(5)\r\nnumber_queue.enqueue(13983)\r\nnumber_queue.enqueue(10080)\r\nnumber_queue.enqueue(7113)\r\nnumber_queue.enqueue(2520)\r\nnumber_queue.enqueue(2500)\r\ncheck_numbers(number_queue)\r\n","asgnmtId":"14","SolutionFileName":"Assignment14.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-11 16:04:39,835 INFO  Successfully processed and prepared the input for the verify service
+2017-02-11 16:04:39,836 INFO  Successfully set the request parameters for VerifySolution
+2017-02-11 16:04:39,837 INFO  Invoking the service to verify the user solution
+2017-02-11 16:04:39,838 INFO  Time before invoking service:Sat Feb 11 16:04:39 IST 2017
+2017-02-11 16:04:39,838 INFO  Initialising service address for VerifySolution
+2017-02-11 16:04:39,839 INFO  Time before invoking service In SUPER:Sat Feb 11 16:04:39 IST 2017
+2017-02-11 16:04:41,331 INFO  Time after invoking service In SUPER:Sat Feb 11 16:04:41 IST 2017
+2017-02-11 16:04:41,332 INFO  Service responded successfully with required details
+2017-02-11 16:04:41,333 INFO  Time after invoking service:Sat Feb 11 16:04:41 IST 2017
+2017-02-11 16:04:41,334 INFO  User solution successfully verified
+2017-02-11 16:04:41,335 INFO  Processing the response from verify service
+2017-02-11 16:04:41,336 INFO  Starting to parse JSON response
+2017-02-11 16:04:41,337 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 16:04:41,339 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-11 16:04:41,340 INFO  Successfully parsed JSON response
+2017-02-11 16:04:41,342 INFO  In the process of generating verify response in HTML
+2017-02-11 16:04:41,415 INFO  Successfully generated verify response in HTML
+2017-02-11 16:04:41,422 INFO  Successfully processed the response from service
+2017-02-11 16:04:42,996 INFO  Initiating to process and prepare Input for the submit service
+2017-02-11 16:04:42,999 INFO  Displaying user solution
+2017-02-11 16:04:43,008 INFO  Successfully processed and prepared the input for the submit service
+2017-02-11 16:04:43,009 INFO  Invoking the service to submit the user solution
+2017-02-11 16:04:43,009 INFO  Initialising service address for Submit
+2017-02-11 16:04:43,010 INFO  Time before invoking service In SUPER:Sat Feb 11 16:04:43 IST 2017
+2017-02-11 16:04:43,054 INFO  Time after invoking service In SUPER:Sat Feb 11 16:04:43 IST 2017
+2017-02-11 16:04:43,055 INFO  Service responded successfully with required details
+2017-02-11 16:04:43,056 INFO  User solution successfully submitted
+2017-02-11 16:04:43,056 INFO  Displaying submission status
+2017-02-11 16:04:43,057 INFO  Displayed submission status successfullySuccessfully Submitted!

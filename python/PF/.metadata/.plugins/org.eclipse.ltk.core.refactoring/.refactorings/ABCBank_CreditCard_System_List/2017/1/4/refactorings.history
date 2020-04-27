@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SchemeDetails.csv&apos; to &apos;SuppliedFiles&apos;&#x0D;&#x0A;- Original project: &apos;ABCBank_CreditCard_System_List&apos;&#x0D;&#x0A;- Destination element: &apos;SuppliedFiles&apos;&#x0D;&#x0A;- Original element: &apos;SchemeDetails.csv&apos;" description="Copy file" element1="SuppliedFiles/SchemeDetails.csv" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1485514275015" target="/ABCBank_CreditCard_System_To_Trainee/SuppliedFiles" units="0" version="1.0"/>
+</session>

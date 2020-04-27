@@ -1,0 +1,14 @@
+MODULES_MANAGER_V2
+Tester.Tester|Z:\PF\ABCBank_CreditCard_System_List\Tester\Tester.py
+Tester.__init__|Z:\PF\ABCBank_CreditCard_System_List\Tester\__init__.py
+iCard.Display_Schemes|Z:\PF\ABCBank_CreditCard_System_List\iCard\Display_Schemes.py
+iCard.Read_Write_Reward_Scheme|Z:\PF\ABCBank_CreditCard_System_List\iCard\Read_Write_Reward_Scheme.py
+iCard.Update_Reward_Scheme|Z:\PF\ABCBank_CreditCard_System_List\iCard\Update_Reward_Scheme.py
+iCard.Validation|Z:\PF\ABCBank_CreditCard_System_List\iCard\Validation.py
+iCard.__init__|Z:\PF\ABCBank_CreditCard_System_List\iCard\__init__.py
+iTransact.Compute_Reward|Z:\PF\ABCBank_CreditCard_System_List\iTransact\Compute_Reward.py
+iTransact.Customer_Details|Z:\PF\ABCBank_CreditCard_System_List\iTransact\Customer_Details.py
+iTransact.Display_Customer_Details|Z:\PF\ABCBank_CreditCard_System_List\iTransact\Display_Customer_Details.py
+iTransact.Read_Write_Customer_rewards|Z:\PF\ABCBank_CreditCard_System_List\iTransact\Read_Write_Customer_rewards.py
+iTransact.Validation|Z:\PF\ABCBank_CreditCard_System_List\iTransact\Validation.py
+iTransact.__init__|Z:\PF\ABCBank_CreditCard_System_List\iTransact\__init__.py

@@ -1,0 +1,159 @@
+2017-02-15 08:46:15,355 INFO  Loading Baseframework Plugin
+2017-02-15 08:46:15,547 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-15 08:46:21,191 INFO  Loading the Menu - HandsOn
+2017-02-15 08:46:21,223 INFO  Successfully loaded the Menu - HandsOn
+2017-02-15 19:03:23,494 INFO  Loading Programming Assignment Plugin
+2017-02-15 19:03:24,340 INFO  Setting request parameters for VerifySolution
+2017-02-15 19:03:24,340 INFO  Initiating to process and prepare Input for the verify service
+2017-02-15 19:03:24,356 INFO  Starting to parse the user solution
+2017-02-15 19:03:24,356 INFO  Displaying user solution
+2017-02-15 19:03:35,739 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-32\r\n#Start writing your code here\r\n\r\nfrom abc import ABCMeta,abstractmethod\r\n\r\nclass Employee(metaclass = ABCMeta) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification):\r\n        self.__job_band = job_band\r\n        self.__employee_name = employee_name\r\n        self.__basic_salary = basic_salary\r\n        self.__qualification = qualification\r\n        pass\r\n\r\n    def get_job_band(self):\r\n        return self.__job_band\r\n\r\n\r\n    def get_employee_name(self):\r\n        return self.__employee_name\r\n\r\n\r\n    def get_basic_salary(self):\r\n        return self.__basic_salary\r\n\r\n\r\n    def get_qualification(self):\r\n        return self.__qualification\r\n\r\n    \r\n    @abstractmethod\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    def validate_basic_salary(self):\r\n        pass\r\n    \r\n    def validate_qualification(self):\r\n        pass\r\n    \r\n    @abstractmethod\r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n    \r\nclass Lateral (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,skill_set): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__skill_set = skill_set\r\n\r\n    def get_skill_set(self):\r\n        return self.__skill_set\r\n\r\n\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    \r\n    def calculate_gross_salary(self):\r\n        pass\r\n    pass\r\n    \r\n\r\nclass Graduate (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,cgpa): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__cgpa = cgpa\r\n\r\n    def get_cgpa(self):\r\n        return self.__cgpa\r\n\r\n    \r\n\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n","asgnmtId":"32","SolutionFileName":"Assignment33.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-15 19:03:35,754 INFO  Successfully processed and prepared the input for the verify service
+2017-02-15 19:03:35,754 INFO  Successfully set the request parameters for VerifySolution
+2017-02-15 19:03:35,754 INFO  Invoking the service to verify the user solution
+2017-02-15 19:03:35,754 INFO  Time before invoking service:Wed Feb 15 19:03:35 IST 2017
+2017-02-15 19:03:35,754 INFO  Initialising service address for VerifySolution
+2017-02-15 19:03:35,754 INFO  Time before invoking service In SUPER:Wed Feb 15 19:03:35 IST 2017
+2017-02-15 19:03:48,166 INFO  Time after invoking service In SUPER:Wed Feb 15 19:03:48 IST 2017
+2017-02-15 19:03:48,181 INFO  Service responded successfully with required details
+2017-02-15 19:03:48,181 INFO  Time after invoking service:Wed Feb 15 19:03:48 IST 2017
+2017-02-15 19:03:48,181 INFO  User solution successfully verified
+2017-02-15 19:03:48,181 INFO  Processing the response from verify service
+2017-02-15 19:03:48,181 INFO  Starting to parse JSON response
+2017-02-15 19:03:48,181 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,181 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,181 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:03:48,197 INFO  Successfully parsed JSON response
+2017-02-15 19:03:48,197 INFO  In the process of generating verify response in HTML
+2017-02-15 19:03:48,792 INFO  Successfully generated verify response in HTML
+2017-02-15 19:03:48,792 INFO  Successfully processed the response from service
+2017-02-15 19:26:05,202 INFO  Setting request parameters for VerifySolution
+2017-02-15 19:26:05,202 INFO  Initiating to process and prepare Input for the verify service
+2017-02-15 19:26:05,202 INFO  Starting to parse the user solution
+2017-02-15 19:26:05,202 INFO  Displaying user solution
+2017-02-15 19:26:09,500 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-32\r\n#Start writing your code here\r\n\r\nfrom abc import ABCMeta,abstractmethod\r\n\r\nclass Employee(metaclass = ABCMeta) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification):\r\n        self.__job_band = job_band\r\n        self.__employee_name = employee_name\r\n        self.__basic_salary = basic_salary\r\n        self.__qualification = qualification\r\n        \r\n\r\n    def get_job_band(self):\r\n        return self.__job_band\r\n\r\n\r\n    def get_employee_name(self):\r\n        return self.__employee_name\r\n\r\n\r\n    def get_basic_salary(self):\r\n        return self.__basic_salary\r\n\r\n\r\n    def get_qualification(self):\r\n        return self.__qualification\r\n\r\n    \r\n    @abstractmethod\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    @abstractmethod\r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n    def validate_basic_salary(self):\r\n        if self.get_basic_salary() > 3000 : \r\n            return True\r\n        return False\r\n    \r\n    def validate_qualification(self):\r\n        if all(self.get_qualification() == x for x in (\"Bachelors\",\"Masters\" )): \r\n            print(\"Hello\")\r\n        else :\r\n            print(\"Yellow\")\r\n            \r\n        if self.get_qualification() == \"Bachelors\" or self.get_qualification() == \"Masters\" :\r\n            return True\r\n        return False\r\n        \r\n    \r\n    \r\nclass Lateral (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,skill_set): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__skill_set = skill_set\r\n\r\n    def get_skill_set(self):\r\n        return self.__skill_set\r\n\r\n\r\n    def validate_job_band(self):\r\n        \r\n        x =  self.get_job_band()\r\n        if all (x  in ( \"A\", \"B\" ,\"C\") ):\r\n            print(\"hello\")\r\n        \r\n        \r\n        if x == \"A\" \r\n    \r\n    \r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n    \r\n\r\nclass Graduate (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,cgpa): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__cgpa = cgpa\r\n\r\n    def get_cgpa(self):\r\n        return self.__cgpa\r\n\r\n    \r\n\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n","asgnmtId":"32","SolutionFileName":"Assignment33.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-15 19:26:09,503 INFO  Successfully processed and prepared the input for the verify service
+2017-02-15 19:26:09,504 INFO  Successfully set the request parameters for VerifySolution
+2017-02-15 19:26:09,505 INFO  Invoking the service to verify the user solution
+2017-02-15 19:26:09,506 INFO  Time before invoking service:Wed Feb 15 19:26:09 IST 2017
+2017-02-15 19:26:09,507 INFO  Initialising service address for VerifySolution
+2017-02-15 19:26:09,508 INFO  Time before invoking service In SUPER:Wed Feb 15 19:26:09 IST 2017
+2017-02-15 19:26:17,733 INFO  Time after invoking service In SUPER:Wed Feb 15 19:26:17 IST 2017
+2017-02-15 19:26:17,740 INFO  Service responded successfully with required details
+2017-02-15 19:26:17,741 INFO  Time after invoking service:Wed Feb 15 19:26:17 IST 2017
+2017-02-15 19:26:17,741 INFO  User solution successfully verified
+2017-02-15 19:26:17,743 INFO  Processing the response from verify service
+2017-02-15 19:26:17,751 INFO  Starting to parse JSON response
+2017-02-15 19:26:17,756 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,757 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,758 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,758 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,760 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,761 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,762 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,763 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,763 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:26:17,764 INFO  Successfully parsed JSON response
+2017-02-15 19:26:17,766 INFO  In the process of generating verify response in HTML
+2017-02-15 19:26:17,871 INFO  Successfully generated verify response in HTML
+2017-02-15 19:26:17,912 INFO  Successfully processed the response from service
+2017-02-15 19:53:42,008 INFO  Setting request parameters for VerifySolution
+2017-02-15 19:53:42,008 INFO  Initiating to process and prepare Input for the verify service
+2017-02-15 19:53:42,008 INFO  Starting to parse the user solution
+2017-02-15 19:53:42,024 INFO  Displaying user solution
+2017-02-15 19:53:46,801 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-32\r\n#Start writing your code here\r\nfrom abc import ABCMeta, abstractmethod\r\n\r\n\r\nclass Employee(metaclass = ABCMeta) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification):\r\n        self.__job_band = job_band\r\n        self.__employee_name = employee_name\r\n        self.__basic_salary = basic_salary\r\n        self.__qualification = qualification\r\n        \r\n\r\n    def get_job_band(self):\r\n        return self.__job_band\r\n\r\n\r\n    def get_employee_name(self):\r\n        return self.__employee_name\r\n\r\n\r\n    def get_basic_salary(self):\r\n        return self.__basic_salary\r\n\r\n\r\n    def get_qualification(self):\r\n        return self.__qualification\r\n\r\n    \r\n    @abstractmethod\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    @abstractmethod\r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n    \r\n    def validate_basic_salary(self):\r\n        if self.get_basic_salary() > 3000 : \r\n            return True\r\n        return False\r\n    \r\n    def validate_qualification(self):\r\n#         if all(self.get_qualification() == x for x in (\"Bachelors\",\"Masters\" )): \r\n#             print(\"Hello\")\r\n#         else :\r\n#             print(\"Yellow\")\r\n            \r\n        if self.get_qualification() == \"Bachelors\" or self.get_qualification() == \"Masters\" :\r\n            return True\r\n        return False\r\n        \r\n    \r\n    \r\nclass Lateral (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,skill_set): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__skill_set = skill_set\r\n\r\n    def get_skill_set(self):\r\n        return self.__skill_set\r\n\r\n\r\n    def validate_job_band(self):\r\n         \r\n#         if x == \"A\" :\r\n#             pass\r\n        x =  self.get_job_band()\r\n        if x in (\"D\", \"E\" ,\"F\"):\r\n            print('found x')\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def calculate_gross_salary(self):\r\n        gross_salary = 0\r\n        basic_salary = self.get_basic_salary()\r\n        pf_amount  = basic_salary * 12 / 100\r\n        skill = self.get_skill_set()\r\n        job_band = self.get_job_band()\r\n        incentive = 0\r\n        sme_bonus = 0\r\n        \r\n\r\n        \r\n\r\n        if skill == \"AGP\":\r\n            sme_bonus = 6500\r\n        elif skill == \"AGPT\":\r\n            sme_bonus = 8200\r\n        elif skill == \"AGDEV\":\r\n            sme_bonus = 11500    \r\n        else :\r\n            sme_bonus = 0\r\n            print(\"Improper SKILL sme_bonus\")\r\n        \r\n        \r\n        if job_band == \"D\" :\r\n            incentive = basic_salary * 13 / 100\r\n        elif job_band == \"E\" :\r\n            incentive = basic_salary * 16 / 100\r\n        elif job_band == \"F\" :\r\n            incentive = basic_salary * 20 / 100\r\n        else :\r\n            incentive = 0\r\n            print(\"Improper incentive job_band\")\r\n        \r\n        \r\n        if self.validate_basic_salary() and self.validate_job_band() and self.validate_qualification() :\r\n            gross_salary = basic_salary + pf_amount + sme_bonus + incentive\r\n            \r\n            return gross_salary\r\n            \r\n        else :\r\n            gross_salary = -1\r\n            return gross_salary\r\n        \r\n    \r\n    \r\n\r\nclass Graduate (Employee) :\r\n    \r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,cgpa): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__cgpa = cgpa\r\n\r\n    def get_cgpa(self):\r\n        return self.__cgpa\r\n\r\n    \r\n\r\n    def validate_job_band(self):\r\n        \r\n        x =  self.get_job_band()\r\n#         if all (x  in ( \"A\", \"B\" ,\"C\") ):\r\n#             print(\"hello\")\r\n        \r\n        if x in (\"A\", \"B\" ,\"C\"):\r\n            print('found x')\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    \r\n    def calculate_gross_salary(self):\r\n        gross_salary = 0\r\n        basic_salary = self.get_basic_salary()\r\n        pf_amount  = basic_salary * 12 / 100\r\n        cgpa = self.get_cgpa()\r\n        job_band = self.get_job_band()\r\n        incentive = 0\r\n        tpi_amount = 0\r\n        \r\n        if cgpa >= 4 and cgpa <= 4.25 :\r\n            tpi_amount = 1000\r\n        elif cgpa >= 4.26 and cgpa <= 4.5 :\r\n            tpi_amount = 1700\r\n        elif cgpa >= 4.51 and cgpa <= 4.75 :\r\n            tpi_amount = 3200\r\n        elif cgpa >= 4.76 and cgpa <=5 :\r\n            tpi_amount = 5000\r\n        else :\r\n            tpi_amount = 0\r\n            print(\"Improper CGPA\")\r\n        \r\n        \r\n        if job_band == \"A\" :\r\n            incentive = basic_salary * 4 / 100\r\n        elif job_band == \"B\" :\r\n            incentive = basic_salary * 6 / 100\r\n        elif job_band == \"C\" :\r\n            incentive = basic_salary * 10 / 100\r\n        else :\r\n            incentive = 0\r\n            print(\"Improper incentive job_band\")\r\n        \r\n        \r\n        if self.validate_basic_salary() and self.validate_job_band() and self.validate_qualification() :\r\n            gross_salary = basic_salary + pf_amount + tpi_amount + incentive\r\n            \r\n            return gross_salary\r\n            \r\n        else :\r\n            gross_salary = -1\r\n            return gross_salary\r\n        \r\n    \r\n    \r\nlat = Lateral(\"E\",\"Kautilya\" , 4000 , \"Masters\",\"AGP\")\r\ngrad = Graduate(\"A\",\"Kautisalya\" , 5000 , \"Masters\",4.76)\r\nlat.calculate_gross_salary()\r\n\r\ngrad.calculate_gross_salary()\r\n","asgnmtId":"32","SolutionFileName":"Assignment33.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-15 19:53:46,801 INFO  Successfully processed and prepared the input for the verify service
+2017-02-15 19:53:46,801 INFO  Successfully set the request parameters for VerifySolution
+2017-02-15 19:53:46,801 INFO  Invoking the service to verify the user solution
+2017-02-15 19:53:46,801 INFO  Time before invoking service:Wed Feb 15 19:53:46 IST 2017
+2017-02-15 19:53:46,801 INFO  Initialising service address for VerifySolution
+2017-02-15 19:53:46,801 INFO  Time before invoking service In SUPER:Wed Feb 15 19:53:46 IST 2017
+2017-02-15 19:53:54,082 INFO  Time after invoking service In SUPER:Wed Feb 15 19:53:54 IST 2017
+2017-02-15 19:53:54,082 INFO  Service responded successfully with required details
+2017-02-15 19:53:54,082 INFO  Time after invoking service:Wed Feb 15 19:53:54 IST 2017
+2017-02-15 19:53:54,082 INFO  User solution successfully verified
+2017-02-15 19:53:54,082 INFO  Processing the response from verify service
+2017-02-15 19:53:54,098 INFO  Starting to parse JSON response
+2017-02-15 19:53:54,098 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,098 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,098 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,098 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:53:54,114 INFO  Successfully parsed JSON response
+2017-02-15 19:53:54,114 INFO  In the process of generating verify response in HTML
+2017-02-15 19:53:54,207 INFO  Successfully generated verify response in HTML
+2017-02-15 19:53:54,207 INFO  Successfully processed the response from service
+2017-02-15 19:54:05,284 INFO  Initiating to process and prepare Input for the submit service
+2017-02-15 19:54:05,299 INFO  Displaying user solution
+2017-02-15 19:54:05,315 INFO  Successfully processed and prepared the input for the submit service
+2017-02-15 19:54:05,315 INFO  Invoking the service to submit the user solution
+2017-02-15 19:54:05,315 INFO  Initialising service address for Submit
+2017-02-15 19:54:05,315 INFO  Time before invoking service In SUPER:Wed Feb 15 19:54:05 IST 2017
+2017-02-15 19:54:05,424 INFO  Time after invoking service In SUPER:Wed Feb 15 19:54:05 IST 2017
+2017-02-15 19:54:05,424 INFO  Service responded successfully with required details
+2017-02-15 19:54:05,424 INFO  User solution successfully submitted
+2017-02-15 19:54:05,424 INFO  Displaying submission status
+2017-02-15 19:54:05,424 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-15 19:55:49,457 INFO  Initiating to process and prepare Input for the submit service
+2017-02-15 19:55:49,457 INFO  Displaying user solution
+2017-02-15 19:55:49,457 INFO  No changes made in the assignment since the last submission
+2017-02-15 19:55:49,473 ERROR Exception occured while submitting the user solution
+2017-02-15 19:55:51,316 INFO  Setting request parameters for VerifySolution
+2017-02-15 19:55:51,316 INFO  Initiating to process and prepare Input for the verify service
+2017-02-15 19:55:51,316 INFO  Starting to parse the user solution
+2017-02-15 19:55:51,316 INFO  Displaying user solution
+2017-02-15 19:55:55,058 INFO  Successfully parsed the user solution{"CourseShortName":"OOP","UserSolution":"#OOP-Assgn-32\r\n#Start writing your code here\r\nfrom abc import ABCMeta, abstractmethod\r\n\r\nclass Employee(metaclass = ABCMeta) :\r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification):\r\n        self.__job_band = job_band\r\n        self.__employee_name = employee_name\r\n        self.__basic_salary = basic_salary\r\n        self.__qualification = qualification\r\n        \r\n    def get_job_band(self):\r\n        return self.__job_band\r\n\r\n    def get_employee_name(self):\r\n        return self.__employee_name\r\n\r\n    def get_basic_salary(self):\r\n        return self.__basic_salary\r\n\r\n    def get_qualification(self):\r\n        return self.__qualification\r\n\r\n    @abstractmethod\r\n    def validate_job_band(self):\r\n        pass\r\n    \r\n    @abstractmethod\r\n    def calculate_gross_salary(self):\r\n        pass\r\n    \r\n    def validate_basic_salary(self):\r\n        if self.get_basic_salary() > 3000 : \r\n            return True\r\n        return False\r\n    \r\n    def validate_qualification(self):\r\n        if self.get_qualification() == \"Bachelors\" or self.get_qualification() == \"Masters\" :\r\n            return True\r\n        return False\r\n        \r\nclass Lateral (Employee) :\r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,skill_set): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__skill_set = skill_set\r\n\r\n    def get_skill_set(self):\r\n        return self.__skill_set\r\n    \r\n    def validate_job_band(self):\r\n\r\n        x =  self.get_job_band()\r\n        if x in (\"D\", \"E\" ,\"F\"):\r\n            print('found x')\r\n            return True\r\n        else :\r\n            return False\r\n    \r\n    def calculate_gross_salary(self):\r\n        gross_salary = 0\r\n        basic_salary = self.get_basic_salary()\r\n        pf_amount  = basic_salary * 12 / 100\r\n        skill = self.get_skill_set()\r\n        job_band = self.get_job_band()\r\n        incentive = 0\r\n        sme_bonus = 0\r\n        \r\n        if skill == \"AGP\":\r\n            sme_bonus = 6500\r\n        elif skill == \"AGPT\":\r\n            sme_bonus = 8200\r\n        elif skill == \"AGDEV\":\r\n            sme_bonus = 11500    \r\n        else :\r\n            sme_bonus = 0\r\n            print(\"Improper SKILL sme_bonus\")\r\n        \r\n        if job_band == \"D\" :\r\n            incentive = basic_salary * 13 / 100\r\n        elif job_band == \"E\" :\r\n            incentive = basic_salary * 16 / 100\r\n        elif job_band == \"F\" :\r\n            incentive = basic_salary * 20 / 100\r\n        else :\r\n            incentive = 0\r\n            print(\"Improper incentive job_band\")\r\n        \r\n        if self.validate_basic_salary() and self.validate_job_band() and self.validate_qualification() :\r\n            gross_salary = basic_salary + pf_amount + sme_bonus + incentive   \r\n            return gross_salary     \r\n        else :\r\n            gross_salary = -1\r\n            return gross_salary\r\n        \r\nclass Graduate (Employee) :\r\n    \r\n    def __init__(self,job_band,employee_name , basic_salary , qualification,cgpa): \r\n        super().__init__(job_band, employee_name, basic_salary, qualification)\r\n        self.__cgpa = cgpa\r\n\r\n    def get_cgpa(self):\r\n        return self.__cgpa\r\n\r\n    def validate_job_band(self):\r\n        x =  self.get_job_band()\r\n        \r\n        if x in (\"A\", \"B\" ,\"C\"):\r\n            print('found x')\r\n            return True\r\n        else :\r\n            return False\r\n        \r\n    def calculate_gross_salary(self):\r\n        gross_salary = 0\r\n        basic_salary = self.get_basic_salary()\r\n        pf_amount  = basic_salary * 12 / 100\r\n        cgpa = self.get_cgpa()\r\n        job_band = self.get_job_band()\r\n        incentive = 0\r\n        tpi_amount = 0\r\n        \r\n        if cgpa >= 4 and cgpa <= 4.25 :\r\n            tpi_amount = 1000\r\n        elif cgpa >= 4.26 and cgpa <= 4.5 :\r\n            tpi_amount = 1700\r\n        elif cgpa >= 4.51 and cgpa <= 4.75 :\r\n            tpi_amount = 3200\r\n        elif cgpa >= 4.76 and cgpa <=5 :\r\n            tpi_amount = 5000\r\n        else :\r\n            tpi_amount = 0\r\n            print(\"Improper CGPA\")\r\n        \r\n        if job_band == \"A\" :\r\n            incentive = basic_salary * 4 / 100\r\n        elif job_band == \"B\" :\r\n            incentive = basic_salary * 6 / 100\r\n        elif job_band == \"C\" :\r\n            incentive = basic_salary * 10 / 100\r\n        else :\r\n            incentive = 0\r\n            print(\"Improper incentive job_band\")\r\n        \r\n        if self.validate_basic_salary() and self.validate_job_band() and self.validate_qualification() :\r\n            gross_salary = basic_salary + pf_amount + tpi_amount + incentive \r\n            return gross_salary   \r\n        else :\r\n            gross_salary = -1\r\n            return gross_salary\r\n        \r\n    \r\nlat = Lateral(\"E\",\"Kautilya\" , 4000 , \"Masters\",\"AGP\")\r\ngrad = Graduate(\"A\",\"Kautisalya\" , 5000 , \"Masters\",4.76)\r\nlat.calculate_gross_salary()\r\n\r\ngrad.calculate_gross_salary()\r\n","asgnmtId":"32","SolutionFileName":"Assignment33.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-15 19:55:55,058 INFO  Successfully processed and prepared the input for the verify service
+2017-02-15 19:55:55,058 INFO  Successfully set the request parameters for VerifySolution
+2017-02-15 19:55:55,058 INFO  Invoking the service to verify the user solution
+2017-02-15 19:55:55,058 INFO  Time before invoking service:Wed Feb 15 19:55:55 IST 2017
+2017-02-15 19:55:55,073 INFO  Initialising service address for VerifySolution
+2017-02-15 19:55:55,073 INFO  Time before invoking service In SUPER:Wed Feb 15 19:55:55 IST 2017
+2017-02-15 19:56:03,204 INFO  Time after invoking service In SUPER:Wed Feb 15 19:56:03 IST 2017
+2017-02-15 19:56:03,204 INFO  Service responded successfully with required details
+2017-02-15 19:56:03,204 INFO  Time after invoking service:Wed Feb 15 19:56:03 IST 2017
+2017-02-15 19:56:03,204 INFO  User solution successfully verified
+2017-02-15 19:56:03,204 INFO  Processing the response from verify service
+2017-02-15 19:56:03,220 INFO  Starting to parse JSON response
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-15 19:56:03,220 INFO  Successfully parsed JSON response
+2017-02-15 19:56:03,220 INFO  In the process of generating verify response in HTML
+2017-02-15 19:56:03,306 INFO  Successfully generated verify response in HTML
+2017-02-15 19:56:03,312 INFO  Successfully processed the response from service
+2017-02-15 19:56:08,857 INFO  Initiating to process and prepare Input for the submit service
+2017-02-15 19:56:08,857 INFO  Displaying user solution
+2017-02-15 19:56:08,872 INFO  Successfully processed and prepared the input for the submit service
+2017-02-15 19:56:08,872 INFO  Invoking the service to submit the user solution
+2017-02-15 19:56:08,872 INFO  Initialising service address for Submit
+2017-02-15 19:56:08,872 INFO  Time before invoking service In SUPER:Wed Feb 15 19:56:08 IST 2017
+2017-02-15 19:56:08,974 INFO  Time after invoking service In SUPER:Wed Feb 15 19:56:08 IST 2017
+2017-02-15 19:56:08,975 INFO  Service responded successfully with required details
+2017-02-15 19:56:08,991 INFO  User solution successfully submitted
+2017-02-15 19:56:08,991 INFO  Displaying submission status
+2017-02-15 19:56:08,991 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-15 22:28:30,431 INFO  Loading Baseframework Plugin
+2017-02-15 22:28:30,505 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-15 22:28:33,106 INFO  Loading the Menu - HandsOn
+2017-02-15 22:28:33,382 INFO  Successfully loaded the Menu - HandsOn

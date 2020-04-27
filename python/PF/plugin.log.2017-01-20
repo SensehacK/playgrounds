@@ -1,0 +1,640 @@
+2017-01-20 08:55:00,091 INFO  Loading Baseframework Plugin
+2017-01-20 08:55:00,341 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-20 08:55:02,178 INFO  Loading the Menu - HandsOn
+2017-01-20 08:55:02,428 INFO  Successfully loaded the Menu - HandsOn
+2017-01-20 08:57:28,689 INFO  Loading Programming Assignment Plugin
+2017-01-20 08:57:28,689 INFO  Verification is not available for tryouts!!!
+2017-01-20 09:06:43,770 INFO  Creating Layout for the perspective : 
+2017-01-20 09:06:43,770 INFO  Creating Layout for the perspective : Programming Assignment V4.0
+2017-01-20 09:06:43,770 INFO  Successfully created Layout for the perspective : Programming Assignment V4.0
+2017-01-20 09:06:43,770 INFO  Successfully created Layout for the perspective : 
+2017-01-20 09:20:47,860 INFO  Verification is not available for tryouts!!!
+2017-01-20 09:20:52,281 INFO  Verification is not available for tryouts!!!
+2017-01-20 09:20:57,966 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 09:20:58,044 INFO  Displaying user solution
+2017-01-20 09:20:58,044 INFO  Verify the solution before submitting
+2017-01-20 09:20:58,344 ERROR Exception occured while submitting the user solution
+2017-01-20 09:21:46,473 INFO  Verification is not available for tryouts!!!
+2017-01-20 09:21:49,410 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 09:21:49,426 INFO  Displaying user solution
+2017-01-20 09:21:49,426 INFO  Verify the solution before submitting
+2017-01-20 09:21:49,426 ERROR Exception occured while submitting the user solution
+2017-01-20 09:21:54,332 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 09:21:54,332 INFO  Displaying user solution
+2017-01-20 09:21:54,348 INFO  Verify the solution before submitting
+2017-01-20 09:21:54,348 ERROR Exception occured while submitting the user solution
+2017-01-20 09:22:01,175 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 09:22:01,175 INFO  Displaying user solution
+2017-01-20 09:22:01,175 INFO  Verify the solution before submitting
+2017-01-20 09:22:01,175 ERROR Exception occured while submitting the user solution
+2017-01-20 09:23:48,254 INFO  Verification is not available for tryouts!!!
+2017-01-20 11:24:37,830 INFO  Setting request parameters for VerifySolution
+2017-01-20 11:24:37,830 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 11:24:37,830 INFO  Starting to parse the user solution
+2017-01-20 11:24:37,846 INFO  Displaying user solution
+2017-01-20 11:24:40,033 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-15\r\n\r\ndef find_sum_of_digits(number):\r\n    sum_of_digits=0\r\n    #Write your logic here\r\n\r\n    \r\n    #print(i)\r\n    while(number > 0) :\r\n       \r\n        print(\"Loop\")\r\n        '''\r\n        print(number)\r\n        last_number = number % 10\r\n        print(last_number)\r\n\r\n        second_last_number = number % 100\r\n        print(second_last_number)\r\n        second_last_number = second_last_number//10\r\n        print(second_last_number)\r\n\r\n        third_last_number = number//100\r\n        print(third_last_number)\r\n        '''\r\n        \r\n        print(number)\r\n        remainder = number % 10\r\n        print(remainder)\r\n        number = number // 10\r\n        print(number)\r\n        print(\"Sum before \" ,sum_of_digits)\r\n        sum_of_digits = sum_of_digits + remainder\r\n        print(\"Sum after \" , sum_of_digits)\r\n        \r\n    \r\n    \r\n    \r\n    #sum_of_digits = last_number + second_last_number + third_last_number\r\n    return sum_of_digits\r\n\r\n#Provide different values for number and test your program\r\nsum_of_digits = find_sum_of_digits(245343253)\r\nprint(\"Sum of digits:\",sum_of_digits)\r\n","asgnmtId":"15","SolutionFileName":"Exercise15.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-20 11:24:40,033 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 11:24:40,033 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 11:24:40,033 INFO  Invoking the service to verify the user solution
+2017-01-20 11:24:40,033 INFO  Time before invoking service:Fri Jan 20 11:24:40 IST 2017
+2017-01-20 11:24:40,033 INFO  Initialising service address for VerifySolution
+2017-01-20 11:24:40,049 INFO  Time before invoking service In SUPER:Fri Jan 20 11:24:40 IST 2017
+2017-01-20 11:24:43,080 INFO  Time after invoking service In SUPER:Fri Jan 20 11:24:43 IST 2017
+2017-01-20 11:24:43,080 INFO  Service responded successfully with required details
+2017-01-20 11:24:43,080 INFO  Time after invoking service:Fri Jan 20 11:24:43 IST 2017
+2017-01-20 11:24:43,080 INFO  User solution successfully verified
+2017-01-20 11:24:43,080 INFO  Processing the response from verify service
+2017-01-20 11:24:43,080 INFO  Starting to parse JSON response
+2017-01-20 11:24:43,080 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:24:43,096 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:24:43,096 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:24:43,096 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:24:43,096 INFO  Successfully parsed JSON response
+2017-01-20 11:24:43,096 INFO  In the process of generating verify response in HTML
+2017-01-20 11:24:43,424 INFO  Successfully generated verify response in HTML
+2017-01-20 11:24:43,424 INFO  Successfully processed the response from service
+2017-01-20 11:26:29,649 INFO  Setting request parameters for VerifySolution
+2017-01-20 11:26:29,649 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 11:26:29,649 INFO  Starting to parse the user solution
+2017-01-20 11:26:29,649 INFO  Displaying user solution
+2017-01-20 11:26:31,624 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-15\r\n\r\ndef find_sum_of_digits(number):\r\n    sum_of_digits=0\r\n    loop1 = 0\r\n    #Write your logic here\r\n\r\n    \r\n    #print(i)\r\n    while(number > 0) :\r\n        \r\n        print(\"Loop\", loop1)\r\n        \r\n        '''\r\n        print(number)\r\n        last_number = number % 10\r\n        print(last_number)\r\n\r\n        second_last_number = number % 100\r\n        print(second_last_number)\r\n        second_last_number = second_last_number//10\r\n        print(second_last_number)\r\n\r\n        third_last_number = number//100\r\n        print(third_last_number)\r\n        '''\r\n        \r\n        print(number)\r\n        remainder = number % 10\r\n        print(remainder)\r\n        number = number // 10\r\n        print(number)\r\n        print(\"Sum before \" ,sum_of_digits)\r\n        sum_of_digits = sum_of_digits + remainder\r\n        print(\"Sum after \" , sum_of_digits)\r\n        \r\n        \r\n        loop1 += 1\r\n    \r\n    \r\n    #sum_of_digits = last_number + second_last_number + third_last_number\r\n    return sum_of_digits\r\n\r\n#Provide different values for number and test your program\r\nsum_of_digits = find_sum_of_digits(245343253)\r\nprint(\"Sum of digits:\",sum_of_digits)\r\n","asgnmtId":"15","SolutionFileName":"Exercise15.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-20 11:26:31,624 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 11:26:31,624 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 11:26:31,640 INFO  Invoking the service to verify the user solution
+2017-01-20 11:26:31,640 INFO  Time before invoking service:Fri Jan 20 11:26:31 IST 2017
+2017-01-20 11:26:31,640 INFO  Initialising service address for VerifySolution
+2017-01-20 11:26:31,640 INFO  Time before invoking service In SUPER:Fri Jan 20 11:26:31 IST 2017
+2017-01-20 11:26:34,171 INFO  Time after invoking service In SUPER:Fri Jan 20 11:26:34 IST 2017
+2017-01-20 11:26:34,171 INFO  Service responded successfully with required details
+2017-01-20 11:26:34,171 INFO  Time after invoking service:Fri Jan 20 11:26:34 IST 2017
+2017-01-20 11:26:34,171 INFO  User solution successfully verified
+2017-01-20 11:26:34,187 INFO  Processing the response from verify service
+2017-01-20 11:26:34,187 INFO  Starting to parse JSON response
+2017-01-20 11:26:34,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:26:34,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:26:34,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:26:34,187 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 11:26:34,187 INFO  Successfully parsed JSON response
+2017-01-20 11:26:34,187 INFO  In the process of generating verify response in HTML
+2017-01-20 11:26:34,265 INFO  Successfully generated verify response in HTML
+2017-01-20 11:26:34,265 INFO  Successfully processed the response from service
+2017-01-20 11:26:37,540 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 11:26:37,556 INFO  Displaying user solution
+2017-01-20 11:26:37,556 INFO  Successfully processed and prepared the input for the submit service
+2017-01-20 11:26:37,556 INFO  Invoking the service to submit the user solution
+2017-01-20 11:26:37,556 INFO  Initialising service address for Submit
+2017-01-20 11:26:37,571 INFO  Time before invoking service In SUPER:Fri Jan 20 11:26:37 IST 2017
+2017-01-20 11:26:37,681 INFO  Time after invoking service In SUPER:Fri Jan 20 11:26:37 IST 2017
+2017-01-20 11:26:37,681 INFO  Service responded successfully with required details
+2017-01-20 11:26:37,696 INFO  User solution successfully submitted
+2017-01-20 11:26:37,696 INFO  Displaying submission status
+2017-01-20 11:26:37,696 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-20 16:08:25,554 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:08:25,554 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:08:25,554 INFO  Starting to parse the user solution
+2017-01-20 16:08:25,570 INFO  Displaying user solution
+2017-01-20 16:08:31,009 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-22\r\ndef find_leap_years(given_year):\r\n    \r\n    # Write your logic here\r\n    leap_year_list = []\r\n    list_of_leap_years = []\r\n    count = 0 \r\n    \r\n    while count < 15 :\r\n        if  given_year % 400 == 0 and given_year % 100 != 0 or  given_year % 4 == 0 :\r\n            \r\n            list_of_leap_years.append(given_year)\r\n            count = count + 1\r\n            given_year += 1\r\n            \r\n        else :\r\n            given_year += 1\r\n            \r\n    return list_of_leap_years\r\n        \r\n    \r\n    \r\n    '''\r\n    if given_year % 400 == 0 and given_year % 100 != 0  :\r\n            print(\"400 years leap year\")\r\n    if given_year % 4 == 0 :\r\n        print(\"Leap Year\")\r\n        end_year_range = given_year + 15*4\r\n        \r\n        for i in range (0,15) :\r\n            \r\n            print(given_year)    \r\n            next_leap_year = given_year + 4\r\n            print(next_leap_year)\r\n            given_year = next_leap_year\r\n            if(next_leap_year < end_year_range) : \r\n                list_of_leap_years = leap_year_list.append(next_leap_year)\r\n                print(\"leap_year_list\")\r\n                print(leap_year_list)\r\n        \r\n        return leap_year_list\r\n        \r\n        \r\n    else :\r\n        print(\"It is a normal Year\")    \r\n        \r\n        \r\n    \r\n    \r\n    return list_of_leap_years\r\n    '''\r\n\r\n\r\nlist_of_leap_years = find_leap_years(2000)\r\nprint(list_of_leap_years)\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 16:08:31,009 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:08:31,009 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:08:31,009 INFO  Invoking the service to verify the user solution
+2017-01-20 16:08:31,009 INFO  Time before invoking service:Fri Jan 20 16:08:31 IST 2017
+2017-01-20 16:08:31,009 INFO  Initialising service address for VerifySolution
+2017-01-20 16:08:31,025 INFO  Time before invoking service In SUPER:Fri Jan 20 16:08:31 IST 2017
+2017-01-20 16:08:32,571 INFO  Time after invoking service In SUPER:Fri Jan 20 16:08:32 IST 2017
+2017-01-20 16:08:32,571 INFO  Service responded successfully with required details
+2017-01-20 16:08:32,571 INFO  Time after invoking service:Fri Jan 20 16:08:32 IST 2017
+2017-01-20 16:08:32,571 INFO  User solution successfully verified
+2017-01-20 16:08:32,571 INFO  Processing the response from verify service
+2017-01-20 16:08:32,571 INFO  Starting to parse JSON response
+2017-01-20 16:08:32,571 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:08:32,571 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:08:32,571 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:08:32,571 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:08:32,571 INFO  Successfully parsed JSON response
+2017-01-20 16:08:32,587 INFO  In the process of generating verify response in HTML
+2017-01-20 16:08:32,649 INFO  Successfully generated verify response in HTML
+2017-01-20 16:08:32,649 INFO  Successfully processed the response from service
+2017-01-20 16:09:34,603 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:09:34,603 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:09:34,603 INFO  Starting to parse the user solution
+2017-01-20 16:09:34,603 INFO  Displaying user solution
+2017-01-20 16:09:36,089 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-22\r\ndef find_leap_years(given_year):\r\n    \r\n    # Write your logic here\r\n    leap_year_list = []\r\n    list_of_leap_years = []\r\n    count = 0 \r\n    \r\n    while count < 15 :\r\n        if  (given_year % 400 == 0) or (given_year % 100 != 0 and  given_year % 4 == 0) :\r\n            \r\n            list_of_leap_years.append(given_year)\r\n            count = count + 1\r\n            given_year += 1\r\n            \r\n        else :\r\n            given_year += 1\r\n            \r\n    return list_of_leap_years\r\n        \r\n    \r\n    \r\n    '''\r\n    if given_year % 400 == 0 and given_year % 100 != 0  :\r\n            print(\"400 years leap year\")\r\n    if given_year % 4 == 0 :\r\n        print(\"Leap Year\")\r\n        end_year_range = given_year + 15*4\r\n        \r\n        for i in range (0,15) :\r\n            \r\n            print(given_year)    \r\n            next_leap_year = given_year + 4\r\n            print(next_leap_year)\r\n            given_year = next_leap_year\r\n            if(next_leap_year < end_year_range) : \r\n                list_of_leap_years = leap_year_list.append(next_leap_year)\r\n                print(\"leap_year_list\")\r\n                print(leap_year_list)\r\n        \r\n        return leap_year_list\r\n        \r\n        \r\n    else :\r\n        print(\"It is a normal Year\")    \r\n        \r\n        \r\n    \r\n    \r\n    return list_of_leap_years\r\n    '''\r\n\r\n\r\nlist_of_leap_years = find_leap_years(2000)\r\nprint(list_of_leap_years)\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 16:09:36,089 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:09:36,089 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:09:36,089 INFO  Invoking the service to verify the user solution
+2017-01-20 16:09:36,089 INFO  Time before invoking service:Fri Jan 20 16:09:36 IST 2017
+2017-01-20 16:09:36,089 INFO  Initialising service address for VerifySolution
+2017-01-20 16:09:36,089 INFO  Time before invoking service In SUPER:Fri Jan 20 16:09:36 IST 2017
+2017-01-20 16:09:40,851 INFO  Time after invoking service In SUPER:Fri Jan 20 16:09:40 IST 2017
+2017-01-20 16:09:40,851 INFO  Service responded successfully with required details
+2017-01-20 16:09:40,851 INFO  Time after invoking service:Fri Jan 20 16:09:40 IST 2017
+2017-01-20 16:09:40,851 INFO  User solution successfully verified
+2017-01-20 16:09:40,851 INFO  Processing the response from verify service
+2017-01-20 16:09:40,851 INFO  Starting to parse JSON response
+2017-01-20 16:09:40,851 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:09:40,851 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:09:40,851 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:09:40,851 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:09:40,851 INFO  Successfully parsed JSON response
+2017-01-20 16:09:40,851 INFO  In the process of generating verify response in HTML
+2017-01-20 16:09:40,928 INFO  Successfully generated verify response in HTML
+2017-01-20 16:09:40,928 INFO  Successfully processed the response from service
+2017-01-20 16:10:55,987 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:10:55,987 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:10:55,987 INFO  Starting to parse the user solution
+2017-01-20 16:10:55,987 INFO  Displaying user solution
+2017-01-20 16:10:55,987 INFO   User Solution is unchanged since the last verification.
+2017-01-20 16:10:56,002 INFO  Problem in processing and preparing Input for the verify service
+2017-01-20 16:10:58,118 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 16:10:58,477 INFO  Displaying user solution
+2017-01-20 16:10:58,493 INFO  Successfully processed and prepared the input for the submit service
+2017-01-20 16:10:58,493 INFO  Invoking the service to submit the user solution
+2017-01-20 16:10:58,493 INFO  Initialising service address for Submit
+2017-01-20 16:10:58,493 INFO  Time before invoking service In SUPER:Fri Jan 20 16:10:58 IST 2017
+2017-01-20 16:10:58,680 INFO  Time after invoking service In SUPER:Fri Jan 20 16:10:58 IST 2017
+2017-01-20 16:10:58,680 INFO  Service responded successfully with required details
+2017-01-20 16:10:58,680 INFO  User solution successfully submitted
+2017-01-20 16:10:58,680 INFO  Displaying submission status
+2017-01-20 16:10:58,680 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-20 16:49:37,164 INFO  Verification is not available for tryouts!!!
+2017-01-20 16:53:13,772 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:53:13,772 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:53:13,787 INFO  Starting to parse the user solution
+2017-01-20 16:53:13,787 INFO  Displaying user solution
+2017-01-20 16:53:14,849 INFO  Successfully parsed the user solution{"TestCaseSolution":"#PF-TCV-Exer-20\r\n\r\n\r\nimport pytest\r\nfrom Test_cases.solution import boarding\r\n\r\ndef test_boarding_1():\r\n        result=boarding(3)\r\n        assert result==1\r\n                \r\ndef test_boarding_2():\r\n        result=boarding(24)\r\n        assert result==1\r\n","CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n#Program to be tested \r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":"test_solution.py"}
+2017-01-20 16:53:14,849 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:53:14,849 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:53:14,864 INFO  Invoking the service to verify the user solution
+2017-01-20 16:53:14,864 INFO  Initialising service address for VerifySolution
+2017-01-20 16:53:14,864 INFO  Time before invoking service In SUPER:Fri Jan 20 16:53:14 IST 2017
+2017-01-20 16:53:19,567 INFO  Time after invoking service In SUPER:Fri Jan 20 16:53:19 IST 2017
+2017-01-20 16:53:19,567 INFO  Service responded successfully with required details
+2017-01-20 16:53:19,583 INFO  User solution successfully verified
+2017-01-20 16:53:19,583 INFO  Processing the response from verify service
+2017-01-20 16:53:26,833 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:53:26,833 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:53:26,833 INFO  Starting to parse the user solution
+2017-01-20 16:53:26,833 INFO  Displaying user solution
+2017-01-20 16:53:26,849 INFO   User Solution is unchanged since the last verification.
+2017-01-20 16:53:26,849 INFO  Problem in processing and preparing Input for the verify service
+2017-01-20 16:53:51,021 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:53:51,021 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:53:51,021 INFO  Starting to parse the user solution
+2017-01-20 16:53:51,021 INFO  Displaying user solution
+2017-01-20 16:53:51,036 INFO   User Solution is unchanged since the last verification.
+2017-01-20 16:53:51,036 INFO  Problem in processing and preparing Input for the verify service
+2017-01-20 16:54:10,083 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:54:10,099 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:54:10,099 INFO  Starting to parse the user solution
+2017-01-20 16:54:10,099 INFO  Displaying user solution
+2017-01-20 16:54:10,834 INFO  Successfully parsed the user solution{"TestCaseSolution":"#PF-TCV-Exer-20\r\n\r\nimport pytest\r\nfrom Test_cases.solution import boarding\r\n\r\ndef test_boarding_1():\r\n        result=boarding(3)\r\n        assert result==1\r\n                \r\ndef test_boarding_2():\r\n        result=boarding(24)\r\n        assert result==1\r\n","CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":"test_solution.py"}
+2017-01-20 16:54:10,834 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:54:10,834 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:54:10,834 INFO  Invoking the service to verify the user solution
+2017-01-20 16:54:10,834 INFO  Initialising service address for VerifySolution
+2017-01-20 16:54:10,834 INFO  Time before invoking service In SUPER:Fri Jan 20 16:54:10 IST 2017
+2017-01-20 16:54:13,131 INFO  Time after invoking service In SUPER:Fri Jan 20 16:54:13 IST 2017
+2017-01-20 16:54:13,131 INFO  Service responded successfully with required details
+2017-01-20 16:54:13,131 INFO  User solution successfully verified
+2017-01-20 16:54:13,131 INFO  Processing the response from verify service
+2017-01-20 16:54:13,146 INFO  Starting to parse JSON response
+2017-01-20 16:54:13,422 INFO  Successfully parsed JSON response
+2017-01-20 16:54:13,437 INFO  In the process of generating verify response in HTML
+2017-01-20 16:54:13,516 INFO  Successfully generated verify response in HTML
+2017-01-20 16:54:13,516 INFO  Successfully processed the response from service
+2017-01-20 16:57:38,844 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:57:38,844 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:57:38,844 INFO  Starting to parse the user solution
+2017-01-20 16:57:38,860 INFO  Displaying user solution
+2017-01-20 16:57:39,502 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-20 16:57:39,502 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:57:39,502 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:57:39,502 INFO  Invoking the service to verify the user solution
+2017-01-20 16:57:39,502 INFO  Time before invoking service:Fri Jan 20 16:57:39 IST 2017
+2017-01-20 16:57:39,502 INFO  Initialising service address for VerifySolution
+2017-01-20 16:57:39,502 INFO  Time before invoking service In SUPER:Fri Jan 20 16:57:39 IST 2017
+2017-01-20 16:57:42,236 INFO  Time after invoking service In SUPER:Fri Jan 20 16:57:42 IST 2017
+2017-01-20 16:57:42,236 INFO  Service responded successfully with required details
+2017-01-20 16:57:42,236 INFO  Time after invoking service:Fri Jan 20 16:57:42 IST 2017
+2017-01-20 16:57:42,236 INFO  User solution successfully verified
+2017-01-20 16:57:42,236 INFO  Processing the response from verify service
+2017-01-20 16:57:42,236 INFO  Starting to parse JSON response
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,236 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,252 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,252 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 16:57:42,252 INFO  Successfully parsed JSON response
+2017-01-20 16:57:42,252 INFO  In the process of generating verify response in HTML
+2017-01-20 16:57:42,314 INFO  Successfully generated verify response in HTML
+2017-01-20 16:57:42,314 INFO  Successfully processed the response from service
+2017-01-20 16:57:47,538 INFO  Setting request parameters for VerifySolution
+2017-01-20 16:57:47,538 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 16:57:47,538 INFO  Starting to parse the user solution
+2017-01-20 16:57:47,538 INFO  Displaying user solution
+2017-01-20 16:57:47,869 INFO  Successfully parsed the user solution{"TestCaseSolution":"#PF-TCV-Exer-20\r\n\r\nimport pytest\r\nfrom Test_cases.solution import boarding\r\n\r\ndef test_boarding_1():\r\n        result=boarding(3)\r\n        assert result==1\r\n                \r\ndef test_boarding_2():\r\n        result=boarding(24)\r\n        assert result==1\r\n","CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":"test_solution.py"}
+2017-01-20 16:57:47,870 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 16:57:47,871 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 16:57:47,872 INFO  Invoking the service to verify the user solution
+2017-01-20 16:57:47,873 INFO  Initialising service address for VerifySolution
+2017-01-20 16:57:47,874 INFO  Time before invoking service In SUPER:Fri Jan 20 16:57:47 IST 2017
+2017-01-20 16:57:50,663 INFO  Time after invoking service In SUPER:Fri Jan 20 16:57:50 IST 2017
+2017-01-20 16:57:50,663 INFO  Service responded successfully with required details
+2017-01-20 16:57:50,663 INFO  User solution successfully verified
+2017-01-20 16:57:50,678 INFO  Processing the response from verify service
+2017-01-20 16:57:50,678 INFO  Starting to parse JSON response
+2017-01-20 16:57:50,678 INFO  Successfully parsed JSON response
+2017-01-20 16:57:50,678 INFO  In the process of generating verify response in HTML
+2017-01-20 16:57:50,725 INFO  Successfully generated verify response in HTML
+2017-01-20 16:57:50,725 INFO  Successfully processed the response from service
+2017-01-20 17:00:19,147 INFO  Setting request parameters for VerifySolution
+2017-01-20 17:00:19,147 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 17:00:19,147 INFO  Starting to parse the user solution
+2017-01-20 17:00:19,147 INFO  Displaying user solution
+2017-01-20 17:00:19,912 INFO  Successfully parsed the user solution{"TestCaseSolution":"#PF-TCV-Exer-20\r\n\r\nimport pytest\r\nfrom Test_cases.solution import boarding\r\n\r\ndef test_boarding_1():\r\n        result=boarding(3)\r\n        assert result==1\r\n                \r\ndef test_boarding_2():\r\n        result=boarding(24)\r\n        assert result==1\r\n        \r\ndef test_boarding_3():\r\n        result=boarding(75)\r\n        assert result==2\r\n\r\ndef test_boarding_4():\r\n        result=boarding(104)\r\n        assert result==3\r\n             \r\n        \r\n","CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":"test_solution.py"}
+2017-01-20 17:00:19,912 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 17:00:19,912 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 17:00:19,912 INFO  Invoking the service to verify the user solution
+2017-01-20 17:00:19,912 INFO  Initialising service address for VerifySolution
+2017-01-20 17:00:19,912 INFO  Time before invoking service In SUPER:Fri Jan 20 17:00:19 IST 2017
+2017-01-20 17:00:22,772 INFO  Time after invoking service In SUPER:Fri Jan 20 17:00:22 IST 2017
+2017-01-20 17:00:22,772 INFO  Service responded successfully with required details
+2017-01-20 17:00:22,772 INFO  User solution successfully verified
+2017-01-20 17:00:22,772 INFO  Processing the response from verify service
+2017-01-20 17:00:22,772 INFO  Starting to parse JSON response
+2017-01-20 17:00:22,787 INFO  Successfully parsed JSON response
+2017-01-20 17:00:22,787 INFO  In the process of generating verify response in HTML
+2017-01-20 17:00:22,850 INFO  Successfully generated verify response in HTML
+2017-01-20 17:00:22,850 INFO  Successfully processed the response from service
+2017-01-20 17:01:00,819 INFO  Setting request parameters for VerifySolution
+2017-01-20 17:01:00,819 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 17:01:00,835 INFO  Starting to parse the user solution
+2017-01-20 17:01:00,835 INFO  Displaying user solution
+2017-01-20 17:01:01,225 INFO  Successfully parsed the user solution{"TestCaseSolution":"#PF-TCV-Exer-20\r\n\r\nimport pytest\r\nfrom Test_cases.solution import boarding\r\n\r\ndef test_boarding_1():\r\n        result=boarding(3)\r\n        assert result==1\r\n                \r\ndef test_boarding_2():\r\n        result=boarding(24)\r\n        assert result==1\r\n        \r\ndef test_boarding_3():\r\n        result=boarding(75)\r\n        assert result==2\r\n\r\ndef test_boarding_4():\r\n        result=boarding(104)\r\n        assert result==3\r\n             \r\n\r\ndef test_boarding_5():\r\n        result=boarding(255)\r\n        assert result==-1\r\n             \r\n","CourseShortName":"PF","UserSolution":"#PF-Exer-20\r\n\r\ndef boarding(seat_number):\r\n    if(seat_number>=1 and seat_number<=25):\r\n        batch_no=1\r\n    elif(seat_number>=26 and  seat_number<=100):\r\n        batch_no=2\r\n    elif(seat_number>=101 and seat_number<=200):\r\n        batch_no=3\r\n    else:\r\n        batch_no=-1\r\n    return batch_no\r\n","asgnmtId":"20","SolutionFileName":"solution.py","AsgnmtTyp":"E","TestcaseFileName":"test_solution.py"}
+2017-01-20 17:01:01,225 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 17:01:01,225 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 17:01:01,225 INFO  Invoking the service to verify the user solution
+2017-01-20 17:01:01,225 INFO  Initialising service address for VerifySolution
+2017-01-20 17:01:01,225 INFO  Time before invoking service In SUPER:Fri Jan 20 17:01:01 IST 2017
+2017-01-20 17:01:04,288 INFO  Time after invoking service In SUPER:Fri Jan 20 17:01:04 IST 2017
+2017-01-20 17:01:04,288 INFO  Service responded successfully with required details
+2017-01-20 17:01:04,288 INFO  User solution successfully verified
+2017-01-20 17:01:04,288 INFO  Processing the response from verify service
+2017-01-20 17:01:04,304 INFO  Starting to parse JSON response
+2017-01-20 17:01:04,304 INFO  Successfully parsed JSON response
+2017-01-20 17:01:04,304 INFO  In the process of generating verify response in HTML
+2017-01-20 17:01:04,379 INFO  Successfully generated verify response in HTML
+2017-01-20 17:01:04,380 INFO  Successfully processed the response from service
+2017-01-20 17:29:35,054 INFO  Setting request parameters for VerifySolution
+2017-01-20 17:29:35,054 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 17:29:35,054 INFO  Starting to parse the user solution
+2017-01-20 17:29:35,054 INFO  Displaying user solution
+2017-01-20 17:29:38,132 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-20\r\n\r\ndef calculate_loan(account_number,salary,account_balance,loan_type,loan_amount_expected,customer_emi_expected):\r\n    eligible_loan_amount=0\r\n    bank_emi_expected=0\r\n    approved = 0\r\n    \r\n    #Start writing your code here\r\n    \r\n    \r\n    \r\n    #Populate the variables: eligible_loan_amount and bank_emi_expected \r\n \r\n    #Use the below given print statements to display the output, in case of success\r\n    #print(\"Account number:\", account_number) \r\n    #print(\"The customer can avail the amount of Rs.\", eligible_loan_amount)\r\n    #print(\"Eligible EMIs :\", bank_emi_expected)\r\n    #print(\"Requested loan amount:\", loan_amount_expected)\r\n    #print(\"Requested EMI's:\",customer_emi_expected)\r\n    \r\n    #Use the below given print statements to display the output, in case of invalid data.\r\n    #print(\"Insufficient account balance\")\r\n    #print(\"The customer is not eligible for the loan\")\r\n    #print(\"Invalid account number\")\r\n    #print(\"Invalid loan type or salary\")\r\n    # Also, do not modify the above print statements for verification to work\r\n    \r\n    \r\n    if loan_type == \"Car\" and salary > 25000 and salary <= 50000 :\r\n        eligible_loan_amount = 500000\r\n        bank_emi_expected = 36\r\n        approved = 1\r\n         \r\n       \r\n    elif loan_type == \"House\" and salary > 50000 and salary < 75000 :\r\n        eligible_loan_amount = 6000000\r\n        bank_emi_expected = 60\r\n        approved = 1\r\n    \r\n    elif loan_type == \"Business\" and salary > 75000  :\r\n        eligible_loan_amount = 7500000\r\n        bank_emi_expected = 84\r\n        approved = 1\r\n         \r\n         \r\n         \r\n         \r\n    if approved == 1 :\r\n        if account_number > 1000 and account_number <= 1999 :\r\n            if account_balance >= 100000 :\r\n                if loan_amount_expected <= eligible_loan_amount and customer_emi_expected <= bank_emi_expected :\r\n                    \r\n                    '''\r\n                    print(\"Account number:\", account_number)\r\n                    print(\"The customer can avail the amount of Rs.\", eligible_loan_amount)\r\n                    print(\"Eligible EMIs :\", bank_emi_expected)\r\n                    print(\"Requested loan amount:\", loan_amount_expected )\r\n                    print(\"Requested EMIs:\", customer_emi_expected)\r\n                    '''\r\n                    \r\n                    print(\"Account number:\", account_number) \r\n                    print(\"The customer can avail the amount of Rs.\", eligible_loan_amount)\r\n                    print(\"Eligible EMIs :\", bank_emi_expected)\r\n                    print(\"Requested loan amount:\", loan_amount_expected)\r\n                    print(\"Requested EMI's:\",customer_emi_expected)\r\n                    #Account number: 1005The customer can avail the amount of Rs. 500000Eligible EMIs : 36Requested loan amount: 300000Requested EMIs: 30 \r\n                else :\r\n                    print(\"The customer is not eligible for the loan \")\r\n            else :\r\n                print(\"Insufficient account balance\")\r\n        else :\r\n            print(\"Invalid account number\")  \r\n    else :\r\n        print(\"Invalid loan type or salary\")\r\n#Test your code for different values and observe the results\r\n\r\ncalculate_loan(1001,40000,250000,\"Car\",300000,30)\r\n\r\n\r\nprint(\"Hello2\")\r\ncalculate_loan(1005,30000,255000,\"Car\",300000,30)\r\nprint(\"Hello4\")\r\ncalculate_loan(1005,25000,255000,\"Car\",300000,30)\r\n\r\n","asgnmtId":"20","SolutionFileName":"Assignment20.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 17:29:38,132 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 17:29:38,132 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 17:29:38,132 INFO  Invoking the service to verify the user solution
+2017-01-20 17:29:38,132 INFO  Time before invoking service:Fri Jan 20 17:29:38 IST 2017
+2017-01-20 17:29:38,132 INFO  Initialising service address for VerifySolution
+2017-01-20 17:29:38,132 INFO  Time before invoking service In SUPER:Fri Jan 20 17:29:38 IST 2017
+2017-01-20 17:29:40,211 INFO  Time after invoking service In SUPER:Fri Jan 20 17:29:40 IST 2017
+2017-01-20 17:29:40,211 INFO  Service responded successfully with required details
+2017-01-20 17:29:40,211 INFO  Time after invoking service:Fri Jan 20 17:29:40 IST 2017
+2017-01-20 17:29:40,211 INFO  User solution successfully verified
+2017-01-20 17:29:40,211 INFO  Processing the response from verify service
+2017-01-20 17:29:40,211 INFO  Starting to parse JSON response
+2017-01-20 17:29:40,211 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:29:40,226 INFO  Successfully parsed JSON response
+2017-01-20 17:29:40,226 INFO  In the process of generating verify response in HTML
+2017-01-20 17:29:40,320 INFO  Successfully generated verify response in HTML
+2017-01-20 17:29:40,320 INFO  Successfully processed the response from service
+2017-01-20 17:38:35,895 INFO  Setting request parameters for VerifySolution
+2017-01-20 17:38:35,895 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 17:38:35,895 INFO  Starting to parse the user solution
+2017-01-20 17:38:35,895 INFO  Displaying user solution
+2017-01-20 17:38:37,831 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-22\r\ndef find_leap_years(given_year):\r\n    \r\n    # Write your logic here\r\n    \r\n    list_of_leap_years = []\r\n    count = 0 \r\n    \r\n    while count < 15 :\r\n        if  (given_year % 400 == 0) or (given_year % 100 != 0 and  given_year % 4 == 0) :\r\n            \r\n            list_of_leap_years.append(given_year)\r\n            count = count + 1\r\n            given_year += 1\r\n            \r\n        else :\r\n            given_year += 1\r\n            \r\n    return list_of_leap_years\r\n        \r\n    \r\n    \r\n    '''\r\n    leap_year_list = []\r\n    if given_year % 400 == 0 and given_year % 100 != 0  :\r\n            print(\"400 years leap year\")\r\n    if given_year % 4 == 0 :\r\n        print(\"Leap Year\")\r\n        end_year_range = given_year + 15*4\r\n        \r\n        for i in range (0,15) :\r\n            \r\n            print(given_year)    \r\n            next_leap_year = given_year + 4\r\n            print(next_leap_year)\r\n            given_year = next_leap_year\r\n            if(next_leap_year < end_year_range) : \r\n                list_of_leap_years = leap_year_list.append(next_leap_year)\r\n                print(\"leap_year_list\")\r\n                print(leap_year_list)\r\n        \r\n        return leap_year_list\r\n        \r\n        \r\n    else :\r\n        print(\"It is a normal Year\")    \r\n        \r\n        \r\n    \r\n    \r\n    return list_of_leap_years\r\n    '''\r\n\r\n\r\nlist_of_leap_years = find_leap_years(2000)\r\nprint(list_of_leap_years)\r\n","asgnmtId":"22","SolutionFileName":"Assignment22.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 17:38:37,831 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 17:38:37,831 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 17:38:37,831 INFO  Invoking the service to verify the user solution
+2017-01-20 17:38:37,831 INFO  Time before invoking service:Fri Jan 20 17:38:37 IST 2017
+2017-01-20 17:38:37,831 INFO  Initialising service address for VerifySolution
+2017-01-20 17:38:37,847 INFO  Time before invoking service In SUPER:Fri Jan 20 17:38:37 IST 2017
+2017-01-20 17:38:39,394 INFO  Time after invoking service In SUPER:Fri Jan 20 17:38:39 IST 2017
+2017-01-20 17:38:39,394 INFO  Service responded successfully with required details
+2017-01-20 17:38:39,394 INFO  Time after invoking service:Fri Jan 20 17:38:39 IST 2017
+2017-01-20 17:38:39,394 INFO  User solution successfully verified
+2017-01-20 17:38:39,394 INFO  Processing the response from verify service
+2017-01-20 17:38:39,394 INFO  Starting to parse JSON response
+2017-01-20 17:38:39,394 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:38:39,394 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:38:39,409 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:38:39,409 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 17:38:39,409 INFO  Successfully parsed JSON response
+2017-01-20 17:38:39,409 INFO  In the process of generating verify response in HTML
+2017-01-20 17:38:39,487 INFO  Successfully generated verify response in HTML
+2017-01-20 17:38:39,487 INFO  Successfully processed the response from service
+2017-01-20 17:38:42,629 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 17:38:42,629 INFO  Displaying user solution
+2017-01-20 17:38:42,645 INFO  Successfully processed and prepared the input for the submit service
+2017-01-20 17:38:42,645 INFO  Invoking the service to submit the user solution
+2017-01-20 17:38:42,645 INFO  Initialising service address for Submit
+2017-01-20 17:38:42,645 INFO  Time before invoking service In SUPER:Fri Jan 20 17:38:42 IST 2017
+2017-01-20 17:38:42,738 INFO  Time after invoking service In SUPER:Fri Jan 20 17:38:42 IST 2017
+2017-01-20 17:38:42,738 INFO  Service responded successfully with required details
+2017-01-20 17:38:42,738 INFO  User solution successfully submitted
+2017-01-20 17:38:42,738 INFO  Displaying submission status
+2017-01-20 17:38:42,738 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-20 18:13:46,575 INFO  Setting request parameters for VerifySolution
+2017-01-20 18:13:46,575 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 18:13:46,575 INFO  Starting to parse the user solution
+2017-01-20 18:13:46,575 INFO  Displaying user solution
+2017-01-20 18:13:49,419 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-23\r\ndef calculate_bill_amount(gems_list, price_list, reqd_gems,reqd_quantity):\r\n    bill_amount=0\r\n    not_available = 0\r\n    #Write your logic here\r\n    \r\n    gem_individual_price = 0\r\n    \r\n    for i in range (0 , len(reqd_gems)) :\r\n        for j in range (0 , len(gems_list)) :\r\n            print(\"For Loop second start\")\r\n            \r\n            if reqd_gems[i] == gems_list[j]:\r\n                \r\n                #Found one & multipy the required quantity with price list\r\n                print(\"Required Gems\")\r\n                print(reqd_gems[i])\r\n                print(\"Gem List\")\r\n                print(gems_list[j])\r\n                print(\"Gem Price\")\r\n                print(price_list[j])\r\n                print(\"Gem Quantity\")\r\n                print(reqd_quantity[i])\r\n                \r\n                gem_individual_price = price_list[j] * reqd_quantity[i]\r\n                print(\"gem_individual_price\")\r\n                print(gem_individual_price)\r\n                \r\n                print(\"bill_amount before \")\r\n                print(bill_amount)\r\n                \r\n                bill_amount = gem_individual_price + bill_amount\r\n                \r\n                print(\"bill_amount after\")\r\n                print(bill_amount)\r\n                print(\"End of if statement\")\r\n                \r\n            '''else :\r\n                print(\"Else statement condition of if\")\r\n                not_available = 1\r\n                '''\r\n                \r\n        print(\"For Loop second end\")  \r\n        \r\n        \r\n        \r\n    if bill_amount > 30000 :\r\n        \r\n        new_discount_amount = bill_amount * (5/100)\r\n        \r\n        print(\"After 5% discount  amount\")\r\n        print(new_discount_amount)\r\n        \r\n        print(\"After discount Total Bill  amount\")\r\n        new_discounted_total_bill_amount  = bill_amount - new_discount_amount\r\n        print(new_discounted_total_bill_amount)\r\n        \r\n        bill_amount = new_discounted_total_bill_amount\r\n    \r\n    \r\n    if not_available == 1 :\r\n        bill_amount = -1\r\n    \r\n    \r\n\r\n    \r\n    \r\n    return bill_amount\r\n\r\n#List of gems available in the store            \r\ngems_list=[\"Emerald\",\"Ivory\",\"Jasper\",\"Ruby\",\"Garnet\"]\r\n\r\n#Price of gems available in the store. gems_list and price_list have one-to-one correspondence\r\nprice_list=[1760,2119,1599,3920,3999]\r\n\r\n#List of gems required by the customer\r\nreqd_gems=[\"Ivory\",\"Emerald\",\"Garnet\"]\r\n\r\n#Quantity of gems required by the customer. reqd_gems and reqd_quantity have one-to-one correspondence\r\nreqd_quantity=[3,10,12]\r\n\r\nbill_amount=calculate_bill_amount(gems_list, price_list, reqd_gems, reqd_quantity)\r\nprint(bill_amount)\r\n","asgnmtId":"23","SolutionFileName":"Assignment23.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 18:13:49,434 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 18:13:49,434 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 18:13:49,434 INFO  Invoking the service to verify the user solution
+2017-01-20 18:13:49,434 INFO  Time before invoking service:Fri Jan 20 18:13:49 IST 2017
+2017-01-20 18:13:49,434 INFO  Initialising service address for VerifySolution
+2017-01-20 18:13:49,434 INFO  Time before invoking service In SUPER:Fri Jan 20 18:13:49 IST 2017
+2017-01-20 18:13:51,059 INFO  Time after invoking service In SUPER:Fri Jan 20 18:13:51 IST 2017
+2017-01-20 18:13:51,059 INFO  Service responded successfully with required details
+2017-01-20 18:13:51,059 INFO  Time after invoking service:Fri Jan 20 18:13:51 IST 2017
+2017-01-20 18:13:51,059 INFO  User solution successfully verified
+2017-01-20 18:13:51,059 INFO  Processing the response from verify service
+2017-01-20 18:13:51,075 INFO  Starting to parse JSON response
+2017-01-20 18:13:51,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:13:51,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:13:51,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:13:51,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:13:51,075 INFO  Successfully parsed JSON response
+2017-01-20 18:13:51,075 INFO  In the process of generating verify response in HTML
+2017-01-20 18:13:51,137 INFO  Successfully generated verify response in HTML
+2017-01-20 18:13:51,137 INFO  Successfully processed the response from service
+2017-01-20 18:27:06,626 INFO  Setting request parameters for VerifySolution
+2017-01-20 18:27:06,626 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 18:27:06,626 INFO  Starting to parse the user solution
+2017-01-20 18:27:06,626 INFO  Displaying user solution
+2017-01-20 18:27:08,500 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-23\r\ndef calculate_bill_amount(gems_list, price_list, reqd_gems,reqd_quantity):\r\n    bill_amount=0\r\n    not_available = 0\r\n    #Write your logic here\r\n    \r\n    gem_overall_price = 0\r\n    \r\n    for i in range (0 , len(reqd_gems)) :\r\n        print(\"////////////////////////////////////////////////////\")\r\n        print(\"For Loop first start\")\r\n        \r\n        for j in range (0 , len(gems_list)) :\r\n            print(\"For Loop second start\")\r\n            \r\n            if reqd_gems[i] == gems_list[j]:\r\n                not_available = not_available + 1\r\n                #Found one & multipy the required quantity with price list\r\n                print(\"Required Gems\")\r\n                print(reqd_gems[i])\r\n                print(\"Gem List\")\r\n                print(gems_list[j])\r\n                print(\"Gem Price\")\r\n                print(price_list[j])\r\n                print(\"Gem Quantity\")\r\n                print(reqd_quantity[i])\r\n                \r\n                gem_overall_price = price_list[j] * reqd_quantity[i]\r\n                print(\"gem_overall_price\")\r\n                print(gem_overall_price)\r\n                \r\n                print(\"bill_amount before \")\r\n                print(bill_amount)\r\n                \r\n                bill_amount = gem_overall_price + bill_amount\r\n                \r\n                print(\"bill_amount after\")\r\n                print(bill_amount)\r\n                print(\"End of if statement\")\r\n                \r\n            \r\n                \r\n        print(\"For Loop second end\")  \r\n        \r\n        \r\n        \r\n    if bill_amount > 30000 :\r\n        print(\"/%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/\")\r\n        print(\"bill_amount > 30000 \")\r\n        new_discount_amount = bill_amount * (5/100)\r\n        \r\n        \r\n        print(\"After 5% discount  amount\")\r\n        print(new_discount_amount)\r\n        \r\n        print(\"After discount Total Bill  amount\")\r\n        new_discounted_total_bill_amount  = bill_amount - new_discount_amount\r\n        print(new_discounted_total_bill_amount)\r\n        \r\n        bill_amount = new_discounted_total_bill_amount\r\n    \r\n    '''else :\r\n                print(\"Else statement condition of if\")\r\n                not_available = 1\r\n                '''\r\n    if not_available == 0 and not_available < len(reqd_gems) :\r\n        bill_amount = -1\r\n    \r\n    \r\n    print(\"For Loop first end\")\r\n    \r\n    return bill_amount\r\n\r\n#List of gems available in the store            \r\ngems_list=[\"Emerald\",\"Ivory\",\"Jasper\",\"Ruby\",\"Garnet\"]\r\n\r\n#Price of gems available in the store. gems_list and price_list have one-to-one correspondence\r\nprice_list=[1760,2119,1599,3920,3999]\r\n\r\n#List of gems required by the customer\r\nreqd_gems=[\"Ivory\",\"Emerald\",\"Garnet\"]\r\n\r\n#Quantity of gems required by the customer. reqd_gems and reqd_quantity have one-to-one correspondence\r\nreqd_quantity=[3,10,12]\r\n\r\nbill_amount=calculate_bill_amount(gems_list, price_list, reqd_gems, reqd_quantity)\r\nprint(bill_amount)\r\n","asgnmtId":"23","SolutionFileName":"Assignment23.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 18:27:08,500 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 18:27:08,500 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 18:27:08,500 INFO  Invoking the service to verify the user solution
+2017-01-20 18:27:08,500 INFO  Time before invoking service:Fri Jan 20 18:27:08 IST 2017
+2017-01-20 18:27:08,500 INFO  Initialising service address for VerifySolution
+2017-01-20 18:27:08,500 INFO  Time before invoking service In SUPER:Fri Jan 20 18:27:08 IST 2017
+2017-01-20 18:27:10,001 INFO  Time after invoking service In SUPER:Fri Jan 20 18:27:10 IST 2017
+2017-01-20 18:27:10,001 INFO  Service responded successfully with required details
+2017-01-20 18:27:10,001 INFO  Time after invoking service:Fri Jan 20 18:27:10 IST 2017
+2017-01-20 18:27:10,001 INFO  User solution successfully verified
+2017-01-20 18:27:10,001 INFO  Processing the response from verify service
+2017-01-20 18:27:10,001 INFO  Starting to parse JSON response
+2017-01-20 18:27:10,001 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:27:10,001 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:27:10,001 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:27:10,001 INFO  Successfully parsed JSON response
+2017-01-20 18:27:10,017 INFO  In the process of generating verify response in HTML
+2017-01-20 18:27:10,095 INFO  Successfully generated verify response in HTML
+2017-01-20 18:27:10,095 INFO  Successfully processed the response from service
+2017-01-20 18:59:49,065 INFO  Setting request parameters for VerifySolution
+2017-01-20 18:59:49,080 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 18:59:49,080 INFO  Starting to parse the user solution
+2017-01-20 18:59:49,080 INFO  Displaying user solution
+2017-01-20 18:59:51,617 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-24\r\ndef form_triangle(num1,num2,num3):\r\n    #Do not change the messages provided below    \r\n    success=\"Triangle can be formed\"\r\n    failure=\"Triangle can't be formed\"\r\n    \r\n    #Write your logic here\r\n    \r\n    if num1 < num2 + num3 and num2 < num1 + num3 and num3 < num1 + num2 :\r\n        return success\r\n    else :\r\n        return failure\r\n        \r\n    #Use the following messages to return the result wherever necessary \r\n    \r\n    \r\n \r\n#Provide different values for the variables, num1, num2, num3 and test your program   \r\nnum1=3\r\nnum2=3\r\nnum3=5\r\nform_triangle(num1, num2, num3)\r\n","asgnmtId":"24","SolutionFileName":"Assignment24.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 18:59:51,617 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 18:59:51,617 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 18:59:51,617 INFO  Invoking the service to verify the user solution
+2017-01-20 18:59:51,617 INFO  Time before invoking service:Fri Jan 20 18:59:51 IST 2017
+2017-01-20 18:59:51,617 INFO  Initialising service address for VerifySolution
+2017-01-20 18:59:51,617 INFO  Time before invoking service In SUPER:Fri Jan 20 18:59:51 IST 2017
+2017-01-20 18:59:52,994 INFO  Time after invoking service In SUPER:Fri Jan 20 18:59:52 IST 2017
+2017-01-20 18:59:52,994 INFO  Service responded successfully with required details
+2017-01-20 18:59:52,994 INFO  Time after invoking service:Fri Jan 20 18:59:52 IST 2017
+2017-01-20 18:59:52,994 INFO  User solution successfully verified
+2017-01-20 18:59:52,994 INFO  Processing the response from verify service
+2017-01-20 18:59:52,994 INFO  Starting to parse JSON response
+2017-01-20 18:59:52,994 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:59:52,994 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:59:52,994 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:59:52,994 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 18:59:53,010 INFO  Successfully parsed JSON response
+2017-01-20 18:59:53,010 INFO  In the process of generating verify response in HTML
+2017-01-20 18:59:53,072 INFO  Successfully generated verify response in HTML
+2017-01-20 18:59:53,072 INFO  Successfully processed the response from service
+2017-01-20 19:42:24,887 INFO  Verification is not available for tryouts!!!
+2017-01-20 19:42:27,470 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 19:42:27,470 INFO  Displaying user solution
+2017-01-20 19:42:27,470 INFO  Verify the solution before submitting
+2017-01-20 19:42:27,470 ERROR Exception occured while submitting the user solution
+2017-01-20 20:23:37,391 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:23:37,407 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:23:37,407 INFO  Starting to parse the user solution
+2017-01-20 20:23:37,407 INFO  Displaying user solution
+2017-01-20 20:23:40,623 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n        \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(5,10)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:23:40,623 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:23:40,623 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:23:40,623 INFO  Invoking the service to verify the user solution
+2017-01-20 20:23:40,639 INFO  Time before invoking service:Fri Jan 20 20:23:40 IST 2017
+2017-01-20 20:23:40,639 INFO  Initialising service address for VerifySolution
+2017-01-20 20:23:40,639 INFO  Time before invoking service In SUPER:Fri Jan 20 20:23:40 IST 2017
+2017-01-20 20:23:42,359 INFO  Time after invoking service In SUPER:Fri Jan 20 20:23:42 IST 2017
+2017-01-20 20:23:42,359 INFO  Service responded successfully with required details
+2017-01-20 20:23:42,359 INFO  Time after invoking service:Fri Jan 20 20:23:42 IST 2017
+2017-01-20 20:23:42,359 INFO  User solution successfully verified
+2017-01-20 20:23:42,359 INFO  Processing the response from verify service
+2017-01-20 20:23:42,359 INFO  Starting to parse JSON response
+2017-01-20 20:23:42,359 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:23:42,359 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:23:42,359 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:23:42,359 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:23:42,374 INFO  Successfully parsed JSON response
+2017-01-20 20:23:42,374 INFO  In the process of generating verify response in HTML
+2017-01-20 20:23:42,437 INFO  Successfully generated verify response in HTML
+2017-01-20 20:23:42,437 INFO  Successfully processed the response from service
+2017-01-20 20:31:12,407 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:31:12,407 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:31:12,407 INFO  Starting to parse the user solution
+2017-01-20 20:31:12,407 INFO  Displaying user solution
+2017-01-20 20:31:14,873 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    rabbit_count_legs_temp =  legs - chicken_count_temp\r\n    print(\"rabbit_count_legs_temp\")\r\n    print(rabbit_count_legs_temp)\r\n    \r\n    rabbit_count = rabbit_count_legs_temp // 2\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n     \r\n       \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:31:14,873 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:31:14,873 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:31:14,889 INFO  Invoking the service to verify the user solution
+2017-01-20 20:31:14,889 INFO  Time before invoking service:Fri Jan 20 20:31:14 IST 2017
+2017-01-20 20:31:14,889 INFO  Initialising service address for VerifySolution
+2017-01-20 20:31:14,889 INFO  Time before invoking service In SUPER:Fri Jan 20 20:31:14 IST 2017
+2017-01-20 20:31:16,564 INFO  Time after invoking service In SUPER:Fri Jan 20 20:31:16 IST 2017
+2017-01-20 20:31:16,579 INFO  Service responded successfully with required details
+2017-01-20 20:31:16,579 INFO  Time after invoking service:Fri Jan 20 20:31:16 IST 2017
+2017-01-20 20:31:16,579 INFO  User solution successfully verified
+2017-01-20 20:31:16,579 INFO  Processing the response from verify service
+2017-01-20 20:31:16,579 INFO  Starting to parse JSON response
+2017-01-20 20:31:16,579 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:31:16,579 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:31:16,579 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:31:16,579 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:31:16,579 INFO  Successfully parsed JSON response
+2017-01-20 20:31:16,579 INFO  In the process of generating verify response in HTML
+2017-01-20 20:31:16,642 INFO  Successfully generated verify response in HTML
+2017-01-20 20:31:16,642 INFO  Successfully processed the response from service
+2017-01-20 20:32:39,124 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:32:39,124 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:32:39,124 INFO  Starting to parse the user solution
+2017-01-20 20:32:39,124 INFO  Displaying user solution
+2017-01-20 20:32:40,470 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    rabbit_count_legs_temp =  legs - chicken_count_temp\r\n    print(\"rabbit_count_legs_temp\")\r\n    print(rabbit_count_legs_temp)\r\n    \r\n    rabbit_count = rabbit_count_legs_temp // 2\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n     \r\n       \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(10,20)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:32:40,470 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:32:40,470 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:32:40,470 INFO  Invoking the service to verify the user solution
+2017-01-20 20:32:40,470 INFO  Time before invoking service:Fri Jan 20 20:32:40 IST 2017
+2017-01-20 20:32:40,470 INFO  Initialising service address for VerifySolution
+2017-01-20 20:32:40,470 INFO  Time before invoking service In SUPER:Fri Jan 20 20:32:40 IST 2017
+2017-01-20 20:32:42,456 INFO  Time after invoking service In SUPER:Fri Jan 20 20:32:42 IST 2017
+2017-01-20 20:32:42,456 INFO  Service responded successfully with required details
+2017-01-20 20:32:42,456 INFO  Time after invoking service:Fri Jan 20 20:32:42 IST 2017
+2017-01-20 20:32:42,456 INFO  User solution successfully verified
+2017-01-20 20:32:42,456 INFO  Processing the response from verify service
+2017-01-20 20:32:42,472 INFO  Starting to parse JSON response
+2017-01-20 20:32:42,472 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:32:42,472 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:32:42,472 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:32:42,472 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:32:42,472 INFO  Successfully parsed JSON response
+2017-01-20 20:32:42,472 INFO  In the process of generating verify response in HTML
+2017-01-20 20:32:42,534 INFO  Successfully generated verify response in HTML
+2017-01-20 20:32:42,534 INFO  Successfully processed the response from service
+2017-01-20 20:35:08,984 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:35:08,984 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:35:08,984 INFO  Starting to parse the user solution
+2017-01-20 20:35:08,984 INFO  Displaying user solution
+2017-01-20 20:35:10,941 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    rabbit_count_legs_temp =  legs - chicken_count_temp\r\n    print(\"rabbit_count_legs_temp\")\r\n    print(rabbit_count_legs_temp)\r\n    \r\n    rabbit_count = rabbit_count_legs_temp // 2\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n     \r\n       \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(10,20)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(20,10)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:35:10,941 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:35:10,941 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:35:10,941 INFO  Invoking the service to verify the user solution
+2017-01-20 20:35:10,941 INFO  Time before invoking service:Fri Jan 20 20:35:10 IST 2017
+2017-01-20 20:35:10,941 INFO  Initialising service address for VerifySolution
+2017-01-20 20:35:10,956 INFO  Time before invoking service In SUPER:Fri Jan 20 20:35:10 IST 2017
+2017-01-20 20:35:12,780 INFO  Time after invoking service In SUPER:Fri Jan 20 20:35:12 IST 2017
+2017-01-20 20:35:12,780 INFO  Service responded successfully with required details
+2017-01-20 20:35:12,780 INFO  Time after invoking service:Fri Jan 20 20:35:12 IST 2017
+2017-01-20 20:35:12,780 INFO  User solution successfully verified
+2017-01-20 20:35:12,780 INFO  Processing the response from verify service
+2017-01-20 20:35:12,780 INFO  Starting to parse JSON response
+2017-01-20 20:35:12,780 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:35:12,780 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:35:12,780 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:35:12,780 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:35:12,780 INFO  Successfully parsed JSON response
+2017-01-20 20:35:12,780 INFO  In the process of generating verify response in HTML
+2017-01-20 20:35:12,858 INFO  Successfully generated verify response in HTML
+2017-01-20 20:35:12,858 INFO  Successfully processed the response from service
+2017-01-20 20:36:57,653 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:36:57,653 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:36:57,669 INFO  Starting to parse the user solution
+2017-01-20 20:36:57,669 INFO  Displaying user solution
+2017-01-20 20:36:59,249 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    rabbit_count_legs_temp =  legs - chicken_count_temp\r\n    print(\"rabbit_count_legs_temp\")\r\n    print(rabbit_count_legs_temp)\r\n    \r\n    rabbit_count = rabbit_count_legs_temp // 2\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n     \r\n       \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(10,20)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(20,10)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(20,60)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(35,94)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:36:59,249 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:36:59,249 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:36:59,249 INFO  Invoking the service to verify the user solution
+2017-01-20 20:36:59,249 INFO  Time before invoking service:Fri Jan 20 20:36:59 IST 2017
+2017-01-20 20:36:59,249 INFO  Initialising service address for VerifySolution
+2017-01-20 20:36:59,249 INFO  Time before invoking service In SUPER:Fri Jan 20 20:36:59 IST 2017
+2017-01-20 20:37:00,861 INFO  Time after invoking service In SUPER:Fri Jan 20 20:37:00 IST 2017
+2017-01-20 20:37:00,861 INFO  Service responded successfully with required details
+2017-01-20 20:37:00,861 INFO  Time after invoking service:Fri Jan 20 20:37:00 IST 2017
+2017-01-20 20:37:00,861 INFO  User solution successfully verified
+2017-01-20 20:37:00,861 INFO  Processing the response from verify service
+2017-01-20 20:37:00,861 INFO  Starting to parse JSON response
+2017-01-20 20:37:00,877 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:37:00,877 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:37:00,877 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:37:00,877 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:37:00,877 INFO  Successfully parsed JSON response
+2017-01-20 20:37:00,877 INFO  In the process of generating verify response in HTML
+2017-01-20 20:37:00,924 INFO  Successfully generated verify response in HTML
+2017-01-20 20:37:00,924 INFO  Successfully processed the response from service
+2017-01-20 20:57:53,522 INFO  Loading Baseframework Plugin
+2017-01-20 20:57:53,553 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-20 20:57:54,288 INFO  Loading the Menu - HandsOn
+2017-01-20 20:57:54,335 INFO  Successfully loaded the Menu - HandsOn
+2017-01-20 20:59:48,691 INFO  Loading Programming Assignment Plugin
+2017-01-20 20:59:48,922 INFO  Setting request parameters for VerifySolution
+2017-01-20 20:59:48,922 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 20:59:48,927 INFO  Starting to parse the user solution
+2017-01-20 20:59:48,928 INFO  Displaying user solution
+2017-01-20 20:59:50,564 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n\r\n    #Start writing your code here\r\n    print(\"heads\")\r\n    print(heads)\r\n\r\n    print(\"legs\")\r\n    print(legs)\r\n    \r\n    #First remove rabbit 2 legs conclusion\r\n    \r\n    headsLegs_overall_noChicken = heads * 2\r\n    print(\"headsLegs_overall_noChicken\")\r\n    print(headsLegs_overall_noChicken)\r\n    \r\n    heads_overall_chicken = legs - headsLegs_overall_noChicken\r\n    if ( heads_overall_chicken == 0) :\r\n        print(\"heads_overall_chicken == 0\")\r\n        heads_overall_rabbit = headsLegs_overall_noChicken // 2\r\n        print(\"heads_overall_rabbit\")\r\n        print(heads_overall_rabbit)\r\n        rabbit_count = heads_overall_rabbit\r\n        print(\"rabbit_count\")\r\n        print(rabbit_count)\r\n    \r\n    \r\n    \r\n    \r\n    print(\"heads_overall_chicken\")\r\n    print(heads_overall_chicken)\r\n    #rabbit_count = heads_overall_chicken\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    \r\n    chicken_count_temp = heads_overall_chicken * 2\r\n    print(\"chicken_count_temp\")\r\n    print(chicken_count_temp)\r\n    \r\n    chicken_count = chicken_count_temp // 4\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    rabbit_count_legs_temp =  legs - chicken_count_temp\r\n    print(\"rabbit_count_legs_temp\")\r\n    print(rabbit_count_legs_temp)\r\n    \r\n    rabbit_count = rabbit_count_legs_temp // 2\r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    \r\n    if chicken_count_temp == legs  :\r\n        print(\"if chicken_count == legs :\")\r\n        chicken_count = legs // 4\r\n        print(\"chicken_count\")\r\n        print(chicken_count)\r\n        print(rabbit_count)\r\n        \r\n     \r\n       \r\n     \r\n    if heads_overall_chicken < 0 :\r\n        print(\"heads_overall_chicken\")\r\n        print(heads_overall_chicken)\r\n        rabbit_count_temp = heads_overall_chicken * 2\r\n        print(\"rabbit_count_temp\")\r\n        print(rabbit_count_temp)\r\n        \r\n        \r\n        if rabbit_count_temp == legs  :\r\n            print(\"if rabbit_count_temp == legs  :\")\r\n            rabbit_count = legs // 2\r\n            print(\"rabbit_count\")\r\n            print(rabbit_count)\r\n    \r\n    \r\n    \r\n   # if \r\n    \r\n    \r\n    \r\n    print(\"rabbit_count\")\r\n    print(rabbit_count)\r\n    print(\"chicken_count\")\r\n    print(chicken_count)\r\n    \r\n    \r\n    #Populate the variables: chicken_count and rabbit_count\r\n\r\n\r\n\r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(10,20)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(20,10)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(20,60)\r\n\r\nprint(\"/////////////////////////////////\")\r\n\r\nsolve(35,94)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 20:59:50,567 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 20:59:50,567 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 20:59:50,568 INFO  Invoking the service to verify the user solution
+2017-01-20 20:59:50,569 INFO  Time before invoking service:Fri Jan 20 20:59:50 IST 2017
+2017-01-20 20:59:50,570 INFO  Initialising service address for VerifySolution
+2017-01-20 20:59:50,571 INFO  Time before invoking service In SUPER:Fri Jan 20 20:59:50 IST 2017
+2017-01-20 20:59:52,213 INFO  Time after invoking service In SUPER:Fri Jan 20 20:59:52 IST 2017
+2017-01-20 20:59:52,214 INFO  Service responded successfully with required details
+2017-01-20 20:59:52,215 INFO  Time after invoking service:Fri Jan 20 20:59:52 IST 2017
+2017-01-20 20:59:52,215 INFO  User solution successfully verified
+2017-01-20 20:59:52,215 INFO  Processing the response from verify service
+2017-01-20 20:59:52,217 INFO  Starting to parse JSON response
+2017-01-20 20:59:52,220 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:59:52,221 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:59:52,221 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:59:52,222 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 20:59:52,224 INFO  Successfully parsed JSON response
+2017-01-20 20:59:52,225 INFO  In the process of generating verify response in HTML
+2017-01-20 20:59:52,542 INFO  Successfully generated verify response in HTML
+2017-01-20 20:59:52,543 INFO  Successfully processed the response from service
+2017-01-20 20:59:57,193 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 20:59:57,197 INFO  Displaying user solution
+2017-01-20 20:59:57,205 INFO  Successfully processed and prepared the input for the submit service
+2017-01-20 20:59:57,206 INFO  Invoking the service to submit the user solution
+2017-01-20 20:59:57,206 INFO  Initialising service address for Submit
+2017-01-20 20:59:57,207 INFO  Time before invoking service In SUPER:Fri Jan 20 20:59:57 IST 2017
+2017-01-20 20:59:57,369 INFO  Time after invoking service In SUPER:Fri Jan 20 20:59:57 IST 2017
+2017-01-20 20:59:57,370 INFO  Service responded successfully with required details
+2017-01-20 20:59:57,370 INFO  User solution successfully submitted
+2017-01-20 20:59:57,371 INFO  Displaying submission status
+2017-01-20 20:59:57,372 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-20 21:07:58,279 INFO  Setting request parameters for VerifySolution
+2017-01-20 21:07:58,280 INFO  Initiating to process and prepare Input for the verify service
+2017-01-20 21:07:58,281 INFO  Starting to parse the user solution
+2017-01-20 21:07:58,282 INFO  Displaying user solution
+2017-01-20 21:08:00,885 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-26\r\nfrom tkinter.constants import RAISED\r\n\r\ndef solve(heads,legs):\r\n    error_msg=\"No solution\" \r\n    chicken_count=0\r\n    rabbit_count=0\r\n    \r\n    \r\n    raised = heads*2\r\n    legdiff = legs - raised\r\n    rabbit_count = legdiff//2\r\n    chicken_count = heads-rabbit_count\r\n    \r\n    if legs%2 != 0 or legs < heads :\r\n        print(error_msg)\r\n    else:\r\n        print(chicken_count,rabbit_count)\r\n    \r\n    if (legdiff==heads or rabbit_count == heads):\r\n        rabbit_count=heads\r\n        chicken_count=0\r\n    else:\r\n        rabbit_count=legdiff\r\n        chicken_count=heads-rabbit_count            \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    # Use the below given print statements to display the output \r\n    # Also, do not modify them for verification to work\r\n\r\n    #print(chicken_count,rabbit_count)\r\n    #print(error_msg)\r\n\r\n#Provide different values for heads and legs and test your program\r\nsolve(400,1020)\r\n","asgnmtId":"26","SolutionFileName":"Assignment26XP.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-20 21:08:00,885 INFO  Successfully processed and prepared the input for the verify service
+2017-01-20 21:08:00,886 INFO  Successfully set the request parameters for VerifySolution
+2017-01-20 21:08:00,886 INFO  Invoking the service to verify the user solution
+2017-01-20 21:08:00,887 INFO  Time before invoking service:Fri Jan 20 21:08:00 IST 2017
+2017-01-20 21:08:00,888 INFO  Initialising service address for VerifySolution
+2017-01-20 21:08:00,888 INFO  Time before invoking service In SUPER:Fri Jan 20 21:08:00 IST 2017
+2017-01-20 21:08:02,333 INFO  Time after invoking service In SUPER:Fri Jan 20 21:08:02 IST 2017
+2017-01-20 21:08:02,334 INFO  Service responded successfully with required details
+2017-01-20 21:08:02,334 INFO  Time after invoking service:Fri Jan 20 21:08:02 IST 2017
+2017-01-20 21:08:02,335 INFO  User solution successfully verified
+2017-01-20 21:08:02,336 INFO  Processing the response from verify service
+2017-01-20 21:08:02,338 INFO  Starting to parse JSON response
+2017-01-20 21:08:02,338 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 21:08:02,338 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 21:08:02,339 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 21:08:02,339 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-20 21:08:02,340 INFO  Successfully parsed JSON response
+2017-01-20 21:08:02,341 INFO  In the process of generating verify response in HTML
+2017-01-20 21:08:02,400 INFO  Successfully generated verify response in HTML
+2017-01-20 21:08:02,400 INFO  Successfully processed the response from service
+2017-01-20 21:08:08,247 INFO  Initiating to process and prepare Input for the submit service
+2017-01-20 21:08:08,248 INFO  Displaying user solution
+2017-01-20 21:08:08,256 INFO  Successfully processed and prepared the input for the submit service
+2017-01-20 21:08:08,257 INFO  Invoking the service to submit the user solution
+2017-01-20 21:08:08,257 INFO  Initialising service address for Submit
+2017-01-20 21:08:08,258 INFO  Time before invoking service In SUPER:Fri Jan 20 21:08:08 IST 2017
+2017-01-20 21:08:08,374 INFO  Time after invoking service In SUPER:Fri Jan 20 21:08:08 IST 2017
+2017-01-20 21:08:08,375 INFO  Service responded successfully with required details
+2017-01-20 21:08:08,376 INFO  User solution successfully submitted
+2017-01-20 21:08:08,377 INFO  Displaying submission status
+2017-01-20 21:08:08,775 INFO  Displayed submission status successfullySuccessfully Submitted!

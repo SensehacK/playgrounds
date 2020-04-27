@@ -1,0 +1,19 @@
+CREATE TABLE FoodItem (
+  Id          	INTEGER PRIMARY KEY, 
+  FoodName    	VARCHAR2(40) NOT ,
+  Price      	DECIMAL(9,2) NOT ,
+  Availability  CHAR(2) NOT  CHECK(Availability IN ('A','NA')),
+  Cate 
+);
+
+-- Data for FoodItem table  --
+------------------------------
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (1,'James Potter',75000,'A');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (2,'Ethan McCarty',900,'NA');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (3,'Emily Rayner',250,'NA');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (4,'Jack Abraham',300,'NA');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (5,'Ayaz Mohammad',400,'A');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (6,'Abhinav Mittal',350,'NA');
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (7,'Alice Jackson',507,'A');
+
+commit;

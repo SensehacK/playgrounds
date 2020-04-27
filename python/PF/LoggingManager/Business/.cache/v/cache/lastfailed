@@ -1,0 +1,7 @@
+{
+  "py_test.py::test_validate_email": true,
+  "py_test.py::test_validate_email_1": true,
+  "py_test.py::test_validate_email_2": true,
+  "py_test.py::test_validate_email_3": true,
+  "py_test.py::test_validate_email_4": true
+}

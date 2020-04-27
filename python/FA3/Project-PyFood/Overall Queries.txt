@@ -1,0 +1,66 @@
+-- Drop all trainee tables
+Drop TABLE FoodCategory cascade constraints;
+Drop TABLE FoodItem cascade constraints;
+
+
+
+-- Table for storing FoodCategory dNAils 
+CREATE TABLE FoodCategory (
+  FCId          	INTEGER PRIMARY KEY,
+  Category_Name  VARCHAR2(40) ,
+  Restaurant_Type CHAR(2) CHECK ( Restaurant_Type IN ('V' , 'NV'))
+);
+
+-- Data for FoodCategory table  --
+------------------------------
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (1,'Chicken' , 'NV');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (2,'Fish' , 'NV');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (3,'Mutton' , 'NV');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (4,'Sea Food' , 'NV');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (5,'Egg' , 'NV');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (6,'Vegetarian', 'V');
+INSERT INTO FoodCategory (FCID,Category_Name,Restaurant_Type) VALUES (7,'Starters', 'V');
+
+
+select * from FoodCategory;
+
+commit;
+
+
+
+CREATE TABLE FoodItem (
+  Id          	INTEGER PRIMARY KEY,
+  FoodName    	VARCHAR2(40)  ,
+  Food_Type  CHAR(2)  CHECK(Food_Type IN ('V','NV')),
+  Price      	DECIMAL(9,2)  ,
+  Availability  CHAR(2)  CHECK(Availability IN ('A','NA')),
+  Restaurant_Name VARCHAR2(40)  ,
+  Category_Name VARCHAR2(40) 
+);
+
+-- Data for FoodItem table  --
+------------------------------
+
+
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (1,'Chicken Fry' , 'NV',75000,'A' ,'Kamar Hotel' , 'Chicken');
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (2,'Fish' , 'NV',900,'NA' ,'Modern Restaurant' , 'Fish' );
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (3,'Mutton' , 'NV',250,'NA' ,'Biryani House', 'Mutton');
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (4,'Sea Food' , 'NV',300,'NA' ,'Sukh Sagar' , 'Sea Food');
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (5,'Egg' , 'NV',400,'A' ,'Kamar Hotel' , 'Chicken');
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (6,'Vegetarian', 'NV',350,'NA' ,'Kamar Hotel' , 'Vegetarian');
+INSERT INTO FoodItem (ID,FoodName,Food_Type,Price,Availability,Restaurant_Name,Category_Name ) VALUES (7,'Starters', 'V',507,'A' ,'Modern Restaurant' , 'Starters');
+
+commit;
+
+select * from fooditem;
+select * from FoodCategory;
+select * from restaurants;
+select * from Registration;
+
+select ID,FoodName,Price,Availability,Restaurant_Name,Category_Name from FoodItem ;
+
+select * from fooditem fi join restaurants rt on fi.Restaurant_Name = rt.rid;
+
+select foodname , price , availability from fooditem where restaurant_name = 'Kamar Hotel';
+
+select availability from fooditem where foodname in ( 'Chicken Fry' , 'Egg' , 'Vegetarian' );

@@ -1,0 +1,42 @@
+Test Cases
+
+
+
+#Test Case will Fail
+#All which are raising exceptions are failing Test Cases
+     
+def test_validate_view_category_items2():
+    restaurant_type = 'Starters'
+    restaurant_name = 'Kamat Hotel'
+    count = 0
+    output = Validate.validate_view_category_items(restaurant_type,restaurant_name)
+    for value in output :
+        count += 1 
+     
+    assert count == 0
+     
+ 
+def test_validate_item_present():
+    category_items = 'Chicken'
+    restaurant_name = 'Kamar Hotel'
+    count = 0
+    print("def test_validate_item_present():")
+    output = Validate.validate_item_present(category_items,restaurant_name)
+    for value in output :
+        count += 1 
+     
+    assert count > 0
+    
+	
+
+def test_validate_item_available2():
+    restaurant_type = ['Egg','Chicken']
+    restaurant_name = 'Kamat'
+    output = []
+    overall_bool = False
+    output.append(Validate.validate_item_available(restaurant_type,restaurant_name))
+    for bool in output :
+        if bool == False:
+            overall_bool = True
+             
+    assert  overall_bool == True

@@ -1,0 +1,18 @@
+'''
+Created on Mar 15, 2017
+
+@author: kautilya.save
+'''
+'''
+This class represents a product
+'''
+class Food:
+    restaurant_name = None
+    registered_user = None
+    category = None
+    product_id = None
+    def __init__(self):
+        self.__product_id=None
+        self.__restaurant_name=None
+        self.__registered_user=None
+        self.__category=None

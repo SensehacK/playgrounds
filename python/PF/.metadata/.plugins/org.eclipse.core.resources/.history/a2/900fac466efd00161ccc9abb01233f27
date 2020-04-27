@@ -1,0 +1,8 @@
+--The management of EasyShop would like to know the retail outlet ids and 
+--the details like description, type and retail unit price of items whose retail unit price is 
+--more than 1500.
+--select * from item ;
+
+select * from retailstock
+
+

@@ -1,0 +1,152 @@
+'''
+Created on Feb 19, 2017
+
+@author: kautilya.save
+'''
+
+# 
+# def fun(x,y):
+#     try:
+#         z=x+y
+#         print(z)
+#     except ValueError:
+#         print(0)
+#     print(9)
+# try:
+#     fun(2,'2')
+#     print(1)
+# except TypeError:
+#     print(3)
+# except NameError:
+#     print(4)
+# except ValueError:
+#     print(5)
+# finally:
+#     print(6)
+# print(7)
+
+# 
+# def fun(x,y):
+#     try:
+#         z=x+y
+#         print(z)
+#     except ValueError:
+#         print(0)
+#     print(9)
+# try:
+#     fun(2,'2')
+#     print(1)
+# except Exception:
+#     print(2)
+# except TypeError:
+#     print(3)
+# except NameError:
+#     print(4)
+# except ValueError:
+#     print(5)
+# finally:
+#     print(6)
+# print(7)
+
+
+# ===============================
+'''
+def fun2(x,y):
+    try:
+        z=x+y
+        print(z)
+    except TypeError:
+        print(0)
+    print(9)
+try:
+    fun(2,'2')
+    print(1)
+except Exception:
+    print(2)
+except TypeError:
+    print(3)
+except NameError:
+    print(4)
+except ValueError:
+    print(5)
+finally:
+    print(6)
+print(7)
+
+
+
+def fun(x):
+    if(x=="qwe"):
+        return x
+    else:
+        x=x[:-1]
+        return fun(x)
+
+
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+ 
+ 
+==========================
+
+def fun(x):
+    if(x=="qwe"+x):
+        return x
+    else:
+        x=x[:-1]
+        return fun(x)
+ 
+ 
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+
+
+
+'''
+def fun(x):
+    if(x=="qwe"+x):
+        return x
+    else:
+        x="qwe"+x[:-1]
+        return fun(x)
+
+
+str1="qwerty"
+str2=fun(str1)
+print(str1,str2)
+
+'''
+======================
+def fun(x,y):
+    if(len(x)==2):
+        return x
+    else:
+        x.pop()
+        y.append(fun(x,y)+[0])
+        
+
+list1=[1,2,3,4,5]
+list2=[]
+fun(list1,list2)
+print(list1,list2)
+====================
+from src.resources.DataStructures import Stack
+
+def fun(x):
+    s1=Stack(x.max_size)
+    x.pop()
+    while(not x.is_empty()):
+        s1.push(x.pop()+1)
+    return s1
+stack1=Stack(5)
+stack1.push(1)
+stack1.push(5)
+stack1.push(7)
+stack1.push(2)
+stack1.push(9)
+fun(stack1).display()
+==================
+
+'''

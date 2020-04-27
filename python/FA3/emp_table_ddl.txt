@@ -1,0 +1,22 @@
+-- Drop all trainee tables
+Drop TABLE FoodItem cascade constraints;
+
+-- Table for storing FoodItem details 
+CREATE TABLE FoodItem (
+  Id          	INTEGER PRIMARY KEY, 
+  FoodName    	VARCHAR2(40) NOT NULL,
+  Price      	DECIMAL(9,2) NOT NULL,
+  Availability  CHAR(2) NOT NULL CHECK(Availability IN ('A','NA')),
+);
+
+-- Data for FoodItem table  --
+------------------------------
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (1,'James Potter','Jun-',75000,1000,'ICP','PM',NULL,1001);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (2,'Ethan McCarty','Feb-',90000,1200,'ETA','PM',NULL,NULL);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (3,'Emily Rayner','Jan-',25000,100,'ETA','SE',NULL,1002);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (4,'Jack Abraham','Jul-',30000,NULL,'ETA','SSE',NULL,NULL);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (5,'Ayaz Mohammad','Apr-',40000,NULL,'ICP','TA',NULL,1003);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (6,'Abhinav Mittal','May-',35000,NULL,'IVS','SSE',NULL,NULL);
+INSERT INTO FoodItem (ID,FoodName,Price,Availability) VALUES (7,'Alice Jackson','Mar-',50000,NULL,'ICP','TA',NULL,NULL);
+
+commit;

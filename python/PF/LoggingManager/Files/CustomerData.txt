@@ -1,0 +1,4 @@
+C1001,Jim@cbs.com,fsg,2344343212,Jimy01#
+C1002,Sarah@nbc.com,GHYTR7539J,9158901273,Sarah*4
+C1003,Chuck@carmichael.com,FGCAP456O,8973012459,Chuck*Sarah
+C1004,Casey@Fbi.com,AFGTD8596H,7531596420,Casey*J3

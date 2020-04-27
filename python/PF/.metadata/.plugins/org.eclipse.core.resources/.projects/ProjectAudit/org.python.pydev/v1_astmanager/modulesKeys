@@ -1,0 +1,7 @@
+MODULES_MANAGER_V2
+Business.__init__|Z:\PF\ProjectAudit\Business\__init__.py
+Business.logic|Z:\PF\ProjectAudit\Business\logic.py
+Persistence.__init__|Z:\PF\ProjectAudit\Persistence\__init__.py
+Persistence.filesystem|Z:\PF\ProjectAudit\Persistence\filesystem.py
+Presentation.__init__|Z:\PF\ProjectAudit\Presentation\__init__.py
+Presentation.menu|Z:\PF\ProjectAudit\Presentation\menu.py

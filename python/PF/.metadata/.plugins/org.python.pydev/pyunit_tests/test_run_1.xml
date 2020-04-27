@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="1" finished="true" name="Test Run: 42" tests="1" total_time="Finished in: 2.48 secs."/>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="fail" test="test_validate_item_available3" time="0.44">
+<stdout><![CDATA[Starters
+//////////////////def get_food_items_availability/////////////////////
+
+ChickenDrama
+//////////////////def get_food_items_availability/////////////////////
+
+output
+[True, True]
+]]></stdout>
+<stderr><![CDATA[File "Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py", line 69
+in test_validate_item_available3
+    assert  overall_bool == True
+E   assert False == True]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="PyFood TestcasesModule3.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

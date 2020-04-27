@@ -1,0 +1,57 @@
+#         choice=input("Please Select The Category with its Corresponding Number ")
+#         
+#         if(choice=="1"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice , ":" , category_item_name)
+#             FoodModule.Food.category = category_item_name
+# 
+#             
+#         elif(choice=="2"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice , ":" , category_item_name)
+#             FoodModule.Food.category = category_item_name
+#             
+#         elif(choice=="3"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice , ":" , category_item_name)
+#             FoodModule.Food.category = category_item_name
+# 
+#         
+#         elif(choice=="4"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice , ":" , category_item_name)
+#             FoodModule.Food.category = category_item_name
+# 
+# 
+#         elif(choice=="5"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice , ":" , category_item_name)
+#             FoodModule.Food.category = category_item_name
+#             
+#             
+#         elif(choice=="6"):
+#             #Converting to int for easy manipulation
+#             category_item = int(choice)
+#             #Storing the name from displayed items for specific category
+#             category_item_name = list_of_category[category_item-1]
+#             print("Choice Selected :" , choice ,":", category_item_name)
+#             FoodModule.Food.category = category_item_name
+#             
+#         else :
+#             print("Please select from the given choices only")
+            

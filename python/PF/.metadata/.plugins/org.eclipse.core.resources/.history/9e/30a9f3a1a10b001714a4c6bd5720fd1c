@@ -1,0 +1,302 @@
+'''
+Created on Mar 16, 2017
+
+@author: gaurav.sainger
+'''
+
+from validations import Validate
+from exceptions import CustomException2
+from classes import searchmodule2,FoodModule
+from functionality import ViewFunctions
+
+def filter(city,area):
+    
+    #Registered_user = FoodModule.Food.is_registered_user
+
+    choice=input("Do you want to filter or select restaurant?(F/S)")
+    if (choice.upper()=="F"):
+        Filter_search(city,area)
+            
+    elif (choice.upper()=="S"):
+        get_restaurantname(city,area)  
+            
+    else:
+        print("Invalid filter type,please enter F or S")
+        filter(city,area)
+            
+    
+                    
+def get_restaurantname(city,area):
+    try:
+        restaurant_name1=input("Enter the restaurant name:")
+        restaurant_name=restaurant_name1.upper()
+        list_of_restaurants=Validate.validate_hotel_name(city,area,restaurant_name)
+        print(restaurant_name)
+        FoodModule.Food.restaurant_name =restaurant_name 
+        FoodModule.Food.restaurant_city = city
+        FoodModule.Food.restaurant_area = area 
+        
+        #Calling Module 3
+        print("Calling Module 3")
+        ViewFunctions.view_category()
+    except CustomException2.Invalidselectname as e:
+        print(e)
+    except Exception as e:
+        print("Sorry. Some system error occurred")
+        print(e)   
+        
+def previous_select(city,area):
+    select=input("Do u wish to select restaurant or go back to previous menu?(S/P)")
+    if select.upper()=="P":
+        search_as_login(city, area)
+    elif select.upper()=="S":
+        get_restaurantname(city,area)          
+    else:
+        print("invalid option, please enter S or P")
+        previous_select(city,area)
+        
+def search_as_guest():
+    
+    try:
+        FoodModule.Food.is_registered_user =  False
+        city1=input("Enter your city:")
+        area1=input("Enter your area:")
+        city=city1.upper()
+        area=area1.upper()
+        
+        list_of_restaurants=Validate.validate_search_category(city,area)
+        
+        '''
+        Print the details
+         '''
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
+        print("resturantname     type of food    likes     dislikes     rating")
+        for select in list_of_restaurants:
+            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+        print()   
+        
+        filter(city,area)
+        
+    except CustomException2.Invalidcityareaname as e:
+        print(e)
+    except Exception as e:
+        print(e)
+        print()
+    
+
+def search_as_login(city1,area1):
+    try:
+        city=city1.upper()
+        area=area1.upper()
+        list_of_restaurants=Validate.validate_search_category(city,area)
+        
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
+        print("resturantname     type of food    likes     dislikes     rating")
+        for select in list_of_restaurants:
+            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+        print()   
+        
+        filter(city,area)
+        
+    except CustomException2.InvalidCategoryException as e:
+        print(e)
+    except Exception as e:
+        print("Sorry. Some system error occurred")
+        print(e)
+    print()  
+
+
+def Filter_search(city1,area1):
+        city=city1.upper()
+        area=area1.upper()
+    
+        filter=input("Filter based on:")
+        temp=0
+        filter_list=filter.split(",")
+        list=[]
+        for value in filter_list:
+            list.append(value.lower())    
+        for value in list:
+            if value=="rating" or value=="likes" or value=="dislikes" or value=="type of food":
+                temp=0
+            else:
+                temp+=1
+        if temp==0:         
+            if len(list)==1:
+                for value in list:
+                    if value=="rating":
+                        var1=input("Enter the rating  range:")
+                        var1_list=var1.split("-")
+                        rating_lower=var1_list[0]
+                        rating_upper=var1_list[1]
+                        
+                        list_of_restaurants=Validate.validate_search_as_rating(city,area,rating_lower,rating_upper)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()  
+                        previous_select(city,area)
+                                    
+                    elif value=="likes":
+                        list_of_restaurants=Validate.validate_search_as_likes(city,area)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area)
+                          
+                    
+                            
+                    elif value=="dislikes":
+                        list_of_restaurants=Validate.validate_search_as_dislike_like(city,area)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area) 
+                            
+                    elif value=="type of food":
+                        var1=input("enter your food type:(N/V):")
+                        list_of_restaurants=Validate.validate_search_as_type(city,area,var1)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area)
+                            
+                
+                                
+            if len(list)==2:
+                
+                if "rating"in list:
+                    
+                    var1=input("Enter the rating  range:")
+                    var1_list=var1.split("-")
+                    rating_lower=var1_list[0]
+                    rating_upper=var1_list[1]
+                    if "dislikes" in list:
+                        
+                        list_of_restaurants=Validate.validate_search_as_rating_dislikes(city,area,rating_lower,rating_upper)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area)
+                        
+                    elif "likes" in list:
+                        
+                        list_of_restaurants=Validate.validate_search_as_rating_likes(city,area,rating_lower,rating_upper)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        select=input("Do u wish to select restaurant or go back to previous menu?(S/P)")
+                        previous_select(city,area) 
+                        
+                    elif "type of food" in list:
+                        var1=input("Enter youe type of food:")
+                        list_of_restaurants=Validate.validate_search_as_rating_type(city,area,rating_lower,rating_upper,var1)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area)
+                        
+                if "dislikes" in list:
+                    if "likes" in list:
+                        list_of_restaurants=Validate.validate_search_as_dislike_like(city,area)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area) 
+                          
+                    elif "type of food" in list:
+                        var1=input("Enter youe type of food:")
+                        list_of_restaurants=Validate.validate_search_as_dislike_type(city,area,var1)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area)  
+      
+                        
+                if "likes" in list:
+                    if "type of food" in list:
+                        var1=input("Enter youe type of food:")
+                        list_of_restaurants=Validate.validate_search_as_like_type(city,area,var1)
+                        print("resturantname     type of food    likes     dislikes     rating")
+                        for select in list_of_restaurants:
+                            print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                        print()
+                        previous_select(city,area) 
+                            
+            if len(list)==3:
+                if "rating" in list:
+                    var1=input("Enter the rating range:")
+                    var1_list=var1.split("-")
+                    rating_lower=var1_list[0]
+                    rating_upper=var1_list[1]
+                    if "dislikes" in list:
+                        if "likes" in list:
+                            list_of_restaurants=Validate.validate_search_as_rating_dislike_like(city,area,rating_lower,rating_upper)
+                            print("resturantname     type of food    likes     dislikes     rating")
+                            for select in list_of_restaurants:
+                                print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                            print()
+                            previous_select(city,area)
+                                   
+                        if "type of food" in list:
+                            var1=input("Enter youe type of food:")
+                            list_of_restaurants=Validate.validate_search_as_rating_dislike_type(city,area,rating_lower,rating_upper,var1)
+                            print("resturantname     type of food    likes     dislikes     rating")
+                            for select in list_of_restaurants:
+                                print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                            print()
+                            previous_select(city,area) 
+                                
+                    if "likes" in list:
+                        if "type of food" in list:
+                            var1=input("Enter youe type of food:") 
+                            list_of_restaurants=Validate.validate_search_as_like_type_rating(city,area,rating_lower,rating_upper,var1)
+                            print("resturantname     type of food    likes     dislikes     rating")
+                            for select in list_of_restaurants:
+                                print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                            print()
+                            previous_select(city,area) 
+               
+                if "dislikes" in list:
+                    if "likes" in list:
+                        if "type of food" in list:
+                            var1=input("Enter youe type of food:")
+                            list_of_restaurants=Validate.validate_search_as_dislike_like_type(city,area,var1)
+                            print("resturantname     type of food    likes     dislikes     rating")
+                            for select in list_of_restaurants:
+                                print(select.get_restaurantname(),"     ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                            print()
+                            previous_select(city,area) 
+                            
+            if len (list)==4:
+                if "rating" in list:
+                    var1=input("Enter the rating range:")
+                    var1_list=var1.split("-")
+                    rating_lower=var1_list[0]
+                    rating_upper=var1_list[1]
+                    if "dislikes" in list:
+                        if "likes" in list:            
+                            if "type of food" in list:
+                                var1=input("Enter youe type of food:")
+                                list_of_restaurants=Validate.validate_search_as_all(city,area,rating_lower,rating_upper,var1)
+                                print("resturantname     type of food    likes     dislikes     rating")
+                                for select in list_of_restaurants:
+                                    print(select.get_restaurantname(),"    ",select.get_type_of_food()," " ,  select.get_likes(),"     ",select.get_dislikes(),"     ",select.get_rating())
+                                print()
+                                previous_select(city,area)
+                                  
+            
+        else:
+            print("invalid filter,please choose from rating,likes,dislikes,type of food")
+            Filter_search(city,area)
+     
+
+                            

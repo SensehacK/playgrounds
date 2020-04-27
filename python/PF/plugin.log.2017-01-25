@@ -1,0 +1,157 @@
+2017-01-25 09:48:42,136 INFO  Loading Baseframework Plugin
+2017-01-25 09:48:42,573 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-25 09:48:43,557 INFO  Loading the Menu - HandsOn
+2017-01-25 09:48:43,557 INFO  Successfully loaded the Menu - HandsOn
+2017-01-25 10:28:11,358 INFO  Loading Programming Assignment Plugin
+2017-01-25 10:28:11,718 INFO  Setting request parameters for VerifySolution
+2017-01-25 10:28:11,718 INFO  Initiating to process and prepare Input for the verify service
+2017-01-25 10:28:11,733 INFO  Starting to parse the user solution
+2017-01-25 10:28:11,733 INFO  Displaying user solution
+2017-01-25 10:28:21,219 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-30\r\n\r\ndef find_average(mark_list):\r\n    \r\n    total=0\r\n    try :\r\n        for i in range(0, len(mark_list)+1):\r\n            \r\n        #for i in range(0, len(mark_list)):\r\n            #total+=mark_list1[i]\r\n            #total+=m_list[i]\r\n            total+=mark_list1[i]\r\n        marks_avg=total/len(mark_list)\r\n        return marks_avg\r\n    \r\n    except NameError : \r\n        print(\"Except Name Error Block\")\r\n    except ZeroDivisionError:\r\n        print(\"Divide by Zero error\")\r\n    except TypeError:\r\n        print(\"Wrong data type\")\r\n        \r\n    except : \r\n        print(\"Except Block\")\r\n    finally : \r\n        print(\"Finally Block\")\r\n        \r\n\r\n#m_list=[]\r\ntry : \r\n    \r\n    \r\n#     mark1=\"A\"\r\n#     print(mark1) \r\n#     mark1=int(\"A\")\r\n#     print(mark1)  \r\n#     m_list=[mark1,2,3,4]\r\n#     \r\n    print(\"hello\") \r\nexcept ValueError:\r\n    print(\"Value error\")\r\nexcept NameError : \r\n    print(\"Except Name Error Block\")\r\nexcept ZeroDivisionError:\r\n    print(\"Divide by Zero error\")\r\nexcept TypeError:\r\n    print(\"Wrong data type\")\r\n    \r\nexcept : \r\n    print(\"Except Block2\")\r\nfinally : \r\n    print(\"Finally Block2\")    \r\n    \r\n    \r\nm_list=[1,2,3,4]\r\n#m_list=[\"1\",2,3,4]\r\ntry :\r\n    \r\n    print(\"m_list\")\r\n    print(m_list)\r\n    print(\"Average marks:\", find_average(m_list))\r\n    \r\nexcept NameError :\r\n    print(\"End Name Error\")\r\n    \r\nfinally :\r\n    print(\"Last finally\")\r\n","asgnmtId":"30","SolutionFileName":"Exercise30.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-25 10:28:21,219 INFO  Successfully processed and prepared the input for the verify service
+2017-01-25 10:28:21,219 INFO  Successfully set the request parameters for VerifySolution
+2017-01-25 10:28:21,234 INFO  Invoking the service to verify the user solution
+2017-01-25 10:28:21,234 INFO  Time before invoking service:Wed Jan 25 10:28:21 IST 2017
+2017-01-25 10:28:21,234 INFO  Initialising service address for VerifySolution
+2017-01-25 10:28:21,234 INFO  Time before invoking service In SUPER:Wed Jan 25 10:28:21 IST 2017
+2017-01-25 10:28:22,781 INFO  Time after invoking service In SUPER:Wed Jan 25 10:28:22 IST 2017
+2017-01-25 10:28:22,781 INFO  Service responded successfully with required details
+2017-01-25 10:28:22,781 INFO  Time after invoking service:Wed Jan 25 10:28:22 IST 2017
+2017-01-25 10:28:22,781 INFO  User solution successfully verified
+2017-01-25 10:28:22,797 INFO  Processing the response from verify service
+2017-01-25 10:28:22,797 INFO  Starting to parse JSON response
+2017-01-25 10:28:22,797 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:28:22,797 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:28:22,797 INFO  Successfully parsed JSON response
+2017-01-25 10:28:22,797 INFO  In the process of generating verify response in HTML
+2017-01-25 10:28:23,157 INFO  Successfully generated verify response in HTML
+2017-01-25 10:28:23,157 INFO  Successfully processed the response from service
+2017-01-25 10:31:31,199 INFO  Setting request parameters for VerifySolution
+2017-01-25 10:31:31,199 INFO  Initiating to process and prepare Input for the verify service
+2017-01-25 10:31:31,199 INFO  Starting to parse the user solution
+2017-01-25 10:31:31,199 INFO  Displaying user solution
+2017-01-25 10:31:38,536 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-30\r\n\r\ndef find_average(mark_list):\r\n    \r\n    total=0\r\n    try :\r\n        for i in range(0, len(mark_list)):\r\n            \r\n        #for i in range(0, len(mark_list)):\r\n            #total+=mark_list1[i]\r\n            #total+=m_list[i]\r\n            total+=mark_list[i]\r\n        marks_avg=total/len(mark_list)\r\n        return marks_avg\r\n    \r\n    except NameError : \r\n        print(\"Except Name Error Block\")\r\n    except ZeroDivisionError:\r\n        print(\"Divide by Zero error\")\r\n    except TypeError:\r\n        print(\"Wrong data type\")\r\n    except IndexError:\r\n        print(\"Wrong IndexError data type\")\r\n        \r\n    except : \r\n        print(\"Except Block\")\r\n    finally : \r\n        print(\"Finally Block\")\r\n        \r\n\r\n#m_list=[]\r\ntry : \r\n    \r\n    \r\n#     mark1=\"A\"\r\n#     print(mark1) \r\n#     mark1=int(\"A\")\r\n#     print(mark1)  \r\n#     m_list=[mark1,2,3,4]\r\n#     \r\n    print(\"hello\") \r\nexcept ValueError:\r\n    print(\"Value error\")\r\nexcept NameError : \r\n    print(\"Except Name Error Block\")\r\nexcept ZeroDivisionError:\r\n    print(\"Divide by Zero error\")\r\nexcept TypeError:\r\n    print(\"Wrong data type\")\r\n    \r\nexcept : \r\n    print(\"Except Block2\")\r\nfinally : \r\n    print(\"Finally Block2\")    \r\n    \r\n    \r\nm_list=[1,2,3,4]\r\n#m_list=[\"1\",2,3,4]\r\ntry :\r\n    \r\n    print(\"m_list\")\r\n    print(m_list)\r\n    print(\"Average marks:\", find_average(m_list))\r\n    \r\nexcept NameError :\r\n    print(\"End Name Error\")\r\n    \r\nfinally :\r\n    print(\"Last finally\")\r\n","asgnmtId":"30","SolutionFileName":"Exercise30.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-25 10:31:38,536 INFO  Successfully processed and prepared the input for the verify service
+2017-01-25 10:31:38,536 INFO  Successfully set the request parameters for VerifySolution
+2017-01-25 10:31:38,536 INFO  Invoking the service to verify the user solution
+2017-01-25 10:31:38,536 INFO  Time before invoking service:Wed Jan 25 10:31:38 IST 2017
+2017-01-25 10:31:38,536 INFO  Initialising service address for VerifySolution
+2017-01-25 10:31:38,536 INFO  Time before invoking service In SUPER:Wed Jan 25 10:31:38 IST 2017
+2017-01-25 10:31:39,896 INFO  Time after invoking service In SUPER:Wed Jan 25 10:31:39 IST 2017
+2017-01-25 10:31:39,896 INFO  Service responded successfully with required details
+2017-01-25 10:31:39,896 INFO  Time after invoking service:Wed Jan 25 10:31:39 IST 2017
+2017-01-25 10:31:39,896 INFO  User solution successfully verified
+2017-01-25 10:31:39,896 INFO  Processing the response from verify service
+2017-01-25 10:31:39,896 INFO  Starting to parse JSON response
+2017-01-25 10:31:39,896 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:31:39,896 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:31:39,896 INFO  Successfully parsed JSON response
+2017-01-25 10:31:39,896 INFO  In the process of generating verify response in HTML
+2017-01-25 10:31:40,005 INFO  Successfully generated verify response in HTML
+2017-01-25 10:31:40,005 INFO  Successfully processed the response from service
+2017-01-25 10:33:31,434 INFO  Setting request parameters for VerifySolution
+2017-01-25 10:33:31,449 INFO  Initiating to process and prepare Input for the verify service
+2017-01-25 10:33:31,449 INFO  Starting to parse the user solution
+2017-01-25 10:33:31,449 INFO  Displaying user solution
+2017-01-25 10:33:42,347 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-30\r\n\r\ndef find_average(mark_list):\r\n    \r\n    total=0\r\n    try :\r\n        for i in range(0, len(mark_list)):\r\n            \r\n        #for i in range(0, len(mark_list)):\r\n            #total+=mark_list1[i]\r\n            #total+=m_list[i]\r\n            total+=mark_list[i]\r\n        marks_avg=total/len(mark_list)\r\n        return marks_avg\r\n    \r\n    except NameError : \r\n        print(\"Except Name Error Block\")\r\n    except ZeroDivisionError:\r\n        print(\"Divide by Zero error\")\r\n    except TypeError:\r\n        print(\"Wrong data type\")\r\n    except IndexError:\r\n        print(\"Wrong IndexError data type\")\r\n        \r\n    except : \r\n        print(\"Except Block\")\r\n    finally : \r\n        print(\"Finally Block\")\r\n        \r\n\r\n#m_list=[]\r\ntry : \r\n    \r\n    \r\n#     mark1=\"A\"\r\n#     print(mark1) \r\n#     mark1=int(\"A\")\r\n#     print(mark1)  \r\n#     m_list=[mark1,2,3,4]\r\n\r\n   \r\n    print(\"Hello Sensehack\") \r\nexcept ValueError:\r\n    print(\"Value error\")\r\nexcept NameError : \r\n    print(\"Except Name Error Block\")\r\nexcept ZeroDivisionError:\r\n    print(\"Divide by Zero error\")\r\nexcept TypeError:\r\n    print(\"Wrong data type\")\r\n    \r\nexcept : \r\n    print(\"Except Block2\")\r\nfinally : \r\n    print(\"Finally Block2\")    \r\n    \r\n    \r\nm_list=[1,2,3,4]\r\n#m_list=[\"1\",2,3,4]\r\ntry :\r\n    \r\n    print(\"m_list\")\r\n    print(m_list)\r\n    print(\"Average marks:\", find_average(m_list))\r\n    \r\nexcept NameError :\r\n    print(\"End Name Error\")\r\n    \r\nfinally :\r\n    print(\"Last finally\")\r\n","asgnmtId":"30","SolutionFileName":"Exercise30.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-25 10:33:42,347 INFO  Successfully processed and prepared the input for the verify service
+2017-01-25 10:33:42,347 INFO  Successfully set the request parameters for VerifySolution
+2017-01-25 10:33:42,347 INFO  Invoking the service to verify the user solution
+2017-01-25 10:33:42,347 INFO  Time before invoking service:Wed Jan 25 10:33:42 IST 2017
+2017-01-25 10:33:42,347 INFO  Initialising service address for VerifySolution
+2017-01-25 10:33:42,347 INFO  Time before invoking service In SUPER:Wed Jan 25 10:33:42 IST 2017
+2017-01-25 10:33:43,753 INFO  Time after invoking service In SUPER:Wed Jan 25 10:33:43 IST 2017
+2017-01-25 10:33:43,753 INFO  Service responded successfully with required details
+2017-01-25 10:33:43,753 INFO  Time after invoking service:Wed Jan 25 10:33:43 IST 2017
+2017-01-25 10:33:43,753 INFO  User solution successfully verified
+2017-01-25 10:33:43,753 INFO  Processing the response from verify service
+2017-01-25 10:33:43,753 INFO  Starting to parse JSON response
+2017-01-25 10:33:43,753 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:33:43,753 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 10:33:43,769 INFO  Successfully parsed JSON response
+2017-01-25 10:33:43,769 INFO  In the process of generating verify response in HTML
+2017-01-25 10:33:43,878 INFO  Successfully generated verify response in HTML
+2017-01-25 10:33:43,878 INFO  Successfully processed the response from service
+2017-01-25 10:33:47,941 INFO  Initiating to process and prepare Input for the submit service
+2017-01-25 10:33:47,941 INFO  Displaying user solution
+2017-01-25 10:33:47,957 INFO  Successfully processed and prepared the input for the submit service
+2017-01-25 10:33:47,957 INFO  Invoking the service to submit the user solution
+2017-01-25 10:33:47,957 INFO  Initialising service address for Submit
+2017-01-25 10:33:47,957 INFO  Time before invoking service In SUPER:Wed Jan 25 10:33:47 IST 2017
+2017-01-25 10:33:48,191 INFO  Time after invoking service In SUPER:Wed Jan 25 10:33:48 IST 2017
+2017-01-25 10:33:48,191 INFO  Service responded successfully with required details
+2017-01-25 10:33:48,191 INFO  User solution successfully submitted
+2017-01-25 10:33:48,191 INFO  Displaying submission status
+2017-01-25 10:33:48,191 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-25 12:40:25,951 INFO  Setting request parameters for VerifySolution
+2017-01-25 12:40:25,951 INFO  Initiating to process and prepare Input for the verify service
+2017-01-25 12:40:25,951 INFO  Starting to parse the user solution
+2017-01-25 12:40:25,951 INFO  Displaying user solution
+2017-01-25 12:40:31,576 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-32\r\n\r\ndef human_pyramid(no_of_people):\r\n    pass #remove pass and place the recursive code the you had written earlier for this function\r\n    weight_per = 50\r\n\r\n    if (no_of_people == 1) :\r\n        return 1*50\r\n    else :\r\n        return no_of_people*(50)+human_pyramid(no_of_people-2)\r\n    \r\n    \r\ndef find_maximum_people(max_weight):\r\n    no_of_people=1\r\n    #write your logic here. You may invoke recursive function human_pyramid() wherever applicable \r\n    while (1) :\r\n        no_of_people+= 2\r\n        possible_weight = (human_pyramid(no_of_people))\r\n        \r\n        if possible_weight > max_weight :\r\n            no_of_people -=2\r\n            break\r\n    return no_of_people\r\n\r\n        \r\n    \r\n#     no_of_people = max_weight // 50\r\n#     print(no_of_people)\r\n#     print(\"human_pyramid(no_of_people)\")\r\n#     human_pyramid(no_of_people)\r\n#     \r\n#     return no_of_people\r\n\r\n\r\n#Provide different values for max_weight and test your program\r\nmax_people=find_maximum_people(1000)\r\nprint(max_people)\r\n","asgnmtId":"32","SolutionFileName":"Exercise32.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-25 12:40:31,576 INFO  Successfully processed and prepared the input for the verify service
+2017-01-25 12:40:31,576 INFO  Successfully set the request parameters for VerifySolution
+2017-01-25 12:40:31,576 INFO  Invoking the service to verify the user solution
+2017-01-25 12:40:31,576 INFO  Time before invoking service:Wed Jan 25 12:40:31 IST 2017
+2017-01-25 12:40:31,576 INFO  Initialising service address for VerifySolution
+2017-01-25 12:40:31,576 INFO  Time before invoking service In SUPER:Wed Jan 25 12:40:31 IST 2017
+2017-01-25 12:40:33,092 INFO  Time after invoking service In SUPER:Wed Jan 25 12:40:33 IST 2017
+2017-01-25 12:40:33,092 INFO  Service responded successfully with required details
+2017-01-25 12:40:33,092 INFO  Time after invoking service:Wed Jan 25 12:40:33 IST 2017
+2017-01-25 12:40:33,092 INFO  User solution successfully verified
+2017-01-25 12:40:33,108 INFO  Processing the response from verify service
+2017-01-25 12:40:33,108 INFO  Starting to parse JSON response
+2017-01-25 12:40:33,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 12:40:33,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 12:40:33,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 12:40:33,108 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 12:40:33,108 INFO  Successfully parsed JSON response
+2017-01-25 12:40:33,108 INFO  In the process of generating verify response in HTML
+2017-01-25 12:40:33,201 INFO  Successfully generated verify response in HTML
+2017-01-25 12:40:33,201 INFO  Successfully processed the response from service
+2017-01-25 12:40:41,525 INFO  Initiating to process and prepare Input for the submit service
+2017-01-25 12:40:41,528 INFO  Displaying user solution
+2017-01-25 12:40:41,551 INFO  Successfully processed and prepared the input for the submit service
+2017-01-25 12:40:41,551 INFO  Invoking the service to submit the user solution
+2017-01-25 12:40:41,551 INFO  Initialising service address for Submit
+2017-01-25 12:40:41,551 INFO  Time before invoking service In SUPER:Wed Jan 25 12:40:41 IST 2017
+2017-01-25 12:40:41,754 INFO  Time after invoking service In SUPER:Wed Jan 25 12:40:41 IST 2017
+2017-01-25 12:40:41,770 INFO  Service responded successfully with required details
+2017-01-25 12:40:41,770 INFO  User solution successfully submitted
+2017-01-25 12:40:41,770 INFO  Displaying submission status
+2017-01-25 12:40:41,770 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-25 18:20:45,330 INFO  Setting request parameters for VerifySolution
+2017-01-25 18:20:45,346 INFO  Initiating to process and prepare Input for the verify service
+2017-01-25 18:20:45,346 INFO  Starting to parse the user solution
+2017-01-25 18:20:45,346 INFO  Displaying user solution
+2017-01-25 18:20:54,418 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-40\r\ndef is_palindrome(word):\r\n    #Remove pass and write your logic here\r\n    new_word = word.upper()\r\n    if len(word) <= 1:\r\n        return True\r\n    return new_word[0] == new_word[-1] and is_palindrome(new_word[1:-1])\r\n    \r\n#Provide different values for word and test your program       \r\nresult=is_palindrome(\"MadAM\")\r\nif(result):\r\n    print(\"The given word is a Palindrome\")\r\nelse:\r\n    print(\"The given word is not a Palindrome\")\r\n","asgnmtId":"40","SolutionFileName":"Assignment40.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-25 18:20:54,418 INFO  Successfully processed and prepared the input for the verify service
+2017-01-25 18:20:54,418 INFO  Successfully set the request parameters for VerifySolution
+2017-01-25 18:20:54,418 INFO  Invoking the service to verify the user solution
+2017-01-25 18:20:54,418 INFO  Time before invoking service:Wed Jan 25 18:20:54 IST 2017
+2017-01-25 18:20:54,418 INFO  Initialising service address for VerifySolution
+2017-01-25 18:20:54,434 INFO  Time before invoking service In SUPER:Wed Jan 25 18:20:54 IST 2017
+2017-01-25 18:20:59,121 INFO  Time after invoking service In SUPER:Wed Jan 25 18:20:59 IST 2017
+2017-01-25 18:20:59,121 INFO  Service responded successfully with required details
+2017-01-25 18:20:59,121 INFO  Time after invoking service:Wed Jan 25 18:20:59 IST 2017
+2017-01-25 18:20:59,121 INFO  User solution successfully verified
+2017-01-25 18:20:59,121 INFO  Processing the response from verify service
+2017-01-25 18:20:59,137 INFO  Starting to parse JSON response
+2017-01-25 18:20:59,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 18:20:59,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 18:20:59,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 18:20:59,137 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-25 18:20:59,137 INFO  Successfully parsed JSON response
+2017-01-25 18:20:59,137 INFO  In the process of generating verify response in HTML
+2017-01-25 18:20:59,449 INFO  Successfully generated verify response in HTML
+2017-01-25 18:20:59,449 INFO  Successfully processed the response from service
+2017-01-25 18:21:04,921 INFO  Initiating to process and prepare Input for the submit service
+2017-01-25 18:21:04,921 INFO  Displaying user solution
+2017-01-25 18:21:04,937 INFO  Successfully processed and prepared the input for the submit service
+2017-01-25 18:21:04,937 INFO  Invoking the service to submit the user solution
+2017-01-25 18:21:04,937 INFO  Initialising service address for Submit
+2017-01-25 18:21:04,937 INFO  Time before invoking service In SUPER:Wed Jan 25 18:21:04 IST 2017
+2017-01-25 18:21:05,140 INFO  Time after invoking service In SUPER:Wed Jan 25 18:21:05 IST 2017
+2017-01-25 18:21:05,140 INFO  Service responded successfully with required details
+2017-01-25 18:21:05,140 INFO  User solution successfully submitted
+2017-01-25 18:21:05,140 INFO  Displaying submission status
+2017-01-25 18:21:05,140 INFO  Displayed submission status successfullySuccessfully Submitted!

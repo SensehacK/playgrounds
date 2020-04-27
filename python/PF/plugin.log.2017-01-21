@@ -1,0 +1,80 @@
+2017-01-21 15:17:03,213 INFO  Loading Baseframework Plugin
+2017-01-21 15:17:03,510 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-21 15:17:04,619 INFO  Loading the Menu - HandsOn
+2017-01-21 15:17:04,807 INFO  Successfully loaded the Menu - HandsOn
+2017-01-21 15:43:28,648 INFO  Loading Programming Assignment Plugin
+2017-01-21 15:43:28,958 INFO  Setting request parameters for VerifySolution
+2017-01-21 15:43:28,960 INFO  Initiating to process and prepare Input for the verify service
+2017-01-21 15:43:28,965 INFO  Starting to parse the user solution
+2017-01-21 15:43:28,978 INFO  Displaying user solution
+2017-01-21 15:43:31,956 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-28\r\n\r\ndef find_max(num1, num2):\r\n    max_num=-1\r\n    my_list = []\r\n    \r\n    \r\n    \r\n    if num1 < num2 :\r\n        \r\n        \r\n        while (num1 <= num2) :\r\n            \r\n            num1_temp = num1 % 10\r\n            print(\"num1_temp\")\r\n            print(num1_temp)\r\n            \r\n            num1_temp2 = num1 // 10\r\n            print(\"num1_temp2\")\r\n            print(num1_temp2)\r\n            \r\n            \r\n            sum_num1 = num1_temp + num1_temp2\r\n            \r\n            print(\"sum_num1\")\r\n            print(sum_num1)\r\n            \r\n            sum_nums = num1 + num2 \r\n            \r\n            print(\"sum_nums\")\r\n            print(sum_nums)\r\n            \r\n            \r\n            if sum_num1 % 3 == 0 and num1 % 5 == 0 and sum_nums <=198 and sum_nums >=18 :\r\n                \r\n                print(\"sum_num1\")\r\n                print(sum_num1)\r\n                \r\n                print(\"number1\")\r\n                print(num1)\r\n                my_list.append(num1)\r\n                \r\n                \r\n                max_num = num1\r\n                \r\n            num1 += 1\r\n            \r\n            print(\"my_list\")\r\n            print(my_list)  \r\n                \r\n    \r\n    # Write your logic here\r\n    return max_num\r\n\r\n\r\n\r\n#Provide different values for num1 and num2 and test your program.\r\nmax_num=find_max(10,87)\r\nprint(max_num)\r\n","asgnmtId":"28","SolutionFileName":"Assignment28.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-21 15:43:31,958 INFO  Successfully processed and prepared the input for the verify service
+2017-01-21 15:43:31,962 INFO  Successfully set the request parameters for VerifySolution
+2017-01-21 15:43:31,963 INFO  Invoking the service to verify the user solution
+2017-01-21 15:43:31,964 INFO  Time before invoking service:Sat Jan 21 15:43:31 IST 2017
+2017-01-21 15:43:31,965 INFO  Initialising service address for VerifySolution
+2017-01-21 15:43:31,967 INFO  Time before invoking service In SUPER:Sat Jan 21 15:43:31 IST 2017
+2017-01-21 15:43:33,521 INFO  Time after invoking service In SUPER:Sat Jan 21 15:43:33 IST 2017
+2017-01-21 15:43:33,522 INFO  Service responded successfully with required details
+2017-01-21 15:43:33,524 INFO  Time after invoking service:Sat Jan 21 15:43:33 IST 2017
+2017-01-21 15:43:33,524 INFO  User solution successfully verified
+2017-01-21 15:43:33,525 INFO  Processing the response from verify service
+2017-01-21 15:43:33,527 INFO  Starting to parse JSON response
+2017-01-21 15:43:33,531 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:43:33,531 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:43:33,532 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:43:33,532 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:43:33,533 INFO  Successfully parsed JSON response
+2017-01-21 15:43:33,534 INFO  In the process of generating verify response in HTML
+2017-01-21 15:43:33,795 INFO  Successfully generated verify response in HTML
+2017-01-21 15:43:33,796 INFO  Successfully processed the response from service
+2017-01-21 15:43:52,796 INFO  Initiating to process and prepare Input for the submit service
+2017-01-21 15:43:52,800 INFO  Displaying user solution
+2017-01-21 15:43:52,810 INFO  Successfully processed and prepared the input for the submit service
+2017-01-21 15:43:52,814 INFO  Invoking the service to submit the user solution
+2017-01-21 15:43:52,814 INFO  Initialising service address for Submit
+2017-01-21 15:43:52,815 INFO  Time before invoking service In SUPER:Sat Jan 21 15:43:52 IST 2017
+2017-01-21 15:43:53,008 INFO  Time after invoking service In SUPER:Sat Jan 21 15:43:53 IST 2017
+2017-01-21 15:43:53,009 INFO  Service responded successfully with required details
+2017-01-21 15:43:53,009 INFO  User solution successfully submitted
+2017-01-21 15:43:53,009 INFO  Displaying submission status
+2017-01-21 15:43:53,010 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-21 15:45:00,113 INFO  Setting request parameters for VerifySolution
+2017-01-21 15:45:00,114 INFO  Initiating to process and prepare Input for the verify service
+2017-01-21 15:45:00,114 INFO  Starting to parse the user solution
+2017-01-21 15:45:00,116 INFO  Displaying user solution
+2017-01-21 15:45:01,891 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-16\r\ndef make_amount(rupees_to_make,no_of_five,no_of_one):\r\n    #five_needed=0\r\n    one_needed=0\r\n     \r\n\r\n    #Start writing your code here\r\n    #Populate the variables: five_needed and one_needed\r\n    print(no_of_five)\r\n    print(no_of_one)\r\n    five_needed = rupees_to_make // 5\r\n    print(five_needed)\r\n    print(one_needed)\r\n    one_needed = rupees_to_make % 5\r\n    \r\n    if no_of_five < five_needed :\r\n        print(\"if no_of_five < five_needed :\")\r\n        print(five_needed)\r\n        print(one_needed)\r\n        \r\n        five_required = five_needed - no_of_five\r\n        print(\"five Required\")\r\n        print(five_required)\r\n        five_converted_one = no_of_one // 5\r\n        print(\"five_converted_one\")\r\n        print(five_converted_one)\r\n        if five_converted_one >= five_required :\r\n            no_of_one = five_required * 5\r\n            print(no_of_one)\r\n            print(\" No. of Five needed :\", no_of_five,\"No. of One needed :\" , no_of_one)\r\n\r\n\r\n    elif no_of_five >= five_needed and no_of_one >= one_needed : \r\n        print(\"1st Statement\")\r\n        print(\" No. of Five needed :\", five_needed,\"No. of One needed :\" , one_needed)\r\n        \r\n    elif five_needed == 0 and no_of_one >= one_needed :\r\n       \r\n        print(\" No. of Five needed :\", five_needed,\"No. of One needed :\" , one_needed)\r\n        \r\n    elif five_needed < no_of_five and no_of_one >= one_needed :\r\n        print(\" No. of Five needed :\", five_needed, \"No. of One needed :\" , one_needed)\r\n        \r\n    else :\r\n        print(-1)\r\n        \r\n#Provide different values for rupees_to_make,no_of_five,no_of_one and test your progra\r\n\r\nmake_amount(138,81,51)\r\nprint(\"Second input\")\r\nmake_amount(118,24,4)\r\nprint(\"Third input\")\r\nmake_amount(4,3,23)\r\nprint(\"Fourth input\")\r\nmake_amount(110,21,8)\r\n\r\n","asgnmtId":"16","SolutionFileName":"Assignment16.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-21 15:45:01,893 INFO  Successfully processed and prepared the input for the verify service
+2017-01-21 15:45:01,894 INFO  Successfully set the request parameters for VerifySolution
+2017-01-21 15:45:01,894 INFO  Invoking the service to verify the user solution
+2017-01-21 15:45:01,895 INFO  Time before invoking service:Sat Jan 21 15:45:01 IST 2017
+2017-01-21 15:45:01,896 INFO  Initialising service address for VerifySolution
+2017-01-21 15:45:01,897 INFO  Time before invoking service In SUPER:Sat Jan 21 15:45:01 IST 2017
+2017-01-21 15:45:04,064 INFO  Time after invoking service In SUPER:Sat Jan 21 15:45:04 IST 2017
+2017-01-21 15:45:04,064 INFO  Service responded successfully with required details
+2017-01-21 15:45:04,065 INFO  Time after invoking service:Sat Jan 21 15:45:04 IST 2017
+2017-01-21 15:45:04,065 INFO  User solution successfully verified
+2017-01-21 15:45:04,066 INFO  Processing the response from verify service
+2017-01-21 15:45:04,068 INFO  Starting to parse JSON response
+2017-01-21 15:45:04,069 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,070 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,070 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,070 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,071 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,072 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,072 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-21 15:45:04,073 INFO  Successfully parsed JSON response
+2017-01-21 15:45:04,074 INFO  In the process of generating verify response in HTML
+2017-01-21 15:45:04,138 INFO  Successfully generated verify response in HTML
+2017-01-21 15:45:04,139 INFO  Successfully processed the response from service
+2017-01-21 15:56:10,440 INFO  Initiating to process and prepare Input for the submit service
+2017-01-21 15:56:10,452 INFO  Displaying user solution
+2017-01-21 15:56:10,462 INFO  Successfully processed and prepared the input for the submit service
+2017-01-21 15:56:10,463 INFO  Invoking the service to submit the user solution
+2017-01-21 15:56:10,464 INFO  Initialising service address for Submit
+2017-01-21 15:56:10,465 INFO  Time before invoking service In SUPER:Sat Jan 21 15:56:10 IST 2017
+2017-01-21 15:56:10,614 INFO  Time after invoking service In SUPER:Sat Jan 21 15:56:10 IST 2017
+2017-01-21 15:56:10,615 INFO  Service responded successfully with required details
+2017-01-21 15:56:10,616 INFO  User solution successfully submitted
+2017-01-21 15:56:10,617 INFO  Displaying submission status
+2017-01-21 15:56:10,617 INFO  Displayed submission status successfullySuccessfully Submitted!

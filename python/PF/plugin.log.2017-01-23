@@ -1,0 +1,267 @@
+2017-01-23 09:43:54,885 INFO  Loading Baseframework Plugin
+2017-01-23 09:43:55,229 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-23 09:43:57,698 INFO  Loading the Menu - HandsOn
+2017-01-23 09:43:57,725 INFO  Successfully loaded the Menu - HandsOn
+2017-01-23 11:06:31,351 INFO  Loading Programming Assignment Plugin
+2017-01-23 11:06:31,781 INFO  Setting request parameters for VerifySolution
+2017-01-23 11:06:31,782 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 11:06:31,788 INFO  Starting to parse the user solution
+2017-01-23 11:06:31,793 INFO  Displaying user solution
+2017-01-23 11:06:38,298 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-22\r\n\r\ndef generate_ticket(airline,source,destination,no_of_passengers):\r\n    ticket_number_list=[]\r\n    \r\n    greater_no_passenger = 0\r\n    begg_num = 0\r\n    no_high = 5\r\n    high_number = 101 + (no_of_passengers-1)\r\n    print(high_number)\r\n    begg_num_passenger = no_of_passengers - 5\r\n    print(\"begg_num_passenger\")\r\n    print(begg_num_passenger)\r\n    #Write your logic here\r\n    if no_of_passengers >= 5 :\r\n        begg_num_passenger = no_of_passengers - 5\r\n        print(\"begg_num_passenger\")\r\n        print(begg_num_passenger)\r\n        greater_no_passenger = 1\r\n        print(\"greater_no_passenger = 1\")\r\n        \r\n    else : \r\n        begg_num_passenger = 0\r\n        greater_no_passenger = 0\r\n        print(\"greater_no_passenger = 0\")\r\n    \r\n\r\n    while no_of_passengers > begg_num_passenger :\r\n        \r\n        if greater_no_passenger == 1 : \r\n            print(source)\r\n            trim_source = source[0:3]\r\n            print(trim_source)\r\n        \r\n            print(destination)\r\n            trim_destination = destination[0:3]\r\n            print(trim_destination)\r\n        \r\n            print(\"high_number\")\r\n            print(high_number)\r\n        \r\n            begg_num = high_number - (no_high)\r\n            print(begg_num)\r\n            str_num  = str(begg_num)\r\n            print(\"type(trim_source)\")\r\n            print(type(trim_source))\r\n        \r\n            ticket_number_list.append(airline + \":\" + trim_source + \":\"+ trim_destination + \":\" + str_num)\r\n            no_high -= 1\r\n        #begg_num += 1\r\n        \r\n            no_of_passengers -= 1\r\n            \r\n        if greater_no_passenger == 0 :\r\n            print(\"if greater_no_passenger == 0 :\")\r\n            print(\"else Block\")\r\n        \r\n        print(source)\r\n        trim_source = source[0:3]\r\n        print(trim_source)\r\n        \r\n        print(destination)\r\n        trim_destination = destination[0:3]\r\n        print(trim_destination)\r\n        \r\n        print(\"high_number\")\r\n        print(high_number)\r\n        \r\n        begg_num2 = 101\r\n        print(begg_num2)\r\n#         str_num  = str(begg_num2)\r\n#         print(str_num)\r\n        print(\"type(trim_source)\")\r\n        print(type(trim_source))\r\n        \r\n        while no_of_passengers > 0 :\r\n            str_num  = str(begg_num2)\r\n            print(str_num)\r\n            print(\"while no_of_passengers > 0 \")\r\n            ticket_number_list.append(airline + \":\" + trim_source + \":\"+ trim_destination + \":\" + str_num)\r\n           \r\n            begg_num2 += 1\r\n            print(\"begg_num2\")\r\n            print(begg_num2)\r\n            \r\n            print(\" no_of_passengers \")\r\n            print(no_of_passengers)\r\n            \r\n            no_of_passengers -= 1\r\n\r\n\r\n    #Use the below return statement wherever applicable\r\n    return ticket_number_list\r\n\r\n#Provide different values for airline,source,destination,no_of_passengers and test your program\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"London\",7))\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Mumbai\",\"NewYork\",3))\r\n","asgnmtId":"22","SolutionFileName":"ExerciseC22.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-23 11:06:38,300 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 11:06:38,302 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 11:06:38,302 INFO  Invoking the service to verify the user solution
+2017-01-23 11:06:38,305 INFO  Time before invoking service:Mon Jan 23 11:06:38 IST 2017
+2017-01-23 11:06:38,306 INFO  Initialising service address for VerifySolution
+2017-01-23 11:06:38,308 INFO  Time before invoking service In SUPER:Mon Jan 23 11:06:38 IST 2017
+2017-01-23 11:06:40,005 INFO  Time after invoking service In SUPER:Mon Jan 23 11:06:40 IST 2017
+2017-01-23 11:06:40,006 INFO  Service responded successfully with required details
+2017-01-23 11:06:40,006 INFO  Time after invoking service:Mon Jan 23 11:06:40 IST 2017
+2017-01-23 11:06:40,007 INFO  User solution successfully verified
+2017-01-23 11:06:40,008 INFO  Processing the response from verify service
+2017-01-23 11:06:40,010 INFO  Starting to parse JSON response
+2017-01-23 11:06:40,016 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:06:40,017 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:06:40,018 INFO  Successfully parsed JSON response
+2017-01-23 11:06:40,019 INFO  In the process of generating verify response in HTML
+2017-01-23 11:06:40,121 INFO  Successfully generated verify response in HTML
+2017-01-23 11:06:40,122 INFO  Successfully processed the response from service
+2017-01-23 11:20:51,249 INFO  Setting request parameters for VerifySolution
+2017-01-23 11:20:51,658 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 11:20:51,658 INFO  Starting to parse the user solution
+2017-01-23 11:20:51,660 INFO  Displaying user solution
+2017-01-23 11:20:55,759 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-22\r\n\r\ndef generate_ticket(airline,source,destination,no_of_passengers):\r\n    ticket_number_list=[]\r\n    \r\n    greater_no_passenger = 0\r\n    begg_num = 0\r\n    no_high = 5\r\n    high_number = 101 + (no_of_passengers-1)\r\n    print(\"high_number\")\r\n    print(high_number)\r\n    #Write your logic here\r\n    if no_of_passengers > 5 :\r\n        begg_num_passenger = no_of_passengers - 5\r\n        print(\"begg_num_passenger\")\r\n        print(begg_num_passenger)\r\n        greater_no_passenger = 1\r\n        print(\"greater_no_passenger = 1\")\r\n        \r\n    else : \r\n        begg_num_passenger = 0\r\n        greater_no_passenger = 0\r\n        print(\"greater_no_passenger = 0\")\r\n    \r\n\r\n    while no_of_passengers > begg_num_passenger :\r\n        \r\n        if greater_no_passenger == 1 : \r\n            print(source)\r\n            trim_source = source[0:3]\r\n            print(trim_source)\r\n        \r\n            print(destination)\r\n            trim_destination = destination[0:3]\r\n            print(trim_destination)\r\n        \r\n            print(\"high_number\")\r\n            print(high_number)\r\n            \r\n            begg_num = high_number - (no_high)\r\n            print(begg_num)\r\n            str_num  = str(begg_num)\r\n    \r\n            print(\"type(trim_source)\")\r\n            print(type(trim_source))\r\n        \r\n            ticket_number_list.append(airline + \":\" + trim_source + \":\"+ trim_destination + \":\" + str_num)\r\n            no_high -= 1\r\n        #begg_num += 1\r\n        \r\n            no_of_passengers -= 1\r\n            \r\n        if greater_no_passenger == 0 :\r\n            print(\"if greater_no_passenger == 0 :\")\r\n            print(\"else Block\")\r\n        \r\n            print(source)\r\n            trim_source = source[0:3]\r\n            print(trim_source)\r\n        \r\n            print(destination)\r\n            trim_destination = destination[0:3]\r\n            print(trim_destination)\r\n        \r\n            print(\"high_number\")\r\n            print(high_number)\r\n        \r\n            begg_num2 = 101\r\n            print(begg_num2)\r\n#         str_num  = str(begg_num2)\r\n#         print(str_num)\r\n            print(\"type(trim_source)\")\r\n            print(type(trim_source))\r\n        \r\n            while no_of_passengers > 0 :\r\n                str_num  = str(begg_num2)\r\n                print(str_num)\r\n                print(\"while no_of_passengers > 0 \")\r\n                ticket_number_list.append(airline + \":\" + trim_source + \":\"+ trim_destination + \":\" + str_num)\r\n           \r\n                begg_num2 += 1\r\n                print(\"begg_num2\")\r\n                print(begg_num2)\r\n            \r\n                print(\" no_of_passengers \")\r\n                print(no_of_passengers)\r\n            \r\n                no_of_passengers -= 1\r\n\r\n\r\n    #Use the below return statement wherever applicable\r\n    return ticket_number_list\r\n\r\n#Provide different values for airline,source,destination,no_of_passengers and test your program\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"London\",7))\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Mumbai\",\"NewYork\",3))\r\n\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"Sydney\",5))\r\n","asgnmtId":"22","SolutionFileName":"ExerciseC22.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-23 11:20:55,761 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 11:20:55,762 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 11:20:55,763 INFO  Invoking the service to verify the user solution
+2017-01-23 11:20:55,765 INFO  Time before invoking service:Mon Jan 23 11:20:55 IST 2017
+2017-01-23 11:20:55,765 INFO  Initialising service address for VerifySolution
+2017-01-23 11:20:55,766 INFO  Time before invoking service In SUPER:Mon Jan 23 11:20:55 IST 2017
+2017-01-23 11:20:57,163 INFO  Time after invoking service In SUPER:Mon Jan 23 11:20:57 IST 2017
+2017-01-23 11:20:57,166 INFO  Service responded successfully with required details
+2017-01-23 11:20:57,168 INFO  Time after invoking service:Mon Jan 23 11:20:57 IST 2017
+2017-01-23 11:20:57,169 INFO  User solution successfully verified
+2017-01-23 11:20:57,170 INFO  Processing the response from verify service
+2017-01-23 11:20:57,171 INFO  Starting to parse JSON response
+2017-01-23 11:20:57,177 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:20:57,178 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:20:57,179 INFO  Successfully parsed JSON response
+2017-01-23 11:20:57,182 INFO  In the process of generating verify response in HTML
+2017-01-23 11:20:57,253 INFO  Successfully generated verify response in HTML
+2017-01-23 11:20:57,253 INFO  Successfully processed the response from service
+2017-01-23 11:43:54,386 INFO  Setting request parameters for VerifySolution
+2017-01-23 11:43:54,398 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 11:43:54,399 INFO  Starting to parse the user solution
+2017-01-23 11:43:54,400 INFO  Displaying user solution
+2017-01-23 11:43:58,545 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-22\r\n\r\ndef generate_ticket(airline,source,destination,no_of_passengers):\r\n    ticket_number_list=[]\r\n    \r\n    greater_no_passenger = 0\r\n    begg_num = 0\r\n    begg_num2 = 101\r\n    no_high = 4\r\n    high_number = 101 + (no_of_passengers-1)\r\n    print(\"high_number\")\r\n    print(high_number)\r\n    #Write your logic here\r\n    if no_of_passengers > 5 :\r\n        begg_num_passenger = no_of_passengers - 5\r\n        print(\"begg_num_passenger\")\r\n        print(begg_num_passenger)\r\n        greater_no_passenger = 1\r\n        print(\"greater_no_passenger = 1\")\r\n        \r\n    else : \r\n        begg_num_passenger = 0\r\n        greater_no_passenger = 0\r\n        print(\"greater_no_passenger = 0\")\r\n    \r\n\r\n    while no_of_passengers > begg_num_passenger :\r\n        \r\n        if greater_no_passenger == 1 : \r\n            \r\n            print(\"high_number\")\r\n            print(high_number)\r\n            \r\n            print(\"no_high_number\")\r\n            print(no_high)\r\n            \r\n            begg_num = high_number - (no_high)\r\n            print(begg_num)\r\n            str_num  = str(begg_num)\r\n            #str_num  = str(begg_num2)\r\n        \r\n            ticket_number_list.append(airline + \":\" + source[0:3] + \":\"+ destination[0:3] + \":\" + str_num)\r\n            no_high -= 1\r\n            #begg_num2 += 1\r\n        #begg_num += 1\r\n        \r\n            no_of_passengers -= 1\r\n            \r\n        if greater_no_passenger == 0 :\r\n            print(\"if greater_no_passenger == 0 :\")\r\n            print(\"else Block\")\r\n        \r\n            print(\"high_number\")\r\n            print(high_number)\r\n        \r\n            begg_num2 = 101\r\n            print(\"begg_num2\")\r\n            print(begg_num2)\r\n\r\n            while no_of_passengers > 0 :\r\n                str_num  = str(begg_num2)\r\n                print(str_num)\r\n                print(\"while no_of_passengers > 0 \")\r\n                ticket_number_list.append(airline + \":\" + source[0:3] + \":\"+ destination[0:3] + \":\" + str_num)\r\n           \r\n                begg_num2 += 1\r\n                print(\"begg_num2\")\r\n                print(begg_num2)\r\n            \r\n                print(\" no_of_passengers \")\r\n                print(no_of_passengers)\r\n            \r\n                no_of_passengers -= 1\r\n\r\n\r\n    #Use the below return statement wherever applicable\r\n    return ticket_number_list\r\n\r\n#Provide different values for airline,source,destination,no_of_passengers and test your program\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"London\",7))\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Mumbai\",\"NewYork\",3))\r\n\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"Sydney\",5))\r\n\r\n\r\nprint(\"////////////////////////////////////////////\")\r\nprint(generate_ticket(\"AI\",\"Bangalore\",\"Sydney\",8))\r\n\r\n","asgnmtId":"22","SolutionFileName":"ExerciseC22.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-23 11:43:58,550 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 11:43:58,551 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 11:43:58,553 INFO  Invoking the service to verify the user solution
+2017-01-23 11:43:58,555 INFO  Time before invoking service:Mon Jan 23 11:43:58 IST 2017
+2017-01-23 11:43:58,556 INFO  Initialising service address for VerifySolution
+2017-01-23 11:43:58,559 INFO  Time before invoking service In SUPER:Mon Jan 23 11:43:58 IST 2017
+2017-01-23 11:44:00,074 INFO  Time after invoking service In SUPER:Mon Jan 23 11:44:00 IST 2017
+2017-01-23 11:44:00,075 INFO  Service responded successfully with required details
+2017-01-23 11:44:00,076 INFO  Time after invoking service:Mon Jan 23 11:44:00 IST 2017
+2017-01-23 11:44:00,077 INFO  User solution successfully verified
+2017-01-23 11:44:00,078 INFO  Processing the response from verify service
+2017-01-23 11:44:00,082 INFO  Starting to parse JSON response
+2017-01-23 11:44:00,085 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:44:00,086 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 11:44:00,088 INFO  Successfully parsed JSON response
+2017-01-23 11:44:00,090 INFO  In the process of generating verify response in HTML
+2017-01-23 11:44:00,173 INFO  Successfully generated verify response in HTML
+2017-01-23 11:44:00,175 INFO  Successfully processed the response from service
+2017-01-23 11:44:07,224 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 11:44:07,230 INFO  Displaying user solution
+2017-01-23 11:44:07,240 INFO  Successfully processed and prepared the input for the submit service
+2017-01-23 11:44:07,243 INFO  Invoking the service to submit the user solution
+2017-01-23 11:44:07,243 INFO  Initialising service address for Submit
+2017-01-23 11:44:07,244 INFO  Time before invoking service In SUPER:Mon Jan 23 11:44:07 IST 2017
+2017-01-23 11:44:07,415 INFO  Time after invoking service In SUPER:Mon Jan 23 11:44:07 IST 2017
+2017-01-23 11:44:07,416 INFO  Service responded successfully with required details
+2017-01-23 11:44:07,417 INFO  User solution successfully submitted
+2017-01-23 11:44:07,817 INFO  Displaying submission status
+2017-01-23 11:44:07,817 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-23 11:44:22,920 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 11:44:22,921 INFO  Displaying user solution
+2017-01-23 11:44:22,923 INFO  No changes made in the assignment since the last submission
+2017-01-23 11:44:22,926 ERROR Exception occured while submitting the user solution
+2017-01-23 11:44:27,994 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 11:44:27,995 INFO  Displaying user solution
+2017-01-23 11:44:27,998 INFO  No changes made in the assignment since the last submission
+2017-01-23 11:44:28,001 ERROR Exception occured while submitting the user solution
+2017-01-23 12:40:49,189 INFO  Setting request parameters for VerifySolution
+2017-01-23 12:40:49,193 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 12:40:49,194 INFO  Starting to parse the user solution
+2017-01-23 12:40:49,196 INFO  Displaying user solution
+2017-01-23 12:40:52,511 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Exer-23\r\ndef translate(bilingual_dict,english_words_list):\r\n    #Write your logic here\r\n    swedish_words_list=[]\r\n    \r\n    for key in range(0, len(english_words_list)) : \r\n        for keydict , value in bilingual_dict.items() :\r\n            if english_words_list[key] == keydict :\r\n                print(\"value\")\r\n                print(value)\r\n                print(\"key\")\r\n                print(key)\r\n                swedish_words_list.append(bilingual_dict[keydict])\r\n    return swedish_words_list\r\n\r\n\r\nbilingual_dict= {\"merry\":\"god\", \"christmas\":\"jul\", \"and\":\"och\", \"happy\":\"gott\", \"new\":\"nytt\", \"year\":\"ar\"}\r\nenglish_words_list=[\"merry\",\"christmas\",\"and\"]\r\nprint(\"The bilingual dict is:\",bilingual_dict)\r\nprint(\"The english words are:\",english_words_list)\r\n\r\nswedish_words_list=translate(bilingual_dict, english_words_list)\r\nprint(\"The equivalent swedish words are:\",swedish_words_list)\r\n","asgnmtId":"23","SolutionFileName":"ExerciseC23.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-01-23 12:40:52,512 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 12:40:52,513 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 12:40:52,514 INFO  Invoking the service to verify the user solution
+2017-01-23 12:40:52,515 INFO  Time before invoking service:Mon Jan 23 12:40:52 IST 2017
+2017-01-23 12:40:52,515 INFO  Initialising service address for VerifySolution
+2017-01-23 12:40:52,516 INFO  Time before invoking service In SUPER:Mon Jan 23 12:40:52 IST 2017
+2017-01-23 12:40:53,978 INFO  Time after invoking service In SUPER:Mon Jan 23 12:40:53 IST 2017
+2017-01-23 12:40:53,979 INFO  Service responded successfully with required details
+2017-01-23 12:40:53,980 INFO  Time after invoking service:Mon Jan 23 12:40:53 IST 2017
+2017-01-23 12:40:53,980 INFO  User solution successfully verified
+2017-01-23 12:40:53,981 INFO  Processing the response from verify service
+2017-01-23 12:40:53,988 INFO  Starting to parse JSON response
+2017-01-23 12:40:53,990 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 12:40:53,991 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 12:40:53,992 INFO  Successfully parsed JSON response
+2017-01-23 12:40:53,994 INFO  In the process of generating verify response in HTML
+2017-01-23 12:40:54,071 INFO  Successfully generated verify response in HTML
+2017-01-23 12:40:54,072 INFO  Successfully processed the response from service
+2017-01-23 12:40:57,321 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 12:40:57,323 INFO  Displaying user solution
+2017-01-23 12:40:57,334 INFO  Successfully processed and prepared the input for the submit service
+2017-01-23 12:40:57,335 INFO  Invoking the service to submit the user solution
+2017-01-23 12:40:57,335 INFO  Initialising service address for Submit
+2017-01-23 12:40:57,337 INFO  Time before invoking service In SUPER:Mon Jan 23 12:40:57 IST 2017
+2017-01-23 12:40:57,481 INFO  Time after invoking service In SUPER:Mon Jan 23 12:40:57 IST 2017
+2017-01-23 12:40:57,482 INFO  Service responded successfully with required details
+2017-01-23 12:40:57,484 INFO  User solution successfully submitted
+2017-01-23 12:40:57,486 INFO  Displaying submission status
+2017-01-23 12:40:57,487 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-23 14:26:32,083 INFO  Loading Baseframework Plugin
+2017-01-23 14:26:32,098 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-23 14:26:32,348 INFO  Loading the Menu - HandsOn
+2017-01-23 14:26:32,676 INFO  Successfully loaded the Menu - HandsOn
+2017-01-23 15:01:57,077 INFO  Loading Baseframework Plugin
+2017-01-23 15:01:57,093 INFO  Initializing the platform to load the Menu - HandsOn
+2017-01-23 15:01:57,452 INFO  Loading the Menu - HandsOn
+2017-01-23 15:01:57,468 INFO  Successfully loaded the Menu - HandsOn
+2017-01-23 16:02:55,213 INFO  Loading Programming Assignment Plugin
+2017-01-23 16:02:55,256 INFO  First line is not as expected!!!
+2017-01-23 17:45:54,657 INFO  First line is not as expected!!!
+2017-01-23 17:46:08,306 INFO  Setting request parameters for VerifySolution
+2017-01-23 17:46:08,312 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 17:46:08,319 INFO  Starting to parse the user solution
+2017-01-23 17:46:08,321 INFO  Displaying user solution
+2017-01-23 17:46:14,145 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-29\r\ndef calculate(distance,no_of_passengers):\r\n    \r\n    #Remove pass and write your logic here\r\n    Price_per_litre= 70\r\n    Mileage = 10\r\n    Price_ticket = 80\r\n    \r\n    profit = (no_of_passengers*Price_ticket) - ((distance / 10 ) * 70 )\r\n    \r\n    if profit > 0 :\r\n        return profit\r\n    else : \r\n        return -1\r\n\r\n\r\n#Provide different values for distance, no_of_passenger and test your program   \r\ndistance=20\r\nno_of_passengers=50\r\nprint(calculate(distance,no_of_passengers))\r\n","asgnmtId":"29","SolutionFileName":"Assignments29.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-23 17:46:14,146 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 17:46:14,147 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 17:46:14,148 INFO  Invoking the service to verify the user solution
+2017-01-23 17:46:14,149 INFO  Time before invoking service:Mon Jan 23 17:46:14 IST 2017
+2017-01-23 17:46:14,150 INFO  Initialising service address for VerifySolution
+2017-01-23 17:46:14,151 INFO  Time before invoking service In SUPER:Mon Jan 23 17:46:14 IST 2017
+2017-01-23 17:46:16,060 INFO  Time after invoking service In SUPER:Mon Jan 23 17:46:16 IST 2017
+2017-01-23 17:46:16,061 INFO  Service responded successfully with required details
+2017-01-23 17:46:16,062 INFO  Time after invoking service:Mon Jan 23 17:46:16 IST 2017
+2017-01-23 17:46:16,063 INFO  User solution successfully verified
+2017-01-23 17:46:16,064 INFO  Processing the response from verify service
+2017-01-23 17:46:16,067 INFO  Starting to parse JSON response
+2017-01-23 17:46:16,074 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 17:46:16,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 17:46:16,075 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 17:46:16,076 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 17:46:16,078 INFO  Successfully parsed JSON response
+2017-01-23 17:46:16,079 INFO  In the process of generating verify response in HTML
+2017-01-23 17:46:16,338 INFO  Successfully generated verify response in HTML
+2017-01-23 17:46:16,339 INFO  Successfully processed the response from service
+2017-01-23 17:47:12,075 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 17:47:12,082 INFO  Displaying user solution
+2017-01-23 17:47:12,095 INFO  Successfully processed and prepared the input for the submit service
+2017-01-23 17:47:12,096 INFO  Invoking the service to submit the user solution
+2017-01-23 17:47:12,096 INFO  Initialising service address for Submit
+2017-01-23 17:47:12,097 INFO  Time before invoking service In SUPER:Mon Jan 23 17:47:12 IST 2017
+2017-01-23 17:47:13,285 INFO  Time after invoking service In SUPER:Mon Jan 23 17:47:13 IST 2017
+2017-01-23 17:47:13,286 INFO  Service responded successfully with required details
+2017-01-23 17:47:13,286 INFO  User solution successfully submitted
+2017-01-23 17:47:13,289 INFO  Displaying submission status
+2017-01-23 17:47:13,290 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-23 18:58:33,018 INFO  Setting request parameters for VerifySolution
+2017-01-23 18:58:33,026 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 18:58:33,027 INFO  Starting to parse the user solution
+2017-01-23 18:58:33,028 INFO  Displaying user solution
+2017-01-23 18:58:37,688 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-30\r\n\r\ndef encode(message):   \r\n    range1 = len(message)\r\n    print(\"range1\")\r\n    print(range1)\r\n    output = \"\"\r\n    count = 1\r\n    \r\n    if range1 == 1 :\r\n        output = str(count) + message\r\n    else :\r\n        for i in range(0 , range1-1) :\r\n\r\n            if (message[i] == message[i+1]):\r\n                count += 1\r\n                i += 1\r\n                \r\n            elif(message[i] != message[i+1]): \r\n                output = output + str(count) + message[i]\r\n                i += 1\r\n                count = 1\r\n            \r\n            output = output + str(count) + message[i]\r\n            #print(str_count + \"\" + str_i)\r\n    return output    \r\n\r\n    #Remove pass and write your logic here\r\n\r\n#Provide different values for message and test your program\r\nencoded_message=encode(\"AAAAAABBBBCCCCCCCCAB\")\r\nprint(encoded_message)\r\n","asgnmtId":"30","SolutionFileName":"Assignment30.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-23 18:58:37,690 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 18:58:37,691 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 18:58:37,691 INFO  Invoking the service to verify the user solution
+2017-01-23 18:58:37,693 INFO  Time before invoking service:Mon Jan 23 18:58:37 IST 2017
+2017-01-23 18:58:37,693 INFO  Initialising service address for VerifySolution
+2017-01-23 18:58:37,694 INFO  Time before invoking service In SUPER:Mon Jan 23 18:58:37 IST 2017
+2017-01-23 18:58:39,385 INFO  Time after invoking service In SUPER:Mon Jan 23 18:58:39 IST 2017
+2017-01-23 18:58:39,385 INFO  Service responded successfully with required details
+2017-01-23 18:58:39,386 INFO  Time after invoking service:Mon Jan 23 18:58:39 IST 2017
+2017-01-23 18:58:39,387 INFO  User solution successfully verified
+2017-01-23 18:58:39,388 INFO  Processing the response from verify service
+2017-01-23 18:58:39,397 INFO  Starting to parse JSON response
+2017-01-23 18:58:39,399 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 18:58:39,399 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 18:58:39,400 INFO  Successfully parsed JSON response
+2017-01-23 18:58:39,401 INFO  In the process of generating verify response in HTML
+2017-01-23 18:58:39,493 INFO  Successfully generated verify response in HTML
+2017-01-23 18:58:39,494 INFO  Successfully processed the response from service
+2017-01-23 19:36:04,710 INFO  Setting request parameters for VerifySolution
+2017-01-23 19:36:04,717 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 19:36:04,718 INFO  Starting to parse the user solution
+2017-01-23 19:36:04,719 INFO  Displaying user solution
+2017-01-23 19:36:08,824 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-31\r\ndef check_palindrome(word):\r\n    \r\n    temp = \"\"\r\n    \r\n    for i in range(len(word),0 , -1) :\r\n        temp = temp + word [i-1]\r\n        \r\n        print(word[i-1])\r\n        \r\n        \r\n    if (temp == word) :\r\n        print(word)\r\n        return True\r\n    else : \r\n        return False\r\n    \r\n    \r\n    status  = check_palindrome(\"malayalam\")\r\n    \r\n    if status : \r\n        print(\"Palindrome\")\r\n    else : \r\n        print(\"Not palindrome\")\r\n    \r\n    \r\n#                     length_word = len(word)\r\n#                     count  = 0\r\n#                     \r\n#                     if length_word % 2 != 0 :\r\n#                         middle = (length_word//2)+1 \r\n#                         i = middle - 1 \r\n#                         j = middle + 1\r\n#                         \r\n#                     else :\r\n#                         i = (length_word//2)\r\n#                         j = (length_word//2)\r\n#                     \r\n#                     temp = 0\r\n#                     \r\n#                     while temp < length_word // 2 :\r\n        \r\n    \r\n    \r\n    \r\n    #Remove pass and write your logic here\r\n    \r\n   \r\n   \r\n   \r\n   \r\n   \r\n#     if count == length_word // 2 :\r\n#         return True\r\n#     else :\r\n#         return False\r\n\r\n    \r\n\r\n\r\n   \r\n    \r\n    \r\n    \r\n    \r\n    \r\nstatus=check_palindrome(\"malayalam\")\r\nif(status):\r\n    print(\"word is palindrome\")\r\nelse:\r\n    print(\"word is not palindrome\")\r\n","asgnmtId":"31","SolutionFileName":"Assignment31.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-23 19:36:08,826 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 19:36:08,827 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 19:36:08,829 INFO  Invoking the service to verify the user solution
+2017-01-23 19:36:08,830 INFO  Time before invoking service:Mon Jan 23 19:36:08 IST 2017
+2017-01-23 19:36:08,831 INFO  Initialising service address for VerifySolution
+2017-01-23 19:36:08,832 INFO  Time before invoking service In SUPER:Mon Jan 23 19:36:08 IST 2017
+2017-01-23 19:36:10,373 INFO  Time after invoking service In SUPER:Mon Jan 23 19:36:10 IST 2017
+2017-01-23 19:36:10,374 INFO  Service responded successfully with required details
+2017-01-23 19:36:10,375 INFO  Time after invoking service:Mon Jan 23 19:36:10 IST 2017
+2017-01-23 19:36:10,376 INFO  User solution successfully verified
+2017-01-23 19:36:10,376 INFO  Processing the response from verify service
+2017-01-23 19:36:10,378 INFO  Starting to parse JSON response
+2017-01-23 19:36:10,380 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 19:36:10,380 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 19:36:10,381 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 19:36:10,381 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 19:36:10,382 INFO  Successfully parsed JSON response
+2017-01-23 19:36:10,384 INFO  In the process of generating verify response in HTML
+2017-01-23 19:36:10,515 INFO  Successfully generated verify response in HTML
+2017-01-23 19:36:10,515 INFO  Successfully processed the response from service
+2017-01-23 19:36:16,833 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 19:36:16,837 INFO  Displaying user solution
+2017-01-23 19:36:16,849 INFO  Successfully processed and prepared the input for the submit service
+2017-01-23 19:36:16,849 INFO  Invoking the service to submit the user solution
+2017-01-23 19:36:16,850 INFO  Initialising service address for Submit
+2017-01-23 19:36:16,851 INFO  Time before invoking service In SUPER:Mon Jan 23 19:36:16 IST 2017
+2017-01-23 19:36:17,048 INFO  Time after invoking service In SUPER:Mon Jan 23 19:36:17 IST 2017
+2017-01-23 19:36:17,049 INFO  Service responded successfully with required details
+2017-01-23 19:36:17,049 INFO  User solution successfully submitted
+2017-01-23 19:36:17,050 INFO  Displaying submission status
+2017-01-23 19:36:17,050 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-01-23 20:24:00,901 INFO  Setting request parameters for VerifySolution
+2017-01-23 20:24:00,908 INFO  Initiating to process and prepare Input for the verify service
+2017-01-23 20:24:00,908 INFO  Starting to parse the user solution
+2017-01-23 20:24:00,909 INFO  Displaying user solution
+2017-01-23 20:24:05,537 INFO  Successfully parsed the user solution{"CourseShortName":"PF","UserSolution":"#PF-Assgn-32\r\ndef max_visited_speciality(patient_medical_speciality_list,medical_speciality):\r\n    # write your logic here\r\n        speciality = \"\"\r\n        print(patient_medical_speciality_list[1])\r\n        count_P = 0 \r\n        count_E = 0\r\n        count_O = 0\r\n        \r\n        print(patient_medical_speciality_list[0])\r\n        \r\n        for i in range ( 0 , len (patient_medical_speciality_list)) :\r\n\r\n            for key , value in medical_speciality.items() :\r\n               if patient_medical_speciality_list[i] == key :\r\n                   \r\n                   print(\" if (patient_medical_speciality_list[i] == key) :\")\r\n                   print(medical_speciality[key])\r\n                   print(\"medical_speciality[P]\")\r\n                   print(medical_speciality[\"P\"])\r\n                   \r\n                  \r\n                   if patient_medical_speciality_list[i] == \"P\" :\r\n                       count_P += 1\r\n                   \r\n                   elif patient_medical_speciality_list[i] == \"O\" :\r\n                       count_O += 1\r\n                   \r\n                   elif patient_medical_speciality_list[i] == \"E\" :\r\n                       count_E += 1\r\n                       \r\n               print(\"Counts\")\r\n               print(count_P)\r\n               print(count_O)\r\n               print(count_E)\r\n                   \r\n               if (count_P > count_O) :\r\n                \r\n                    if (count_P > count_E) :\r\n                        speciality = medical_speciality[\"P\"]\r\n                        #return medical_speciality[\"P\"]\r\n                    \r\n                        #return count_P\r\n                    else :\r\n                        speciality = medical_speciality[\"E\"]\r\n                        #return medical_speciality[\"E\"]\r\n                        #return count_E\r\n                \r\n               elif (count_O > count_E) :\r\n                   speciality = medical_speciality[\"O\"]\r\n                   #return medical_speciality[\"O\"]\r\n                   #return count_O\r\n                   \r\n        return speciality\r\n    \r\n    \r\n#provide different values in the list and test your program   \r\npatient_medical_speciality_list=[301,'P',302, 'P' ,305, 'P' ,401, 'E' ,656, 'E']\r\nmedical_speciality={\"P\":\"Pediatrics\",\"O\":\"Orthopedics\",\"E\":\"ENT\"}\r\nspeciality=max_visited_speciality(patient_medical_speciality_list,medical_speciality)\r\nprint(speciality)\r\n","asgnmtId":"32","SolutionFileName":"Assignment32.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-01-23 20:24:05,538 INFO  Successfully processed and prepared the input for the verify service
+2017-01-23 20:24:05,539 INFO  Successfully set the request parameters for VerifySolution
+2017-01-23 20:24:05,540 INFO  Invoking the service to verify the user solution
+2017-01-23 20:24:05,541 INFO  Time before invoking service:Mon Jan 23 20:24:05 IST 2017
+2017-01-23 20:24:05,541 INFO  Initialising service address for VerifySolution
+2017-01-23 20:24:05,544 INFO  Time before invoking service In SUPER:Mon Jan 23 20:24:05 IST 2017
+2017-01-23 20:24:06,995 INFO  Time after invoking service In SUPER:Mon Jan 23 20:24:06 IST 2017
+2017-01-23 20:24:06,996 INFO  Service responded successfully with required details
+2017-01-23 20:24:06,996 INFO  Time after invoking service:Mon Jan 23 20:24:06 IST 2017
+2017-01-23 20:24:06,997 INFO  User solution successfully verified
+2017-01-23 20:24:06,998 INFO  Processing the response from verify service
+2017-01-23 20:24:07,000 INFO  Starting to parse JSON response
+2017-01-23 20:24:07,002 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 20:24:07,003 ERROR Keys used to parse test result JSON might be incorrect
+2017-01-23 20:24:07,003 INFO  Successfully parsed JSON response
+2017-01-23 20:24:07,005 INFO  In the process of generating verify response in HTML
+2017-01-23 20:24:07,069 INFO  Successfully generated verify response in HTML
+2017-01-23 20:24:07,070 INFO  Successfully processed the response from service
+2017-01-23 20:24:22,855 INFO  Initiating to process and prepare Input for the submit service
+2017-01-23 20:24:22,857 INFO  Displaying user solution
+2017-01-23 20:24:22,867 INFO  Successfully processed and prepared the input for the submit service
+2017-01-23 20:24:22,868 INFO  Invoking the service to submit the user solution
+2017-01-23 20:24:22,868 INFO  Initialising service address for Submit
+2017-01-23 20:24:22,869 INFO  Time before invoking service In SUPER:Mon Jan 23 20:24:22 IST 2017
+2017-01-23 20:24:23,061 INFO  Time after invoking service In SUPER:Mon Jan 23 20:24:23 IST 2017
+2017-01-23 20:24:23,062 INFO  Service responded successfully with required details
+2017-01-23 20:24:23,062 INFO  User solution successfully submitted
+2017-01-23 20:24:23,065 INFO  Displaying submission status
+2017-01-23 20:24:23,065 INFO  Displayed submission status successfullySuccessfully Submitted!

@@ -1,0 +1,11 @@
+'''
+Created on Feb 16, 2017
+
+@author: kautilya.save
+'''
+
+
+Val=3
+while(Val<6):
+    Val=Val+2
+    print( Val )

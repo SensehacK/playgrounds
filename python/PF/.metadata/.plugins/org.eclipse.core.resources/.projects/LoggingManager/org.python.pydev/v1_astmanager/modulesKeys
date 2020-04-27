@@ -1,0 +1,9 @@
+MODULES_MANAGER_V2
+Business.BuisnessModule|Z:\PF\LoggingManager\Business\BuisnessModule.py
+Business.__init__|Z:\PF\LoggingManager\Business\__init__.py
+Business.py_test|Z:\PF\LoggingManager\Business\py_test.py
+Files.__init__|Z:\PF\LoggingManager\Files\__init__.py
+Persistence.FileHandling|Z:\PF\LoggingManager\Persistence\FileHandling.py
+Persistence.__init__|Z:\PF\LoggingManager\Persistence\__init__.py
+Presentation.PresentaionModule|Z:\PF\LoggingManager\Presentation\PresentaionModule.py
+Presentation.__init__|Z:\PF\LoggingManager\Presentation\__init__.py

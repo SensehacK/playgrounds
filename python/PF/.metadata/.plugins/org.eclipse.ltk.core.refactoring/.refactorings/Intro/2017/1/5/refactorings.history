@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Exercise36.py&apos; to &apos;Day8&apos;&#x0D;&#x0A;- Original project: &apos;Intro&apos;&#x0D;&#x0A;- Destination element: &apos;Day8&apos;&#x0D;&#x0A;- Original element: &apos;Exercise36.py&apos;" description="Copy file" element1="Day8/Exercise36.py" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1485757626436" target="/Intro/Day8" units="0" version="1.0"/>
+</session>

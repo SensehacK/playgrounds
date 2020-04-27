@@ -1,0 +1,21 @@
+
+Think Queries
+
+
+1)Save dictionary into Checkout table
+
+
+
+2) Cancel selected items from dictionary & table
+
+eg/. 
+
+
+Display : 
+Manchurian Dry     4 
+ Gobi Manchurian    6
+ 
+ Remove Manchurian Dry ( Remove selected item from checkout table (Same username) )
+ 
+ 
+ 3)  Call 1) method ---:>>> Module 4 Billing Class

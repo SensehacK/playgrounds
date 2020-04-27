@@ -1,0 +1,108 @@
+2017-02-09 09:20:12,921 INFO  Loading Baseframework Plugin
+2017-02-09 09:20:13,097 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-09 09:20:16,154 INFO  Loading the Menu - HandsOn
+2017-02-09 09:20:16,355 INFO  Successfully loaded the Menu - HandsOn
+2017-02-09 12:06:37,401 INFO  Loading Baseframework Plugin
+2017-02-09 12:06:37,401 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-09 12:06:40,032 INFO  Loading the Menu - HandsOn
+2017-02-09 12:06:40,065 INFO  Successfully loaded the Menu - HandsOn
+2017-02-09 12:11:00,670 INFO  Loading Baseframework Plugin
+2017-02-09 12:11:01,061 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-09 12:11:02,764 INFO  Loading the Menu - HandsOn
+2017-02-09 12:11:03,060 INFO  Successfully loaded the Menu - HandsOn
+2017-02-09 12:16:47,676 INFO  Loading Baseframework Plugin
+2017-02-09 12:16:47,692 INFO  Initializing the platform to load the Menu - HandsOn
+2017-02-09 12:16:49,652 INFO  Loading the Menu - HandsOn
+2017-02-09 12:16:49,848 INFO  Successfully loaded the Menu - HandsOn
+2017-02-09 16:51:05,279 INFO  Loading Programming Assignment Plugin
+2017-02-09 16:51:05,761 INFO  Setting request parameters for VerifySolution
+2017-02-09 16:51:05,763 INFO  Initiating to process and prepare Input for the verify service
+2017-02-09 16:51:05,768 INFO  Starting to parse the user solution
+2017-02-09 16:51:05,771 INFO  Displaying user solution
+2017-02-09 16:51:09,593 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-3\r\n\r\nclass Node:\r\n    def __init__(self,data):\r\n        self.__data=data\r\n        self.__next=None\r\n\r\n    def get_data(self):\r\n        return self.__data\r\n\r\n    def set_data(self,data):\r\n        self.__data=data\r\n    \r\n    def get_next(self):\r\n        return self.__next\r\n    \r\n    def set_next(self,next_node):\r\n        self.__next=next_node\r\n    \r\nclass LinkedList:\r\n    def __init__(self):\r\n        self.__head=None\r\n        self.__tail=None\r\n\r\n    def get_head(self):\r\n        return self.__head\r\n\r\n    def get_tail(self):\r\n        return self.__tail\r\n\r\n    def add(self,data):\r\n        new_node=Node(data)\r\n        if(self.__head is None):\r\n            self.__head=self.__tail=new_node\r\n        else:\r\n            self.__tail.set_next(new_node)\r\n            self.__tail=new_node\r\n\r\n    def insert(self,data,data_before):\r\n        new_node=Node(data)\r\n        if(data_before==None):\r\n            new_node.set_next(self.__head)\r\n            self.__head=new_node\r\n\r\n        else:\r\n            node_before=self.find_node(data_before)\r\n            if(node_before is not None):\r\n                new_node.set_next(node_before.get_next())\r\n                node_before.set_next(new_node)\r\n                if(new_node.get_next() is None):\r\n                    self.__tail=new_node\r\n            else:\r\n                print(data_before,\"is not present in the Linked list\")\r\n\r\n    def display(self):\r\n        temp=self.__head\r\n        while(temp is not None):\r\n            print(temp.get_data())\r\n            temp=temp.get_next()\r\n\r\n\r\n    def find_node(self,data):\r\n        temp=self.__head\r\n        while(temp is not None):\r\n            if(temp.get_data()==data):\r\n                return temp\r\n            temp=temp.get_next()\r\n        return None\r\n\r\n    def delete(self,data):\r\n        node=self.find_node(data)\r\n        if(node is not None):\r\n            if(node==self.__head):\r\n                self.__head=node.get_next()\r\n            else:\r\n                temp=self.__head\r\n                while(temp is not None):\r\n                    if(temp.get_next()==node):\r\n                        temp.set_next(node.get_next())\r\n                        if(node==self.__tail):\r\n                            self.__tail=temp\r\n                        node.set_next(None)\r\n                        break\r\n\r\n                    temp=temp.get_next()\r\n        else:\r\n            print(data,\"is not present in Linked list\")\r\n    \r\ndef find_sum(number_list):\r\n    sum=0\r\n    count = 1\r\n    \r\n    temp = number_list.get_head()\r\n    \r\n    while temp is not None :\r\n        if count % 2 != 0 :\r\n            sum  += temp.get_data()\r\n        \r\n        temp = temp.get_next()\r\n        count += 1\r\n    \r\n    \r\n    # Write your logic here\r\n\r\n    return sum\r\n\r\nnumber_list=LinkedList()\r\nnumber_list.add(10)\r\nnumber_list.add(20)\r\nnumber_list.add(30)\r\nnumber_list.add(40)\r\nnumber_list.add(50)\r\nnumber_list.add(60)\r\nnumber_list.add(70)\r\nnumber_list.add(80)\r\nnumber_list.add(90)\r\nnumber_list.add(100)\r\nnumber_list.add(110)\r\n\r\nprint(find_sum(number_list))\r\n                                  \r\n","asgnmtId":"3","SolutionFileName":"Exercise3.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-09 16:51:09,596 INFO  Successfully processed and prepared the input for the verify service
+2017-02-09 16:51:09,598 INFO  Successfully set the request parameters for VerifySolution
+2017-02-09 16:51:09,599 INFO  Invoking the service to verify the user solution
+2017-02-09 16:51:09,600 INFO  Time before invoking service:Thu Feb 09 16:51:09 IST 2017
+2017-02-09 16:51:09,603 INFO  Initialising service address for VerifySolution
+2017-02-09 16:51:09,605 INFO  Time before invoking service In SUPER:Thu Feb 09 16:51:09 IST 2017
+2017-02-09 16:51:11,498 INFO  Time after invoking service In SUPER:Thu Feb 09 16:51:11 IST 2017
+2017-02-09 16:51:11,499 INFO  Service responded successfully with required details
+2017-02-09 16:51:11,500 INFO  Time after invoking service:Thu Feb 09 16:51:11 IST 2017
+2017-02-09 16:51:11,501 INFO  User solution successfully verified
+2017-02-09 16:51:11,503 INFO  Processing the response from verify service
+2017-02-09 16:51:11,507 INFO  Starting to parse JSON response
+2017-02-09 16:51:11,516 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 16:51:11,521 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 16:51:11,523 INFO  Successfully parsed JSON response
+2017-02-09 16:51:11,526 INFO  In the process of generating verify response in HTML
+2017-02-09 16:51:11,847 INFO  Successfully generated verify response in HTML
+2017-02-09 16:51:11,849 INFO  Successfully processed the response from service
+2017-02-09 16:52:51,723 INFO  Setting request parameters for VerifySolution
+2017-02-09 16:52:51,724 INFO  Initiating to process and prepare Input for the verify service
+2017-02-09 16:52:51,725 INFO  Starting to parse the user solution
+2017-02-09 16:52:51,727 INFO  Displaying user solution
+2017-02-09 16:52:53,902 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Exer-3\r\n\r\nclass Node:\r\n    def __init__(self,data):\r\n        self.__data=data\r\n        self.__next=None\r\n\r\n    def get_data(self):\r\n        return self.__data\r\n\r\n    def set_data(self,data):\r\n        self.__data=data\r\n    \r\n    def get_next(self):\r\n        return self.__next\r\n    \r\n    def set_next(self,next_node):\r\n        self.__next=next_node\r\n    \r\nclass LinkedList:\r\n    def __init__(self):\r\n        self.__head=None\r\n        self.__tail=None\r\n\r\n    def get_head(self):\r\n        return self.__head\r\n\r\n    def get_tail(self):\r\n        return self.__tail\r\n\r\n    def add(self,data):\r\n        new_node=Node(data)\r\n        if(self.__head is None):\r\n            self.__head=self.__tail=new_node\r\n        else:\r\n            self.__tail.set_next(new_node)\r\n            self.__tail=new_node\r\n\r\n    def insert(self,data,data_before):\r\n        new_node=Node(data)\r\n        if(data_before==None):\r\n            new_node.set_next(self.__head)\r\n            self.__head=new_node\r\n\r\n        else:\r\n            node_before=self.find_node(data_before)\r\n            if(node_before is not None):\r\n                new_node.set_next(node_before.get_next())\r\n                node_before.set_next(new_node)\r\n                if(new_node.get_next() is None):\r\n                    self.__tail=new_node\r\n            else:\r\n                print(data_before,\"is not present in the Linked list\")\r\n\r\n    def display(self):\r\n        temp=self.__head\r\n        while(temp is not None):\r\n            print(temp.get_data())\r\n            temp=temp.get_next()\r\n\r\n\r\n    def find_node(self,data):\r\n        temp=self.__head\r\n        while(temp is not None):\r\n            if(temp.get_data()==data):\r\n                return temp\r\n            temp=temp.get_next()\r\n        return None\r\n\r\n    def delete(self,data):\r\n        node=self.find_node(data)\r\n        if(node is not None):\r\n            if(node==self.__head):\r\n                self.__head=node.get_next()\r\n            else:\r\n                temp=self.__head\r\n                while(temp is not None):\r\n                    if(temp.get_next()==node):\r\n                        temp.set_next(node.get_next())\r\n                        if(node==self.__tail):\r\n                            self.__tail=temp\r\n                        node.set_next(None)\r\n                        break\r\n\r\n                    temp=temp.get_next()\r\n        else:\r\n            print(data,\"is not present in Linked list\")\r\n    \r\ndef find_sum(number_list):\r\n    sum1=0\r\n    count = 1\r\n    \r\n    temp = number_list.get_head()\r\n    \r\n    while temp is not None :\r\n        if count % 2 != 0 :\r\n            sum1  += temp.get_data()\r\n        \r\n        temp = temp.get_next()\r\n        count += 1\r\n\r\n\r\n    return sum1\r\n\r\nnumber_list=LinkedList()\r\nnumber_list.add(10)\r\nnumber_list.add(20)\r\nnumber_list.add(30)\r\nnumber_list.add(40)\r\nnumber_list.add(50)\r\nnumber_list.add(60)\r\nnumber_list.add(70)\r\nnumber_list.add(80)\r\nnumber_list.add(90)\r\nnumber_list.add(100)\r\nnumber_list.add(110)\r\n\r\nprint(find_sum(number_list))\r\n","asgnmtId":"3","SolutionFileName":"Exercise3.py","AsgnmtTyp":"E","TestcaseFileName":""}
+2017-02-09 16:52:53,905 INFO  Successfully processed and prepared the input for the verify service
+2017-02-09 16:52:53,956 INFO  Successfully set the request parameters for VerifySolution
+2017-02-09 16:52:53,957 INFO  Invoking the service to verify the user solution
+2017-02-09 16:52:53,958 INFO  Time before invoking service:Thu Feb 09 16:52:53 IST 2017
+2017-02-09 16:52:53,959 INFO  Initialising service address for VerifySolution
+2017-02-09 16:52:53,960 INFO  Time before invoking service In SUPER:Thu Feb 09 16:52:53 IST 2017
+2017-02-09 16:52:55,552 INFO  Time after invoking service In SUPER:Thu Feb 09 16:52:55 IST 2017
+2017-02-09 16:52:55,554 INFO  Service responded successfully with required details
+2017-02-09 16:52:55,555 INFO  Time after invoking service:Thu Feb 09 16:52:55 IST 2017
+2017-02-09 16:52:55,557 INFO  User solution successfully verified
+2017-02-09 16:52:55,558 INFO  Processing the response from verify service
+2017-02-09 16:52:55,560 INFO  Starting to parse JSON response
+2017-02-09 16:52:55,562 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 16:52:55,563 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 16:52:55,564 INFO  Successfully parsed JSON response
+2017-02-09 16:52:55,567 INFO  In the process of generating verify response in HTML
+2017-02-09 16:52:55,647 INFO  Successfully generated verify response in HTML
+2017-02-09 16:52:55,648 INFO  Successfully processed the response from service
+2017-02-09 16:52:59,890 INFO  Initiating to process and prepare Input for the submit service
+2017-02-09 16:52:59,895 INFO  Displaying user solution
+2017-02-09 16:52:59,908 INFO  Successfully processed and prepared the input for the submit service
+2017-02-09 16:52:59,911 INFO  Invoking the service to submit the user solution
+2017-02-09 16:52:59,912 INFO  Initialising service address for Submit
+2017-02-09 16:52:59,914 INFO  Time before invoking service In SUPER:Thu Feb 09 16:52:59 IST 2017
+2017-02-09 16:53:00,079 INFO  Time after invoking service In SUPER:Thu Feb 09 16:53:00 IST 2017
+2017-02-09 16:53:00,081 INFO  Service responded successfully with required details
+2017-02-09 16:53:00,082 INFO  User solution successfully submitted
+2017-02-09 16:53:00,084 INFO  Displaying submission status
+2017-02-09 16:53:00,085 INFO  Displayed submission status successfullySuccessfully Submitted!
+2017-02-09 18:25:13,505 INFO  Setting request parameters for VerifySolution
+2017-02-09 18:25:13,512 INFO  Initiating to process and prepare Input for the verify service
+2017-02-09 18:25:13,513 INFO  Starting to parse the user solution
+2017-02-09 18:25:13,514 INFO  Displaying user solution
+2017-02-09 18:25:15,992 INFO  Successfully parsed the user solution{"CourseShortName":"DSA","UserSolution":"#DSA-Assgn-5\r\n\r\n#This assignment needs DataStructures.py file in your package, you can get it    from resources page\r\nfrom DataStructures import LinkedList\r\n\r\ndef create_new_sentence(word_list):\r\n    new_sentence=\"\"\r\n    new_word = \"\"\r\n    present_node = word_list.get_head()\r\n    next_node = present_node.get_next()\r\n    \r\n    \r\n    while present_node.get_next() is not None :\r\n        print(present_node.get_data())\r\n        print(next_node.get_data())\r\n        \r\n        if ( present_node.get_data() == \"*\" or present_node.get_data() == \"/\") and (next_node.get_data() == \"*\" or  next_node.get_data() == \"/\") :\r\n            print(\"hello\")\r\n            new_word = new_word + \" \"\r\n            present_node = next_node.get_next()\r\n            next_node = present_node.get_next()\r\n            new_word = new_word + present_node.get_data().upper()\r\n           \r\n        elif (present_node.get_data() == \"*\" or present_node.get_data() == \"/\") and (next_node.get_data() != \"*\" or  next_node.get_data() != \"/\") :\r\n            \r\n            new_word = new_word + \" \"\r\n        \r\n        else :\r\n            new_word = new_word + present_node.get_data()\r\n            \r\n            \r\n        present_node  = present_node.get_next()\r\n        next_node = next_node.get_next()\r\n        print(present_node.get_data())\r\n        #print(next_node.get_data())\r\n            \r\n    new_word = new_word + present_node.get_data()\r\n    new_sentence = new_word\r\n    \r\n    return new_sentence\r\n\r\nword_list=LinkedList()\r\nword_list.add(\"T\")\r\nword_list.add(\"h\")\r\nword_list.add(\"e\")\r\nword_list.add(\"/\")\r\nword_list.add(\"*\")\r\nword_list.add(\"s\")\r\nword_list.add(\"k\")\r\nword_list.add(\"y\")\r\nword_list.add(\"*\")\r\nword_list.add(\"i\")\r\nword_list.add(\"s\")\r\nword_list.add(\"/\")\r\nword_list.add(\"/\")\r\nword_list.add(\"b\")\r\nword_list.add(\"l\")\r\nword_list.add(\"u\")\r\nword_list.add(\"e\")\r\n\r\n\r\nresult=create_new_sentence(word_list)\r\nprint(result)\r\n","asgnmtId":"5","SolutionFileName":"Assignment5.py","AsgnmtTyp":"A","TestcaseFileName":""}
+2017-02-09 18:25:15,993 INFO  Successfully processed and prepared the input for the verify service
+2017-02-09 18:25:15,994 INFO  Successfully set the request parameters for VerifySolution
+2017-02-09 18:25:15,995 INFO  Invoking the service to verify the user solution
+2017-02-09 18:25:15,995 INFO  Time before invoking service:Thu Feb 09 18:25:15 IST 2017
+2017-02-09 18:25:15,996 INFO  Initialising service address for VerifySolution
+2017-02-09 18:25:15,997 INFO  Time before invoking service In SUPER:Thu Feb 09 18:25:15 IST 2017
+2017-02-09 18:25:17,415 INFO  Time after invoking service In SUPER:Thu Feb 09 18:25:17 IST 2017
+2017-02-09 18:25:17,416 INFO  Service responded successfully with required details
+2017-02-09 18:25:17,418 INFO  Time after invoking service:Thu Feb 09 18:25:17 IST 2017
+2017-02-09 18:25:17,418 INFO  User solution successfully verified
+2017-02-09 18:25:17,419 INFO  Processing the response from verify service
+2017-02-09 18:25:17,421 INFO  Starting to parse JSON response
+2017-02-09 18:25:17,423 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 18:25:17,424 ERROR Keys used to parse test result JSON might be incorrect
+2017-02-09 18:25:17,424 INFO  Successfully parsed JSON response
+2017-02-09 18:25:17,426 INFO  In the process of generating verify response in HTML
+2017-02-09 18:25:17,515 INFO  Successfully generated verify response in HTML
+2017-02-09 18:25:17,516 INFO  Successfully processed the response from service
+2017-02-09 18:25:29,600 INFO  Initiating to process and prepare Input for the submit service
+2017-02-09 18:25:29,603 INFO  Displaying user solution
+2017-02-09 18:25:29,646 INFO  Successfully processed and prepared the input for the submit service
+2017-02-09 18:25:29,647 INFO  Invoking the service to submit the user solution
+2017-02-09 18:25:29,647 INFO  Initialising service address for Submit
+2017-02-09 18:25:29,648 INFO  Time before invoking service In SUPER:Thu Feb 09 18:25:29 IST 2017
+2017-02-09 18:25:29,758 INFO  Time after invoking service In SUPER:Thu Feb 09 18:25:29 IST 2017
+2017-02-09 18:25:29,759 INFO  Service responded successfully with required details
+2017-02-09 18:25:29,760 INFO  User solution successfully submitted
+2017-02-09 18:25:29,761 INFO  Displaying submission status
+2017-02-09 18:25:29,761 INFO  Displayed submission status successfullySuccessfully Submitted!

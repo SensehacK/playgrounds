@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="2" finished="true" name="Test Run: 52" tests="8" total_time="Finished in: 2.85 secs."/>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_input_is_decimal" time="0.00">
+<stdout/>
+<stderr/>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_input_is_decimal2" time="0.00">
+<stdout><![CDATA[Please enter a Decimal Number!
+]]></stdout>
+<stderr/>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_input_is_decimal3" time="0.00">
+<stdout><![CDATA[Please enter a Decimal Number!
+]]></stdout>
+<stderr/>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_item_available" time="0.92">
+<stdout><![CDATA[//////////////////def get_food_items_availability/////////////////////
+
+Starters
+list_of_item_available
+['A ']
+output
+True
+]]></stdout>
+<stderr/>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="fail" test="test_validate_item_available2" time="0.03">
+<stdout><![CDATA[//////////////////def get_food_items_availability/////////////////////
+
+Egg
+Chicken
+list_of_item_available
+['NA', 'A ']
+]]></stdout>
+<stderr><![CDATA[File "Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py", line 53
+in test_validate_item_available2
+    output.append(Validate.validate_item_available(restaurant_type,restaurant_name))
+File "Z:\FA3\Project-PyFood\PyFood\validations\Validate.py", line 61
+in validate_item_available
+    raise Validate_item_available()
+E   exceptions.CustomException2.Validate_item_available: Selected item not Available!!! Please Select a different item]]></stderr>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="fail" test="test_validate_item_available3" time="0.04">
+<stdout><![CDATA[//////////////////def get_food_items_availability/////////////////////
+
+Starters
+Chicken Tawa
+list_of_item_available
+['A ']
+[True]
+]]></stdout>
+<stderr><![CDATA[File "Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py", line 72
+in test_validate_item_available3
+    assert  overall_bool == True
+E   assert False == True]]></stderr>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_item_available4" time="0.05">
+<stdout><![CDATA[//////////////////def get_food_items_availability/////////////////////
+
+Starters
+ChickenDrama
+list_of_item_available
+[]
+No Rows Returned for that selected items
+]]></stdout>
+<stderr/>
+</test>
+<test location="Z:\FA3\Project-PyFood\PyFood\testcases\TestcasesModule3.py" status="ok" test="test_validate_view_category_items" time="0.03">
+<stdout><![CDATA[////////////////def get_categories_fooditems///////////////////////
+
+output validate_view_category
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="PyFood TestcasesModule3.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

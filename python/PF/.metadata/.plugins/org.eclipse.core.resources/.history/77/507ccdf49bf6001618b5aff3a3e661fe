@@ -1,0 +1,26 @@
+'''
+Created on Feb 19, 2017
+
+@author: kautilya.save
+'''
+
+
+def fun(x,y):
+    try:
+        z=x+y
+        print(z)
+    except ValueError:
+        print(0)
+    print(9)
+try:
+    fun(2,'2')
+    print(1)
+except TypeError:
+    print(3)
+except NameError:
+    print(4)
+except ValueError:
+    print(5)
+finally:
+    print(6)
+print(7)
