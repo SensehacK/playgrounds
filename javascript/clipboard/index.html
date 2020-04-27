@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>
+			Click on the button to copy the text from the text field. Try to paste the
+			text (e.g. ctrl+v) afterwards in a different window, to see the effect.
+		</p>
+
+		<input type="text" value="Hello Sensehack" id="myInput" />
+
+		<button onclick="myFunction()">Copy text</button>
+
+		<br />
+		<input type="text" value="Hello Kautilya" id="myInput2" />
+		<button onclick="latestClipboard()">Copy text v2</button>
+
+		<p>
+			The document.execCommand() method is not supported in IE8 and earlier.
+		</p>
+
+		<script type="text/javascript" src="clipboard.js"></script>
+	</body>
+</html>
