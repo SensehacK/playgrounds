@@ -1,0 +1,132 @@
+{
+	"basics": {
+		"name": "Kautilya",
+		"label": "Programmer",
+		"picture": "",
+		"email": "kautilyasave@gmail.com",
+		"phone": "(646) 359-3668",
+		"website": "https://sensehack.github.io/",
+		"summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+		"location": {
+			"address": "2712 Broadway St",
+			"postalCode": "CA 94115",
+			"city": "San Francisco",
+			"countryCode": "US",
+			"region": "California"
+		},
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "kautilyasave",
+				"url": ""
+			},
+			{
+				"network": "Spotify",
+				"username": "sensehack",
+				"url": "https://open.spotify.com/user/sensehack"
+			},
+			{
+				"network": "TraktTV",
+				"username": "sensehack",
+				"url": "https://trakt.tv/users/sensehack"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "kautilyasave",
+				"url": "https://www.linkedin.com/in/kautilyasave/"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "Pied Piper",
+			"position": "CEO/President",
+			"website": "http://piedpiper.com",
+			"startDate": "2013-12-01",
+			"endDate": "2014-12-01",
+			"summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+			"highlights": [
+				"Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+				"Successfully won Techcrunch Disrupt",
+				"Optimized an algorithm that holds the current world record for Weisman Scores"
+			]
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "CoderDojo",
+			"position": "Teacher",
+			"website": "http://coderdojo.com/",
+			"startDate": "2012-01-01",
+			"endDate": "2013-01-01",
+			"summary": "Global movement of free coding clubs for young people.",
+			"highlights": ["Awarded 'Teacher of the Month'"]
+		}
+	],
+	"education": [
+		{
+			"institution": "University of Oklahoma",
+			"area": "Information Technology",
+			"studyType": "Bachelor",
+			"startDate": "2011-06-01",
+			"endDate": "2014-01-01",
+			"gpa": "4.0",
+			"courses": ["DB1101 - Basic SQL", "CS2011 - Java Introduction"]
+		}
+	],
+	"awards": [
+		{
+			"title": "Digital Compression Pioneer Award",
+			"date": "2014-11-01",
+			"awarder": "Techcrunch",
+			"summary": "There is no spoon."
+		}
+	],
+	"publications": [
+		{
+			"name": "Video compression for 3d media",
+			"publisher": "Hooli",
+			"releaseDate": "2014-10-01",
+			"website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+			"summary": "Innovative middle-out compression algorithm that changes the way we store data."
+		}
+	],
+	"skills": [
+		{
+			"name": "Web Development",
+			"level": "Master",
+			"keywords": ["HTML", "CSS", "Javascript"]
+		},
+		{
+			"name": "Compression",
+			"level": "Master",
+			"keywords": ["Mpeg", "MP4", "GIF"]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Native speaker"
+		}
+	],
+	"interests": [
+		{
+			"name": "Wildlife",
+			"keywords": ["Ferrets", "Unicorns"]
+		}
+	],
+	"references": [
+		{
+			"name": "Arun K P",
+			"reference": "Kautilya is wonderful to work with, and has sound knowledge in Swift and iOS technologies. He is dedicated, self-motivated, methodical and very capable. He is not only reliable and loyal but also an inspiring team player in-spite of the fact he being a fresher when started working with me. I had the pleasure of working with Kautilya for one year at Infosys Limited.As a team member, Kautilya earns my highest recommendation."
+		},
+		{
+			"name": "Ashutosh Pund",
+			"reference": "Kautilya is very innovative in his work. Above all, he has a very good attitude and takes new challenges very positively. Kautilya has amazing grasping power and is very comfortable with adapting new technology , which he demonstrated during his tenure as iOS developer in Infosys.He will be an asset to the organization he will work and I wish him the best for his future endeavors!"
+		},
+		{
+			"name": "Aakash Tripathi",
+			"reference": "Kautilya is enthusiastic and always curious to understand key concepts and new emerging technologies while having a positive attitude towards getting things done. Staying up to date with tech and implementing it swiftly, is his key strength area. With short instant of interacting with him on a development project, I can certainly say that he is a good team player with a lot of energy and critical thinker. Wish him all the best and success for his future endeavour."
+		}
+	]
+}
