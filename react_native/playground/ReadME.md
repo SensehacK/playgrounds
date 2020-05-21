@@ -8,6 +8,7 @@ Use this command to create a new project without quotes in command.
 
 ## Running the React App
 
+### Environment setup
 
 (Environment Setup) [https://reactnative.dev/docs/environment-setup]
 

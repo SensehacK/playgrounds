@@ -1,0 +1,286 @@
+{
+  "selectedTemplate": 1,
+  "basics": {
+    "name": "Kautilya",
+    "label": "Programmer",
+    "picture": "https://media-exp1.licdn.com/dms/image/C5103AQHUxhr1KyuSjA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=t-PFQmSTU099PcR99ytdmS5qRX7IwW9fb_bwMuftIQ8",
+    "email": "kautilyasave@gmail.com",
+    "phone": "(646) 359-3668",
+    "website": "https://sensehack.github.io/",
+    "summary": "I'm an iOS based app developer, web designer and technophile. Fusing technology with lifestyle to foster something phenomenal as SensehacK. Become my Nakama!",
+    "location": {
+      "postalCode": "",
+	  "city": "New York City",
+      "countryCode": "US",
+      "region": "New York",
+      "address": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "kautilyasave",
+        "url": "https://twitter.com/kautilyasave"
+      },
+      {
+        "network": "Spotify",
+        "username": "sensehack",
+        "url": "https://open.spotify.com/user/sensehack"
+      },
+      {
+        "network": "TraktTV",
+        "username": "sensehack",
+        "url": "https://trakt.tv/users/sensehack"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "kautilyasave",
+        "url": "https://www.linkedin.com/in/kautilyasave/"
+      },
+      {
+        "network": "Instagram",
+        "username": "sensehack",
+        "url": "https://www.instagram.com/sensehack/"
+      },
+      {
+        "network": "Xbox",
+        "username": "sensehack",
+        "url": "https://www.trueachievements.com/gamer/Sensehack/gamecollection"
+	  },
+      {
+        "network": "LastFM",
+        "username": "sensehack",
+        "url": "https://www.last.fm/user/Sensehack"
+      },
+      {
+        "network": "Steam",
+        "username": "sensehack",
+        "url": "https://steamcommunity.com/id/SensehacK"
+      },
+      {
+        "network": "Sourcerer",
+        "username": "sensehack",
+        "url": "https://sourcerer.io/sensehack"
+      },
+      {
+        "network": "Twitch",
+        "username": "sensehack",
+        "url": "https://www.twitch.tv/sensehack/"
+	  },
+      {
+        "network": "Sourcerer",
+        "username": "sensehack",
+        "url": "https://sourcerer.io/sensehack"
+      }
+	]
+  },
+  "education": [
+    {
+      "area": "Computer Science",
+      "studyType": "Masters",
+      "startDate": "2019-08-04",
+      "endDate": "2021-05-15",
+      "gpa": "3.67",
+      "courses": [
+		"Mobile Application Development",
+		"DB1101 - Mobile Web Development",
+		"Internet Computing",
+		"Algorithms and Computing Theory",
+		"Computer Security",
+		"Advanced Java Programming",
+		"UX/UI Design",
+		"Parallel & Distributed Systems",
+		"Software Engineering"
+      ],
+      "institution": "Pace University",
+      "location": "New York"
+    },
+    {
+      "institution": "Mumbai University",
+      "location": "Mumbai",
+      "studyType": "Bachelor",
+      "area": "Computer Engineering",
+      "startDate": "July 2013",
+      "endDate": "June 2016"
+    }
+  ],
+  "work": [
+    {
+      "company": "Infosys Limited",
+      "position": "Senior Systems Engineer",
+      "website": "",
+      "startDate": "January 2017",
+      "endDate": "July 2019",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": [
+        "Developed computer software, such as several iOS and web applications for multiple clients to be used on iPhones & iPads, participating in the entire life cycle of the software projects and following state-of-the-art enterprise trends.",
+        "Automated the development pattern for iOS applications using Microsoft Azure Devops for increased throughput, automation of testing, and app distribution, reducing the need for information technology resources, such as testing, maintenance, & deployment teams, by 90%.",
+        "Designed the user interface for SalesTouch using Sketch, developed the application using Xcode, and hosted it on GitHub Enterprise, following Agile development to enable buyers to customize and finalize their car purchase digitally and to allow the dealer to expedite and streamline the selling process",
+        "Led a team of three to focus on creativity and research the design and development of the UI for rebranding an application for a financial company using Swift and AdobeXD, enhancing the UX, increasing access to the company financial information, and reducing the need for help desk by 70%.",
+        "Architect, developed, tested, and maintained 3 iOS applications while maintaining workflows for a retail company using different APIs and OAuth with server, which eliminated mundane tasks performed every day and provided analytics and insights to the client for future improvement of their platform.",
+        "Served as a Full Stack Developer for a financial company using Angular with material design and NodeJS framework connected with SQL to integrate the backend with the frontend to make a cohesive codebase that emerged as a reusable template for apps, drastically saving future project efforts."
+      ],
+      "location": "Pune, India"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "Swift",
+        "Typescript",
+        "Python",
+        "Java",
+        "Objective-C"
+      ]
+    },
+    {
+      "name": "Web & Database",
+      "level": "Master",
+      "keywords": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "SQL",
+        "MongoDB",
+        "CoreData",
+        "NodeJS ",
+        "React"
+      ]
+    },
+    {
+      "keywords": [
+        "UIKit",
+        "CocoaTouch",
+        "React Native",
+        "SwiftUI",
+        "Ionic",
+        "Angular"
+      ],
+      "name": "Frameworks & Libraries"
+    },
+    {
+      "keywords": [
+        "Xcode",
+        "VSCode",
+        "Code Lint",
+        "CLI",
+        "Eclipse",
+        "Git",
+        "Docker"
+      ],
+      "name": "Software Tools"
+    },
+    {
+      "keywords": [
+        "KanBan",
+        "Agile",
+        "MVC Pattern",
+        "CI/CD",
+        "Version Control",
+        "Git",
+        "Unit Testing"
+      ],
+      "name": "Methodologies"
+    },
+    {
+      "keywords": [
+        "Udacity iOS Dev Nanodegree",
+        "Design Thinking",
+        "App Architecture",
+        "Devops"
+      ],
+      "name": "Certifications"
+    },
+    {
+      "keywords": [
+        "Sketch",
+        "Photoshop",
+        null
+      ],
+      "name": "Design"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "Swift",
+        "Xcode",
+        "Git",
+        "Sketch"
+      ],
+      "name": "Health Sense",
+      "description": "Collaborate in team of five to create an open source mobile application that provides the user all health data in one application, eliminating overhead of different apps and showcasing health insights & statistics at their fingertips.",
+      "url": "https://github.com/SensehacK/health-sense"
+    },
+    {
+      "keywords": [
+        "Typescript",
+        "Ionic",
+        "Angular",
+        "Xcode",
+        "Android Studio",
+        "CSS",
+        "HTML"
+      ],
+      "name": "Beverage Helper ",
+      "description": "Developed user friendly hybrid application that supports web browser and mobile OS like Android and iOS devices using Angular Ionic Framework written in Typescript, which aids the user in calculating food ingredients and avoids food waste",
+      "url": "https://sensehack.github.io/masters-comp-science/CS_641/live/brew_coffee/home"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Medium.com, Technology Contributor",
+      "date": "May 2014 – Present "
+    }
+  ],
+  "headings": {
+    "awards": "ACTIVITIES"
+  },
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ],
+  "languages": [
+	  {
+		  "language": "English",
+		  "fluency": "Native speaker"
+	  }
+  ],
+  "interests": [
+	  {
+		  "name": "Wildlife",
+		  "keywords": ["Ferrets", "Unicorns"]
+	  }
+  ],
+  "references": [
+	  {
+		  "name": "Arun K P",
+		  "reference": "Kautilya is wonderful to work with, and has sound knowledge in Swift and iOS technologies. He is dedicated, self-motivated, methodical and very capable. He is not only reliable and loyal but also an inspiring team player in-spite of the fact he being a fresher when started working with me. I had the pleasure of working with Kautilya for one year at Infosys Limited.As a team member, Kautilya earns my highest recommendation."
+	  },
+	  {
+		  "name": "Ashutosh Pund",
+		  "reference": "Kautilya is very innovative in his work. Above all, he has a very good attitude and takes new challenges very positively. Kautilya has amazing grasping power and is very comfortable with adapting new technology , which he demonstrated during his tenure as iOS developer in Infosys.He will be an asset to the organization he will work and I wish him the best for his future endeavors!"
+	  },
+	  {
+		  "name": "Aakash Tripathi",
+		  "reference": "Kautilya is enthusiastic and always curious to understand key concepts and new emerging technologies while having a positive attitude towards getting things done. Staying up to date with tech and implementing it swiftly, is his key strength area. With short instant of interacting with him on a development project, I can certainly say that he is a good team player with a lot of energy and critical thinker. Wish him all the best and success for his future endeavour."
+	  }
+  ],
+  "volunteer": [
+	  {
+		  "organization": "",
+		  "position": "",
+		  "website": "",
+		  "startDate": "",
+		  "endDate": "",
+		  "summary": "",
+		  "highlights": [""]
+	  }
+  ],
+}
