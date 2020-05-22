@@ -64,7 +64,12 @@
         "network": "Twitch",
         "username": "sensehack",
         "url": "https://www.twitch.tv/sensehack/"
-	  }
+	  },
+      {
+        "network": "Sourcerer",
+        "username": "sensehack",
+        "url": "https://sourcerer.io/sensehack"
+      }
 	]
   },
   "education": [
@@ -93,8 +98,8 @@
       "location": "Mumbai",
       "studyType": "Bachelor",
       "area": "Computer Engineering",
-      "startDate": "2013-07-15",
-      "endDate": "2016-06-15" 
+      "startDate": "July 2013",
+      "endDate": "June 2016"
     }
   ],
   "work": [
@@ -102,8 +107,8 @@
       "company": "Infosys Limited",
       "position": "Senior Systems Engineer",
       "website": "",
-      "startDate": "2017-01-09", 
-      "endDate": "2019-07-25",
+      "startDate": "January 2017",
+      "endDate": "July 2019",
       "summary": "Developed computer software, such as several iOS and web applications for multiple clients to be used on iPhones & iPads, participating in the entire life cycle of the software projects and following state-of-the-art enterprise trends.",
       "highlights": [
         "Automated the development pattern for iOS applications using Microsoft Azure Devops for increased throughput, automation of testing, and app distribution, reducing the need for information technology resources, such as testing, maintenance, & deployment teams, by 90%.",
@@ -220,10 +225,34 @@
       "url": "https://sensehack.github.io/masters-comp-science/CS_641/live/brew_coffee/home"
     }
   ],
+  "awards": [
+    {
+      "title": "Medium.com, Technology Contributor",
+      "date": "May 2014 – Present "
+    }
+  ],
+  "headings": {
+    "awards": "ACTIVITIES"
+  },
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ],
   "languages": [
 	  {
 		  "language": "English",
 		  "fluency": "Native speaker"
+	  }
+  ],
+  "interests": [
+	  {
+		  "name": "Wildlife",
+		  "keywords": ["Ferrets", "Unicorns"]
 	  }
   ],
   "references": [
@@ -238,6 +267,17 @@
 	  {
 		  "name": "Aakash Tripathi",
 		  "reference": "Kautilya is enthusiastic and always curious to understand key concepts and new emerging technologies while having a positive attitude towards getting things done. Staying up to date with tech and implementing it swiftly, is his key strength area. With short instant of interacting with him on a development project, I can certainly say that he is a good team player with a lot of energy and critical thinker. Wish him all the best and success for his future endeavour."
+	  }
+  ],
+  "volunteer": [
+	  {
+		  "organization": "",
+		  "position": "",
+		  "website": "",
+		  "startDate": "",
+		  "endDate": "",
+		  "summary": "",
+		  "highlights": [""]
 	  }
   ]
 }

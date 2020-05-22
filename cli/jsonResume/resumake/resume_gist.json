@@ -1,0 +1,240 @@
+{
+	"basics": {
+		"name": "Kautilya Save",
+		"label": "Software Engineer",
+		"picture": "https://media-exp1.licdn.com/dms/image/C5103AQHUxhr1KyuSjA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=t-PFQmSTU099PcR99ytdmS5qRX7IwW9fb_bwMuftIQ8",
+		"email": "kautilyasave@gmail.com",
+		"phone": "(646) 359-3668",
+		"website": "https://sensehack.github.io/",
+		"summary": "I'm an iOS based app developer, web designer and technophile. I am a very design centric developer who prioritizes a good architecture solution which scales and minimizes overhead.",
+		"location": {
+			"postalCode": "10038",
+			"city": "New York City",
+			"countryCode": "US",
+			"region": "New York",
+			"address": ""
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "kautilyasave",
+				"url": "https://www.linkedin.com/in/kautilyasave/"
+			},
+			{
+				"network": "Github",
+				"username": "sensehack",
+				"url": "https://github.com/SensehacK"
+			}
+		]
+	},
+	"education": [
+		{
+			"area": "Computer Science",
+			"studyType": "Masters",
+			"startDate": "2019-08-04",
+			"endDate": "2021-05-15",
+			"gpa": "3.67",
+			"courses": [
+				"Mobile Application Development",
+				"Mobile Web Development",
+				"Internet Computing",
+				"Algorithms and Computing Theory",
+				"Computer Security",
+				"Advanced Java Programming",
+				"UX/UI Design",
+				"Parallel & Distributed Systems",
+				"Software Engineering"
+			],
+			"institution": "Pace University",
+			"location": "New York"
+		},
+		{
+			"institution": "Mumbai University",
+			"location": "Mumbai",
+			"studyType": "Bachelor",
+			"area": "Computer Engineering",
+			"startDate": "2013-07-15",
+			"endDate": "2016-06-15",
+			"gpa": "7.25",
+			"courses": [
+				"Human Machine Interaction",
+				"Mobile Communications and Computing",
+				"Data Structures",
+				"Operating Systems",
+				"Structured Object Oriented Analysis & Design",
+				"Data Warehouse and Mining",
+				"Computer Organization and Architecture",
+				"Computer Graphics",
+				"Cryptography and System Security"
+			]
+		}
+	],
+	"work": [
+		{
+			"company": "Infosys Limited",
+			"position": "Senior System Engineer",
+			"website": "",
+			"startDate": "2018-04-01",
+			"endDate": "2019-07-25",
+			"summary": "Developed computer software, such as several iOS and web applications for multiple clients to be used on iPhones & iPads, participating in the entire life cycle of the software projects and following state-of-the-art enterprise trends.",
+			"highlights": [
+				"Automated the development pattern for iOS applications using Microsoft Azure Devops for increased throughput, automation of testing, and app distribution, reducing the need for testing, maintenance, & deployment teams by 90%.",
+				"Designed the user interface for SalesTouch using Sketch, developed the application using Xcode, and hosted it on GitHub Enterprise, following Agile methodology to enable buyers to customize and finalize their car purchase digitally and to allow the dealer to expedite and streamline the selling process.",
+				"Led a team of three to analyze, design, and develop the UI for rebranding a mobile application for a financial company using Ionic with Angular framework and AdobeXD to enhance the UX and increase access to the company financial information, reducing the need for help desk by 70%.",
+				"Developed a web application for a finance company using HTML5, CSS3, JavaScript, and Angular framework on VS Code, which enabled users to manage their productivity, access and update their information, and receive company news whether through their work computer, PC, or mobile platform."
+			],
+			"location": "Pune, India"
+		},
+		{
+			"company": "Infosys Limited",
+			"position": "System Engineer",
+			"website": "",
+			"startDate": "2017-04-01",
+			"endDate": "2018-04-01",
+			"summary": "Collaborated in a team of four to create an iOS based application, called SalesTouch, to enable an automotive company dealership to sell and provide car information virtually, eliminating paperwork and increasing transparency and efficiency in car sales.",
+			"highlights": [
+				"Designed the user interface for SalesTouch using Sketch, developed the application using Xcode, and hosted it on GitHub Enterprise, following Agile methodology to enable buyers to customize and finalize their car purchase digitally and to allow the dealer to expedite and streamline the selling process.",
+				"Analyzed & implemented major updates for an application for an auditing company for iOS 11 and 12, enabling the application to support the latest hardware, such as FaceID, iPhone X, iPad Pro."
+			],
+			"location": "Trivandrum, India"
+		},
+		{
+			"company": "Infosys Limited",
+			"position": "System Engineer Trainee",
+			"website": "",
+			"startDate": "2017-01-09",
+			"endDate": "2017-03-30",
+			"summary": "Training period briefed us with best practices in software development, project management which improved our problem solving skills while learning latest frameworks and tools.",
+			"highlights": [
+				"Designed and implemented a point of sale system using Python, MySQL as our database and Java language with test cases to improve its robustness.",
+				"Migrated the auditing application from Obj-C to Swift language with newer design patterns, which led to improved scalability for future updates and purged makeshift solutions."
+			],
+			"location": "Mysore, India"
+		}
+	],
+	"skills": [
+		{
+			"name": "Programming Languages",
+			"level": "Master",
+			"keywords": ["Swift", "Typescript", "Python", "Java", "Objective-C"]
+		},
+		{
+			"name": "Web & Database",
+			"level": "Master",
+			"keywords": [
+				"JavaScript",
+				"HTML",
+				"CSS",
+				"SQL",
+				"MongoDB",
+				"CoreData",
+				"NodeJS ",
+				"React"
+			]
+		},
+		{
+			"keywords": [
+				"UIKit",
+				"CocoaTouch",
+				"React Native",
+				"SwiftUI",
+				"Ionic",
+				"Angular"
+			],
+			"name": "Frameworks & Libraries"
+		},
+		{
+			"keywords": [
+				"Xcode",
+				"VSCode",
+				"Code Lint",
+				"CLI",
+				"Eclipse",
+				"Git",
+				"Docker"
+			],
+			"name": "Software Tools"
+		},
+		{
+			"keywords": [
+				"KanBan",
+				"Agile",
+				"MVC Pattern",
+				"CI/CD",
+				"Version Control",
+				"Git",
+				"Unit Testing"
+			],
+			"name": "Methodologies"
+		},
+		{
+			"keywords": [
+				"Udacity iOS Dev Nanodegree",
+				"Design Thinking",
+				"App Architecture",
+				"Devops"
+			],
+			"name": "Certifications"
+		},
+		{
+			"keywords": ["Sketch", "Photoshop"],
+			"name": "Design"
+		}
+	],
+	"projects": [
+		{
+			"keywords": ["Swift", "Xcode", "Git", "Sketch"],
+			"name": "Health Sense",
+			"description": "Collaborate in team of five to create an open source mobile application that provides the user all health data in one application, eliminating overhead of different apps and showcasing health insights & statistics at their fingertips.",
+			"url": "https://github.com/SensehacK/health-sense"
+		},
+		{
+			"keywords": [
+				"Typescript",
+				"Ionic",
+				"Angular",
+				"Xcode",
+				"Android Studio",
+				"CSS",
+				"HTML"
+			],
+			"name": "Beverage Helper ",
+			"description": "Developed user friendly hybrid application that supports web browser and mobile OS like Android and iOS devices using Angular Ionic Framework written in Typescript, which aids the user in calculating food ingredients and avoids food waste",
+			"url": "https://sensehack.github.io/masters-comp-science/CS_641/live/brew_coffee/home"
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Native speaker"
+		}
+	],
+	"references": [
+		{
+			"name": "Arun K P",
+			"reference": "Kautilya is wonderful to work with, and has sound knowledge in Swift and iOS technologies. He is dedicated, self-motivated, methodical and very capable. He is not only reliable and loyal but also an inspiring team player in-spite of the fact he being a fresher when started working with me. I had the pleasure of working with Kautilya for one year at Infosys Limited.As a team member, Kautilya earns my highest recommendation."
+		},
+		{
+			"name": "Ashutosh Pund",
+			"reference": "Kautilya is very innovative in his work. Above all, he has a very good attitude and takes new challenges very positively. Kautilya has amazing grasping power and is very comfortable with adapting new technology , which he demonstrated during his tenure as iOS developer in Infosys.He will be an asset to the organization he will work and I wish him the best for his future endeavors!"
+		},
+		{
+			"name": "Aakash Tripathi",
+			"reference": "Kautilya is enthusiastic and always curious to understand key concepts and new emerging technologies while having a positive attitude towards getting things done. Staying up to date with tech and implementing it swiftly, is his key strength area. With short instant of interacting with him on a development project, I can certainly say that he is a good team player with a lot of energy and critical thinker. Wish him all the best and success for his future endeavour."
+		}
+	],
+  "interests": [
+    {
+      "name": "Photography"
+    },
+    {
+      "name": "Travel"
+    },
+    {
+      "name": "Technology"
+    },
+    {
+      "name": "Multimedia"
+    }
+  ]
+}
