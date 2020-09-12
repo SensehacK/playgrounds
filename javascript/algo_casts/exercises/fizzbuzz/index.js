@@ -12,6 +12,55 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+	/*
+	while (n > 0) {
+		if ((n % 3) + (n % 5) == 0) {
+			console.log("fizzbuzz");
+		} else if (n % 5 == 0) {
+			console.log("buzz");
+		} else if (n % 3 == 0) {
+			console.log("fizz");
+		} else {
+			console.log(n);
+		}
+		n--;
+	}
+	*/
+
+	/*
+	var index = 1;
+	while (index <= n) {
+		if ((index % 3) + (index % 5) == 0) {
+			console.log("fizzbuzz");
+		} else if (index % 5 == 0) {
+			console.log("buzz");
+		} else if (index % 3 == 0) {
+			console.log("fizz");
+		} else {
+			console.log(index);
+		}
+		index++;
+	}
+	*/
+	
+	for (let index = 1; index <= n; index++) {
+		if ((index % 3) + (index % 5) == 0) {
+			console.log("fizzbuzz");
+		} else if (index % 5 == 0) {
+			console.log("buzz");
+		} else if (index % 3 == 0) {
+			console.log("fizz");
+		} else {
+			console.log(index);
+		}
+	}
+}
 
 module.exports = fizzBuzz;
+
+/*
+fizzBuzz(5);
+console.log("Hello Sensehack!");
+fizzBuzz(16);
+*/
