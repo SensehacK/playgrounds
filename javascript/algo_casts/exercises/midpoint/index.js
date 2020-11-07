@@ -25,18 +25,14 @@ function midpoint(list) {
 	// console.log("next linkedList fastJump : ", fastJump);
 
 	while (fastJump.next) {
-		if (fastJump.next && shortJump.next) {
-			fastJump = fastJump.next;
+		console.log(" while fastJump.next  :", fastJump.next);
+		if (fastJump.next.next && shortJump.next) {
+			shortJump = shortJump.next;
+			fastJump = fastJump.next.next;
 			console.log("next linkedList shortJump : ", shortJump);
 			console.log("next linkedList fastJump : ", fastJump);
-
-			if (fastJump.next) {
-				fastJump = fastJump.next;
-				shortJump = shortJump.next;
-				console.log("next linkedList fastJump fastJump.next: ", fastJump);
-			} else {
-				break;
-			}
+		} else {
+			break;
 		}
 	}
 	return shortJump;
@@ -44,13 +40,13 @@ function midpoint(list) {
 
 module.exports = midpoint;
 
-// const L = require("./linkedlist");
-// const Node = L.Node;
-// const LinkedList = L.LinkedList;
-// const l = new LinkedList();
-// l.insertLast("a");
-// l.insertLast("b");
-// l.insertLast("c");
-// l.insertLast("d");
-// // l.insertLast("e");
-// console.log(midpoint(l).data);
+const L = require("./linkedlist");
+const Node = L.Node;
+const LinkedList = L.LinkedList;
+const l = new LinkedList();
+l.insertLast("a");
+l.insertLast("b");
+l.insertLast("c");
+l.insertLast("d");
+// l.insertLast("e");
+console.log(midpoint(l).data);
