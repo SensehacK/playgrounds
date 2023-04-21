@@ -16,9 +16,10 @@ let sessionFields = [
     SessionEntry(Id: 5, User: "Test 5"),
 ]
 
-let currentID = 6
+let currentID = 5
 let result = sessionFields.contains { currentEntry in
     return currentEntry.Id == currentID
 }
 
+sessionFields.firstIndex { $0.Id == currentID }
 print(result)
